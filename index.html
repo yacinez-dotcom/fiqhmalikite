@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Étudiez le fiqh malikite de manière progressive et structurée." />
+  <title>Fiqh Malikite — Étude Progressive</title>
+
+  <!-- ═══ Polices Google Fonts ═══ -->
+  <!-- Amiri : calligraphie arabe/islamique -->
+  <!-- Cinzel : titres latins ornés -->
+  <!-- Inter  : UI lisible -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ═══ Feuilles de style (ordre important) ═══ -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       SIDEBAR — Navigation latérale fixe
+       ══════════════════════════════════════════════════════ -->
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Navigation principale">
+
+    <!-- Logo -->
+    <div class="sidebar__logo">
+      <div class="logo-emblem" aria-hidden="true">
+        <!-- Étoile islamique à 8 branches (deux carrés superposés) -->
+        <svg viewBox="0 0 40 40" width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="7" width="26" height="26" rx="2" fill="rgba(255,255,255,0.92)"/>
+          <rect x="7" y="7" width="26" height="26" rx="2" fill="rgba(255,255,255,0.72)" transform="rotate(45 20 20)"/>
+          <circle cx="20" cy="20" r="5" fill="rgba(255,200,70,0.95)"/>
+        </svg>
+      </div>
+      <div class="logo-text-wrap">
+        <span class="logo-arabic">فقه مالكي</span>
+        <span class="logo-latin">Fiqh Malikite</span>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sidebar__nav" aria-label="Menu principal">
+      <span class="nav-label">Navigation</span>
+
+      <button class="nav-item" data-route="home" aria-current="page">
+        <svg class="ni-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V21H15v-5h-6v5H3z"/>
+        </svg>
+        Accueil
+      </button>
+
+      <button class="nav-item" data-route="levels">
+        <svg class="ni-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="16" width="18" height="3" rx="1"/>
+          <rect x="3" y="10" width="13" height="3" rx="1"/>
+          <rect x="3" y="4"  width="8"  height="3" rx="1"/>
+        </svg>
+        Niveaux d'Étude
+      </button>
+
+      <button class="nav-item" data-route="quiz-hub">
+        <!-- Icône : crayon sur feuille (questionnaire) -->
+        <svg class="ni-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"/>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </svg>
+        Questionnaires
+        <span id="nav-quiz-count" class="nav-quiz-chip"></span>
+      </button>
+
+      <button class="nav-item" data-route="badges">
+        <svg class="ni-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l2.4 4.8L20 8l-4 3.9.9 5.1L12 14.5l-4.9 2.5.9-5.1L4 8l5.6-1.2z"/>
+        </svg>
+        Mes Badges
+      </button>
+
+      <button class="nav-item" data-route="progress">
+        <svg class="ni-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+        Ma Progression
+      </button>
+    </nav>
+
+    <!-- Toggle thème (bas de sidebar) -->
+    <div class="sidebar__footer">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+        <span class="tt-icon" id="theme-icon">
+          <!-- Icône injectée par theme.js -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </span>
+        <span id="theme-label">Mode Sombre</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Overlay mobile (clique pour fermer la sidebar) -->
+  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       ZONE PRINCIPALE — Contenu scrollable
+       ══════════════════════════════════════════════════════ -->
+  <main class="main-content" role="main">
+
+    <!-- Barre du haut -->
+    <header class="topbar">
+      <nav class="breadcrumb" id="breadcrumb" aria-label="Fil d'Ariane">
+        <span class="bc-item bc-current">Accueil</span>
+      </nav>
+      <div class="topbar__actions">
+        <!-- Bouton menu hamburger (mobile uniquement) -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Ouvrir le menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+               stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6"  x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- ────────────────────────────────────────────────────
+         PAGES — une seule visible à la fois (.active)
+         Contenu injecté dynamiquement par Renderer
+         ──────────────────────────────────────────────────── -->
+
+    <!-- Page : Accueil -->
+    <section class="page" id="page-home" aria-label="Accueil">
+      <!-- Injecté par Renderer.home() -->
+    </section>
+
+    <!-- Page : Niveaux -->
+    <section class="page" id="page-levels" aria-label="Niveaux d'étude">
+      <!-- Injecté par Renderer.levels() -->
+    </section>
+
+    <!-- Page : Niveau Débutant (liste des sujets) -->
+    <section class="page" id="page-debutant" aria-label="Niveau débutant">
+      <!-- Injecté par Renderer.debutant() -->
+    </section>
+
+    <section class="page" id="page-intermediaire" aria-label="Niveau intermédiaire">
+      <!-- Injecté par Renderer.intermediaire() -->
+    </section>
+
+    <section class="page" id="page-avance" aria-label="Niveau avancé">
+      <!-- Injecté par Renderer.avance() -->
+    </section>
+
+    <!-- Page : Détail d'un Sujet (leçons + quiz) -->
+    <section class="page" id="page-subject" aria-label="Sujet">
+      <!-- Injecté par Renderer.subject() -->
+    </section>
+
+    <!-- Page : Leçon (contenu de la leçon) -->
+    <section class="page" id="page-lesson" aria-label="Leçon">
+      <!-- Injecté par Renderer.lesson() -->
+    </section>
+
+    <!-- Page : Hub des Questionnaires (accès direct) -->
+    <section class="page" id="page-quiz-hub" aria-label="Questionnaires">
+      <!-- Injecté par Renderer.quizHub() -->
+    </section>
+
+    <!-- Page : Questionnaire en cours (Q&R) -->
+    <section class="page" id="page-quiz" aria-label="Questionnaire en cours">
+      <div id="quiz-content">
+        <!-- Injecté par Quiz.start() -->
+      </div>
+    </section>
+
+    <!-- Page : Badges -->
+    <section class="page" id="page-badges" aria-label="Mes badges">
+      <div class="page-header">
+        <span class="page-header__eyebrow">الشارات</span>
+        <h1 class="page-header__title">Mes Badges</h1>
+        <p class="page-header__desc">
+          Récompenses obtenues au fil de votre apprentissage.
+          Passez la souris sur un badge grisé pour voir comment le débloquer.
+        </p>
+      </div>
+
+      <!-- Badges de niveau (Or) -->
+      <div class="badges-section">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+               style="color:var(--gold)">
+            <path d="M12 2l2.4 4.8L20 8l-4 3.9.9 5.1L12 14.5l-4.9 2.5.9-5.1L4 8l5.6-1.2z"/>
+          </svg>
+          Badge de Niveau
+          <span class="count-chip" id="gold-badge-count">0/1</span>
+        </h2>
+        <div class="grid-badges" id="gold-badges-grid">
+          <!-- Injecté par Badges.renderPage() -->
+        </div>
+      </div>
+
+      <div class="star-divider" aria-hidden="true">
+        <div class="star-divider__line"></div>
+        <svg class="star-divider__icon" viewBox="0 0 40 40" fill="currentColor">
+          <path d="M20 2L23.5 11 31.3 4.7 26.5 13 36 13 28.5 19 34.6 27 25.5 23.5 24 33 20 25 16 33 14.5 23.5 5.4 27 11.5 19 4 13 13.5 13 8.7 4.7 16.5 11Z"/>
+        </svg>
+        <div class="star-divider__line"></div>
+      </div>
+
+      <!-- Badges de sujets (Argent) -->
+      <div class="badges-section">
+        <h2 class="section-title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+               stroke-width="2" style="color:var(--badge-silver-border)">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 12l3 3 5-5"/>
+          </svg>
+          Badges de Sujets
+          <span class="count-chip" id="silver-badge-count">0/4</span>
+        </h2>
+        <div class="grid-badges" id="silver-badges-grid">
+          <!-- Injecté par Badges.renderPage() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Page : Progression -->
+    <section class="page" id="page-progress" aria-label="Ma progression">
+      <!-- Injecté par Renderer.progress() -->
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       TOASTS — Notifications flottantes (badges, etc.)
+       ══════════════════════════════════════════════════════ -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ═══ Scripts (ordre de dépendance) ═══ -->
+  <script src="data/debutant.js"></script>       <!-- Données (LEVELS, DEBUTANT) -->
+  <script src="data/intermediaire.js"></script>  <!-- Données (INTERMEDIAIRE) -->
+  <script src="data/avance.js"></script>         <!-- Données (AVANCE) -->
+  <script src="js/progress.js"></script>     <!-- Suivi progression localStorage -->
+  <script src="js/theme.js"></script>        <!-- Toggle dark/light -->
+  <script src="js/router.js"></script>       <!-- Navigation entre pages -->
+  <script src="js/badges.js"></script>       <!-- Système de badges -->
+  <script src="js/quiz.js"></script>         <!-- Moteur Q&R -->
+  <script src="js/app.js"></script>          <!-- Init + Icons + Renderer -->
+
+</body>
+</html>

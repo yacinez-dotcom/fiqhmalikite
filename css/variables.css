@@ -1,0 +1,172 @@
+/* ════════════════════════════════════════════════════════
+   BRIQUE: Système de Design — Tokens CSS (variables.css)
+   Rôle   : Source unique de vérité pour couleurs, typographies
+            et espacements. Modifier ici affecte TOUT le site.
+   Dépend : Aucune
+   ════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ─── Mode Clair (défaut) ──────────────────────────────── */
+:root {
+  /* Fonds */
+  --bg-page:               #F7F2E8;
+  --bg-secondary:          #EFE7D3;
+  --bg-card:               #FDFAF3;
+  --bg-card-hover:         #FAF5E8;
+  --bg-sidebar:            #0F2117;
+  --bg-sidebar-hover:      rgba(212,168,71,0.12);
+  --bg-sidebar-active:     rgba(212,168,71,0.22);
+  --bg-overlay:            rgba(0,0,0,0.4);
+
+  /* Textes */
+  --text-primary:          #1C1208;
+  --text-secondary:        #5C4B2D;
+  --text-muted:            #9A8A6E;
+  --text-sidebar:          #8A9E8E;
+  --text-sidebar-active:   #F0C860;
+  --text-on-accent:        #FFFFFF;
+
+  /* Accents */
+  --gold:                  #B8860B;
+  --gold-bright:           #D4A847;
+  --gold-pale:             #F5E2A0;
+  --gold-glow:             rgba(184,134,11,0.28);
+  --green-deep:            #0F2117;
+  --green-mid:             #1F5C36;
+  --teal:                  #1A6B68;
+  --teal-light:            #2A9C99;
+
+  /* Bordures */
+  --border:                #DDD0B8;
+  --border-light:          #EDE4CC;
+  --border-card:           rgba(184,134,11,0.15);
+
+  /* Badges */
+  --badge-gold-bg:         #FEF3C7;
+  --badge-gold-border:     #B8860B;
+  --badge-gold-text:       #78540A;
+  --badge-silver-bg:       #F1F5F9;
+  --badge-silver-border:   #7A8FA0;
+  --badge-silver-text:     #4A6070;
+  --badge-locked-bg:       #EDE9E0;
+  --badge-locked-border:   #C8BFA8;
+  --badge-locked-text:     #9A9080;
+
+  /* État */
+  --success:               #256025;
+  --success-bg:            #E8F5E8;
+  --error:                 #882020;
+  --error-bg:              #FDE8E8;
+  --warning:               #8A5A08;
+  --warning-bg:            #FEF3CC;
+
+  /* Typographies */
+  --font-arabic:           'Amiri', 'Traditional Arabic', serif;
+  --font-display:          'Cinzel', 'Palatino Linotype', serif;
+  --font-body:             'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Échelle typographique */
+  --text-xs:    0.6875rem;  /* 11px */
+  --text-sm:    0.8125rem;  /* 13px */
+  --text-base:  1rem;       /* 16px */
+  --text-lg:    1.125rem;   /* 18px */
+  --text-xl:    1.25rem;    /* 20px */
+  --text-2xl:   1.5rem;     /* 24px */
+  --text-3xl:   1.875rem;   /* 30px */
+  --text-4xl:   2.25rem;    /* 36px */
+  --text-5xl:   3rem;       /* 48px */
+  --text-6xl:   3.75rem;    /* 60px */
+
+  /* Espacements */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+
+  /* Formes */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   22px;
+  --radius-full: 9999px;
+
+  /* Ombres */
+  --shadow-sm:     0 1px 3px rgba(26,18,8,0.06), 0 1px 2px rgba(26,18,8,0.04);
+  --shadow-md:     0 4px 12px rgba(26,18,8,0.08), 0 2px 4px rgba(26,18,8,0.05);
+  --shadow-lg:     0 12px 32px rgba(26,18,8,0.1), 0 4px 8px rgba(26,18,8,0.06);
+  --shadow-gold:   0 4px 22px rgba(184,134,11,0.32);
+  --shadow-silver: 0 4px 20px rgba(122,143,160,0.28);
+
+  /* Transitions */
+  --ease-fast:   150ms cubic-bezier(0.4,0,0.2,1);
+  --ease-base:   250ms cubic-bezier(0.4,0,0.2,1);
+  --ease-slow:   400ms cubic-bezier(0.4,0,0.2,1);
+  --ease-spring: 500ms cubic-bezier(0.34,1.56,0.64,1);
+
+  /* Layout */
+  --sidebar-w:    265px;
+  --topbar-h:     64px;
+  --content-max:  980px;
+}
+
+/* ─── Mode Sombre ──────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg-page:               #0D1612;
+  --bg-secondary:          #152019;
+  --bg-card:               #1C2B22;
+  --bg-card-hover:         #243529;
+  --bg-sidebar:            #080E0B;
+  --bg-sidebar-hover:      rgba(212,168,71,0.1);
+  --bg-sidebar-active:     rgba(212,168,71,0.2);
+  --bg-overlay:            rgba(0,0,0,0.6);
+
+  --text-primary:          #EDE4CC;
+  --text-secondary:        #B8A88A;
+  --text-muted:            #7A6A52;
+  --text-sidebar:          #7A9280;
+  --text-sidebar-active:   #F0C860;
+
+  --gold:                  #D4A847;
+  --gold-bright:           #F0C860;
+  --gold-pale:             rgba(240,200,96,0.15);
+  --gold-glow:             rgba(212,168,71,0.2);
+  --green-deep:            #0A1A10;
+  --green-mid:             #1A4028;
+  --teal:                  #2A8C89;
+  --teal-light:            #3AACAA;
+
+  --border:                #2A3D32;
+  --border-light:          #1E2E26;
+  --border-card:           rgba(212,168,71,0.12);
+
+  --badge-gold-bg:         rgba(212,168,71,0.12);
+  --badge-gold-border:     #D4A847;
+  --badge-gold-text:       #F0C860;
+  --badge-silver-bg:       rgba(122,143,160,0.1);
+  --badge-silver-border:   #8A9BAA;
+  --badge-silver-text:     #A0B4C4;
+  --badge-locked-bg:       rgba(255,255,255,0.04);
+  --badge-locked-border:   #2A3D32;
+  --badge-locked-text:     #4A5A50;
+
+  --success:               #4A9A4A;
+  --success-bg:            rgba(74,154,74,0.12);
+  --error:                 #C04040;
+  --error-bg:              rgba(192,64,64,0.12);
+  --warning:               #D4A030;
+  --warning-bg:            rgba(212,160,48,0.12);
+
+  --shadow-sm:     0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:     0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg:     0 12px 32px rgba(0,0,0,0.5);
+  --shadow-gold:   0 4px 22px rgba(212,168,71,0.2);
+  --shadow-silver: 0 4px 20px rgba(122,143,160,0.15);
+}

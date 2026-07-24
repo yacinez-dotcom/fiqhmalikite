@@ -1,0 +1,582 @@
+/* ════════════════════════════════════════════════════════
+   BRIQUE: Application Principale (app.js)
+   Rôle   : Icônes SVG, rendu de chaque page, init.
+   Dépend : TOUTES les autres briques
+   ════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════
+   § Icônes SVG (sans humains / animaux)
+   ══════════════════════════════════════════════════════════ */
+const Icons = (() => {
+  const sw = (path, vb='0 0 24 24') =>
+    `<svg viewBox="${vb}" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${path}</svg>`;
+
+  return {
+    home:     () => sw('<path d="M3 9.5L12 3l9 6.5V21H15v-5h-6v5H3z"/>'),
+    levels:   () => sw('<rect x="3" y="16" width="18" height="3" rx="1"/><rect x="3" y="10" width="13" height="3" rx="1"/><rect x="3" y="4" width="8" height="3" rx="1"/>'),
+    quizNav:  () => sw('<path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>'),
+    badgeNav: () => sw('<path d="M12 2l2.4 4.8L20 8l-4 3.9.9 5.1L12 14.5l-4.9 2.5.9-5.1L4 8l5.6-1.2z"/>'),
+    chart:    () => sw('<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>'),
+    quiz:     () => sw('<circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-width="2.5"/>'),
+    lock:     () => sw('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'),
+    check:    () => sw('<polyline points="20 6 9 17 4 12"/>'),
+    arrowR:   () => sw('<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>'),
+    arrowL:   () => sw('<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>'),
+    book:     () => sw('<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>'),
+    sun:      () => sw('<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>'),
+    moon:     () => sw('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'),
+    water:    () => sw('<path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2z"/><path d="M8 17.5C8 17.5 10 16 12 18.5" stroke-width="1.2"/>'),
+    arch:     () => sw('<path d="M4 22V12C4 7 8 4 12 4s8 3 8 8v10"/><line x1="4" y1="22" x2="20" y2="22"/><line x1="1" y1="22" x2="23" y2="22"/><path d="M8 22V14a4 4 0 0 1 8 0v8" stroke-width="1.3" opacity="0.5"/>'),
+    crescent: () => sw('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/><path d="M17 8l1.5 1.5" stroke-width="1.5" opacity="0.7"/>'),
+    scales:   () => sw('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><line x1="7" y1="7" x2="17" y2="7"/><path d="M7 7l-4 8s-1 2 4 2 4-2 4-2L7 7z"/><path d="M17 7l4 8s1 2-4 2-4-2-4-2L17 7z"/>'),
+    star8:    () => `<svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 2L23.5 11 31.3 4.7 26.5 13 36 13 28.5 19 34.6 27 25.5 23.5 24 33 20 25 16 33 14.5 23.5 5.4 27 11.5 19 4 13 13.5 13 8.7 4.7 16.5 11Z"/></svg>`,
+
+    byName: name => {
+      const m = {
+        /* Débutant */
+        water: Icons.water, arch: Icons.arch, crescent: Icons.crescent,
+        scales: Icons.scales, star8: Icons.star8,
+        /* Intermédiaire */
+        janaza:    () => sw('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16" stroke-width="2.5"/>'),
+        hajj:      () => sw('<rect x="4" y="7" width="16" height="14" rx="1"/><path d="M2 7h20"/><path d="M8 7V4h8v3"/><line x1="12" y1="13" x2="12" y2="18"/><line x1="10" y1="15" x2="14" y2="15"/>'),
+        nikah:     () => sw('<circle cx="7" cy="12" r="5"/><circle cx="17" cy="12" r="5"/><path d="M12 8.5a3.5 3.5 0 0 1 0 7" opacity="0.35"/>'),
+        talaq:     () => sw('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><line x1="7" y1="7" x2="17" y2="7"/><path d="M7 7l-4 8s-1 2 4 2 4-2 4-2L7 7z"/><path d="M17 7l4 8s1 2-4 2-4-2-4-2L17 7z"/>'),
+        dhabaih:   () => sw('<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>'),
+        adahi:     () => sw('<circle cx="12" cy="10" r="3"/><path d="M12 13v3"/><path d="M9 20h6"/><path d="M7 8C7 5 9 3 12 3s5 2 5 5"/><path d="M5 6C3 7 2 9 2 11h3"/><path d="M19 6c2 1 3 3 3 5h-3"/>'),
+        buyu:      () => sw('<path d="M20.5 14.5l-5 5-2-2-3 2-4-4 2-3-1.5-1.5"/><path d="M15 9l-5-5-6 6.5 5 5"/><line x1="9" y1="4" x2="15" y2="10" stroke-width="1.3" opacity="0.4"/>'),
+      };
+      return (m[name] || (() => ''))();
+    },
+    badge: name => Icons.byName(name)
+  };
+})();
+
+/* ══════════════════════════════════════════════════════════
+   § Rendu des blocs de contenu leçon
+   ══════════════════════════════════════════════════════════ */
+function renderContentBlock(block) {
+  switch (block.t) {
+    case 'lead': return `<p class="lesson-lead">${block.v}</p>`;
+    case 'h':    return `<h3 class="lesson-section-h">${block.v}</h3>`;
+    case 'p':    return `<p class="lesson-p">${block.v}</p>`;
+    case 'ul':   return `<ul class="lesson-ul">${block.v.map(i=>`<li>${i}</li>`).join('')}</ul>`;
+    case 'ar':
+      return `<div class="lesson-arabic-block">
+        <div class="lesson-arabic-text">${block.v}</div>
+        ${block.n ? `<div class="lesson-arabic-note">${block.n}</div>` : ''}
+      </div>`;
+    case 'note': return `<div class="lesson-note-block">${block.v}</div>`;
+    default:     return '';
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   § Renderer
+   ══════════════════════════════════════════════════════════ */
+const Renderer = (() => {
+
+  /* ── Accueil ─────────────────────────────────────────── */
+  function home() {
+    const prog = Progress.getDebutantProgress();
+    document.getElementById('page-home').innerHTML = `
+      <div class="hero">
+        <div class="hero__star">${Icons.star8()}</div>
+        <div class="hero__arabic">علم الفقه المالكي</div>
+        <h1 class="hero__title">Fiqh Malikite</h1>
+        <p class="hero__subtitle">
+          Étudiez la jurisprudence islamique de l'école malikite de manière
+          progressive, structurée et illustrée — d'après les sources classiques.
+        </p>
+        <div class="hero__cta">
+          <button class="btn btn--primary btn--lg" onclick="Router.navigate('levels')">
+            Commencer l'étude
+          </button>
+          <button class="btn btn--outline btn--lg" onclick="Router.navigate('quiz-hub')">
+            Questionnaires
+          </button>
+        </div>
+      </div>
+
+      <div class="star-divider">
+        <div class="star-divider__line"></div>
+        <div class="star-divider__icon">${Icons.star8()}</div>
+        <div class="star-divider__line"></div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-item__value">4</div><div class="stat-item__label">Niveaux</div></div>
+        <div class="stat-item"><div class="stat-item__value">4</div><div class="stat-item__label">Sujets débutant</div></div>
+        <div class="stat-item"><div class="stat-item__value">24</div><div class="stat-item__label">Leçons</div></div>
+        <div class="stat-item"><div class="stat-item__value">${prog.done}/4</div><div class="stat-item__label">Quiz complétés</div></div>
+      </div>`;
+  }
+
+  /* ── Niveaux ─────────────────────────────────────────── */
+  function levels() {
+    const levelRoutes = { debutant: 'debutant', intermediaire: 'intermediaire', avance: 'avance' };
+    const allSubjects = [
+      ...DEBUTANT.subjects,
+      ...(typeof INTERMEDIAIRE !== 'undefined' ? INTERMEDIAIRE.subjects : []),
+      ...(typeof AVANCE        !== 'undefined' ? AVANCE.subjects        : [])
+    ];
+
+    document.getElementById('page-levels').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">المستويات</span>
+        <h1 class="page-header__title">Niveaux d'Étude</h1>
+        <p class="page-header__desc">Progressez méthodiquement à travers les enseignements du fiqh malikite.</p>
+      </div>
+      <div class="grid-levels">
+        ${LEVELS.map((lvl, i) => {
+          const route = levelRoutes[lvl.id];
+          const p = lvl.id === 'debutant'
+            ? Progress.getDebutantProgress()
+            : (lvl.id === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined')
+              ? (() => {
+                  const done = INTERMEDIAIRE.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
+                  const total = INTERMEDIAIRE.subjects.length;
+                  return { done, total, percent: Math.round(done / total * 100) };
+                })()
+            : (lvl.id === 'avance' && typeof AVANCE !== 'undefined')
+              ? (() => {
+                  const done = AVANCE.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
+                  const total = AVANCE.subjects.length;
+                  return { done, total, percent: Math.round(done / total * 100) };
+                })()
+            : { done: 0, total: lvl.subjectCount, percent: 0 };
+          return `
+          <div class="level-card ${lvl.locked ? 'level-card--locked' : ''}"
+               style="--level-color:${lvl.color}"
+               ${!lvl.locked && route ? `onclick="Router.navigate('${route}')"` : ''}>
+            <div class="level-card__header">
+              <span class="level-card__number">Niveau ${i + 1}</span>
+              ${lvl.locked ? `<span class="level-card__lock-icon">${Icons.lock()}</span>` : ''}
+            </div>
+            <div class="level-card__arabic">${lvl.arabicLabel}</div>
+            <div class="level-card__title">${lvl.label}</div>
+            <div class="level-card__desc">${lvl.description}</div>
+            <div class="level-card__meta">
+              <span class="level-card__count">${lvl.locked ? 'Disponible prochainement' : `${lvl.subjectCount} sujets`}</span>
+              ${!lvl.locked ? `<span class="chip chip--teal">Accessible</span>` : ''}
+            </div>
+            ${!lvl.locked ? `<div class="level-card__progress-bar"><div class="level-card__progress-fill" style="width:${p.percent}%"></div></div>` : ''}
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  /* ── Débutant ────────────────────────────────────────── */
+  function debutant() {
+    document.getElementById('page-debutant').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">${DEBUTANT.arabicLabel}</span>
+        <h1 class="page-header__title">Niveau Débutant</h1>
+        <p class="page-header__desc">${DEBUTANT.description}</p>
+        <div style="margin-top:var(--sp-3)">
+          <span class="lesson-badge-source">Source : ${DEBUTANT.source}</span>
+        </div>
+      </div>
+      <div class="grid-subjects">
+        ${DEBUTANT.subjects.map(subj => {
+          const score    = Progress.getScore(subj.quiz.id);
+          const hasBadge = Progress.hasBadge(subj.badge.id);
+          const avail    = subj.lessons.filter(l => l.status === 'available').length;
+          const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
+          const pct      = avail ? Math.round((done / subj.lessons.length) * 100) : 0;
+          return `
+          <div class="subject-card"
+               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'debutant',subjectTitle:'${subj.title.replace(/\'/g, "\\\'")}'})">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between">
+              <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
+              ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
+                : score !== null ? `<span class="chip chip--${score >= 85 ? 'success' : 'muted'}">${score}%</span>`
+                : avail ? `<span class="chip chip--teal">${avail} leçons</span>`
+                : ''}
+            </div>
+            <div class="subject-card__arabic">${subj.arabicTitle}</div>
+            <div class="subject-card__title">${subj.title}</div>
+            <div class="subject-card__desc">${subj.description}</div>
+            <div class="subject-card__footer">
+              <span class="subject-card__lesson-count">
+                ${avail}/${subj.lessons.length} leçons dispo.
+              </span>
+              <span class="subject-card__score ${score !== null && score >= 85 ? 'has-score' : ''}">
+                ${score !== null ? `Quiz : ${score}%` : 'Quiz à faire'}
+              </span>
+            </div>
+            <div class="subject-card__progress">
+              <div class="subject-card__progress-fill" style="width:${pct}%"></div>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  /* ── Hub Questionnaires ──────────────────────────────── */
+  function quizHub() {
+    const allLevels = [
+      { data: DEBUTANT,      label: 'Niveau Débutant',       color: '#1A6B68' },
+      ...(typeof INTERMEDIAIRE !== 'undefined'
+          ? [{ data: INTERMEDIAIRE, label: 'Niveau Intermédiaire', color: '#8A620A' }] : []),
+      ...(typeof AVANCE !== 'undefined'
+          ? [{ data: AVANCE,        label: 'Niveau Avancé',        color: '#2A5080' }] : [])
+    ];
+    const allQ = allLevels.flatMap(({ data }) => data.subjects.map(subj => {
+      const score   = Progress.getScore(subj.quiz.id);
+      const hasQ    = subj.quiz.questions.length > 0;
+      const status  = !hasQ ? 'unavailable'
+                    : score === null ? 'available'
+                    : score >= 85   ? 'passed' : 'failed';
+      return { subj, score, hasQ, status };
+    }));
+
+    const done    = allQ.filter(q => q.score !== null).length;
+    const passed  = allQ.filter(q => q.status === 'passed').length;
+    const withScore = allQ.filter(q => q.score !== null);
+    const avg     = withScore.length
+      ? Math.round(withScore.reduce((a,b) => a + b.score, 0) / withScore.length) : null;
+    const totalQ  = allQ.reduce((a,b) => a + b.subj.quiz.questions.length, 0);
+
+    const renderCards = (subjects) => subjects.map(({ subj, score, hasQ, status }) => `
+      <div class="qh-card qh-card--${status}">
+        <div class="qh-card-top">
+          <div class="qh-card-icon-sm">${Icons.byName(subj.icon)}</div>
+          <div>
+            ${status === 'passed'     ? `<span class="qh-status qh-status--pass">✓ Réussi</span>`
+            : status === 'failed'     ? `<span class="qh-status qh-status--fail">Échoué</span>`
+            : status === 'unavailable'? `<span class="qh-status qh-status--lock">Bientôt</span>`
+            :                           `<span class="qh-status qh-status--new">À faire</span>`}
+          </div>
+        </div>
+        <div class="qh-card-arabic">${subj.arabicTitle}</div>
+        <div class="qh-card-title">${subj.title}</div>
+        <div class="qh-card-meta">${subj.quiz.questions.length} questions · badge ≥ 85%</div>
+        ${score !== null ? `
+          <div class="qh-card-score-wrap">
+            <div class="qh-card-score-bar">
+              <div class="qh-card-score-fill ${score >= 85 ? 'pass' : 'fail'}"
+                   style="width:${score}%"></div>
+            </div>
+            <div class="qh-card-score-num ${score >= 85 ? 'pass' : 'fail'}">${score}%</div>
+          </div>
+        ` : `<div class="qh-card-score-empty">Non commencé</div>`}
+        <button class="btn ${status === 'passed' ? 'btn--outline' : 'btn--primary'} qh-card-btn"
+                ${!hasQ ? 'disabled' : ''}
+                onclick="Quiz.start(${JSON.stringify(subj.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj.title}', 'hub')">
+          ${score !== null ? 'Réessayer' : 'Commencer'} ${Icons.arrowR()}
+        </button>
+      </div>`).join('');
+
+    document.getElementById('page-quiz-hub').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">الاختبارات</span>
+        <h1 class="page-header__title">Questionnaires</h1>
+        <p class="page-header__desc">Évaluez vos connaissances. Un score ≥ 85 % débloque le badge.</p>
+      </div>
+      <div class="qh-stats">
+        <div class="qh-stat"><div class="qh-stat-val">${done}/${allQ.length}</div><div class="qh-stat-lbl">Complétés</div></div>
+        <div class="qh-stat"><div class="qh-stat-val" style="color:var(--success)">${passed}</div><div class="qh-stat-lbl">Réussis ≥ 85%</div></div>
+        <div class="qh-stat"><div class="qh-stat-val">${avg !== null ? avg+'%' : '—'}</div><div class="qh-stat-lbl">Moyenne</div></div>
+        <div class="qh-stat"><div class="qh-stat-val">${totalQ}</div><div class="qh-stat-lbl">Questions total</div></div>
+      </div>
+      ${allLevels.map(({ data, label, color }) => {
+        const lvlQ = data.subjects.map(subj => {
+          const score = Progress.getScore(subj.quiz.id);
+          const hasQ  = subj.quiz.questions.length > 0;
+          const status = !hasQ ? 'unavailable' : score===null ? 'available' : score>=85 ? 'passed' : 'failed';
+          return { subj, score, hasQ, status };
+        });
+        return `
+        <div class="section-level-label" style="color:${color}">${label}</div>
+        <div class="qh-grid">${renderCards(lvlQ)}</div>`;
+      }).join('')}`;
+  }
+
+  /* ── Détail d'un sujet ───────────────────────────────── */
+  /* ── Niveau Intermédiaire ────────────────────────────── */
+  function intermediaire() {
+    const lvl = INTERMEDIAIRE;
+    document.getElementById('page-intermediaire').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">${lvl.arabicLabel}</span>
+        <h1 class="page-header__title">Niveau Intermédiaire</h1>
+        <p class="page-header__desc">${lvl.description}</p>
+        <div style="margin-top:var(--sp-3)">
+          <span class="lesson-badge-source">Source : ${lvl.source}</span>
+        </div>
+      </div>
+      <div class="grid-subjects">
+        ${lvl.subjects.map(subj => {
+          const score    = Progress.getScore(subj.quiz.id);
+          const hasBadge = Progress.hasBadge(subj.badge.id);
+          const avail    = subj.lessons.filter(l => l.status === 'available').length;
+          const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
+          return `
+          <div class="subject-card"
+               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'intermediaire',subjectTitle:'${subj.title.replace(/\'/g, "\\\'")}'})">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between">
+              <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
+              ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
+                : score !== null ? `<span class="chip chip--${score >= 85 ? 'success' : 'muted'}">${score}%</span>`
+                : avail ? `<span class="chip chip--teal">${avail} leçons</span>`
+                : ''}
+            </div>
+            <div class="subject-card__arabic">${subj.arabicTitle}</div>
+            <div class="subject-card__title">${subj.title}</div>
+            <div class="subject-card__desc">${subj.description}</div>
+            <div class="subject-card__footer">
+              <span class="subject-card__lesson-count">
+                ${avail}/${subj.lessons.length} leçons dispo.
+              </span>
+              <span class="subject-card__score ${score !== null && score >= 85 ? 'has-score' : ''}">
+                ${score !== null ? `${score}%` : Icons.arrowR()}
+              </span>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  /* ── Niveau Avancé ───────────────────────────────────── */
+  function avance() {
+    if (typeof AVANCE === 'undefined') return;
+    const lvl = AVANCE;
+    document.getElementById('page-avance').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">${lvl.arabicLabel}</span>
+        <h1 class="page-header__title">Niveau Avancé</h1>
+        <p class="page-header__desc">${lvl.description}</p>
+        <div style="margin-top:var(--sp-3)">
+          <span class="lesson-badge-source">Source : ${lvl.source}</span>
+        </div>
+      </div>
+      <div class="grid-subjects">
+        ${lvl.subjects.map(subj => {
+          const score    = Progress.getScore(subj.quiz.id);
+          const hasBadge = Progress.hasBadge(subj.badge.id);
+          const avail    = subj.lessons.filter(l => l.status === 'available').length;
+          const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
+          const safeT    = subj.title.replace(/'/g, '&#39;');
+          return `
+          <div class="subject-card"
+               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'avance',subjectTitle:'${safeT}'})">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between">
+              <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
+              ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
+                : score !== null ? `<span class="chip chip--${score >= 85 ? 'success' : 'muted'}">${score}%</span>`
+                : avail ? `<span class="chip chip--teal">${avail} leçons</span>`
+                : ''}
+            </div>
+            <div class="subject-card__arabic">${subj.arabicTitle}</div>
+            <div class="subject-card__title">${subj.title}</div>
+            <div class="subject-card__desc">${subj.description}</div>
+            <div class="subject-card__footer">
+              <span class="subject-card__lesson-count">
+                ${avail}/${subj.lessons.length} leçons dispo.
+              </span>
+              <span class="subject-card__score ${score !== null && score >= 85 ? 'has-score' : ''}">
+                ${score !== null ? `${score}%` : Icons.arrowR()}
+              </span>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  function subject(subjectId, level) {
+    const lvlData = (level === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined') ? INTERMEDIAIRE
+                  : (level === 'avance'        && typeof AVANCE        !== 'undefined') ? AVANCE
+                  : DEBUTANT;
+    const subj = lvlData.subjects.find(s => s.id === subjectId);
+    if (!subj) return;
+    const score    = Progress.getScore(subj.quiz.id);
+    const quizAvail = subj.quiz.questions.length > 0;
+
+    document.getElementById('page-subject').innerHTML = `
+      <div class="subject-detail__header">
+        <div class="subject-detail__icon-big">${Icons.byName(subj.icon)}</div>
+        <div class="subject-detail__info">
+          <span class="subject-detail__arabic">${subj.arabicTitle}</span>
+          <h1 class="subject-detail__title">${subj.title}</h1>
+          <p class="subject-detail__desc">${subj.description}</p>
+        </div>
+      </div>
+
+      <div class="section-title">Leçons <span class="count-chip">${subj.lessons.length}</span></div>
+      <div class="lessons-list">
+        ${subj.lessons.map((l, idx) => {
+          const done   = Progress.isLessonDone(l.id);
+          const avail  = l.status === 'available';
+          const lvlKey = level || 'debutant';
+          const safeSubjTitle  = subj.title.replace(/'/g, '&#39;');
+          const safeLessTitle  = l.title.replace(/'/g, '&#39;');
+          const clickAttr = avail
+            ? `onclick="Router.navigate('lesson',{lessonId:'${l.id}',subjectId:'${subj.id}',level:'${lvlKey}',subjectTitle:'${safeSubjTitle}',lessonTitle:'${safeLessTitle}'})"`
+            : '';
+          const num = String(idx + 1).padStart(2, '0');
+          return `
+          <div class="lesson-item ${!avail ? 'lesson-item--locked' : ''}" ${clickAttr}>
+            <span class="lesson-item__num">${num}</span>
+            <span class="lesson-item__title">${l.title}</span>
+            <span class="lesson-item__status ${done ? 'lesson-item__status--done' : ''}">
+              ${done ? Icons.check() : (!avail ? Icons.lock() : Icons.arrowR())}
+            </span>
+          </div>`;
+        }).join('')}
+      </div>
+
+      <div class="quiz-block ${!quizAvail ? 'quiz-block--locked' : ''}">
+        <div class="quiz-block__icon">${Icons.quiz()}</div>
+        <div class="quiz-block__info">
+          <div class="quiz-block__title">${subj.quiz.title}</div>
+          <div class="quiz-block__desc">
+            ${score !== null
+              ? `Score : <strong>${score}%</strong> — ${score >= 85 ? '✦ Badge débloqué !' : 'Score insuffisant (< 85 %)'}`
+              : quizAvail ? 'Testez vos connaissances — ≥ 85 % pour le badge.'
+              : 'Disponible après importation du PDF.'}
+          </div>
+        </div>
+        ${score !== null ? `<span class="quiz-block__score">${score}%</span>` : ''}
+        <button class="btn ${!quizAvail ? 'btn--outline' : 'btn--primary'} btn--sm"
+                ${!quizAvail ? 'disabled' : ''}
+                onclick="Quiz.start(${JSON.stringify(subj.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj.title}', 'subject')">
+          ${score !== null ? 'Réessayer' : 'Commencer'} ${Icons.arrowR()}
+        </button>
+      </div>
+
+      <div style="margin-top:var(--sp-6)">
+        <button class="btn btn--ghost" onclick="Router.navigate('${level||'debutant'}')">
+          Retour aux sujets
+        </button>
+      </div>`;
+  }
+
+  /* ── Leçon ───────────────────────────────────────────── */
+  function lesson(lessonId, subjectId, level) {
+    const lvlData = (level === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined') ? INTERMEDIAIRE
+                  : (level === 'avance'        && typeof AVANCE        !== 'undefined') ? AVANCE
+                  : DEBUTANT;
+    const subj      = lvlData.subjects.find(s => s.id === subjectId);
+    const lessonData = subj?.lessons.find(l => l.id === lessonId);
+    if (lessonData) Progress.markLessonDone(lessonId);
+
+    let bodyHtml = '';
+    if (lessonData?.content && Array.isArray(lessonData.content)) {
+      bodyHtml = lessonData.content.map(renderContentBlock).join('');
+    } else {
+      bodyHtml = `
+        <div class="lesson-content__placeholder">
+          <div class="lesson-content__placeholder-icon">${Icons.book()}</div>
+          <h3>Contenu en cours de préparation</h3>
+          <p>Disponible après importation du PDF correspondant.</p>
+        </div>`;
+    }
+
+    document.getElementById('page-lesson').innerHTML = `
+      <div class="lesson-body">
+        <span class="lesson-badge-source">${lvlData.source}</span>
+        <h1 class="lesson-title">${lessonData?.title || 'Leçon'}</h1>
+        ${bodyHtml}
+        <div class="lesson-nav-bar">
+          <button class="btn btn--ghost"
+                  onclick="Router.navigate('subject',{subjectId:'${subjectId}',level:'${level||'debutant'}',subjectTitle:'${subj?.title||''}'})">
+            Retour aux leçons
+          </button>
+          <button class="btn btn--primary btn--sm"
+                  onclick="Quiz.start(${JSON.stringify(subj?.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj?.title||''}', 'subject')">
+            Faire le quiz
+          </button>
+        </div>
+      </div>`;
+  }
+
+  /* ── Badges ──────────────────────────────────────────── */
+  function badges() { Badges.renderPage(); }
+
+  /* ── Progression ─────────────────────────────────────── */
+  function progress() {
+    const allLvls = [
+      { data: DEBUTANT, route: 'debutant' },
+      ...(typeof INTERMEDIAIRE !== 'undefined' ? [{ data: INTERMEDIAIRE, route: 'intermediaire' }] : []),
+      ...(typeof AVANCE        !== 'undefined' ? [{ data: AVANCE,        route: 'avance'        }] : [])
+    ];
+
+    const renderLevel = ({ data, route }) => {
+      const scores   = data.subjects.map(s => Progress.getScore(s.quiz.id)).filter(x => x !== null);
+      const pct      = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0)/scores.length) : 0;
+      const done     = scores.length;
+      const total    = data.subjects.length;
+      return `
+      <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius-xl);padding:var(--sp-6);margin-bottom:var(--sp-6)">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--sp-4)">
+          <div>
+            <div style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:600">${data.label}</div>
+            <div style="font-size:var(--text-sm);color:var(--text-muted)">${data.arabicLabel}</div>
+          </div>
+          <div style="font-family:var(--font-display);font-size:var(--text-3xl);font-weight:700;color:var(--gold)">${pct}%</div>
+        </div>
+        <div class="progress-bar"><div class="progress-bar__fill" style="width:${pct}%"></div></div>
+        <div style="font-size:var(--text-xs);color:var(--text-muted);margin-top:var(--sp-2)">${done} questionnaire${done>1?'s':''} complété${done>1?'s':''} sur ${total}</div>
+      </div>
+
+      <div class="section-title" style="margin-top:var(--sp-2)">Sujets — ${data.label}</div>
+      <div class="progress-overview" style="margin-bottom:var(--sp-10)">
+        ${data.subjects.map(subj => {
+          const score = Progress.getScore(subj.quiz.id);
+          const pass  = score !== null && score >= 85;
+          const avail = subj.lessons.filter(l => l.status === 'available').length;
+          const done2 = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
+          const safeT = subj.title.replace(/'/g, '&#39;');
+          return `
+          <div class="progress-subject-row" style="cursor:pointer"
+               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'${route}',subjectTitle:'${safeT}'})">
+            <div>
+              <div class="progress-subject-row__name">${subj.title}</div>
+              <div style="font-size:var(--text-xs);color:var(--text-muted)">${subj.arabicTitle} · ${done2}/${avail} leçons lues</div>
+            </div>
+            <div class="progress-subject-row__score ${pass ? 'pass' : ''}">${score !== null ? `${score}%` : '—'}</div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar"><div class="progress-bar__fill" style="width:${score !== null ? 100 : 0}%"></div></div>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>`;
+    };
+
+    document.getElementById('page-progress').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">التقدم</span>
+        <h1 class="page-header__title">Ma Progression</h1>
+        <p class="page-header__desc">Suivi de votre avancement sur l'ensemble des niveaux.</p>
+      </div>
+      ${allLvls.map(renderLevel).join('')}`;
+  }
+
+  return { home, levels, debutant, intermediaire, avance, quizHub, subject, lesson, badges, progress };
+})();
+
+/* ══════════════════════════════════════════════════════════
+   § Initialisation
+   ══════════════════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  Theme.init();
+  Router.init();
+  Badges.init();
+  Router.navigate('home');
+
+  /* Mobile menu */
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const sidebar   = document.getElementById('sidebar');
+  const overlay   = document.getElementById('sidebar-overlay');
+
+  mobileBtn?.addEventListener('click', () => {
+    sidebar.classList.toggle('mobile-open');
+    overlay.classList.toggle('visible');
+  });
+  overlay?.addEventListener('click', () => {
+    sidebar.classList.remove('mobile-open');
+    overlay.classList.remove('visible');
+  });
+});
