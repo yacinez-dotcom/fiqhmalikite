@@ -148,7 +148,12 @@ const Renderer = (() => {
 
   /* ── Niveaux ─────────────────────────────────────────── */
   function levels() {
-    const levelRoutes = { debutant: 'debutant', intermediaire: 'intermediaire', avance: 'avance' };
+    const levelRoutes = {
+      debutant: 'debutant',
+      intermediaire: 'intermediaire',
+      avance: 'avance',
+      expert: 'expert'
+    };
     const allSubjects = [
       ...DEBUTANT.subjects,
       ...(typeof INTERMEDIAIRE !== 'undefined' ? INTERMEDIAIRE.subjects : []),
@@ -229,7 +234,7 @@ const Renderer = (() => {
           const pct      = avail ? Math.round((done / subj.lessons.length) * 100) : 0;
           return `
           <div class="subject-card"
-               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'debutant',subjectTitle:'${subj.title.replace(/\'/g, "\\\'")}'})">
+               data-subj-id="${subj.id}" data-subj-lvl="debutant">
             <div style="display:flex;align-items:flex-start;justify-content:space-between">
               <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
               ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
@@ -359,7 +364,7 @@ const Renderer = (() => {
           const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
           return `
           <div class="subject-card"
-               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'intermediaire',subjectTitle:'${subj.title.replace(/\'/g, "\\\'")}'})">
+               data-subj-id="${subj.id}" data-subj-lvl="intermediaire">
             <div style="display:flex;align-items:flex-start;justify-content:space-between">
               <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
               ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
@@ -405,7 +410,7 @@ const Renderer = (() => {
           const safeT    = subj.title.replace(/\\'/g, "\\'");
           return `
           <div class="subject-card"
-               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'avance',subjectTitle:'${safeT}'})">
+               data-subj-id="${subj.id}" data-subj-lvl="avance">
             <div style="display:flex;align-items:flex-start;justify-content:space-between">
               <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
               ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
@@ -436,8 +441,9 @@ const Renderer = (() => {
                   : DEBUTANT;
     const subj = lvlData.subjects.find(s => s.id === subjectId);
     if (!subj) return;
-    const score    = Progress.getScore(subj.quiz.id);
+    const score     = Progress.getScore(subj.quiz.id);
     const quizAvail = subj.quiz.questions.length > 0;
+    const lvlKey    = level || 'debutant';
 
     document.getElementById('page-subject').innerHTML = `
       <div class="subject-detail__header">
@@ -450,21 +456,15 @@ const Renderer = (() => {
       </div>
 
       <div class="section-title">Leçons <span class="count-chip">${subj.lessons.length}</span></div>
-      <div class="lessons-list">
+      <div class="lessons-list" id="lessons-list-${subj.id}">
         ${subj.lessons.map((l, idx) => {
-          const done   = Progress.isLessonDone(l.id);
-          const avail  = l.status === 'available';
-          const lvlKey = level || 'debutant';
-          // Use \' to escape apostrophes inside single-quoted JS strings in onclick attributes
-          // &#39; is WRONG here: HTML parser decodes it to ' which breaks the JS string
-          const safeSubjTitle = subj.title.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-          const safeLessTitle = l.title.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-          const clickAttr = avail
-            ? `onclick="Router.navigate('lesson',{lessonId:'${l.id}',subjectId:'${subj.id}',level:'${lvlKey}',subjectTitle:'${safeSubjTitle}',lessonTitle:'${safeLessTitle}'})"`
-            : '';
-          const num = String(idx + 1).padStart(2, '0');
+          const done  = Progress.isLessonDone(l.id);
+          const avail = l.status === 'available';
+          const num   = String(idx + 1).padStart(2, '0');
+          /* data-* attributes only — NO string embedding in onclick */
           return `
-          <div class="lesson-item ${!avail ? 'lesson-item--locked' : ''}" ${clickAttr}>
+          <div class="lesson-item ${!avail ? 'lesson-item--locked' : ''}"
+               ${avail ? `data-lid="${l.id}" data-sid="${subj.id}" data-lvl="${lvlKey}"` : ''}>
             <span class="lesson-item__num">${num}</span>
             <span class="lesson-item__title">${l.title}</span>
             <span class="lesson-item__status ${done ? 'lesson-item__status--done' : ''}">
@@ -488,16 +488,33 @@ const Renderer = (() => {
         ${score !== null ? `<span class="quiz-block__score">${score}%</span>` : ''}
         <button class="btn ${!quizAvail ? 'btn--outline' : 'btn--primary'} btn--sm"
                 ${!quizAvail ? 'disabled' : ''}
-                onclick="Quiz.startById('${subj.quiz.id}', '${subj.title.replace(/'/g,"\\'")}', 'subject')">
+                data-quiz-id="${subj.quiz.id}" data-quiz-origin="subject">
           ${score !== null ? 'Réessayer' : 'Commencer'} ${Icons.arrowR()}
         </button>
       </div>
 
       <div style="margin-top:var(--sp-6)">
-        <button class="btn btn--ghost" onclick="Router.navigate('${level||'debutant'}')">
-          Retour aux sujets
+        <button class="btn btn--ghost" data-nav="${lvlKey}">
+          ← Retour aux sujets
         </button>
       </div>`;
+
+    /* Attach event listeners AFTER innerHTML set */
+    document.querySelectorAll(`#lessons-list-${subj.id} [data-lid]`).forEach(el => {
+      el.addEventListener('click', () =>
+        Router.navigate('lesson', {
+          lessonId:  el.dataset.lid,
+          subjectId: el.dataset.sid,
+          level:     el.dataset.lvl
+        })
+      );
+    });
+    const qBtn = document.querySelector(`[data-quiz-id="${subj.quiz.id}"]`);
+    if (qBtn) qBtn.addEventListener('click', () =>
+      Quiz.startById(subj.quiz.id, subj.title, 'subject'));
+    document.querySelectorAll('[data-nav]').forEach(btn =>
+      btn.addEventListener('click', () => Router.navigate(btn.dataset.nav))
+    );
   }
 
   /* ── Leçon ───────────────────────────────────────────── */
@@ -513,6 +530,10 @@ const Renderer = (() => {
     let bodyHtml = '';
     if (lessonData?.content && Array.isArray(lessonData.content)) {
       bodyHtml = lessonData.content.map(renderContentBlock).join('');
+      /* Apply Arabic hover tooltips */
+      if (typeof applyArabicTooltips === 'function') {
+        bodyHtml = applyArabicTooltips(bodyHtml);
+      }
     } else {
       bodyHtml = `
         <div class="lesson-content__placeholder">
@@ -529,15 +550,22 @@ const Renderer = (() => {
         ${bodyHtml}
         <div class="lesson-nav-bar">
           <button class="btn btn--ghost"
-                  onclick="Router.navigate('subject',{subjectId:'${subjectId}',level:'${level||'debutant'}',subjectTitle:'${subj?.title||''}'})">
-            Retour aux leçons
+                  data-subj-back="1" data-subj-id="${subjectId}" data-subj-lvl="${level||'debutant'}">
+            ← Retour aux leçons
           </button>
           <button class="btn btn--primary btn--sm"
-                  onclick="Quiz.startById('${subj?.quiz?.id || ''}', '${(subj?.title||'').replace(/'/g,"\\'")}', 'subject')">
-            Faire le quiz
+                  data-quiz-id="${subj?.quiz?.id || ''}" data-quiz-origin="subject">
+            Faire le quiz →
           </button>
         </div>
       </div>`;
+
+    /* Attach quiz button listener */
+    const qbtn = document.querySelector('[data-quiz-id]');
+    if (qbtn && qbtn.dataset.quizId) {
+      qbtn.addEventListener('click', () =>
+        Quiz.startById(qbtn.dataset.quizId, subj?.title || '', 'subject'));
+    }
   }
 
   /* ── Badges ──────────────────────────────────────────── */
@@ -580,7 +608,7 @@ const Renderer = (() => {
           const safeT = subj.title.replace(/\\'/g, "\\'");
           return `
           <div class="progress-subject-row" style="cursor:pointer"
-               onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'${route}',subjectTitle:'${safeT}'})">
+               data-subj-id="${subj.id}" data-subj-lvl="${route}">
             <div>
               <div class="progress-subject-row__name">${subj.title}</div>
               <div style="font-size:var(--text-xs);color:var(--text-muted)">${subj.arabicTitle} · ${done2}/${avail} leçons lues</div>
@@ -603,7 +631,9 @@ const Renderer = (() => {
       ${allLvls.map(renderLevel).join('')}`;
   }
 
-  /* ── Niveau Expert ──────────────────────────────────── */
+  /* ── Niveau Expert ──────────────────────────────────────
+     Copie exacte du modèle Avancé — EXPERT/expert substitués
+  ─────────────────────────────────────────────────────── */
   function expert() {
     if (typeof EXPERT === 'undefined') return;
     const lvl = EXPERT;
@@ -622,15 +652,12 @@ const Renderer = (() => {
           const hasBadge = Progress.hasBadge(subj.badge.id);
           const avail    = subj.lessons.filter(l => l.status === 'available').length;
           const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
-          const safeT    = subj.title.replace(/\\'/g, "\\'");
-          const locked   = subj.quiz.status === 'locked' && avail === 0;
           return `
-          <div class="subject-card ${locked ? 'subject-card--locked' : ''}"
-               ${!locked ? `onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'expert',subjectTitle:'${safeT}'})"` : ''}>
+          <div class="subject-card"
+               data-subj-id="${subj.id}" data-subj-lvl="expert">
             <div style="display:flex;align-items:flex-start;justify-content:space-between">
               <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
-              ${locked ? `<span class="chip chip--muted">${Icons.lock()} À venir</span>`
-                : hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
+              ${hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
                 : score !== null ? `<span class="chip chip--${score >= 85 ? 'success' : 'muted'}">${score}%</span>`
                 : avail ? `<span class="chip chip--teal">${avail} leçons</span>`
                 : ''}
@@ -640,10 +667,10 @@ const Renderer = (() => {
             <div class="subject-card__desc">${subj.description}</div>
             <div class="subject-card__footer">
               <span class="subject-card__lesson-count">
-                ${locked ? 'Prochainement' : `${avail}/${subj.lessons.length} leçons dispo.`}
+                ${avail}/${subj.lessons.length} leçons dispo.
               </span>
               <span class="subject-card__score ${score !== null && score >= 85 ? 'has-score' : ''}">
-                ${score !== null ? `${score}%` : locked ? '' : Icons.arrowR()}
+                ${score !== null ? `${score}%` : Icons.arrowR()}
               </span>
             </div>
           </div>`;
@@ -662,6 +689,23 @@ document.addEventListener('DOMContentLoaded', () => {
   Router.init();
   Badges.init();
   Router.navigate('home');
+
+  /* ── Délégation globale : subject-cards et lesson back-button ── */
+  document.addEventListener('click', e => {
+    /* Subject card clicked */
+    const card = e.target.closest('[data-subj-id]');
+    if (card) {
+      const sid = card.dataset.subjId;
+      const lvl = card.dataset.subjLvl;
+      if (sid && lvl) {
+        if (card.dataset.subjBack) {
+          Router.navigate(lvl);
+        } else {
+          Router.navigate('subject', { subjectId: sid, level: lvl });
+        }
+      }
+    }
+  });
 
   /* Mobile menu */
   const mobileBtn = document.getElementById('mobile-menu-btn');

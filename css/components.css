@@ -1510,3 +1510,33 @@
   padding: 0;
 }
 .qz-recap-item:hover { transform: scale(1.15); }
+
+/* ── Tooltips translittération ───────────────────────────── */
+.ar-tip {
+  position: relative;
+  display: inline;
+  border-bottom: 1px dashed var(--accent);
+  cursor: help;
+  color: inherit;
+}
+.ar-tip::after {
+  content: attr(data-ar);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 3px 8px;
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  font-family: var(--font-arabic, 'Amiri', serif);
+  direction: rtl;
+  z-index: 100;
+  box-shadow: var(--shadow-md);
+}
+.ar-tip:hover::after { opacity: 1; }
