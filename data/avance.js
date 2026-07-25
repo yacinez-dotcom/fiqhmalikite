@@ -23,11 +23,11 @@ const AVANCE = {
 
   subjects: [
 
-    /* ═══ الإِجَارَة والشَّرِكَة والمُضَارَبَة ═══ */
+    /* ═══ Ijāra (الإِجَارَة) وSharika (الشَّرِكَة) وal-muḍāraba (المُضَارَبَة) ═══ */
     {
       id: "ijara",
       title: "Contrats de Travail et Sociétés",
-      arabicTitle: "الإِجَارَة والشَّرِكَة والمُضَارَبَة",
+      arabicTitle: "al-ijāra (الإِجَارَة) وal-sharika (الشَّرِكَة) وal-muḍāraba (المُضَارَبَة)",
       icon: "handshake",
       description: "Location, sociétés et commandite islamique : les contrats qui structurent la vie économique selon les règles du Mukhtasar Khalīl.",
       source: "Risāla Ibn Abī Zayd ch.37-40 · Mukhtasar Khalīl pp.165-212 · doctrine-malikite.fr Finance",
@@ -36,25 +36,25 @@ const AVANCE = {
         title: "Expert des Contrats",
         arabicTitle: "فَقِيهُ العُقُود",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الإِجَارَة والشَّرِكَة والمُضَارَبَة"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Ijāra (الإِجَارَة) وSharika (الشَّرِكَة) وal-muḍāraba (المُضَارَبَة)"
       },
 
       lessons: [
       {
         id: "ija-01",
-        title: "الإِجَارَة — Le Contrat de Location et de Prestation",
+        title: "Ijāra (الإِجَارَة) — Le Contrat de Location et de Prestation",
         status: 'available',
         content: [
-        {"t": "lead", "v": "L'الإِجَارَة est le contrat par lequel on loue un bien (عَيْن) ou on rémunère un service (عَمَل). C'est l'un des contrats les plus utilisés dans la vie quotidienne. Le Mukhtasar Khalīl (pp. 165-185) et la Risāla d'Ibn Abī Zayd (ch. 37) en détaillent les règles avec précision."},
+        {"t": "lead", "v": "L'Ijāra (الإِجَارَة) est le contrat par lequel on loue un bien (عَيْن) ou on rémunère un service (عَمَل). C'est l'un des contrats les plus utilisés dans la vie quotidienne. Le Mukhtasar Khalīl (pp. 165-185) et la Risāla d'Ibn Abī Zayd (ch. 37) en détaillent les règles avec précision."},
         {"t": "h", "v": "Définition et types"},
-        {"t": "p", "v": "L'الإِجَارَة est le transfert temporaire de l'usufruit (المَنفَعَة) d'un bien ou d'un service contre rémunération. Elle se divise en deux types : (1) إِجَارَةُ العَيْن — location d'un bien (maison, voiture, terrain) ; (2) إِجَارَةُ الذِّمَّة — prestation de services (travail, expertise, transport)."},
-        {"t": "h", "v": "أَركَان الإِجَارَة — Piliers du contrat"},
+        {"t": "p", "v": "L'Ijāra (الإِجَارَة) est le transfert temporaire de l'usufruit (المَنفَعَة) d'un bien ou d'un service contre rémunération. Elle se divise en deux types : (1) إِجَارَةُ العَيْن — location d'un bien (maison, voiture, terrain) ; (2) إِجَارَةُ الذِّمَّة — prestation de services (travail, expertise, transport)."},
+        {"t": "h", "v": "أَركَان Ijāra (الإِجَارَة) — Piliers du contrat"},
         { t:'ul', v:[
           "<strong>1. المُتَعَاقِدَان :</strong> bailleur (مُؤجِّر) et locataire (مُستَأجِر) — tous deux capables juridiquement.",
           "<strong>2. المَنفَعَة :</strong> l'usage doit être licite, connu et réalisable.",
           "<strong>3. الأُجرَة :</strong> le loyer/salaire doit être connu, licite et précisé.",
           "<strong>4. الصِّيغَة :</strong> accord explicite entre les parties.",
-          "Mukhtasar Khalīl : l'الإِجَارَة est valide même si le paiement est différé — contrairement au السَّلَم."
+          "Mukhtasar Khalīl : l'Ijāra (الإِجَارَة) est valide même si le paiement est différé — Salam (السَّلَم)."
         ] },
         {"t": "h", "v": "شُرُوط المَنفَعَة — Conditions de l'usage loué"},
         { t:'ul', v:[
@@ -73,35 +73,35 @@ const AVANCE = {
         ] },
         {"t": "h", "v": "الاستِئجَار على الأَعمَال — Prestation de services"},
         { t:'ul', v:[
-          "<strong>الأَجِير الخَاصّ :</strong> employé à plein temps (exclusif) — responsable seulement en cas de faute ou négligence.",
-          "<strong>الأَجِير المُشتَرَك :</strong> artisan ou prestataire indépendant (médecin, tailleur, transporteur) — responsable de la détérioration même sans faute selon certains savants malikites.",
+          "<strong>Ajīr Khāṣṣ (الأَجِير الخَاصّ) :</strong> employé à plein temps (exclusif) — responsable seulement en cas de faute ou négligence.",
+          "<strong>Ajīr Mushtarak (الأَجِير المُشتَرَك) :</strong> artisan ou prestataire indépendant (médecin, tailleur, transporteur) — responsable de la détérioration même sans faute selon certains savants malikites.",
           "Mukhtasar Khalīl : « وَضَمَن الأَجِيرُ المُشتَرَك » — l'artisan indépendant garantit son travail.",
           "Cette distinction est fondamentale pour déterminer la responsabilité en cas de dommage."
         ] },
-        { t:'ar', v:"الإِجَارَةُ عَقدٌ لَازِمٌ مِن الجَانِبَيْن", n:"« L'الإِجَارَة est un contrat engageant pour les deux parties. » — Mukhtasar Khalīl" },
+        { t:'ar', v:"al-ijāra (الإِجَارَة)ُ عَقدٌ لَازِمٌ مِن الجَانِبَيْن", n:"« L'al-ijāra (الإِجَارَة) est un contrat engageant pour les deux parties. » — Mukhtasar Khalīl" },
         {"t": "note", "v": "Application contemporaine : le contrat de travail (CDI, CDD), le bail d'habitation et commercial islamiques suivent ces mêmes principes. La رَحمَة (miséricorde) dans les relations employeur-employé est un principe transversal recommandé par doctrine-malikite.fr."}
         ]
       },
       {
         id: "ija-02",
-        title: "الشَّرِكَة — Les Sociétés et Partenariats Islamiques",
+        title: "Sharika (الشَّرِكَة) — Les Sociétés et Partenariats Islamiques",
         status: 'available',
         content: [
         {"t": "lead", "v": "La شَرِكَة (société, partenariat) est le contrat par lequel deux personnes ou plus mettent en commun capitaux et/ou travail pour partager les bénéfices et les pertes. Le Mukhtasar Khalīl (pp. 185-200) en distingue plusieurs types avec des règles précises."},
         {"t": "h", "v": "Définition et fondement"},
-        { t:'ar', v:"الشَّرِكَةُ إِذنٌ فِي التَّصَرُّفِ لَهَا مَعَ أَمْوَالِهمَا", n:"« La شَرِكَة est l'autorisation mutuelle de disposer des capitaux communs. » — Mukhtasar Khalīl, début du chapitre" },
+        { t:'ar', v:"al-sharika (الشَّرِكَة)ُ إِذنٌ فِي التَّصَرُّفِ لَهَا مَعَ أَمْوَالِهمَا", n:"« La شَرِكَة est l'autorisation mutuelle de disposer des capitaux communs. » — Mukhtasar Khalīl, début du chapitre" },
         {"t": "h", "v": "Types de شَرِكَة en rite malikite"},
         { t:'ul', v:[
-          "<strong>1. شَرِكَةُ العِنَان :</strong> chaque associé apporte un capital et partage les bénéfices en proportion. La plus courante.",
-          "<strong>2. شَرِكَةُ المُفَاوَضَة :</strong> associés totalement égaux en capital, travail, profits et dettes — très stricte.",
-          "<strong>3. شَرِكَةُ الأَبدَان :</strong> association de travail sans capital (deux artisans partagent leurs chantiers) — permise en rite malikite, contrairement aux chāfiʿites.",
-          "<strong>4. شَرِكَةُ الوُجُوه :</strong> association de crédit/réputation (acheter à crédit et partager les bénéfices) — divergence interne à l'école malikite."
+          "<strong>1. Sharika al-ʿInān (شَرِكَةُ العِنَان) :</strong> chaque associé apporte un capital et partage les bénéfices en proportion. La plus courante.",
+          "<strong>2. Sharika al-Mufāwaḍa (شَرِكَةُ المُفَاوَضَة) :</strong> associés totalement égaux en capital, travail, profits et dettes — très stricte.",
+          "<strong>3. Sharika al-Abdān (شَرِكَةُ الأَبدَان) :</strong> association de travail sans capital (deux artisans partagent leurs chantiers) — permise en rite malikite, contrairement aux chāfiʿites.",
+          "<strong>4. Sharika al-Wujūh (شَرِكَةُ الوُجُوه) :</strong> association de crédit/réputation (acheter à crédit et partager les bénéfices) — divergence interne à l'école malikite."
         ] },
         {"t": "h", "v": "Conditions de validité"},
         { t:'ul', v:[
           "Les deux associés doivent être capables juridiquement (بَالِغَان عَاقِلَان).",
           "Le capital doit être connu et identifié.",
-          "En شَرِكَةُ العِنَان : les capitaux en or + or OU argent + argent → valides. Or + argent → valides APRÈS conversion en une seule monnaie.",
+          "Sharika al-ʿInān (شَرِكَةُ العِنَان) : les capitaux en or + or OU argent + argent → valides. Or + argent → valides APRÈS conversion en une seule monnaie.",
           "Mukhtasar Khalīl : or + argent sans conversion préalable → شَرِكَة invalide car elle génère du ربا.",
           "Les bénéfices se partagent selon l'accord stipulé. Les pertes se répartissent toujours en proportion du capital apporté — on ne peut pas stipuler le contraire."
         ] },
@@ -119,22 +119,22 @@ const AVANCE = {
           "Si l'un des associés a commis une faute → il indemnise avant le partage.",
           "Application contemporaine : la SARL, la SAS peuvent être structurées selon ces principes pour respecter la شَرِكَة islamique."
         ] },
-        {"t": "note", "v": "Spécificité malikite importante : la شَرِكَةُ الأَبدَان (société de travail sans capital) est permise — deux avocats, deux médecins ou deux artisans peuvent s'associer et partager leurs honoraires. L'école chāfiʿite l'interdit car il n'y a pas de capital mesurable."}
+        {"t": "note", "v": "Spécificité malikite importante : Sharika al-Abdān (شَرِكَةُ الأَبدَان) (société de travail sans capital) est permise — deux avocats, deux médecins ou deux artisans peuvent s'associer et partager leurs honoraires. L'école chāfiʿite l'interdit car il n'y a pas de capital mesurable."}
         ]
       },
       {
         id: "ija-03",
-        title: "المُضَارَبَة — La Commandite Islamique",
+        title: "al-muḍāraba (المُضَارَبَة) — La Commandite Islamique",
         status: 'available',
         content: [
-        {"t": "lead", "v": "La المُضَارَبَة est le contrat entre un bailleur de fonds (رَبّ المَال) et un gérant (المُضَارِب) qui investit le capital avec son travail. Les bénéfices sont partagés selon l'accord, les pertes incombent uniquement au capital. C'est le fondement historique des échanges commerciaux à longue distance dans la civilisation islamique."},
+        {"t": "lead", "v": "La al-muḍāraba (المُضَارَبَة) Rabb al-Māl (رَبّ المَال) et un géMuḍārib (المُضَارِب) qui investit le capital avec son travail. Les bénéfices sont partagés selon l'accord, les pertes incombent uniquement au capital. C'est le fondement historique des échanges commerciaux à longue distance dans la civilisation islamique."},
         {"t": "h", "v": "Définition et nature juridique"},
-        {"t": "p", "v": "La المُضَارَبَة combine deux réalités juridiques : pour le رَبّ المَال, c'est une mise à disposition de capital (شَرِكَة في الرِّبح) ; pour le مُضَارِب, c'est une prestation de travail rémunérée par une part du bénéfice. C'est le système qui a permis les grandes routes commerciales islamiques."},
+        {"t": "p", "v": "La al-muḍāraba (المُضَارَبَة) combine deux réalités juridiques : Rabb al-Māl (رَبّ المَال), c'est une mise à disposition de capital (شَرِكَة في الرِّبح) ; pour le مُضَارِب, c'est une prestation de travail rémunérée par une part du bénéfice. C'est le système qui a permis les grandes routes commerciales islamiques."},
         {"t": "h", "v": "Conditions essentielles"},
         { t:'ul', v:[
           "Le capital doit être numérique (argent, or) — pas en nature selon la majorité des malikites.",
           "La part de bénéfice du مُضَارِب doit être une fraction connue (ex : 1/3, 1/2, 2/3) — pas une somme fixe.",
-          "Les pertes incombent UNIQUEMENT au capital (رَبّ المَال) sauf faute ou négligence du مُضَارِب.",
+          "Rabb al-Māl (رَبّ المَال) sauf faute ou négligence du مُضَارِب.",
           "Le مُضَارِب ne reçoit rien si pas de bénéfice — son travail est son «risque».",
           "Mukhtasar Khalīl : le مُضَارِب peut stipuler une avance sur bénéfices (خَرج) pour ses frais de voyage."
         ] },
@@ -142,37 +142,37 @@ const AVANCE = {
         { t:'ul', v:[
           "Liberté d'action dans le commerce général sauf restriction stipulée.",
           "Peut : acheter, vendre, louer, embaucher dans le cadre de l'objet commercial.",
-          "Ne peut PAS sans accord : faire des dons, prêter, s'associer avec un tiers avec le capital de la المُضَارَبَة.",
-          "Mukhtasar Khalīl : المُضَارِب voyageant à l'étranger avec le capital → ses frais de voyage sont à sa charge (pas sur le capital) sauf accord contraire.",
+          "Ne peut PAS sans accord : faire des dons, prêter, s'associer avec un tiers avec le capital de la al-muḍāraba (المُضَارَبَة).",
+          "Mukhtasar Khalīl : Muḍārib (المُضَارِب) voyageant à l'étranger avec le capital → ses frais de voyage sont à sa charge (pas sur le capital) sauf accord contraire.",
           "En cas de faute ou négligence : le مُضَارِب indemnise les pertes sur son patrimoine propre."
         ] },
-        {"t": "h", "v": "Fin de la المُضَارَبَة"},
+        {"t": "h", "v": "Fin de la al-muḍāraba (المُضَارَبَة)"},
         { t:'ul', v:[
-          "Elle prend fin par : accord mutuel, terme prévu, décès, retrait du capital par le رَبّ المَال.",
+          "Elle prend fin par : accord mutuel, terme prévu, décès, Rabb al-Māl (رَبّ المَال).",
           "À la fin : on évalue le capital + bénéfices, on soustrait les éventuelles pertes, puis on distribue.",
           "Si l'entreprise est en cours (بضاعة non liquidée) → on peut forcer la liquidation.",
-          "Le bénéfice n'est acquis définitivement qu'après liquidation complète (المُحَاسَبَة)."
+          "Le bénéfice n'est acquis définitivement qu'après liquidation complèMuḥāsaba (المُحَاسَبَة)."
         ] },
         {"t": "h", "v": "Application contemporaine"},
-        {"t": "p", "v": "La المُضَارَبَة est le fondement des fonds d'investissement islamiques (الصَنَادِيق الإِسلَامِيَّة) et de nombreux produits bancaires islamiques. Le déposant (رَبّ المَال) confie son argent à la banque (مُضَارِب) qui l'investit et partage les bénéfices selon un ratio convenu. Doctrine-malikite.fr confirme cette analogie dans sa section Finance Islamique."},
-        { t:'ar', v:"القِرَاضُ جَائِزٌ بِكِتَابِ اللَّهِ وَسُنَّةِ نَبِيِّهِ وَإِجمَاعِ المُسلِمِينَ", n:"« La المُضَارَبَة (قِرَاض) est licite par le Coran, la Sunna et le consensus des Muslims. » — Ibn Rushd, Bidāyat al-Mujtahid" },
-        {"t": "note", "v": "Terme malikite : le Mukhtasar Khalīl utilise القِرَاض pour désigner la المُضَارَبَة — c'est un terme propre à l'école malikite (et hanafite). L'école chāfiʿite utilise المُضَارَبَة. Les deux termes désignent le même contrat."}
+        {"t": "p", "v": "La al-muḍāraba (المُضَارَبَة) est le fondement des fonds d'investissement islamiques (الصَنَادِيق Islām (الإِسلَام)ِيَّة) et de nombreux produits bancaires islamiques. Le déRabb al-Māl (رَبّ المَال) confie son argent à la banque (مُضَارِب) qui l'investit et partage les bénéfices selon un ratio convenu. Doctrine-malikite.fr confirme cette analogie dans sa section Finance Islamique."},
+        { t:'ar', v:"القِرَاضُ جَائِزٌ بِكِتَابِ اللَّهِ وَسُنَّةِ نَبِيِّهِ وَإِجمَاعِ المُسلِمِينَ", n:"« La al-muḍāraba (المُضَارَبَة) (قِرَاض) est licite par le Coran, la Sunna et le consensus des Muslims. » — Ibn Rushd, Bidāyat al-Mujtahid" },
+        {"t": "note", "v": "Terme malikite : Qirāḍ (القِرَاض) pour désigner la al-muḍāraba (المُضَارَبَة) — c'est un terme propre à l'école malikite (et hanafite). L'école chāfiʿite utilise al-muḍāraba (المُضَارَبَة). Les deux termes désignent le même contrat."}
         ]
       },
       {
         id: "ija-04",
-        title: "الوَكَالَة والوَدِيعَة — Mandat et Dépôt",
+        title: "Wakāla (الوَكَالَة) وWadīʿa (الوَدِيعَة) — Mandat et Dépôt",
         status: 'available',
         content: [
         {"t": "lead", "v": "Deux contrats essentiels de la vie quotidienne : la وَكَالَة (mandat, délégation de pouvoir) et la وَدِيعَة (dépôt, garde). Le Mukhtasar Khalīl les traite dans la suite du chapitre des transactions."},
-        {"t": "h", "v": "الوَكَالَة — Le Mandat"},
-        {"t": "p", "v": "La وَكَالَة est le contrat par lequel une personne (المُوَكِّل) délègue à une autre (الوَكِيل) le pouvoir d'agir en son nom pour un acte juridique déterminé."},
+        {"t": "h", "v": "Wakāla (الوَكَالَة) — Le Mandat"},
+        {"t": "p", "v": "La وَكَالَة Muwakkil (المُوَكِّل) délègue à Wakīl (الوَكِيل) le pouvoir d'agir en son nom pour un acte juridique déterminé."},
         { t:'ul', v:[
-          "<strong>Condition du mandant (المُوَكِّل) :</strong> doit avoir la capacité juridique pour accomplir l'acte lui-même.",
+          "<strong>Muwakkil (المُوَكِّل) :</strong> doit avoir la capacité juridique pour accomplir l'acte lui-même.",
           "<strong>Condition de l'acte délégable :</strong> tout acte licite que le mandant peut accomplir peut être délégué (vente, mariage, poursuite judiciaire, paiement…).",
-          "<strong>Conditions du mandataire (الوَكِيل) :</strong> capacité de discernement (يُشتَرَط العَقل) — peut être un enfant mumayyiz pour les actes bénéfiques.",
+          "<strong>Wakīl (الوَكِيل) :</strong> capacité de discernement (يُشتَرَط العَقل) — peut être un enfant mumayyiz pour les actes bénéfiques.",
           "Le وَكِيل agit dans les limites du mandat — tout excès engage sa responsabilité personnelle.",
-          "Mukhtasar Khalīl : « لَا يُقِرُّ الوَكِيلٌ بِدَيْنٍ لِمَن لَا يَتَّهَمُهُ » — le mandataire ne peut reconnaître une dette pour son mandant sauf en présence d'une preuve."
+          "Mukhtasar Khalīl : « لَا يُقِرُّ Wakīl (الوَكِيل)ٌ بِدَيْنٍ لِمَن لَا يَتَّهَمُهُ » — le mandataire ne peut reconnaître une dette pour son mandant sauf en présence d'une preuve."
         ] },
         {"t": "h", "v": "Responsabilité du وَكِيل"},
         { t:'ul', v:[
@@ -181,7 +181,7 @@ const AVANCE = {
           "S'il agit dans les limites mais commet une erreur → non responsable (c'est le risque du mandant).",
           "Révocation du mandat : le mandant peut le révoquer à tout moment sauf si le mandat est lié à un droit d'un tiers."
         ] },
-        {"t": "h", "v": "الوَدِيعَة — Le Dépôt"},
+        {"t": "h", "v": "Wadīʿa (الوَدِيعَة) — Le Dépôt"},
         {"t": "p", "v": "La وَدِيعَة est le contrat par lequel une personne (المُودِع) confie un bien à une autre (المُودَع عِندَه) pour le garder sans rémunération."},
         { t:'ul', v:[
           "La وَدِيعَة est un contrat de bienfaisance (تَبَرُّع) — le gardien n'est pas rémunéré.",
@@ -191,25 +191,25 @@ const AVANCE = {
           "Mukhtasar Khalīl : si le gardien est en voyage et ne peut pas remettre le dépôt → il le laisse en garde auprès d'une personne de confiance.",
           "Preuve de la restitution : la charge de la preuve de la restitution incombe au gardien (il doit prouver qu'il a rendu le dépôt)."
         ] },
-        {"t": "h", "v": "الجُعل — La Prime de Résultat"},
-        {"t": "p", "v": "Le جُعل est le contrat par lequel on promet une récompense pour la réalisation d'un résultat déterminé (retrouver un objet perdu, réaliser un travail spécifique). Contrairement à l'الإِجَارَة, la rémunération n'est due qu'au résultat."},
+        {"t": "h", "v": "Juʿl (الجُعل) — La Prime de Résultat"},
+        {"t": "p", "v": "Le جُعل est le contrat par lequel on promet une récompense pour la réalisation d'un résultat déterminé (retrouver un objet perdu, réaliser un travail spécifique). Contrairement à l'Ijāra (الإِجَارَة), la rémunération n'est due qu'au résultat."},
         { t:'ul', v:[
           "Exemple classique : « Qui retrouve mon chameau perdu reçoit telle somme. »",
           "La rémunération n'est due qu'en cas de succès.",
           "Le جُعل peut être offert à une personne déterminée ou au public.",
           "Permis en rite malikite — doctrine-malikite.fr le confirme dans les contrats islamiques autorisés."
         ] },
-        {"t": "note", "v": "Application contemporaine : les mandats bancaires, les procurations légales, les comptes séquestres (escrow) sont des formes modernes de الوَكَالَة et الوَدِيعَة. Les coffres-forts bancaires sont des وَدِيعَة ; les fonds de placement sont des وَدِيعَة ou المُضَارَبَة selon leur structure."}
+        {"t": "note", "v": "Application contemporaine : les mandats bancaires, les procurations légales, les comptes séquestres (escrow) Wakāla (الوَكَالَة) Wadīʿa (الوَدِيعَة). Les coffres-forts bancaires sont des وَدِيعَة ; les fonds de placement sont des وَدِيعَة ou al-muḍāraba (المُضَارَبَة) selon leur structure."}
         ]
       },
       {
         id: "ija-05",
-        title: "المُزَارَعَة والمُسَاقَاة — Contrats Agricoles et Finance Participative",
+        title: "Muzāraʿa (المُزَارَعَة) وMusāqāt (المُسَاقَاة) — Contrats Agricoles et Finance Participative",
         status: 'available',
         content: [
         {"t": "lead", "v": "Deux contrats agricoles classiques du rite malikite, permis là où d'autres écoles les interdisent, et une synthèse sur la finance participative islamique contemporaine."},
-        {"t": "h", "v": "المُزَارَعَة — Le Métayage (Agriculture à Partage de Récolte)"},
-        {"t": "p", "v": "La المُزَارَعَة est le contrat entre le propriétaire d'une terre et un agriculteur : le propriétaire fournit la terre, l'agriculteur fournit le travail, et la récolte est partagée selon un ratio convenu."},
+        {"t": "h", "v": "Muzāraʿa (المُزَارَعَة) — Le Métayage (Agriculture à Partage de Récolte)"},
+        {"t": "p", "v": "Muzāraʿa (المُزَارَعَة) est le contrat entre le propriétaire d'une terre et un agriculteur : le propriétaire fournit la terre, l'agriculteur fournit le travail, et la récolte est partagée selon un ratio convenu."},
         { t:'ul', v:[
           "Permise en rite malikite — l'Imām Mālik la valide explicitement dans la Mudawwana.",
           "Interdite selon certains savants chāfiʿites et hanafites (غَرَر sur la récolte).",
@@ -217,39 +217,39 @@ const AVANCE = {
           "Le propriétaire peut apporter : terre + semences. L'agriculteur apporte : travail + équipement.",
           "En cas de mauvaise récolte naturelle (جَائِحَة) : la perte est partagée selon les mêmes ratios."
         ] },
-        {"t": "h", "v": "المُسَاقَاة — Le Contrat d'Arboriculture"},
-        {"t": "p", "v": "La المُسَاقَاة est le contrat entre le propriétaire d'arbres fruitiers (oliviers, palmiers, vignes…) et un soigneur : le propriétaire fournit les arbres, le soigneur les entretient et irrigue, les fruits sont partagés."},
+        {"t": "h", "v": "Musāqāt (المُسَاقَاة) — Le Contrat d'Arboriculture"},
+        {"t": "p", "v": "Musāqāt (المُسَاقَاة) est le contrat entre le propriétaire d'arbres fruitiers (oliviers, palmiers, vignes…) et un soigneur : le propriétaire fournit les arbres, le soigneur les entretient et irrigue, les fruits sont partagés."},
         { t:'ul', v:[
           "Validée explicitement par le Prophète ﷺ pour les palmiers de Khaybar.",
           "Permise en rite malikite, hanbalite et chāfiʿite (pour les palmiers).",
           "Conditions : arbres existants, ratio de partage connu, durée précisée.",
-          "Mukhtasar Khalīl : la المُسَاقَاة peut être étendue à tous les arbres fruitiers selon l'Imām Mālik.",
+          "Mukhtasar Khalīl : Musāqāt (المُسَاقَاة) peut être étendue à tous les arbres fruitiers selon l'Imām Mālik.",
           "Le soigneur supporte les travaux courants (arrosage, taille, cueillette), le propriétaire supporte l'infrastructure."
         ] },
-        {"t": "h", "v": "الفِنَانس الإِسلَامِيَّة المُشَارِكَة — Synthèse de la Finance Participative"},
+        {"t": "h", "v": "الفِنَانس Islām (الإِسلَام)ِيَّة المُشَارِكَة — Synthèse de la Finance Participative"},
         {"t": "p", "v": "Ces contrats classiques constituent la base de la finance islamique contemporaine. Doctrine-malikite.fr (section Finance Islamique) distingue plusieurs instruments :"},
         { t:'ul', v:[
-          "<strong>المُرَابَحَة :</strong> vente avec marge déclarée — déjà vu au niveau intermédiaire.",
+          "<strong>Murābaḥa (المُرَابَحَة) :</strong> vente avec marge déclarée — déjà vu au niveau intermédiaire.",
           "<strong>المُشَارَكَة :</strong> association en capital avec partage des risques.",
-          "<strong>الإِجَارَة المُنتَهِيَة بِالتَّمليك :</strong> crédit-bail → location qui se transforme en propriété.",
-          "<strong>الصُّكُوك (sukuks) :</strong> obligations islamiques adossées à des actifs réels.",
-          "<strong>المُضَارَبَة bancaire :</strong> compte d'investissement où la banque est مُضَارِب."
+          "<strong>Ijāra (الإِجَارَة) المُنتَهِيَة بِالتَّمليك :</strong> crédit-bail → location qui se transforme en propriété.",
+          "<strong>ṢṢukūk (الصُّكُوك) (sukuks) :</strong> obligations islamiques adossées à des actifs réels.",
+          "<strong>al-muḍāraba (المُضَارَبَة) bancaire :</strong> compte d'investissement où la banque est مُضَارِب."
         ] },
         { t:'ar', v:"مَن أَكلَ مِن عَمَلِ يَدِهِ فَقَد أَكَلَ خَيراً", n:"« Celui qui mange du fruit de son travail, mange en vérité. » — Hadīth rapporté par al-Bukhārī" },
-        {"t": "note", "v": "Doctrine-malikite.fr sur la المُزَارَعَة : « L'Imam Mālik permettait la المُزَارَعَة avec partage de la récolte, se basant sur la pratique du Prophète ﷺ à Khaybar ». Ce contrat agricole reste très pertinent pour l'agriculture contemporaine et les projets coopératifs islamiques."}
+        {"t": "note", "v": "Doctrine-malikite.Muzāraʿa (المُزَارَعَة) : « L'Muzāraʿa (المُزَارَعَة) avec partage de la récolte, se basant sur la pratique du Prophète ﷺ à Khaybar ». Ce contrat agricole reste très pertinent pour l'agriculture contemporaine et les projets coopératifs islamiques."}
         ]
       }
       ],
 
       quiz: {
         id: 'quiz-avance-ijara',
-        title: 'Questionnaire — ' + "الإِجَارَة والشَّرِكَة والمُضَارَبَة",
+        title: 'Questionnaire — ' + "Ijāra (الإِجَارَة) وSharika (الشَّرِكَة) وal-muḍāraba (المُضَارَبَة)",
         status: "available",
         score: null,
         questions: [
         {
           id: "q-ija-01",
-          text: "L'الإِجَارَة couvre deux réalités distinctes. Lesquelles ?",
+          text: "L'Ijāra (الإِجَارَة) couvre deux réalités distinctes. Lesquelles ?",
           choices: [
           { id:"a", text:"Vente et don" },
           { id:"b", text:"Location d'un bien (إِجَارَةُ العَيْن) ET prestation de services (إِجَارَةُ الذِّمَّة)" },
@@ -257,7 +257,7 @@ const AVANCE = {
           { id:"d", text:"Commerce et agriculture" }
           ],
           correctId: "b",
-          explanation: "L'الإِجَارَة désigne à la fois la location d'un bien (maison, voiture) et la prestation de services (travail, expertise, transport). Dans les deux cas, c'est un transfert temporaire de l'usufruit (المَنفَعَة) contre rémunération."
+          explanation: "L'Ijāra (الإِجَارَة) désigne à la fois la location d'un bien (maison, voiture) et la prestation de services (travail, expertise, transport). Dans les deux cas, c'est un transfert temporaire de l'usufruit (المَنفَعَة) contre rémunération."
         },
         {
           id: "q-ija-02",
@@ -269,7 +269,7 @@ const AVANCE = {
           { id:"d", text:"Makrūh seulement" }
           ],
           correctId: "b",
-          explanation: "La المَنفَعَة (usage loué) doit être licite. Si le contrat est conclu en sachant que l'usage sera illicite → l'الإِجَارَة est invalide. Cela s'applique à toute location dont l'usage principal déclaré est حَرَام."
+          explanation: "La المَنفَعَة (usage loué) doit être licite. Si le contrat est conclu en sachant que l'usage sera illicite → l'Ijāra (الإِجَارَة) est invalide. Cela s'applique à toute location dont l'usage principal déclaré est حَرَام."
         },
         {
           id: "q-ija-03",
@@ -309,7 +309,7 @@ const AVANCE = {
         },
         {
           id: "q-ija-06",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La شَرِكَةُ الأَبدَان (société de travail sans capital) est-elle permise ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Sharika al-Abdān (شَرِكَةُ الأَبدَان) (société de travail sans capital) est-elle permise ?",
           choices: [
           { id:"a", text:"Non — une société requiert toujours du capital" },
           { id:"b", text:"Oui — permise en rite malikite ; deux artisans peuvent partager leurs honoraires" },
@@ -317,11 +317,11 @@ const AVANCE = {
           { id:"d", text:"Permise seulement pour les métiers manuels" }
           ],
           correctId: "b",
-          explanation: "La شَرِكَةُ الأَبدَان est permise en rite malikite (et hanbalite) — deux médecins, deux avocats ou deux artisans peuvent s'associer et partager leurs revenus sans apport de capital. Elle est interdite selon les chāfiʿites qui exigent un capital mesurable."
+          explanation: "Sharika al-Abdān (شَرِكَةُ الأَبدَان) est permise en rite malikite (et hanbalite) — deux médecins, deux avocats ou deux artisans peuvent s'associer et partager leurs revenus sans apport de capital. Elle est interdite selon les chāfiʿites qui exigent un capital mesurable."
         },
         {
           id: "q-ija-07",
-          text: "<strong>PIÈGE :</strong> Dans une شَرِكَةُ العِنَان, un associé apporte 70% du capital. Comment se partagent les PERTES ?",
+          text: "<strong>PIÈGE :</strong> Sharika al-ʿInān (شَرِكَةُ العِنَان), un associé apporte 70% du capital. Comment se partagent les PERTES ?",
           choices: [
           { id:"a", text:"Moitié-moitié entre les associés" },
           { id:"b", text:"Selon l'accord sur les bénéfices" },
@@ -345,51 +345,51 @@ const AVANCE = {
         },
         {
           id: "q-ija-09",
-          text: "Quelle est la différence fondamentale entre la المُضَارَبَة et la شَرِكَة ?",
+          text: "Quelle est la différence fondamentale entre la al-muḍāraba (المُضَارَبَة) et la شَرِكَة ?",
           choices: [
           { id:"a", text:"Aucune différence" },
-          { id:"b", text:"Dans la المُضَارَبَة : un apporte le capital, l'autre le travail. Dans la شَرِكَة : les deux apportent du capital et/ou du travail" },
-          { id:"c", text:"La المُضَارَبَة est حَرَام" },
+          { id:"b", text:"Dans la al-muḍāraba (المُضَارَبَة) : un apporte le capital, l'autre le travail. Dans la شَرِكَة : les deux apportent du capital et/ou du travail" },
+          { id:"c", text:"La al-muḍāraba (المُضَارَبَة) est حَرَام" },
           { id:"d", text:"La شَرِكَة est réservée aux grands projets" }
           ],
           correctId: "b",
-          explanation: "La المُضَارَبَة (قِرَاض) = 1 personne apporte le capital (رَبّ المَال) + 1 personne apporte le travail (مُضَارِب). La شَرِكَة = les partenaires apportent tous un capital et/ou du travail. La différence clé : dans la المُضَارَبَة les pertes tombent UNIQUEMENT sur le capital."
+          explanation: "La al-muḍāraba (المُضَارَبَة) (قِرَاض) = 1 Rabb al-Māl (رَبّ المَال) + 1 personne apporte le travail (مُضَارِب). La شَرِكَة = les partenaires apportent tous un capital et/ou du travail. La différence clé : dans la al-muḍāraba (المُضَارَبَة) les pertes tombent UNIQUEMENT sur le capital."
         },
         {
           id: "q-ija-10",
-          text: "<strong>PIÈGE :</strong> Dans une المُضَارَبَة, si l'entreprise subit une perte sans faute du مُضَارِب, qui la supporte ?",
+          text: "<strong>PIÈGE :</strong> Dans une al-muḍāraba (المُضَارَبَة), si l'entreprise subit une perte sans faute du مُضَارِب, qui la supporte ?",
           choices: [
           { id:"a", text:"Le مُضَارِب supporte la perte en proportion de son travail" },
           { id:"b", text:"La perte est partagée moitié-moitié" },
-          { id:"c", text:"La perte incombe entièrement au رَبّ المَال (bailleur de fonds)" },
+          { id:"c", text:"La perte incombe entièRabb al-Māl (رَبّ المَال) (bailleur de fonds)" },
           { id:"d", text:"La perte est partagée selon le ratio de bénéfices" }
           ],
           correctId: "c",
-          explanation: "Principe fondamental de la المُضَارَبَة : les pertes incombent UNIQUEMENT au رَبّ المَال (celui qui a apporté le capital). Le مُضَارِب perd son travail (pas rémunéré) mais pas son patrimoine. Exception : si la perte est due à une faute ou négligence du مُضَارِب → il indemnise."
+          explanation: "Principe fondamental de la al-muḍāraba (المُضَارَبَة) : Rabb al-Māl (رَبّ المَال) (celui qui a apporté le capital). Le مُضَارِب perd son travail (pas rémunéré) mais pas son patrimoine. Exception : si la perte est due à une faute ou négligence du مُضَارِب → il indemnise."
         },
         {
           id: "q-ija-11",
-          text: "Le مُضَارِب peut-il s'associer avec un tiers en utilisant le capital de la المُضَارَبَة ?",
+          text: "Le مُضَارِب peut-il s'associer avec un tiers en utilisant le capital de la al-muḍāraba (المُضَارَبَة) ?",
           choices: [
           { id:"a", text:"Oui — il dispose librement du capital" },
-          { id:"b", text:"Non — sans accord explicite du رَبّ المَال, il ne peut pas sous-déléguer le capital" },
+          { id:"b", text:"Non — Rabb al-Māl (رَبّ المَال), il ne peut pas sous-déléguer le capital" },
           { id:"c", text:"Oui jusqu'à la moitié du capital" },
           { id:"d", text:"Oui si c'est dans le même secteur d'activité" }
           ],
           correctId: "b",
-          explanation: "Le مُضَارِب est mandaté PERSONNELLEMENT par le رَبّ المَال. Il ne peut pas déléguer ce mandat à un tiers (faire une sous-المُضَارَبَة) sans accord explicite du رَبّ المَال. Agir autrement engage sa responsabilité personnelle pour tout le capital."
+          explanation: "Le مُضَارِب est mandaté Rabb al-Māl (رَبّ المَال). Il ne peut pas déléguer ce mandat à un tiers (faire une sous-المُضَارَبَة) Rabb al-Māl (رَبّ المَال). Agir autrement engage sa responsabilité personnelle pour tout le capital."
         },
         {
           id: "q-ija-12",
-          text: "Le terme malikite pour la المُضَارَبَة est :",
+          text: "Le terme malikite pour la al-muḍāraba (المُضَارَبَة) est :",
           choices: [
-          { id:"a", text:"الشَّرِكَة" },
-          { id:"b", text:"الجُعل" },
-          { id:"c", text:"القِرَاض" },
-          { id:"d", text:"الوَكَالَة" }
+          { id:"a", text:"Sharika (الشَّرِكَة)" },
+          { id:"b", text:"Juʿl (الجُعل)" },
+          { id:"c", text:"Qirāḍ (القِرَاض)" },
+          { id:"d", text:"Wakāla (الوَكَالَة)" }
           ],
           correctId: "c",
-          explanation: "Le rite malikite et hanafite utilisent le terme القِرَاض pour désigner ce que les chāfiʿites et hanbalites appellent المُضَارَبَة. Les deux termes désignent le même contrat. Le Mukhtasar Khalīl utilise systématiquement القِرَاض."
+          explanation: "Qirāḍ (القِرَاض) pour désigner ce que les chāfiʿites et hanbalites appellent al-muḍāraba (المُضَارَبَة). Les deux termes désignent le même contrat. Le Mukhtasar Khalīl utilise systéQirāḍ (القِرَاض)."
         },
         {
           id: "q-ija-13",
@@ -417,7 +417,7 @@ const AVANCE = {
         },
         {
           id: "q-ija-15",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La المُزَارَعَة (métayage — partage de récolte) est-elle permise ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Muzāraʿa (المُزَارَعَة) (métayage — partage de récolte) est-elle permise ?",
           choices: [
           { id:"a", text:"Non — c'est du غَرَر pur" },
           { id:"b", text:"Oui — l'Imām Mālik la permet en se basant sur la pratique du Prophète ﷺ à Khaybar" },
@@ -425,19 +425,19 @@ const AVANCE = {
           { id:"d", text:"Permise uniquement pour les palmiers" }
           ],
           correctId: "b",
-          explanation: "L'Imām Mālik permet la المُزَارَعَة — le Prophète ﷺ a conclu un contrat de partage de récolte avec les habitants de Khaybar (palmiers dattiers). La Mudawwana l'étend à tous les types de cultures. Cette position est plus libérale que celle de certains chāfiʿites."
+          explanation: "L'Muzāraʿa (المُزَارَعَة) — le Prophète ﷺ a conclu un contrat de partage de récolte avec les habitants de Khaybar (palmiers dattiers). La Mudawwana l'étend à tous les types de cultures. Cette position est plus libérale que celle de certains chāfiʿites."
         },
         {
           id: "q-ija-16",
-          text: "Qu'est-ce que le جُعل et en quoi diffère-t-il de l'الإِجَارَة ?",
+          text: "Qu'est-ce que le جُعل et en quoi diffère-t-il de l'Ijāra (الإِجَارَة) ?",
           choices: [
           { id:"a", text:"Ils sont identiques" },
-          { id:"b", text:"Dans le جُعل : rémunération due SEULEMENT en cas de succès. Dans l'الإِجَارَة : rémunération due pour l'effort (pas seulement le résultat)" },
+          { id:"b", text:"Dans le جُعل : rémunération due SEULEMENT en cas de succès. Dans l'Ijāra (الإِجَارَة) : rémunération due pour l'effort (pas seulement le résultat)" },
           { id:"c", text:"Le جُعل est حَرَام car incertain" },
           { id:"d", text:"Le جُعل est une forme de charité" }
           ],
           correctId: "b",
-          explanation: "Le جُعل (prime de résultat) → rémunération conditionnée au résultat. L'الإِجَارَة → rémunération pour la prestation elle-même (qu'elle aboutisse ou non). Exemple : « Je paie 500€ à qui retrouve mon chat perdu » = جُعل. « Je paie 500€ au détective pour 10 jours de recherche » = الإِجَارَة."
+          explanation: "Le جُعل (prime de résultat) → rémunération conditionnée au résultat. L'Ijāra (الإِجَارَة) → rémunération pour la prestation elle-même (qu'elle aboutisse ou non). Exemple : « Je paie 500€ à qui retrouve mon chat perdu » = جُعل. « Je paie 500€ au détective pour 10 jours de recherche » = Ijāra (الإِجَارَة)."
         },
         {
           id: "q-ija-17",
@@ -453,7 +453,7 @@ const AVANCE = {
         },
         {
           id: "q-ija-18",
-          text: "Dans la المُسَاقَاة (contrat d'arboriculture), qui entretient les arbres et qui perçoit les fruits ?",
+          text: "Musāqāt (المُسَاقَاة) (contrat d'arboriculture), qui entretient les arbres et qui perçoit les fruits ?",
           choices: [
           { id:"a", text:"Le propriétaire entretient, le soigneur perçoit tout" },
           { id:"b", text:"Le soigneur entretient et irrigue, les fruits sont partagés entre les deux selon accord" },
@@ -461,7 +461,7 @@ const AVANCE = {
           { id:"d", text:"Le soigneur entretient et ne reçoit qu'un salaire fixe" }
           ],
           correctId: "b",
-          explanation: "Dans la المُسَاقَاة : le soigneur (المُسَاقِي) fournit tout le travail d'entretien (arrosage, taille, cueillette) et les fruits sont partagés selon un ratio convenu à l'avance. Le propriétaire apporte les arbres et les infrastructures lourdes."
+          explanation: "Musāqāt (المُسَاقَاة) : le soigneur (المُسَاقِي) fournit tout le travail d'entretien (arrosage, taille, cueillette) et les fruits sont partagés selon un ratio convenu à l'avance. Le propriétaire apporte les arbres et les infrastructures lourdes."
         },
         {
           id: "q-ija-19",
@@ -477,25 +477,25 @@ const AVANCE = {
         },
         {
           id: "q-ija-20",
-          text: "<strong>SYNTHÈSE :</strong> Quelle est la différence entre المُضَارَبَة, الشَّرِكَة et الوَكَالَة en termes de responsabilité en cas de perte ?",
+          text: "<strong>SYNTHÈSE :</strong> Quelle est la différence entre al-muḍāraba (المُضَارَبَة), Sharika (الشَّرِكَة) Wakāla (الوَكَالَة) en termes de responsabilité en cas de perte ?",
           choices: [
           { id:"a", text:"Les trois sont identiques — responsabilité partagée" },
-          { id:"b", text:"المُضَارَبَة : perte sur le capital seul. شَرِكَة : perte partagée selon capital. وَكَالَة : le mandataire n'est pas responsable sauf faute" },
+          { id:"b", text:"al-muḍāraba (المُضَارَبَة) : perte sur le capital seul. شَرِكَة : perte partagée selon capital. وَكَالَة : le mandataire n'est pas responsable sauf faute" },
           { id:"c", text:"Toujours sur le gérant/actif" },
           { id:"d", text:"Aucun des trois ne donne lieu à responsabilité" }
           ],
           correctId: "b",
-          explanation: "Synthèse des trois contrats : (1) المُضَارَبَة : perte = capital seul (رَبّ المَال), le مُضَارِب perd son travail ; (2) شَرِكَة : perte répartie selon les parts de capital (jamais autrement) ; (3) وَكَالَة : le وَكِيل est امين, responsable seulement en cas de faute ou dépassement du mandat."
+          explanation: "Synthèse des trois contrats : (1) al-muḍāraba (المُضَارَبَة) : perte = Rabb al-Māl (رَبّ المَال), le مُضَارِب perd son travail ; (2) شَرِكَة : perte répartie selon les parts de capital (jamais autrement) ; (3) وَكَالَة : le وَكِيل est امين, responsable seulement en cas de faute ou dépassement du mandat."
         }
         ]
       }
     },
 
-    /* ═══ الهِبَة والوَقف والوَصِيَّة ═══ */
+    /* ═══ Hiba (الهِبَة) وWaqf (الوَقف) وWaṣiyya (الوَصِيَّة) ═══ */
     {
       id: "hiba",
       title: "Donations, Fondation Pieuse et Testament",
-      arabicTitle: "الهِبَة والوَقف والوَصِيَّة",
+      arabicTitle: "al-hiba (الهِبَة) وal-waqf (الوَقف) وal-waṣiyya (الوَصِيَّة)",
       icon: "gift",
       description: "Transmission du patrimoine islamique : les trois contrats de générosité et de planification successorale.",
       source: "Risāla Ibn Abī Zayd ch.35-36 · Mukhtasar Khalīl pp.185-200",
@@ -504,13 +504,13 @@ const AVANCE = {
         title: "Juriste de la Générosité",
         arabicTitle: "فَقِيهُ التَّبَرُّعَات",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الهِبَة والوَقف والوَصِيَّة"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Hiba (الهِبَة) وWaqf (الوَقف) وWaṣiyya (الوَصِيَّة)"
       },
 
       lessons: [
               {
         id: "hib-01",
-        title: "الهِبَة — La Donation Islamique",
+        title: "Hiba (الهِبَة) — La Donation Islamique",
         status: 'available',
         content: [
         {"t": "lead", "v": "La هِبَة est la donation d'un bien à titre gratuit de son vivant, sans contrepartie. Le Mukhtasar Khalīl (pp. 185-195) y consacre un chapitre détaillé, avec des règles propres au rite malikite sur la révocabilité et la prise de possession."},
@@ -521,7 +521,7 @@ const AVANCE = {
           "<strong>البَيان :</strong> le bien donné doit être connu et déterminé.",
           "<strong>القَبض (prise de possession) :</strong> condition de validité selon le rite malikite — la donation n'est complète que lorsque le bénéficiaire prend possession du bien."
         ] },
-        { t:'ar', v:"لَا تَتِمُّ الهِبَةُ وَالصَّدَقَةُ وَالعَطِيَّةُ إِلَّا بِالحِيَازَةِ", n:"« La هِبَة, la صَدَقَة et l'عَطِيَّة ne sont complètes que par la prise de possession. » — Imām Mālik, Muwattaʾ" },
+        { t:'ar', v:"لَا تَتِمُّ al-hiba (الهِبَة)ُ وَالصَّدَقَةُ وَالعَطِيَّةُ إِلَّا بِالحِيَازَةِ", n:"« La هِبَة, la صَدَقَة et l'عَطِيَّة ne sont complètes que par la prise de possession. » — Imām Mālik, Muwattaʾ" },
         {"t": "h", "v": "La révocabilité de la هِبَة — positions malikites"},
         { t:'ul', v:[
           "<strong>Père → enfant mineur :</strong> le père peut révoquer la donation tant que l'enfant ne l'a pas cédée, transformée ou grevée d'une dette.",
@@ -529,7 +529,7 @@ const AVANCE = {
           "<strong>Entre autres personnes :</strong> la révocation après prise de possession est حَرَام selon l'Imām Mālik (hadīth : « celui qui reprend son don est comme le chien qui revient à son vomi »).",
           "Mukhtasar Khalīl : la révocation est interrompue si le bien donné a été vendu, détruit, transformé ou grevé."
         ] },
-        {"t": "h", "v": "الهِبَة بشرط العِوَض — Donation conditionnée à une contrepartie"},
+        {"t": "h", "v": "Hiba (الهِبَة) بشرط العِوَض — Donation conditionnée à une contrepartie"},
         {"t": "p", "v": "Si la donation est faite avec une contrepartie stipulée (ex: « je te donne cette maison si tu me donnes X »), elle prend les règles de la VENTE, non de la donation. Le droit de retrait (خِيَار العَيب) et la garantie s'appliquent alors."},
         {"t": "h", "v": "التَّفضِيل بين الأولاد — Inégalité entre enfants dans les donations"},
         {"t": "p", "v": "L'Imām Mālik recommande l'égalité entre les enfants dans les donations de leur vivant — mais ne la rend pas obligatoire. Une inégalité délibérée est makrūh. Si l'inégalité vise à léser certains héritiers, elle est interrompue après la mort (règle du 1/3 testamentaire)."},
@@ -538,7 +538,7 @@ const AVANCE = {
       },
       {
         id: "hib-02",
-        title: "الوَقف — La Fondation Pieuse",
+        title: "Waqf (الوَقف) — La Fondation Pieuse",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le وَقف (fondation pieuse, endowment) est l'immobilisation permanente d'un bien dont les revenus sont affectés à une cause charitable. C'est l'un des instruments les plus puissants de la civilisation islamique — mosquées, écoles, hôpitaux, bibliothèques ont été construits et maintenus par des awqāf."},
@@ -549,7 +549,7 @@ const AVANCE = {
           "Le وَقف est PERPÉTUEL — il dure jusqu'à la destruction physique du bien.",
           "Mukhtasar Khalīl : « وَحُبِّسَ الأَصلُ وَسُبِّلَ الثَّمَرَةُ » — le capital est immobilisé, les fruits sont libérés (au profit de la cause)."
         ] },
-        {"t": "h", "v": "شُرُوط الوَقف — Conditions de validité"},
+        {"t": "h", "v": "شُرُوط Waqf (الوَقف) — Conditions de validité"},
         { t:'ul', v:[
           "<strong>الواقف :</strong> majeur, libre, sain d'esprit, propriétaire.",
           "<strong>الموقوف :</strong> bien immeuble de préférence (terres, bâtiments) ou mobilier durable.",
@@ -557,17 +557,17 @@ const AVANCE = {
           "<strong>Condition malikite :</strong> pas de prise de possession obligatoire — le وَقف prend effet dès la déclaration devant témoins.",
           "Peut être constitué pour la vie du fondateur puis passer à une cause charitable (الوَقف الذُّرِّيَّة ثم الخَيرِيَّة)."
         ] },
-        {"t": "h", "v": "أَنوَاع الوَقف"},
+        {"t": "h", "v": "أَنوَاع Waqf (الوَقف)"},
         { t:'ul', v:[
-          "<strong>الوَقف الخَيرِيّ :</strong> directement au profit d'une institution charitable (mosquée, école, soins).",
-          "<strong>الوَقف الذُّرِّيّ :</strong> au profit de la famille d'abord, puis d'une cause charitable — permis en rite malikite.",
-          "<strong>الوَقف المُشتَرَك :</strong> plusieurs bénéficiaires simultanément."
+          "<strong>Waqf (الوَقف) الخَيرِيّ :</strong> directement au profit d'une institution charitable (mosquée, école, soins).",
+          "<strong>Waqf (الوَقف) الذُّرِّيّ :</strong> au profit de la famille d'abord, puis d'une cause charitable — permis en rite malikite.",
+          "<strong>Waqf (الوَقف) المُشتَرَك :</strong> plusieurs bénéficiaires simultanément."
         ] },
         {"t": "h", "v": "Gestion et administration du وَقف"},
         { t:'ul', v:[
           "Le naẓir (نَاظِر) ou mutawallī (مُتَوَلِّي) administre le وَقف selon les conditions du fondateur.",
           "Peut louer les biens du وَقف — c'est même la méthode de génération de revenus recommandée.",
-          "Ne peut PAS vendre le bien, sauf en cas de dégradation totale et inutilité — et seulement pour racheter un bien équivalent (الاستِبدَال).",
+          "Ne peut PAS vendre le bien, sauf en cas de dégradation totale et inutilité — et seulement pour racheter un bien éIstibdāl (الاستِبدَال).",
           "Application contemporaine : les وَقف islamiques en France sont structurés en fondations reconnues d'utilité publique."
         ] },
         { t:'ar', v:"احبِس الأَصلَ وَسَبِّل الثَّمَرَةَ", n:"« Immobilise le capital et libère les fruits. » — Hadīth (al-Bukhārī et Muslim), origine du وَقف islamique" },
@@ -576,11 +576,11 @@ const AVANCE = {
       },
       {
         id: "hib-03",
-        title: "الوَصِيَّة — Le Testament Islamique",
+        title: "Waṣiyya (الوَصِيَّة) — Le Testament Islamique",
         status: 'available',
         content: [
         {"t": "lead", "v": "La وَصِيَّة est la disposition testamentaire par laquelle une personne transfère un droit à titre gratuit après sa mort. Elle est limitée au tiers de la succession (الثُّلُث) et ne peut bénéficier à un héritier légal."},
-        {"t": "h", "v": "حُكم الوَصِيَّة — Statut"},
+        {"t": "h", "v": "حُكم Waṣiyya (الوَصِيَّة) — Statut"},
         { t:'ul', v:[
           "Sounnah muʾakkada — fortement recommandée pour qui a des biens.",
           "Le Prophète ﷺ : « Celui qui meurt sans avoir rédigé son testament meurt dans une forme de légèreté. »",
@@ -602,9 +602,9 @@ const AVANCE = {
           "Si la وَصِيَّة bénéficie à un héritier légal sans accord → elle est nulle pour la partie héritée.",
           "Exception malikite : si l'héritier bénéficiaire n'est héritier que parce que d'autres héritiers existent → certains savants malikites la valident."
         ] },
-        {"t": "h", "v": "التَّنفِيذ والوَصِيّ"},
+        {"t": "h", "v": "التَّنفِيذ وWaṣī (الوَصِيّ)"},
         { t:'ul', v:[
-          "Le الوَصِيّ (exécuteur testamentaire) est nommé pour exécuter les dispositions.",
+          "Waṣī (الوَصِيّ) (exécuteur testamentaire) est nommé pour exécuter les dispositions.",
           "Il est امين — responsable de la bonne exécution.",
           "La وَصِيَّة est exécutée APRÈS le paiement des dettes et AVANT le partage successoral.",
           "Ordre de priorité : (1) dettes envers Allah (زكاة, kafāra, hajj) → (2) dettes envers les hommes → (3) وَصِيَّة → (4) héritage."
@@ -614,11 +614,11 @@ const AVANCE = {
       },
       {
         id: "hib-04",
-        title: "العُمرَى والرُّقبَى — Donations Viagères et Conditionnelles",
+        title: "ʿUmrā (العُمرَى) وRuqbā (الرُّقبَى) — Donations Viagères et Conditionnelles",
         status: 'available',
         content: [
         {"t": "lead", "v": "Deux types de donations spéciales traités par le Mukhtasar Khalīl et ayant des statuts juridiques distincts en rite malikite."},
-        {"t": "h", "v": "العُمرَى — La Donation Viagère"},
+        {"t": "h", "v": "ʿUmrā (العُمرَى) — La Donation Viagère"},
         {"t": "p", "v": "La عُمرَى est la donation d'un bien pour la durée de la vie du bénéficiaire : « je te donne cette maison ta vie durant, puis elle retourne à mes héritiers. »"},
         { t:'ul', v:[
           "Statut malikite : la عُمرَى donne la pleine propriété au bénéficiaire — elle ne retourne PAS aux héritiers du donateur à la mort du bénéficiaire.",
@@ -626,13 +626,13 @@ const AVANCE = {
           "Hadīth du Prophète ﷺ : « L'عُمرَى est un droit permanent pour qui la reçoit. » — al-Bukhārī et Muslim.",
           "Différence avec d'autres écoles : certains hanafites rendent le retour valide."
         ] },
-        {"t": "h", "v": "الرُّقبَى — La Donation Conditionnelle au Survivant"},
+        {"t": "h", "v": "Ruqbā (الرُّقبَى) — La Donation Conditionnelle au Survivant"},
         {"t": "p", "v": "La رُقبَى est la donation conditionnée à la mort : « si tu meurs avant moi, la maison m'appartient ; si je meurs avant toi, elle t'appartient. » — Chacun surveille (يَرقُب) l'autre."},
         { t:'ul', v:[
           "Statut malikite : interdite selon l'Imām Mālik car elle contient du غَرَر (incertitude sur le bénéficiaire final).",
           "Mukhtasar Khalīl : « وَلَا رُقبَى » — la رُقبَى est invalide en rite malikite.",
           "Si conclue malgré l'interdiction : le bien reste au donateur tant qu'il est vivant ; à sa mort, la disposition est nulle.",
-          "Différence avec العُمرَى qui est valide et permanente."
+          "DifféʿUmrā (العُمرَى) qui est valide et permanente."
         ] },
         {"t": "h", "v": "الهَدِيَّة والعَطِيَّة والنِّحلَة"},
         { t:'ul', v:[
@@ -645,16 +645,16 @@ const AVANCE = {
       },
       {
         id: "hib-05",
-        title: "التَّخطِيط الإِسلَامِيّ للتَّرِكَة — Planification Successorale Contemporaine",
+        title: "التَّخطِيط Islām (الإِسلَام)ِيّ للتَّرِكَة — Planification Successorale Contemporaine",
         status: 'available',
         content: [
         {"t": "lead", "v": "Comment combiner les principes islamiques de transmission du patrimoine avec les contraintes légales contemporaines (droit français, européen) ? Synthèse de doctrine-malikite.fr et des savants malikites contemporains."},
         {"t": "h", "v": "Les instruments islamiques de transmission"},
         { t:'ul', v:[
-          "<strong>الهِبَة</strong> : donner de son vivant, hors succession — permet de transmettre librement avant la mort.",
-          "<strong>الوَقف</strong> : affecter définitivement un bien à une cause — sort de la succession.",
-          "<strong>الوَصِيَّة</strong> : disposer du 1/3 — atteindre des bénéficiaires non couverts par la succession légale.",
-          "<strong>التَّأمِين التَّكَافُلِيّ</strong> : assurance-vie islamique — peut transmettre hors succession."
+          "<strong>Hiba (الهِبَة)</strong> : donner de son vivant, hors succession — permet de transmettre librement avant la mort.",
+          "<strong>Waqf (الوَقف)</strong> : affecter définitivement un bien à une cause — sort de la succession.",
+          "<strong>Waṣiyya (الوَصِيَّة)</strong> : disposer du 1/3 — atteindre des bénéficiaires non couverts par la succession légale.",
+          "<strong>التَّأمِين Takāful (التَّكَافُل)ِيّ</strong> : assurance-vie islamique — peut transmettre hors succession."
         ] },
         {"t": "h", "v": "Articulation droit français / droit islamique"},
         { t:'ul', v:[
@@ -677,7 +677,7 @@ const AVANCE = {
 
       quiz: {
         id: 'quiz-avance-hiba',
-        title: 'Questionnaire — ' + "الهِبَة والوَقف والوَصِيَّة",
+        title: 'Questionnaire — ' + "Hiba (الهِبَة) وWaqf (الوَقف) وWaṣiyya (الوَصِيَّة)",
         status: 'available',
         score: null,
         questions: [
@@ -691,7 +691,7 @@ const AVANCE = {
           { id:"d", text:"Non — il faut un acte notarié" }
           ],
           correctId: "b",
-          explanation: "L'Imām Mālik dans la Muwattaʾ : « لَا تَتِمُّ الهِبَةُ إِلَّا بِالحِيَازَةِ » — la donation n'est parfaite que par la prise de possession. Sans الحِيَازَة (القَبض), la donation reste révocable et non définitive."
+          explanation: "L'Imām Mālik dans la Muwattaʾ : « لَا تَتِمُّ Hiba (الهِبَة)ُ إِلَّا بِḤḤiyāza (الحِيَازَة)ِ » — la donation n'est parfaite que par la prise de possession. Sans ḤḤiyāza (الحِيَازَة) (القَبض), la donation reste révocable et non définitive."
         },
         {
           id: "q-hib-02",
@@ -703,7 +703,7 @@ const AVANCE = {
           { id:"d", text:"Oui dans l'année suivante" }
           ],
           correctId: "b",
-          explanation: "L'Imām Mālik : « الرُّجُوعُ فِي الهِبَةِ حَرَامٌ » — reprendre une donation après القَبض est حَرَام. Hadīth du Prophète ﷺ : « celui qui reprend son don est comme le chien qui revient à son vomi. » Exception unique : le père peut reprendre une donation à un enfant MINEUR si le bien n'a pas changé."
+          explanation: "L'Imām Mālik : « الرُّجُوعُ فِي Hiba (الهِبَة)ِ حَرَامٌ » — reprendre une donation après القَبض est حَرَام. Hadīth du Prophète ﷺ : « celui qui reprend son don est comme le chien qui revient à son vomi. » Exception unique : le père peut reprendre une donation à un enfant MINEUR si le bien n'a pas changé."
         },
         {
           id: "q-hib-03",
@@ -739,11 +739,11 @@ const AVANCE = {
           { id:"d", text:"Oui après 30 ans" }
           ],
           correctId: "c",
-          explanation: "Le وَقف est perpétuel et inaliénable. Exception exceptionnelle : si le bien se dégrade totalement (maison qui s'effondre, terrain improductif) et ne génère plus aucun revenu → certains savants permettent la vente uniquement pour racheter un bien équivalent qui prend le même statut (الاستِبدَال)."
+          explanation: "Le وَقف est perpétuel et inaliénable. Exception exceptionnelle : si le bien se dégrade totalement (maison qui s'effondre, terrain improductif) et ne génère plus aucun revenu → certains savants permettent la vente uniquement pour racheter un bien équivalent qui prend le mêIstibdāl (الاستِبدَال)."
         },
         {
           id: "q-hib-06",
-          text: "Un وَقف familial (الوَقف الذُّرِّيّ) : ses revenus profitent à :",
+          text: "Un وَقف Waqf Dhurrī (الوَقف الذُّرِّيّ) : ses revenus profitent à :",
           choices: [
           { id:"a", text:"Uniquement les institutions charitables" },
           { id:"b", text:"La famille du fondateur d'abord, puis une cause charitable après extinction de la lignée" },
@@ -799,7 +799,7 @@ const AVANCE = {
           { id:"d", text:"Le bien revient à une mosquée" }
           ],
           correctId: "b",
-          explanation: "Position malikite distinctive : l'عُمرَى est une donation permanente selon l'Imām Mālik. Hadīth du Prophète ﷺ : « العُمرَى جَائِزَةٌ لِأَهلِهَا » — elle est définitive pour ses bénéficiaires. Le bien n'est PAS récupérable à la mort du bénéficiaire, contrairement à ce que stipule parfois le donateur."
+          explanation: "Position malikite distinctive : l'عُمرَى est une donation permanente selon l'Imām Mālik. Hadīth du Prophète ﷺ : « ʿUmrā (العُمرَى) جَائِزَةٌ لِأَهلِهَا » — elle est définitive pour ses bénéficiaires. Le bien n'est PAS récupérable à la mort du bénéficiaire, contrairement à ce que stipule parfois le donateur."
         },
         {
           id: "q-hib-11",
@@ -875,7 +875,7 @@ const AVANCE = {
         },
         {
           id: "q-hib-17",
-          text: "Qu'est-ce que l'الاستِبدَال dans le contexte du وَقف ?",
+          text: "Qu'est-ce que l'Istibdāl (الاستِبدَال) dans le contexte du وَقف ?",
           choices: [
           { id:"a", text:"L'ajout d'un bien supplémentaire au وَقف" },
           { id:"b", text:"La vente d'un bien وَقف inutilisable pour racheter un bien équivalent qui prend le même statut" },
@@ -883,7 +883,7 @@ const AVANCE = {
           { id:"d", text:"La suspension temporaire du وَقف" }
           ],
           correctId: "b",
-          explanation: "L'الاستِبدَال est la vente exceptionnelle d'un bien وَقف devenu totalement inutile (ruiné, improductif) pour acheter un bien équivalent qui prend les mêmes conditions de وَقف. C'est la seule exception à l'inaliénabilité du وَقف. Certains savants malikites le permettent sous contrôle judiciaire strict."
+          explanation: "L'Istibdāl (الاستِبدَال) est la vente exceptionnelle d'un bien وَقف devenu totalement inutile (ruiné, improductif) pour acheter un bien équivalent qui prend les mêmes conditions de وَقف. C'est la seule exception à l'inaliénabilité du وَقف. Certains savants malikites le permettent sous contrôle judiciaire strict."
         },
         {
           id: "q-hib-18",
@@ -911,7 +911,7 @@ const AVANCE = {
         },
         {
           id: "q-hib-20",
-          text: "<strong>SYNTHÈSE :</strong> Quelle est la différence fondamentale entre الهِبَة, الوَقف et الوَصِيَّة ?",
+          text: "<strong>SYNTHÈSE :</strong> Quelle est la difféHiba (الهِبَة), Waqf (الوَقف) Waṣiyya (الوَصِيَّة) ?",
           choices: [
           { id:"a", text:"Aucune différence" },
           { id:"b", text:"هِبَة : donation de son vivant, révocable avant القَبض. وَقف : donation perpétuelle et inaliénable. وَصِيَّة : disposition après la mort, limitée au 1/3" },
@@ -919,36 +919,36 @@ const AVANCE = {
           { id:"d", text:"Seul le وَقف est islamique" }
           ],
           correctId: "b",
-          explanation: "Synthèse des trois instruments : الهِبَة = donation entre vifs, révocable avant القَبض, définitive après. الوَقف = immobilisation permanente d'un bien pour une cause, inaliénable et perpétuel. الوَصِيَّة = disposition après décès, limitée au 1/3, invalidée pour les héritiers légaux sauf accord."
+          explanation: "Synthèse des trois instruments : Hiba (الهِبَة) = donation entre vifs, révocable avant القَبض, définitive après. Waqf (الوَقف) = immobilisation permanente d'un bien pour une cause, inaliénable et perpétuel. Waṣiyya (الوَصِيَّة) = disposition après décès, limitée au 1/3, invalidée pour les héritiers légaux sauf accord."
         }
         ]
       }
     },
 
-    /* ═══ الفَرَائِض — المِيرَاث ═══ */
+    /* ═══ Farāʾiḍ (الفَرَائِض) — Mīrāth (المِيرَاث) ═══ */
     {
       id: "mawarith",
       title: "Le Droit de Succession Islamique",
-      arabicTitle: "الفَرَائِض — المِيرَاث",
+      arabicTitle: "al-farāʾiḍ (الفَرَائِض) — al-mīrāth (المِيرَاث)",
       icon: "scroll",
       description: "Science des successions islamiques : héritiers, parts fixes, exclusions, ajustements et spécificités malikites.",
       source: "Risāla Ibn Abī Zayd ch.35-36 · Mukhtasar Khalīl pp.260-277 · Matn Ibn Āshir",
       badge: {
         id: 'badge-avance-mawarith',
         title: "Expert de l'Héritage",
-        arabicTitle: "عَالِمُ الفَرَائِض",
+        arabicTitle: "عَالِمُ al-farāʾiḍ (الفَرَائِض)",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الفَرَائِض — المِيرَاث"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Farāʾiḍ (الفَرَائِض) — Mīrāth (المِيرَاث)"
       },
 
       lessons: [
               {
         id: "far-01",
-        title: "مُقَدِّمَة فِي عِلمِ الفَرَائِض — Introduction à la Science des Successions",
+        title: "مُقَدِّمَة فِي عِلمِ Farāʾiḍ (الفَرَائِض) — Introduction à la Science des Successions",
         status: 'available',
         content: [
-        {"t": "lead", "v": "العِلمُ بِالفَرَائِض — la science des successions islamiques — est l'une des disciplines les plus précises du فقه islamique. Le Prophète ﷺ l'a appelée « la moitié du savoir » et a recommandé de l'apprendre et de l'enseigner."},
-        { t:'ar', v:"تَعَلَّمُوا الفَرَائِضَ وَعَلِّمُوهَا النَّاسَ فَإِنَّهَا نِصفُ العِلمِ وَهُوَ يُنسَى", n:"« Apprenez les فَرَائِض et enseignez-les, car elles constituent la moitié du savoir et elles seront les premières à disparaître. » — Hadīth (Ibn Māja et al-Dāraquṭnī)" },
+        {"t": "lead", "v": "العِلمُ بِFarāʾiḍ (الفَرَائِض) — la science des successions islamiques — est l'une des disciplines les plus précises du فقه islamique. Le Prophète ﷺ l'a appelée « la moitié du savoir » et a recommandé de l'apprendre et de l'enseigner."},
+        { t:'ar', v:"تَعَلَّمُوا al-farāʾiḍ (الفَرَائِض)َ وَعَلِّمُوهَا النَّاسَ فَإِنَّهَا نِصفُ العِلمِ وَهُوَ يُنسَى", n:"« Apprenez les فَرَائِض et enseignez-les, car elles constituent la moitié du savoir et elles seront les premières à disparaître. » — Hadīth (Ibn Māja et al-Dāraquṭnī)" },
         {"t": "h", "v": "Fondements coraniques"},
         { t:'ul', v:[
           "Les parts successorales sont fixées par le Coran (sourate al-Nisāʾ, versets 11, 12 et 176) — ce ne sont pas des décisions humaines.",
@@ -960,17 +960,17 @@ const AVANCE = {
           "<strong>1. القَتل :</strong> le meurtrier n'hérite pas de sa victime.",
           "<strong>2. الرِّقّ :</strong> l'esclave n'hérite pas et ne transmet pas (contexte historique).",
           "<strong>3. اختلاف الدِّين :</strong> pas d'héritage entre Muslim et non-Muslim.",
-          "Spécificité malikite : le الرِّدَّة (apostasie) empêche l'héritage — l'apostat n'hérite pas d'un Muslim ni un Muslim d'un apostat.",
+          "Spécificité malikite : le al-ridda (الرِّدَّة) (apostasie) empêche l'héritage — l'apostat n'hérite pas d'un Muslim ni un Muslim d'un apostat.",
           "Note : les mariages mixtes Muslim-non-Muslim → pas d'héritage islamique mutuel."
         ] },
         {"t": "h", "v": "أسباب الإِرث — Causes du droit d'hériter"},
         { t:'ul', v:[
-          "<strong>1. النَّسَب :</strong> lien de sang (filiation légitime).",
-          "<strong>2. النِّكَاح :</strong> mariage légal — l'époux et l'épouse héritent mutuellement.",
-          "<strong>3. الوَلَاء :</strong> lien d'affranchissement — héritier résiduel si pas d'autre héritier."
+          "<strong>1. Nasab (النَّسَب) :</strong> lien de sang (filiation légitime).",
+          "<strong>2. Nikāḥ (النِّكَاح) :</strong> mariage légal — l'époux et l'épouse héritent mutuellement.",
+          "<strong>3. Walāʾ (الوَلَاء) :</strong> lien d'affranchissement — héritier résiduel si pas d'autre héritier."
         ] },
         {"t": "h", "v": "التَّرتِيب العام — Vue d'ensemble du calcul successoral"},
-        {"t": "p", "v": "Le calcul des parts se fait en 3 étapes : (1) identifier les héritiers présents ; (2) appliquer les حُجُوب (exclusions) ; (3) calculer les parts selon les règles coranique + malikites. En cas de dépassement total → العَوْل. En cas de résidu → الرَّدّ ou العَصَبَة."},
+        {"t": "p", "v": "Le calcul des parts se fait en 3 étapes : (1) identifier les héritiers présents ; (2) appliquer les حُجُوب (exclusions) ; (3) calculer les parts selon les règles coranique + malikites. En cas de dépassement total → ʿAwl (العَوْل). En cas de résidu → Radd (الرَّدّ) ʿAṣaba (العَصَبَة)."},
         {"t": "note", "v": "La succession islamique est fondée sur le principe du besoin et de la responsabilité : l'homme hérite du double de la femme car il est légalement responsable de l'entretien (نَفَقَة) de sa famille. C'est un équilibre systémique, pas une inégalité arbitraire."}
         ]
       },
@@ -979,8 +979,8 @@ const AVANCE = {
         title: "أَصنَاف الوَرَثَة — Les Héritiers et leurs Parts",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Il existe deux grandes catégories d'héritiers en droit islamique : les أَصحَابُ الفُرُوض (héritiers à parts fixes coraniques) et les عَصَبَة (héritiers résiduels mâles agnatiques). La Risāla et le Mukhtasar Khalīl en établissent les listes précises."},
-        {"t": "h", "v": "أَصحَابُ الفُرُوض — Héritiers à parts fixes"},
+        {"t": "lead", "v": "Il existe deux grandes catégories d'héritiers en droit islamique : Aṣḥāb al-Furūḍ (أَصحَابُ الفُرُوض) (héritiers à parts fixes coraniques) et les عَصَبَة (héritiers résiduels mâles agnatiques). La Risāla et le Mukhtasar Khalīl en établissent les listes précises."},
+        {"t": "h", "v": "Aṣḥāb al-Furūḍ (أَصحَابُ الفُرُوض) — Héritiers à parts fixes"},
         {"t": "p", "v": "Ce sont les héritiers dont la part est fixée explicitement par le Coran (الآيات 11-12 et 176 de Sourate al-Nisāʾ) :"},
         { t:'ul', v:[
           "<strong>La fille :</strong> 1/2 si seule, 2/3 si plusieurs filles sans frère.",
@@ -994,10 +994,10 @@ const AVANCE = {
           "<strong>Les frères/sœurs utérins :</strong> 1/6 (un seul) ou 1/3 partagé (plusieurs).",
           "<strong>Les frères/sœurs germains :</strong> 2/3 partagés si plusieurs sœurs sans frère."
         ] },
-        {"t": "h", "v": "العَصَبَة — Les Héritiers Résiduels Agnatiques"},
+        {"t": "h", "v": "ʿAṣaba (العَصَبَة) — Les Héritiers Résiduels Agnatiques"},
         {"t": "p", "v": "L'عَصَبَة prend le résidu (ما بقي) après les parts fixes. Si rien ne reste → zéro. Si tout reste (pas d'أَصحَاب فُرُوض) → tout."},
         { t:'ul', v:[
-          "<strong>Ordre de priorité العَصَبَة :</strong> fils → fils du fils → père → frère germain → frère consanguin → fils de frère → oncle paternel → fils d'oncle.",
+          "<strong>Ordre de priorité ʿAṣaba (العَصَبَة) :</strong> fils → fils du fils → père → frère germain → frère consanguin → fils de frère → oncle paternel → fils d'oncle.",
           "Le plus proche degré exclut le plus éloigné.",
           "<strong>عَصَبَة بِالغَيْر :</strong> la fille devient عَصَبَة en présence de son frère — elle prend la moitié de sa part.",
           "<strong>عَصَبَة مَعَ الغَيْر :</strong> les sœurs deviennent عَصَبَة en présence de filles."
@@ -1008,11 +1008,11 @@ const AVANCE = {
       },
       {
         id: "far-03",
-        title: "الحُجُوب والمَوَانِع — Exclusions et Blocages",
+        title: "ḤḤujūb (الحُجُوب) والمَوَانِع — Exclusions et Blocages",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le système de حُجُوب (exclusions) est central pour comprendre qui hérite réellement dans une succession complexe. Il y a deux types : الحَجبُ الكُلِّي (exclusion totale) et الحَجبُ الجُزئِيّ (réduction de part)."},
-        {"t": "h", "v": "حَجبُ الحِرمَان — L'Exclusion Totale"},
+        {"t": "lead", "v": "Le système de حُجُوب (exclusions) est central pour comprendre qui hérite réellement dans une succession complexe. Il y a deux types : ḤḤajb (الحَجب)ُ الكُلِّي (exclusion totale) et ḤḤajb (الحَجب)ُ الجُزئِيّ (réduction de part)."},
+        {"t": "h", "v": "Ḥajb al-ḤḤajb al-Ḥirmān (حَجبُ الحِرمَان) — L'Exclusion Totale"},
         {"t": "p", "v": "Certains héritiers sont complètement exclus par la présence d'un autre héritier plus proche :"},
         { t:'ul', v:[
           "<strong>Le fils du fils :</strong> exclu par le fils.",
@@ -1023,7 +1023,7 @@ const AVANCE = {
           "<strong>Les frères/sœurs (tous types) :</strong> exclus par le fils, le fils du fils, ou le père.",
           "<strong>Spécificité malikite :</strong> le grand-père n'est PAS exclu par les frères/sœurs (contrairement à l'école hanafite)."
         ] },
-        {"t": "h", "v": "حَجبُ النُّقصَان — La Réduction de Part"},
+        {"t": "h", "v": "ḤḤajb al-Nuqṣān (حَجبُ النُّقصَان) — La Réduction de Part"},
         { t:'ul', v:[
           "La mère passe de 1/3 à 1/6 en présence d'un enfant ou de plusieurs frères/sœurs.",
           "L'époux passe de 1/2 à 1/4 en présence d'un enfant.",
@@ -1038,28 +1038,28 @@ const AVANCE = {
       },
       {
         id: "far-04",
-        title: "العَوْل والرَّدّ — Ajustements de la Succession",
+        title: "ʿAwl (العَوْل) وRadd (الرَّدّ) — Ajustements de la Succession",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Deux situations exceptionnelles se produisent : العَوْل quand les parts fixes dépassent 1 (la totalité) ; الرَّدّ quand les parts fixes n'atteignent pas 1 et qu'il reste un résidu sans عَصَبَة."},
-        {"t": "h", "v": "العَوْل — L'Ajustement à la Hausse"},
+        {"t": "lead", "v": "Deux situations exceptionnelles se produisent : ʿAwl (العَوْل) quand les parts fixes dépassent 1 (la totalité) ; Radd (الرَّدّ) quand les parts fixes n'atteignent pas 1 et qu'il reste un résidu sans عَصَبَة."},
+        {"t": "h", "v": "ʿAwl (العَوْل) — L'Ajustement à la Hausse"},
         {"t": "p", "v": "Si la somme des parts fixes dépasse 1 (100%), on augmente le dénominateur et chaque héritier reçoit une part proportionnellement réduite. Exemple : 1/2 + 1/4 + 1/3 = 13/12 → on passe à 13 (numérateur total), chaque part devient X/13."},
         { t:'ul', v:[
-          "Le وَ العَوْل débute à partir de la valeur 6 (base de calcul la plus commune).",
+          "Le وَ ʿAwl (العَوْل) débute à partir de la valeur 6 (base de calcul la plus commune).",
           "Le maximum historique connu est 27 (lors de la succession de ʿUthmān ibn ʿAffān ﵁).",
-          "Position malikite (et de tous les madhāhib sauf les zaydites) : العَوْل est valide — les parts sont réduites proportionnellement.",
-          "Exemple classique : Époux (1/2) + 2 sœurs (2/3) = 1/2 + 2/3 = 7/6 → العَوْل à 7 : époux reçoit 3/7, sœurs 4/7."
+          "Position malikite (et de tous les madhāhib sauf les zaydites) : ʿAwl (العَوْل) est valide — les parts sont réduites proportionnellement.",
+          "Exemple classique : Époux (1/2) + 2 sœurs (2/3) = 1/2 + 2/3 = 7/6 → ʿAwl (العَوْل) à 7 : époux reçoit 3/7, sœurs 4/7."
         ] },
-        {"t": "h", "v": "الرَّدّ — L'Ajustement à la Baisse"},
-        {"t": "p", "v": "Si les parts fixes ne totalisent pas 1 et qu'il n'y a pas d'عَصَبَة, le résidu revient aux أَصحَاب الفُرُوض en proportion de leurs parts. C'est le الرَّدّ."},
+        {"t": "h", "v": "Radd (الرَّدّ) — L'Ajustement à la Baisse"},
+        {"t": "p", "v": "Si les parts fixes ne totalisent pas 1 et qu'il n'y a pas d'عَصَبَة, le résidu revient aux أَصحَاب الفُرُوض en proportion de leurs parts. C'Radd (الرَّدّ)."},
         { t:'ul', v:[
-          "Exemple : une fille (1/2) et une mère (1/6) = 2/3 total. Reste 1/3 sans عَصَبَة → الرَّدّ : la fille reçoit 3/4 et la mère 1/4 du total.",
-          "<strong>Spécificité malikite fondamentale : الرَّدّ sur le conjoint — INTERDIT.</strong> L'époux et l'épouse ne participent JAMAIS au الرَّدّ.",
-          "Si la fille est seule sans عَصَبَة : elle reçoit 1/2 (sa part) + الرَّدّ du reste = tout.",
-          "Si époux + fille : époux = 1/4 (avec enfant), fille = 1/2, reste 1/4 → الرَّدّ sur la fille seulement (pas l'époux)."
+          "Exemple : une fille (1/2) et une mère (1/6) = 2/3 total. Reste 1/3 sans عَصَبَة → Radd (الرَّدّ) : la fille reçoit 3/4 et la mère 1/4 du total.",
+          "<strong>Spécificité malikite fondamentale : Radd (الرَّدّ) sur le conjoint — INTERDIT.</strong> L'époux et l'éRadd (الرَّدّ).",
+          "Si la fille est seule sans عَصَبَة : elle reçoit 1/2 (sa part) + Radd (الرَّدّ) du reste = tout.",
+          "Si époux + fille : époux = 1/4 (avec enfant), fille = 1/2, reste 1/4 → Radd (الرَّدّ) sur la fille seulement (pas l'époux)."
         ] },
         { t:'ar', v:"وَللرَّجُلِ مِثلُ حَظِّ الأُنثَيَيْنِ فِي المَوَارِيثِ", n:"Coran 4:176 — Base de la part de العَصَبَة masculine" },
-        {"t": "note", "v": "La position malikite sur le الرَّدّ par rapport aux autres écoles : les hanafites permettent le الرَّدّ sur le conjoint. Les malikites (et chāfiʿites) ne le permettent pas. Cette différence a des conséquences concrètes importantes : si une femme décède sans عَصَبَة ni autre héritier qu'un époux et une fille, la part restante va au بَيتُ المَال (État islamique) selon les malikites."}
+        {"t": "note", "v": "Radd (الرَّدّ) par rapport aux autres écoles : Radd (الرَّدّ) sur le conjoint. Les malikites (et chāfiʿites) ne le permettent pas. Cette différence a des conséquences concrètes importantes : si une femme décède sans عَصَبَة ni autre héritier qu'un époux et une fille, Bayt al-Māl (بَيتُ المَال) (État islamique) selon les malikites."}
         ]
       },
       {
@@ -1080,48 +1080,48 @@ const AVANCE = {
           "Époux : 1/4 (avec descendant).",
           "Fille : 1/2.",
           "Fils du fils : عَصَبَة du reste (1/4).",
-          "Note : si la fille était deux, elle aurait 2/3 et le fils du fils aurait 1/4 - 2/3 = ? → العَوْل."
+          "Note : si la fille était deux, elle aurait 2/3 et le fils du fils aurait 1/4 - 2/3 = ? → ʿAwl (العَوْل)."
         ] },
-        {"t": "h", "v": "Cas 3 : Époux + Mère + 2 Sœurs germaines (العَوْل)"},
+        {"t": "h", "v": "Cas 3 : Époux + Mère + 2 SœʿAwl (العَوْل)"},
         { t:'ul', v:[
           "Époux : 1/2 = 3/6.",
           "Mère : 1/6 (en présence de sœurs).",
           "2 Sœurs : 2/3 = 4/6.",
-          "Total : 3+1+4 = 8/6 → العَوْل : on divise tout par 8. Époux 3/8, mère 1/8, sœurs 4/8."
+          "Total : 3+1+4 = 8/6 → ʿAwl (العَوْل) : on divise tout par 8. Époux 3/8, mère 1/8, sœurs 4/8."
         ] },
         {"t": "h", "v": "Cas 4 : Fille seule + Pas d'عَصَبَة (الرَّدّ)"},
         { t:'ul', v:[
           "Fille : 1/2 (part fixe).",
-          "Reste : 1/2 sans عَصَبَة → الرَّدّ sur la fille.",
-          "Résultat : la fille prend tout (100%) par الرَّدّ."
+          "Reste : 1/2 sans عَصَبَة → Radd (الرَّدّ) sur la fille.",
+          "Résultat : la fille prend tout (100%) Radd (الرَّدّ)."
         ] },
         {"t": "h", "v": "Cas 5 : Épouse + Fille + Pas d'عَصَبَة (الرَّدّ malikite)"},
         { t:'ul', v:[
           "Épouse : 1/8 (avec enfant).",
           "Fille : 1/2 = 4/8.",
           "Total : 1/8 + 4/8 = 5/8. Reste : 3/8.",
-          "Malikite : الرَّدّ interdit sur l'épouse → le reste (3/8) va au بَيتُ المَال.",
-          "Hanafite : الرَّدّ sur l'épouse → elle reçoit 1/8 + 3/8×(1/5) supplémentaires."
+          "Malikite : Radd (الرَّدّ) interdit sur l'épouse → le reste (3/8) Bayt al-Māl (بَيتُ المَال).",
+          "Hanafite : Radd (الرَّدّ) sur l'épouse → elle reçoit 1/8 + 3/8×(1/5) supplémentaires."
         ] },
-        {"t": "note", "v": "Pour calculer : (1) lister les héritiers ; (2) appliquer les حُجُوب ; (3) additionner les parts fixes ; (4) si total > 1 → العَوْل ; (5) si total < 1 et عَصَبَة → ils prennent le reste ; (6) si total < 1 et pas d'عَصَبَة → الرَّدّ (sauf sur conjoint selon les malikites) ; (7) si total < 1 et personne d'autre → بَيتُ المَال."}
+        {"t": "note", "v": "Pour calculer : (1) lister les héritiers ; (2) appliquer les حُجُوب ; (3) additionner les parts fixes ; (4) si total > 1 → ʿAwl (العَوْل) ; (5) si total < 1 et عَصَبَة → ils prennent le reste ; (6) si total < 1 et pas d'عَصَبَة → Radd (الرَّدّ) (sauf sur conjoint selon les malikites) ; (7) si total < 1 et personne d'autre → Bayt al-Māl (بَيتُ المَال)."}
         ]
       },
       {
         id: "far-06",
-        title: "الفَرَائِض المُعَاصِرَة — Succession Islamique Contemporaine",
+        title: "Farāʾiḍ (الفَرَائِض) المُعَاصِرَة — Succession Islamique Contemporaine",
         status: 'available',
         content: [
         {"t": "lead", "v": "Application du droit successoral islamique aux réalités contemporaines : familles recomposées, succession en France, enfants adoptifs, assurances-vie."},
         {"t": "h", "v": "الوَلَد غَير الشَّرعِيّ — L'enfant né hors mariage"},
         { t:'ul', v:[
-          "Position malikite : l'enfant né hors mariage n'hérite pas du père biologique (pas de النَّسَب légitime) — mais hérite de la mère.",
+          "Position malikite : l'enfant né hors mariage n'hérite pas du père biologique (Nasab (النَّسَب) légitime) — mais hérite de la mère.",
           "L'الاعتِرَاف الطَّوعِيّ (reconnaissance volontaire par le père) : le rite malikite l'accepte sous conditions — le père peut établir la فِرَاش (paternité) mais pas facilement.",
           "Application contemporaine : un enfant reconnu légalement en France hérite selon le droit civil ; ses droits islamiques dépendent de la légitimité du mariage."
         ] },
-        {"t": "h", "v": "الطَّلَاق والوَفَاة — Divorce et décès"},
+        {"t": "h", "v": "Ṭalāq (الطَّلَاق) والوَفَاة — Divorce et décès"},
         { t:'ul', v:[
-          "Si le mari décède pendant l'عِدَّة d'un طَلَاق رَجعِيّ → l'épouse hérite toujours (le mariage est encore en vigueur).",
-          "Si le mari décède après طَلَاق بَائِن → l'épouse n'hérite pas.",
+          "Si le mari décède pendant l'عِدَّة d'un ṬṬalāq Rajʿī (طَلَاق رَجعِيّ) → l'épouse hérite toujours (le mariage est encore en vigueur).",
+          "Si le mari décède après ṬṬalāq Bāʾin (طَلَاق بَائِن) → l'épouse n'hérite pas.",
           "Si le mari divorce en état de mَرَض المَوْت pour priver l'épouse de l'héritage → position malikite : elle hérite quand même."
         ] },
         {"t": "h", "v": "التَّبَنِّي — L'Adoption"},
@@ -1144,7 +1144,7 @@ const AVANCE = {
 
       quiz: {
         id: 'quiz-avance-mawarith',
-        title: 'Questionnaire — ' + "الفَرَائِض — المِيرَاث",
+        title: 'Questionnaire — ' + "Farāʾiḍ (الفَرَائِض) — Mīrāth (المِيرَاث)",
         status: 'available',
         score: null,
         questions: [
@@ -1158,7 +1158,7 @@ const AVANCE = {
           { id:"d", text:"Une discipline secondaire" }
           ],
           correctId: "b",
-          explanation: "Hadīth : « تَعَلَّمُوا الفَرَائِضَ... فَإِنَّهَا نِصفُ العِلمِ » — les فَرَائِض constituent la moitié du savoir islamique. Le Prophète ﷺ a ajouté qu'elles seraient les premières à disparaître — d'où l'urgence de les apprendre et d'enseigner."
+          explanation: "Hadīth : « تَعَلَّمُوا Farāʾiḍ (الفَرَائِض)َ... فَإِنَّهَا نِصفُ العِلمِ » — les فَرَائِض constituent la moitié du savoir islamique. Le Prophète ﷺ a ajouté qu'elles seraient les premières à disparaître — d'où l'urgence de les apprendre et d'enseigner."
         },
         {
           id: "q-far-02",
@@ -1254,11 +1254,11 @@ const AVANCE = {
           { id:"d", text:"Non — elle hérite seulement si elle est veuve" }
           ],
           correctId: "b",
-          explanation: "Coran 4:11 : la mère reçoit 1/3 si le défunt n'a pas d'enfants et ne laisse pas plusieurs frères/sœurs. Sinon elle reçoit 1/6. Elle ne peut jamais être complètement exclue — au minimum 1/6. حَجبُ النُّقصَان (réduction) mais jamais حَجبُ الحِرمَان (exclusion totale)."
+          explanation: "Coran 4:11 : la mère reçoit 1/3 si le défunt n'a pas d'enfants et ne laisse pas plusieurs frères/sœurs. Sinon elle reçoit 1/6. Elle ne peut jamais être complètement exclue — au minimum 1/6. ḤḤajb al-Nuqṣān (حَجبُ النُّقصَان) (réduction) mais jamais Ḥajb al-ḤḤajb al-Ḥirmān (حَجبُ الحِرمَان) (exclusion totale)."
         },
         {
           id: "q-far-10",
-          text: "Qu'est-ce que العَوْل ?",
+          text: "Qu'ʿAwl (العَوْل) ?",
           choices: [
           { id:"a", text:"Une façon de partager l'héritage entre sœurs" },
           { id:"b", text:"Un ajustement à la hausse du dénominateur quand les parts fixes dépassent 1 — chacun est réduit proportionnellement" },
@@ -1266,31 +1266,31 @@ const AVANCE = {
           { id:"d", text:"Un type de testament islamique" }
           ],
           correctId: "b",
-          explanation: "العَوْل survient quand les parts fixes totalisent plus de 1 (ex : époux 1/2 + 2 sœurs 2/3 = 7/6). Solution : augmenter le dénominateur (passer à 7) et réduire chaque part proportionnellement. Tous les madhāhib acceptent العَوْل sauf les zaydites."
+          explanation: "ʿAwl (العَوْل) survient quand les parts fixes totalisent plus de 1 (ex : époux 1/2 + 2 sœurs 2/3 = 7/6). Solution : augmenter le dénominateur (passer à 7) et réduire chaque part proportionnellement. ʿAwl (العَوْل) sauf les zaydites."
         },
         {
           id: "q-far-11",
-          text: "<strong>SPÉCIFICITÉ MALIKITE CRUCIALE :</strong> Le الرَّدّ (retour du surplus) s'applique-t-il à l'époux/épouse en rite malikite ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE CRUCIALE :</strong> Radd (الرَّدّ) (retour du surplus) s'applique-t-il à l'époux/épouse en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — comme à tous les héritiers" },
-          { id:"b", text:"Non — l'époux et l'épouse ne participent JAMAIS au الرَّدّ en rite malikite" },
+          { id:"b", text:"Non — l'époux et l'éRadd (الرَّدّ) en rite malikite" },
           { id:"c", text:"Seulement en présence d'enfants" },
           { id:"d", text:"Seulement pour l'époux, pas l'épouse" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite fondamentale : الرَّدّ sur le conjoint est INTERDIT. Si reste un surplus sans عَصَبَة, il va au بَيتُ المَال (État islamique), PAS à l'époux/épouse. C'est une différence majeure avec les hanafites qui permettent le الرَّدّ sur le conjoint."
+          explanation: "Spécificité malikite fondamentale : Radd (الرَّدّ) sur le conjoint est INTERDIT. Si reste un surplus sans عَصَبَة, Bayt al-Māl (بَيتُ المَال) (État islamique), PAS à l'époux/épouse. C'est une difféRadd (الرَّدّ) sur le conjoint."
         },
         {
           id: "q-far-12",
           text: "<strong>CALCUL :</strong> Époux + Mère + 2 Sœurs germaines. Calculer les parts (العَوْل possible).",
           choices: [
           { id:"a", text:"Époux 1/3, mère 1/3, sœurs 1/3" },
-          { id:"b", text:"Époux 3/8, mère 1/8, sœurs 4/8 — après العَوْل de 6 à 8" },
+          { id:"b", text:"Époux 3/8, mère 1/8, sœurs 4/8 — aprèʿAwl (العَوْل) de 6 à 8" },
           { id:"c", text:"Époux 1/2, mère 1/6, sœurs 1/3" },
           { id:"d", text:"Époux 1/4, mère 1/4, sœurs 2/4" }
           ],
           correctId: "b",
-          explanation: "Calcul : époux 1/2 (= 3/6) + mère 1/6 + sœurs 2/3 (= 4/6) = 8/6 → العَوْل. Base 8 : époux 3/8, mère 1/8, 2 sœurs 4/8 (= 2/8 chacune). Total = 8/8 = 1. ✓"
+          explanation: "Calcul : époux 1/2 (= 3/6) + mère 1/6 + sœurs 2/3 (= 4/6) = 8/6 → ʿAwl (العَوْل). Base 8 : époux 3/8, mère 1/8, 2 sœurs 4/8 (= 2/8 chacune). Total = 8/8 = 1. ✓"
         },
         {
           id: "q-far-13",
@@ -1308,25 +1308,25 @@ const AVANCE = {
           id: "q-far-14",
           text: "<strong>PIÈGE :</strong> Un homme décède en laissant : une fille seule, sans عَصَبَة ni autre héritier. Que reçoit-elle en rite malikite ?",
           choices: [
-          { id:"a", text:"1/2 seulement — le reste au بَيتُ المَال" },
-          { id:"b", text:"Tout (100%) — الرَّدّ sur la fille" },
+          { id:"a", text:"1/2 seulement — Bayt al-Māl (بَيتُ المَال)" },
+          { id:"b", text:"Tout (100%) — Radd (الرَّدّ) sur la fille" },
           { id:"c", text:"1/2 et le reste est partagé avec des frères absents" },
           { id:"d", text:"1/3 seulement" }
           ],
           correctId: "b",
-          explanation: "La fille seule : part fixe = 1/2. Pas d'عَصَبَة → الرَّدّ du reste (1/2) sur la fille. Elle prend donc 100%. Le الرَّدّ est permis sur les أَصحَاب الفُرُوض (fille = أصحاب فروض) sauf le conjoint."
+          explanation: "La fille seule : part fixe = 1/2. Pas d'عَصَبَة → Radd (الرَّدّ) du reste (1/2) sur la fille. Elle prend donc 100%. Radd (الرَّدّ) est permis sur les أَصحَاب الفُرُوض (fille = أصحاب فروض) sauf le conjoint."
         },
         {
           id: "q-far-15",
-          text: "<strong>CALCUL AVEC الرَّدّ MALIKITE :</strong> Épouse + Fille. Pas d'عَصَبَة.",
+          text: "<strong>Radd (الرَّدّ) MALIKITE :</strong> Épouse + Fille. Pas d'عَصَبَة.",
           choices: [
           { id:"a", text:"Épouse 1/4, fille 3/4" },
           { id:"b", text:"Épouse 1/8, fille 7/8" },
-          { id:"c", text:"Épouse 1/8, fille 1/2, reste (3/8) au بَيتُ المَال" },
+          { id:"c", text:"Épouse 1/8, fille 1/2, reste (3/8) Bayt al-Māl (بَيتُ المَال)" },
           { id:"d", text:"Fille prend tout" }
           ],
           correctId: "c",
-          explanation: "Calcul : épouse 1/8 (avec enfant) + fille 1/2 (= 4/8) = 5/8. Reste 3/8. Malikite : الرَّدّ interdit sur l'épouse → les 3/8 restants vont au بَيتُ المَال. L'épouse garde ses 1/8 et la fille ses 1/2."
+          explanation: "Calcul : épouse 1/8 (avec enfant) + fille 1/2 (= 4/8) = 5/8. Reste 3/8. Malikite : Radd (الرَّدّ) interdit sur l'épouse → les 3/8 Bayt al-Māl (بَيتُ المَال). L'épouse garde ses 1/8 et la fille ses 1/2."
         },
         {
           id: "q-far-16",
@@ -1350,7 +1350,7 @@ const AVANCE = {
           { id:"d", text:"Valide si le divorce est bain" }
           ],
           correctId: "b",
-          explanation: "Position malikite : si le mari divorce en طَلَاق بَائِن en état de mَرَض المَوْت dans le but manifeste de priver l'épouse de son héritage → la femme hérite quand même (pendant son عِدَّة). L'Islam protège l'épouse contre cette manœuvre malveillante."
+          explanation: "Position malikite : si le mari divorce en ṬṬalāq Bāʾin (طَلَاق بَائِن) en état de mَرَض المَوْت dans le but manifeste de priver l'épouse de son héritage → la femme hérite quand même (pendant son عِدَّة). L'Islam protège l'épouse contre cette manœuvre malveillante."
         },
         {
           id: "q-far-18",
@@ -1362,7 +1362,7 @@ const AVANCE = {
           { id:"d", text:"Seulement s'il est mentionné dans le testament" }
           ],
           correctId: "b",
-          explanation: "L'Islam interdit le التَّبَنِّي (adoption conférant la filiation) — Coran 33:4-5. L'enfant adopté ne porte pas le nom du père adoptif et n'hérite pas par النَّسَب. Des alternatives existent : هِبَة de son vivant, وَصِيَّة dans le 1/3, assurance-vie islamique."
+          explanation: "L'Islam interdit le التَّبَنِّي (adoption conférant la filiation) — Coran 33:4-5. L'enfant adopté ne porte pas le nom du père adoptif et n'héNasab (النَّسَب). Des alternatives existent : هِبَة de son vivant, وَصِيَّة dans le 1/3, assurance-vie islamique."
         },
         {
           id: "q-far-19",
@@ -1434,7 +1434,7 @@ const AVANCE = {
           { id:"d", text:"Seulement la grand-mère du côté du père" }
           ],
           correctId: "b",
-          explanation: "La grand-mère maternelle est soumise au حَجبُ الحِرمَان (exclusion totale) par la mère. Si la mère est vivante → la grand-mère ne reçoit rien. Si la mère est décédée → la grand-mère reçoit 1/6."
+          explanation: "La grand-mère maternelle est soumise au Ḥajb al-ḤḤajb al-Ḥirmān (حَجبُ الحِرمَان) (exclusion totale) par la mère. Si la mère est vivante → la grand-mère ne reçoit rien. Si la mère est décédée → la grand-mère reçoit 1/6."
         },
         {
           id: "q-far-25",
@@ -1446,13 +1446,13 @@ const AVANCE = {
           { id:"d", text:"Seulement le fils" }
           ],
           correctId: "b",
-          explanation: "Héritiers jamais totalement exclus : l'époux (1/2 ou 1/4), l'épouse (1/4 ou 1/8), le père (1/6 minimum), la mère (1/6 minimum), les descendants directs (fils/fille). Tous les autres peuvent être totalement exclus par حَجبُ الحِرمَان selon les héritiers présents."
+          explanation: "Héritiers jamais totalement exclus : l'époux (1/2 ou 1/4), l'épouse (1/4 ou 1/8), le père (1/6 minimum), la mère (1/6 minimum), les descendants directs (fils/fille). Tous les autres peuvent être totalement exclus par Ḥajb al-ḤḤajb al-Ḥirmān (حَجبُ الحِرمَان) selon les héritiers présents."
         }
         ]
       }
     },
 
-    /* ═══ الأَيمَان والنُّذُور ═══ */
+    /* ═══ Aymān (الأَيمَان) وNudhūr (النُّذُور) ═══ */
     {
       id: "ayman",
       title: "Serments et Vœux",
@@ -1465,33 +1465,33 @@ const AVANCE = {
         title: "Expert des Engagements",
         arabicTitle: "عَارِفُ الأَيمَان",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الأَيمَان والنُّذُور"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Aymān (الأَيمَان) وNudhūr (النُّذُور)"
       },
 
       lessons: [
               {
         id: "aym-01",
-        title: "أَنوَاع الأَيمَان — Les Types de Serments",
+        title: "أَنوَاع Aymān (الأَيمَان) — Les Types de Serments",
         status: 'available',
         content: [
         {"t": "lead", "v": "L'يَمِين (serment) est une formule solennelle par laquelle on atteste ou promet quelque chose en invoquant Allah. Le Mukhtasar Khalīl (pp. 200-210) et la Risāla distinguent plusieurs types aux règles très différentes."},
         { t:'ar', v:"وَلَا تَجعَلُوا اللَّهَ عُرضَةً لِأَيمَانِكُم", n:"« Ne faites pas d'Allah un prétexte pour vos serments. » — Coran 2:224" },
-        {"t": "h", "v": "1. يَمِينُ الغَمُوس — Le Serment de Faux Délibéré"},
+        {"t": "h", "v": "1. Yamīn al-Ghammūs (يَمِينُ الغَمُوس) — Le Serment de Faux Délibéré"},
         {"t": "p", "v": "C'est jurer délibérément sur une chose passée qu'on sait fausse : « je jure par Allah que j'étais chez vous hier » alors qu'on ne l'était pas."},
         { t:'ul', v:[
           "C'est l'un des péchés majeurs (الكَبَائِر).",
           "Il s'appelle الغَمُوس (ce qui plonge dans le péché) car il noie son auteur dans la faute.",
-          "<strong>Pas de كَفَّارَة :</strong> ce serment est si grave que la كَفَّارَة ne suffit pas — seul le repentir (التَّوبَة) sincère peut l'effacer.",
+          "<strong>Pas de كَفَّارَة :</strong> ce serment est si grave que la كَفَّارَة ne suffit pas — Tawba (التَّوبَة) sincère peut l'effacer.",
           "Hadīth : « Les grands péchés sont : l'associationnisme, le manque de piété filiale, le meurtre et le serment de غَمُوس. »"
         ] },
-        {"t": "h", "v": "2. يَمِينُ اللَّغو — Le Serment Involontaire"},
+        {"t": "h", "v": "2. Yamīn al-Laghw (يَمِينُ اللَّغو) — Le Serment Involontaire"},
         {"t": "p", "v": "C'est jurer sans réelle intention, par habitude du langage : « non, par Allah ! » ou « oui, par Allah ! » dans la conversation ordinaire."},
         { t:'ul', v:[
           "Coran 2:225 : « Allah ne vous tiendra pas rigueur des serments involontaires. »",
           "Pas de كَفَّارَة — c'est pardonné.",
           "Mais il est recommandé de limiter ces expressions pour respecter le Nom d'Allah."
         ] },
-        {"t": "h", "v": "3. يَمِينُ المُنعَقِدَة — Le Serment Engageant"},
+        {"t": "h", "v": "3. Yamīn al-Munʿaqida (يَمِينُ المُنعَقِدَة) — Le Serment Engageant"},
         {"t": "p", "v": "C'est jurer sur une action future avec intention réelle : « je jure par Allah que je ne parlerai plus à X » ou « je jure de faire Y ». C'est le seul qui entraîne une كَفَّارَة en cas de violation."},
         { t:'ul', v:[
           "Valide seulement si on jure au nom d'Allah (ou de Ses attributs : العَزِيز, الرَّحمَان...).",
@@ -1510,10 +1510,10 @@ const AVANCE = {
       },
       {
         id: "aym-02",
-        title: "كَفَّارَةُ اليَمِين — L'Expiation du Serment Brisé",
+        title: "كَفَّارَةُ al-yamīn (اليَمِين) — L'Expiation du Serment Brisé",
         status: 'available',
         content: [
-        {"t": "lead", "v": "La كَفَّارَةُ اليَمِين est l'expiation requise quand on rompt un serment engageant (يَمِينُ المُنعَقِدَة) par acte volontaire. Elle est fixée par le Coran (5:89) et précisée par le Mukhtasar Khalīl."},
+        {"t": "lead", "v": "La كَفَّارَةُ al-yamīn (اليَمِين) est l'Yamīn al-Munʿaqida (يَمِينُ المُنعَقِدَة) par acte volontaire. Elle est fixée par le Coran (5:89) et précisée par le Mukhtasar Khalīl."},
         { t:'ar', v:"فَكَفَّارَتُهُ إِطعَامُ عَشَرَةِ مَسَاكِينَ مِن أَوسَطِ مَا تُطعِمُونَ أَهلِيكُم أَو كِسوَتُهُم أَو تَحرِيرُ رَقَبَةٍ فَمَن لَم يَجِد فَصِيَامُ ثَلَاثَةِ أَيَّامٍ", n:"Coran 5:89 — La كَفَّارَة du serment brisé" },
         {"t": "h", "v": "Les 3 options au choix (puis le jeûne si impossible)"},
         { t:'ul', v:[
@@ -1530,7 +1530,7 @@ const AVANCE = {
           "Si on paye la كَفَّارَة AVANT de rompre le serment → valide selon l'Imām Mālik (contrairement à l'opinion d'autres savants).",
           "Mukhtasar Khalīl : on peut payer la كَفَّارَة en argent si l'accès aux pauvres physiques est difficile."
         ] },
-        {"t": "h", "v": "الحِنث — Rompre le serment et ses conséquences"},
+        {"t": "h", "v": "ḤḤinth (الحِنث) — Rompre le serment et ses conséquences"},
         { t:'ul', v:[
           "Si on a juré de ne pas faire X et qu'on le fait → كَفَّارَة.",
           "Si on a juré de faire X et qu'on ne le fait pas → كَفَّارَة.",
@@ -1542,27 +1542,27 @@ const AVANCE = {
       },
       {
         id: "aym-03",
-        title: "النَّذر وأَحكَامُه — Les Vœux et leurs Règles",
+        title: "Nadhr (النَّذر) وأَحكَامُه — Les Vœux et leurs Règles",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le نَذر (vœu) est l'engagement de faire quelque chose pour Allah si une condition se réalise, ou l'engagement pur et simple d'un acte d'adoration. Il est plus contraignant que le serment car il engage envers Allah directement."},
-        {"t": "h", "v": "أَنوَاع النَّذر"},
+        {"t": "h", "v": "أَنوَاع Nadhr (النَّذر)"},
         { t:'ul', v:[
-          "<strong>النَّذر المُعَلَّق (conditionnel) :</strong> « si Allah guérit mon père, je jeûnerai 3 jours. » Si la condition se réalise → l'acte devient obligatoire.",
-          "<strong>النَّذر المُطلَق (absolu) :</strong> « je fais vœu de prier 2 rakʿāt pour Allah. » → Obligatoire immédiatement.",
-          "<strong>النَّذر المُبَاح :</strong> vœu portant sur un acte neutre — devient obligatoire une fois prononcé selon certains savants malikites.",
-          "<strong>النَّذر في المَعصِيَة :</strong> vœu d'accomplir un péché → NE DOIT PAS être exécuté. Pas de كَفَّارَة selon l'Imām Mālik — on se repent."
+          "<strong>Nadhr (النَّذر) المُعَلَّق (conditionnel) :</strong> « si Allah guérit mon père, je jeûnerai 3 jours. » Si la condition se réalise → l'acte devient obligatoire.",
+          "<strong>Nadhr (النَّذر) المُطلَق (absolu) :</strong> « je fais vœu de prier 2 rakʿāt pour Allah. » → Obligatoire immédiatement.",
+          "<strong>Nadhr (النَّذر) al-mubāḥ (المُبَاح) :</strong> vœu portant sur un acte neutre — devient obligatoire une fois prononcé selon certains savants malikites.",
+          "<strong>Nadhr (النَّذر) في المَعصِيَة :</strong> vœu d'accomplir un péché → NE DOIT PAS être exécuté. Pas de كَفَّارَة selon l'Imām Mālik — on se repent."
         ] },
-        {"t": "h", "v": "حُكم النَّذر"},
+        {"t": "h", "v": "حُكم Nadhr (النَّذر)"},
         { t:'ul', v:[
           "Le Prophète ﷺ a découragé les vœux conditionnels : « ils ne repoussent pas le destin mais n'extraient que ce qui était déjà prédestiné. »",
           "Malgré cela, exécuter un نَذر valide est obligatoire : « Que l'homme qui a fait un vœu d'obéir à Allah l'obéisse. » — Hadīth al-Bukhārī.",
           "Si la condition ne se réalise pas → pas d'obligation."
         ] },
-        {"t": "h", "v": "كَفَّارَة النَّذر — Expiation du vœu non tenu"},
+        {"t": "h", "v": "كَفَّارَة Nadhr (النَّذر) — Expiation du vœu non tenu"},
         { t:'ul', v:[
-          "Si le نَذر est possible mais non exécuté → كَفَّارَةُ اليَمِين (selon une position malikite).",
-          "Si le نَذر est impossible à exécuter → كَفَّارَةُ اليَمِين.",
+          "Si le نَذر est possible mais non exécuté → كَفَّارَةُ al-yamīn (اليَمِين) (selon une position malikite).",
+          "Si le نَذر est impossible à exécuter → كَفَّارَةُ al-yamīn (اليَمِين).",
           "Mukhtasar Khalīl : si le نَذر porte sur quelque chose de makrūh → on le rompt et on paye la كَفَّارَة.",
           "Spécificité : le نَذر à une mosquée précise (Masjid al-Aqsā) — peut être exécuté dans n'importe quelle grande mosquée selon l'Imām Mālik."
         ] },
@@ -1579,14 +1579,14 @@ const AVANCE = {
         {"t": "lead", "v": "Les serments et vœux apparaissent dans de nombreuses situations contemporaines : formules juridiques, engagements professionnels, jurements informels. Ce chapitre synthétise les positions malikites appliquées au quotidien."},
         {"t": "h", "v": "Les serments professionnels et juridiques"},
         { t:'ul', v:[
-          "<strong>Serment devant tribunal :</strong> « je jure de dire la vérité » — si on prête ce serment au nom d'Allah, c'est une يَمِين مُنعَقِدَة. Mentir sous serment = يَمِينُ الغَمُوس = péché majeur.",
+          "<strong>Serment devant tribunal :</strong> « je jure de dire la vérité » — si on prête ce serment au nom d'Allah, c'est une يَمِين مُنعَقِدَة. Mentir sous serment = Yamīn al-Ghammūs (يَمِينُ الغَمُوس) = péché majeur.",
           "<strong>Serment d'allégeance ou professionnel :</strong> si fait au nom d'Allah → engageant.",
           "<strong>Serments laïcs (sans mention d'Allah) :</strong> pas de يَمِين islamique — pas de كَفَّارَة même si brisés. Ce sont des engagements contractuels.",
           "Doctrine-malikite.fr : les contrats écrits et signatures ont la valeur d'un engagement ferme même sans mention d'Allah."
         ] },
         {"t": "h", "v": "Formules quotidiennes courantes"},
         { t:'ul', v:[
-          "« والله » dans la conversation ordinaire sans intention de jurer → يَمِينُ اللَّغو (pas de كَفَّارَة).",
+          "« والله » dans la conversation ordinaire sans intention de jurer → Yamīn al-Laghw (يَمِينُ اللَّغو) (pas de كَفَّارَة).",
           "« والله » avec intention de s'engager → يَمِينُ مُنعَقِدَة.",
           "« والنبي » (je jure par le Prophète) → pas un serment islamique valide selon l'Imām Mālik — pas de كَفَّارَة.",
           "« حق والدي » (par la vie de mon père) → formule culturelle non reconnue comme serment islamique."
@@ -1596,7 +1596,7 @@ const AVANCE = {
           "<strong>« J'ai juré de ne pas parler à mon frère »</strong> : si cela nuit aux liens familiaux → rompre le serment et payer la كَفَّارَة. Le Prophète ﷺ : « le meilleur des serments est celui dont on s'acquitte. »",
           "<strong>Vœu de jeûner un lundi chaque semaine</strong> : vœu valide, obligatoire de l'exécuter si possible.",
           "<strong>Vœu conditionnel exaucé</strong> : « si je réussis mon examen, je donne 200€ aux pauvres » — si exaucé → doit être exécuté.",
-          "<strong>Vœu impossible à tenir</strong> : « si je guéris, je ferai le حَجّ » mais pas les moyens → remplacé par كَفَّارَةُ اليَمِين."
+          "<strong>Vœu impossible à tenir</strong> : « si je guéris, je ferai le حَجّ » mais pas les moyens → remplacé par كَفَّارَةُ al-yamīn (اليَمِين)."
         ] },
         {"t": "h", "v": "Les jurements dans l'entreprise et le commerce"},
         {"t": "p", "v": "Les commerçants qui utilisent les serments pour convaincre des clients (« والله ce prix est le moins cher ») commettent une faute si le serment est faux. Hadīth : « Méfiez-vous des serments fréquents dans le commerce, car ils peuvent augmenter les ventes mais effacent la bénédiction. »"},
@@ -1607,13 +1607,13 @@ const AVANCE = {
 
       quiz: {
         id: 'quiz-avance-ayman',
-        title: 'Questionnaire — ' + "الأَيمَان والنُّذُور",
+        title: 'Questionnaire — ' + "Aymān (الأَيمَان) وNudhūr (النُّذُور)",
         status: 'available',
         score: null,
         questions: [
                 {
           id: "q-aym-01",
-          text: "يَمِينُ الغَمُوس : quelle est sa كَفَّارَة ?",
+          text: "Yamīn al-Ghammūs (يَمِينُ الغَمُوس) : quelle est sa كَفَّارَة ?",
           choices: [
           { id:"a", text:"Nourrir 10 pauvres" },
           { id:"b", text:"Jeûner 3 jours" },
@@ -1621,19 +1621,19 @@ const AVANCE = {
           { id:"d", text:"Libérer un esclave" }
           ],
           correctId: "c",
-          explanation: "يَمِينُ الغَمُوس (serment délibérément faux sur le passé) est un péché si grave qu'il n'a pas de كَفَّارَة — il est au-delà de l'expiation rituelle. Seul التَّوبَة sincère (repentir, regret, résolution) peut l'effacer. C'est une distinction fondamentale dans le fiqh malikite."
+          explanation: "Yamīn al-Ghammūs (يَمِينُ الغَمُوس) (serment délibérément faux sur le passé) est un péché si grave qu'il n'a pas de كَفَّارَة — il est au-delà de l'expiation rituelle. Tawba (التَّوبَة) sincère (repentir, regret, résolution) peut l'effacer. C'est une distinction fondamentale dans le fiqh malikite."
         },
         {
           id: "q-aym-02",
           text: "<strong>PIÈGE :</strong> Ibrahim dit en conversation « والله j'aime ce plat » sans intention de jurer. Y a-t-il une كَفَّارَة si c'est faux ?",
           choices: [
           { id:"a", text:"Oui — tout serment par Allah engage" },
-          { id:"b", text:"Non — c'est un يَمِينُ اللَّغو (involontaire), pardonné sans كَفَّارَة" },
+          { id:"b", text:"Non — c'Yamīn al-Laghw (يَمِينُ اللَّغو) (involontaire), pardonné sans كَفَّارَة" },
           { id:"c", text:"Makrūh seulement" },
           { id:"d", text:"Oui si répété souvent" }
           ],
           correctId: "b",
-          explanation: "Coran 2:225 : « Allah ne vous tiendra pas rigueur des serments involontaires. » يَمِينُ اللَّغو = formule habituée sans intention de jurer → pas de كَفَّارَة. Seul le يَمِينُ المُنعَقِدَة (avec intention ferme sur le futur) engage une كَفَّارَة si rompu."
+          explanation: "Coran 2:225 : « Allah ne vous tiendra pas rigueur des serments involontaires. » Yamīn al-Laghw (يَمِينُ اللَّغو) = formule habituée sans intention de jurer → pas de كَفَّارَة. Yamīn al-Munʿaqida (يَمِينُ المُنعَقِدَة) (avec intention ferme sur le futur) engage une كَفَّارَة si rompu."
         },
         {
           id: "q-aym-03",
@@ -1649,7 +1649,7 @@ const AVANCE = {
         },
         {
           id: "q-aym-04",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> L'ordre des 3 options de كَفَّارَةُ اليَمِين est-il impératif ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> L'ordre des 3 options de كَفَّارَةُ al-yamīn (اليَمِين) est-il impératif ?",
           choices: [
           { id:"a", text:"Oui — nourriture d'abord, puis vêtement, puis esclave" },
           { id:"b", text:"Non — les 3 premières (nourriture, vêtement, esclave) sont au CHOIX libre ; le jeûne seulement si aucune n'est possible" },
@@ -1657,7 +1657,7 @@ const AVANCE = {
           { id:"d", text:"Non — le jeûne est toujours préférable" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite : pour كَفَّارَةُ اليَمِين, les 3 premières options (nourrir 10 pauvres OU habiller 10 pauvres OU libérer un esclave) sont au choix du débiteur — pas de hiérarchie entre elles. Le jeûne de 3 jours n'est qu'un dernier recours si les 3 autres sont impossibles. Contrairement aux كَفَّارَات ordonnées comme le ظِهَار."
+          explanation: "Spécificité malikite : pour كَفَّارَةُ al-yamīn (اليَمِين), les 3 premières options (nourrir 10 pauvres OU habiller 10 pauvres OU libérer un esclave) sont au choix du débiteur — pas de hiérarchie entre elles. Le jeûne de 3 jours n'est qu'un dernier recours si les 3 autres sont impossibles. Contrairement aux كَفَّارَات ordonnées comme le ظِهَار."
         },
         {
           id: "q-aym-05",
@@ -1736,12 +1736,12 @@ const AVANCE = {
           text: "Si le نَذر accompli est impossible (ex : vœu de faire un حَجّ sans moyens), que faire ?",
           choices: [
           { id:"a", text:"Attendre d'en avoir les moyens, même 20 ans" },
-          { id:"b", text:"Payer la كَفَّارَةُ اليَمِين en remplacement" },
+          { id:"b", text:"Payer la كَفَّارَةُ al-yamīn (اليَمِين) en remplacement" },
           { id:"c", text:"Le vœu est annulé automatiquement" },
           { id:"d", text:"Donner en aumône le prix du حَجّ" }
           ],
           correctId: "b",
-          explanation: "Si le نَذر est devenu impossible à exécuter → position malikite : كَفَّارَةُ اليَمِين (nourrir 10 pauvres, habiller 10 pauvres, ou jeûner 3 jours). Cela libère le débiteur de son engagement sans le culpabiliser à vie."
+          explanation: "Si le نَذر est devenu impossible à exécuter → position malikite : كَفَّارَةُ al-yamīn (اليَمِين) (nourrir 10 pauvres, habiller 10 pauvres, ou jeûner 3 jours). Cela libère le débiteur de son engagement sans le culpabiliser à vie."
         },
         {
           id: "q-aym-12",
@@ -1757,7 +1757,7 @@ const AVANCE = {
         },
         {
           id: "q-aym-13",
-          text: "La كَفَّارَةُ اليَمِين peut-elle être payée en argent à la place de la nourriture ou des vêtements ?",
+          text: "La كَفَّارَةُ al-yamīn (اليَمِين) peut-elle être payée en argent à la place de la nourriture ou des vêtements ?",
           choices: [
           { id:"a", text:"Non — seulement en nature (nourriture physique ou vêtements)" },
           { id:"b", text:"Oui — les savants malikites contemporains permettent le paiement en argent si accès aux pauvres difficile" },
@@ -1784,64 +1784,64 @@ const AVANCE = {
           text: "<strong>SYNTHÈSE :</strong> Quels serments n'entraînent PAS de كَفَّارَة même si brisés ?",
           choices: [
           { id:"a", text:"Aucun — tout serment engage une كَفَّارَة" },
-          { id:"b", text:"يَمِينُ الغَمُوس (intentionnellement faux) et يَمِينُ اللَّغو (involontaire) n'ont pas de كَفَّارَة" },
+          { id:"b", text:"Yamīn al-Ghammūs (يَمِينُ الغَمُوس) (intentionnellement faux) Yamīn al-Laghw (يَمِينُ اللَّغو) (involontaire) n'ont pas de كَفَّارَة" },
           { id:"c", text:"Seulement les serments faits en plaisantant" },
           { id:"d", text:"Seulement les serments faits par oubli" }
           ],
           correctId: "b",
-          explanation: "Récapitulatif : يَمِينُ اللَّغو (involontaire) → pas de كَفَّارَة (pardonné). يَمِينُ الغَمُوس (délibérément faux sur le passé) → pas de كَفَّارَة mais péché majeur, seulement التَّوبَة. Seul يَمِينُ المُنعَقِدَة (serment sur action future volontaire) → كَفَّارَة si rompu."
+          explanation: "Récapitulatif : Yamīn al-Laghw (يَمِينُ اللَّغو) (involontaire) → pas de كَفَّارَة (pardonné). Yamīn al-Ghammūs (يَمِينُ الغَمُوس) (délibérément faux sur le passé) → pas de كَفَّارَة mais péché majeur, Tawba (التَّوبَة). Yamīn al-Munʿaqida (يَمِينُ المُنعَقِدَة) (serment sur action future volontaire) → كَفَّارَة si rompu."
         }
         ]
       }
     },
 
-    /* ═══ الشَّهَادَات والقَضَاء ═══ */
+    /* ═══ Shahādāt (الشَّهَادَات) وQaḍāʾ (القَضَاء) ═══ */
     {
       id: "qadhaa",
       title: "Témoignages et Justice",
-      arabicTitle: "الشَّهَادَات والقَضَاء",
+      arabicTitle: "الشَّهَادَات وal-qaḍāʾ (القَضَاء)",
       icon: "balance",
       description: "Conditions du témoin équitable, types de preuves et administration de la justice islamique.",
       source: "Mukhtasar Khalīl pp.210-240 · doctrine-malikite.fr",
       badge: {
         id: 'badge-avance-qadhaa',
         title: "Juriste du Droit Judiciaire",
-        arabicTitle: "فَقِيهُ القَضَاء",
+        arabicTitle: "فَقِيهُ al-qaḍāʾ (القَضَاء)",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الشَّهَادَات والقَضَاء"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Shahādāt (الشَّهَادَات) وQaḍāʾ (القَضَاء)"
       },
 
       lessons: [
               {
         id: "qad-01",
-        title: "شُرُوطُ الشَّاهِد — Le Témoin Équitable (العَدَالَة)",
+        title: "شُرُوطُ Shāhid (الشَّاهِد) — Le Témoin ÉʿAdāla (العَدَالَة)",
         status: 'available',
         content: [
         {"t": "lead", "v": "La شَهَادَة (témoignage) est le premier moyen de preuve en droit islamique. Pour être recevable, le témoin doit satisfaire des conditions précises qui garantissent sa crédibilité. Le Mukhtasar Khalīl (pp. 210-230) détaille ces exigences."},
-        {"t": "h", "v": "شُرُوط الشَّاهِد — Les conditions"},
+        {"t": "h", "v": "شُرُوط Shāhid (الشَّاهِد) — Les conditions"},
         { t:'ul', v:[
-          "<strong>1. الإِسلَام :</strong> seul le Muslim peut témoigner sur un Muslim. Exception : témoignage d'Ahl al-Kitāb sur les non-Muslims entre eux.",
+          "<strong>1. Islām (الإِسلَام) :</strong> seul le Muslim peut témoigner sur un Muslim. Exception : témoignage d'Ahl al-Kitāb sur les non-Muslims entre eux.",
           "<strong>2. البُلُوغ :</strong> l'enfant pré-pubère ne peut pas témoigner. Exception malikite : témoignage des garçons pré-pubères entre eux dans les affaires mineures (blessures légères, etc.).",
           "<strong>3. العَقل :</strong> sain d'esprit au moment du témoignage.",
           "<strong>4. الحُرِّيَّة :</strong> condition historique, non applicable aujourd'hui.",
-          "<strong>5. العَدَالَة :</strong> la condition la plus importante — voir détail ci-dessous.",
+          "<strong>5. ʿAdāla (العَدَالَة) :</strong> la condition la plus importante — voir détail ci-dessous.",
           "<strong>6. عَدَم التُّهمَة :</strong> pas de conflit d'intérêt avec l'affaire."
         ] },
-        {"t": "h", "v": "العَدَالَة — L'honorabilité du témoin"},
-        {"t": "p", "v": "L'العَدَالَة est la qualité morale qui rend le témoignage recevable. Mukhtasar Khalīl en précise les composantes :"},
+        {"t": "h", "v": "ʿAdāla (العَدَالَة) — L'honorabilité du témoin"},
+        {"t": "p", "v": "L'ʿAdāla (العَدَالَة) est la qualité morale qui rend le témoignage recevable. Mukhtasar Khalīl en précise les composantes :"},
         { t:'ul', v:[
           "Pratiquer les obligations islamiques (prières, jeûne…) sans les abandonner habituellem.",
           "Éviter les péchés majeurs (الكَبَائِر).",
           "Ne pas pratiquer les péchés mineurs de manière répétée.",
           "Maintenir un comportement social honorable (لَا يُخِلُّ بِالمُرُوءَة) — même les actes licites mais qui portent atteinte à la dignité sociale (manger dans la rue, etc. selon les contextes culturels).",
-          "L'العَدَالَة est présumée chez tout Muslim apparent — sauf preuve contraire (الجَرح)."
+          "L'ʿAdāla (العَدَالَة) est présumée chez tout Muslim apparent — sauf preuve contraire (الجَرح)."
         ] },
-        {"t": "h", "v": "الجَرح والتَّعدِيل — Récusation et validation"},
+        {"t": "h", "v": "Jarḥ wa-Taʿdīl (الجَرح والتَّعدِيل) — Récusation et validation"},
         { t:'ul', v:[
-          "Si un témoin est سَاقِط العَدَالَة (déchu de son honorabilité) → son témoignage est irrecevable.",
-          "Le juge peut demander une enquête sur l'honorabilité du témoin (التَّزكِيَة) avant d'accepter son témoignage.",
+          "Si un témoin est سَاقِط ʿAdāla (العَدَالَة) (déchu de son honorabilité) → son témoignage est irrecevable.",
+          "Le juge peut demander une enquête sur l'honorabilité du téTazkiya (التَّزكِيَة) avant d'accepter son témoignage.",
           "Les motifs de الجَرح (récusation) : condamné pour fausse accusation (القَذف), criminel, menteur notoire, ennemi de la partie adverso.",
-          "Spécificité malikite : le serment d'Allah suffit pour la التَّزكِيَة dans certains cas simples."
+          "Spécificité malikite : le serment d'Tazkiya (التَّزكِيَة) dans certains cas simples."
         ] },
         {"t": "note", "v": "Le témoignage de l'ennemi (العَدُوّ) contre son ennemi est irrecevable en rite malikite — même s'il est habituellement honorable. Le conflit d'intérêt personnel (التُّهمَة) disqualifie le témoin, quelle que soit sa vertu générale."}
         ]
@@ -1851,7 +1851,7 @@ const AVANCE = {
         title: "عَدَدُ الشُّهُود وأَنوَاعُ البَيِّنَات — Nombres et Types de Preuves",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Selon la nature de l'affaire, le nombre de témoins requis et les types de preuves admissibles varient. Le rite malikite a une position originale sur plusieurs questions : le témoignage de la femme, la البَيِّنَة populaire, et la règle شَاهِد + يَمِين."},
+        {"t": "lead", "v": "Selon la nature de l'affaire, le nombre de témoins requis et les types de preuves admissibles varient. Le rite malikite a une position originale sur plusieurs questions : le témoignage de la femme, Bayyina (البَيِّنَة) populaire, et la règle شَاهِد + يَمِين."},
         {"t": "h", "v": "Règle générale : 2 hommes équitables"},
         { t:'ul', v:[
           "La règle de base pour les affaires civiles et pénales graves : 2 hommes équitables (رَجُلَان عَدلَان).",
@@ -1864,12 +1864,12 @@ const AVANCE = {
         { t:'ul', v:[
           "Hadīth : le Prophète ﷺ a statué avec un seul témoin et le serment du demandeur (Muslim).",
           "S'applique aux دُيُون (créances) et aux affaires civiles financières.",
-          "Ne s'applique pas aux الحُدُود (peines coraniques) ni au القِصَاص.",
+          "Ne s'Ḥudūd (الحُدُود) (peines coraniques) Qiṣāṣ (القِصَاص).",
           "Position propre au rite malikite et chāfiʿite — les hanafites ne l'admettent pas."
         ] },
-        {"t": "h", "v": "الاستِفَاضَة — La Notoriété Publique"},
-        {"t": "p", "v": "<strong>Spécificité malikite distinctive :</strong> la notoriété publique constante (الاستِفَاضَة) peut constituer une preuve pour : le mariage, la filiation, le décès, la possession de longue date d'un bien. Si toute la communauté sait que X est marié à Y → pas besoin de témoins formels."},
-        {"t": "h", "v": "4 témoins — Domaine exclusif du حَدّ الزِّنَا"},
+        {"t": "h", "v": "Istifāḍa (الاستِفَاضَة) — La Notoriété Publique"},
+        {"t": "p", "v": "<strong>Spécificité malikite distinctive :</strong> la notoriété Istifāḍa (الاستِفَاضَة) peut constituer une preuve pour : le mariage, la filiation, le décès, la possession de longue date d'un bien. Si toute la communauté sait que X est marié à Y → pas besoin de témoins formels."},
+        {"t": "h", "v": "4 témoins — Domaine exclusif du حَدّ al-zinā (الزِّنَا)"},
         { t:'ul', v:[
           "La زِنَا (adultère) nécessite 4 témoins oculaires ayant vu l'acte consommé — condition quasi impossible à réunir.",
           "Si moins de 4 témoins → accusation de قَذف (fausse accusation) contre les témoins.",
@@ -1881,11 +1881,11 @@ const AVANCE = {
       },
       {
         id: "qad-03",
-        title: "الإِقرَار واليَمِين القَضَائِيَّة — Aveu et Serment Judiciaire",
+        title: "Iqrār (الإِقرَار) وal-yamīn (اليَمِين) القَضَائِيَّة — Aveu et Serment Judiciaire",
         status: 'available',
         content: [
-        {"t": "lead", "v": "L'الإِقرَار (aveu) est le moyen de preuve le plus fort en droit islamique — « سَيِّدُ الأَدِلَّة » (le maître des preuves). L'يَمِين القَضَائِيَّة (serment judiciaire) est un autre outil essentiel pour trancher les litiges."},
-        {"t": "h", "v": "الإِقرَار — L'Aveu"},
+        {"t": "lead", "v": "L'Iqrār (الإِقرَار) (aveu) est le moyen de preuve le plus fort en droit islamique — « سَيِّدُ الأَدِلَّة » (le maître des preuves). L'يَمِين القَضَائِيَّة (serment judiciaire) est un autre outil essentiel pour trancher les litiges."},
+        {"t": "h", "v": "Iqrār (الإِقرَار) — L'Aveu"},
         { t:'ul', v:[
           "L'aveu du défendant sur lui-même est la preuve la plus forte.",
           "<strong>Conditions de validité :</strong> libre (pas sous contrainte), conscient, capable, portant sur un droit propre (pas sur un tiers).",
@@ -1893,28 +1893,28 @@ const AVANCE = {
           "Mukhtasar Khalīl : si l'avocat d'une partie reconnaît un fait en audience → c'est un إِقرَار qui l'engage.",
           "<strong>Spécificité malikite :</strong> l'aveu partiel est traité au cas par cas — avouer la dette mais nier les intérêts, par exemple."
         ] },
-        {"t": "h", "v": "اليَمِين القَضَائِيَّة — Le Serment Judiciaire"},
+        {"t": "h", "v": "al-yamīn (اليَمِين) القَضَائِيَّة — Le Serment Judiciaire"},
         { t:'ul', v:[
-          "<strong>يَمِين المُدَّعَى عَلَيه :</strong> si le demandeur n'a pas de preuve → le défendeur jure et gagne. « البَيِّنَةُ عَلَى المُدَّعِي واليَمِينُ عَلَى مَن أَنكَر. »",
+          "<strong>يَمِين المُدَّعَى عَلَيه :</strong> si le demandeur n'a pas de preuve → le défendeur jure et gagne. « Bayyina (البَيِّنَة)ُ عَلَى المُدَّعِي وal-yamīn (اليَمِين)ُ عَلَى مَن أَنكَر. »",
           "<strong>يَمِين المُدَّعِي :</strong> si le défendeur refuse de jurer → le juge peut rejeter sa demande ou condamner sur la base du refus.",
-          "<strong>يَمِين القَضَاء :</strong> le juge lui-même peut demander un serment supplémentaire dans certains cas douteux.",
-          "Mukhtasar Khalīl : le refus de prêter serment (النُّكُول) vaut condamnation dans les droits civils."
+          "<strong>يَمِين Qaḍāʾ (القَضَاء) :</strong> le juge lui-même peut demander un serment supplémentaire dans certains cas douteux.",
+          "Mukhtasar Khalīl : le refus de prêNukūl (النُّكُول) vaut condamnation dans les droits civils."
         ] },
-        {"t": "h", "v": "النُّكُول — Le Refus de Jurer"},
+        {"t": "h", "v": "Nukūl (النُّكُول) — Le Refus de Jurer"},
         {"t": "p", "v": "Si le défendeur refuse de jurer (يَنكُل) → que se passe-t-il en rite malikite ?"},
         { t:'ul', v:[
           "Le refus de jurer est traité comme une preuve partielle contre le défendeur.",
           "Le juge peut alors renvoyer le serment au demandeur (رَدّ اليَمِين) — si le demandeur jure → il gagne.",
-          "En matière de حُدُود → le النُّكُول ne suffit pas pour condamner, la preuve directe est toujours requise.",
+          "En matière de حُدُود → Nukūl (النُّكُول) ne suffit pas pour condamner, la preuve directe est toujours requise.",
           "Application contemporaine : dans les arbitrages islamiques, le refus de témoigner ou de coopérer pèse contre la partie récalcitrante."
         ] },
-        { t:'ar', v:"البَيِّنَةُ عَلَى المُدَّعِي وَاليَمِينُ عَلَى مَن أَنكَرَ", n:"« La preuve incombe au demandeur et le serment à celui qui nie. » — Hadīth (al-Bukhārī et Muslim)" },
+        { t:'ar', v:"al-bayyina (البَيِّنَة)ُ عَلَى المُدَّعِي وَal-yamīn (اليَمِين)ُ عَلَى مَن أَنكَرَ", n:"« La preuve incombe au demandeur et le serment à celui qui nie. » — Hadīth (al-Bukhārī et Muslim)" },
         {"t": "note", "v": "Principe général du droit de la preuve islamique : الأَصل البَرَاءَة — la présomption d'innocence. Le demandeur doit prouver sa réclamation. Le défendeur n'est condamné que sur preuve ou aveu — pas sur simple affirmation de l'adversaire."}
         ]
       },
       {
         id: "qad-04",
-        title: "القَضَاء — Le Juge et l'Administration de la Justice",
+        title: "Qaḍāʾ (القَضَاء) — Le Juge et l'Administration de la Justice",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le قَضَاء (système judiciaire islamique) est l'institution par laquelle Allah's loi est appliquée dans les litiges. Le Mukhtasar Khalīl (pp. 230-240) précise les conditions du juge (قَاضٍ) et les règles du procès."},
@@ -1922,8 +1922,8 @@ const AVANCE = {
         { t:'ul', v:[
           "<strong>Muslim :</strong> un non-Muslim ne peut pas juger entre Muslims.",
           "<strong>Pubère, sain d'esprit, libre :</strong> conditions standard.",
-          "<strong>العَدَالَة :</strong> honorabilité requise — le juge corrompu est révoqué.",
-          "<strong>الاجتِهَاد :</strong> connaissance suffisante du فقه pour statuer ou référencer — pas besoin d'être le plus grand savant.",
+          "<strong>ʿAdāla (العَدَالَة) :</strong> honorabilité requise — le juge corrompu est révoqué.",
+          "<strong>Ijtihād (الاجتِهَاد) :</strong> connaissance suffisante du فقه pour statuer ou référencer — pas besoin d'être le plus grand savant.",
           "<strong>Spécificité malikite sur le sexe :</strong> la majorité des savants malikites ne permettent pas à une femme d'être قَاضِيَة — sauf dans les affaires civiles selon une opinion minoritaire.",
           "Condition pratique contemporaine : le qāḍī doit connaître les lois du pays où il exerce pour coordonner Islam et civil."
         ] },
@@ -1942,7 +1942,7 @@ const AVANCE = {
           "Le juge peut déléguer l'exécution à des agents (السُّلطَة التَّنفِيذِيَّة).",
           "Mukhtasar Khalīl : si deux juges rendent des jugements contradictoires → le premier jugement prévaut."
         ] },
-        {"t": "h", "v": "الفَتوَى vs القَضَاء — Avis juridique vs Jugement"},
+        {"t": "h", "v": "Fatwā (الفَتوَى) Qaḍāʾ (القَضَاء) — Avis juridique vs Jugement"},
         {"t": "p", "v": "Distinction importante : le مُفتِي (donneur de fatwa) conseille sans trancher — son avis n'est pas exécutoire. Le قَاضٍ (juge) tranche et son jugement est exécutoire. Une fatwa devient exécutoire seulement si un juge l'adopte comme jugement."},
         {"t": "note", "v": "Application contemporaine en France et en Europe : les instances islamiques (conseils, imams, daʿwa) peuvent rendre des fatwas et des avis moraux. Les arbitrages islamiques (médiation familiale, litiges commerciaux) ne sont exécutoires que s'ils sont homologués par un juge civil. Doctrine-malikite.fr recommande de combiner médiation islamique + recours civil pour les affaires importantes."}
         ]
@@ -1952,7 +1952,7 @@ const AVANCE = {
         title: "تَطبِيقَات مُعَاصِرَة — Justice Islamique en Occident",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Comment les principes de الشَّهَادَات والقَضَاء s'appliquent-ils pour les Muslims vivant en pays non-islamique ? Synthèse des positions de doctrine-malikite.fr et des savants malikites contemporains."},
+        {"t": "lead", "v": "Shahādāt (الشَّهَادَات) وQaḍāʾ (القَضَاء) s'appliquent-ils pour les Muslims vivant en pays non-islamique ? Synthèse des positions de doctrine-malikite.fr et des savants malikites contemporains."},
         {"t": "h", "v": "La justice civile et son rapport à la justice islamique"},
         { t:'ul', v:[
           "En pays non-islamique, les Muslims sont tenus de respecter la loi civile locale (أُولُو الأَمر المُلزَمِ قَانُونًا).",
@@ -1970,7 +1970,7 @@ const AVANCE = {
         {"t": "h", "v": "Témoignage du Muslim en tribunal"},
         { t:'ul', v:[
           "Le Muslim peut témoigner devant un tribunal non-islamique.",
-          "Il doit dire la vérité — le parjure (يَمِينُ الغَمُوس) reste حَرَام quel que soit le tribunal.",
+          "Il doit dire la vérité — Yamīn al-Ghammūs (يَمِينُ الغَمُوس) reste حَرَام quel que soit le tribunal.",
           "S'il témoigne sous serment en invoquant Allah → engagement islamique complet.",
           "S'il témoigne sans serment religieux → engagement moral et civil mais pas de كَفَّارَة islamique si faux."
         ] },
@@ -1983,13 +1983,13 @@ const AVANCE = {
 
       quiz: {
         id: 'quiz-avance-qadhaa',
-        title: 'Questionnaire — ' + "الشَّهَادَات والقَضَاء",
+        title: 'Questionnaire — ' + "Shahādāt (الشَّهَادَات) وQaḍāʾ (القَضَاء)",
         status: 'available',
         score: null,
         questions: [
                 {
           id: "q-qad-01",
-          text: "L'العَدَالَة (honorabilité) du témoin est présumée chez tout Muslim. Que faut-il pour la réfuter ?",
+          text: "L'ʿAdāla (العَدَالَة) (honorabilité) du témoin est présumée chez tout Muslim. Que faut-il pour la réfuter ?",
           choices: [
           { id:"a", text:"Une accusation verbale suffit" },
           { id:"b", text:"Une preuve concrète (الجَرح) : condamnation passée, témoignage notoire de mensonge, péché majeur connu" },
@@ -1997,7 +1997,7 @@ const AVANCE = {
           { id:"d", text:"Une fatwa d'un imam" }
           ],
           correctId: "b",
-          explanation: "L'العَدَالَة est présumée (مَفرُوضَة) chez tout Muslim en apparence. Pour la réfuter (الجَرح), il faut apporter une preuve solide : condamnation pour fausse accusation (القَذف), péché majeur notoire, mensonge habituel. La simple suspicion ou l'hostilité de l'adversaire ne suffit pas."
+          explanation: "L'ʿAdāla (العَدَالَة) est présumée (مَفرُوضَة) chez tout Muslim en apparence. Pour la réfuter (الجَرح), il faut apporter une preuve solide : condamnation pour fausse accusation (القَذف), péché majeur notoire, mensonge habituel. La simple suspicion ou l'hostilité de l'adversaire ne suffit pas."
         },
         {
           id: "q-qad-02",
@@ -2021,11 +2021,11 @@ const AVANCE = {
           { id:"d", text:"Non — la femme doit compléter à 2" }
           ],
           correctId: "b",
-          explanation: "Position malikite et chāfiʿite : في الأَموَال, un seul témoin + serment du demandeur = preuve suffisante. Hadīth : le Prophète ﷺ a statué avec un شَاهِد + يَمِين dans les affaires de dette. Les hanafites n'admettent pas ce mode de preuve. Ne s'applique pas aux حُدُود ni au القِصَاص."
+          explanation: "Position malikite et chāfiʿite : في الأَموَال, un seul témoin + serment du demandeur = preuve suffisante. Hadīth : le Prophète ﷺ a statué avec un شَاهِد + يَمِين dans les affaires de dette. Les hanafites n'admettent pas ce mode de preuve. Ne s'applique pas aux حُدُود Qiṣāṣ (القِصَاص)."
         },
         {
           id: "q-qad-04",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Qu'est-ce que l'الاستِفَاضَة et quelle est sa valeur probante ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Qu'est-ce que l'Istifāḍa (الاستِفَاضَة) et quelle est sa valeur probante ?",
           choices: [
           { id:"a", text:"Un type de serment collectif" },
           { id:"b", text:"La notoriété publique constante — peut constituer une preuve pour le mariage, la filiation et la possession de longue date" },
@@ -2033,7 +2033,7 @@ const AVANCE = {
           { id:"d", text:"Un jugement rendu par défaut" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite notable : الاستِفَاضَة (notoriété publique constante) peut prouver des faits comme le mariage, la filiation, le décès ou la possession prolongée. Si toute la communauté sait de manière constante que X possède tel bien depuis 30 ans → c'est une preuve malikite valide sans témoins formels."
+          explanation: "Spécificité malikite notable : Istifāḍa (الاستِفَاضَة) (notoriété publique constante) peut prouver des faits comme le mariage, la filiation, le décès ou la possession prolongée. Si toute la communauté sait de manière constante que X possède tel bien depuis 30 ans → c'est une preuve malikite valide sans témoins formels."
         },
         {
           id: "q-qad-05",
@@ -2049,7 +2049,7 @@ const AVANCE = {
         },
         {
           id: "q-qad-06",
-          text: "Le défendeur refuse de prêter serment (النُّكُول). En rite malikite, que se passe-t-il ?",
+          text: "Le défendeur refuse de prêNukūl (النُّكُول). En rite malikite, que se passe-t-il ?",
           choices: [
           { id:"a", text:"Il est automatiquement condamné" },
           { id:"b", text:"Le juge peut renvoyer le serment au demandeur — si ce dernier jure, il gagne" },
@@ -2057,11 +2057,11 @@ const AVANCE = {
           { id:"d", text:"Le refus n'a aucune conséquence" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : le النُّكُول (refus de jurer) peut conduire le juge à renvoyer le serment au demandeur (رَدّ اليَمِين). Si le demandeur jure sur la vérité de sa réclamation → il gagne. Le refus de jurer n'est pas une condamnation directe mais pèse lourdement contre le défendeur dans les litiges civils."
+          explanation: "Mukhtasar Khalīl : Nukūl (النُّكُول) (refus de jurer) peut conduire le juge à renvoyer le serment au demandeur (رَدّ اليَمِين). Si le demandeur jure sur la vérité de sa réclamation → il gagne. Le refus de jurer n'est pas une condamnation directe mais pèse lourdement contre le défendeur dans les litiges civils."
         },
         {
           id: "q-qad-07",
-          text: "La règle « البَيِّنَةُ عَلَى المُدَّعِي » signifie :",
+          text: "La règle « Bayyina (البَيِّنَة)ُ عَلَى المُدَّعِي » signifie :",
           choices: [
           { id:"a", text:"Le défendeur doit toujours prouver son innocence" },
           { id:"b", text:"C'est le demandeur qui doit apporter la preuve de sa réclamation — la présomption d'innocence protège le défendeur" },
@@ -2069,19 +2069,19 @@ const AVANCE = {
           { id:"d", text:"Le juge apporte les preuves lui-même" }
           ],
           correctId: "b",
-          explanation: "Hadīth fondamental : « البَيِّنَةُ عَلَى المُدَّعِي وَاليَمِينُ عَلَى مَن أَنكَرَ » — la preuve incombe au demandeur, le serment (de déni) au défendeur. C'est le principe de présomption d'innocence islamique : الأَصل البَرَاءَة — l'innocence est l'état par défaut."
+          explanation: "Hadīth fondamental : « Bayyina (البَيِّنَة)ُ عَلَى المُدَّعِي وَal-yamīn (اليَمِين)ُ عَلَى مَن أَنكَرَ » — la preuve incombe au demandeur, le serment (de déni) au défendeur. C'est le principe de présomption d'innocence islamique : الأَصل البَرَاءَة — l'innocence est l'état par défaut."
         },
         {
           id: "q-qad-08",
           text: "<strong>PIÈGE :</strong> L'aveu sous contrainte (إكراه) est-il valide en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — un aveu est toujours valide" },
-          { id:"b", text:"Non — l'aveu sous contrainte n'est pas valide ; la liberté est une condition de l'الإِقرَار" },
+          { id:"b", text:"Non — l'aveu sous contrainte n'est pas valide ; la liberté est une condition de l'Iqrār (الإِقرَار)" },
           { id:"c", text:"Valide pour les affaires civiles, pas pour les حُدُود" },
           { id:"d", text:"Valide si répété 3 fois" }
           ],
           correctId: "b",
-          explanation: "L'الإِقرَار (aveu) n'est valide que s'il est libre (خَالٍ من الإكراه), conscient et volontaire. Un aveu obtenu sous contrainte physique ou psychologique est nul. C'est une garantie fondamentale du droit islamique contre les aveux forcés — particulièrement importante pour les حُدُود."
+          explanation: "L'Iqrār (الإِقرَار) (aveu) n'est valide que s'il est libre (خَالٍ من الإكراه), conscient et volontaire. Un aveu obtenu sous contrainte physique ou psychologique est nul. C'est une garantie fondamentale du droit islamique contre les aveux forcés — particulièrement importante pour les حُدُود."
         },
         {
           id: "q-qad-09",
@@ -2105,7 +2105,7 @@ const AVANCE = {
           { id:"d", text:"Oui dans les affaires familiales" }
           ],
           correctId: "b",
-          explanation: "Distinction fondamentale : la فَتوَى est un avis juridique consultatif (رَأيٌ وَاجِبُ الاتِّبَاع دِيانَةً لَيسَ قَضَاءً) — elle s'impose moralement mais n'est pas exécutoire légalement. Le قَضَاء du juge est exécutoire. Une fatwa ne devient exécutoire que si un juge l'adopte comme jugement."
+          explanation: "Distinction fondamentale : la فَتوَى est un avis juridique consultatif (رَأيٌ Wājib (وَاجِب)ُ الاتِّبَاع دِيانَةً لَيسَ قَضَاءً) — elle s'impose moralement mais n'est pas exécutoire légalement. Le قَضَاء du juge est exécutoire. Une fatwa ne devient exécutoire que si un juge l'adopte comme jugement."
         },
         {
           id: "q-qad-11",
@@ -2157,7 +2157,7 @@ const AVANCE = {
         },
         {
           id: "q-qad-15",
-          text: "L'الإِقرَار (aveu) peut-il être rétracté après avoir été prononcé ?",
+          text: "L'Iqrār (الإِقرَار) (aveu) peut-il être rétracté après avoir été prononcé ?",
           choices: [
           { id:"a", text:"Non — l'aveu est irrévocable" },
           { id:"b", text:"Oui pour les حُدُود — la rétractation peut empêcher l'exécution de la peine selon certains savants" },
@@ -2181,15 +2181,15 @@ const AVANCE = {
         },
         {
           id: "q-qad-17",
-          text: "<strong>AVANCÉ :</strong> Qu'est-ce que التَّزكِيَة en procédure islamique ?",
+          text: "<strong>AVANCÉ :</strong> Qu'Tazkiya (التَّزكِيَة) en procédure islamique ?",
           choices: [
           { id:"a", text:"Le paiement des frais de justice" },
-          { id:"b", text:"L'enquête effectuée par le juge pour vérifier l'العَدَالَة d'un témoin avant d'accepter son témoignage" },
+          { id:"b", text:"L'enquête effectuée par le juge pour vérifier l'ʿAdāla (العَدَالَة) d'un témoin avant d'accepter son témoignage" },
           { id:"c", text:"La lecture du Coran avant l'audience" },
           { id:"d", text:"La signature des parties sur le jugement" }
           ],
           correctId: "b",
-          explanation: "La التَّزكِيَة est la vérification de l'honorabilité (العَدَالَة) d'un témoin par le juge ou ses enquêteurs. Le juge peut demander à des personnes de confiance dans la communauté de confirmer que le témoin est honnête, pratiquant et sans péchés majeurs connus — avant d'accepter son témoignage."
+          explanation: "Tazkiya (التَّزكِيَة) est la vérification de l'honorabilité (العَدَالَة) d'un témoin par le juge ou ses enquêteurs. Le juge peut demander à des personnes de confiance dans la communauté de confirmer que le témoin est honnête, pratiquant et sans péchés majeurs connus — avant d'accepter son témoignage."
         },
         {
           id: "q-qad-18",
@@ -2220,82 +2220,82 @@ const AVANCE = {
           text: "<strong>SYNTHÈSE :</strong> Quels sont les 3 principaux moyens de preuve en droit islamique malikite ?",
           choices: [
           { id:"a", text:"La rumeur, le serment et la réputation" },
-          { id:"b", text:"البَيِّنَة (témoignage), الإِقرَار (aveu) et اليَمِين (serment) — avec الاستِفَاضَة comme preuve spécifiquement malikite" },
+          { id:"b", text:"Bayyina (البَيِّنَة) (témoignage), Iqrār (الإِقرَار) (aveu) et al-yamīn (اليَمِين) (serment) — Istifāḍa (الاستِفَاضَة) comme preuve spécifiquement malikite" },
           { id:"c", text:"L'écrit, le serment et la fatwa" },
           { id:"d", text:"Uniquement les témoins oculaires" }
           ],
           correctId: "b",
-          explanation: "Les 3 principaux moyens de preuve islamiques : (1) البَيِّنَة = témoignage de témoins équitables (2 hommes, ou combinaisons selon les cas) ; (2) الإِقرَار = aveu du défendeur (maître des preuves) ; (3) اليَمِين = serment judiciaire. Spécificité malikite : الاستِفَاضَة (notoriété publique constante) comme 4ème moyen pour certaines affaires."
+          explanation: "Les 3 principaux moyens de preuve islamiques : (1) Bayyina (البَيِّنَة) = témoignage de témoins équitables (2 hommes, ou combinaisons selon les cas) ; (2) Iqrār (الإِقرَار) = aveu du défendeur (maître des preuves) ; (3) al-yamīn (اليَمِين) = serment judiciaire. Spécificité malikite : Istifāḍa (الاستِفَاضَة) (notoriété publique constante) comme 4ème moyen pour certaines affaires."
         }
         ]
       }
     },
 
-    /* ═══ الجِنَايَات والحُدُود ═══ */
+    /* ═══ الجِنَايَات وḤudūd (الحُدُود) ═══ */
     {
       id: "hudud",
       title: "Crimes et Peines en Islam",
-      arabicTitle: "الجِنَايَات والحُدُود",
+      arabicTitle: "الجِنَايَات وal-ḥudūd (الحُدُود)",
       icon: "shield",
-      description: "Droit pénal islamique : القِصَاص (talion), الدِّيَات (compensations) et les الحُدُود (peines coraniques).",
+      description: "Droit pénal islamique : Qiṣāṣ (القِصَاص) (talion), Diyāt (الدِّيَات) (compensations) Ḥudūd (الحُدُود) (peines coraniques).",
       source: "Mukhtasar Khalīl pp.240-260 · doctrine-malikite.fr",
       badge: {
         id: 'badge-avance-hudud',
         title: "Juriste du Droit Pénal",
         arabicTitle: "عَارِفُ الجِنَايَات",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الجِنَايَات والحُدُود"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الجِنَايَات وḤudūd (الحُدُود)"
       },
 
       lessons: [
               {
         id: "hud-01",
-        title: "القِصَاص والدِّيَات — Talion et Compensations",
+        title: "Qiṣāṣ (القِصَاص) وDiyāt (الدِّيَات) — Talion et Compensations",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le القِصَاص (talion) et les الدِّيَات (compensations pécuniaires) constituent le droit pénal islamique relatif aux atteintes à la personne. C'est un système qui équilibre justice, miséricorde et protection sociale. Le Mukhtasar Khalīl (pp. 240-250) y consacre un chapitre dense."},
-        { t:'ar', v:"وَلَكُم فِي القِصَاصِ حَيَاةٌ يَا أُولِي الأَلبَابِ", n:"« Dans le talion, il y a pour vous la vie, ô gens doués d'intelligence. » — Coran 2:179" },
-        {"t": "h", "v": "القِصَاص — Le Talion : définition et conditions"},
+        {"t": "lead", "v": "Qiṣāṣ (القِصَاص) (talion) Diyāt (الدِّيَات) (compensations pécuniaires) constituent le droit pénal islamique relatif aux atteintes à la personne. C'est un système qui équilibre justice, miséricorde et protection sociale. Le Mukhtasar Khalīl (pp. 240-250) y consacre un chapitre dense."},
+        { t:'ar', v:"وَلَكُم فِي al-qiṣāṣ (القِصَاص)ِ حَيَاةٌ يَا أُولِي الأَلبَابِ", n:"« Dans le talion, il y a pour vous la vie, ô gens doués d'intelligence. » — Coran 2:179" },
+        {"t": "h", "v": "Qiṣāṣ (القِصَاص) — Le Talion : définition et conditions"},
         { t:'ul', v:[
           "<strong>Définition :</strong> infliger au coupable exactement ce qu'il a infligé à la victime.",
-          "<strong>Conditions pour le القِصَاص :</strong> (1) intentionnalité du meurtre (عَمد) ; (2) égalité de statut (Muslim tue Muslim, ou dhimmī tue dhimmī) ; (3) le meurtrier est adulte et sain d'esprit.",
-          "<strong>Pas de القِصَاص :</strong> père tuant son fils (position malikite et hanbalite) ; maître tuant son esclave.",
+          "<strong>Qiṣāṣ (القِصَاص) :</strong> (1) intentionnalité du meurtre (عَمد) ; (2) égalité de statut (Muslim tue Muslim, ou dhimmī tue dhimmī) ; (3) le meurtrier est adulte et sain d'esprit.",
+          "<strong>Qiṣāṣ (القِصَاص) :</strong> père tuant son fils (position malikite et hanbalite) ; maître tuant son esclave.",
           "<strong>Spécificité malikite :</strong> le groupe tuant ensemble une personne sont tous passibles du قِصَاص — même si 10 ont tué 1.",
           "Mukhtasar Khalīl : le قِصَاص s'applique aussi aux blessures intentionnelles (قِصَاص الأَطراف) si la blessure est délimitable."
         ] },
         {"t": "h", "v": "من يملك العفو — Qui peut pardonner ?"},
         { t:'ul', v:[
           "Le ayant-droit du sang (وَلِيُّ الدَّم) : héritiers de la victime — ils ont le choix entre 3 options.",
-          "<strong>Option 1 : القِصَاص</strong> — exiger le talion.",
-          "<strong>Option 2 : الدِّيَة</strong> — accepter la compensation financière.",
+          "<strong>Option 1 : Qiṣāṣ (القِصَاص)</strong> — exiger le talion.",
+          "<strong>Option 2 : Diya (الدِّيَة)</strong> — accepter la compensation financière.",
           "<strong>Option 3 : العَفو</strong> — pardonner gratuitement (la plus méritoire islamiquement).",
           "Coran 5:45 : « Si l'on renonce au talion par charité, cela lui vaut une expiation. »"
         ] },
-        {"t": "h", "v": "الدِّيَة — La Compensation Pécuniaire"},
+        {"t": "h", "v": "Diya (الدِّيَة) — La Compensation Pécuniaire"},
         { t:'ul', v:[
           "<strong>Montant de base :</strong> 100 chameaux (valeur de référence coranique), ou leur équivalent en or ou argent.",
           "<strong>Dِية المرأة :</strong> moitié de la دِية de l'homme selon les 4 écoles.",
           "<strong>دِية أهل الكتاب :</strong> 1/2 ou 1/3 de la دِية du Muslim selon les positions malikites (débat interne).",
-          "<strong>الدِّية المُغَلَّظَة :</strong> دِية alourdie (100 chameaux répartis en groupes de 30 tebas, 30 hiqqāt, 40 enceintes) pour le meurtre quasi-intentionnel (شِبه العَمد).",
-          "<strong>العَاقِلَة :</strong> dans le meurtre non intentionnel (الخَطأ), la دِية est supportée collectivement par le groupe familial (عَشِيرَة) du meurtrier — pas par lui seul."
+          "<strong>الدِّية المُغَلَّظَة :</strong> دِية alourdie (100 chameaux répartis en groupes de 30 tebas, 30 hiqqāt, 40 enceintes) Shibh al-ʿAmd (شِبه العَمد).",
+          "<strong>ʿĀʿĀqila (العَاقِلَة) :</strong> dans le meurtre non intentionnel (الخَطأ), la دِية est supportée collectivement par le groupe familial (عَشِيرَة) du meurtrier — pas par lui seul."
         ] },
-        {"t": "note", "v": "Le système القِصَاص / دِية est profondément humaniste : il donne à la famille de la victime le choix entre la justice (talion), la réparation (compensation) et la miséricorde (pardon). La pression sociale dans l'Islam encourage le pardon — mais ne l'impose jamais."}
+        {"t": "note", "v": "Le systèQiṣāṣ (القِصَاص) / دِية est profondément humaniste : il donne à la famille de la victime le choix entre la justice (talion), la réparation (compensation) et la miséricorde (pardon). La pression sociale dans l'Islam encourage le pardon — mais ne l'impose jamais."}
         ]
       },
       {
         id: "hud-02",
-        title: "مَفهُوم الحُدُود — Les Peines Coraniques : Principes et Cadre",
+        title: "مَفهُوم Ḥudūd (الحُدُود) — Les Peines Coraniques : Principes et Cadre",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Les الحُدُود (singulier : حَدّ) sont les peines fixées par le Coran et la Sunna pour des infractions précises. Leur compréhension exige de saisir le cadre global — conditions, doutes, et finalité — avant de traiter chaque حَدّ séparément."},
+        {"t": "lead", "v": "Ḥudūd (الحُدُود) (singulier : حَدّ) sont les peines fixées par le Coran et la Sunna pour des infractions précises. Leur compréhension exige de saisir le cadre global — conditions, doutes, et finalité — avant de traiter chaque حَدّ séparément."},
         {"t": "h", "v": "Définition et liste des حُدُود"},
         { t:'ul', v:[
           "Terme : حَدّ = frontière, limite fixée par Allah.",
-          "<strong>6 حُدُود en rite malikite :</strong> (1) الزِّنَا (adultère/fornication) ; (2) القَذف (fausse accusation d'adultère) ; (3) الشُّرب (consommation d'alcool) ; (4) السَّرِقَة (vol) ; (5) الحِرَابَة (brigandage) ; (6) الرِّدَّة (apostasie).",
+          "<strong>6 حُدُود en rite malikite :</strong> (1) al-zinā (الزِّنَا) (adultère/fornication) ; (2) القَذف (fausse accusation d'adultère) ; (3) الشُّرب (consommation d'alcool) ; (4) al-sariqa (السَّرِقَة) (vol) ; (5) الحِرَابَة (brigandage) ; (6) al-ridda (الرِّدَّة) (apostasie).",
           "Le Mukhtasar Khalīl les traite dans cet ordre aux pp. 250-260."
         ] },
-        {"t": "h", "v": "الشُّبهَة — Le Doute comme Protection"},
-        {"t": "p", "v": "Principe cardinal : « الحُدُودُ تُدرَأُ بِالشُّبُهَاتِ » — les حُدُود sont levés par le doute. Toute ambiguïté sérieuse dans les preuves, les conditions ou l'intention empêche l'application du حَدّ."},
+        {"t": "h", "v": "Shubha (الشُّبهَة) — Le Doute comme Protection"},
+        {"t": "p", "v": "Principe cardinal : « Ḥudūd (الحُدُود)ُ تُدرَأُ بِShubuhāt (الشُّبُهَات)ِ » — les حُدُود sont levés par le doute. Toute ambiguïté sérieuse dans les preuves, les conditions ou l'intention empêche l'application du حَدّ."},
         { t:'ul', v:[
           "Si le prévenu a un doute sérieux sur la licéité de l'acte → حَدّ levé.",
           "Si les preuves sont incomplètes → حَدّ levé.",
@@ -2308,45 +2308,45 @@ const AVANCE = {
           "L'acte doit être prouvé par : 4 témoins oculaires (زِنَا) OU aveu répété (إِقرَار).",
           "Pas de contrainte (إكراه) — la contrainte empêche le حَدّ.",
           "Pas d'ignorance excusable (جَهل مُعتَبَر) — celui qui ignorait l'interdiction n'est pas soumis au حَدّ.",
-          "Le repentir (التَّوبَة) avant la poursuite : debated — certains savants malikites le prennent en compte."
+          "Tawba (التَّوبَة) avant la poursuite : debated — certains savants malikites le prennent en compte."
         ] },
-        {"t": "h", "v": "التَّعزِير — Peine Discrétionnaire"},
-        {"t": "p", "v": "Pour les infractions sans حَدّ fixé, le juge (قَاضٍ) impose une التَّعزِير (peine discrétionnaire adaptée) : amende, emprisonnement, flagellation légère, blâme public, etc. La التَّعزِير est le outil juridique principal du droit pénal islamique contemporain."},
+        {"t": "h", "v": "Taʿzīr (التَّعزِير) — Peine Discrétionnaire"},
+        {"t": "p", "v": "Pour les infractions sans حَدّ fixé, le juge (قَاضٍ) Taʿzīr (التَّعزِير) (peine discrétionnaire adaptée) : amende, emprisonnement, flagellation légère, blâme public, etc. Taʿzīr (التَّعزِير) est le outil juridique principal du droit pénal islamique contemporain."},
         {"t": "note", "v": "Point crucial pour la compréhension contemporaine : les conditions d'application des حُدُود dans leur cadre original (État islamique, témoins parfaits, preuves irréfutables) étaient si strictes que les حُدُود étaient rarement exécutés. Leur fonction première était dissuasive (رَدع) et éducative, pas punitive."}
         ]
       },
       {
         id: "hud-03",
-        title: "حَدّ السَّرِقَة والحِرَابَة — Vol et Brigandage",
+        title: "حَدّ al-sariqa (السَّرِقَة) والحِرَابَة — Vol et Brigandage",
         status: 'available',
         content: [
-        {"t": "lead", "v": "حَدّ السَّرِقَة (amputation pour vol qualifié) et حَدّ الحِرَابَة (brigandage armé) sont les deux حُدُود liés aux atteintes aux biens. Leurs conditions sont nombreuses et strictes — le Mukhtasar Khalīl (pp. 252-256) les détaille avec précision."},
-        {"t": "h", "v": "حَدّ السَّرِقَة — Conditions cumulatives"},
-        { t:'ar', v:"وَالسَّارِقُ وَالسَّارِقَةُ فَاقطَعُوا أَيدِيَهُمَا", n:"Coran 5:38 — Fondement coranique du حَدّ السَّرِقَة" },
+        {"t": "lead", "v": "حَدّ al-sariqa (السَّرِقَة) (amputation pour vol qualifié) et Ḥadd al-ḤḤadd al-Ḥirāba (حَدّ الحِرَابَة) (brigandage armé) sont les deux حُدُود liés aux atteintes aux biens. Leurs conditions sont nombreuses et strictes — le Mukhtasar Khalīl (pp. 252-256) les détaille avec précision."},
+        {"t": "h", "v": "حَدّ al-sariqa (السَّرِقَة) — Conditions cumulatives"},
+        { t:'ar', v:"وَالسَّارِقُ وَالسَّارِقَةُ فَاقطَعُوا أَيدِيَهُمَا", n:"Coran 5:38 — Fondement coranique du حَدّ al-sariqa (السَّرِقَة)" },
         { t:'ul', v:[
-          "<strong>1. النِّصَاب :</strong> la valeur volée doit atteindre le seuil minimum — 1/4 dinar d'or (environ 1g d'or) selon le rite malikite.",
-          "<strong>2. الحِرز :</strong> le bien volé doit être dans un endroit sécurisé (maison fermée, coffre, boutique fermée). Voler dans un espace public sans gardien = pas de حَدّ.",
+          "<strong>1. Niṣāb (النِّصَاب) :</strong> la valeur volée doit atteindre le seuil minimum — 1/4 dinar d'or (environ 1g d'or) selon le rite malikite.",
+          "<strong>2. ḤḤirz (الحِرز) :</strong> le bien volé doit être dans un endroit sécurisé (maison fermée, coffre, boutique fermée). Voler dans un espace public sans gardien = pas de حَدّ.",
           "<strong>3. الأَخذ خُفيَة :</strong> pris en cachette — l'arrachage à force (اِختِلَاس) n'est pas un vol qualifié.",
-          "<strong>4. عَدَم الشُّبهَة :</strong> pas de droit réel ou prétendu sur le bien. Ex : un père volant le bien de son fils → pas de حَدّ (شُبهَة de propriété familiale).",
+          "<strong>4. عَدَم Shubha (الشُّبهَة) :</strong> pas de droit réel ou prétendu sur le bien. Ex : un père volant le bien de son fils → pas de حَدّ (شُبهَة de propriété familiale).",
           "<strong>5. الثُّبُوت :</strong> prouvé par 2 témoins ou aveu."
         ] },
         {"t": "h", "v": "La peine et son application"},
         { t:'ul', v:[
           "<strong>1ère fois :</strong> amputation de la main droite.",
           "<strong>2ème fois :</strong> amputation du pied gauche.",
-          "<strong>3ème et 4ème fois :</strong> التَّعزِير (peine discrétionnaire) selon certains savants malikites.",
+          "<strong>3ème et 4ème fois :</strong> Taʿzīr (التَّعزِير) (peine discrétionnaire) selon certains savants malikites.",
           "Si la main est rendue et la valeur restituée AVANT jugement → certains savants malikites lèvent le حَدّ.",
           "La pauvreté absolue (مَخمَصَة شَدِيدَة) crée une شُبهَة → حَدّ levé."
         ] },
-        {"t": "h", "v": "حَدّ الحِرَابَة — Le Brigandage Armé"},
+        {"t": "h", "v": "Ḥadd al-ḤḤadd al-Ḥirāba (حَدّ الحِرَابَة) — Le Brigandage Armé"},
         {"t": "p", "v": "La حِرَابَة (vol à main armée, terrorisme de grande route) est plus grave que le vol ordinaire car elle perturbe la sécurité publique."},
         { t:'ul', v:[
           "Coran 5:33 : 4 peines selon la gravité : exécution / amputation croisée (main droite + pied gauche) / exil / mort en croix.",
           "Mukhtasar Khalīl : si le brigand a tué ET volé → exécution ET croix. S'il a tué sans voler → exécution. S'il a volé sans tuer → amputation croisée. Terreur sans vol ni meurtre → exil.",
           "La حِرَابَة inclut tout acte de terrorisme perturbant la sécurité collective.",
-          "La التَّوبَة avant arrestation → supprime le حَدّ selon l'opinion malikite (Coran 5:34)."
+          "Tawba (التَّوبَة) avant arrestation → supprime le حَدّ selon l'opinion malikite (Coran 5:34)."
         ] },
-        {"t": "note", "v": "Point malikite sur النِّصَاب : le rite malikite fixe le minimum à 1/4 dinar d'or (valeur approximative d'environ 1g d'or = environ 60-70€ en 2024). En dessous de cette valeur → pas de حَدّ السَّرِقَة mais التَّعزِير. C'est l'une des valeurs les plus basses parmi les 4 madhāhib."}
+        {"t": "note", "v": "Niṣāb (النِّصَاب) : le rite malikite fixe le minimum à 1/4 dinar d'or (valeur approximative d'environ 1g d'or = environ 60-70€ en 2024). En dessous de cette valeur → pas de حَدّ al-sariqa (السَّرِقَة) Taʿzīr (التَّعزِير). C'est l'une des valeurs les plus basses parmi les 4 madhāhib."}
         ]
       },
       {
@@ -2355,7 +2355,7 @@ const AVANCE = {
         status: 'available',
         content: [
         {"t": "lead", "v": "Quatre حُدُود concernent l'ordre moral et spirituel islamique. Leurs conditions d'application sont parmi les plus strictes du droit pénal islamique."},
-        {"t": "h", "v": "حَدّ الزِّنَا — La Fornication/Adultère"},
+        {"t": "h", "v": "حَدّ al-zinā (الزِّنَا) — La Fornication/Adultère"},
         { t:'ul', v:[
           "Preuve : 4 témoins oculaires ayant vu l'acte consommé — quasi impossible à réunir.",
           "Ou : aveu volontaire et répété du prévenu (qui peut se rétracter).",
@@ -2363,21 +2363,21 @@ const AVANCE = {
           "Si une seule des 4 conditions manque (témoin douteux, acte incomplet prouvé…) → حَدّ levé.",
           "Mukhtasar Khalīl : la grossesse hors mariage SEULE n'est pas une preuve de زِنَا — elle peut être due à une erreur (وَطء شُبهَة)."
         ] },
-        {"t": "h", "v": "حَدّ القَذف — La Fausse Accusation d'Adultère"},
+        {"t": "h", "v": "ḤḤadd al-Qadhf (حَدّ القَذف) — La Fausse Accusation d'Adultère"},
         { t:'ul', v:[
           "Accuser quelqu'un d'adultère sans 4 témoins → 80 coups de fouet.",
-          "Protection de l'honneur (العِرض) — l'une des 5 مَقَاصِد الشَّرِيعَة.",
+          "Protection de l'honneur (العِرض) — l'une des 5 مَقَاصِد Sharīʿa (الشَّرِيعَة).",
           "Conditions : la victime est Muslim, libre, muhsan (marié ou pas ?), nie l'accusation.",
-          "Le repentir lève-t-il le حَدّ القَذف ? Débat interne — selon l'Imām Mālik : non, le حَدّ est un droit de la victime (pas d'Allah), donc seule la victime peut pardonner."
+          "Le repentir lève-t-il le ḤḤadd al-Qadhf (حَدّ القَذف) ? Débat interne — selon l'Imām Mālik : non, le حَدّ est un droit de la victime (pas d'Allah), donc seule la victime peut pardonner."
         ] },
-        {"t": "h", "v": "حَدّ الشُّرب — La Consommation d'Alcool"},
+        {"t": "h", "v": "ḤḤadd al-Shurb (حَدّ الشُّرب) — La Consommation d'Alcool"},
         { t:'ul', v:[
           "<strong>Spécificité malikite :</strong> 40 coups selon l'Imām Mālik (d'autres écoles : 80 coups).",
           "Preuve : témoignage de 2 témoins ayant vu boire, ou aveu, ou odeur d'alcool sur l'haleine.",
           "S'applique à tout alcool (خَمر) — jus de raisin fermenté ou tout enivrisant.",
           "Mukhtasar Khalīl : si boire pour raison médicale sur prescription → pas de حَدّ (شُبهَة médicale)."
         ] },
-        {"t": "h", "v": "حَدّ الرِّدَّة — L'Apostasie"},
+        {"t": "h", "v": "حَدّ al-ridda (الرِّدَّة) — L'Apostasie"},
         { t:'ul', v:[
           "Spécificité malikite : délai de 3 jours pour استتابة (invitation au retour à l'Islam) avant toute sanction.",
           "Si l'apostat revient → libéré ; s'il persiste → peine classique (qui n'est pas applicable dans un État non islamique).",
@@ -2390,34 +2390,34 @@ const AVANCE = {
       },
       {
         id: "hud-05",
-        title: "الحُدُود فِي السِّيَاق المُعَاصِر — Compréhension et Application",
+        title: "Ḥudūd (الحُدُود) فِي السِّيَاق المُعَاصِر — Compréhension et Application",
         status: 'available',
         content: [
         {"t": "lead", "v": "La question des حُدُود dans le contexte contemporain est l'une des plus débattues en théologie islamique moderne. Ce chapitre présente le cadre doctrinal malikite et les positions des savants contemporains, notamment à partir de doctrine-malikite.fr."},
-        {"t": "h", "v": "مَقَاصِد الشَّرِيعَة — Les Finalités de la Loi Islamique"},
+        {"t": "h", "v": "مَقَاصِد Sharīʿa (الشَّرِيعَة) — Les Finalités de la Loi Islamique"},
         {"t": "p", "v": "Les حُدُود s'inscrivent dans le cadre des 5 finalités de la شَرِيعَة (مَقَاصِد) que le fiqh malikite, via Imām al-Ghazālī et Ibn Rushd, a systématisées :"},
         { t:'ul', v:[
-          "<strong>1. حِفظُ الدِّين :</strong> protection de la religion → حَدّ الرِّدَّة.",
-          "<strong>2. حِفظُ النَّفس :</strong> protection de la vie → القِصَاص.",
-          "<strong>3. حِفظُ العَقل :</strong> protection de l'intellect → حَدّ الشُّرب.",
-          "<strong>4. حِفظُ النَّسل :</strong> protection de la lignée → حَدّ الزِّنَا.",
-          "<strong>5. حِفظُ المَال :</strong> protection des biens → حَدّ السَّرِقَة."
+          "<strong>1. حِفظُ الدِّين :</strong> protection de la religion → حَدّ al-ridda (الرِّدَّة).",
+          "<strong>2. حِفظُ النَّفس :</strong> protection de la vie → Qiṣāṣ (القِصَاص).",
+          "<strong>3. حِفظُ العَقل :</strong> protection de l'intellect → ḤḤadd al-Shurb (حَدّ الشُّرب).",
+          "<strong>4. حِفظُ النَّسل :</strong> protection de la lignée → حَدّ al-zinā (الزِّنَا).",
+          "<strong>5. حِفظُ المَال :</strong> protection des biens → حَدّ al-sariqa (السَّرِقَة)."
         ] },
         {"t": "h", "v": "Position des savants malikites contemporains"},
         { t:'ul', v:[
           "Les conditions d'application des حُدُود étaient conçues pour un État islamique pleinement établi avec justice sociale — leur application hors de ce contexte est problématique.",
           "Doctrine-malikite.fr souligne que les finalités (مَقَاصِد) des حُدُود sont permanentes ; les modalités d'application peuvent varier selon le contexte.",
           "En pays non islamique : aucun حَدّ n'est applicable — la loi civile s'impose.",
-          "L'injustice sociale (pauvreté, oppression) crée des شُبُهَات qui lèvent les حُدُود — Sayyidnā ʿUmar n'a pas appliqué le حَدّ السَّرِقَة pendant l'année de famine."
+          "L'injustice sociale (pauvreté, oppression) crée des شُبُهَات qui lèvent les حُدُود — Sayyidnā ʿUmar n'a pas appliqué le حَدّ al-sariqa (السَّرِقَة) pendant l'année de famine."
         ] },
-        {"t": "h", "v": "التَّعزِير comme alternative principale"},
+        {"t": "h", "v": "Taʿzīr (التَّعزِير) comme alternative principale"},
         { t:'ul', v:[
-          "Dans le contexte contemporain, le التَّعزِير (peine discrétionnaire) est le principal outil pénal islamique applicable.",
+          "Dans le contexte contemporain, Taʿzīr (التَّعزِير) (peine discrétionnaire) est le principal outil pénal islamique applicable.",
           "Il inclut : amendes, emprisonnement, blâme public, exclusion communautaire, programmes de réhabilitation.",
           "Le juge adapte la peine à la situation, la personnalité du coupable et le contexte social.",
-          "Les codes pénaux des pays Muslims contemporains utilisent principalement le التَّعزِير."
+          "Les codes péTaʿzīr (التَّعزِير)."
         ] },
-        { t:'ar', v:"إِنَّ اللَّهَ يَأمُرُ بِالعَدلِ وَالإِحسَانِ", n:"Coran 16:90 — « Allah commande la justice et la bienfaisance. »" },
+        { t:'ar', v:"إِنَّ اللَّهَ يَأمُرُ بِالعَدلِ وَal-iḥsān (الإِحسَان)ِ", n:"Coran 16:90 — « Allah commande la justice et la bienfaisance. »" },
         {"t": "note", "v": "Point de méthode malikite : l'Imām Mālik était connu pour sa prudence dans l'application des حُدُود. Dans la Muwattaʾ et la Mudawwana, il cite de nombreuses conditions et exceptions qui réduisent le champ d'application des حُدُود. Cette prudence est un trait distinctif de la méthode juridique malikite."}
         ]
       }
@@ -2425,7 +2425,7 @@ const AVANCE = {
 
       quiz: {
         id: 'quiz-avance-hudud',
-        title: 'Questionnaire — ' + "الجِنَايَات والحُدُود",
+        title: 'Questionnaire — ' + "الجِنَايَات وḤudūd (الحُدُود)",
         status: 'available',
         score: null,
         questions: [
@@ -2434,12 +2434,12 @@ const AVANCE = {
           text: "La victime d'un meurtre intentionnel (أو ses héritiers) a 3 options. Lesquelles ?",
           choices: [
           { id:"a", text:"Punir, emprisonner ou exiler" },
-          { id:"b", text:"القِصَاص (talion) / الدِّيَة (compensation) / العَفو (pardon)" },
+          { id:"b", text:"Qiṣāṣ (القِصَاص) (talion) / Diya (الدِّيَة) (compensation) / العَفو (pardon)" },
           { id:"c", text:"Porter plainte, négocier ou abandonner" },
-          { id:"d", text:"Réclamer le حَدّ, la دِية ou التَّعزِير" }
+          { id:"d", text:"Réclamer le حَدّ, la دِية Taʿzīr (التَّعزِير)" }
           ],
           correctId: "b",
-          explanation: "Le وَلِيُّ الدَّم (ayant-droit du sang) a 3 options : (1) القِصَاص — exiger le talion ; (2) الدِّيَة — accepter la compensation financière ; (3) العَفو — pardonner gratuitement, ce qui est islamiquement le plus méritoire. Coran 5:45 : le pardon est une expiation pour lui."
+          explanation: "Le وَلِيُّ الدَّم (ayant-droit du sang) a 3 options : (1) Qiṣāṣ (القِصَاص) — exiger le talion ; (2) Diya (الدِّيَة) — accepter la compensation financière ; (3) العَفو — pardonner gratuitement, ce qui est islamiquement le plus méritoire. Coran 5:45 : le pardon est une expiation pour lui."
         },
         {
           id: "q-hud-02",
@@ -2455,7 +2455,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-03",
-          text: "الدِّيَة de base correspond à :",
+          text: "Diya (الدِّيَة) de base correspond à :",
           choices: [
           { id:"a", text:"1000 dirhams d'argent" },
           { id:"b", text:"100 chameaux ou leur équivalent en or/argent" },
@@ -2463,11 +2463,11 @@ const AVANCE = {
           { id:"d", text:"La valeur du bien détruit" }
           ],
           correctId: "b",
-          explanation: "La دِية de base pour le meurtre intentionnel est 100 chameaux (نص حَدِيث) ou leur équivalent en or/argent selon l'époque. La دِية المُغَلَّظَة (alourdie) pour le شِبه العَمد (meurtre quasi-intentionnel) est répartie en 30 tebas + 30 hiqqāt + 40 chameaux enceintes."
+          explanation: "La دِية de base pour le meurtre intentionnel est 100 chameaux (نص حَدِيث) ou leur équivalent en or/argent selon l'époque. La دِية المُغَلَّظَة (alourdie) Shibh al-ʿAmd (شِبه العَمد) (meurtre quasi-intentionnel) est répartie en 30 tebas + 30 hiqqāt + 40 chameaux enceintes."
         },
         {
           id: "q-hud-04",
-          text: "La العَاقِلَة : qui supporte la دِية dans un meurtre par erreur (القَتل الخَطَأ) ?",
+          text: "La ʿĀʿĀqila (العَاقِلَة) : qui supporte la دِية Qatl al-Khaṭaʾ (القَتل الخَطَأ) ?",
           choices: [
           { id:"a", text:"Le meurtrier seul" },
           { id:"b", text:"L'État islamique" },
@@ -2475,31 +2475,31 @@ const AVANCE = {
           { id:"d", text:"Les héritiers du meurtrier" }
           ],
           correctId: "c",
-          explanation: "Dans le القَتل الخَطَأ (meurtre non intentionnel), la دِية est supportée par العَاقِلَة — le groupe familial/tribal du meurtrier, collectivement et répartie sur 3 ans. Le meurtrier lui-même ne la paye pas personnellement. Cette solidarité familiale est un système de sécurité sociale islamique préislamique validé par l'Islam."
+          explanation: "Qatl al-Khaṭaʾ (القَتل الخَطَأ) (meurtre non intentionnel), la دِية est supportée par ʿĀʿĀqila (العَاقِلَة) — le groupe familial/tribal du meurtrier, collectivement et répartie sur 3 ans. Le meurtrier lui-même ne la paye pas personnellement. Cette solidarité familiale est un système de sécurité sociale islamique préislamique validé par l'Islam."
         },
         {
           id: "q-hud-05",
-          text: "<strong>PIÈGE :</strong> Un homme vole une valeur inférieure au النِّصَاب (seuil minimum). Y a-t-il un حَدّ السَّرِقَة ?",
+          text: "<strong>PIÈGE :</strong> Un homme vole une valeur inféNiṣāb (النِّصَاب) (seuil minimum). Y a-t-il un حَدّ al-sariqa (السَّرِقَة) ?",
           choices: [
           { id:"a", text:"Oui — tout vol engage le حَدّ" },
-          { id:"b", text:"Non — en dessous du النِّصَاب (1/4 dinar d'or en rite malikite), c'est le التَّعزِير, pas le حَدّ" },
+          { id:"b", text:"Non — Niṣāb (النِّصَاب) (1/4 dinar d'or en rite malikite), c'Taʿzīr (التَّعزِير), pas le حَدّ" },
           { id:"c", text:"Seulement si c'est un récidiviste" },
           { id:"d", text:"Non seulement si c'est un pauvre" }
           ],
           correctId: "b",
-          explanation: "Le النِّصَاب (seuil minimum) pour le حَدّ السَّرِقَة est 1/4 dinar d'or en rite malikite (environ 1g d'or). En dessous → التَّعزِير (peine discrétionnaire). Au dessus + toutes les autres conditions → حَدّ. C'est une des valeurs les plus basses parmi les 4 écoles."
+          explanation: "Niṣāb (النِّصَاب) (seuil minimum) pour le حَدّ al-sariqa (السَّرِقَة) est 1/4 dinar d'or en rite malikite (environ 1g d'or). En dessous → Taʿzīr (التَّعزِير) (peine discrétionnaire). Au dessus + toutes les autres conditions → حَدّ. C'est une des valeurs les plus basses parmi les 4 écoles."
         },
         {
           id: "q-hud-06",
-          text: "<strong>CRUCIALE :</strong> La condition du الحِرز — qu'est-ce que c'est et pourquoi est-elle essentielle ?",
+          text: "<strong>CRUCIALE :</strong> La condition du ḤḤirz (الحِرز) — qu'est-ce que c'est et pourquoi est-elle essentielle ?",
           choices: [
           { id:"a", text:"La valeur minimale volée" },
-          { id:"b", text:"Le lieu sécurisé d'où le bien a été volé — sans الحِرز, pas de حَدّ" },
+          { id:"b", text:"Le lieu sécurisé d'où le bien a été volé — sans ḤḤirz (الحِرز), pas de حَدّ" },
           { id:"c", text:"L'intention du voleur" },
           { id:"d", text:"Le nombre de témoins" }
           ],
           correctId: "b",
-          explanation: "الحِرز = lieu protégé/sécurisé. Le bien doit avoir été volé dans un endroit qui le protégeait normalement : maison fermée, boutique fermée, coffre, voiture verrouillée. Voler dans un espace public non gardé → pas de حَدّ (pas de الحِرز). Cette condition protège les pickpockets opportunistes d'une peine démesurée."
+          explanation: "ḤḤirz (الحِرز) = lieu protégé/sécurisé. Le bien doit avoir été volé dans un endroit qui le protégeait normalement : maison fermée, boutique fermée, coffre, voiture verrouillée. Voler dans un espace public non gardé → pas de حَدّ (pas de الحِرز). Cette condition protège les pickpockets opportunistes d'une peine démesurée."
         },
         {
           id: "q-hud-07",
@@ -2511,7 +2511,7 @@ const AVANCE = {
           { id:"d", text:"1 témoin + aveu" }
           ],
           correctId: "c",
-          explanation: "La زِنَا requiert 4 témoins oculaires ayant vu l'acte sexuel consommé (pas l'approche, mais l'acte lui-même selon Mukhtasar Khalīl). Ce seuil quasi-impossible à atteindre protège la vie privée. Moins de 4 témoins → les témoins risquent eux-mêmes le حَدّ القَذف (fausse accusation)."
+          explanation: "La زِنَا requiert 4 témoins oculaires ayant vu l'acte sexuel consommé (pas l'approche, mais l'acte lui-même selon Mukhtasar Khalīl). Ce seuil quasi-impossible à atteindre protège la vie privée. Moins de 4 témoins → les témoins risquent eux-mêmes le ḤḤadd al-Qadhf (حَدّ القَذف) (fausse accusation)."
         },
         {
           id: "q-hud-08",
@@ -2527,7 +2527,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-09",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Combien de coups dans le حَدّ الشُّرب (alcool) selon l'Imām Mālik ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Combien de coups dans le ḤḤadd al-Shurb (حَدّ الشُّرب) (alcool) selon l'Imām Mālik ?",
           choices: [
           { id:"a", text:"80 coups comme l'école hanafite" },
           { id:"b", text:"40 coups selon l'Imām Mālik" },
@@ -2535,11 +2535,11 @@ const AVANCE = {
           { id:"d", text:"100 coups" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite : l'Imām Mālik fixe le حَدّ الشُّرب à 40 coups, se basant sur la pratique du Prophète ﷺ et d'Abū Bakr. Les écoles hanafite et chāfiʿite optent pour 80 coups (basées sur la pratique d'ʿUmar). C'est une divergence authentique entre les écoles sur ce حَدّ."
+          explanation: "Spécificité malikite : l'Imām Mālik fixe le ḤḤadd al-Shurb (حَدّ الشُّرب) à 40 coups, se basant sur la pratique du Prophète ﷺ et d'Abū Bakr. Les écoles hanafite et chāfiʿite optent pour 80 coups (basées sur la pratique d'ʿUmar). C'est une divergence authentique entre les écoles sur ce حَدّ."
         },
         {
           id: "q-hud-10",
-          text: "Le حَدّ القَذف (fausse accusation d'adultère) peut-il être pardonné par la victime ?",
+          text: "Le ḤḤadd al-Qadhf (حَدّ القَذف) (fausse accusation d'adultère) peut-il être pardonné par la victime ?",
           choices: [
           { id:"a", text:"Non — c'est un droit d'Allah, non remissible" },
           { id:"b", text:"Oui — c'est un droit de la victime (حَقّ آدَمِيّ) ; elle seule peut pardonner et lever le حَدّ" },
@@ -2547,7 +2547,7 @@ const AVANCE = {
           { id:"d", text:"Non sauf si l'accusé prouve la vérité" }
           ],
           correctId: "b",
-          explanation: "Position malikite : le حَدّ القَذف est un حَقّ آدَمِيّ (droit humain), pas un حَقّ إِلَهِيّ. La victime de la calomnie peut donc pardonner et lever le حَدّ. Le repentir de l'accusé seul ne suffit pas — c'est à la victime de décider. C'est différent des حُدُود qui sont حَقّ الله (comme حَدّ الزِّنَا)."
+          explanation: "Position malikite : le ḤḤadd al-Qadhf (حَدّ القَذف) est un حَقّ آدَمِيّ (droit humain), pas un حَقّ إِلَهِيّ. La victime de la calomnie peut donc pardonner et lever le حَدّ. Le repentir de l'accusé seul ne suffit pas — c'est à la victime de décider. C'est différent des حُدُود qui sont حَقّ الله (comme حَدّ الزِّنَا)."
         },
         {
           id: "q-hud-11",
@@ -2563,7 +2563,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-12",
-          text: "Le principe « الحُدُودُ تُدرَأُ بِالشُّبُهَاتِ » signifie :",
+          text: "Le principe « Ḥudūd (الحُدُود)ُ تُدرَأُ بِShubuhāt (الشُّبُهَات)ِ » signifie :",
           choices: [
           { id:"a", text:"Les حُدُود sont toujours exécutés sans exception" },
           { id:"b", text:"Toute ambiguïté sérieuse dans les preuves ou conditions lève le حَدّ — le doute profite à l'accusé" },
@@ -2571,11 +2571,11 @@ const AVANCE = {
           { id:"d", text:"On peut douter de tout sauf de l'aveu" }
           ],
           correctId: "b",
-          explanation: "Hadīth : « ادرَءُوا الحُدُودَ بِالشُّبُهَاتِ » — « levez les حُدُود par les doutes. » C'est l'un des principes fondamentaux du droit pénal islamique. Toute شُبهَة sérieuse (doute sur la preuve, l'intention, les conditions, l'ignorance excusable...) suffit pour empêcher l'application du حَدّ."
+          explanation: "Hadīth : « ادرَءُوا Ḥudūd (الحُدُود)َ بِShubuhāt (الشُّبُهَات)ِ » — « levez les حُدُود par les doutes. » C'est l'un des principes fondamentaux du droit pénal islamique. Toute شُبهَة sérieuse (doute sur la preuve, l'intention, les conditions, l'ignorance excusable...) suffit pour empêcher l'application du حَدّ."
         },
         {
           id: "q-hud-13",
-          text: "Sayyidnā ʿUmar a suspendu le حَدّ السَّرِقَة pendant l'année de famine. Pourquoi ?",
+          text: "Sayyidnā ʿUmar a suspendu le حَدّ al-sariqa (السَّرِقَة) pendant l'année de famine. Pourquoi ?",
           choices: [
           { id:"a", text:"Par clémence personnelle" },
           { id:"b", text:"Car la pauvreté crée une شُبهَة — le besoin vital excuse le vol pour survivre" },
@@ -2583,7 +2583,7 @@ const AVANCE = {
           { id:"d", text:"Car les juges étaient en voyage" }
           ],
           correctId: "b",
-          explanation: "Sayyidnā ʿUmar ﵁ a suspendu le حَدّ السَّرِقَة pendant l'année de famine (عَام الرَّمَادَة) car la nécessité vitale (الضَّرُورَة) crée une شُبهَة — quelqu'un qui vole pour survivre à une famine n'est pas dans la même situation morale qu'un voleur ordinaire. Ce précédent est fondamental dans la jurisprudence malikite."
+          explanation: "Sayyidnā ʿUmar ﵁ a suspendu le حَدّ al-sariqa (السَّرِقَة) pendant l'année de famine (عَام الرَّمَادَة) car la nécessité Ḍarūra (الضَّرُورَة) crée une شُبهَة — quelqu'un qui vole pour survivre à une famine n'est pas dans la même situation morale qu'un voleur ordinaire. Ce précédent est fondamental dans la jurisprudence malikite."
         },
         {
           id: "q-hud-14",
@@ -2611,7 +2611,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-16",
-          text: "Les 5 مَقَاصِد الشَّرِيعَة sont :",
+          text: "Les 5 مَقَاصِد Sharīʿa (الشَّرِيعَة) sont :",
           choices: [
           { id:"a", text:"Prière, jeûne, hajj, zakāt, pureté" },
           { id:"b", text:"حِفظُ الدِّين / النَّفس / العَقل / النَّسل / المَال" },
@@ -2623,7 +2623,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-17",
-          text: "<strong>AVANCÉ :</strong> La التَّوبَة avant arrestation lève-t-elle le حَدّ الحِرَابَة ?",
+          text: "<strong>AVANCÉ :</strong> Tawba (التَّوبَة) avant arrestation lève-t-elle le Ḥadd al-ḤḤadd al-Ḥirāba (حَدّ الحِرَابَة) ?",
           choices: [
           { id:"a", text:"Non — la peine reste" },
           { id:"b", text:"Oui — Coran 5:34 : « sauf ceux qui se repentent avant que vous ne les ayez maîtrisés »" },
@@ -2631,11 +2631,11 @@ const AVANCE = {
           { id:"d", text:"Seulement si personne n'a été blessé" }
           ],
           correctId: "b",
-          explanation: "Coran 5:34 est explicite : « إِلَّا الَّذِينَ تَابُوا مِن قَبلِ أَن تَقدِرُوا عَلَيهِم » — les brigands qui se repentent AVANT d'être arrêtés sont exemptés du حَدّ. C'est une invitation coranique au retour sincère. Après arrestation → التَّوبَة est toujours recommandée mais le حَدّ reste."
+          explanation: "Coran 5:34 est explicite : « إِلَّا الَّذِينَ تَابُوا مِن قَبلِ أَن تَقدِرُوا عَلَيهِم » — les brigands qui se repentent AVANT d'être arrêtés sont exemptés du حَدّ. C'est une invitation coranique au retour sincère. Après arrestation → Tawba (التَّوبَة) est toujours recommandée mais le حَدّ reste."
         },
         {
           id: "q-hud-18",
-          text: "<strong>PIÈGE :</strong> Un père tue son fils. Y a-t-il القِصَاص en rite malikite ?",
+          text: "<strong>PIÈGE :</strong> Un père tue son fils. Qiṣāṣ (القِصَاص) en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — l'égalité s'applique même en famille" },
           { id:"b", text:"Non — le père n'est pas passible du قِصَاص pour le meurtre de son fils (position malikite et hanbalite)" },
@@ -2647,7 +2647,7 @@ const AVANCE = {
         },
         {
           id: "q-hud-19",
-          text: "Le التَّعزِير inclut quels types de sanctions ?",
+          text: "Taʿzīr (التَّعزِير) inclut quels types de sanctions ?",
           choices: [
           { id:"a", text:"Seulement la flagellation" },
           { id:"b", text:"Amende, emprisonnement, blâme public, exclusion communautaire, flagellation légère — adapté par le juge à la situation" },
@@ -2655,7 +2655,7 @@ const AVANCE = {
           { id:"d", text:"Seulement l'emprisonnement" }
           ],
           correctId: "b",
-          explanation: "Le التَّعزِير est la peine discrétionnaire adaptée par le قَاضٍ à chaque cas. Elle peut être : amende, emprisonnement (court ou long), blâme public (توبيخ), exclusion de la communauté, surveillance, travaux d'intérêt général, ou flagellation légère. Le التَّعزِير est l'outil pénal islamique principal pour les infractions sans حَدّ fixé."
+          explanation: "Taʿzīr (التَّعزِير) est la peine discrétionnaire adaptée par le قَاضٍ à chaque cas. Elle peut être : amende, emprisonnement (court ou long), blâme public (توبيخ), exclusion de la communauté, surveillance, travaux d'intérêt général, ou flagellation légère. Taʿzīr (التَّعزِير) est l'outil pénal islamique principal pour les infractions sans حَدّ fixé."
         },
         {
           id: "q-hud-20",
@@ -2667,54 +2667,54 @@ const AVANCE = {
           { id:"d", text:"Réserver les حُدُود aux récidivistes" }
           ],
           correctId: "b",
-          explanation: "La méthode malikite sur les حُدُود est marquée par la prudence. L'Imām Mālik cite de nombreuses conditions et شُبُهَات dans la Muwattaʾ et la Mudawwana. Sayyidnā ʿUmar a suspendu le حَدّ السَّرِقَة en temps de crise. Le principe « تُدرَأُ بِالشُّبُهَاتِ » est appliqué généreusement — la miséricorde prime sur la sévérité."
+          explanation: "La méthode malikite sur les حُدُود est marquée par la prudence. L'Imām Mālik cite de nombreuses conditions et شُبُهَات dans la Muwattaʾ et la Mudawwana. Sayyidnā ʿUmar a suspendu le حَدّ al-sariqa (السَّرِقَة) en temps de crise. Le principe « تُدرَأُ بِShubuhāt (الشُّبُهَات)ِ » est appliqué généreusement — la miséricorde prime sur la sévérité."
         }
         ]
       }
     },
 
-    /* ═══ الإِحسَان والتَّزكِيَة ═══ */
+    /* ═══ Iḥsān (الإِحسَان) وTazkiya (التَّزكِيَة) ═══ */
     {
       id: "ihsan",
       title: "Spiritualité et Éthique Islamique",
-      arabicTitle: "الإِحسَان والتَّزكِيَة",
+      arabicTitle: "al-iḥsān (الإِحسَان) والتَّزكِيَة",
       icon: "heart",
       description: "Le troisième pilier du Matn d'Ibn Āshir : purification de l'âme, stations spirituelles et éthique islamique.",
       source: "Matn d'Ibn Āshir (3ème pilier) · doctrine-malikite.fr La Spiritualité",
       badge: {
         id: 'badge-avance-ihsan',
         title: "Chercheur de l'Excellence",
-        arabicTitle: "طَالِبُ الإِحسَان",
+        arabicTitle: "طَالِبُ al-iḥsān (الإِحسَان)",
         icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الإِحسَان والتَّزكِيَة"
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Iḥsān (الإِحسَان) وTazkiya (التَّزكِيَة)"
       },
 
       lessons: [
               {
         id: "ihs-01",
-        title: "الإِحسَان — Le Troisième Pilier du Curriculum Islamique",
+        title: "Iḥsān (الإِحسَان) — Le Troisième Pilier du Curriculum Islamique",
         status: 'available',
         content: [
-        {"t": "lead", "v": "L'الإِحسَان est le troisième et dernier pilier du Matn d'Ibn Āshir al-Mālikī. Il couronne l'édifice islamique : après la croyance (الإِيمَان) et la pratique (الإِسلَام), vient l'excellence spirituelle (الإِحسَان). C'est la dimension intérieure et transformatrice de la religion."},
-        { t:'ar', v:"الإِحسَانُ أَن تَعبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ فَإِن لَم تَكُن تَرَاهُ فَإِنَّهُ يَرَاكَ", n:"« L'الإِحسَان c'est que tu adores Allah comme si tu Le voyais ; et si tu ne Le vois pas, Lui te voit. » — Hadīth de Gabriel, Muslim" },
+        {"t": "lead", "v": "L'Iḥsān (الإِحسَان) est le troisième et dernier pilier du Matn d'Ibn Āshir al-Mālikī. Il couronne l'édifice islamique : aprèĪmān (الإِيمَان) Islām (الإِسلَام), vient l'Iḥsān (الإِحسَان). C'est la dimension intérieure et transformatrice de la religion."},
+        { t:'ar', v:"al-iḥsān (الإِحسَان)ُ أَن تَعبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ فَإِن لَم تَكُن تَرَاهُ فَإِنَّهُ يَرَاكَ", n:"« L'al-iḥsān (الإِحسَان) c'est que tu adores Allah comme si tu Le voyais ; et si tu ne Le vois pas, Lui te voit. » — Hadīth de Gabriel, Muslim" },
         {"t": "h", "v": "الحَدِيثُ الجَامِع — Le Hadīth de Gabriel"},
-        {"t": "p", "v": "Dans le Hadīth de Gabriel (rapporté par Muslim), le Prophète ﷺ définit les 3 dimensions de la religion : الإِسلَام (pratique des 5 piliers), الإِيمَان (croyance dans les 6 piliers), et الإِحسَان (excellence dans l'adoration). Le Matn d'Ibn Āshir structure le curriculum islamique selon ce triptyque."},
+        {"t": "p", "v": "Dans le Hadīth de Gabriel (rapporté par Muslim), le Prophète ﷺ définit les 3 dimensions de la religion : Islām (الإِسلَام) (pratique des 5 piliers), Īmān (الإِيمَان) (croyance dans les 6 piliers), Iḥsān (الإِحسَان) (excellence dans l'adoration). Le Matn d'Ibn Āshir structure le curriculum islamique selon ce triptyque."},
         {"t": "h", "v": "Le 3ème pilier selon le Matn d'Ibn Āshir"},
         { t:'ul', v:[
           "Ibn Āshir al-Mālikī (mort 1040 H) est l'auteur du matn classique enseigné dans les mosquées d'Afrique du Nord.",
-          "Son 3ème pilier (التَّصَوُّف والأَخلَاق) couvre : l'éthique des stations spirituelles (المَقَامَات) et des états (الأَحوَال).",
+          "Son 3ème pilier (التَّصَوُّف والأَخلَاق) couvre : l'éMaqāmāt (المَقَامَات) et des états (الأَحوَال).",
           "Les sources malikites de référence : al-Risāla al-Qushayriyya, Iḥyāʾ ʿUlūm al-Dīn d'al-Ghazālī, al-Ḥikam d'Ibn ʿAṭāʾ Allāh al-Iskandarī.",
           "Doctrine-malikite.fr y consacre sa section « La Spiritualité »."
         ] },
-        {"t": "h", "v": "Lien entre الإِحسَان et les ʿibādāt"},
+        {"t": "h", "v": "Iḥsān (الإِحسَان) et les ʿibādāt"},
         { t:'ul', v:[
-          "Chaque pilier a une dimension intérieure : la prière enseigne l'humilité et la présence (الخُشُوع).",
-          "Le jeûne enseigne la maîtrise de soi et la patience (الصَّبر).",
-          "La zakāt enseigne le détachement du monde (الزُّهد).",
+          "Chaque pilier a une dimension intérieure : la prière enseigne l'humilité et la préKhushūʿ (الخُشُوع).",
+          "Le jeûne enseigne la maîṢabr (الصَّبر).",
+          "La zakāt enseigne le déZuhd (الزُّهد).",
           "Le حَجّ enseigne l'obéissance et la soumission totale (الانقِيَاد).",
-          "Sans الإِحسَان, les actes d'adoration restent de simples gestes corporels sans transformation intérieure."
+          "Iḥsān (الإِحسَان), les actes d'adoration restent de simples gestes corporels sans transformation intérieure."
         ] },
-        {"t": "note", "v": "L'الإِحسَان n'est pas réservé aux soufis ou aux élites spirituelles — c'est l'objectif de tout Muslim sincère. Le Prophète ﷺ a invité chaque Muslim à « adorer Allah comme s'il Le voyait » dans ses 5 prières quotidiennes, son jeûne, sa zakāt et tous ses actes."}
+        {"t": "note", "v": "L'Iḥsān (الإِحسَان) n'est pas réservé aux soufis ou aux élites spirituelles — c'est l'objectif de tout Muslim sincère. Le Prophète ﷺ a invité chaque Muslim à « adorer Allah comme s'il Le voyait » dans ses 5 prières quotidiennes, son jeûne, sa zakāt et tous ses actes."}
         ]
       },
       {
@@ -2723,42 +2723,42 @@ const AVANCE = {
         status: 'available',
         content: [
         {"t": "lead", "v": "Les مَقَامَات (stations spirituelles) sont les étapes de la progression intérieure vers Allah. Le Matn d'Ibn Āshir et al-Ghazālī dans son Iḥyāʾ les décrivent comme un chemin de transformation que tout Muslim peut emprunter."},
-        {"t": "h", "v": "1. التَّوبَة — Le Repentir"},
+        {"t": "h", "v": "1. Tawba (التَّوبَة) — Le Repentir"},
         { t:'ul', v:[
           "Première station et porte d'entrée : reconnaître ses fautes, les regretter et se résoudre à ne plus les commettre.",
           "Conditions malikites : (1) cesser le péché (الإِقلَاع) ; (2) le regretter sincèrement (النَّدَم) ; (3) résoudre de ne plus recommencer (العَزم).",
           "Si le péché impliquait un droit d'autrui → le restituer est une 4ème condition.",
           "Coran 66:8 : « Revenez à Allah d'un repentir sincère (تَوبَةً نَصُوحًا). »"
         ] },
-        {"t": "h", "v": "2. الزُّهد — Le Détachement du Monde"},
+        {"t": "h", "v": "2. Zuhd (الزُّهد) — Le Détachement du Monde"},
         { t:'ul', v:[
           "Zuhd ≠ pauvreté forcée — c'est avoir le monde dans les mains sans l'avoir dans le cœur.",
           "Ibn Qayyim : le زُهد est de reconnaître que ce que tu as perdu est meilleur que ce que tu posssèdes (l'Âhira > la Dunyā).",
           "Exemple prophétique : le Prophète ﷺ était le plus pauvre des riches et le plus riche des pauvres.",
           "Doctrine-malikite.fr : le Muslim contemporain peut posséder et gagner tout en pratiquant le زُهد dans son cœur."
         ] },
-        {"t": "h", "v": "3. التَّوَكُّل — La Confiance en Allah"},
+        {"t": "h", "v": "3. Tawakkul (التَّوَكُّل) — La Confiance en Allah"},
         { t:'ul', v:[
           "Confiance totale en Allah pour les résultats, après avoir pris tous les moyens nécessaires.",
           "Hadīth : « Attache ton chameau [prends tes précautions] puis fais confiance à Allah. »",
-          "التَّوَكُّل ≠ passivité — c'est agir avec tous les moyens puis remettre le résultat à Allah.",
-          "Erreur commune : confondre التَّوَكُّل avec la paresse ou le fatalisme."
+          "Tawakkul (التَّوَكُّل) ≠ passivité — c'est agir avec tous les moyens puis remettre le résultat à Allah.",
+          "Erreur commune : Tawakkul (التَّوَكُّل) avec la paresse ou le fatalisme."
         ] },
-        {"t": "h", "v": "4. الصَّبر والشُّكر — Patience et Gratitude"},
+        {"t": "h", "v": "4. Ṣabr (الصَّبر) وShukr (الشُّكر) — Patience et Gratitude"},
         { t:'ul', v:[
-          "الصَّبر : patience dans l'adversité, l'obéissance et devant les désirs illicites.",
-          "الشُّكر : gratitude pour les bienfaits par le cœur (reconnaître), la langue (dire) et les membres (agir).",
-          "Ibn Qayyim : la religion entière est الصَّبر + الشُّكر — les deux pôles de l'existence humaine.",
+          "Ṣabr (الصَّبر) : patience dans l'adversité, l'obéissance et devant les désirs illicites.",
+          "Shukr (الشُّكر) : gratitude pour les bienfaits par le cœur (reconnaître), la langue (dire) et les membres (agir).",
+          "Ibn Qayyim : la religion entièṢabr (الصَّبر) + Shukr (الشُّكر) — les deux pôles de l'existence humaine.",
           "Coran 14:7 : « Si vous êtes reconnaissants, J'augmenterai mes bienfaits ; si vous êtes ingrats, Mon châtiment est sévère. »"
         ] },
-        {"t": "h", "v": "5. المَحَبَّة — L'Amour d'Allah"},
+        {"t": "h", "v": "5. Maḥabba (المَحَبَّة) — L'Amour d'Allah"},
         {"t": "p", "v": "L'amour d'Allah est la station la plus haute selon Ibn Āshir et al-Ghazālī. Il se nourrit de la connaissance d'Allah (المَعرِفَة) et se manifeste dans la pratique sincère."},
         { t:'ul', v:[
           "Coran 3:31 : « Dis : si vous aimez Allah, suivez-moi — Allah vous aimera. »",
           "Signes de l'amour d'Allah : préférer ce qu'Allah aime à ce qu'on aime soi-même.",
           "L'amour du Prophète ﷺ : condition du vrai amour d'Allah. Hadīth : « Nul n'est croyant tant qu'il ne m'aime plus que son père, son fils et toute l'humanité. »"
         ] },
-        {"t": "note", "v": "Ordre des stations selon le Matn d'Ibn Āshir : التَّوبَة → الزُّهد → التَّوَكُّل → الصَّبر → الشُّكر → الخَوف → الرَّجَاء → المَحَبَّة → المَعرِفَة. Chaque station prépare la suivante. Il n'est pas nécessaire de les « compléter » séquentiellement — elles se renforcent mutuellement tout au long de la vie."}
+        {"t": "note", "v": "Ordre des stations selon le Matn d'Ibn Āshir : Tawba (التَّوبَة) → Zuhd (الزُّهد) → Tawakkul (التَّوَكُّل) → Ṣabr (الصَّبر) → Shukr (الشُّكر) → الخَوف → الرَّجَاء → Maḥabba (المَحَبَّة) → المَعرِفَة. Chaque station prépare la suivante. Il n'est pas nécessaire de les « compléter » séquentiellement — elles se renforcent mutuellement tout au long de la vie."}
         ]
       },
       {
@@ -2766,22 +2766,22 @@ const AVANCE = {
         title: "أَمرَاضُ القَلب — Les Maladies Spirituelles et leurs Remèdes",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le Matn d'Ibn Āshir et l'Iḥyāʾ d'al-Ghazālī identifient des « maladies du cœur » (أَمرَاض القَلب) qui empêchent la progression spirituelle. La التَّزكِيَة (purification de l'âme) consiste à les diagnostiquer et les traiter."},
-        {"t": "h", "v": "1. الكِبر — L'Orgueil"},
+        {"t": "lead", "v": "Le Matn d'Ibn Āshir et l'Iḥyāʾ d'al-Ghazālī identifient des « maladies du cœur » (أَمرَاض القَلب) qui empêchent la progression spirituelle. Tazkiya (التَّزكِيَة) (purification de l'âme) consiste à les diagnostiquer et les traiter."},
+        {"t": "h", "v": "1. Kibr (الكِبر) — L'Orgueil"},
         { t:'ul', v:[
           "Définition : se voir supérieur aux autres et mépriser autrui.",
           "Hadīth : « N'entrera pas au paradis celui qui a dans le cœur le poids d'un atome d'orgueil. » — Muslim.",
           "<strong>Remède :</strong> rappeler ses origines (خُلِقَ مِن مَاء مَهِين), réfléchir à ses propres défauts, servir les pauvres, rechercher les savants et les gens pieux.",
-          "Distinguer : الكِبر (orgueil de l'âme) ≠ العِزَّة (dignité légitime)."
+          "Distinguer : Kibr (الكِبر) (orgueil de l'âme) ≠ العِزَّة (dignité légitime)."
         ] },
-        {"t": "h", "v": "2. الحَسَد — La Jalousie"},
+        {"t": "h", "v": "2. Ḥasad (الحَسَد) — La Jalousie"},
         { t:'ul', v:[
           "Définition : détester le bienfait d'Allah chez autrui et désirer sa disparition.",
           "Hadīth : « Méfiez-vous de la jalousie — elle dévore les bonnes actions comme le feu dévore le bois sec. »",
-          "<strong>Remède :</strong> faire un duʿāʾ sincère pour la personne enviée, rappeler que les rizques sont fixés par Allah, rechercher la الغِبطَة (désirer avoir pareil sans vouloir sa disparition chez l'autre) à la place du حَسَد.",
-          "La الغِبطَة (émulation positive) est permise, voire recommandée."
+          "<strong>Remède :</strong> faire un duʿāʾ sincère pour la personne enviée, rappeler que les rizques sont fixés par Allah, rechercher la GhiḅGhiḅṭa (الغِبطَة) (désirer avoir pareil sans vouloir sa disparition chez l'autre) à la place du حَسَد.",
+          "La GhiḅGhiḅṭa (الغِبطَة) (émulation positive) est permise, voire recommandée."
         ] },
-        {"t": "h", "v": "3. الرِّيَاء — L'Ostentation"},
+        {"t": "h", "v": "3. Riyāʾ (الرِّيَاء) — L'Ostentation"},
         { t:'ul', v:[
           "Définition : accomplir des actes d'adoration pour être vu et admiré des hommes.",
           "Coran 4:142 : les hypocrites prient sans se rappeler Allah — « ils ne Le mentionnent que peu. »",
@@ -2795,22 +2795,22 @@ const AVANCE = {
           "<strong>Remède :</strong> dire أَعُوذُ بِاللهِ (s'abriter en Allah), s'asseoir si debout, s'allonger si assis, faire ses ablutions, rappeler la douceur du Prophète ﷺ.",
           "Le Matn d'Ibn Āshir : maîtriser la colère est l'une des vertus les plus valorisées."
         ] },
-        {"t": "h", "v": "5. الحِقد — La Rancœur"},
+        {"t": "h", "v": "5. ḤḤiqd (الحِقد) — La Rancœur"},
         { t:'ul', v:[
           "Définition : garder de l'animosité envers quelqu'un après une dispute.",
           "<strong>Remède :</strong> pardonner (العَفو), se réconcilier, rappeler les défauts de sa propre âme.",
           "Hadīth : « Les portes du paradis s'ouvrent les lundis et jeudis — tous les Muslims sont pardonnés sauf les deux qui se sont brouillés. »",
           "Doctrine-malikite.fr : la مُصَالَحَة (réconciliation) est obligatoire dans les 3 jours suivant une brouille."
         ] },
-        {"t": "note", "v": "Méthode al-Ghazālī (adoptée par Ibn Āshir) pour la التَّزكِيَة : (1) المُرَاقَبَة (surveiller ses intentions) ; (2) المُحَاسَبَة (bilan quotidien de l'âme) ; (3) المُجَاهَدَة (effort sur l'âme) ; (4) المُعَاقَبَة (pénaliser l'âme pour ses erreurs par des actes supplémentaires d'adoration)."}
+        {"t": "note", "v": "Méthode al-Ghazālī (adoptée par Ibn Āshir) Tazkiya (التَّزكِيَة) : (1) Murāqaba (المُرَاقَبَة) (surveiller ses intentions) ; (2) Muḥāsaba (المُحَاسَبَة) (bilan quotidien de l'âme) ; (3) Mujāhada (المُجَاهَدَة) (effort sur l'âme) ; (4) المُعَاقَبَة (pénaliser l'âme pour ses erreurs par des actes supplémentaires d'adoration)."}
         ]
       },
       {
         id: "ihs-04",
-        title: "الأَخلَاق الإِسلَامِيَّة — L'Éthique Sociale selon le Rite Malikite",
+        title: "الأَخلَاق Islām (الإِسلَام)ِيَّة — L'Éthique Sociale selon le Rite Malikite",
         status: 'available',
         content: [
-        {"t": "lead", "v": "La dimension pratique de l'الإِحسَان se manifeste dans les relations sociales. Le Matn d'Ibn Āshir et doctrine-malikite.fr y consacrent une part importante — l'éthique sociale islamique (الآدَاب والأَخلَاق) est un aspect fondamental de la التَّزكِيَة."},
+        {"t": "lead", "v": "La dimension pratique de l'Iḥsān (الإِحسَان) se manifeste dans les relations sociales. Le Matn d'Ibn Āshir et doctrine-malikite.fr y consacrent une part importante — l'éthique sociale islamique (الآدَاب والأَخلَاق) Tazkiya (التَّزكِيَة)."},
         {"t": "h", "v": "حُقُوق الوَالِدَيْن — Droits des parents"},
         { t:'ul', v:[
           "Bienfaisance envers les parents = parmi les plus grands actes après la prière (Coran 17:23).",
@@ -2846,54 +2846,54 @@ const AVANCE = {
           "Hadīth : « La رِفق est dans tout ce qu'elle est — un ornement ; et dans tout ce d'où elle est retirée — une difformité. »",
           "La douceur dans la daʿwa (appel à l'Islam) est une obligation — Coran 16:125."
         ] },
-        {"t": "note", "v": "Le Matn d'Ibn Āshir conclut par l'éthique sociale précisément parce que la التَّزكِيَة ne peut être authentique que si elle se manifeste dans les relations avec autrui. Un homme « spirituel » qui maltraite sa famille ou ses voisins n'a pas accompli l'الإِحسَان — la spiritualité islamique est sociale par nature."}
+        {"t": "note", "v": "Le Matn d'Ibn Āshir conclut par l'éthique sociale préciséTazkiya (التَّزكِيَة) ne peut être authentique que si elle se manifeste dans les relations avec autrui. Un homme « spirituel » qui maltraite sa famille ou ses voisins n'a pas accompli l'Iḥsān (الإِحسَان) — la spiritualité islamique est sociale par nature."}
         ]
       },
       {
         id: "ihs-05",
-        title: "المُرَاقَبَة والمُحَاسَبَة — Surveillance et Bilan de l'Âme",
+        title: "Murāqaba (المُرَاقَبَة) وMuḥāsaba (المُحَاسَبَة) — Surveillance et Bilan de l'Âme",
         status: 'available',
         content: [
-        {"t": "lead", "v": "La المُرَاقَبَة (conscience d'être observé par Allah) et la المُحَاسَبَة (bilan quotidien de l'âme) sont les deux pratiques spirituelles quotidiennes recommandées par le Matn d'Ibn Āshir et doctrine-malikite.fr — l'Examen de Conscience Islamique."},
-        {"t": "h", "v": "المُرَاقَبَة — La Conscience Permanente de la Présence Divine"},
+        {"t": "lead", "v": "Murāqaba (المُرَاقَبَة) (conscience d'être observé par Allah) Muḥāsaba (المُحَاسَبَة) (bilan quotidien de l'âme) sont les deux pratiques spirituelles quotidiennes recommandées par le Matn d'Ibn Āshir et doctrine-malikite.fr — l'Examen de Conscience Islamique."},
+        {"t": "h", "v": "Murāqaba (المُرَاقَبَة) — La Conscience Permanente de la Présence Divine"},
         { t:'ul', v:[
           "Définition : agir en permanence comme si on voyait Allah, ou au moins en sachant qu'Il nous voit.",
-          "C'est la traduction pratique de la définition de l'الإِحسَان dans le Hadīth de Gabriel.",
+          "C'est la traduction pratique de la définition de l'Iḥsān (الإِحسَان) dans le Hadīth de Gabriel.",
           "Elle transforme chaque geste ordinaire (manger, travailler, parler) en acte d'adoration.",
           "Hadīth Qudsī : « Je suis avec Mon serviteur selon l'opinion qu'il a de Moi. »"
         ] },
-        {"t": "h", "v": "المُحَاسَبَة — Le Bilan Quotidien de l'Âme"},
+        {"t": "h", "v": "Muḥāsaba (المُحَاسَبَة) — Le Bilan Quotidien de l'Âme"},
         { t:'ul', v:[
           "Sayyidnā ʿUmar : « حَاسِبُوا أَنفُسَكُم قَبلَ أَن تُحَاسَبُوا » — évaluez vos âmes avant d'être évalués.",
-          "Pratique recommandée : avant de dormir, passer en revue la journée — les bonnes actions (الشُّكر), les mauvaises (الاستِغفَار), les occasions manquées (الحَسرَة).",
-          "Le Matn d'Ibn Āshir : المُحَاسَبَة est la pratique centrale qui lie toutes les autres vertus.",
+          "Pratique recommandée : avant de dormir, passer en revue la journée — Shukr (الشُّكر), les mauvaises (الاستِغفَار), les occasions manquées (الحَسرَة).",
+          "Le Matn d'Ibn Āshir : Muḥāsaba (المُحَاسَبَة) est la pratique centrale qui lie toutes les autres vertus.",
           "Elle n'est pas une source d'angoisse mais d'ajustement progressif et serein."
         ] },
         {"t": "h", "v": "العِبَادَات كَمَدرَسَة رُوحِيَّة — Les Actes d'Adoration comme École Spirituelle"},
         { t:'ul', v:[
-          "<strong>الصَّلَاة :</strong> المُرَاقَبَة en action — 5 fois par jour, rappel de la Présence divine.",
-          "<strong>الصِّيَام :</strong> maîtrise des désirs — école de الصَّبر et de التَّوَكُّل.",
-          "<strong>الزَّكَاة :</strong> guérison du حُبّ المَال (attachement à l'argent) — école de الزُّهد.",
-          "<strong>الحَجّ :</strong> soumission totale — école de الانقِيَاد والمَحَبَّة.",
-          "<strong>قِيَامُ اللَّيل :</strong> communion nocturne avec Allah — la plus haute école de المُرَاقَبَة."
+          "<strong>Ṣalāt (الصَّلَاة) :</strong> Murāqaba (المُرَاقَبَة) en action — 5 fois par jour, rappel de la Présence divine.",
+          "<strong>ṢṢiyām (الصِّيَام) :</strong> maîtrise des désirs — éṢabr (الصَّبر) Tawakkul (التَّوَكُّل).",
+          "<strong>Zakāt (الزَّكَاة) :</strong> guérison du حُبّ المَال (attachement à l'argent) — éZuhd (الزُّهد).",
+          "<strong>Ḥajj (الحَجّ) :</strong> soumission totale — école de الانقِيَاد وMaḥabba (المَحَبَّة).",
+          "<strong>قِيَامُ اللَّيل :</strong> communion nocturne avec Allah — la plus haute éMurāqaba (المُرَاقَبَة)."
         ] },
         {"t": "h", "v": "الخَاتِمَة — La Synthèse du Curriculum Islamique"},
         {"t": "p", "v": "Le curriculum du Matn d'Ibn Āshir se referme ici sur une vérité centrale : Islam (pratique) + Imān (croyance) + Iḥsān (excellence) forment un tout indissociable. On ne peut être vraiment Muslim sans aspirer à l'Imān, ni vraiment muʾmin sans chercher l'Iḥsān. Les niveaux de ce site d'étude reflètent ce triptyque : Débutant (pratique fondamentale) → Intermédiaire (approfondissement) → Avancé (maîtrise et intériorisation)."},
         { t:'ar', v:"وَمَا خَلَقتُ الجِنَّ وَالإِنسَ إِلَّا لِيَعبُدُونِ", n:"« Je n'ai créé les djinns et les hommes que pour M'adorer. » — Coran 51:56 — verset qui inaugure et conclut tout le curriculum islamique" },
-        {"t": "note", "v": "Message final de doctrine-malikite.fr sur la التَّزكِيَة : « La spiritualité islamique n'est pas une addition facultative à la pratique — c'est son cœur et sa finalité. Sans l'aspiration à l'الإِحسَان, la prière est une gymnastique, le jeûne une diète et la zakāt un impôt. Avec l'الإِحسَان, chaque geste devient adoration et chaque moment devient présence. »"}
+        {"t": "note", "v": "Message final de doctrine-malikite.Tazkiya (التَّزكِيَة) : « La spiritualité islamique n'est pas une addition facultative à la pratique — c'est son cœur et sa finalité. Sans l'aspiration à l'Iḥsān (الإِحسَان), la prière est une gymnastique, le jeûne une diète et la zakāt un impôt. Avec l'Iḥsān (الإِحسَان), chaque geste devient adoration et chaque moment devient présence. »"}
         ]
       }
       ],
 
       quiz: {
         id: 'quiz-avance-ihsan',
-        title: 'Questionnaire — ' + "الإِحسَان والتَّزكِيَة",
+        title: 'Questionnaire — ' + "Iḥsān (الإِحسَان) وTazkiya (التَّزكِيَة)",
         status: 'available',
         score: null,
         questions: [
                 {
           id: "q-ihs-01",
-          text: "La définition de l'الإِحسَان donnée par le Prophète ﷺ dans le Hadīth de Gabriel est :",
+          text: "La définition de l'Iḥsān (الإِحسَان) donnée par le Prophète ﷺ dans le Hadīth de Gabriel est :",
           choices: [
           { id:"a", text:"Donner la zakāt avec générosité" },
           { id:"b", text:"Adorer Allah comme si tu Le voyais ; si tu ne Le vois pas, Lui te voit" },
@@ -2901,19 +2901,19 @@ const AVANCE = {
           { id:"d", text:"Réciter le Coran chaque nuit" }
           ],
           correctId: "b",
-          explanation: "Hadīth de Gabriel (Muslim) : le Prophète ﷺ définit l'الإِحسَان comme « أَن تَعبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ فَإِن لَم تَكُن تَرَاهُ فَإِنَّهُ يَرَاكَ ». C'est la conscience permanente de la Présence divine qui transforme chaque acte en adoration authentique."
+          explanation: "Hadīth de Gabriel (Muslim) : le Prophète ﷺ définit l'Iḥsān (الإِحسَان) comme « أَن تَعبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ فَإِن لَم تَكُن تَرَاهُ فَإِنَّهُ يَرَاكَ ». C'est la conscience permanente de la Présence divine qui transforme chaque acte en adoration authentique."
         },
         {
           id: "q-ihs-02",
           text: "Les 3 piliers du Matn d'Ibn Āshir al-Mālikī sont :",
           choices: [
           { id:"a", text:"Coran, Sunna et école malikite" },
-          { id:"b", text:"الإِسلَام (pratique) + الإِيمَان (croyance) + الإِحسَان (excellence spirituelle)" },
+          { id:"b", text:"Islām (الإِسلَام) (pratique) + Īmān (الإِيمَان) (croyance) + Iḥsān (الإِحسَان) (excellence spirituelle)" },
           { id:"c", text:"Fiqh, ʿaqīda et langue arabe" },
           { id:"d", text:"Prière, jeûne et hajj" }
           ],
           correctId: "b",
-          explanation: "Le Matn d'Ibn Āshir structure le curriculum islamique selon le Hadīth de Gabriel : (1) الإِسلَام — les actes pratiques (5 piliers) ; (2) الإِيمَان — les croyances (6 piliers) ; (3) الإِحسَان — l'excellence spirituelle. Les niveaux de ce site suivent cette même progression."
+          explanation: "Le Matn d'Ibn Āshir structure le curriculum islamique selon le Hadīth de Gabriel : (1) Islām (الإِسلَام) — les actes pratiques (5 piliers) ; (2) Īmān (الإِيمَان) — les croyances (6 piliers) ; (3) Iḥsān (الإِحسَان) — l'excellence spirituelle. Les niveaux de ce site suivent cette même progression."
         },
         {
           id: "q-ihs-03",
@@ -2929,31 +2929,31 @@ const AVANCE = {
         },
         {
           id: "q-ihs-04",
-          text: "Le التَّوَكُّل (confiance en Allah) : quelle erreur fréquente faut-il éviter ?",
+          text: "Tawakkul (التَّوَكُّل) (confiance en Allah) : quelle erreur fréquente faut-il éviter ?",
           choices: [
-          { id:"a", text:"Confondre التَّوَكُّل avec la paresse ou le fatalisme — il faut agir pleinement avant de s'en remettre à Allah" },
+          { id:"a", text:"Tawakkul (التَّوَكُّل) avec la paresse ou le fatalisme — il faut agir pleinement avant de s'en remettre à Allah" },
           { id:"b", text:"Trop travailler" },
           { id:"c", text:"Ne pas prier assez" },
-          { id:"d", text:"Confondre التَّوَكُّل avec le زُهد" }
+          { id:"d", text:"Tawakkul (التَّوَكُّل) avec le زُهد" }
           ],
           correctId: "a",
-          explanation: "Hadīth : « Attache ton chameau, puis fais confiance à Allah. » Le التَّوَكُّل = prendre tous les moyens nécessaires + remettre le résultat à Allah. C'est l'antidote à deux erreurs : l'attachement aux résultats (absence de confiance) et la passivité fataliste (prétexte spirituel pour l'inaction)."
+          explanation: "Hadīth : « Attache ton chameau, puis fais confiance à Allah. » Tawakkul (التَّوَكُّل) = prendre tous les moyens nécessaires + remettre le résultat à Allah. C'est l'antidote à deux erreurs : l'attachement aux résultats (absence de confiance) et la passivité fataliste (prétexte spirituel pour l'inaction)."
         },
         {
           id: "q-ihs-05",
-          text: "La الغِبطَة diffère du حَسَد en ce que :",
+          text: "La GhiḅGhiḅṭa (الغِبطَة) diffère du حَسَد en ce que :",
           choices: [
-          { id:"a", text:"La الغِبطَة est plus grave" },
-          { id:"b", text:"La الغِبطَة = désirer le même bien sans vouloir que l'autre le perde ; le حَسَد = désirer la perte du bien chez l'autre" },
+          { id:"a", text:"La GhiḅGhiḅṭa (الغِبطَة) est plus grave" },
+          { id:"b", text:"La GhiḅGhiḅṭa (الغِبطَة) = désirer le même bien sans vouloir que l'autre le perde ; le حَسَد = désirer la perte du bien chez l'autre" },
           { id:"c", text:"Elles sont identiques" },
-          { id:"d", text:"La الغِبطَة concerne seulement les biens matériels" }
+          { id:"d", text:"La GhiḅGhiḅṭa (الغِبطَة) concerne seulement les biens matériels" }
           ],
           correctId: "b",
-          explanation: "Distinction essentielle : الحَسَد = jalousie destructrice (vouloir que le bienfait disparaisse de l'autre). الغِبطَة = émulation positive (vouloir avoir le même bien sans vouloir sa disparition chez l'autre). La الغِبطَة est permise et même recommandée pour la connaissance et les bonnes actions. Hadīth : « Pas d'envie sauf dans deux cas : l'homme savant qui enseigne, et l'homme généreux. »"
+          explanation: "Distinction essentielle : Ḥasad (الحَسَد) = jalousie destructrice (vouloir que le bienfait disparaisse de l'autre). GhiḅGhiḅṭa (الغِبطَة) = émulation positive (vouloir avoir le même bien sans vouloir sa disparition chez l'autre). La GhiḅGhiḅṭa (الغِبطَة) est permise et même recommandée pour la connaissance et les bonnes actions. Hadīth : « Pas d'envie sauf dans deux cas : l'homme savant qui enseigne, et l'homme généreux. »"
         },
         {
           id: "q-ihs-06",
-          text: "Comment guérir le الرِّيَاء (ostentation) selon al-Ghazālī et le Matn d'Ibn Āshir ?",
+          text: "Comment guéRiyāʾ (الرِّيَاء) (ostentation) selon al-Ghazālī et le Matn d'Ibn Āshir ?",
           choices: [
           { id:"a", text:"Arrêter tous les actes d'adoration publics" },
           { id:"b", text:"Multiplier les ʿibādāt secrètes, rechercher uniquement le regard d'Allah, rappeler la mort" },
@@ -2961,23 +2961,23 @@ const AVANCE = {
           { id:"d", text:"Faire 100 prostrations supplémentaires chaque jour" }
           ],
           correctId: "b",
-          explanation: "Remède al-Ghazālī contre le الرِّيَاء : (1) multiplier les ʿibādāt secrètes (prière de nuit, dons anonymes) pour désaccoutumer l'âme du regard des autres ; (2) rappeler constamment que seul le regard d'Allah compte ; (3) rappeler la mort et le Jugement. Hadīth Qudsī : « Je suis le plus riche des associés — celui qui M'associe quelqu'un, Je l'abandonne à son associé. »"
+          explanation: "RemèRiyāʾ (الرِّيَاء) : (1) multiplier les ʿibādāt secrètes (prière de nuit, dons anonymes) pour désaccoutumer l'âme du regard des autres ; (2) rappeler constamment que seul le regard d'Allah compte ; (3) rappeler la mort et le Jugement. Hadīth Qudsī : « Je suis le plus riche des associés — celui qui M'associe quelqu'un, Je l'abandonne à son associé. »"
         },
         {
           id: "q-ihs-07",
-          text: "La المُرَاقَبَة est la traduction pratique de quelle définition ?",
+          text: "Murāqaba (المُرَاقَبَة) est la traduction pratique de quelle définition ?",
           choices: [
           { id:"a", text:"Du زُهد" },
-          { id:"b", text:"De la définition de l'الإِحسَان (adorer Allah comme si tu Le voyais)" },
-          { id:"c", text:"De la التَّوبَة" },
-          { id:"d", text:"Du الشُّكر" }
+          { id:"b", text:"De la définition de l'Iḥsān (الإِحسَان) (adorer Allah comme si tu Le voyais)" },
+          { id:"c", text:"Tawba (التَّوبَة)" },
+          { id:"d", text:"Shukr (الشُّكر)" }
           ],
           correctId: "b",
-          explanation: "La المُرَاقَبَة (conscience d'être observé par Allah) est la mise en pratique quotidienne de la définition de l'الإِحسَان : « adorer Allah comme si tu Le voyais — si tu ne Le vois pas, Lui te voit. » C'est l'état intérieur permanent qui transforme chaque geste en adoration."
+          explanation: "Murāqaba (المُرَاقَبَة) (conscience d'être observé par Allah) est la mise en pratique quotidienne de la définition de l'Iḥsān (الإِحسَان) : « adorer Allah comme si tu Le voyais — si tu ne Le vois pas, Lui te voit. » C'est l'état intérieur permanent qui transforme chaque geste en adoration."
         },
         {
           id: "q-ihs-08",
-          text: "La recommandation de Sayyidnā ʿUmar sur la المُحَاسَبَة est :",
+          text: "Muḥāsaba (المُحَاسَبَة) est :",
           choices: [
           { id:"a", text:"Prier 5 fois par jour avec attention" },
           { id:"b", text:"« Évaluez vos âmes avant d'être évalués » — bilan quotidien avant le sommeil" },
@@ -2985,11 +2985,11 @@ const AVANCE = {
           { id:"d", text:"Jeûner tous les lundis et jeudis" }
           ],
           correctId: "b",
-          explanation: "Sayyidnā ʿUmar ﵁ : « حَاسِبُوا أَنفُسَكُم قَبلَ أَن تُحَاسَبُوا » — l'auto-évaluation quotidienne précède l'évaluation divine. Le Matn d'Ibn Āshir recommande ce bilan avant le sommeil : remercier (الشُّكر) pour les bonnes actions, demander pardon (الاستِغفَار) pour les fautes, identifier les opportunités manquées (الحَسرَة)."
+          explanation: "Sayyidnā ʿUmar ﵁ : « حَاسِبُوا أَنفُسَكُم قَبلَ أَن تُحَاسَبُوا » — l'auto-évaluation quotidienne précède l'évaluation divine. Le Matn d'Ibn Āshir recommande ce bilan avant le sommeil : Shukr (الشُّكر) pour les bonnes actions, demander pardon (الاستِغفَار) pour les fautes, identifier les opportunités manquées (الحَسرَة)."
         },
         {
           id: "q-ihs-09",
-          text: "Le الحِقد (rancœur) : combien de temps Islam tolère-t-il la brouille entre Muslims ?",
+          text: "Le ḤḤiqd (الحِقد) (rancœur) : combien de temps Islam tolère-t-il la brouille entre Muslims ?",
           choices: [
           { id:"a", text:"1 an" },
           { id:"b", text:"1 semaine" },
@@ -3001,43 +3001,43 @@ const AVANCE = {
         },
         {
           id: "q-ihs-10",
-          text: "<strong>SYNTHÈSE :</strong> Comment la prière (الصَّلَاة) s'inscrit-elle dans la progression vers l'الإِحسَان ?",
+          text: "<strong>SYNTHÈSE :</strong> Comment la prièṢalāt (الصَّلَاة) s'inscrit-elle dans la progression vers l'Iḥsān (الإِحسَان) ?",
           choices: [
           { id:"a", text:"Elle n'a pas de dimension spirituelle — c'est une obligation mécanique" },
-          { id:"b", text:"La prière est une école quotidienne de المُرَاقَبَة — 5 rappels par jour de la Présence divine, transformant l'adoration en conscience permanente" },
-          { id:"c", text:"Elle n'est liée qu'à la dimension du الإِسلَام" },
+          { id:"b", text:"La prière est une éMurāqaba (المُرَاقَبَة) — 5 rappels par jour de la Présence divine, transformant l'adoration en conscience permanente" },
+          { id:"c", text:"Elle n'est liée qu'à Islām (الإِسلَام)" },
           { id:"d", text:"Son seul rôle est de prévenir de l'immoralité" }
           ],
           correctId: "b",
-          explanation: "Dans le cadre de l'الإِحسَان, la prière est bien plus qu'une obligation : c'est une école quotidienne de المُرَاقَبَة. 5 fois par jour, le Muslim interrompt sa vie pour se tenir devant Allah en pleine conscience. Le الخُشُوع (présence du cœur) dans la prière est l'الإِحسَان en acte."
+          explanation: "Dans le cadre de l'Iḥsān (الإِحسَان), la prière est bien plus qu'une obligation : c'est une éMurāqaba (المُرَاقَبَة). 5 fois par jour, le Muslim interrompt sa vie pour se tenir devant Allah en pleine conscience. Khushūʿ (الخُشُوع) (présence du cœur) dans la prière est l'Iḥsān (الإِحسَان) en acte."
         },
         {
           id: "q-ihs-11",
-          text: "Selon la tradition malikite, l'éthique sociale (الأَخلَاق) fait-elle partie de l'الإِحسَان ?",
+          text: "Selon la tradition malikite, l'éthique sociale (الأَخلَاق) fait-elle partie de l'Iḥsān (الإِحسَان) ?",
           choices: [
-          { id:"a", text:"Non — l'الإِحسَان est purement spirituel/intérieur" },
-          { id:"b", text:"Oui — la التَّزكِيَة authentique se manifeste obligatoirement dans les relations avec autrui" },
+          { id:"a", text:"Non — l'Iḥsān (الإِحسَان) est purement spirituel/intérieur" },
+          { id:"b", text:"Oui — Tazkiya (التَّزكِيَة) authentique se manifeste obligatoirement dans les relations avec autrui" },
           { id:"c", text:"Seulement pour les savants et les saints" },
-          { id:"d", text:"Non — l'éthique est une dimension séparée du الفِقه" }
+          { id:"d", text:"Non — l'éthique est une dimension séparéFiqh (الفِقه)" }
           ],
           correctId: "b",
-          explanation: "Le Matn d'Ibn Āshir conclut précisément par l'éthique sociale car la spiritualité islamique est sociale par nature. Un « spirituel » qui maltraite sa famille ou ses voisins n'a pas accompli l'الإِحسَان. Doctrine-malikite.fr : « La spiritualité qui ne se manifeste pas dans la douceur, la générosité et l'honnêteté avec autrui est une illusion. »"
+          explanation: "Le Matn d'Ibn Āshir conclut précisément par l'éthique sociale car la spiritualité islamique est sociale par nature. Un « spirituel » qui maltraite sa famille ou ses voisins n'a pas accompli l'Iḥsān (الإِحسَان). Doctrine-malikite.fr : « La spiritualité qui ne se manifeste pas dans la douceur, la générosité et l'honnêteté avec autrui est une illusion. »"
         },
         {
           id: "q-ihs-12",
-          text: "<strong>AVANCÉ :</strong> Les 4 pratiques d'al-Ghazālī pour la التَّزكِيَة sont :",
+          text: "<strong>AVANCÉ :</strong> Les 4 pratiques d'Tazkiya (التَّزكِيَة) sont :",
           choices: [
           { id:"a", text:"Prière, jeûne, zakat, hajj" },
-          { id:"b", text:"المُرَاقَبَة (surveiller ses intentions) + المُحَاسَبَة (bilan) + المُجَاهَدَة (effort sur l'âme) + المُعَاقَبَة (se pénaliser pour ses fautes)" },
+          { id:"b", text:"Murāqaba (المُرَاقَبَة) (surveiller ses intentions) + Muḥāsaba (المُحَاسَبَة) (bilan) + Mujāhada (المُجَاهَدَة) (effort sur l'âme) + المُعَاقَبَة (se pénaliser pour ses fautes)" },
           { id:"c", text:"Lire, mémoriser, enseigner, pratiquer" },
           { id:"d", text:"Repentir, prière de nuit, jeûne et sadaqa" }
           ],
           correctId: "b",
-          explanation: "La méthode de التَّزكِيَة d'al-Ghazālī (adoptée par Ibn Āshir) : (1) المُرَاقَبَة — surveiller ses intentions avant l'acte ; (2) المُحَاسَبَة — évaluer ses actions après l'acte ; (3) المُجَاهَدَة — lutter contre les tendances négatives de l'âme ; (4) المُعَاقَبَة — se pénaliser pour les fautes par des actes d'adoration supplémentaires."
+          explanation: "La méTazkiya (التَّزكِيَة) d'al-Ghazālī (adoptée par Ibn Āshir) : (1) Murāqaba (المُرَاقَبَة) — surveiller ses intentions avant l'acte ; (2) Muḥāsaba (المُحَاسَبَة) — évaluer ses actions après l'acte ; (3) Mujāhada (المُجَاهَدَة) — lutter contre les tendances négatives de l'âme ; (4) المُعَاقَبَة — se pénaliser pour les fautes par des actes d'adoration supplémentaires."
         },
         {
           id: "q-ihs-13",
-          text: "Le قِيَامُ اللَّيل (prière de nuit) : pourquoi est-il la plus haute école de المُرَاقَبَة ?",
+          text: "Le قِيَامُ اللَّيل (prière de nuit) : pourquoi est-il la plus haute éMurāqaba (المُرَاقَبَة) ?",
           choices: [
           { id:"a", text:"Parce que c'est obligatoire" },
           { id:"b", text:"Car on s'élève seul dans la nuit, sans regard humain possible — c'est la communion la plus pure et la plus sincère avec Allah" },
@@ -3045,19 +3045,19 @@ const AVANCE = {
           { id:"d", text:"Car il remplace les prières manquées" }
           ],
           correctId: "b",
-          explanation: "Le قِيَامُ اللَّيل est la plus pure école de المُرَاقَبَة car il est accompli dans la solitude nocturne, hors de tout regard humain — aucun الرِّيَاء (ostentation) possible. Hadīth : « Notre Seigneur descend au dernier tiers de la nuit... » — moment de proximité maximale avec Allah. Coran 73:1-6 : « La prière nocturne est plus impressionnante et plus propice à la sincérité du discours. »"
+          explanation: "Le قِيَامُ اللَّيل est la plus pure éMurāqaba (المُرَاقَبَة) car il est accompli dans la solitude nocturne, hors de tout regard humain — Riyāʾ (الرِّيَاء) (ostentation) possible. Hadīth : « Notre Seigneur descend au dernier tiers de la nuit... » — moment de proximité maximale avec Allah. Coran 73:1-6 : « La prière nocturne est plus impressionnante et plus propice à la sincérité du discours. »"
         },
         {
           id: "q-ihs-14",
-          text: "<strong>PIÈGE :</strong> Peut-on pratiquer l'الإِحسَان sans maîtriser le Fiqh ?",
+          text: "<strong>PIÈGE :</strong> Peut-on pratiquer l'Iḥsān (الإِحسَان) sans maîtriser le Fiqh ?",
           choices: [
           { id:"a", text:"Oui — la spiritualité se passe du fiqh" },
-          { id:"b", text:"Non — l'الإِحسَان est le sommet d'un édifice dont le فِقه (les actes corrects) est la fondation indispensable" },
+          { id:"b", text:"Non — l'Iḥsān (الإِحسَان) est le sommet d'un édifice dont le فِقه (les actes corrects) est la fondation indispensable" },
           { id:"c", text:"Oui si on a la bonne intention" },
           { id:"d", text:"Non seulement les savants peuvent pratiquer l'إِحسَان" }
           ],
           correctId: "b",
-          explanation: "Le triptyque du Matn d'Ibn Āshir est hiérarchique : l'الإِسلَام (pratique correcte du فِقه) précède l'الإِيمَان (croyance correcte) qui précède l'الإِحسَان (excellence spirituelle). Sans fondations فِقه solides, la « spiritualité » flotte dans le vide. Une adoration incorrecte ne peut pas être excellente — elle doit d'abord être valide."
+          explanation: "Le triptyque du Matn d'Ibn Āshir est hiérarchique : l'Islām (الإِسلَام) (pratique correcte du فِقه) précède l'Īmān (الإِيمَان) (croyance correcte) qui précède l'Iḥsān (الإِحسَان) (excellence spirituelle). Sans fondations فِقه solides, la « spiritualité » flotte dans le vide. Une adoration incorrecte ne peut pas être excellente — elle doit d'abord être valide."
         },
         {
           id: "q-ihs-15",
@@ -3069,7 +3069,7 @@ const AVANCE = {
           { id:"d", text:"L'éducation des enfants" }
           ],
           correctId: "c",
-          explanation: "Coran 51:56 : « وَمَا خَلَقتُ الجِنَّ وَالإِنسَ إِلَّا لِيَعبُدُونِ » — « Je n'ai créé les djinns et les hommes que pour M'adorer. » C'est le verset qui couronne et justifie tout le curriculum islamique : الفِقه (pratiquer correctement), الإِيمَان (croire sincèrement), الإِحسَان (adorer avec excellence) — tout converge vers l'adoration consciente et sincère d'Allah."
+          explanation: "Coran 51:56 : « وَمَا خَلَقتُ الجِنَّ وَالإِنسَ إِلَّا لِيَعبُدُونِ » — « Je n'ai créé les djinns et les hommes que pour M'adorer. » C'est le verset qui couronne et justifie tout le curriculum islamique : Fiqh (الفِقه) (pratiquer correctement), Īmān (الإِيمَان) (croire sincèrement), Iḥsān (الإِحسَان) (adorer avec excellence) — tout converge vers l'adoration consciente et sincère d'Allah."
         }
         ]
       }

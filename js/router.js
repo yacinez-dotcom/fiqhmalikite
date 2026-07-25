@@ -11,12 +11,13 @@ const Router = (() => {
     if (pageId === 'debutant')      _currentLevel = 'debutant';
     if (pageId === 'intermediaire') _currentLevel = 'intermediaire';
     if (pageId === 'avance')        _currentLevel = 'avance';
+    if (pageId === 'expert')        _currentLevel = 'expert';
 
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     const target = document.getElementById(`page-${pageId}`);
     if (target) target.classList.add('active');
 
-    const isLevelPage = ['debutant','intermediaire','avance','subject','lesson'].includes(pageId);
+    const isLevelPage = ['debutant','intermediaire','avance','expert','subject','lesson'].includes(pageId);
     document.querySelectorAll('.nav-item').forEach(item => {
       const r = item.dataset.route;
       item.classList.toggle('active',
@@ -34,6 +35,7 @@ const Router = (() => {
     if (pageId === 'debutant')      Renderer.debutant();
     if (pageId === 'intermediaire') Renderer.intermediaire();
     if (pageId === 'avance')        Renderer.avance();
+    if (pageId === 'expert')        Renderer.expert();
     if (pageId === 'quiz-hub')      { Renderer.quizHub(); _updateQuizChip(); }
     if (pageId === 'badges')        Renderer.badges();
     if (pageId === 'progress')      Renderer.progress();
@@ -64,15 +66,17 @@ const Router = (() => {
     const lvl = params.level || _currentLevel;
     const lvlLabel = lvl === 'intermediaire' ? 'Intermédiaire'
                    : lvl === 'avance'        ? 'Avancé'
+                   : lvl === 'expert'       ? 'Expert'
                    : 'Débutant';
     const lvlRoute = lvl === 'intermediaire' ? 'intermediaire'
                    : lvl === 'avance'        ? 'avance'
+                   : lvl === 'expert'       ? 'expert'
                    : 'debutant';
 
-    if (['levels','debutant','intermediaire','avance','subject','lesson','quiz'].includes(pageId))
+    if (['levels','debutant','intermediaire','avance','expert','subject','lesson','quiz'].includes(pageId))
       crumbs.push({ label: 'Niveaux', route: 'levels' });
 
-    if (['debutant','intermediaire','avance','subject','lesson','quiz'].includes(pageId))
+    if (['debutant','intermediaire','avance','expert','subject','lesson','quiz'].includes(pageId))
       crumbs.push({ label: lvlLabel, route: lvlRoute });
 
     if (['subject','lesson','quiz'].includes(pageId) && params.subjectTitle)
@@ -102,7 +106,8 @@ const Router = (() => {
     const allSubjects = [
       ...DEBUTANT.subjects,
       ...(typeof INTERMEDIAIRE !== 'undefined' ? INTERMEDIAIRE.subjects : []),
-      ...(typeof AVANCE        !== 'undefined' ? AVANCE.subjects        : [])
+      ...(typeof AVANCE        !== 'undefined' ? AVANCE.subjects        : []),
+      ...(typeof EXPERT        !== 'undefined' ? EXPERT.subjects        : [])
     ];
     const done  = allSubjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
     const total = allSubjects.filter(s => s.quiz.questions.length > 0).length;

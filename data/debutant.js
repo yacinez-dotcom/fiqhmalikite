@@ -1,7 +1,7 @@
 /* ════════════════════════════════════════════════════════
    BRIQUE: Données — Niveau Débutant (debutant.js)
    Source : Mukhtaṣar ʿAbd al-Raḥmān al-Akhḍarī
-            في العبادات على مذهب الإمام مالك
+            في العبادات على مذهب Imām (الإمام) مالك
    Auteur : Abū Zayd ʿAbd al-Raḥmān al-Akhḍarī (m. 983 H)
    Format : content = tableau de blocs { t, v, n? }
             t:'lead'|'h'|'p'|'ul'|'ar'|'note'
@@ -34,21 +34,21 @@ const DEBUTANT = {
       title: 'La Purification',
       arabicTitle: 'الطهارة',
       icon: 'water',
-      description: 'Types d\'eau, ablutions (الوُضُوء\'), purification complète (الغُسْل), التَّيَمُّم, الحَيْض et النِّفَاس selon le rite malikite.',
+      description: 'Types d\'eau, ablutions (الوُضُوء\'), purification complète (الغُسْل), Tayammum (التَّيَمُّم), الحَيْض Nifās (النِّفَاس) selon le rite malikite.',
 
       lessons: [
 
         /* ── Leçon 1 ── */
         {
           id: 'pur-01',
-          title: 'Les Deux Types de الطَّهَارَة',
+          title: 'Ṭahāra (الطَّهَارَة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Selon l\'école malikite, la purification (الطَّهَارَة) se divise en deux grandes catégories ayant chacune ses règles propres. Toutes deux sont nécessaires pour accomplir valablement les actes d\'adoration.' },
-            { t: 'h', v: '1. الطَّهَارَةt al-الحَدَث — Pureté de l\'impureté rituelle' },
-            { t: 'p', v: 'Le الحَدَث est un état d\'impureté rituelle qui survient indépendamment de toute souillure visible. Il existe deux niveaux : le حَدَثٌ أَصْغَر (rompu par certains actes corporels, relevé par le الوُضُوء\') et le حَدَثٌ أَكْبَر (الجَنَابَة, الحَيْض, النِّفَاس, relevé par le الغُسْل ou le التَّيَمُّم).' },
-            { t: 'h', v: '2. الطَّهَارَةt al-الخَبَث — Pureté des souillures physiques' },
-            { t: 'p', v: 'Le الخَبَث désigne une souillure physique concrète (النَّجَاسَة) qui se trouve sur le corps, le vêtement ou le lieu de prière. Elle est visible ou palpable et doit être éliminée par lavage pour que la prière soit valide.' },
+            { t: 'lead', v: 'Selon l\'école malikite, Ṭahāra (الطَّهَارَة) se divise en deux grandes catégories ayant chacune ses règles propres. Toutes deux sont nécessaires pour accomplir valablement les actes d\'adoration.' },
+            { t: 'h', v: '1. Ṭahāra (الطَّهَارَة)t al-ḤḤadath (الحَدَث) — Pureté de l\'impureté rituelle' },
+            { t: 'p', v: 'Le ḤḤadath (الحَدَث) est un état d\'impureté rituelle qui survient indépendamment de toute souillure visible. Il existe deux niveaux : le حَدَثٌ أَصْغَر (rompu par certains actes corporels, relevé Wuḍūʾ (الوُضُوء)\') et le حَدَثٌ أَكْبَر (الجَنَابَة, الحَيْض, Nifās (النِّفَاس), relevé par le Ghusl (الغُسْل) ou le التَّيَمُّم).' },
+            { t: 'h', v: '2. Ṭahāra (الطَّهَارَة)t al-الخَبَث — Pureté des souillures physiques' },
+            { t: 'p', v: 'Le الخَبَث désigne une souillure physique concrèNajāsa (النَّجَاسَة) qui se trouve sur le corps, le vêtement ou le lieu de prière. Elle est visible ou palpable et doit être éliminée par lavage pour que la prière soit valide.' },
             { t: 'h', v: 'L\'eau pure et purifiante (māʾ ṭāhir muṭahhir)' },
             { t: 'p', v: 'Aucune des deux purifications n\'est valide que par une eau pure et purifiante : une eau dont la nature propre n\'a pas été altérée dans sa couleur, son goût ou son odeur par une substance étrangère habituellement séparable de l\'eau — comme l\'huile, la graisse, le beurre, le savon ou la saleté.' },
             { t: 'ul', v: ['Le contact avec de la terre, de la boue ou du sol salin (sabkha) ne remet pas en cause la validité de l\'eau.', 'L\'eau altérée uniquement par de la vase ou de l\'argile naturelle reste valide.', 'Seule l\'altération par des substances séparables de l\'eau par nature (corps gras, produits ménagers…) est problématique.'] },
@@ -62,34 +62,34 @@ const DEBUTANT = {
           title: 'La Gestion des Souillures Physiques (الخَبَث)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Lorsqu\'une souillure physique (النَّجَاسَة) atteint le corps, le vêtement ou le lieu de prière, l\'école malikite prescrit des règles précises selon que la souillure est certaine, localisée ou incertaine.' },
+            { t: 'lead', v: 'Lorsqu\'Najāsa (النَّجَاسَة) atteint le corps, le vêtement ou le lieu de prière, l\'école malikite prescrit des règles précises selon que la souillure est certaine, localisée ou incertaine.' },
             { t: 'h', v: 'Souillure localisée avec certitude' },
-            { t: 'p', v: 'Si l\'emplacement de la النَّجَاسَة est connu et délimité, il suffit de laver cet emplacement précis. Inutile de laver l\'ensemble du vêtement ou du corps.' },
+            { t: 'p', v: 'Si l\'Najāsa (النَّجَاسَة) est connu et délimité, il suffit de laver cet emplacement précis. Inutile de laver l\'ensemble du vêtement ou du corps.' },
             { t: 'h', v: 'Souillure incertaine ou dispersée' },
-            { t: 'p', v: 'Si l\'on sait qu\'une النَّجَاسَة a atteint le vêtement mais qu\'on ne peut pas en localiser l\'endroit exact, il faut laver l\'ensemble du vêtement.' },
-            { t: 'h', v: 'Doute sur le contact avec une النَّجَاسَة' },
-            { t: 'p', v: 'Si l\'on doute d\'avoir été en contact avec une النَّجَاسَة (sans certitude), il suffit d\'asperger la zone d\'eau (naḍḥ). En revanche, si l\'on doute qu\'une substance soit une النَّجَاسَة ou non, aucun naḍḥ n\'est requis.' },
-            { t: 'h', v: 'Découverte d\'une النَّجَاسَة pendant ou après la prière' },
+            { t: 'p', v: 'Si l\'on sait qu\'Najāsa (النَّجَاسَة) a atteint le vêtement mais qu\'on ne peut pas en localiser l\'endroit exact, il faut laver l\'ensemble du vêtement.' },
+            { t: 'h', v: 'Najāsa (النَّجَاسَة)' },
+            { t: 'p', v: 'Si l\'on doute d\'avoir été Najāsa (النَّجَاسَة) (sans certitude), il suffit d\'asperger la zone d\'eau (naḍḥ). En revanche, si l\'on doute qu\'Najāsa (النَّجَاسَة) ou non, aucun naḍḥ n\'est requis.' },
+            { t: 'h', v: 'Découverte d\'Najāsa (النَّجَاسَة) pendant ou après la prière' },
             { t: 'ul', v: [
               'Découverte pendant la prière : interrompre la prière, sauf si l\'on craint la sortie du temps — dans ce cas on la continue.',
-              'Prié avec une النَّجَاسَة par oubli, souvenu après le salām : répéter la prière dans son temps (avant la fin du temps de cette prière).',
+              'Prié Najāsa (النَّجَاسَة) par oubli, souvenu après le salām : répéter la prière dans son temps (avant la fin du temps de cette prière).',
               'Après sortie du temps : la prière n\'est pas répétée.'
             ] },
-            { t: 'note', v: 'Principe clé : le doute ne crée pas d\'impureté. Seule la certitude (ou la quasi-certitude) de contact avec une النَّجَاسَة impose de laver.' }
+            { t: 'note', v: 'Principe clé : le doute ne crée pas d\'impureté. Seule la certitude (ou la quasi-certitude) Najāsa (النَّجَاسَة) impose de laver.' }
           ]
         },
 
         /* ── Leçon 3 ── */
         {
           id: 'pur-03',
-          title: 'Les Obligations du الوُضُوء\' — Les Sept الفَرَائِض',
+          title: 'Wuḍūʾ (الوُضُوء)\' — Farāʾiḍ (الفَرَائِض)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le الوُضُوء\' (ablutions mineures) est l\'acte de purification rituelle qui remet en état de الطَّهَارَة après un حَدَثٌ أَصْغَر. Selon l\'école malikite, il compte sept obligations (الفَرَائِض) incontournables.' },
-            { t: 'ar', v: 'فرائضُ الوضوءِ سَبعٌ : النيّةُ، وغسلُ الوجهِ، وغسلُ اليدينِ إلى المِرفَقَينِ، ومسحُ الرأسِ، وغسلُ الرِّجلَينِ إلى الكَعبَينِ، والدَّلكُ، والفَورُ', n: '« Les obligations du الوُضُوء\' sont au nombre de sept. » — Mukhtaṣar al-Akhḍarī' },
-            { t: 'h', v: 'Les sept obligations (الفَرَائِض)' },
+            { t: 'lead', v: 'Wuḍūʾ (الوُضُوء)\' (ablutions mineures) est l\'acte de purification rituelle qui remet en éṬahāra (الطَّهَارَة) après un حَدَثٌ أَصْغَر. Selon l\'école malikite, Farāʾiḍ (الفَرَائِض) incontournables.' },
+            { t: 'ar', v: 'فرائضُ الوضوءِ سَبعٌ : النيّةُ، وغسلُ الوجهِ، وغسلُ اليدينِ إلى المِرفَقَينِ، ومسحُ الرأسِ، وغسلُ الرِّجلَينِ إلى الكَعبَينِ، والدَّلكُ، والفَورُ', n: '« Les obligations du al-wuḍūʾ (الوُضُوء)\' sont au nombre de sept. » — Mukhtaṣar al-Akhḍarī' },
+            { t: 'h', v: 'Farāʾiḍ (الفَرَائِض)' },
             { t: 'ul', v: [
-              '<strong>1. L\'intention (النِّيَّة)</strong> — formée dans le cœur au moment de commencer.',
+              '<strong>1. L\'Niyya (النِّيَّة)</strong> — formée dans le cœur au moment de commencer.',
               '<strong>2. Le lavage du visage</strong> — de la racine des cheveux au bas du menton, d\'une oreille à l\'autre.',
               '<strong>3. Le lavage des deux bras jusqu\'aux coudes</strong> — les coudes inclus.',
               '<strong>4. L\'essuyage de la tête (masḥ)</strong> — l\'ensemble de la tête, non une partie seulement.',
@@ -97,7 +97,7 @@ const DEBUTANT = {
               '<strong>6. Le frottement (الدَّلْك)</strong> — passer la main sur les membres lors du lavage, contrairement à d\'autres écoles.',
               '<strong>7. L\'enchaînement immédiat (الفَوْر)</strong> — enchainer les membres sans laisser le premier sécher avant de passer au suivant.'
             ] },
-            { t: 'h', v: 'Les السُّنَّة du الوُضُوء\'' },
+            { t: 'h', v: 'Sunna (السُّنَّة) Wuḍūʾ (الوُضُوء)\'' },
             { t: 'ul', v: [
               'Laver les mains jusqu\'aux poignets (kuʿayn) avant de commencer.',
               'Se rincer la bouche (maḍmaḍa) et les narines (istinshāq), puis les expulser (istinthār).',
@@ -114,7 +114,7 @@ const DEBUTANT = {
               'Économiser l\'eau et donner la priorité au côté droit sur le gauche.'
             ] },
             { t: 'h', v: 'Obligation d\'entrelacement des doigts' },
-            { t: 'p', v: 'Il est obligatoire d\'entrecroiser les doigts des mains lors du الوُضُوء\' (recommandé pour les orteils). La barbe légère (خَفِيفَة, où la peau est visible) doit être peignée avec les doigts lors du الوُضُوء\' ; la barbe épaisse, non. En revanche, lors du الغُسْل, même la barbe épaisse doit être traversée par l\'eau.' },
+            { t: 'p', v: 'Il est obligatoire d\'Wuḍūʾ (الوُضُوء)\' (recommandé pour les orteils). La barbe légère (خَفِيفَة, où la peau est visible) doit être peignéWuḍūʾ (الوُضُوء)\' ; la barbe épaisse, non. En revanche, lors du Ghusl (الغُسْل), même la barbe épaisse doit être traversée par l\'eau.' },
             { t: 'note', v: 'Si l\'on oublie une obligation et s\'en souvient rapidement : on l\'exécute ainsi que ce qui la suit. Si c\'est après un long délai : on exécute uniquement cet acte et on répète les prières accomplies entre-temps.' }
           ]
         },
@@ -122,10 +122,10 @@ const DEBUTANT = {
         /* ── Leçon 4 ── */
         {
           id: 'pur-04',
-          title: 'Les Nullificateurs du الوُضُوء\' (Nawāqiḍ)',
+          title: 'Wuḍūʾ (الوُضُوء)\' (Nawāqiḍ)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Certains actes et états annulent le الوُضُوء\' et nécessitent de le renouveler avant toute prière ou acte soumis à la condition de pureté rituelle. L\'école malikite les divise en deux catégories : les الأَحْدَاث (causes directes) et les أَسبَاب (causes indirectes).' },
+            { t: 'lead', v: 'Certains actes et éWuḍūʾ (الوُضُوء)\' et nécessitent de le renouveler avant toute prière ou acte soumis à la condition de pureté rituelle. L\'école malikite les divise en deux catégories : les الأَحْدَاث (causes directes) et les أَسبَاب (causes indirectes).' },
             { t: 'h', v: 'Les الأَحْدَاث — Causes directes' },
             { t: 'ul', v: [
               '<strong>L\'urine (البَوْل)</strong> et <strong>les matières fécales (الغَائِط)</strong>.',
@@ -135,22 +135,22 @@ const DEBUTANT = {
             ] },
             { t: 'h', v: 'Les أَسبَاب — Causes indirectes (occasionnelles)' },
             { t: 'ul', v: [
-              '<strong>Le sommeil profond (النَّوم الثَّقِيل)</strong> — le sommeil léger ne rompt pas le الوُضُوء\'.',
+              '<strong>Le sommeil profond (النَّوم الثَّقِيل)</strong> — le sommeil léWuḍūʾ (الوُضُوء)\'.',
               '<strong>L\'évanouissement (ighmaʾ)</strong>, <strong>l\'ivresse (sukr)</strong> et <strong>la folie (junūn)</strong>.',
               '<strong>Le baiser</strong> avec désir ou plaisir ressenti.',
               '<strong>Le toucher d\'une femme</strong> si l\'on cherche le plaisir ou qu\'on le ressent.',
               '<strong>Le toucher du pénis</strong> avec l\'intérieur de la paume ou des doigts.'
             ] },
             { t: 'h', v: 'Règle sur le doute' },
-            { t: 'p', v: 'Si l\'on doute d\'avoir eu un الحَدَث, on est obligé de faire le الوُضُوء\'. Exception : celui qui souffre de scrupules obsessionnels (الوَسْوَاس) — il n\'est pas astreint à renouveler son الوُضُوء\' à chaque doute, car agir ainsi aggraverait son état.' },
+            { t: 'p', v: 'Si l\'on doute d\'avoir eu un ḤḤadath (الحَدَث), on est obligé Wuḍūʾ (الوُضُوء)\'. Exception : celui qui souffre de scrupules obsessionnels (الوَسْوَاس) — il n\'est pas astreint à Wuḍūʾ (الوُضُوء)\' à chaque doute, car agir ainsi aggraverait son état.' },
             { t: 'h', v: 'Le المَذْي — règle spécifique' },
-            { t: 'p', v: 'Après le المَذْي, il est obligatoire de laver l\'ensemble du pénis, mais pas les testicules. Le الوُضُوء\' doit être renouvelé.' },
-            { t: 'h', v: 'Ce qui est interdit sans الوُضُوء\'' },
+            { t: 'p', v: 'Après le المَذْي, il est obligatoire de laver l\'ensemble du pénis, mais pas les testicules. Wuḍūʾ (الوُضُوء)\' doit être renouvelé.' },
+            { t: 'h', v: 'Wuḍūʾ (الوُضُوء)\'' },
             { t: 'ul', v: [
-              'La prière (الصَّلَاة) et le الطَّوَاف.',
+              'La prièṢalāt (الصَّلَاة) et le ṬṬawāf (الطَّوَاف).',
               'Toucher le texte du Coran — de la main, d\'un stylet ou d\'un autre objet. Seul le fascicule utilisé par un étudiant (juzʾ en cours d\'apprentissage) est exempté.',
               'Toucher une tablette coranique — sauf pour l\'enseignant qui corrige ou l\'élève en train d\'apprendre.',
-              'Prier délibérément sans الوُضُوء\' est un acte de kufr (incrédulité) — qu\'Allāh nous en préserve.'
+              'Prier délibéréWuḍūʾ (الوُضُوء)\' est un acte de kufr (incrédulité) — qu\'Allāh nous en préserve.'
             ] },
             { t: 'ar', v: 'مَن صلّى بغيرِ وضوءٍ عامداً فهو كافرٌ والعياذُ بالله', n: '« Celui qui prie délibérément sans ablutions est un infidèle — qu\'Allāh nous en préserve. » — al-Akhḍarī' }
           ]
@@ -159,71 +159,71 @@ const DEBUTANT = {
         /* ── Leçon 5 ── */
         {
           id: 'pur-05',
-          title: 'La Purification Complète — Le الغُسْل',
+          title: 'La Purification Complète — Le Ghusl (الغُسْل)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le الغُسْل est la purification majeure qui consiste à se laver entièrement le corps. Il est obligatoire dans trois situations. L\'école malikite lui fixe quatre obligations (الفَرَائِض).' },
-            { t: 'h', v: 'Les trois causes qui rendent le الغُسْل obligatoire' },
+            { t: 'lead', v: 'Le Ghusl (الغُسْل) est la purification majeure qui consiste à se laver entièrement le corps. Il est obligatoire dans trois situations. L\'éFarāʾiḍ (الفَرَائِض).' },
+            { t: 'h', v: 'Les trois causes qui rendent le Ghusl (الغُسْل) obligatoire' },
             { t: 'ul', v: [
-              '<strong>La الجَنَابَة</strong> — impureté sexuelle majeure, qui survient dans deux cas :<br>① L\'émission de المَنِي (semence) avec un plaisir habituel, en sommeil ou en état d\'éveil, par rapport sexuel ou autrement.<br>② La pénétration (ighyāb al-ḥashafa fi\'l-farj) même sans émission.',
+              '<strong>Janāba (الجَنَابَة)</strong> — impureté sexuelle majeure, qui survient dans deux cas :<br>① L\'émission de المَنِي (semence) avec un plaisir habituel, en sommeil ou en état d\'éveil, par rapport sexuel ou autrement.<br>② La pénétration (ighyāb al-ḥashafa fi\'l-farj) même sans émission.',
               '<strong>Le الحَيْض</strong> — les menstrues, à leur arrêt.',
-              '<strong>Le النِّفَاس</strong> — le saignement post-natal, à son arrêt.'
+              '<strong>Nifās (النِّفَاس)</strong> — le saignement post-natal, à son arrêt.'
             ] },
-            { t: 'h', v: 'Cas particuliers de la الجَنَابَة' },
+            { t: 'h', v: 'Janāba (الجَنَابَة)' },
             { t: 'ul', v: [
-              'Rêve de rapport sexuel sans émission de المَنِي : aucun الغُسْل requis.',
-              'Trouver du المَنِي sec dans son vêtement sans savoir quand il est survenu : faire le الغُسْل et répéter les prières accomplies depuis le dernier sommeil dans ce vêtement.'
+              'Rêve de rapport sexuel sans émission de المَنِي : aucun Ghusl (الغُسْل) requis.',
+              'Trouver du المَنِي sec dans son vêtement sans savoir quand il est survenu : faire le Ghusl (الغُسْل) et répéter les prières accomplies depuis le dernier sommeil dans ce vêtement.'
             ] },
-            { t: 'h', v: 'Les quatre obligations (الفَرَائِض) du الغُسْل' },
+            { t: 'h', v: 'Farāʾiḍ (الفَرَائِض) du Ghusl (الغُسْل)' },
             { t: 'ul', v: [
-              '<strong>1. L\'intention (النِّيَّة)</strong> — au moment de commencer.',
+              '<strong>1. L\'Niyya (النِّيَّة)</strong> — au moment de commencer.',
               '<strong>2. L\'enchaînement immédiat (الفَوْر)</strong> — laver tout le corps de suite, sans interruption qui ferait sécher un membre.',
               '<strong>3. Le frottement (الدَّلْك)</strong> — frotter la peau avec la main lors du lavage.',
-              '<strong>4. La généralisation (ʿumūm)</strong> — l\'eau doit atteindre tout le corps sans exception, y compris les cheveux même épais (contrairement au الوُضُوء\').'
+              '<strong>4. La généralisation (ʿumūm)</strong> — l\'eau doit atteindre tout le corps sans exception, y compris les cheveux même épais (Wuḍūʾ (الوُضُوء)\').'
             ] },
-            { t: 'h', v: 'Les السُّنَّة du الغُسْل' },
+            { t: 'h', v: 'Sunna (السُّنَّة) du Ghusl (الغُسْل)' },
             { t: 'ul', v: [
-              'Laver les mains jusqu\'aux poignets comme dans le الوُضُوء\'.',
+              'Laver les mains jusqu\'Wuḍūʾ (الوُضُوء)\'.',
               'Se rincer la bouche, les narines et les expulser.',
               'Laver le conduit auditif (ṣamākh) — le trou interne de l\'oreille.',
               'Quant au pavillon de l\'oreille (ṣafḥa), il est obligatoire de laver son extérieur et son intérieur.'
             ] },
             { t: 'h', v: 'L\'ordre recommandé (faḍāʾil)' },
             { t: 'ul', v: [
-              'Commencer par laver la النَّجَاسَة éventuelle.',
+              'Najāsa (النَّجَاسَة) éventuelle.',
               'Puis les organes génitaux — c\'est le moment de formuler l\'intention.',
-              'Puis les membres du الوُضُوء\' une fois.',
+              'Wuḍūʾ (الوُضُوء)\' une fois.',
               'Puis le reste du corps en commençant par la partie supérieure.',
               'Tripler le lavage de la tête et commencer par le côté droit.'
             ] },
             { t: 'h', v: 'Oubli d\'un membre ou d\'une zone' },
-            { t: 'p', v: 'Si l\'on a oublié de laver une zone lors du الغُسْل, on se précipite pour la laver dès qu\'on s\'en souvient — même après un mois — et on répète les prières accomplies depuis. Si l\'on diffère après s\'en être souvenu, le الغُسْل entier est invalidé.' },
+            { t: 'p', v: 'Si l\'on a oublié de laver une zone lors du Ghusl (الغُسْل), on se précipite pour la laver dès qu\'on s\'en souvient — même après un mois — et on répète les prières accomplies depuis. Si l\'on diffère après s\'en être souvenu, le Ghusl (الغُسْل) entier est invalidé.' },
             { t: 'h', v: 'Interdictions pour le junub (en état de الجَنَابَة)' },
             { t: 'ul', v: [
               'Entrer dans la mosquée.',
               'Réciter le Coran (sauf un verset isolé pour le taʿawwudh ou la protection).'
             ] },
-            { t: 'ar', v: 'فرائضُ الغُسلِ : النيّةُ عندَ الشروعِ، والفَورُ، والدَّلكُ، والعُمومُ', n: '« Les obligations du الغُسْل : l\'intention au moment de commencer, l\'enchaînement immédiat, le frottement et la généralisation. » — Mukhtaṣar al-Akhḍarī' }
+            { t: 'ar', v: 'فرائضُ al-ghusl (الغُسل)ِ : النيّةُ عندَ الشروعِ، والفَورُ، والدَّلكُ، والعُمومُ', n: '« Les obligations du Ghusl (الغُسْل) : l\'intention au moment de commencer, l\'enchaînement immédiat, le frottement et la généralisation. » — Mukhtaṣar al-Akhḍarī' }
           ]
         },
 
         /* ── Leçon 6 ── */
         {
           id: 'pur-06',
-          title: 'Le التَّيَمُّم — Purification par le Sol',
+          title: 'Tayammum (التَّيَمُّم) — Purification par le Sol',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le التَّيَمُّم est la purification rituelle de substitution utilisant un sol pur (الصَّعِيد) en l\'absence d\'eau ou en cas d\'incapacité à l\'utiliser. L\'école malikite en précise les bénéficiaires, les matières valides et les obligations.' },
-            { t: 'h', v: 'Qui peut recourir au التَّيَمُّم ?' },
+            { t: 'lead', v: 'Tayammum (التَّيَمُّم) est la purification rituelle de substitution utilisant un sol pur (الصَّعِيد) en l\'absence d\'eau ou en cas d\'incapacité à l\'utiliser. L\'école malikite en précise les bénéficiaires, les matières valides et les obligations.' },
+            { t: 'h', v: 'Tayammum (التَّيَمُّم) ?' },
             { t: 'ul', v: [
               '<strong>Le voyageur</strong> ne voyageant pas dans un but illicite — pour toute prière obligatoire ou surérogatoire.',
               '<strong>Le malade</strong> — pour toute prière obligatoire ou surérogatoire.',
               '<strong>Le résidant en bonne santé</strong> — uniquement pour les prières obligatoires dont il craint la sortie du temps si l\'on attend l\'eau.',
-              'Le résidant en bonne santé <em>ne peut pas</em> faire le التَّيَمُّم pour une prière surérogatoire, la prière du vendredi (jumuʿa) ou la prière funéraire, sauf si la prière funéraire est obligatoire de son fait spécifiquement.'
+              'Le résidant en bonne santé <em>ne peut pas</em> Tayammum (التَّيَمُّم) pour une prière surérogatoire, la prière du vendredi (jumuʿa) ou la prière funéraire, sauf si la prière funéraire est obligatoire de son fait spécifiquement.'
             ] },
-            { t: 'h', v: 'Les obligations (الفَرَائِض) du التَّيَمُّم' },
+            { t: 'h', v: 'Farāʾiḍ (الفَرَائِض) Tayammum (التَّيَمُّم)' },
             { t: 'ul', v: [
-              '<strong>L\'intention (النِّيَّة)</strong>.',
+              '<strong>L\'Niyya (النِّيَّة)</strong>.',
               '<strong>Un sol pur (الصَّعِيد ṭāhir)</strong>.',
               '<strong>L\'essuyage du visage</strong>.',
               '<strong>L\'essuyage des deux mains jusqu\'aux poignets (kuʿayn)</strong>.',
@@ -237,25 +237,25 @@ const DEBUTANT = {
               '<strong>Non valides :</strong> le plâtre cuit (jiss maṭbūkh), la natte, le bois, l\'herbe.',
               'Exception : le malade peut utiliser un mur de pierre ou de brique crue s\'il ne peut faire amener autre chose.'
             ] },
-            { t: 'h', v: 'Ce qu\'un التَّيَمُّم permet' },
+            { t: 'h', v: 'Ce qu\'Tayammum (التَّيَمُّم) permet' },
             { t: 'ul', v: [
-              'Un التَّيَمُّم obligatoire (pour une farīḍa) permet aussi les prières surérogatoires après, et de toucher le Coran, le الطَّوَاف et la récitation — à condition que cela ait été dans l\'intention et que le temps ne soit pas sorti.',
-              'Un التَّيَمُّم ne permet pas d\'accomplir deux prières obligatoires.',
-              'Pour une الجَنَابَة : l\'intention doit spécifiquement mentionner la الجَنَابَة.'
+              'Tayammum (التَّيَمُّم) obligatoire (pour une farīḍa) permet aussi les prières surérogatoires après, et de toucher le Coran, le ṬṬawāf (الطَّوَاف) et la récitation — à condition que cela ait été dans l\'intention et que le temps ne soit pas sorti.',
+              'Tayammum (التَّيَمُّم) ne permet pas d\'accomplir deux prières obligatoires.',
+              'Janāba (الجَنَابَة) : l\'intention doit spéJanāba (الجَنَابَة).'
             ] },
-            { t: 'h', v: 'Nullificateurs du التَّيَمُّم' },
-            { t: 'p', v: 'Les mêmes nullificateurs que le الوُضُوء\', avec en plus : trouver de l\'eau ou avoir la capacité de l\'utiliser.' },
-            { t: 'ar', v: 'ويتيمّمُ المسافرُ في غيرِ معصيةٍ، والمريضُ لفريضةٍ أو نافلةٍ، ويتيمّمُ الحاضرُ الصحيحُ للفرائضِ إذا خافَ خروجَ وقتِها', n: '« Le التَّيَمُّم est permis au voyageur non en état de désobéissance, au malade pour toute prière, et au résidant sain pour les prières obligatoires dont il craint la sortie du temps. » — al-Akhḍarī' }
+            { t: 'h', v: 'Tayammum (التَّيَمُّم)' },
+            { t: 'p', v: 'Les mêWuḍūʾ (الوُضُوء)\', avec en plus : trouver de l\'eau ou avoir la capacité de l\'utiliser.' },
+            { t: 'ar', v: 'ويتيمّمُ المسافرُ في غيرِ معصيةٍ، والمريضُ لفريضةٍ أو نافلةٍ، ويتيمّمُ الحاضرُ الصحيحُ للفرائضِ إذا خافَ خروجَ وقتِها', n: '« Le al-tayammum (التَّيَمُّم) est permis au voyageur non en état de désobéissance, au malade pour toute prière, et au résidant sain pour les prières obligatoires dont il craint la sortie du temps. » — al-Akhḍarī' }
           ]
         },
 
         /* ── Leçon 7 ── */
         {
           id: 'pur-07',
-          title: 'Le الحَيْض et le النِّفَاس',
+          title: 'Le الحَيْض Nifās (النِّفَاس)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le الحَيْض (menstrues) et le النِّفَاس (saignement post-natal) sont deux états féminins qui entraînent un حَدَثٌ أَكْبَر et imposent de nombreuses interdictions temporaires. L\'école malikite définit leurs durées et leurs règles en détail.' },
+            { t: 'lead', v: 'Le الحَيْض (menstrues) Nifās (النِّفَاس) (saignement post-natal) sont deux états féminins qui entraînent un حَدَثٌ أَكْبَر et imposent de nombreuses interdictions temporaires. L\'école malikite définit leurs durées et leurs règles en détail.' },
             { t: 'h', v: 'Les trois catégories de femmes en matière de الحَيْض' },
             { t: 'ul', v: [
               '<strong>La mubiadaʾa</strong> (première expérience) : durée maximale du الحَيْض = 15 jours.',
@@ -264,21 +264,21 @@ const DEBUTANT = {
             ] },
             { t: 'h', v: 'Interdictions pendant le الحَيْض' },
             { t: 'ul', v: [
-              'La prière (الصَّلَاة) — pas de rattrapage.',
+              'La prièṢalāt (الصَّلَاة) — pas de rattrapage.',
               'Le jeûne (الصَّوْم) — à rattraper obligatoirement.',
-              'Le الطَّوَاف.',
+              'Le ṬṬawāf (الطَّوَاف).',
               'Toucher le Coran.',
               'Entrer dans la mosquée.',
-              'Le rapport sexuel, et tout contact entre le nombril et les genoux — jusqu\'au الغُسْل.'
+              'Le rapport sexuel, et tout contact entre le nombril et les genoux — jusqu\'au Ghusl (الغُسْل).'
             ] },
             { t: 'h', v: 'Ce qui est permis pendant le الحَيْض' },
             { t: 'p', v: 'La récitation du Coran de mémoire (sans le toucher) est permise à la femme menstruée selon l\'école malikite. Elle doit rattraper les jours de jeûne mais pas les prières.' },
-            { t: 'h', v: 'Le النِّفَاس — saignement post-natal' },
+            { t: 'h', v: 'Nifās (النِّفَاس) — saignement post-natal' },
             { t: 'ul', v: [
-              'Les interdictions du النِّفَاس sont identiques à celles du الحَيْض.',
+              'Nifās (النِّفَاس) sont identiques à celles du الحَيْض.',
               'Durée maximale : <strong>60 jours</strong>.',
-              'Si le sang s\'arrête avant — même le jour de l\'accouchement — la femme fait le الغُسْل et reprend ses prières immédiatement.',
-              'Si le sang revient après un arrêt : s\'il s\'est écoulé 15 jours ou plus entre les deux saignements → le second est un nouveau الحَيْض ; s\'il s\'est écoulé moins de 15 jours → il s\'ajoute au النِّفَاس.'
+              'Si le sang s\'arrête avant — même le jour de l\'accouchement — la femme fait le Ghusl (الغُسْل) et reprend ses prières immédiatement.',
+              'Si le sang revient après un arrêt : s\'il s\'est écoulé 15 jours ou plus entre les deux saignements → le second est un nouveau الحَيْض ; s\'il s\'est écoulé moins de 15 jours → il s\'Nifās (النِّفَاس).'
             ] },
             { t: 'ar', v: 'النفاسُ كالحيضِ في مَنعِه. وأكثرُه ستّونَ يوماً', n: '« Le النِّفَاس est identique au الحَيْض dans ses interdictions. Sa durée maximale est de soixante jours. » — Mukhtaṣar al-Akhḍarī' },
             { t: 'note', v: 'Important : dans le rite malikite, la femme menstruée n\'a pas à rattraper les prières manquées pendant ses règles, à la différence du jeûne. C\'est une miséricorde divine pour alléger sa situation.' }
@@ -410,7 +410,7 @@ const DEBUTANT = {
             id: "q-pur-03",
             text: "Le <strong>\u0627\u0644\u062f\u064e\u0651\u0644\u0652\u0643</strong> (frottement de la peau lors du lavage) est dans le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 malikite :",
             choices: [
-              {id:"a",text:"Une السُّنَّة"},
+              {id:"a",text:"Sunna (السُّنَّة)"},
               {id:"b",text:"Une vertu (\u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629)"},
               {id:"c",text:"Une obligation (\u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629)"},
               {id:"d",text:"Un acte d\u00e9conseill\u00e9 dans certains cas"},
@@ -423,18 +423,18 @@ const DEBUTANT = {
             text: "<strong>PI\u00c8GE :</strong> Ibrahim a fait \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 et oubli\u00e9 d'essuyer ses oreilles. Doit-il refaire sa pri\u00e8re ?",
             choices: [
               {id:"a",text:"Oui, l'essuyage des oreilles est une obligation du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621"},
-              {id:"b",text:"Non, c'est une السُّنَّة \u2014 la pri\u00e8re reste valide"},
+              {id:"b",text:"Non, c'Sunna (السُّنَّة) \u2014 la pri\u00e8re reste valide"},
               {id:"c",text:"Oui s'il s'en souvient encore dans le temps de cette pri\u00e8re"},
               {id:"d",text:"Oui car il faut refaire le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 complet"},
             ],
             correctId: "b",
-            explanation: "L'essuyage des oreilles (\u0645\u0633\u062d \u0627\u0644\u0623\u0630\u0646\u064a\u0646) est une السُّنَّة du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621, non une obligation. Omettre une السُّنَّة n'invalide ni les ablutions ni la pri\u00e8re. Seules les sept \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 sont obligatoires."
+            explanation: "L'essuyage des oreilles (\u0645\u0633\u062d \u0627\u0644\u0623\u0630\u0646\u064a\u0646) Sunna (السُّنَّة) du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621, non une obligation. Sunna (السُّنَّة) n'invalide ni les ablutions ni la pri\u00e8re. Seules les sept \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 sont obligatoires."
           },
           {
             id: "q-pur-05",
             text: "Le <strong>\u0627\u0644\u0641\u064e\u0648\u0652\u0631</strong> (encha\u00eenement imm\u00e9diat entre les membres) est dans \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 :",
             choices: [
-              {id:"a",text:"Une السُّنَّة"},
+              {id:"a",text:"Sunna (السُّنَّة)"},
               {id:"b",text:"Une vertu"},
               {id:"c",text:"Une obligation (la 7\u00e8me des \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636)"},
               {id:"d",text:"Indiff\u00e9rent si on reste concentr\u00e9"},
@@ -507,9 +507,9 @@ const DEBUTANT = {
             text: "<strong>NUANCE :</strong> L'entrelacement des doigts (\u062a\u064e\u062e\u0644\u0650\u064a\u0644 \u0627\u0644\u0623\u064e\u0635\u064e\u0627\u0628\u0650\u0639) : quelle r\u00e8gle s'applique pour les mains et les pieds ?",
             choices: [
               {id:"a",text:"Obligatoire pour les deux (mains et pieds)"},
-              {id:"b",text:"Obligatoire pour les mains, السُّنَّة pour les pieds"},
-              {id:"c",text:"السُّنَّة pour les deux"},
-              {id:"d",text:"Obligatoire pour les pieds, السُّنَّة pour les mains"},
+              {id:"b",text:"Obligatoire pour les mains, Sunna (السُّنَّة) pour les pieds"},
+              {id:"c",text:"Sunna (السُّنَّة) pour les deux"},
+              {id:"d",text:"Obligatoire pour les pieds, Sunna (السُّنَّة) pour les mains"},
             ],
             correctId: "b",
             explanation: "L'Akh\u1e0dar\u012b : \u00ab \u064a\u062c\u0628 \u062a\u062e\u0644\u064a\u0644 \u0623\u0635\u0627\u0628\u0639 \u0627\u0644\u064a\u062f\u064a\u0646, \u0648\u064a\u0633\u062a\u062d\u0628 \u0641\u064a \u0623\u0635\u0627\u0628\u0639 \u0627\u0644\u0631\u062c\u0644\u064a\u0646 \u00bb \u2014 entrecroiser les doigts des MAINS est une obligation (\u0648\u0627\u062c\u0628), entrecroiser les orteils des PIEDS est recommand\u00e9 (\u0645\u0633\u062a\u062d\u0628). Ne pas confondre les deux r\u00e8gles."
@@ -552,7 +552,7 @@ const DEBUTANT = {
           },
           {
             id: "q-pur-15",
-            text: "Combien de السُّنَّة compte le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 selon l'Akh\u1e0dar\u012b ?",
+            text: "Sunna (السُّنَّة) compte le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 selon l'Akh\u1e0dar\u012b ?",
             choices: [
               {id:"a",text:"5"},
               {id:"b",text:"7"},
@@ -560,7 +560,7 @@ const DEBUTANT = {
               {id:"d",text:"12"},
             ],
             correctId: "b",
-            explanation: "Les sept السُّنَّة du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 : (1) laver les mains jusqu'aux poignets, (2) \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 (rin\u00e7age de bouche), (3) \u0627\u0633\u0652\u062a\u0650\u0646\u0652\u0634\u064e\u0627\u0642 (aspiration d'eau dans le nez), (4) \u0627\u0633\u0652\u062a\u0650\u0646\u0652\u062b\u064e\u0627\u0631 (expulsion), (5) revenir en arri\u00e8re sur le mas\u1e25 de la t\u00eate, (6) essuyer les oreilles avec de l'eau renouvel\u00e9e, (7) \u0627\u0644\u062a\u0631\u062a\u064a\u0628 (respecter l'ordre entre les obligations)."
+            explanation: "Sunna (السُّنَّة) du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 : (1) laver les mains jusqu'aux poignets, (2) \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 (rin\u00e7age de bouche), (3) \u0627\u0633\u0652\u062a\u0650\u0646\u0652\u0634\u064e\u0627\u0642 (aspiration d'eau dans le nez), (4) \u0627\u0633\u0652\u062a\u0650\u0646\u0652\u062b\u064e\u0627\u0631 (expulsion), (5) revenir en arri\u00e8re sur le mas\u1e25 de la t\u00eate, (6) essuyer les oreilles avec de l'eau renouvel\u00e9e, (7) \u0627\u0644\u062a\u0631\u062a\u064a\u0628 (respecter l'ordre entre les obligations)."
           },
           {
             id: "q-pur-16",
@@ -665,7 +665,7 @@ const DEBUTANT = {
               {id:"a",text:"Non \u2014 comme dans \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621, la barbe \u00e9paisse est exempt\u00e9e"},
               {id:"b",text:"Oui \u2014 dans \u0627\u0644\u063a\u064f\u0633\u0652\u0644 m\u00eame la barbe \u00e9paisse doit \u00eatre travers\u00e9e"},
               {id:"c",text:"Seulement si la peau du visage n'est pas visible"},
-              {id:"d",text:"C'est une السُّنَّة dans \u0627\u0644\u063a\u064f\u0633\u0652\u0644, pas une obligation"},
+              {id:"d",text:"C'Sunna (السُّنَّة) dans \u0627\u0644\u063a\u064f\u0633\u0652\u0644, pas une obligation"},
             ],
             correctId: "b",
             explanation: "R\u00c8GLE DIFF\u00c9RENTE DE \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 : \u00ab \u064a\u062c\u0628 \u062a\u062e\u0644\u064a\u0644\u0647\u0627 \u0641\u064a \u0627\u0644\u063a\u0633\u0644 \u0648\u0644\u0648 \u0643\u0627\u0646\u062a \u0643\u062b\u064a\u0641\u0629 \u00bb \u2014 dans \u0627\u0644\u063a\u064f\u0633\u0652\u0644, m\u00eame la barbe \u00e9paisse doit \u00eatre travers\u00e9e. Dans \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621, seule la barbe l\u00e9g\u00e8re (\u062e\u064e\u0641\u0650\u064a\u0641\u064e\u0629 \u2014 peau visible) est travers\u00e9e."
@@ -687,12 +687,12 @@ const DEBUTANT = {
             text: "<strong>PI\u00c8GE :</strong> Nadia fait le \u0627\u0644\u063a\u064f\u0633\u0652\u0644 parfaitement mais oublie le rin\u00e7age de la bouche (\u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629). Son \u0627\u0644\u063a\u064f\u0633\u0652\u0644 est-il invalide ?",
             choices: [
               {id:"a",text:"Oui \u2014 la \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 est une obligation du \u0627\u0644\u063a\u064f\u0633\u0652\u0644"},
-              {id:"b",text:"Non \u2014 la \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 est une السُّنَّة du \u0627\u0644\u063a\u064f\u0633\u0652\u0644, non une obligation"},
+              {id:"b",text:"Non \u2014 la \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 Sunna (السُّنَّة) du \u0627\u0644\u063a\u064f\u0633\u0652\u0644, non une obligation"},
               {id:"c",text:"Oui, mais seulement pour le \u0627\u0644\u063a\u064f\u0633\u0652\u0644 de \u0627\u0644\u062c\u064e\u0646\u064e\u0627\u0628\u064e\u0629"},
               {id:"d",text:"Oui elle doit refaire les pri\u00e8res"},
             ],
             correctId: "b",
-            explanation: "La \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 est parmi les السُّنَّة du \u0627\u0644\u063a\u064f\u0633\u0652\u0644, pas ses \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636. Les quatre \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 sont : \u0627\u0644\u0646\u0650\u0651\u064a\u064e\u0651\u0629, \u0627\u0644\u0641\u064e\u0648\u0652\u0631, \u0627\u0644\u062f\u064e\u0651\u0644\u0652\u0643, \u0627\u0644\u0639\u064f\u0645\u064f\u0648\u0645. Omettre une السُّنَّة n'invalide pas le \u0627\u0644\u063a\u064f\u0633\u0652\u0644."
+            explanation: "La \u0645\u064e\u0636\u0652\u0645\u064e\u0636\u064e\u0629 Sunna (السُّنَّة) du \u0627\u0644\u063a\u064f\u0633\u0652\u0644, pas ses \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636. Les quatre \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 sont : \u0627\u0644\u0646\u0650\u0651\u064a\u064e\u0651\u0629, \u0627\u0644\u0641\u064e\u0648\u0652\u0631, \u0627\u0644\u062f\u064e\u0651\u0644\u0652\u0643, \u0627\u0644\u0639\u064f\u0645\u064f\u0648\u0645. Sunna (السُّنَّة) n'invalide pas le \u0627\u0644\u063a\u064f\u0633\u0652\u0644."
           },
           {
             id: "q-pur-27",
@@ -780,11 +780,11 @@ const DEBUTANT = {
           },
           {
             id: "q-pur-34",
-            text: "Le <strong>\u0645\u064e\u0633\u0652\u062d \u0627\u0644\u0631\u064e\u0651\u0623\u0633</strong> dans \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 : aller et retour \u2014 lequel est une obligation, lequel est une السُّنَّة ?",
+            text: "Le <strong>\u0645\u064e\u0633\u0652\u062d \u0627\u0644\u0631\u064e\u0651\u0623\u0633</strong> dans \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 : aller et retour \u2014 lequel est une obligation, Sunna (السُّنَّة) ?",
             choices: [
-              {id:"a",text:"L'aller seul est l'obligation. Le retour est une السُّنَّة"},
+              {id:"a",text:"L'aller seul est l'obligation. Sunna (السُّنَّة)"},
               {id:"b",text:"Les deux allers sont obligatoires"},
-              {id:"c",text:"Le retour est l'obligation, l'aller est la السُّنَّة"},
+              {id:"c",text:"Le retour est l'obligation, l'Sunna (السُّنَّة)"},
               {id:"d",text:"C'est selon la taille de la t\u00eate"},
             ],
             correctId: "a",
@@ -866,13 +866,13 @@ const DEBUTANT = {
             id: "q-pur-41",
             text: "<strong>PI\u00c8GE AVANC\u00c9 :</strong> Youssef fait \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 dans l'ordre : visage \u2192 bras gauche \u2192 bras droit \u2192 t\u00eate \u2192 pieds. Son \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 est-il valide ?",
             choices: [
-              {id:"a",text:"Oui \u2014 l'ordre est une السُّنَّة, pas une obligation dans le rite malikite"},
+              {id:"a",text:"Oui \u2014 l'Sunna (السُّنَّة), pas une obligation dans le rite malikite"},
               {id:"b",text:"Non \u2014 l'ordre des membres est une obligation (\u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629) dans le rite malikite"},
               {id:"c",text:"Oui mais il doit refaire la pri\u00e8re"},
               {id:"d",text:"Partiellement valide"},
             ],
             correctId: "a",
-            explanation: "L'Akh\u1e0dar\u012b classe le \u062a\u0631\u062a\u064a\u0628 (ordre entre les membres du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621) parmi les SOUNNAH, pas les \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636. L'omettre ne rend pas le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 invalide mais prive de la السُّنَّة. Attention : respecter l'ordre reste fortement recommand\u00e9."
+            explanation: "L'Akh\u1e0dar\u012b classe le \u062a\u0631\u062a\u064a\u0628 (ordre entre les membres du \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621) parmi les SOUNNAH, pas les \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636. L'omettre ne rend pas le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 Sunna (السُّنَّة). Attention : respecter l'ordre reste fortement recommand\u00e9."
           },
           {
             id: "q-pur-42",
@@ -1101,7 +1101,7 @@ const DEBUTANT = {
             {id:"d",text:"On attend la gu\u00e9rison pour faire le \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621"}
             ],
             correctId: "c",
-            explanation: "Doctrine-malikite.fr (المُدَوَّنَة) : on fait \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 normalement sur tous les membres sains, et arriv\u00e9 au membre bless\u00e9, on passe la main mouill\u00e9e UNE FOIS sur le pansement (\u0645\u064e\u0633\u0652\u062d). Si m\u00eame le \u0645\u064e\u0633\u0652\u062d direct risque de nuire : on essuie le bandage qui couvre la blessure."
+            explanation: "Doctrine-malikite.Mudawwana (المُدَوَّنَة) : on fait \u0627\u0644\u0648\u064f\u0636\u064f\u0648\u0621 normalement sur tous les membres sains, et arriv\u00e9 au membre bless\u00e9, on passe la main mouill\u00e9e UNE FOIS sur le pansement (\u0645\u064e\u0633\u0652\u062d). Si m\u00eame le \u0645\u064e\u0633\u0652\u062d direct risque de nuire : on essuie le bandage qui couvre la blessure."
           },
           {
             id: "q-pur-61",
@@ -1168,7 +1168,7 @@ const DEBUTANT = {
 
       badge: {
         id: 'badge-purification',
-        title: 'Maître de la الطَّهَارَة',
+        title: 'MaîṬahāra (الطَّهَارَة)',
         arabicTitle: 'إتقان الطهارة',
         icon: 'water',
         color: 'silver',
@@ -1184,7 +1184,7 @@ const DEBUTANT = {
       title: 'La Prière',
       arabicTitle: 'الصلاة',
       icon: 'arch',
-      description: 'Horaires des prières, conditions, obligations (الفَرَائِض), السُّنَّة, rattrapage des prières et prosternation d\'oubli selon le rite malikite.',
+      description: 'Horaires des prières, conditions, Farāʾiḍ (الفَرَائِض), Sunna (السُّنَّة), rattrapage des prières et prosternation d\'oubli selon le rite malikite.',
 
       lessons: [
 
@@ -1243,8 +1243,8 @@ const DEBUTANT = {
             { t: 'lead', v: 'Avant d\'entrer en prière, sept conditions (shurūṭ) doivent être réunies. Leur absence invalide la prière.' },
             { t: 'h', v: 'Les sept conditions de la prière' },
             { t: 'ul', v: [
-              '<strong>1. La pureté du الحَدَث</strong> — avoir le الوُضُوء\' ou le الغُسْل si nécessaire.',
-              '<strong>2. La pureté du الخَبَث</strong> — absence de النَّجَاسَة sur le corps, le vêtement et le lieu de prière.',
+              '<strong>1. La pureté du ḤḤadath (الحَدَث)</strong> — Wuḍūʾ (الوُضُوء)\' ou le Ghusl (الغُسْل) si nécessaire.',
+              '<strong>2. La pureté du الخَبَث</strong> — Najāsa (النَّجَاسَة) sur le corps, le vêtement et le lieu de prière.',
               '<strong>3. Couvrir la ʿawra</strong>.',
               '<strong>4. Faire face à la القِبْلَة</strong> (direction de La Mecque).',
               '<strong>5. Éviter la parole</strong>.',
@@ -1254,11 +1254,11 @@ const DEBUTANT = {
             { t: 'h', v: 'La ʿawra de l\'homme et de la femme' },
             { t: 'ul', v: [
               '<strong>L\'homme</strong> : ce qui se trouve entre le nombril et les genoux (tous deux exclus selon la règle classique).',
-              '<strong>La femme</strong> : tout le corps est ʿawra à l\'exception du visage et des deux paumes. L\'auteur note qu\'il est مَكرُوه (déconseillé) de prier en sous-vêtements seuls, sauf si un autre vêtement les recouvre.'
+              '<strong>La femme</strong> : tout le corps est ʿawra à l\'exception du visage et des deux paumes. L\'auteur note qu\'Makrūh (مَكرُوه) (déconseillé) de prier en sous-vêtements seuls, sauf si un autre vêtement les recouvre.'
             ] },
             { t: 'h', v: 'Situations d\'exception' },
             { t: 'ul', v: [
-              'Vêtement souillé sans autre vêtement disponible ni eau pour le laver, et risque de sortie du temps de prière : on prie avec la النَّجَاسَة.',
+              'Vêtement souillé sans autre vêtement disponible ni eau pour le laver, et risque de sortie du temps de prière : Najāsa (النَّجَاسَة).',
               'Pas de vêtement du tout pour couvrir la ʿawra : on prie nu.',
               'Direction de la القِبْلَة mal estimée : on répète la prière dans le temps.',
               '<strong>On ne peut jamais différer la prière à cause du manque de pureté.</strong> Celui qui le fait est en désobéissance.'
@@ -1273,20 +1273,20 @@ const DEBUTANT = {
           title: 'Les Obligations de la Prière (الفَرَائِض al-الصَّلَاة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Les الفَرَائِض (obligations) de la prière sont les éléments constitutifs essentiels sans lesquels elle est nulle et doit être recommencée. Al-Akhḍarī en dresse la liste complète.' },
-            { t: 'h', v: 'La liste des الفَرَائِض de la prière' },
+            { t: 'lead', v: 'Farāʾiḍ (الفَرَائِض) (obligations) de la prière sont les éléments constitutifs essentiels sans lesquels elle est nulle et doit être recommencée. Al-Akhḍarī en dresse la liste complète.' },
+            { t: 'h', v: 'Farāʾiḍ (الفَرَائِض) de la prière' },
             { t: 'ul', v: [
-              '<strong>1. L\'intention de la prière spécifiée (النِّيَّة)</strong> — savoir quelle prière l\'on accomplit.',
+              '<strong>1. L\'intention de la prière spécifiéNiyya (النِّيَّة)</strong> — savoir quelle prière l\'on accomplit.',
               '<strong>2. La تَكْبِيرَةُ الإِحْرَام</strong> (Allāhu Akbar d\'entrée) <strong>et le fait d\'être debout lors de son énonciation</strong>.',
-              '<strong>3. La الفَاتِحَة</strong> (la sourate d\'ouverture) <strong>et le fait d\'être debout lors de sa récitation</strong>.',
-              '<strong>4. Le الرُّكُوعʿ</strong> (inclination) et le relèvement (rafʿ) du الرُّكُوعʿ.',
+              '<strong>3. Fātiḥa (الفَاتِحَة)</strong> (la sourate d\'ouverture) <strong>et le fait d\'être debout lors de sa récitation</strong>.',
+              '<strong>4. Rukūʿ (الرُّكُوع)ʿ</strong> (inclination) et le relèvement (rafʿ) Rukūʿ (الرُّكُوع)ʿ.',
               '<strong>5. La prosternation sur le front (السُّجُود ʿalā al-jabha)</strong> et le relèvement.',
-              '<strong>6. L\'ʿitidāl</strong> (être bien droit après le الرُّكُوعʿ).',
+              '<strong>6. L\'ʿitidāl</strong> (être bien droit aprèRukūʿ (الرُّكُوع)ʿ).',
               '<strong>7. La ṭumaʾnīna</strong> — la tranquillité des membres à chaque posture.',
               '<strong>8. Le tartīb</strong> — respecter l\'ordre des obligations.',
               '<strong>9. Le salām</strong> et la position assise (julūs) qui l\'accompagne.'
             ] },
-            { t: 'h', v: 'La condition de l\'intention (النِّيَّة)' },
+            { t: 'h', v: 'La condition de l\'Niyya (النِّيَّة)' },
             { t: 'p', v: 'L\'auteur précise : « La condition de l\'intention est d\'être simultanée à la تَكْبِيرَةُ الإِحْرَام. » Elle doit être présente dans le cœur au moment exact où l\'on prononce le premier Allāhu Akbar.' },
             { t: 'h', v: 'La dimension spirituelle de la prière' },
             { t: 'ar', v: 'للصلاةِ نورٌ عظيمٌ تُشرقُ به قلوبُ المصلّينَ ولا ينالُه إلّا الخاشعون', n: '« La prière est une lumière immense qui illumine les cœurs de ceux qui prient — et seuls les humbles et recueillis l\'atteignent. » — al-Akhḍarī' },
@@ -1298,21 +1298,21 @@ const DEBUTANT = {
         /* ── Leçon 4 ── */
         {
           id: 'sal-04',
-          title: 'Les السُّنَّة et مَكرُوهāt de la Prière',
+          title: 'Sunna (السُّنَّة) Makrūh (مَكرُوه)āt de la Prière',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Au-delà des obligations, la prière comprend de nombreux actes السُّنَّة qui la complètent et l\'embellissent, ainsi que des actes مَكرُوه (déconseillés) qui en diminuent la valeur.' },
-            { t: 'h', v: 'Les السُّنَّة de la prière (principales)' },
+            { t: 'lead', v: 'Au-delà des obligations, la prièSunna (السُّنَّة) qui la complètent et l\'embellissent, Makrūh (مَكرُوه) (déconseillés) qui en diminuent la valeur.' },
+            { t: 'h', v: 'Sunna (السُّنَّة) de la prière (principales)' },
             { t: 'ul', v: [
-              'L\'الإِقَامَة (appel à la prière intérieur avant de commencer).',
-              'La sourate après la الفَاتِحَة, et être debout lors de sa récitation.',
+              'L\'Iqāma (الإِقَامَة) (appel à la prière intérieur avant de commencer).',
+              'La sourate aprèFātiḥa (الفَاتِحَة), et être debout lors de sa récitation.',
               'Réciter à voix basse dans les prières silencieuses, à voix haute dans les prières vocales.',
-              'Dire « samiʿa Allāhu li-man ḥamidah » lors du relèvement du الرُّكُوعʿ.',
+              'Dire « samiʿa Allāhu li-man ḥamidah » lors du relèRukūʿ (الرُّكُوع)ʿ.',
               'Tous les التَّكْبِيرāt de transition — sauf le premier, qui est une obligation.',
-              'Les deux التَّشَهُّدs et la position assise pour eux.',
-              'Précéder la الفَاتِحَة avant la sourate.',
+              'Tashahhud (التَّشَهُّد)s et la position assise pour eux.',
+              'PrécéFātiḥa (الفَاتِحَة) avant la sourate.',
               'La deuxième et troisième salām.',
-              'La الصَّلَاة sur le Prophète ﷺ.',
+              'Ṣalāt (الصَّلَاة) sur le Prophète ﷺ.',
               'La prosternation sur le nez, les paumes, les genoux et les orteils.',
               'La السُّتْرَة (obstacle placé devant le priant) pour le priant seul (non pour le المَأمُوم).'
             ] },
@@ -1320,13 +1320,13 @@ const DEBUTANT = {
             { t: 'ul', v: [
               'Lever les mains au niveau des oreilles lors du تَكْبِيرَةُ الإِحْرَام.',
               'Dire « Rabbanā wa-laka\'l-ḥamd » (المَأمُوم et priant seul).',
-              'L\'Āmīn après la الفَاتِحَة — l\'الإِمَام le dit en silence dans les prières vocales.',
-              'Le tasbīḥ dans le الرُّكُوعʿ et la supplication (duʿāʾ) dans la prosternation.',
+              'L\'Āmīn aprèFātiḥa (الفَاتِحَة) — l\'الإِمَام le dit en silence dans les prières vocales.',
+              'Rukūʿ (الرُّكُوع)ʿ et la supplication (duʿāʾ) dans la prosternation.',
               'Allonger la récitation dans le الصُّبْح et le الظُّهْر, raccourcir dans le العَصْر et le المَغْرِب, modérer dans le العِشَاء.',
-              'Le القُنُوت à voix basse avant le الرُّكُوعʿ.',
-              'Déplacer le doigt (index) dans le التَّشَهُّد.'
+              'Qunūt (القُنُوت) à Rukūʿ (الرُّكُوع)ʿ.',
+              'Déplacer le doigt (index) Tashahhud (التَّشَهُّد).'
             ] },
-            { t: 'h', v: 'Les actes مَكرُوه (déconseillés) dans la prière' },
+            { t: 'h', v: 'Makrūh (مَكرُوه) (déconseillés) dans la prière' },
             { t: 'ul', v: [
               'Se tourner (même légèrement) pendant la prière.',
               'Fermer les yeux.',
@@ -1362,7 +1362,7 @@ const DEBUTANT = {
             ] },
             { t: 'p', v: 'Si l\'on ne respecte pas l\'ordre dans ces trois positions, la prière n\'est pas invalidée.' },
             { t: 'h', v: 'L\'appui qui invalide la prière' },
-            { t: 'p', v: 'L\'appui qui invalide la prière de celui qui peut s\'en passer est celui sur lequel on s\'effondrerait si on l\'enlevait. Si l\'enlèvement de l\'appui ne ferait pas tomber l\'individu, cet appui est seulement مَكرُوه (déconseillé).' },
+            { t: 'p', v: 'L\'appui qui invalide la prière de celui qui peut s\'en passer est celui sur lequel on s\'effondrerait si on l\'enlevait. Si l\'enlèvement de l\'appui ne ferait pas tomber l\'individu, Makrūh (مَكرُوه) (déconseillé).' },
             { t: 'h', v: 'La prière surérogatoire (نَافِلَة)' },
             { t: 'ul', v: [
               'Il est permis à celui qui peut se tenir debout de prier la نَافِلَة assis — mais il reçoit la moitié de la récompense du priant debout.',
@@ -1375,10 +1375,10 @@ const DEBUTANT = {
         /* ── Leçon 6 ── */
         {
           id: 'sal-06',
-          title: 'Le Rattrapage des Prières (القَضَاء)',
+          title: 'Le Rattrapage des PrièQaḍāʾ (القَضَاء)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le rattrapage des prières omises (القَضَاء) est une obligation. L\'école malikite en précise les règles d\'ordre, la priorité et les restrictions sur les prières optionnelles pour celui qui a des dettes de prières.' },
+            { t: 'lead', v: 'Le rattrapage des prièQaḍāʾ (القَضَاء) est une obligation. L\'école malikite en précise les règles d\'ordre, la priorité et les restrictions sur les prières optionnelles pour celui qui a des dettes de prières.' },
             { t: 'h', v: 'Obligation de rattrapage' },
             { t: 'p', v: 'Al-Akhḍarī est formel : « Il est obligatoire de rattraper toutes les prières en dette, et il n\'est pas permis d\'y être négligent. » Celui qui accomplit 5 prières par jour à raison d\'une par temps n\'est pas considéré comme négligent.' },
             { t: 'h', v: 'Comment les rattraper ?' },
@@ -1408,17 +1408,17 @@ const DEBUTANT = {
           title: 'La Prosternation d\'Oubli (السُّجُود al-السَّهْو)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La prosternation d\'oubli est un acte de miséricorde divine pour le priant qui oublie ou ajoute quelque chose par inadvertance. Selon l\'école malikite, c\'est une السُّنَّة, et son moment varie selon la nature de l\'erreur.' },
+            { t: 'lead', v: 'La prosternation d\'oubli est un acte de miséricorde divine pour le priant qui oublie ou ajoute quelque chose par inadvertance. Selon l\'école malikite, c\'Sunna (السُّنَّة), et son moment varie selon la nature de l\'erreur.' },
             { t: 'ar', v: 'وسجودُ السهوِ في الصلاةِ سُنّةٌ', n: '« La prosternation d\'oubli dans la prière est une السُّنَّة. » — Mukhtaṣar al-Akhḍarī' },
             { t: 'h', v: 'Pour un manque (naqṣ) : avant le salām' },
-            { t: 'p', v: 'Deux prosternations avant le salām, après avoir complété les deux التَّشَهُّدs, suivies d\'un troisième التَّشَهُّد.' },
+            { t: 'p', v: 'Deux prosternations avant le salām, après avoir complété Tashahhud (التَّشَهُّد)s, suivies d\'un troisièTashahhud (التَّشَهُّد).' },
             { t: 'h', v: 'Pour un excès (ziyāda) : après le salām' },
-            { t: 'p', v: 'Deux prosternations après le salām, suivies d\'un التَّشَهُّد, puis d\'un autre salām.' },
+            { t: 'p', v: 'Deux prosternations après le salām, suivies d\'Tashahhud (التَّشَهُّد), puis d\'un autre salām.' },
             { t: 'h', v: 'Si l\'on a à la fois manqué et ajouté' },
             { t: 'p', v: 'On prosterne avant le salām (le manque prime).' },
             { t: 'h', v: 'Règles sur l\'oubli des prosternations' },
             { t: 'ul', v: [
-              '<strong>Prosternation avant le salām oubliée</strong> : si le souvenir vient rapidement → on prosterne ; si l\'on a tardé ou quitté la mosquée → les prosternations sont nulles, et si elles couvrent 3 السُّنَّة ou plus → la prière est nulle aussi.',
+              '<strong>Prosternation avant le salām oubliée</strong> : si le souvenir vient rapidement → on prosterne ; si l\'on a tardé ou quitté la mosquée → les prosternations sont nulles, et si elles couvrent 3 Sunna (السُّنَّة) ou plus → la prière est nulle aussi.',
               '<strong>Prosternation après le salām oubliée</strong> : on peut la faire même après un an.',
               'Aucune prosternation ne peut compenser l\'omission d\'une obligation (farīḍa).'
             ] },
@@ -1429,7 +1429,7 @@ const DEBUTANT = {
               'Terminer la prière (salām) après 2 رَكَعَات par inadvertance → prosternation après le salām.',
               'Ajouter une رَكْعَة ou deux → prosternation après le salām.',
               '<strong>Rire dans la prière (pas sourire) : la prière est nulle</strong>, qu\'on soit distrait ou intentionnel.',
-              'La somnolence légère → rien à faire. Sommeil lourd → refaire الوُضُوء\' et prière.'
+              'La somnolence légère → rien à faire. Sommeil lourd → Wuḍūʾ (الوُضُوء)\' et prière.'
             ] },
             { t: 'note', v: 'Principe à retenir : le manque → avant le salām ; l\'excès → après le salām ; les deux → avant le salām.' },
 
@@ -1447,19 +1447,19 @@ const DEBUTANT = {
             { t: 'ar', v: 'مَا أَدرَكَ المَسبُوقُ فَهُوَ آخِرُ صَلَاتِهِ وَيَقضِي أَوَّلَهَا', n: '« Ce que le retardataire attrape est la fin de sa prière ; il rattrape son début. » — Akhḍarī' },
             { t: 'h', v: 'Application concrète selon le rite malikite' },
             { t: 'ul', v: [
-              '<strong>Attrape 3 رَكَعَات sur 4 (الظُّهْر) :</strong> les 3 رَكَعَات avec l\'الإِمَام = ses 2ème, 3ème, 4ème. Après le salām de l\'الإِمَام, il se lève et prie 1 رَكْعَة (sa 1ère). التَّشَهُّد final + salām directement — pas de premier التَّشَهُّد intermédiaire.',
-              '<strong>Attrape 2 رَكَعَات sur 4 :</strong> les 2 avec l\'الإِمَام = ses 3ème et 4ème. Après le salām, il prie 2 رَكَعَات (sa 1ère et 2ème). Ces 2 رَكَعَات indépendantes n\'ont PAS de premier التَّشَهُّد entre elles (le premier التَّشَهُّد est entre la 2ème et la 3ème, et la 3ème est déjà faite). → Il fait directement le التَّشَهُّد final après la 2ème رَكْعَة indépendante.',
-              '<strong>Attrape 1 رَكْعَة sur 4 :</strong> cette رَكْعَة avec l\'الإِمَام = sa 4ème. Après le salām, il prie 3 رَكَعَات (1ère, 2ème, 3ème). Il fait un premier التَّشَهُّد après sa 2ème رَكْعَة indépendante (car c\'est sa 2ème globale), puis continue pour la 3ème avec le التَّشَهُّد final.',
-              '<strong>Attrape 2 رَكَعَات sur 3 (المَغْرِب) :</strong> avec l\'الإِمَام = sa 2ème et 3ème. Après le salām, il prie 1 رَكْعَة (sa 1ère) directement → التَّشَهُّد final → salām.',
-              '<strong>Attrape 1 رَكْعَة sur 3 (المَغْرِب) :</strong> avec l\'الإِمَام = sa 3ème. Après le salām, il prie 2 رَكَعَات (sa 1ère et 2ème). SANS premier التَّشَهُّد entre les deux → التَّشَهُّد final + salām.'
+              '<strong>Attrape 3 رَكَعَات sur 4 (الظُّهْر) :</strong> les 3 رَكَعَات avec l\'الإِمَام = ses 2ème, 3ème, 4ème. Après le salām de l\'الإِمَام, il se lève et prie 1 رَكْعَة (sa 1ère). Tashahhud (التَّشَهُّد) final + salām directement — Tashahhud (التَّشَهُّد) intermédiaire.',
+              '<strong>Attrape 2 رَكَعَات sur 4 :</strong> les 2 avec l\'الإِمَام = ses 3ème et 4ème. Après le salām, il prie 2 رَكَعَات (sa 1ère et 2ème). Ces 2 رَكَعَات indépendantes n\'Tashahhud (التَّشَهُّد) entre elles (Tashahhud (التَّشَهُّد) est entre la 2ème et la 3ème, et la 3ème est déjà faite). → Tashahhud (التَّشَهُّد) final après la 2ème رَكْعَة indépendante.',
+              '<strong>Attrape 1 رَكْعَة sur 4 :</strong> cette رَكْعَة avec l\'الإِمَام = sa 4ème. Après le salām, il prie 3 رَكَعَات (1ère, 2ème, 3ème). Tashahhud (التَّشَهُّد) après sa 2ème رَكْعَة indépendante (car c\'est sa 2ème globale), puis continue pour la 3èTashahhud (التَّشَهُّد) final.',
+              '<strong>Attrape 2 رَكَعَات sur 3 (المَغْرِب) :</strong> avec l\'الإِمَام = sa 2ème et 3ème. Après le salām, il prie 1 رَكْعَة (sa 1ère) directement → Tashahhud (التَّشَهُّد) final → salām.',
+              '<strong>Attrape 1 رَكْعَة sur 3 (المَغْرِب) :</strong> avec l\'الإِمَام = sa 3ème. Après le salām, il prie 2 رَكَعَات (sa 1ère et 2ème). Tashahhud (التَّشَهُّد) entre les deux → Tashahhud (التَّشَهُّد) final + salām.'
             ] },
-            { t: 'note', v: 'Règle du التَّشَهُّد pour le مسبوق (rite malikite) : le premier التَّشَهُّد intermédiaire n\'apparaît dans la phase indépendante QUE si la 2ème رَكْعَة indépendante est la 2ème globale de la prière (position habituelle du premier التَّشَهُّد). Si les رَكَعَات rattrapées indépendamment sont la 1ère et la 2ème globales d\'une prière de 4, le premier التَّشَهُّد vient après la 2ème indépendante. Si elles sont la 1ère et la 2ème globales d\'une prière de 3 (المَغْرِب), il n\'y a pas de premier التَّشَهُّد entre elles car la 3ème est déjà faite. Ce point est techniquement difficile et mérite d\'être pratiqué concrètement.' },
+            { t: 'note', v: 'RèTashahhud (التَّشَهُّد) pour le مسبوق (rite malikite) : Tashahhud (التَّشَهُّد) intermédiaire n\'apparaît dans la phase indépendante QUE si la 2ème رَكْعَة indépendante est la 2ème globale de la prière (position habituelle du premier التَّشَهُّد). Si les رَكَعَات rattrapées indépendamment sont la 1ère et la 2ème globales d\'une prière de 4, Tashahhud (التَّشَهُّد) vient après la 2ème indépendante. Si elles sont la 1ère et la 2ème globales d\'une prière de 3 (المَغْرِب), il n\'Tashahhud (التَّشَهُّد) entre elles car la 3ème est déjà faite. Ce point est techniquement difficile et mérite d\'être pratiqué concrètement.' },
 
             { t: 'h', v: 'Ce qui constitue une رَكْعَة valide pour le مسبوق' },
             { t: 'ul', v: [
-              'Dans le rite malikite, attraper l\'الإِمَام en <strong>الرُّكُوع</strong> avant qu\'il se relève suffit pour que cette رَكْعَة compte. La الفَاتِحَة lui est pardonnée.',
+              'Dans le rite malikite, attraper l\'الإِمَام en <strong>Rukūʿ (الرُّكُوع)</strong> avant qu\'il se relève suffit pour que cette رَكْعَة compte. Fātiḥa (الفَاتِحَة) lui est pardonnée.',
               'Si le مسبوق arrive alors que l\'الإِمَام est déjà redressé du رُكُوع (i-e، en i\'tidāl ou en سُجُود), cette رَكْعَة ne compte PAS — il suit l\'الإِمَام et rattrapera une رَكْعَة de plus.',
-              'Il ne récite pas la الفَاتِحَة pendant le رُكُوع — il entre directement en رُكُوع avec l\'الإِمَام dès son تَكْبِيرَةُ الإِحرَام.'
+              'Il ne réFātiḥa (الفَاتِحَة) pendant le رُكُوع — il entre directement en رُكُوع avec l\'الإِمَام dès son تَكْبِيرَةُ Iḥrām (الإِحرَام).'
             ] }
           ]
         },
@@ -1494,15 +1494,15 @@ const DEBUTANT = {
             "Important : m\u00eame en s\u0650\u0631\u0651, ne pas simplement penser les mots dans sa t\u00eate \u2014 la langue doit bouger."
           ]},
           {"t": "h", "v": "\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 \u2014 Formule, statut et d\u00e9tails pratiques"},
-          {"t": "p", "v": "L'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 est l'appel int\u00e9rieur qui marque l'entr\u00e9e dans la pri\u00e8re. Sa formule selon la المُدَوَّنَة de Sahn\u00fbn :"},
-          {"t": "ar", "v": "\u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u2014 \u0623\u0634\u0647\u062f \u0623\u0646 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647 \u2014 \u0623\u0634\u0647\u062f \u0623\u0646 \u0645\u062d\u0645\u062f\u064b\u0627 \u0631\u0633\u0648\u0644 \u0627\u0644\u0644\u0647 \u2014 \u062d\u064e\u064a\u064e\u0651 \u0639\u0644\u0649 \u0627\u0644\u0635\u0644\u0627\u0629 \u2014 \u062d\u064e\u064a\u064e\u0651 \u0639\u0644\u0649 \u0627\u0644\u0641\u0644\u0627\u062d \u2014 \u0642\u062f \u0642\u0627\u0645\u062a \u0627\u0644\u0635\u0644\u0627\u0629 \u2014 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u2014 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647", "n": "Formule de l'Iq\u0101ma selon la المُدَوَّنَة de Sahn\u016bn (version malikite)"},
+          {"t": "p", "v": "L'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 est l'appel int\u00e9rieur qui marque l'entr\u00e9e dans la pri\u00e8re. Sa formule selon la Mudawwana (المُدَوَّنَة) de Sahn\u00fbn :"},
+          {"t": "ar", "v": "\u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u2014 \u0623\u0634\u0647\u062f \u0623\u0646 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647 \u2014 \u0623\u0634\u0647\u062f \u0623\u0646 \u0645\u062d\u0645\u062f\u064b\u0627 \u0631\u0633\u0648\u0644 \u0627\u0644\u0644\u0647 \u2014 \u062d\u064e\u064a\u064e\u0651 \u0639\u0644\u0649 \u0627\u0644\u0635\u0644\u0627\u0629 \u2014 \u062d\u064e\u064a\u064e\u0651 \u0639\u0644\u0649 \u0627\u0644\u0641\u0644\u0627\u062d \u2014 \u0642\u062f \u0642\u0627\u0645\u062a \u0627\u0644\u0635\u0644\u0627\u0629 \u2014 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u0627\u0644\u0644\u0647 \u0623\u0643\u0628\u0631 \u2014 \u0644\u0627 \u0625\u0644\u0647 \u0625\u0644\u0627 \u0627\u0644\u0644\u0647", "n": "Formule de l'Iq\u0101ma selon la Mudawwana (المُدَوَّنَة) de Sahn\u016bn (version malikite)"},
           {"t":"ul","v":[
-            "<strong>Statut :</strong> السُّنَّة pour l'homme qui prie seul ; mand\u00fbb (السُّنَّة moins appuy\u00e9e) pour la femme seule.",
+            "<strong>Statut :</strong> Sunna (السُّنَّة) pour l'homme qui prie seul ; mand\u00fbb (السُّنَّة moins appuy\u00e9e) pour la femme seule.",
             "<strong>Voix :</strong> \u00e0 voix basse pour l'homme qui prie seul ; \u00e0 voix haute si l'homme prie en groupe.",
             "<strong>La femme :</strong> ne fait pas l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 pour les autres \u2014 si un homme adulte est pr\u00e9sent, c'est lui qui la fait.",
             "<strong>Si oubli\u00e9 :</strong> la pri\u00e8re reste valide, que ce soit par oubli ou d\u00e9lib\u00e9r\u00e9ment (d'apr\u00e8s l'Im\u0101m M\u0101lik dans la المُدَوَّنَة).",
             "<strong>D\u00e9lib\u00e9r\u00e9ment omise :</strong> valide, mais on demande le pardon d'Allah (\u0627\u0633\u062a\u063a\u0641\u0627\u0631).",
-            "<strong>Ne pas confondre</strong> l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 avec l'\u0623\u064e\u0630\u064e\u0627\u0646 \u2014 l'\u0627\u0630\u0627\u0646 est \u0641\u0631\u0636 \u0643\u0641\u0627\u064a\u0629 pour la communaut\u00e9, tandis que l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 est السُّنَّة individuelle."
+            "<strong>Ne pas confondre</strong> l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 avec l'\u0623\u064e\u0630\u064e\u0627\u0646 \u2014 l'\u0627\u0630\u0627\u0646 est \u0641\u0631\u0636 \u0643\u0641\u0627\u064a\u0629 pour la communaut\u00e9, tandis que l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 Sunna (السُّنَّة) individuelle."
           ]},
           {"t": "note", "v": "La \u0628\u064e\u0633\u0645\u064e\u0644\u064e\u0629 (Bismillah) et l'\u0627\u0633\u062a\u0639\u0627\u0630\u0629 (A'\u016bdhu bill\u0101h) avant la F\u0101ti\u1e25a dans les pri\u00e8res OBLIGATOIRES sont makr\u016bh selon le rite malikite (d'apr\u00e8s l'Akh\u1e0dar\u012b). Ce n'est pas interdit, mais c'est d\u00e9conseill\u00e9 dans les \u0641\u0631\u0627\u0626\u0636. En \u0646\u064e\u0648\u064e\u0627\u0641\u0650\u0644, elles sont permises."}
           ]
@@ -1515,15 +1515,15 @@ const DEBUTANT = {
           title: "\u0633\u064f\u0646\u064e\u0651\u0629 \u0627\u0644\u0641\u064e\u062c\u0652\u0631\u060c \u0647\u064a\u0626\u0627\u062a \u0627\u0644\u0635\u064e\u0651\u0644\u064e\u0627\u0629 \u0648\u0627\u0644\u0648\u0650\u062a\u0652\u0631 \u2014 D\u00e9tails Pratiques Essentiels",
           status: "available",
           content: [
-          {"t": "lead", "v": "Ce chapitre couvre les d\u00e9tails pratiques fondamentaux souvent enseign\u00e9s tardivement : la السُّنَّة du Fadjr selon la المُدَوَّنَة, les postures corporelles pr\u00e9cises (prosternation, assise, index), la structure du الوِتْر et du Shaf\u02bf, et les r\u00e8gles du second sal\u0101m."},
-          {"t": "h", "v": "\u0633\u064f\u0646\u064e\u0651\u0629\u064f \u0627\u0644\u0641\u064e\u062c\u0652\u0631 \u2014 La السُّنَّة de l'aube et ses sp\u00e9cificit\u00e9s malikites"},
-          {"t": "p", "v": "La السُّنَّة du Fadjr (2 rak\u02bf\u0101t avant \u0627\u0644\u0635\u064f\u0651\u0628\u062d) a une particularit\u00e9 malikite importante : on ne r\u00e9cite QUE la F\u0101ti\u1e25a dans chacune des deux rak\u02bf\u0101t \u2014 sans ajouter de sourate suppl\u00e9mentaire."},
-          {"t": "ar", "v": "\u0644\u064e\u0627 \u0623\u064e\u0632\u0650\u064a\u062f\u064f \u0639\u064e\u0644\u064e\u0649 \u0623\u064f\u0645\u0650\u0651 \u0627\u0644\u0642\u064f\u0631\u0622\u0646\u0650 \u0648\u064e\u062d\u062f\u064e\u0647\u064e\u0627", "n": "\u00ab Je ne lis que la F\u0101ti\u1e25a seule (dans les deux rak\u02bf\u0101t du Fadjr). \u00bb \u2014 Im\u0101m M\u0101lik, المُدَوَّنَة"},
+          {"t": "lead", "v": "Ce chapitre couvre les d\u00e9tails pratiques fondamentaux souvent enseign\u00e9s tardivement : Sunna (السُّنَّة) du Fadjr selon la Mudawwana (المُدَوَّنَة), les postures corporelles pr\u00e9cises (prosternation, assise, index), la structure du الوِتْر et du Shaf\u02bf, et les r\u00e8gles du second sal\u0101m."},
+          {"t": "h", "v": "\u0633\u064f\u0646\u064e\u0651\u0629\u064f \u0627\u0644\u0641\u064e\u062c\u0652\u0631 \u2014 Sunna (السُّنَّة) de l'aube et ses sp\u00e9cificit\u00e9s malikites"},
+          {"t": "p", "v": "Sunna (السُّنَّة) du Fadjr (2 rak\u02bf\u0101t avant \u0627\u0644\u0635\u064f\u0651\u0628\u062d) a une particularit\u00e9 malikite importante : on ne r\u00e9cite QUE la F\u0101ti\u1e25a dans chacune des deux rak\u02bf\u0101t \u2014 sans ajouter de sourate suppl\u00e9mentaire."},
+          {"t": "ar", "v": "\u0644\u064e\u0627 \u0623\u064e\u0632\u0650\u064a\u062f\u064f \u0639\u064e\u0644\u064e\u0649 \u0623\u064f\u0645\u0650\u0651 \u0627\u0644\u0642\u064f\u0631\u0622\u0646\u0650 \u0648\u064e\u062d\u062f\u064e\u0647\u064e\u0627", "n": "\u00ab Je ne lis que la F\u0101ti\u1e25a seule (dans les deux rak\u02bf\u0101t du Fadjr). \u00bb \u2014 Im\u0101m M\u0101lik, Mudawwana (المُدَوَّنَة)"},
           {"t":"ul","v":[
-            "C'est la seule السُّنَّة rattrapable jusqu'au Zawal (d\u00e9clin du soleil) selon le rite malikite.",
-            "<strong>Important :</strong> si on rate la pri\u00e8re du \u0627\u0644\u0635\u064f\u0651\u0628\u062d et qu'on se r\u00e9veille apr\u00e8s le lever du soleil, on rattrape d'abord \u0627\u0644\u0635\u064f\u0651\u0628\u062d (l'obligation), puis ensuite la السُّنَّة du Fadjr.",
-            "Ne pas inverser l'ordre : obligation d'abord, السُّنَّة ensuite.",
-            "La السُّنَّة du Fadjr se fait \u00e0 voix basse (silencieusement)."
+            "C'Sunna (السُّنَّة) rattrapable jusqu'au Zawal (d\u00e9clin du soleil) selon le rite malikite.",
+            "<strong>Important :</strong> si on rate la pri\u00e8re du \u0627\u0644\u0635\u064f\u0651\u0628\u062d et qu'on se r\u00e9veille apr\u00e8s le lever du soleil, on rattrape d'abord \u0627\u0644\u0635\u064f\u0651\u0628\u062d (l'obligation), Sunna (السُّنَّة) du Fadjr.",
+            "Ne pas inverser l'ordre : obligation d'abord, Sunna (السُّنَّة) ensuite.",
+            "Sunna (السُّنَّة) du Fadjr se fait \u00e0 voix basse (silencieusement)."
           ]},
           {"t": "h", "v": "\u0647\u064a\u0626\u0629 \u0627\u0644\u0633\u064f\u0651\u062c\u064f\u0648\u062f \u2014 Posture dans la prosternation"},
           {"t": "p", "v": "La prosternation (\u0633\u064f\u062c\u064f\u0648\u062f) a des exigences physiques pr\u00e9cises selon le rite malikite :"},
@@ -1534,34 +1534,34 @@ const DEBUTANT = {
             "<strong>Pour la femme :</strong> se recroqueviller en ramenant tous ses membres (inverser des r\u00e8gles de l'homme pour la pudeur).",
             "La position des pieds en \u0627\u0644\u0633\u064f\u0651\u062c\u064f\u0648\u062f : orteils pointant vers la \u0642\u0650\u0628\u0652\u0644\u064e\u0629."
           ]},
-          {"t": "h", "v": "\u062a\u064e\u062d\u0631\u0650\u064a\u0643\u064f \u0627\u0644\u0623\u064f\u0635\u0628\u064f\u0639 \u2014 L'index pendant le التَّشَهُّد"},
-          {"t": "p", "v": "Il est recommand\u00e9 (musta\u1e25abb/pr\u00e9f\u00e9rable) de bouger l'index de la main droite pendant la lecture du التَّشَهُّد. La fa\u00e7on malikite selon la المُدَوَّنَة et Ibn Ab\u012b Zayd :"},
+          {"t": "h", "v": "\u062a\u064e\u062d\u0631\u0650\u064a\u0643\u064f \u0627\u0644\u0623\u064f\u0635\u0628\u064f\u0639 \u2014 L'Tashahhud (التَّشَهُّد)"},
+          {"t": "p", "v": "Il est recommand\u00e9 (musta\u1e25abb/pr\u00e9f\u00e9rable) de bouger l'Tashahhud (التَّشَهُّد). La fa\u00e7on malikite selon la Mudawwana (المُدَوَّنَة) et Ibn Ab\u012b Zayd :"},
           {"t":"ul","v":[
             "L'index et le pouce de la main droite sont tendus (dress\u00e9s).",
             "Les trois autres doigts sont ferm\u00e9s.",
             "L'index bouge seul (l\u00e9g\u00e8rement, sans mouvements brusques).",
             "La main droite est pos\u00e9e sur la cuisse pr\u00e8s du genou, \u00e0 plat.",
-            "Il est pr\u00e9f\u00e9rable de bouger l'index tout au long du التَّشَهُّد (pas uniquement \u00e0 la shah\u0101da selon certains)."
+            "Il est pr\u00e9f\u00e9rable de bouger l'Tashahhud (التَّشَهُّد) (pas uniquement \u00e0 la shah\u0101da selon certains)."
           ]},
-          {"t": "h", "v": "\u0647\u064a\u0626\u0629 \u0627\u0644\u062c\u064f\u0644\u064f\u0648\u0633 \u2014 Position assise pendant le التَّشَهُّد"},
+          {"t": "h", "v": "\u0647\u064a\u0626\u0629 \u0627\u0644\u062c\u064f\u0644\u064f\u0648\u0633 \u2014 Tashahhud (التَّشَهُّد)"},
           {"t": "p", "v": "Ibn Ab\u012b Zayd al-Qayraw\u0101n\u012b d\u00e9crit la position assise : le pied droit dress\u00e9 (orteils touchant le sol), le pied gauche repli\u00e9 sous la fesse gauche (ne pas s'asseoir dessus). Ces d\u00e9tails n'ont pas de caract\u00e8re strict (\u0644\u0627 \u062a\u0636\u064a\u064a\u0642 \u0641\u064a \u0630\u0644\u0643) selon les sources malikites."},
           {"t": "h", "v": "\u0627\u0644\u0648\u0650\u062a\u0652\u0631 \u0648\u0627\u0644\u0634\u064e\u0651\u0641\u0652\u0639 \u2014 Structure et caract\u00e9ristiques"},
           {"t": "p", "v": "Apr\u00e8s la pri\u00e8re de \u0627\u0644\u0639\u0650\u0634\u064e\u0627\u0621, il est recommand\u00e9 de prier le Shaf\u02bf et le الوِتْر :"},
           {"t":"ul","v":[
-            "<strong>\u0627\u0644\u0634\u064e\u0651\u0641\u0652\u0639 (2 rak\u02bf\u0101t) :</strong> r\u00e9citation de la F\u0101ti\u1e25a + sourate, \u00e0 voix haute (comme \u0627\u0644\u0635\u064f\u0651\u0628\u062d), التَّشَهُّد final + sal\u0101m.",
-            "<strong>\u0627\u0644\u0648\u0650\u062a\u0652\u0631 (1 rak\u02bfa) :</strong> r\u00e9citation de la F\u0101ti\u1e25a + sourate, \u00e0 voix haute, التَّشَهُّد final + sal\u0101m.",
+            "<strong>\u0627\u0644\u0634\u064e\u0651\u0641\u0652\u0639 (2 rak\u02bf\u0101t) :</strong> r\u00e9citation de la F\u0101ti\u1e25a + sourate, \u00e0 voix haute (comme \u0627\u0644\u0635\u064f\u0651\u0628\u062d), Tashahhud (التَّشَهُّد) final + sal\u0101m.",
+            "<strong>\u0627\u0644\u0648\u0650\u062a\u0652\u0631 (1 rak\u02bfa) :</strong> r\u00e9citation de la F\u0101ti\u1e25a + sourate, \u00e0 voix haute, Tashahhud (التَّشَهُّد) final + sal\u0101m.",
             "Ils forment deux pri\u00e8res distinctes (un sal\u0101m s\u00e9pare le shaf\u02bf du الوِتْر).",
-            "Le الوِتْر est une السُّنَّة d'un grand m\u00e9rite (السُّنَّة mu\u02beakkada).",
+            "Le الوِتْر Sunna (السُّنَّة) d'un grand m\u00e9rite (السُّنَّة mu\u02beakkada).",
             "Ils font partie des pri\u00e8res autoris\u00e9es pour celui ayant des \u0642\u064e\u0636\u064e\u0627\u0621 en dette."
           ]},
           {"t": "h", "v": "\u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0633\u064e\u0651\u0644\u064e\u0627\u0645 \u2014 R\u00e8gle du second sal\u0101m"},
           {"t":"ul","v":[
             "<strong>L'الإِمَام et celui qui prie seul :</strong> 1 seul sal\u0101m (\u00e0 droite) \u2014 pas de second sal\u0101m \u00e0 gauche.",
-            "<strong>Le \u0645\u064e\u0623\u0645\u064f\u0648\u0645 :</strong> peut faire 3 sal\u0101ms : (1) \u00e0 droite obligatoire, (2) en face (vers l'الإِمَام) السُّنَّة, (3) \u00e0 gauche \u2014 السُّنَّة si quelqu'un \u00e0 sa gauche a fait au moins 1 rak\u02bfa avec l'الإِمَام.",
+            "<strong>Le \u0645\u064e\u0623\u0645\u064f\u0648\u0645 :</strong> peut faire 3 sal\u0101ms : (1) \u00e0 droite obligatoire, (2) en face (vers l'الإِمَام) Sunna (السُّنَّة), (3) \u00e0 gauche \u2014 Sunna (السُّنَّة) si quelqu'un \u00e0 sa gauche a fait au moins 1 rak\u02bfa avec l'الإِمَام.",
             "Le second sal\u0101m (en face + \u00e0 gauche) est mand\u00fbb pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645 uniquement.",
-            "Ceci est une sp\u00e9cificit\u00e9 malikite \u2014 dans d'autres rites, le second sal\u0101m est السُّنَّة pour tous."
+            "Ceci est une sp\u00e9cificit\u00e9 malikite \u2014 dans d'autres rites, le second sal\u0101Sunna (السُّنَّة) pour tous."
           ]},
-          {"t": "note", "v": "R\u00e9capitulatif des sp\u00e9cificit\u00e9s malikites pratiques : \u0627\u0644\u0633\u064e\u0651\u062f\u0652\u0644 (bras le long du corps dans les far\u0101\u02bei\u1e0d) \u00b7 nez obligatoire dans \u0627\u0644\u0633\u064f\u0651\u062c\u064f\u0648\u062f \u00b7 pas de \u0628\u064e\u0633\u0645\u064e\u0644\u064e\u0629 ni \u062a\u064e\u0639\u064e\u0648\u064f\u0651\u0630 dans les far\u0101\u02bei\u1e0d \u00b7 pas de \u062a\u064e\u0623\u0645\u0650\u064a\u0646 \u00e0 voix haute par l'الإِمَام \u00b7 1 sal\u0101m pour l'الإِمَام et le priant seul \u00b7 السُّنَّة du Fadjr avec F\u0101ti\u1e25a seulement."}
+          {"t": "note", "v": "R\u00e9capitulatif des sp\u00e9cificit\u00e9s malikites pratiques : \u0627\u0644\u0633\u064e\u0651\u062f\u0652\u0644 (bras le long du corps dans les far\u0101\u02bei\u1e0d) \u00b7 nez obligatoire dans \u0627\u0644\u0633\u064f\u0651\u062c\u064f\u0648\u062f \u00b7 pas de \u0628\u064e\u0633\u0645\u064e\u0644\u064e\u0629 ni \u062a\u064e\u0639\u064e\u0648\u064f\u0651\u0630 dans les far\u0101\u02bei\u1e0d \u00b7 pas de \u062a\u064e\u0623\u0645\u0650\u064a\u0646 \u00e0 voix haute par l'الإِمَام \u00b7 1 sal\u0101m pour l'الإِمَام et le priant seul \u00b7 Sunna (السُّنَّة) du Fadjr avec F\u0101ti\u1e25a seulement."}
           ]
         },
 
@@ -1625,7 +1625,7 @@ const DEBUTANT = {
             id: "q-sal-05",
             text: "La <strong>\u0627\u0644\u0637\u064f\u0651\u0645\u064e\u0623\u0646\u0650\u064a\u0646\u064e\u0629</strong> (stabilit\u00e9 des membres \u00e0 chaque posture) est :",
             choices: [
-              {id:"a",text:"Une السُّنَّة \u2014 son omission ne rend pas la pri\u00e8re invalide"},
+              {id:"a",text:"Sunna (السُّنَّة) \u2014 son omission ne rend pas la pri\u00e8re invalide"},
               {id:"b",text:"Une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629 \u2014 son omission invalide la pri\u00e8re"},
               {id:"c",text:"Une vertu m\u00e9ritoire"},
               {id:"d",text:"Obligatoire seulement dans \u0627\u0644\u0631\u064f\u0651\u0643\u064f\u0648\u0639"},
@@ -1659,7 +1659,7 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-08",
-            text: "La السُّنَّة de la <strong>\u0633\u064f\u0648\u0631\u064e\u0629</strong> (sourate apr\u00e8s la F\u0101ti\u1e25a) concerne quelles rak\u02bf\u0101t ?",
+            text: "Sunna (السُّنَّة) de la <strong>\u0633\u064f\u0648\u0631\u064e\u0629</strong> (sourate apr\u00e8s la F\u0101ti\u1e25a) concerne quelles rak\u02bf\u0101t ?",
             choices: [
               {id:"a",text:"Toutes les rak\u02bf\u0101t"},
               {id:"b",text:"Uniquement la premi\u00e8re"},
@@ -1667,7 +1667,7 @@ const DEBUTANT = {
               {id:"d",text:"Uniquement la premi\u00e8re \u2014 la deuxi\u00e8me est makr\u016bh"},
             ],
             correctId: "c",
-            explanation: "La السُّنَّة est de r\u00e9citer une sourate apr\u00e8s la F\u0101ti\u1e25a dans les DEUX premi\u00e8res rak\u02bf\u0101t. Dans les deux derni\u00e8res, on ne r\u00e9cite que la F\u0101ti\u1e25a. Il est makr\u016bh de syst\u00e9matiquement ajouter une sourate dans les 3\u00e8me et 4\u00e8me rak\u02bf\u0101t."
+            explanation: "Sunna (السُّنَّة) est de r\u00e9citer une sourate apr\u00e8s la F\u0101ti\u1e25a dans les DEUX premi\u00e8res rak\u02bf\u0101t. Dans les deux derni\u00e8res, on ne r\u00e9cite que la F\u0101ti\u1e25a. Il est makr\u016bh de syst\u00e9matiquement ajouter une sourate dans les 3\u00e8me et 4\u00e8me rak\u02bf\u0101t."
           },
           {
             id: "q-sal-09",
@@ -1719,39 +1719,39 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-13",
-            text: "La <strong>\u0627\u0644\u0633\u064f\u0651\u062a\u0652\u0631\u064e\u0629</strong> (obstacle devant le priant) : pour qui est-elle السُّنَّة ?",
+            text: "La <strong>\u0627\u0644\u0633\u064f\u0651\u062a\u0652\u0631\u064e\u0629</strong> (obstacle devant le priant) : Sunna (السُّنَّة) ?",
             choices: [
               {id:"a",text:"Pour tout priant"},
-              {id:"b",text:"السُّنَّة pour le priant seul (\u0627\u0644\u0641\u064e\u0630\u0651) et l'الإِمَام \u2014 pas pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645"},
+              {id:"b",text:"Sunna (السُّنَّة) pour le priant seul (\u0627\u0644\u0641\u064e\u0630\u0651) et l'الإِمَام \u2014 pas pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645"},
               {id:"c",text:"Obligation seulement pour l'الإِمَام"},
               {id:"d",text:"Makr\u016bh \u2014 elle d\u00e9limite un espace privatif"},
             ],
             correctId: "b",
-            explanation: "La \u0633\u064f\u062a\u0652\u0631\u064e\u0629 est السُّنَّة pour le \u0641\u064e\u0630\u0651 (priant seul) et l'الإِمَام. Pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645, elle n'est pas requise car l'الإِمَام lui sert de \u0633\u064f\u062a\u0652\u0631\u064e\u0629. Elle doit avoir au moins la grosseur d'une lance et la hauteur d'une coud\u00e9e."
+            explanation: "La \u0633\u064f\u062a\u0652\u0631\u064e\u0629 Sunna (السُّنَّة) pour le \u0641\u064e\u0630\u0651 (priant seul) et l'الإِمَام. Pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645, elle n'est pas requise car l'الإِمَام lui sert de \u0633\u064f\u062a\u0652\u0631\u064e\u0629. Elle doit avoir au moins la grosseur d'une lance et la hauteur d'une coud\u00e9e."
           },
           {
             id: "q-sal-14",
             text: "Le <strong>\u0633\u064f\u062c\u064f\u0648\u062f\u064f \u0627\u0644\u0633\u064e\u0651\u0647\u0652\u0648</strong> (prosternation d'oubli) est dans la pri\u00e8re :",
             choices: [
               {id:"a",text:"Une obligation absolue"},
-              {id:"b",text:"Une السُّنَّة"},
+              {id:"b",text:"Sunna (السُّنَّة)"},
               {id:"c",text:"Une expiation"},
               {id:"d",text:"Obligatoire seulement apr\u00e8s une \u0632\u064a\u0627\u062f\u0629 (exc\u00e8s)"},
             ],
             correctId: "b",
-            explanation: "L'Akh\u1e0dar\u012b ouvre le chapitre : \u00ab \u0648\u0633\u062c\u0648\u062f \u0627\u0644\u0633\u0647\u0648 \u0641\u064a \u0627\u0644\u0635\u0644\u0627\u0629 \u0633\u0646\u0629 \u00bb \u2014 c'est une السُّنَّة. L'omettre ne rend pas la pri\u00e8re invalide mais constitue une n\u00e9gligence d'une السُّنَّة importante."
+            explanation: "L'Akh\u1e0dar\u012b ouvre le chapitre : \u00ab \u0648\u0633\u062c\u0648\u062f \u0627\u0644\u0633\u0647\u0648 \u0641\u064a \u0627\u0644\u0635\u0644\u0627\u0629 \u0633\u0646\u0629 \u00bb \u2014 c'Sunna (السُّنَّة). L'omettre ne rend pas la pri\u00e8re invalide mais constitue une n\u00e9gligence d'Sunna (السُّنَّة) importante."
           },
           {
             id: "q-sal-15",
             text: "Pour un manque (\u0646\u064e\u0642\u0652\u0635) dans la pri\u00e8re, les deux prosternations d'oubli se font :",
             choices: [
               {id:"a",text:"Apr\u00e8s le sal\u0101m"},
-              {id:"b",text:"Avant le sal\u0101m, apr\u00e8s les deux التَّشَهُّدs"},
-              {id:"c",text:"Avant le dernier التَّشَهُّد"},
+              {id:"b",text:"Avant le sal\u0101m, apr\u00e8Tashahhud (التَّشَهُّد)s"},
+              {id:"c",text:"Tashahhud (التَّشَهُّد)"},
               {id:"d",text:"Imm\u00e9diatement apr\u00e8s s'\u00eatre souvenu du manque"},
             ],
             correctId: "b",
-            explanation: "L'Akh\u1e0dar\u012b : \u00ab \u0641\u0644\u0644\u0646\u0642\u0635\u0627\u0646 \u0633\u062c\u062f\u062a\u0627\u0646 \u0642\u0628\u0644 \u0627\u0644\u0633\u0644\u0627\u0645 \u0628\u0639\u062f \u062a\u0645\u0627\u0645 \u0627\u0644\u062a\u0634\u0647\u062f\u064a\u0646 \u064a\u0632\u064a\u062f \u0628\u0639\u062f\u0647\u0645\u0627 \u062a\u0634\u0647\u062f\u0627\u064b \u0622\u062e\u0631 \u00bb \u2014 pour le \u0646\u064e\u0642\u0652\u0635 : deux prosternations AVANT le sal\u0101m, apr\u00e8s les deux التَّشَهُّدs, suivies d'un troisi\u00e8me التَّشَهُّد. Mn\u00e9motechnique : manque = AVANT."
+            explanation: "L'Akh\u1e0dar\u012b : \u00ab \u0641\u0644\u0644\u0646\u0642\u0635\u0627\u0646 \u0633\u062c\u062f\u062a\u0627\u0646 \u0642\u0628\u0644 \u0627\u0644\u0633\u0644\u0627\u0645 \u0628\u0639\u062f \u062a\u0645\u0627\u0645 \u0627\u0644\u062a\u0634\u0647\u062f\u064a\u0646 \u064a\u0632\u064a\u062f \u0628\u0639\u062f\u0647\u0645\u0627 \u062a\u0634\u0647\u062f\u0627\u064b \u0622\u062e\u0631 \u00bb \u2014 pour le \u0646\u064e\u0642\u0652\u0635 : deux prosternations AVANT le sal\u0101m, apr\u00e8Tashahhud (التَّشَهُّد)s, suivies d'un troisi\u00e8Tashahhud (التَّشَهُّد). Mn\u00e9motechnique : manque = AVANT."
           },
           {
             id: "q-sal-16",
@@ -1794,28 +1794,28 @@ const DEBUTANT = {
             text: "Le <strong>\u0627\u0644\u0642\u064f\u0646\u064f\u0648\u062a</strong> dans la pri\u00e8re du \u0627\u0644\u0635\u064f\u0651\u0628\u0652\u062d est :",
             choices: [
               {id:"a",text:"Une obligation"},
-              {id:"b",text:"Une السُّنَّة"},
-              {id:"c",text:"Une vertu (\u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629) \u2014 niveau inf\u00e9rieur \u00e0 la السُّنَّة"},
+              {id:"b",text:"Sunna (السُّنَّة)"},
+              {id:"c",text:"Une vertu (\u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629) \u2014 niveau inf\u00e9rieur \u00e0 Sunna (السُّنَّة)"},
               {id:"d",text:"Une \u0628\u0650\u062f\u0639\u064e\u0629 selon les malikites"},
             ],
             correctId: "c",
-            explanation: "L'Akh\u1e0dar\u012b classe le \u0627\u0644\u0642\u064f\u0646\u064f\u0648\u062a parmi les \u0641\u064e\u0636\u064e\u0627\u0626\u0650\u0644 (vertus) : \u00ab \u0648\u0627\u0644\u0642\u0646\u0648\u062a \u0633\u0631\u0627\u064b \u0642\u0628\u0644 \u0627\u0644\u0631\u0643\u0648\u0639 \u00bb. R\u00e9cit\u00e9 silencieusement avant le \u0627\u0644\u0631\u064f\u0651\u0643\u064f\u0648\u0639 dans la derni\u00e8re rak\u02bfa du \u0627\u0644\u0635\u064f\u0651\u0628\u0652\u062d. C'est une \u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629, niveau inf\u00e9rieur \u00e0 la السُّنَّة."
+            explanation: "L'Akh\u1e0dar\u012b classe le \u0627\u0644\u0642\u064f\u0646\u064f\u0648\u062a parmi les \u0641\u064e\u0636\u064e\u0627\u0626\u0650\u0644 (vertus) : \u00ab \u0648\u0627\u0644\u0642\u0646\u0648\u062a \u0633\u0631\u0627\u064b \u0642\u0628\u0644 \u0627\u0644\u0631\u0643\u0648\u0639 \u00bb. R\u00e9cit\u00e9 silencieusement avant le \u0627\u0644\u0631\u064f\u0651\u0643\u064f\u0648\u0639 dans la derni\u00e8re rak\u02bfa du \u0627\u0644\u0635\u064f\u0651\u0628\u0652\u062d. C'est une \u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629, niveau inf\u00e9rieur \u00e0 Sunna (السُّنَّة)."
           },
           {
             id: "q-sal-20",
-            text: "<strong>PI\u00c8GE :</strong> La premi\u00e8re \u062a\u064e\u0633\u0652\u0644\u0650\u064a\u0645\u064e\u0629 (salutation finale) est-elle une obligation ou une السُّنَّة ?",
+            text: "<strong>PI\u00c8GE :</strong> La premi\u00e8re \u062a\u064e\u0633\u0652\u0644\u0650\u064a\u0645\u064e\u0629 (salutation finale) Sunna (السُّنَّة) ?",
             choices: [
-              {id:"a",text:"La premi\u00e8re est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629, la deuxi\u00e8me est السُّنَّة"},
-              {id:"b",text:"Les deux sont des السُّنَّة"},
-              {id:"c",text:"La premi\u00e8re est السُّنَّة, la seconde est \u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629"},
+              {id:"a",text:"La premi\u00e8re est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629, la deuxi\u00e8Sunna (السُّنَّة)"},
+              {id:"b",text:"Sunna (السُّنَّة)"},
+              {id:"c",text:"La premi\u00e8Sunna (السُّنَّة), la seconde est \u0641\u064e\u0636\u0650\u064a\u0644\u064e\u0629"},
               {id:"d",text:"Les deux sont des obligations"},
             ],
             correctId: "a",
-            explanation: "L'Akh\u1e0dar\u012b liste parmi les \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 : \u00ab \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u062c\u0644\u0648\u0633\u0647 \u0627\u0644\u0630\u064a \u064a\u0642\u0627\u0631\u0646\u0647 \u00bb \u2014 la premi\u00e8re \u062a\u064e\u0633\u0652\u0644\u0650\u064a\u0645\u064e\u0629 est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629. Parmi les السُّنَّة : \u00ab \u0648\u0627\u0644\u062a\u0633\u0644\u064a\u0645\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629 \u0648\u0627\u0644\u062b\u0627\u0644\u062b\u0629 \u0644\u0644\u0645\u0623\u0645\u0648\u0645 \u00bb."
+            explanation: "L'Akh\u1e0dar\u012b liste parmi les \u0641\u064e\u0631\u064e\u0627\u0626\u0650\u0636 : \u00ab \u0627\u0644\u0633\u0644\u0627\u0645 \u0648\u062c\u0644\u0648\u0633\u0647 \u0627\u0644\u0630\u064a \u064a\u0642\u0627\u0631\u0646\u0647 \u00bb \u2014 la premi\u00e8re \u062a\u064e\u0633\u0652\u0644\u0650\u064a\u0645\u064e\u0629 est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629. Sunna (السُّنَّة) : \u00ab \u0648\u0627\u0644\u062a\u0633\u0644\u064a\u0645\u0629 \u0627\u0644\u062b\u0627\u0646\u064a\u0629 \u0648\u0627\u0644\u062b\u0627\u0644\u062b\u0629 \u0644\u0644\u0645\u0623\u0645\u0648\u0645 \u00bb."
           },
           {
             id: "q-sal-21",
-            text: "<strong>PI\u00c8GE AVANC\u00c9 :</strong> Ibrahim oublie le premier التَّشَهُّد (\u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f \u0627\u0644\u0623\u064e\u0648\u064e\u0651\u0644) et commence \u00e0 se lever. Ses mains n'ont pas encore quitt\u00e9 le sol. Que fait-il ?",
+            text: "<strong>PI\u00c8GE AVANC\u00c9 :</strong> Tashahhud (التَّشَهُّد) (\u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f \u0627\u0644\u0623\u064e\u0648\u064e\u0651\u0644) et commence \u00e0 se lever. Ses mains n'ont pas encore quitt\u00e9 le sol. Que fait-il ?",
             choices: [
               {id:"a",text:"Il continue \u2014 il est trop tard pour revenir"},
               {id:"b",text:"Il revient s'asseoir SANS prosternation d'oubli"},
@@ -1904,7 +1904,7 @@ const DEBUTANT = {
               {id:"a",text:"Oui imm\u00e9diatement"},
               {id:"b",text:"Non \u2014 interdit apr\u00e8s \u0627\u0644\u062c\u064f\u0645\u064f\u0639\u064e\u0629 comme apr\u00e8s \u0627\u0644\u0639\u064e\u0635\u0652\u0631"},
               {id:"c",text:"Non \u2014 interdit tant qu'on est dans la mosqu\u00e9e"},
-              {id:"d",text:"Seulement le السُّنَّة de \u0627\u0644\u062c\u064f\u0645\u064f\u0639\u064e\u0629 (quatre rak\u02bf\u0101t)"},
+              {id:"d",text:"Sunna (السُّنَّة) de \u0627\u0644\u062c\u064f\u0645\u064f\u0639\u064e\u0629 (quatre rak\u02bf\u0101t)"},
             ],
             correctId: "c",
             explanation: "L'Akh\u1e0dar\u012b : \u00ab \u0648\u0628\u0639\u062f \u0627\u0644\u062c\u0645\u0639\u0629 \u062d\u062a\u0649 \u064a\u062e\u0631\u062c \u0645\u0646 \u0627\u0644\u0645\u0633\u062c\u062f \u00bb \u2014 interdit de prier des \u0646\u0648\u0627\u0641\u0644 apr\u00e8s \u0627\u0644\u062c\u064f\u0645\u064f\u0639\u064e\u0629 tant qu'on est dans la mosqu\u00e9e. D\u00e8s la sortie, c'est permis. C'est un cas particulier diff\u00e9rent de \u0627\u0644\u0639\u064e\u0635\u0652\u0631."
@@ -1914,12 +1914,12 @@ const DEBUTANT = {
             text: "La <strong>\u062a\u064e\u0643\u0652\u0628\u0650\u064a\u0631\u064e\u0627\u062a\u064f \u0627\u0644\u0627\u0646\u062a\u0650\u0642\u064e\u0627\u0644</strong> (takb\u012br entre les postures) sont :",
             choices: [
               {id:"a",text:"Des obligations \u2014 leur omission invalide la pri\u00e8re"},
-              {id:"b",text:"Des السُّنَّة \u2014 sauf la \u062a\u064e\u0643\u0652\u0628\u0650\u064a\u0631\u064e\u0629\u064f \u0627\u0644\u0625\u0650\u062d\u0652\u0631\u064e\u0627\u0645 qui est \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629"},
-              {id:"c",text:"Des السُّنَّة seulement dans les 2 premi\u00e8res rak\u02bf\u0101t"},
+              {id:"b",text:"Sunna (السُّنَّة) \u2014 sauf la \u062a\u064e\u0643\u0652\u0628\u0650\u064a\u0631\u064e\u0629\u064f \u0627\u0644\u0625\u0650\u062d\u0652\u0631\u064e\u0627\u0645 qui est \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629"},
+              {id:"c",text:"Sunna (السُّنَّة) seulement dans les 2 premi\u00e8res rak\u02bf\u0101t"},
               {id:"d",text:"Des \u0641\u064e\u0636\u064e\u0627\u0626\u0650\u0644 sans cons\u00e9quence si omises"},
             ],
             correctId: "b",
-            explanation: "L'Akh\u1e0dar\u012b : \u00ab \u0648\u0643\u0644 \u062a\u0643\u0628\u064a\u0631\u0629 \u0633\u0646\u0629 \u0625\u0644\u0627 \u0627\u0644\u0623\u0648\u0644\u0649 \u00bb \u2014 toutes les takb\u012br\u0101t de transition sont des SOUNNAH, SAUF la \u062a\u064e\u0643\u0652\u0628\u0650\u064a\u0631\u064e\u0629\u064f \u0627\u0644\u0625\u0650\u062d\u0652\u0631\u064e\u0627\u0645 qui est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629. Les omettre ne rend pas la pri\u00e8re invalide mais prive de la السُّنَّة."
+            explanation: "L'Akh\u1e0dar\u012b : \u00ab \u0648\u0643\u0644 \u062a\u0643\u0628\u064a\u0631\u0629 \u0633\u0646\u0629 \u0625\u0644\u0627 \u0627\u0644\u0623\u0648\u0644\u0649 \u00bb \u2014 toutes les takb\u012br\u0101t de transition sont des SOUNNAH, SAUF la \u062a\u064e\u0643\u0652\u0628\u0650\u064a\u0631\u064e\u0629\u064f \u0627\u0644\u0625\u0650\u062d\u0652\u0631\u064e\u0627\u0645 qui est une \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629. Les omettre ne rend pas la pri\u00e8Sunna (السُّنَّة)."
           },
           {
             id: "q-sal-30",
@@ -1935,27 +1935,27 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-31",
-            text: "Le \u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f\u064f \u0627\u0644\u0623\u064e\u0648\u064e\u0651\u0644 (premier assis) est une obligation ou une السُّنَّة ?",
+            text: "Le \u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f\u064f \u0627\u0644\u0623\u064e\u0648\u064e\u0651\u0644 (premier assis) Sunna (السُّنَّة) ?",
             choices: [
               {id:"a",text:"Une obligation \u2014 invalide la pri\u00e8re si omis intentionnellement"},
-              {id:"b",text:"Une السُّنَّة \u2014 avec \u0633\u064f\u062c\u064f\u0648\u062f \u0627\u0644\u0633\u064e\u0651\u0647\u0652\u0648 si oubli\u00e9"},
+              {id:"b",text:"Sunna (السُّنَّة) \u2014 avec \u0633\u064f\u062c\u064f\u0648\u062f \u0627\u0644\u0633\u064e\u0651\u0647\u0652\u0648 si oubli\u00e9"},
               {id:"c",text:"Une vertu m\u00e9ritoire"},
               {id:"d",text:"Obligation seulement dans les pri\u00e8res de 4 rak\u02bf\u0101t"},
             ],
             correctId: "b",
-            explanation: "L'Akh\u1e0dar\u012b liste \u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f\u064e\u0627\u0646 \u0648\u0627\u0644\u062c\u0644\u0648\u0633 \u0644\u0647\u0645\u0627 parmi les السُّنَّة. Oublier le premier التَّشَهُّد impose le \u0633\u064f\u062c\u064f\u0648\u062f \u0627\u0644\u0633\u064e\u0651\u0647\u0652\u0648 avant le sal\u0101m. L'omettre intentionnellement est grave (n\u00e9gliger une السُّنَّة) mais ne rend pas la pri\u00e8re nulle."
+            explanation: "L'Akh\u1e0dar\u012b liste \u0627\u0644\u062a\u064e\u0651\u0634\u064e\u0647\u064f\u0651\u062f\u064e\u0627\u0646 \u0648\u0627\u0644\u062c\u0644\u0648\u0633 \u0644\u0647\u0645\u0627 Sunna (السُّنَّة). Tashahhud (التَّشَهُّد) impose le \u0633\u064f\u062c\u064f\u0648\u062f \u0627\u0644\u0633\u064e\u0651\u0647\u0652\u0648 avant le sal\u0101m. L'omettre intentionnellement est grave (n\u00e9gliger une السُّنَّة) mais ne rend pas la pri\u00e8re nulle."
           },
           {
             id: "q-sal-32",
-            text: "La <strong>\u0627\u0644\u0635\u064e\u0651\u0644\u064e\u0627\u0629\u064f \u0639\u064e\u0644\u064e\u0649 \u0627\u0644\u0646\u064e\u0651\u0628\u0650\u064a\u0650\u0651 \ufdfa</strong> dans le التَّشَهُّد est dans le rite malikite :",
+            text: "La <strong>\u0627\u0644\u0635\u064e\u0651\u0644\u064e\u0627\u0629\u064f \u0639\u064e\u0644\u064e\u0649 \u0627\u0644\u0646\u064e\u0651\u0628\u0650\u064a\u0650\u0651 \ufdfa</strong> Tashahhud (التَّشَهُّد) est dans le rite malikite :",
             choices: [
-              {id:"a",text:"Une obligation dans le التَّشَهُّد final"},
-              {id:"b",text:"Une السُّنَّة dans les deux التَّشَهُّدs"},
-              {id:"c",text:"Une obligation dans les deux التَّشَهُّدs"},
-              {id:"d",text:"Recommand\u00e9e seulement dans le premier التَّشَهُّد"},
+              {id:"a",text:"Tashahhud (التَّشَهُّد) final"},
+              {id:"b",text:"Sunna (السُّنَّة) Tashahhud (التَّشَهُّد)s"},
+              {id:"c",text:"Tashahhud (التَّشَهُّد)s"},
+              {id:"d",text:"Recommand\u00e9Tashahhud (التَّشَهُّد)"},
             ],
             correctId: "b",
-            explanation: "La \u0627\u0644\u0635\u064e\u0651\u0644\u064e\u0627\u0629\u064f \u0639\u064e\u0644\u064e\u0649 \u0627\u0644\u0646\u064e\u0651\u0628\u0650\u064a\u0650\u0651 \ufdfa est parmi les السُّنَّة de la pri\u00e8re dans le rite malikite \u2014 CE N'EST PAS UNE \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629 (contrairement \u00e0 l'\u00e9cole ch\u0101fi\u02bfite qui la classe comme obligation). Son omission ne rend pas la pri\u00e8re invalide."
+            explanation: "La \u0627\u0644\u0635\u064e\u0651\u0644\u064e\u0627\u0629\u064f \u0639\u064e\u0644\u064e\u0649 \u0627\u0644\u0646\u064e\u0651\u0628\u0650\u064a\u0650\u0651 \Sunna (السُّنَّة) de la pri\u00e8re dans le rite malikite \u2014 CE N'EST PAS UNE \u0641\u064e\u0631\u0650\u064a\u0636\u064e\u0629 (contrairement \u00e0 l'\u00e9cole ch\u0101fi\u02bfite qui la classe comme obligation). Son omission ne rend pas la pri\u00e8re invalide."
           },
           {
             id: "q-sal-33",
@@ -2007,15 +2007,15 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-37",
-            text: "L'<strong>\u0627\u0644\u0623\u064e\u0630\u064e\u0627\u0646</strong> est-il une obligation ou une السُّنَّة dans le rite malikite ?",
+            text: "L'<strong>\u0627\u0644\u0623\u064e\u0630\u064e\u0627\u0646</strong> Sunna (السُّنَّة) dans le rite malikite ?",
             choices: [
               {id:"a",text:"Obligation individuelle (\u0641\u0631\u0636 \u0639\u064a\u0646) pour chaque priant"},
               {id:"b",text:"Obligation collective (\u0641\u0631\u0636 \u0643\u0641\u0627\u064a\u0629) pour la communaut\u00e9"},
-              {id:"c",text:"السُّنَّة mu\u02beakkada"},
-              {id:"d",text:"السُّنَّة simple (\u0645\u0646\u062f\u0648\u0628)"},
+              {id:"c",text:"Sunna (السُّنَّة) mu\u02beakkada"},
+              {id:"d",text:"Sunna (السُّنَّة) simple (\u0645\u0646\u062f\u0648\u0628)"},
             ],
             correctId: "b",
-            explanation: "L'\u0627\u0644\u0623\u064e\u0630\u064e\u0627\u0646 est \u0641\u064e\u0631\u0652\u0636\u064f \u0643\u0650\u0641\u064e\u0627\u064a\u064e\u0629 pour la communaut\u00e9 \u2014 si personne ne le fait, toute la communaut\u00e9 est en p\u00e9ch\u00e9. Pour l'individu priant seul, c'est une السُّنَّة. L'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 est السُّنَّة individuellement."
+            explanation: "L'\u0627\u0644\u0623\u064e\u0630\u064e\u0627\u0646 est \u0641\u064e\u0631\u0652\u0636\u064f \u0643\u0650\u0641\u064e\u0627\u064a\u064e\u0629 pour la communaut\u00e9 \u2014 si personne ne le fait, toute la communaut\u00e9 est en p\u00e9ch\u00e9. Pour l'individu priant seul, c'Sunna (السُّنَّة). L'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 Sunna (السُّنَّة) individuellement."
           },
           {
             id: "q-sal-38",
@@ -2224,7 +2224,7 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-55",
-            text: "<strong>SP\u00c9CIFICIT\u00c9 MALIKITE :</strong> Que r\u00e9cite-t-on dans les 2 rak\u02bf\u0101t de la السُّنَّة du Fadjr selon la المُدَوَّنَة ?",
+            text: "<strong>SP\u00c9CIFICIT\u00c9 MALIKITE :</strong> Que r\u00e9cite-t-on dans les 2 rak\u02bf\u0101Sunna (السُّنَّة) du Fadjr selon la Mudawwana (المُدَوَّنَة) ?",
             choices: [
             {id:"a",text:"La F\u0101ti\u1e25a + une sourate choisie, comme pour le Subh"},
             {id:"b",text:"Uniquement la F\u0101ti\u1e25a (sans sourate) dans chacune des deux rak\u02bf\u0101t"},
@@ -2232,23 +2232,23 @@ const DEBUTANT = {
             {id:"d",text:"Uniquement Sourate al-K\u0101fir\u016bn et al-Ikhl\u0101\u1e63"}
             ],
             correctId: "b",
-            explanation: "Sp\u00e9cificit\u00e9 malikite d'apr\u00e8s la المُدَوَّنَة : l'Im\u0101m M\u0101lik dit qu'il ne r\u00e9cite que la F\u0101ti\u1e25a seule dans les 2 rak\u02bf\u0101t de la السُّنَّة du Fadjr \u2014 rien de plus. Raison : le Proph\u00e8te \ufdfa les all\u00e9geait tellement qu'on se demandait s'il avait m\u00eame lu la F\u0101ti\u1e25a. Contrairement \u00e0 ce qu'on fait dans d'autres rites."
+            explanation: "Sp\u00e9cificit\u00e9 malikite d'apr\u00e8s la Mudawwana (المُدَوَّنَة) : l'Im\u0101m M\u0101lik dit qu'il ne r\u00e9cite que la F\u0101ti\u1e25a seule dans les 2 rak\u02bf\u0101Sunna (السُّنَّة) du Fadjr \u2014 rien de plus. Raison : le Proph\u00e8te \ufdfa les all\u00e9geait tellement qu'on se demandait s'il avait m\u00eame lu la F\u0101ti\u1e25a. Contrairement \u00e0 ce qu'on fait dans d'autres rites."
           },
           {
             id: "q-sal-56",
             text: "<strong>PI\u00c8GE :</strong> Ibrahim rate la pri\u00e8re du \u0627\u0644\u0635\u064f\u0651\u0628\u062d et se r\u00e9veille apr\u00e8s le lever du soleil. Dans quel ordre doit-il agir ?",
             choices: [
-            {id:"a",text:"D'abord la السُّنَّة du Fadjr (2 rak\u02bf\u0101t), puis le \u0627\u0644\u0635\u064f\u0651\u0628\u062d obligatoire"},
-            {id:"b",text:"D'abord \u0627\u0644\u0635\u064f\u0651\u0628\u062d obligatoire, puis la السُّنَّة du Fadjr"},
-            {id:"c",text:"Uniquement \u0627\u0644\u0635\u064f\u0651\u0628\u062d \u2014 la السُّنَّة du Fadjr est caduque"},
+            {id:"a",text:"D'Sunna (السُّنَّة) du Fadjr (2 rak\u02bf\u0101t), puis le \u0627\u0644\u0635\u064f\u0651\u0628\u062d obligatoire"},
+            {id:"b",text:"D'abord \u0627\u0644\u0635\u064f\u0651\u0628\u062d obligatoire, Sunna (السُّنَّة) du Fadjr"},
+            {id:"c",text:"Uniquement \u0627\u0644\u0635\u064f\u0651\u0628\u062d \u2014 Sunna (السُّنَّة) du Fadjr est caduque"},
             {id:"d",text:"Indiff\u00e9rent \u2014 dans l'un ou l'autre ordre"}
             ],
             correctId: "b",
-            explanation: "Doctrine-malikite.fr : \u00ab Si on rate la pri\u00e8re de Subh et qu'on se l\u00e8ve le matin apr\u00e8s le lever du soleil : on commencera par rattraper le Subh AVANT de faire la السُّنَّة du Fadjr \u00bb. L'obligation prime sur la السُّنَّة. Puis la السُّنَّة peut \u00eatre rattrap\u00e9e jusqu'au Zawal."
+            explanation: "Doctrine-malikite.fr : \u00ab Si on rate la pri\u00e8re de Subh et qu'on se l\u00e8ve le matin apr\u00e8s le lever du soleil : Sunna (السُّنَّة) du Fadjr \u00bb. L'Sunna (السُّنَّة). Sunna (السُّنَّة) peut \u00eatre rattrap\u00e9e jusqu'au Zawal."
           },
           {
             id: "q-sal-57",
-            text: "Jusqu'\u00e0 quand peut-on rattraper la السُّنَّة du Fadjr selon le rite malikite ?",
+            text: "Jusqu'\u00e0 Sunna (السُّنَّة) du Fadjr selon le rite malikite ?",
             choices: [
             {id:"a",text:"Elle ne se rattrape jamais"},
             {id:"b",text:"Seulement avant le lever du soleil"},
@@ -2256,7 +2256,7 @@ const DEBUTANT = {
             {id:"d",text:"Jusqu'\u00e0 la pri\u00e8re du \u0627\u0644\u0639\u064e\u0635\u0652\u0631"}
             ],
             correctId: "c",
-            explanation: "La السُّنَّة du Fadjr est la seule pri\u00e8re sur\u00e9rogatoire qui se rattrape jusqu'au Zawal (d\u00e9clin du soleil) dans le rite malikite. Apr\u00e8s le Zawal, elle ne se rattrape plus. C'est une r\u00e8gle propre au rite malikite \u2014 \u00e0 noter car les autres pri\u00e8res sur\u00e9rogatoires ne se rattrapent g\u00e9n\u00e9ralement pas."
+            explanation: "Sunna (السُّنَّة) du Fadjr est la seule pri\u00e8re sur\u00e9rogatoire qui se rattrape jusqu'au Zawal (d\u00e9clin du soleil) dans le rite malikite. Apr\u00e8s le Zawal, elle ne se rattrape plus. C'est une r\u00e8gle propre au rite malikite \u2014 \u00e0 noter car les autres pri\u00e8res sur\u00e9rogatoires ne se rattrapent g\u00e9n\u00e9ralement pas."
           },
           {
             id: "q-sal-58",
@@ -2265,7 +2265,7 @@ const DEBUTANT = {
             {id:"a",text:"Non \u2014 seul le front est obligatoire"},
             {id:"b",text:"Oui \u2014 front ET nez doivent tous deux toucher le sol dans le rite malikite"},
             {id:"c",text:"Oui mais seulement dans \u0627\u0644\u0635\u064f\u0651\u0628\u062d"},
-            {id:"d",text:"Non \u2014 c'est السُّنَّة seulement"}
+            {id:"d",text:"Non \u2014 c'Sunna (السُّنَّة) seulement"}
             ],
             correctId: "b",
             explanation: "Dans le rite malikite, le front ET le nez doivent tous deux toucher le sol dans la prosternation. C'est diff\u00e9rent de certains autres rites o\u00f9 seul le front est obligatoire. Doctrine-malikite.fr : \u00ab Pendant la prosternation (Suj\u00fbd), il faut que le front, le nez et les paumes des mains touchent le sol \u00bb."
@@ -2284,15 +2284,15 @@ const DEBUTANT = {
           },
           {
             id: "q-sal-60",
-            text: "L'<strong>index pendant le التَّشَهُّد</strong> : quel est le geste recommand\u00e9 dans le rite malikite ?",
+            text: "L'<strong>Tashahhud (التَّشَهُّد)</strong> : quel est le geste recommand\u00e9 dans le rite malikite ?",
             choices: [
             {id:"a",text:"Ne pas bouger l'index \u2014 le garder immobile tendu"},
             {id:"b",text:"Faire tourner l'index en cercles"},
-            {id:"c",text:"Bouger l'index (l\u00e9g\u00e8rement) pendant la lecture du التَّشَهُّد, index et pouce tendus, autres doigts ferm\u00e9s"},
+            {id:"c",text:"Bouger l'index (l\u00e9g\u00e8rement) Tashahhud (التَّشَهُّد), index et pouce tendus, autres doigts ferm\u00e9s"},
             {id:"d",text:"Lever bri\u00e8vement l'index uniquement \u00e0 la Shah\u0101da"}
             ],
             correctId: "c",
-            explanation: "Doctrine-malikite.fr (d'apr\u00e8s la المُدَوَّنَة) : il est pr\u00e9f\u00e9rable (musta\u1e25abb) de bouger l'index pendant la lecture du التَّشَهُّد. Index et pouce tendus, les trois autres doigts ferm\u00e9s. La main pos\u00e9e \u00e0 plat sur la cuisse pr\u00e8s du genou. C'est un signe de monotheisme (\u0627\u0644\u062a\u0648\u062d\u064a\u062f) tout au long du التَّشَهُّد."
+            explanation: "Doctrine-malikite.fr (d'apr\u00e8s la المُدَوَّنَة) : il est pr\u00e9f\u00e9rable (musta\u1e25abb) de bouger l'Tashahhud (التَّشَهُّد). Index et pouce tendus, les trois autres doigts ferm\u00e9s. La main pos\u00e9e \u00e0 plat sur la cuisse pr\u00e8s du genou. C'est un signe de monotheisme (\u0627\u0644\u062a\u0648\u062d\u064a\u062f) Tashahhud (التَّشَهُّد)."
           },
           {
             id: "q-sal-61",
@@ -2316,7 +2316,7 @@ const DEBUTANT = {
             {id:"d",text:"Seulement si l'الإِمَام fait 3 sal\u0101ms"}
             ],
             correctId: "c",
-            explanation: "Doctrine-malikite.fr : le sal\u0101m \u00e0 gauche pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645 est السُّنَّة (mand\u00fbb) SEULEMENT si quelqu'un \u00e0 sa gauche a fait au moins une rak\u02bfa compl\u00e8te avec l'الإِمَام. S'il est seul ou si son voisin de gauche n'a pas fait de rak\u02bfa avec l'الإِمَام \u2192 pas de sal\u0101m \u00e0 gauche."
+            explanation: "Doctrine-malikite.fr : le sal\u0101m \u00e0 gauche pour le \u0645\u064e\u0623\u0645\u064f\u0648\u0645 Sunna (السُّنَّة) (mand\u00fbb) SEULEMENT si quelqu'un \u00e0 sa gauche a fait au moins une rak\u02bfa compl\u00e8te avec l'الإِمَام. S'il est seul ou si son voisin de gauche n'a pas fait de rak\u02bfa avec l'الإِمَام \u2192 pas de sal\u0101m \u00e0 gauche."
           },
           {
             id: "q-sal-63",
@@ -2328,7 +2328,7 @@ const DEBUTANT = {
             {id:"d",text:"\u0627\u0644\u0648\u0650\u062a\u0652\u0631 = 1 rak\u02bfa silencieuse uniquement"}
             ],
             correctId: "b",
-            explanation: "Doctrine-malikite.fr : apr\u00e8s \u0627\u0644\u0639\u0650\u0634\u064e\u0627\u0621, il est pr\u00e9f\u00e9rable de prier 2 rak\u02bf\u0101t (\u0627\u0644\u0634\u064e\u0651\u0641\u0652\u0639) puis 1 rak\u02bfa (\u0627\u0644\u0648\u0650\u062a\u0652\u0631). Chacun avec sa propre F\u0101ti\u1e25a + sourate \u00e0 voix haute (comme le Subh), son التَّشَهُّد final et son sal\u0101m. Un sal\u0101m s\u00e9pare le Shaf\u02bf du الوِتْر \u2014 ce sont deux pri\u00e8res distinctes."
+            explanation: "Doctrine-malikite.fr : apr\u00e8s \u0627\u0644\u0639\u0650\u0634\u064e\u0627\u0621, il est pr\u00e9f\u00e9rable de prier 2 rak\u02bf\u0101t (\u0627\u0644\u0634\u064e\u0651\u0641\u0652\u0639) puis 1 rak\u02bfa (\u0627\u0644\u0648\u0650\u062a\u0652\u0631). Chacun avec sa propre F\u0101ti\u1e25a + sourate \u00e0 voix haute (comme le Subh), Tashahhud (التَّشَهُّد) final et son sal\u0101m. Un sal\u0101m s\u00e9pare le Shaf\u02bf du الوِتْر \u2014 ce sont deux pri\u00e8res distinctes."
           },
           {
             id: "q-sal-64",
@@ -2352,14 +2352,14 @@ const DEBUTANT = {
             {id:"d",text:"Non \u2014 l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 est facultative sans cons\u00e9quence"}
             ],
             correctId: "c",
-            explanation: "Doctrine-malikite.fr (المُدَوَّنَة, avis de l'Im\u0101m M\u0101lik) : que ce soit par oubli ou d\u00e9lib\u00e9r\u00e9ment, l'oubli de l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 ne rend pas la pri\u00e8re invalide. En cas d'omission d\u00e9lib\u00e9r\u00e9e : la pri\u00e8re reste valide, mais il est recommand\u00e9 de demander le pardon d'Allah (\u0627\u0633\u062a\u063a\u0641\u0627\u0631). C'est une السُّنَّة, non une condition de validit\u00e9."
+            explanation: "Doctrine-malikite.fr (المُدَوَّنَة, avis de l'Im\u0101m M\u0101lik) : que ce soit par oubli ou d\u00e9lib\u00e9r\u00e9ment, l'oubli de l'\u0627\u0644\u0625\u0650\u0642\u064e\u0627\u0645\u064e\u0629 ne rend pas la pri\u00e8re invalide. En cas d'omission d\u00e9lib\u00e9r\u00e9e : la pri\u00e8re reste valide, mais il est recommand\u00e9 de demander le pardon d'Allah (\u0627\u0633\u062a\u063a\u0641\u0627\u0631). C'Sunna (السُّنَّة), non une condition de validit\u00e9."
           }
         ]
       },
 
       badge: {
         id: 'badge-priere',
-        title: 'Gardien de la الصَّلَاة',
+        title: 'Ṣalāt (الصَّلَاة)',
         arabicTitle: 'محافظ الصلاة',
         icon: 'arch',
         color: 'silver',
@@ -2368,32 +2368,32 @@ const DEBUTANT = {
     },
 
     /* ═══════════════════════════════════════════════════
-       SUJET 3 — Le Jeûne (الصوم) — PDF à venir
+       SUJET 3 — Le JeûṢawm (الصوم) — PDF à venir
        ═══════════════════════════════════════════════════ */
     {
       id: 'jeune',
       title: 'Le Jeûne',
       arabicTitle: 'الصوم',
       icon: 'crescent',
-      description: 'Obligation du Ramadan, النِّيَّة, nullificateurs, الكَفَّارَة, القَضَاء et qiyām al-ramaḍān selon la Risāla d\'Ibn Abī Zayd al-Qayrawānī.',
+      description: 'Obligation du Ramadan, Niyya (النِّيَّة), nullificateurs, Kaffāra (الكَفَّارَة), Qaḍāʾ (القَضَاء) et qiyām al-ramaḍān selon la Risāla d\'Ibn Abī Zayd al-Qayrawānī.',
 
       lessons: [
 
         {
           id: 'saw-01',
-          title: 'L\'Obligation du Jeûne et la النِّيَّة',
+          title: 'L\'Obligation du JeûNiyya (النِّيَّة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Le jeûne du mois de Ramadan est une farīḍa (obligation). La Risāla expose ses conditions d\'entrée, la règle de la النِّيَّة (intention) et quelques cas pratiques fondamentaux.' },
+            { t: 'lead', v: 'Le jeûne du mois de Ramadan est une farīḍa (obligation). La Risāla expose ses conditions d\'entrée, la rèNiyya (النِّيَّة) (intention) et quelques cas pratiques fondamentaux.' },
             { t: 'h', v: 'Établissement du mois de Ramadan' },
             { t: 'p', v: 'On entre en Ramadan à la vue du croissant de lune (الهِلَال) et on le termine à sa vue. Si le ciel est couvert, on complète trente jours à partir du début du mois précédent — puis on commence à jeûner. Il en est de même pour la sortie du Ramadan (ʿĪd al-Fiṭr).' },
             { t: 'ar', v: 'وَصَوْمُ شَهرِ رَمَضَانَ فَرِيضَةٌ، يُصَامُ لِرُؤيَةِ الهِلَالِ وَيُفطَرُ لِرُؤيَتِهِ', n: '« Le jeûne du mois de Ramadan est une obligation. On le commence à la vue du croissant et on le termine à sa vue. » — Risāla d\'Ibn Abī Zayd al-Qayrawānī' },
-            { t: 'h', v: 'La النِّيَّة (intention) du jeûne' },
+            { t: 'h', v: 'Niyya (النِّيَّة) (intention) du jeûne' },
             { t: 'p', v: 'L\'intention doit être arrêtée (التَّبيِيت al-النِّيَّة) chaque nuit, dès le début du mois. Elle n\'est pas requise pour le reste de la journée. L\'intention se fait par le cœur, en sachant que l\'on jeûne le lendemain pour Allāh.' },
-            { t: 'h', v: 'La السُّنَّة dans le suhūr et l\'ifṭār' },
+            { t: 'h', v: 'Sunna (السُّنَّة) dans le suhūr et l\'ifṭār' },
             { t: 'ul', v: [
-              '<strong>Avancer l\'ifṭār</strong> (rompre le jeûne dès la tombée de la nuit) est une السُّنَّة.',
-              '<strong>Retarder le suhūr</strong> (le repas de pré-aube) jusqu\'à juste avant le الفَجْر est une السُّنَّة.',
+              '<strong>Avancer l\'ifṭār</strong> (rompre le jeûne dès la tombée de la nuit) Sunna (السُّنَّة).',
+              '<strong>Retarder le suhūr</strong> (le repas de pré-aube) jusqu\'à juste avant le الفَجْر Sunna (السُّنَّة).',
               'En cas de doute sur l\'arrivée de l\'aube, on peut encore manger.'
             ] },
             { t: 'h', v: 'Le jour de doute (yawm al-shakk)' },
@@ -2408,58 +2408,58 @@ const DEBUTANT = {
           title: 'Les Nullificateurs du Jeûne',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Certains actes ou états invalident le jeûne et imposent un rattrapage (القَضَاء) ou une expiation (الكَفَّارَة). La Risāla distingue soigneusement les cas.' },
+            { t: 'lead', v: 'Certains actes ou états invalident le jeûQaḍāʾ (القَضَاء) Kaffāra (الكَفَّارَة). La Risāla distingue soigneusement les cas.' },
             { t: 'h', v: 'Ce qui n\'invalide pas le jeûne' },
             { t: 'ul', v: [
               '<strong>Le siwāk</strong> est permis tout au long de la journée du jeûne.',
               '<strong>La saignée (ḥijāma)</strong> n\'est déconseillée que si elle risque d\'affaiblir le jeûneur au point de le faire rompre son jeûne par nécessité.',
-              '<strong>Les vomissements involontaires (qayʾ maglūb)</strong> : "من ذرعه القيء فلا قضاء عليه" — si l\'on est submergé involontairement par des vomissements, pas de القَضَاء.',
-              '<strong>Se réveiller en état de الجَنَابَة</strong> (impureté majeure due au rapport sexuel de la nuit) n\'invalide pas le jeûne de la journée.',
+              '<strong>Les vomissements involontaires (qayʾ maglūb)</strong> : "من ذرعه القيء فلا قضاء عليه" — si l\'on est submergé involontairement par des vomissements, Qaḍāʾ (القَضَاء).',
+              '<strong>Se réveiller en éJanāba (الجَنَابَة)</strong> (impureté majeure due au rapport sexuel de la nuit) n\'invalide pas le jeûne de la journée.',
               '<strong>Le voyageur qui rentre en cours de journée</strong> en état d\'ifrār (ayant rompu le jeûne) et la femme qui se purifies de ses règles en cours de journée : tous deux peuvent manger le reste de cette journée sans être tenus à l\'imsāk.'
             ] },
-            { t: 'h', v: 'Ce qui invalide et impose le القَضَاء' },
+            { t: 'h', v: 'Qaḍāʾ (القَضَاء)' },
             { t: 'ul', v: [
-              '<strong>Rompre délibérément son jeûne surérogatoire</strong> : impose le القَضَاء.',
-              '<strong>Se vomir délibérément</strong> : "وإن استقاء قضاء" — impose le القَضَاء.',
-              '<strong>La caresse ou le baiser avec désir</strong> qui amène à une émission : impose le القَضَاء.',
+              '<strong>Rompre délibérément son jeûne surérogatoire</strong> : Qaḍāʾ (القَضَاء).',
+              '<strong>Se vomir délibérément</strong> : "وإن استقاء قضاء" — Qaḍāʾ (القَضَاء).',
+              '<strong>La caresse ou le baiser avec désir</strong> qui amène à une émission : Qaḍāʾ (القَضَاء).',
               '<strong>Manger ou boire par oubli</strong> ne rompt pas le jeûne selon l\'école malikite (contrairement à d\'autres).'
             ] },
             { t: 'h', v: 'La femme enceinte et la mère allaitante' },
             { t: 'ul', v: [
-              'Femme enceinte qui craint pour son fœtus : rompt le jeûne et doit seulement le rattraper (القَضَاء), sans الفِدْيَة.',
+              'Femme enceinte qui craint pour son fœtus : rompt le jeûQaḍāʾ (القَضَاء), sans الفِدْيَة.',
               'Mère allaitante qui craint pour l\'enfant : rompt le jeûne et doit nourrir un pauvre par jour de rattrapage (الفِدْيَة).'
             ] },
             { t: 'h', v: 'Cas particulier : junub réveillé après le الفَجْر' },
-            { t: 'p', v: 'Si quelqu\'un se retrouve en état de الجَنَابَة et ne peut se purifier qu\'après le الفَجْر (aube), son jeûne de cette journée reste valide. De même pour la femme qui constate la fin de ses règles avant le الفَجْر et ne peut faire le الغُسْل qu\'après : son jeûne est valide.' },
+            { t: 'p', v: 'Si quelqu\'un se retrouve en éJanāba (الجَنَابَة) et ne peut se purifier qu\'après le الفَجْر (aube), son jeûne de cette journée reste valide. De même pour la femme qui constate la fin de ses règles avant le الفَجْر et ne peut faire le Ghusl (الغُسْل) qu\'après : son jeûne est valide.' },
             { t: 'ar', v: 'وَمَن أَصبَحَ جُنُبًا وَلَم يَتَطَهَّر أو امرأَةٌ حَائِضٌ طَهُرَت قَبلَ الفَجرِ فَلَم يَغتَسِلَا إِلَّا بَعدَ الفَجرِ أَجزَأَهُمَا صَومُ ذَلِكَ اليَومِ', n: '« Celui qui se réveille en état de الجَنَابَة, ou la femme dont les règles se sont arrêtées avant le الفَجْر mais qui ne s\'est pas purifiée qu\'après : le jeûne de ce jour leur est validé. »' }
           ]
         },
 
         {
           id: 'saw-03',
-          title: 'La الكَفَّارَة et le Rattrapage (القَضَاء)',
+          title: 'Kaffāra (الكَفَّارَة) Qaḍāʾ (القَضَاء)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La الكَفَّارَة (expiation) ne s\'applique que dans des cas précis et bien délimités. La Risāla en définit les conditions et la forme, ainsi que les règles de rattrapage (القَضَاء).' },
-            { t: 'h', v: 'Quand la الكَفَّارَة est-elle obligatoire ?' },
-            { t: 'p', v: 'La الكَفَّارَة n\'est obligatoire que pour celui qui rompt délibérément (mutaʿammidan) par mangeage, boisson ou rapport sexuel, tout en sachant qu\'il est dans le mois de Ramadan et en plein état de jeûne (maʿa al-maḍāʾ). Toute rupture due à une interprétation ou à une erreur sincère ne donne lieu à aucune الكَفَّارَة.' },
-            { t: 'ar', v: 'وَإِنَّمَا الكَفَّارَةُ عَلَى مَن أَفطَرَ مُتَعَمِّدًا بِأَكلٍ أَو شُربٍ أَو جِمَاعٍ مَعَ المَضَاءِ', n: '« La الكَفَّارَة n\'est due que pour celui qui rompt délibérément par le manger, le boire ou le rapport sexuel, avec résolution ferme. »' },
-            { t: 'h', v: 'La forme de la الكَفَّارَة (par ordre de préférence)' },
+            { t: 'lead', v: 'Kaffāra (الكَفَّارَة) (expiation) ne s\'applique que dans des cas précis et bien délimités. La Risāla en définit les conditions et la forme, ainsi que les rèQaḍāʾ (القَضَاء).' },
+            { t: 'h', v: 'Kaffāra (الكَفَّارَة) est-elle obligatoire ?' },
+            { t: 'p', v: 'Kaffāra (الكَفَّارَة) n\'est obligatoire que pour celui qui rompt délibérément (mutaʿammidan) par mangeage, boisson ou rapport sexuel, tout en sachant qu\'il est dans le mois de Ramadan et en plein état de jeûne (maʿa al-maḍāʾ). Toute rupture due à une interprétation ou à une erreur sincère ne donne lieu à Kaffāra (الكَفَّارَة).' },
+            { t: 'ar', v: 'وَإِنَّمَا al-kaffāra (الكَفَّارَة)ُ عَلَى مَن أَفطَرَ مُتَعَمِّدًا بِأَكلٍ أَو شُربٍ أَو جِمَاعٍ مَعَ المَضَاءِ', n: '« La al-kaffāra (الكَفَّارَة) n\'est due que pour celui qui rompt délibérément par le manger, le boire ou le rapport sexuel, avec résolution ferme. »' },
+            { t: 'h', v: 'Kaffāra (الكَفَّارَة) (par ordre de préférence)' },
             { t: 'ul', v: [
               '<strong>1. Nourrir 60 pauvres</strong> — un mudd (mesure du Prophète ﷺ) pour chacun. C\'est la forme préférée selon l\'auteur.',
               '<strong>2. Libérer un esclave</strong> — une personne en captivité valide.',
-              '<strong>3. Jeûner deux mois consécutifs</strong> — sans interruption (الكَفَّارَة).'
+              '<strong>3. Jeûner deux mois consécutifs</strong> — Kaffāra (الكَفَّارَة).'
             ] },
-            { t: 'note', v: 'Celui qui rompt délibérément son jeûne de rattrapage (القَضَاء de Ramadan) n\'encourt PAS de الكَفَّارَة — seulement un القَضَاء.' },
+            { t: 'note', v: 'Celui qui rompt délibérément son jeûne de rattrapage (القَضَاء de Ramadan) n\'Kaffāra (الكَفَّارَة) — Qaḍāʾ (القَضَاء).' },
             { t: 'h', v: 'Le voyageur et le jeûne' },
             { t: 'ul', v: [
               'Le voyageur pour un trajet qui raccourcit la prière a le droit de rompre le jeûne même sans nécessité absolue.',
-              'Il doit rattraper les jours rompus (القَضَاء).',
-              '<strong>Jeûner est néanmoins préféré</strong> selon l\'auteur : "والصوم أحب إلينا".',
-              'Si le trajet est inférieur à 4 bornes (environ 86 km), il n\'a pas le droit de rompre le jeûne — et s\'il le fait quand même, il n\'y a pas de الكَفَّارَة mais le القَضَاء reste obligatoire.'
+              'Qaḍāʾ (القَضَاء).',
+              '<strong>Jeûner est néanmoins préféré</strong> selon l\'auteur : "وṢawm (الصوم) أحب إلينا".',
+              'Si le trajet est inférieur à 4 bornes (environ 86 km), il n\'a pas le droit de rompre le jeûne — et s\'il le fait quand même, il n\'Kaffāra (الكَفَّارَة) Qaḍāʾ (القَضَاء) reste obligatoire.'
             ] },
             { t: 'h', v: 'Penalty pour tardiveté dans le rattrapage' },
-            { t: 'p', v: 'Celui qui reporte le rattrapage (القَضَاء) de Ramadan jusqu\'à l\'entrée du prochain Ramadan sans excuse valable doit, en plus du rattrapage, nourrir un pauvre par jour de retard.' }
+            { t: 'p', v: 'Qaḍāʾ (القَضَاء) de Ramadan jusqu\'à l\'entrée du prochain Ramadan sans excuse valable doit, en plus du rattrapage, nourrir un pauvre par jour de retard.' }
           ]
         },
 
@@ -2479,21 +2479,21 @@ const DEBUTANT = {
             ] },
             { t: 'h', v: 'Rapport sexuel en journée de Ramadan' },
             { t: 'ul', v: [
-              'Simple plaisir par attouchement ou baiser sans que cela aille plus loin : impose le القَضَاء.',
-              'Si cela va jusqu\'à l\'acte complet délibérément : impose la الكَفَّارَة.'
+              'Simple plaisir par attouchement ou baiser sans que cela aille plus loin : Qaḍāʾ (القَضَاء).',
+              'Si cela va jusqu\'à l\'acte complet délibérément : Kaffāra (الكَفَّارَة).'
             ] },
             { t: 'h', v: 'L\'évanouissement (ighmaʾ)' },
             { t: 'p', v: 'Celui qui perd connaissance pendant la journée de Ramadan : son jeûne peut être invalidé si l\'inconscience dure et le prive de toute conscience pendant la journée entière. Les détails sont précisés par les commentateurs.' },
-            { t: 'note', v: 'Point important : le jeûneur qui ressent un plaisir par contact intime en journée de Ramadan et que cela entraîne une émission doit faire le القَضَاء. S\'il va jusqu\'à l\'acte intentionnellement : الكَفَّارَة obligatoire.' }
+            { t: 'note', v: 'Point important : le jeûneur qui ressent un plaisir par contact intime en journée de Ramadan et que cela entraîne une éQaḍāʾ (القَضَاء). S\'il va jusqu\'à l\'acte intentionnellement : Kaffāra (الكَفَّارَة) obligatoire.' }
           ]
         },
 
         {
           id: 'saw-05',
-          title: 'Le Qiyām al-Ramaḍān et l\'الاعتِكَاف',
+          title: 'Le Qiyām al-Ramaḍān et l\'Iʿtikāf (الاعتِكَاف)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La Risāla mentionne deux pratiques majeures liées à Ramadan : le qiyām (prières nocturnes de Ramadan) et l\'الاعتِكَاف (retraite spirituelle dans la mosquée). Elle en précise les modalités selon la tradition des pieux ancêtres (salaf ṣāliḥ).' },
+            { t: 'lead', v: 'La Risāla mentionne deux pratiques majeures liées à Ramadan : le qiyām (prières nocturnes de Ramadan) et l\'Iʿtikāf (الاعتِكَاف) (retraite spirituelle dans la mosquée). Elle en précise les modalités selon la tradition des pieux ancêtres (salaf ṣāliḥ).' },
             { t: 'h', v: 'La valeur du qiyām al-Ramaḍān' },
             { t: 'ar', v: 'وَمَن قَامَ رَمَضَانَ إِيمَانًا وَاحتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِن ذَنبِهِ', n: '« Quiconque accomplit le qiyām de Ramadan par foi et dans l\'attente de la récompense divine, ses péchés antérieurs lui sont pardonnés. »' },
             { t: 'h', v: 'La modalité du qiyām al-Ramaḍān' },
@@ -2504,13 +2504,13 @@ const DEBUTANT = {
               'Un salām sépare le الشَّفْع (2 رَكَعَات) du الوِتْر (1 رَكْعَة).',
               'Ils faisaient ensuite encore des prières supplémentaires.'
             ] },
-            { t: 'h', v: 'L\'الاعتِكَاف (retraite dans la mosquée)' },
+            { t: 'h', v: 'L\'Iʿtikāf (الاعتِكَاف) (retraite dans la mosquée)' },
             { t: 'ul', v: [
-              '<strong>Quand entrer :</strong> avant le coucher du soleil de la nuit où commence l\'الاعتِكَاف.',
+              '<strong>Quand entrer :</strong> avant le coucher du soleil de la nuit où commence l\'Iʿtikāf (الاعتِكَاف).',
               '<strong>Quand sortir :</strong> après le coucher du soleil du dernier jour.',
-              '<strong>Interdit à celui en الاعتِكَاف :</strong> rendre visite aux malades, prier sur les morts, faire des affaires commerciales. Il ne sort que pour les besoins naturels.',
+              '<strong>Interdit à Iʿtikāf (الاعتِكَاف) :</strong> rendre visite aux malades, prier sur les morts, faire des affaires commerciales. Il ne sort que pour les besoins naturels.',
               '<strong>Permis :</strong> être l\'الإِمَام de la mosquée, se marier ou contracter le mariage de quelqu\'un d\'autre.',
-              'Si la femme en الاعتِكَاف a ses règles ou si le retraitant tombe malade : ils sortent et rentrent dès la guérison ou la pureté retrouvée.'
+              'Iʿtikāf (الاعتِكَاف) a ses règles ou si le retraitant tombe malade : ils sortent et rentrent dès la guérison ou la pureté retrouvée.'
             ] },
             { t: 'note', v: 'La Risāla d\'Ibn Abī Zayd al-Qayrawānī (310-386 H) est l\'une des œuvres fondatrices du rite malikite. Elle a été composée à l\'âge de 17 ans et s\'est répandue dans tout le monde musulman jusqu\'à être copiée en lettres d\'or.' }
           ]
@@ -2751,7 +2751,7 @@ const DEBUTANT = {
               {id:"a",text:"Interdite \u2014 rompt le je\u00fbne"},
               {id:"b",text:"Permise sans restriction"},
               {id:"c",text:"Makr\u016bh seulement si elle risque d'affaiblir le je\u00fbneur au point de compromettre son je\u00fbne"},
-              {id:"d",text:"السُّنَّة \u2014 pratiqu\u00e9e par le Proph\u00e8te \ufdfa"},
+              {id:"d",text:"Sunna (السُّنَّة) \u2014 pratiqu\u00e9e par le Proph\u00e8te \ufdfa"},
             ],
             correctId: "c",
             explanation: "La Ris\u0101la : \u00ab \u0648\u064e\u0644\u064e\u0627 \u064a\u064f\u0643\u0631\u064e\u0647\u064f \u0627\u0644\u062d\u0650\u062c\u064e\u0627\u0645\u064e\u0629\u064f \u0625\u0650\u0644\u064e\u0651\u0627 \u062e\u0650\u064a\u0641\u064e\u0629\u064e \u0627\u0644\u062a\u064e\u0651\u063a\u0631\u0650\u064a\u0631\u0650 \u00bb \u2014 la \u062d\u0650\u062c\u064e\u0627\u0645\u064e\u0629 n'est makr\u016bh QUE si on craint qu'elle affaiblisse le je\u00fbneur au point de compromettre son je\u00fbne. Sinon elle est permise."
@@ -2895,10 +2895,10 @@ const DEBUTANT = {
               {id:"a",text:"Obligatoire pour tout homme adulte en Ramadan"},
               {id:"b",text:"Obligatoire seulement le dernier tiers du Ramadan"},
               {id:"c",text:"Recommand\u00e9 (السُّنَّة) \u2014 obligatoire seulement si on l'a vou\u00e9 (\u0646\u064e\u0630\u0652\u0631)"},
-              {id:"d",text:"Permis mais ni السُّنَّة ni obligation"},
+              {id:"d",text:"Sunna (السُّنَّة) ni obligation"},
             ],
             correctId: "c",
-            explanation: "L'\u0627\u0639\u062a\u0643\u0627\u0641 est une السُّنَّة du Proph\u00e8te \ufdfa, notamment dans le dernier tiers du Ramadan. Il devient obligatoire uniquement si on l'a vou\u00e9 (\u0646\u064e\u0630\u0631). Ce n'est pas une obligation pour tous."
+            explanation: "L'\u0627\u0639\u062a\u0643\u0627\u0641 Sunna (السُّنَّة) du Proph\u00e8te \ufdfa, notamment dans le dernier tiers du Ramadan. Il devient obligatoire uniquement si on l'a vou\u00e9 (\u0646\u064e\u0630\u0631). Ce n'est pas une obligation pour tous."
           },
           {
             id: "q-saw-28",
@@ -2998,15 +2998,15 @@ const DEBUTANT = {
           },
           {
             id: "q-saw-36",
-            text: "<strong>SC\u00c9NARIO :</strong> Pour l'Eid al-Fitr, quand est-il السُّنَّة de manger selon la Ris\u0101la ?",
+            text: "<strong>SC\u00c9NARIO :</strong> Pour l'Eid al-Fitr, Sunna (السُّنَّة) de manger selon la Ris\u0101la ?",
             choices: [
               {id:"a",text:"Apr\u00e8s la pri\u00e8re de l'Eid"},
               {id:"b",text:"Avant d'aller \u00e0 la pri\u00e8re de l'Eid"},
               {id:"c",text:"Au coucher du soleil de la nuit de l'Eid"},
-              {id:"d",text:"Indiff\u00e9rent \u2014 pas de السُّنَّة pr\u00e9cise"},
+              {id:"d",text:"Indiff\u00e9rent \u2014 Sunna (السُّنَّة) pr\u00e9cise"},
             ],
             correctId: "b",
-            explanation: "La Ris\u0101la : \u00ab \u064a\u064f\u0633\u062a\u064e\u062d\u064e\u0628\u064f\u0651 \u0627\u0644\u0641\u0650\u0637\u0631\u064f \u0641\u0650\u064a\u0647\u0650 \u0642\u064e\u0628\u0644\u064e \u0627\u0644\u063a\u064f\u062f\u064f\u0648\u0650\u0651 \u0625\u0650\u0644\u064e\u0649 \u0627\u0644\u0645\u064f\u0635\u064e\u0644\u064e\u0651\u0649, \u0648\u064e\u0644\u064e\u064a\u0633\u064e \u0630\u064e\u0644\u0650\u0643\u064e \u0641\u0650\u064a \u0627\u0644\u0623\u064e\u0636\u062d\u064e\u0649 \u00bb \u2014 pour l'Eid al-Fitr, manger AVANT la pri\u00e8re est السُّنَّة. Pour l'Eid al-Adha, on mange apr\u00e8s (de l'animal sacrifi\u00e9)."
+            explanation: "La Ris\u0101la : \u00ab \u064a\u064f\u0633\u062a\u064e\u062d\u064e\u0628\u064f\u0651 \u0627\u0644\u0641\u0650\u0637\u0631\u064f \u0641\u0650\u064a\u0647\u0650 \u0642\u064e\u0628\u0644\u064e \u0627\u0644\u063a\u064f\u062f\u064f\u0648\u0650\u0651 \u0625\u0650\u0644\u064e\u0649 \u0627\u0644\u0645\u064f\u0635\u064e\u0644\u064e\u0651\u0649, \u0648\u064e\u0644\u064e\u064a\u0633\u064e \u0630\u064e\u0644\u0650\u0643\u064e \u0641\u0650\u064a \u0627\u0644\u0623\u064e\u0636\u062d\u064e\u0649 \u00bb \u2014 pour l'Eid al-Fitr, manger AVANT la pri\u00e8Sunna (السُّنَّة). Pour l'Eid al-Adha, on mange apr\u00e8s (de l'animal sacrifi\u00e9)."
           },
           {
             id: "q-saw-37",
@@ -3121,12 +3121,12 @@ const DEBUTANT = {
             text: "<strong>AVANC\u00c9 :</strong> Le je\u00fbne d'\u0639\u064e\u0627\u0634\u064f\u0648\u0631\u064e\u0627\u0621 (10 Muharram) est dans le rite malikite :",
             choices: [
               {id:"a",text:"Obligatoire"},
-              {id:"b",text:"Fortement السُّنَّة (السُّنَّة mu\u02beakkada)"},
+              {id:"b",text:"Sunna (السُّنَّة) (السُّنَّة mu\u02beakkada)"},
               {id:"c",text:"Recommand\u00e9 l\u00e9ger (\u0645\u0646\u062f\u0648\u0628)"},
               {id:"d",text:"Permis sans statut particulier"},
             ],
             correctId: "b",
-            explanation: "Le je\u00fbne d'\u0639\u0627\u0634\u0648\u0631\u0627\u0621 est une السُّنَّة forte dans le rite malikite. Le Proph\u00e8te \ufdfa le je\u00fbnait et encourageait la communaut\u00e9. C'est l'un des je\u00fbnes les plus m\u00e9ritoires en dehors de Ramadan."
+            explanation: "Le je\u00fbne d'\u0639\u0627\u0634\u0648\u0631\u0627\u0621 Sunna (السُّنَّة) forte dans le rite malikite. Le Proph\u00e8te \ufdfa le je\u00fbnait et encourageait la communaut\u00e9. C'est l'un des je\u00fbnes les plus m\u00e9ritoires en dehors de Ramadan."
           },
           {
             id: "q-saw-47",
@@ -3311,93 +3311,93 @@ const DEBUTANT = {
     },
 
     {
-      id: 'الزَّكَاة',
+      id: 'al-zakāt (الزَّكَاة)',
       title: 'La Zakat',
       arabicTitle: 'الزكاة',
       icon: 'scales',
-      description: 'النِّصَاب du grain, de l\'or, de l\'argent et des marchandises, الحَوْل, animaux soumis à la الزَّكَاة et زَكَاةُ الفِطْر selon la Risāla d\'Ibn Abī Zayd al-Qayrawānī.',
+      description: 'Niṣāb (النِّصَاب) du grain, de l\'or, de l\'argent et des marchandises, الحَوْل, animaux soumis à Zakāt (الزَّكَاة) et زَكَاةُ الفِطْر selon la Risāla d\'Ibn Abī Zayd al-Qayrawānī.',
 
       lessons: [
 
         {
           id: 'zak-01',
-          title: 'Définition et Types de الزَّكَاة',
+          title: 'DéZakāt (الزَّكَاة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La Risāla consacre un chapitre entier à la الزَّكَاة (aumône légale), ses différents types et leurs moments d\'acquittement. Elle distingue la الزَّكَاة agricole (due à la récolte) de la الزَّكَاة sur les biens accumulés (due après une année entière).' },
-            { t: 'ar', v: 'بَابٌ فِي زَكَاةِ العَينِ وَالحَرثِ وَالمَاشِيَةِ وَمَا يَخرُجُ مِنَ المَعدِنِ', n: '« Chapitre sur la الزَّكَاة de l\'or/argent, des récoltes, des troupeaux et de ce qui sort des mines. » — Risāla d\'Ibn Abī Zayd al-Qayrawānī' },
-            { t: 'h', v: 'Les types de الزَّكَاة et leur moment d\'acquittement' },
+            { t: 'lead', v: 'La Risāla consacre un chapitre entier à Zakāt (الزَّكَاة) (aumône légale), ses différents types et leurs moments d\'acquittement. Zakāt (الزَّكَاة) agricole (due à la récolte) Zakāt (الزَّكَاة) sur les biens accumulés (due après une année entière).' },
+            { t: 'ar', v: 'بَابٌ فِي زَكَاةِ العَينِ وَالحَرثِ وَالمَاشِيَةِ وَمَا يَخرُجُ مِنَ المَعدِنِ', n: '« Chapitre sur la al-zakāt (الزَّكَاة) de l\'or/argent, des récoltes, des troupeaux et de ce qui sort des mines. » — Risāla d\'Ibn Abī Zayd al-Qayrawānī' },
+            { t: 'h', v: 'Zakāt (الزَّكَاة) et leur moment d\'acquittement' },
             { t: 'ul', v: [
-              '<strong>الزَّكَاة des récoltes (ḥarth)</strong> : acquittée au moment de la récolte (ḥaṣād).',
-              '<strong>الزَّكَاة de l\'or, de l\'argent et des troupeaux (المَاشِيَة)</strong> : acquittée à chaque الحَوْل (année solunaire complète).',
-              '<strong>الزَّكَاة des mines (maʿdin)</strong> : acquittée au moment de l\'extraction, si le seuil est atteint.',
-              '<strong>الزَّكَاة al-Fiṭr</strong> : acquittée à l\'aube du jour de l\'Eid al-Fiṭr.'
+              '<strong>Zakāt (الزَّكَاة) des récoltes (ḥarth)</strong> : acquittée au moment de la récolte (ḥaṣād).',
+              '<strong>Zakāt (الزَّكَاة) de l\'or, de l\'argent et des troupeaux (المَاشِيَة)</strong> : acquittée à chaque الحَوْل (année solunaire complète).',
+              '<strong>Zakāt (الزَّكَاة) des mines (maʿdin)</strong> : acquittée au moment de l\'extraction, si le seuil est atteint.',
+              '<strong>Zakāt (الزَّكَاة) al-Fiṭr</strong> : acquittée à l\'aube du jour de l\'Eid al-Fiṭr.'
             ] },
             { t: 'h', v: 'Ce qu\'est le الحَوْل (année d\'imposition)' },
-            { t: 'p', v: 'Le الحَوْل est l\'année islamique lunaire complète (12 mois). La الزَّكَاة sur l\'or, l\'argent et les troupeaux n\'est due qu\'après qu\'un الحَوْل complet se soit écoulé depuis l\'acquisition ou le dernier acquittement. Si le bien est perdu avant le الحَوْل, la الزَّكَاة n\'est plus due.' },
-            { t: 'note', v: 'Important : la الزَّكَاة agricole est due à la récolte et n\'exige pas de الحَوْل. Elle doit être acquittée immédiatement lors de la cueillette ou de la moisson.' }
+            { t: 'p', v: 'Le الحَوْل est l\'année islamique lunaire complète (12 mois). Zakāt (الزَّكَاة) sur l\'or, l\'argent et les troupeaux n\'est due qu\'après qu\'un الحَوْل complet se soit écoulé depuis l\'acquisition ou le dernier acquittement. Si le bien est perdu avant le الحَوْل, Zakāt (الزَّكَاة) n\'est plus due.' },
+            { t: 'note', v: 'Important : Zakāt (الزَّكَاة) agricole est due à la récolte et n\'exige pas de الحَوْل. Elle doit être acquittée immédiatement lors de la cueillette ou de la moisson.' }
           ]
         },
 
         {
           id: 'zak-02',
-          title: 'Le النِّصَاب — Les Seuils de la الزَّكَاة',
+          title: 'Niṣāb (النِّصَاب) — Zakāt (الزَّكَاة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'Chaque type de bien soumis à la الزَّكَاة a un seuil minimum (النِّصَاب) en dessous duquel la الزَّكَاة n\'est pas obligatoire. La Risāla précise ces seuils avec détail.' },
-            { t: 'h', v: 'النِّصَاب des récoltes agricoles' },
-            { t: 'p', v: '"لا زكاة من الحب والثمر في أقل من خمسة أوسق" — pas de الزَّكَاة sur les grains et les fruits en deçà de 5 awsāq. Un الوَسق = 60 ṣāʿs (le ṣāʿ du Prophète ﷺ = 4 mudd). Cela représente environ 653 kg de blé selon les estimations modernes. Le taux est de 1/10 (ʿushr) si irrigué par les pluies, et 1/20 si irrigué artificiellement.' },
-            { t: 'h', v: 'النِّصَاب de l\'or' },
-            { t: 'p', v: '"لا زكاة من الذهب في أقل من عشرين دينارًا" — pas de الزَّكَاة sur l\'or en deçà de 20 dinars. Sur 20 dinars ou plus, on sort le rub\' al-ʿushr (1/4 du dixième = 2,5%). Si le montant dépasse 20, on calcule proportionnellement.' },
-            { t: 'ar', v: 'لَا زَكَاةَ مِنَ الذَّهَبِ فِي أَقَلَّ مِن عِشرِينَ دِينَارًا', n: '« Pas de الزَّكَاة sur l\'or en deçà de vingt dinars. » — Risāla' },
-            { t: 'h', v: 'النِّصَاب de l\'argent' },
-            { t: 'p', v: '"لا زكاة من الفضة في أقل من مائتي درهم" — pas de الزَّكَاة sur l\'argent en deçà de 200 dirhams (= 5 awāqī). Sur 200 dirhams : on sort 5 dirhams (= 2,5%). Pour ce qui dépasse, on calcule proportionnellement.' },
+            { t: 'lead', v: 'Chaque type de bien soumis à Zakāt (الزَّكَاة) Niṣāb (النِّصَاب) Zakāt (الزَّكَاة) n\'est pas obligatoire. La Risāla précise ces seuils avec détail.' },
+            { t: 'h', v: 'Niṣāb (النِّصَاب) des récoltes agricoles' },
+            { t: 'p', v: '"لا زكاة من الحب والثمر في أقل من خمسة أوسق" — Zakāt (الزَّكَاة) sur les grains et les fruits en deçà de 5 awsāq. Un الوَسق = 60 ṣāʿs (le ṣāʿ du Prophète ﷺ = 4 mudd). Cela représente environ 653 kg de blé selon les estimations modernes. Le taux est de 1/10 (ʿushr) si irrigué par les pluies, et 1/20 si irrigué artificiellement.' },
+            { t: 'h', v: 'Niṣāb (النِّصَاب) de l\'or' },
+            { t: 'p', v: '"لا زكاة من الذهب في أقل من عشرين دينارًا" — Zakāt (الزَّكَاة) sur l\'or en deçà de 20 dinars. Sur 20 dinars ou plus, on sort le rub\' al-ʿushr (1/4 du dixième = 2,5%). Si le montant dépasse 20, on calcule proportionnellement.' },
+            { t: 'ar', v: 'لَا زَكَاةَ مِنَ الذَّهَبِ فِي أَقَلَّ مِن عِشرِينَ دِينَارًا', n: '« Pas de al-zakāt (الزَّكَاة) sur l\'or en deçà de vingt dinars. » — Risāla' },
+            { t: 'h', v: 'Niṣāb (النِّصَاب) de l\'argent' },
+            { t: 'p', v: '"لا زكاة من الفضة في أقل من مائتي درهم" — Zakāt (الزَّكَاة) sur l\'argent en deçà de 200 dirhams (= 5 awāqī). Sur 200 dirhams : on sort 5 dirhams (= 2,5%). Pour ce qui dépasse, on calcule proportionnellement.' },
             { t: 'h', v: 'Combinaison de l\'or et l\'argent' },
-            { t: 'p', v: '"يُجمع الذهب والفضة في الزكاة" — l\'or et l\'argent se combinent pour atteindre le النِّصَاب. Exemple : si quelqu\'un possède 100 dirhams d\'argent et 10 dinars d\'or, il combine les deux et sort la الزَّكَاة sur l\'ensemble.' },
-            { t: 'note', v: 'Le taux de الزَّكَاة sur l\'or, l\'argent et les marchandises de commerce est uniformément le rub\' al-ʿushr = 2,5% du capital.' }
+            { t: 'p', v: '"يُجمع الذهب والفضة في Zakāt (الزكاة)" — l\'or et l\'Niṣāb (النِّصَاب). Exemple : si quelqu\'un possède 100 dirhams d\'argent et 10 dinars d\'or, Zakāt (الزَّكَاة) sur l\'ensemble.' },
+            { t: 'note', v: 'Zakāt (الزَّكَاة) sur l\'or, l\'argent et les marchandises de commerce est uniformément le rub\' al-ʿushr = 2,5% du capital.' }
           ]
         },
 
         {
           id: 'zak-03',
-          title: 'Les Biens Soumis à la الزَّكَاة',
+          title: 'Les Biens Soumis à Zakāt (الزَّكَاة)',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La Risāla détaille les catégories de biens soumis à la الزَّكَاة, avec les règles de combinaison (ḍamm) des denrées similaires et les cas particuliers.' },
+            { t: 'lead', v: 'La Risāla détaille les catégories de biens soumis à Zakāt (الزَّكَاة), avec les règles de combinaison (ḍamm) des denrées similaires et les cas particuliers.' },
             { t: 'h', v: 'Les récoltes agricoles — règles de combinaison' },
             { t: 'ul', v: [
-              '<strong>Combinables :</strong> le blé (qamḥ), l\'orge (shaʿīr) et le sult (orge fine) se combinent dans le calcul du النِّصَاب.',
+              '<strong>Combinables :</strong> le blé (qamḥ), l\'orge (shaʿīr) et le sult (orge fine) Niṣāb (النِّصَاب).',
               '<strong>Combinables :</strong> toutes les variétés de légumineuses (qiṭالنِّيَّة) entre elles.',
               '<strong>Combinables :</strong> toutes les variétés de dattes entre elles.',
               '<strong>Non combinables entre eux :</strong> le riz, le millet (dukhn), le sorgho (dhura) — chacun est un type à part et ne se combine pas avec les autres.',
-              '<strong>Olives :</strong> soumises à la الزَّكَاة si elles atteignent 5 awsāq d\'huile.',
-              '<strong>Fruits et légumes frais :</strong> pas de الزَّكَاة sur eux.'
+              '<strong>Olives :</strong> soumises à Zakāt (الزَّكَاة) si elles atteignent 5 awsāq d\'huile.',
+              '<strong>Fruits et légumes frais :</strong> Zakāt (الزَّكَاة) sur eux.'
             ] },
             { t: 'h', v: 'Les marchandises de commerce (ʿurūḍ al-tijāra)' },
-            { t: 'p', v: 'Pas de الزَّكَاة sur les marchandises détenues simplement, à moins qu\'elles ne soient destinées au commerce. Si elles sont vendues après un الحَوْل ou plus, la الزَّكَاة est due sur leur prix de vente — pour un seul الحَوْل, quelle que soit la durée de détention précédant la vente.' },
+            { t: 'p', v: 'Zakāt (الزَّكَاة) sur les marchandises détenues simplement, à moins qu\'elles ne soient destinées au commerce. Si elles sont vendues après un الحَوْل ou plus, Zakāt (الزَّكَاة) est due sur leur prix de vente — pour un seul الحَوْل, quelle que soit la durée de détention précédant la vente.' },
             { t: 'h', v: 'Les mines (maʿdin)' },
-            { t: 'p', v: 'La الزَّكَاة est due sur ce qui sort d\'une mine d\'or ou d\'argent si le poids atteint 20 dinars d\'or ou 5 awāqī d\'argent. Elle se calcule au moment de l\'extraction, au taux de rub\' al-ʿushr (2,5%). Si la mine est continue, tout ce qui en sort est ajouté au précédent. Si elle s\'arrête et qu\'un autre en prend possession, on recommence à zéro.' },
+            { t: 'p', v: 'Zakāt (الزَّكَاة) est due sur ce qui sort d\'une mine d\'or ou d\'argent si le poids atteint 20 dinars d\'or ou 5 awāqī d\'argent. Elle se calcule au moment de l\'extraction, au taux de rub\' al-ʿushr (2,5%). Si la mine est continue, tout ce qui en sort est ajouté au précédent. Si elle s\'arrête et qu\'un autre en prend possession, on recommence à zéro.' },
             { t: 'h', v: 'Les troupeaux (المَاشِيَة)' },
             { t: 'ul', v: [
-              'La Risāla précise les النِّصَاب pour les chameaux, les bovins et les ovins selon des tableaux précis.',
-              'Ne sont pas acceptés en paiement de الزَّكَاة : les jeunes animaux, les bêtes malades, les vieux animaux, les femelles gestantes, les mâles reproducteurs et les meilleurs animaux du troupeau.',
-              'La الزَّكَاة n\'est pas due sur les animaux nourris artificiellement (ʿalab) uniquement.'
+              'La Risāla préNiṣāb (النِّصَاب) pour les chameaux, les bovins et les ovins selon des tableaux précis.',
+              'Ne sont pas acceptéZakāt (الزَّكَاة) : les jeunes animaux, les bêtes malades, les vieux animaux, les femelles gestantes, les mâles reproducteurs et les meilleurs animaux du troupeau.',
+              'Zakāt (الزَّكَاة) n\'est pas due sur les animaux nourris artificiellement (ʿalab) uniquement.'
             ] }
           ]
         },
 
         {
           id: 'zak-04',
-          title: 'La الزَّكَاة al-Fiṭr',
+          title: 'Zakāt (الزَّكَاة) al-Fiṭr',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La الزَّكَاة al-Fiṭr est une obligation particulière liée à la fin du mois de Ramadan. La Risāla en précise le statut, le montant, les bénéficiaires et le moment d\'acquittement.' },
-            { t: 'ar', v: 'وَزَكَاةُ الفِطرِ سُنَّةٌ وَاجِبَةٌ، فَرَضَهَا رَسُولُ الله ﷺ عَلَى كُلِّ كَبِيرٍ أَو صَغِيرٍ، ذَكَرٍ أَو أُنثَى، حُرٍّ أَو عَبدٍ مِنَ المُسلِمِينَ صَاعًا عَن كُلِّ نَفسٍ', n: '« La الزَّكَاة al-Fiṭr est une السُّنَّة obligatoire. Elle a été imposée par le Prophète ﷺ sur tout Muslim, grand ou petit, homme ou femme, libre ou serviteur — un ṣāʿ par personne. »' },
+            { t: 'lead', v: 'Zakāt (الزَّكَاة) al-Fiṭr est une obligation particulière liée à la fin du mois de Ramadan. La Risāla en précise le statut, le montant, les bénéficiaires et le moment d\'acquittement.' },
+            { t: 'ar', v: 'وَزَكَاةُ الفِطرِ سُنَّةٌ وَاجِبَةٌ، فَرَضَهَا رَسُولُ الله ﷺ عَلَى كُلِّ كَبِيرٍ أَو صَغِيرٍ، ذَكَرٍ أَو أُنثَى، حُرٍّ أَو عَبدٍ مِنَ المُسلِمِينَ صَاعًا عَن كُلِّ نَفسٍ', n: '« La al-zakāt (الزَّكَاة) al-Fiṭr est une السُّنَّة obligatoire. Elle a été imposée par le Prophète ﷺ sur tout Muslim, grand ou petit, homme ou femme, libre ou serviteur — un ṣāʿ par personne. »' },
             { t: 'h', v: 'Statut, montant et responsabilités' },
             { t: 'ul', v: [
-              '<strong>Statut :</strong> السُّنَّة وَاجِبa (السُّنَّة obligatoire).',
+              '<strong>Statut :</strong> Sunna (السُّنَّة) Wājib (وَاجِب)a (السُّنَّة obligatoire).',
               '<strong>Montant :</strong> un ṣāʿ (= 4 mudd selon le ṣāʿ du Prophète ﷺ) par personne.',
-              '<strong>Responsabilité :</strong> le maître acquitte la الزَّكَاة al-Fiṭr de son serviteur (mmlūk). Le père acquitte celle de son enfant mineur qui n\'a pas de biens propres.',
+              '<strong>Responsabilité :</strong> le maîZakāt (الزَّكَاة) al-Fiṭr de son serviteur (mmlūk). Le père acquitte celle de son enfant mineur qui n\'a pas de biens propres.',
               'Le chef de famille l\'acquitte aussi pour son épouse et les personnes à sa charge.'
             ] },
             { t: 'h', v: 'De quoi peut-elle être acquittée ?' },
@@ -3406,11 +3406,11 @@ const DEBUTANT = {
             { t: 'ul', v: [
               '<strong>Temps d\'obligation :</strong> le lever de l\'aube (الفَجْر) du jour de l\'Eid al-Fiṭr, selon Ibn al-Qāsim et ce que Zurrūq établit comme l\'avis dominant de l\'école.',
               '<strong>Il est permis</strong> de l\'acquitter un ou deux jours avant l\'Eid.',
-              '<strong>السُّنَّة :</strong> l\'acquitter avant d\'aller sur le lieu de la prière de l\'Eid.'
+              '<strong>Sunna (السُّنَّة) :</strong> l\'acquitter avant d\'aller sur le lieu de la prière de l\'Eid.'
             ] },
             { t: 'h', v: 'Pratique recommandée le jour de l\'Eid' },
             { t: 'p', v: 'Il est recommandé pour l\'Eid al-Fiṭr de manger avant d\'aller à la prière. Pour l\'Eid al-Adha, on n\'est pas obligé de manger avant (on attend de manger de l\'animal sacrifié). Il est recommandé dans les deux Eid de prendre un chemin différent à l\'aller et au retour.' },
-            { t: 'note', v: 'Différence entre l\'Eid al-Fiṭr et l\'Eid al-Adha : manger avant la prière est السُّنَّة pour l\'Eid al-Fiṭr, mais pas pour l\'Eid al-Adha.' }
+            { t: 'note', v: 'Différence entre l\'Eid al-Fiṭr et l\'Eid al-Adha : manger avant la prièSunna (السُّنَّة) pour l\'Eid al-Fiṭr, mais pas pour l\'Eid al-Adha.' }
           ]
         },
 
@@ -3419,12 +3419,12 @@ const DEBUTANT = {
           title: 'Les Bénéficiaires et Règles de Distribution',
           status: 'available',
           content: [
-            { t: 'lead', v: 'La distribution de la الزَّكَاة obéit à des règles précises. La Risāla mentionne les règles de partenariat dans les troupeaux (khulṭāʾ) et ce qui ne peut pas être pris en الزَّكَاة.' },
+            { t: 'lead', v: 'Zakāt (الزَّكَاة) obéit à des règles précises. La Risāla mentionne les règles de partenariat dans les troupeaux (khulṭāʾ) et ce qui ne peut pas êZakāt (الزَّكَاة).' },
             { t: 'h', v: 'Les huit catégories de bénéficiaires (Coran 9:60)' },
             { t: 'ul', v: [
               '<strong>1. Al-Fuqarāʾ</strong> — les pauvres (sans ressources suffisantes).',
               '<strong>2. Al-Masākīn</strong> — les nécessiteux (avec quelques ressources insuffisantes).',
-              '<strong>3. Al-ʿĀmilīn ʿalayhā</strong> — les collecteurs de la الزَّكَاة.',
+              '<strong>3. Al-ʿĀmilīn ʿalayhā</strong> — Zakāt (الزَّكَاة).',
               '<strong>4. Al-Muʾallafa qulūbuhum</strong> — ceux dont les cœurs sont à gagner à l\'Islam.',
               '<strong>5. Al-Riqāb</strong> — l\'affranchissement des esclaves.',
               '<strong>6. Al-Ghārimīn</strong> — les endettés incapables de rembourser.',
@@ -3432,8 +3432,8 @@ const DEBUTANT = {
               '<strong>8. Ibn al-Sabīl</strong> — le voyageur sans ressources.'
             ] },
             { t: 'h', v: 'La règle des partenaires (khulṭāʾ)' },
-            { t: 'p', v: '"كل خليطين فإنهما يتزادان بينهما بالسوية" — deux partenaires dans l\'élevage se compensent mutuellement de façon équitable. Il n\'y a pas de الزَّكَاة sur celui dont la part personnelle n\'atteint pas le النِّصَاب. On ne doit ni séparer ce qui est réuni ni réunir ce qui est séparé pour avantager ou désavantager la الزَّكَاة — surtout en fin de الحَوْل.' },
-            { t: 'h', v: 'Ce qui ne peut pas être prélevé en الزَّكَاة' },
+            { t: 'p', v: '"كل خليطين فإنهما يتزادان بينهما بالسوية" — deux partenaires dans l\'élevage se compensent mutuellement de façon équitable. Il n\'Zakāt (الزَّكَاة) sur celui dont la part personnelle n\'Niṣāb (النِّصَاب). On ne doit ni séparer ce qui est réuni ni réunir ce qui est séparé pour avantager ou déZakāt (الزَّكَاة) — surtout en fin de الحَوْل.' },
+            { t: 'h', v: 'Ce qui ne peut pas être prélevé Zakāt (الزَّكَاة)' },
             { t: 'ul', v: [
               'Les veaux (ʿajājīl) dans les bovins, ni les jeunes chameaux (fiṣlān) dans les chameaux — ils sont comptabilisés mais pas pris.',
               'Le bouc reproducteur (tays).',
@@ -3443,7 +3443,7 @@ const DEBUTANT = {
               'La brebis nourricière.',
               'Les meilleurs animaux du troupeau.'
             ] },
-            { t: 'note', v: 'Principe clé : la الزَّكَاة doit être prélevée sur un animal de valeur moyenne du troupeau, sans prendre ni le meilleur ni le plus mauvais. Le collecteur ne peut pas prendre ce qu\'il veut, ni le propriétaire donner le moins bon.' }
+            { t: 'note', v: 'Principe clé : Zakāt (الزَّكَاة) doit être prélevée sur un animal de valeur moyenne du troupeau, sans prendre ni le meilleur ni le plus mauvais. Le collecteur ne peut pas prendre ce qu\'il veut, ni le propriétaire donner le moins bon.' }
           ]
         },
 
@@ -3551,8 +3551,8 @@ const DEBUTANT = {
       ],
 
       quiz: {
-        id: 'quiz-الزَّكَاة',
-        title: 'Questionnaire — La الزَّكَاة',
+        id: 'quiz-al-zakāt (الزَّكَاة)',
+        title: 'Questionnaire — Zakāt (الزَّكَاة)',
         status: 'available',
         score: null,
         questions: [
@@ -4070,7 +4070,7 @@ const DEBUTANT = {
               {id:"d",text:"Oui \u2014 m\u00eame 2 semaines avant"},
             ],
             correctId: "b",
-            explanation: "Doctrine-malikite.fr confirme : il est permis de donner la \u0632\u064e\u0643\u064e\u0627\u0629\u064f \u0627\u0644\u0641\u0650\u0637\u0652\u0631 un ou deux jours avant l'Eid. La السُّنَّة est de la donner AVANT la pri\u00e8re de l'Eid."
+            explanation: "Doctrine-malikite.fr confirme : il est permis de donner la \u0632\u064e\u0643\u064e\u0627\u0629\u064f \u0627\u0644\u0641\u0650\u0637\u0652\u0631 un ou deux jours avant l'Eid. Sunna (السُّنَّة) est de la donner AVANT la pri\u00e8re de l'Eid."
           },
           {
             id: "q-zak-44",
@@ -4167,7 +4167,7 @@ const DEBUTANT = {
             {id:"d",text:"1 \u062d\u0650\u0642\u064e\u0651\u0629 (chamelle ayant compl\u00e9t\u00e9 3 ans)"}
             ],
             correctId: "b",
-            explanation: "Pour 25 \u00e0 35 chameaux : 1 \u0628\u0650\u0646\u062a\u064f \u0645\u064e\u062e\u064e\u0627\u0636 (chamelle qui a achev\u00e9 1 an et entr\u00e9 dans sa 2\u00e8me ann\u00e9e). Pour 36-45 : 1 \u0628\u0650\u0646\u062a\u064f \u0644\u064e\u0628\u064f\u0648\u0646. Pour 46-60 : 1 \u062d\u0650\u0642\u064e\u0651\u0629. Pour 61-75 : 1 \u062c\u064e\u0630\u064e\u0639\u064e\u0629. Ces tableaux sont donn\u00e9s par la Ris\u0101la d'Ibn Ab\u012b Zayd et la المُدَوَّنَة."
+            explanation: "Pour 25 \u00e0 35 chameaux : 1 \u0628\u0650\u0646\u062a\u064f \u0645\u064e\u062e\u064e\u0627\u0636 (chamelle qui a achev\u00e9 1 an et entr\u00e9 dans sa 2\u00e8me ann\u00e9e). Pour 36-45 : 1 \u0628\u0650\u0646\u062a\u064f \u0644\u064e\u0628\u064f\u0648\u0646. Pour 46-60 : 1 \u062d\u0650\u0642\u064e\u0651\u0629. Pour 61-75 : 1 \u062c\u064e\u0630\u064e\u0639\u064e\u0629. Ces tableaux sont donn\u00e9s par la Ris\u0101la d'Ibn Ab\u012b Zayd et la Mudawwana (المُدَوَّنَة)."
           },
           {
             id: "q-zak-52",
@@ -4198,12 +4198,12 @@ const DEBUTANT = {
             text: "La \u0632\u064e\u0643\u064e\u0627\u0629 s'applique-t-elle aux animaux nourris artificiellement (\u0627\u0644\u0645\u064e\u0639\u0644\u064f\u0648\u0641\u064e\u0629) toute l'ann\u00e9e ?",
             choices: [
             {id:"a",text:"Oui \u2014 comme tous les troupeaux"},
-            {id:"b",text:"Non \u2014 selon l'Im\u0101m M\u0101lik dans la المُدَوَّنَة, les \u0627\u0644\u0645\u0639\u0644\u0648\u0641\u0629 (nourris artificiellement) sont exempt\u00e9s"},
+            {id:"b",text:"Non \u2014 selon l'Im\u0101m M\u0101lik dans la Mudawwana (المُدَوَّنَة), les \u0627\u0644\u0645\u0639\u0644\u0648\u0641\u0629 (nourris artificiellement) sont exempt\u00e9s"},
             {id:"c",text:"Oui mais \u00e0 1,25% au lieu de 2,5%"},
             {id:"d",text:"Seulement pour les chameaux"}
             ],
             correctId: "b",
-            explanation: "Doctrine-malikite.fr : selon l'Im\u0101m M\u0101lik dans la المُدَوَّنَة, la \u0632\u064e\u0643\u064e\u0627\u0629 ne s'applique qu'aux \u0627\u0644\u0645\u064e\u0627\u0634\u0650\u064a\u064e\u0629 \u0627\u0644\u0633\u064e\u0651\u0627\u0626\u0650\u0645\u064e\u0629 (animaux qui p\u00e2turent librement la majorit\u00e9 de l'ann\u00e9e). Les animaux nourris artificiellement toute l'ann\u00e9e (\u0645\u0639\u0644\u0648\u0641\u0629) sont exempt\u00e9s dans le rite malikite."
+            explanation: "Doctrine-malikite.fr : selon l'Im\u0101m M\u0101lik dans la Mudawwana (المُدَوَّنَة), la \u0632\u064e\u0643\u064e\u0627\u0629 ne s'applique qu'aux \u0627\u0644\u0645\u064e\u0627\u0634\u0650\u064a\u064e\u0629 \u0627\u0644\u0633\u064e\u0651\u0627\u0626\u0650\u0645\u064e\u0629 (animaux qui p\u00e2turent librement la majorit\u00e9 de l'ann\u00e9e). Les animaux nourris artificiellement toute l'ann\u00e9e (\u0645\u0639\u0644\u0648\u0641\u0629) sont exempt\u00e9s dans le rite malikite."
           },
           {
             id: "q-zak-55",
@@ -4281,12 +4281,12 @@ const DEBUTANT = {
       },
 
       badge: {
-        id: 'badge-الزَّكَاة',
+        id: 'badge-al-zakāt (الزَّكَاة)',
         title: 'Purificateur de Biens',
         arabicTitle: 'مزكّي الأموال',
         icon: 'scales',
         color: 'silver',
-        unlockCondition: 'Questionnaire "La الزَّكَاة (الزَّكَاة)" avec un score ≥ 85 %'
+        unlockCondition: 'Questionnaire "Zakāt (الزَّكَاة) (الزَّكَاة)" avec un score ≥ 85 %'
       }
     }
 
@@ -4300,7 +4300,7 @@ const LEVELS = [
     label: 'Débutant',
     arabicLabel: 'المستوى الأوّل',
     color: '#1A6B68',
-    description: 'Les fondements de la pratique islamique : purification, prière, jeûne et الزَّكَاة selon le rite malikite.',
+    description: 'Les fondements de la pratique islamique : purification, prière, jeûZakāt (الزَّكَاة) selon le rite malikite.',
     subjectCount: 4,
     locked: false
   },
@@ -4328,7 +4328,7 @@ const LEVELS = [
     arabicLabel: 'المستوى الرابع',
     color: '#6A1A6A',
     description: 'Maîtrise complète : uṣūl al-الفِقْه malikite, divergences au sein de l\'école et ijtihād.',
-    subjectCount: 0,
-    locked: true
+    subjectCount: 7,
+    locked: false
   }
 ];

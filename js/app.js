@@ -145,6 +145,12 @@ const Renderer = (() => {
                   const total = AVANCE.subjects.length;
                   return { done, total, percent: Math.round(done / total * 100) };
                 })()
+            : (lvl.id === 'expert' && typeof EXPERT !== 'undefined')
+              ? (() => {
+                  const done = EXPERT.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
+                  const total = EXPERT.subjects.length;
+                  return { done, total, percent: Math.round(done / total * 100) };
+                })()
             : { done: 0, total: lvl.subjectCount, percent: 0 };
           return `
           <div class="level-card ${lvl.locked ? 'level-card--locked' : ''}"
@@ -220,8 +226,10 @@ const Renderer = (() => {
       { data: DEBUTANT,      label: 'Niveau Débutant',       color: '#1A6B68' },
       ...(typeof INTERMEDIAIRE !== 'undefined'
           ? [{ data: INTERMEDIAIRE, label: 'Niveau Intermédiaire', color: '#8A620A' }] : []),
-      ...(typeof AVANCE !== 'undefined'
-          ? [{ data: AVANCE,        label: 'Niveau Avancé',        color: '#2A5080' }] : [])
+      ...(typeof AVANCE  !== 'undefined'
+          ? [{ data: AVANCE,  label: 'Niveau Avancé',  color: '#2A5080' }] : []),
+      ...(typeof EXPERT !== 'undefined'
+          ? [{ data: EXPERT, label: 'Niveau Expert', color: '#6B2D5E' }] : [])
     ];
     const allQ = allLevels.flatMap(({ data }) => data.subjects.map(subj => {
       const score   = Progress.getScore(subj.quiz.id);
@@ -388,6 +396,7 @@ const Renderer = (() => {
   function subject(subjectId, level) {
     const lvlData = (level === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined') ? INTERMEDIAIRE
                   : (level === 'avance'        && typeof AVANCE        !== 'undefined') ? AVANCE
+                  : (level === 'expert'        && typeof EXPERT        !== 'undefined') ? EXPERT
                   : DEBUTANT;
     const subj = lvlData.subjects.find(s => s.id === subjectId);
     if (!subj) return;
@@ -457,6 +466,7 @@ const Renderer = (() => {
   function lesson(lessonId, subjectId, level) {
     const lvlData = (level === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined') ? INTERMEDIAIRE
                   : (level === 'avance'        && typeof AVANCE        !== 'undefined') ? AVANCE
+                  : (level === 'expert'        && typeof EXPERT        !== 'undefined') ? EXPERT
                   : DEBUTANT;
     const subj      = lvlData.subjects.find(s => s.id === subjectId);
     const lessonData = subj?.lessons.find(l => l.id === lessonId);
@@ -500,7 +510,8 @@ const Renderer = (() => {
     const allLvls = [
       { data: DEBUTANT, route: 'debutant' },
       ...(typeof INTERMEDIAIRE !== 'undefined' ? [{ data: INTERMEDIAIRE, route: 'intermediaire' }] : []),
-      ...(typeof AVANCE        !== 'undefined' ? [{ data: AVANCE,        route: 'avance'        }] : [])
+      ...(typeof AVANCE        !== 'undefined' ? [{ data: AVANCE,        route: 'avance'        }] : []),
+      ...(typeof EXPERT        !== 'undefined' ? [{ data: EXPERT,        route: 'expert'        }] : [])
     ];
 
     const renderLevel = ({ data, route }) => {
@@ -554,7 +565,55 @@ const Renderer = (() => {
       ${allLvls.map(renderLevel).join('')}`;
   }
 
-  return { home, levels, debutant, intermediaire, avance, quizHub, subject, lesson, badges, progress };
+  /* ── Niveau Expert ──────────────────────────────────── */
+  function expert() {
+    if (typeof EXPERT === 'undefined') return;
+    const lvl = EXPERT;
+    document.getElementById('page-expert').innerHTML = `
+      <div class="page-header">
+        <span class="page-header__eyebrow">${lvl.arabicLabel}</span>
+        <h1 class="page-header__title">Niveau Expert</h1>
+        <p class="page-header__desc">${lvl.description}</p>
+        <div style="margin-top:var(--sp-3)">
+          <span class="lesson-badge-source">Source : ${lvl.source}</span>
+        </div>
+      </div>
+      <div class="grid-subjects">
+        ${lvl.subjects.map(subj => {
+          const score    = Progress.getScore(subj.quiz.id);
+          const hasBadge = Progress.hasBadge(subj.badge.id);
+          const avail    = subj.lessons.filter(l => l.status === 'available').length;
+          const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
+          const safeT    = subj.title.replace(/'/g, '&#39;');
+          const locked   = subj.quiz.status === 'locked' && avail === 0;
+          return `
+          <div class="subject-card ${locked ? 'subject-card--locked' : ''}"
+               ${!locked ? `onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'expert',subjectTitle:'${safeT}'})"` : ''}>
+            <div style="display:flex;align-items:flex-start;justify-content:space-between">
+              <div class="subject-card__icon-wrap">${Icons.byName(subj.icon)}</div>
+              ${locked ? `<span class="chip chip--muted">${Icons.lock()} À venir</span>`
+                : hasBadge ? `<span class="chip chip--gold">✦ Badge obtenu</span>`
+                : score !== null ? `<span class="chip chip--${score >= 85 ? 'success' : 'muted'}">${score}%</span>`
+                : avail ? `<span class="chip chip--teal">${avail} leçons</span>`
+                : ''}
+            </div>
+            <div class="subject-card__arabic">${subj.arabicTitle}</div>
+            <div class="subject-card__title">${subj.title}</div>
+            <div class="subject-card__desc">${subj.description}</div>
+            <div class="subject-card__footer">
+              <span class="subject-card__lesson-count">
+                ${locked ? 'Prochainement' : `${avail}/${subj.lessons.length} leçons dispo.`}
+              </span>
+              <span class="subject-card__score ${score !== null && score >= 85 ? 'has-score' : ''}">
+                ${score !== null ? `${score}%` : locked ? '' : Icons.arrowR()}
+              </span>
+            </div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  return { home, levels, debutant, intermediaire, avance, expert, quizHub, subject, lesson, badges, progress };
 })();
 
 /* ══════════════════════════════════════════════════════════
