@@ -1,46 +1,124 @@
 /* ════════════════════════════════════════════════════════
    BRIQUE: Moteur de Quiz (quiz.js)
-   Rôle   : Question par question, score, résultat, badges.
+   Rôle   : Multi-choix, navigation, validation, reset.
    Dépend : progress.js, router.js, Icons (app.js)
    ════════════════════════════════════════════════════════ */
 
 const Quiz = (() => {
   let _s = {
-    questions: [], currentIdx: 0, answers: {},
-    quizId: null, subjectTitle: '', origin: 'subject', locked: false
+    questions: [], currentIdx: 0,
+    answers: {},   // {qid: {selectedIds:[], isCorrect:bool}}
+    pending: [],   // selected ids before validate (current question)
+    quizId: null, subjectTitle: '', origin: 'subject'
   };
 
-  /* ── Démarrer ────────────────────────────────────────── */
-  function start(quizData, subjectTitle, origin = 'subject') {
-    if (!quizData || !quizData.questions.length) {
-      _renderEmpty(subjectTitle, origin);
-      return;
-    }
-    _s = {
-      questions: quizData.questions, currentIdx: 0, answers: {},
-      quizId: quizData.id, subjectTitle, origin, locked: false
-    };
-    Router.navigate('quiz');
-    _renderQ();
+  /* ─────────────────────────────────────────────────────
+     DÉMARRER PAR ID (évite le JSON inline dans onclick)
+  ───────────────────────────────────────────────────── */
+  function startById(quizId, subjectTitle, origin = 'subject') {
+    // Collect all subjects from all available levels
+    const allSubjects = [
+      ...(typeof DEBUTANT      !== 'undefined' ? DEBUTANT.subjects      : []),
+      ...(typeof INTERMEDIAIRE !== 'undefined' ? INTERMEDIAIRE.subjects  : []),
+      ...(typeof AVANCE        !== 'undefined' ? AVANCE.subjects         : []),
+      ...(typeof EXPERT        !== 'undefined' ? EXPERT.subjects         : []),
+    ];
+    const subj = allSubjects.find(s => s.quiz.id === quizId);
+    if (!subj) { console.warn('Quiz not found:', quizId); return; }
+    start(subj.quiz, subjectTitle, origin);
   }
 
-  /* ── Rendre la question courante ─────────────────────── */
-  function _renderQ() {
-    const q   = _s.questions[_s.currentIdx];
-    const pct = Math.round((_s.currentIdx / _s.questions.length) * 100);
-    const letters = ['A','B','C','D','E'];
+  /* ─────────────────────────────────────────────────────
+     DÉMARRER
+  ───────────────────────────────────────────────────── */
+  function start(quizData, subjectTitle, origin = 'subject') {
+    if (!quizData?.questions?.length) { _renderEmpty(subjectTitle, origin); return; }
+    _s = {
+      questions: quizData.questions, currentIdx: 0,
+      answers: {}, pending: [],
+      quizId: quizData.id, subjectTitle, origin
+    };
+    Router.navigate('quiz');
+    _render();
+  }
+
+  /* ─────────────────────────────────────────────────────
+     RENDU PRINCIPAL
+  ───────────────────────────────────────────────────── */
+  function _render() {
+    const q       = _s.questions[_s.currentIdx];
+    const pct     = Math.round((_s.currentIdx / _s.questions.length) * 100);
+    const isMulti = q.type === 'multiple' || Array.isArray(q.correctIds);
+    const correct = isMulti ? (q.correctIds || []) : [q.correctId];
+    const answered = _s.answers[q.id];
+    const letters  = ['A','B','C','D','E'];
+
+    const choicesHtml = q.choices.map((c, i) => {
+      let cls = 'qz-choice';
+      if (answered) {
+        const wasSelected = answered.selectedIds.includes(c.id);
+        const isRight     = correct.includes(c.id);
+        if (isRight)                       cls += ' qz-choice--correct';
+        else if (wasSelected && !isRight)  cls += ' qz-choice--wrong';
+        else                               cls += ' qz-choice--dim';
+      } else {
+        if (_s.pending.includes(c.id)) cls += ' qz-choice--selected';
+      }
+      const disabled = answered ? 'disabled' : '';
+      return `
+        <button class="${cls}" data-choice="${c.id}" ${disabled}
+                onclick="Quiz._select('${q.id}','${c.id}',${isMulti})">
+          <span class="qz-choice-letter">${letters[i]}</span>
+          <span class="qz-choice-text">${c.text}</span>
+          ${answered && correct.includes(c.id) ? '<span class="qz-check">✓</span>' : ''}
+          ${answered && answered.selectedIds.includes(c.id) && !correct.includes(c.id)
+            ? '<span class="qz-check qz-check--x">✗</span>' : ''}
+        </button>`;
+    }).join('');
+
+    const explHtml = answered && q.explanation ? `
+      <div class="qz-explanation">
+        <div class="qz-explanation-label">${answered.isCorrect ? '✓ Bonne réponse' : '✗ À retenir'}</div>
+        <div class="qz-explanation-text">${q.explanation}</div>
+      </div>` : '';
+
+    const footerHtml = answered ? `
+      <div class="qz-footer">
+        ${_s.currentIdx > 0
+          ? `<button class="btn btn--ghost btn--sm" onclick="Quiz._prev()">
+              ← Question précédente</button>`
+          : '<span></span>'}
+        <button class="btn btn--primary" onclick="Quiz._next()">
+          ${_s.currentIdx + 1 < _s.questions.length ? 'Suivante →' : 'Voir le résultat'}
+        </button>
+      </div>` : `
+      <div class="qz-footer">
+        ${_s.currentIdx > 0
+          ? `<button class="btn btn--ghost btn--sm" onclick="Quiz._prev()">
+              ← Précédente</button>`
+          : '<span></span>'}
+        <button class="btn btn--primary" id="qz-validate"
+                ${_s.pending.length ? '' : 'disabled'}
+                onclick="Quiz._validate('${q.id}')">
+          Valider
+        </button>
+      </div>`;
+
+    const multiHint = isMulti
+      ? `<div class="qz-multi-hint">Plusieurs réponses possibles</div>` : '';
 
     document.getElementById('quiz-content').innerHTML = `
       <div class="qz-shell">
-
         <div class="qz-header">
           <button class="btn btn--ghost btn--sm" onclick="Quiz._quit()">
-            ${Icons.arrowL()} Quitter
+            ← Quitter
           </button>
           <div class="qz-meta">
             <span class="qz-subject">${_s.subjectTitle}</span>
             <span class="qz-counter">${_s.currentIdx + 1} / ${_s.questions.length}</span>
           </div>
+          <button class="btn btn--ghost btn--sm" onclick="Quiz._confirmReset()"
+                  title="Réinitialiser le questionnaire">↺ Reset</button>
         </div>
 
         <div class="qz-progress-track">
@@ -49,74 +127,97 @@ const Quiz = (() => {
 
         <div class="qz-question-wrap">
           <div class="qz-question-num">Question ${_s.currentIdx + 1}</div>
+          ${multiHint}
           <div class="qz-question-text">${q.text}</div>
         </div>
 
-        <div class="qz-choices">
-          ${q.choices.map((c, i) => `
-            <button class="qz-choice" data-choice="${c.id}"
-                    onclick="Quiz._answer('${q.id}','${c.id}','${q.correctId}')">
-              <span class="qz-choice-letter">${letters[i]}</span>
-              <span class="qz-choice-text">${c.text}</span>
-            </button>
-          `).join('')}
-        </div>
+        <div class="qz-choices">${choicesHtml}</div>
 
-        <div class="qz-explanation" id="qz-expl" style="display:none">
-          <div class="qz-explanation-label">Explication</div>
-          <div class="qz-explanation-text" id="qz-expl-text"></div>
-        </div>
-
-        <div class="qz-footer" id="qz-footer" style="display:none">
-          <button class="btn btn--primary" onclick="Quiz._next()">
-            ${_s.currentIdx + 1 < _s.questions.length
-              ? 'Question suivante' : 'Voir le résultat'}
-            ${Icons.arrowR()}
-          </button>
-        </div>
-
+        ${explHtml}
+        ${footerHtml}
       </div>`;
   }
 
-  /* ── Traiter une réponse ─────────────────────────────── */
-  function _answer(qid, choiceId, correctId) {
-    if (_s.locked) return;
-    _s.locked = true;
-    _s.answers[qid] = choiceId;
+  /* ─────────────────────────────────────────────────────
+     SÉLECTIONNER UNE RÉPONSE (avant validation)
+  ───────────────────────────────────────────────────── */
+  function _select(qid, choiceId, isMulti) {
+    if (_s.answers[qid]) return; // already answered
 
-    const isOk = choiceId === correctId;
-
-    document.querySelectorAll('.qz-choice').forEach(btn => {
-      btn.disabled = true;
-      const bid = btn.dataset.choice;
-      if (bid === correctId)              btn.classList.add('qz-choice--correct');
-      else if (bid === choiceId && !isOk) btn.classList.add('qz-choice--wrong');
-      else                                btn.classList.add('qz-choice--dim');
-    });
-
-    /* Explication */
-    const q = _s.questions[_s.currentIdx];
-    if (q.explanation) {
-      document.getElementById('qz-expl-text').textContent = q.explanation;
-      document.getElementById('qz-expl').style.display = 'block';
+    if (isMulti) {
+      const idx = _s.pending.indexOf(choiceId);
+      if (idx >= 0) _s.pending.splice(idx, 1);
+      else _s.pending.push(choiceId);
+    } else {
+      _s.pending = [choiceId];
     }
 
-    document.getElementById('qz-footer').style.display = 'flex';
+    // Update choice visual state without full re-render
+    const letters = ['A','B','C','D','E'];
+    document.querySelectorAll('.qz-choice').forEach((btn, i) => {
+      const cid = btn.dataset.choice;
+      btn.className = 'qz-choice' + (_s.pending.includes(cid) ? ' qz-choice--selected' : '');
+    });
+    const validateBtn = document.getElementById('qz-validate');
+    if (validateBtn) validateBtn.disabled = _s.pending.length === 0;
   }
 
-  /* ── Passer à la suivante ────────────────────────────── */
+  /* ─────────────────────────────────────────────────────
+     VALIDER
+  ───────────────────────────────────────────────────── */
+  function _validate(qid) {
+    if (!_s.pending.length || _s.answers[qid]) return;
+    const q       = _s.questions[_s.currentIdx];
+    const correct = q.correctIds ? [...q.correctIds] : [q.correctId];
+    const sel     = [..._s.pending];
+    const isOk    = sel.length === correct.length &&
+                    correct.every(id => sel.includes(id));
+
+    _s.answers[qid] = { selectedIds: sel, isCorrect: isOk };
+    _s.pending = [];
+    _render();
+  }
+
+  /* ─────────────────────────────────────────────────────
+     NAVIGATION
+  ───────────────────────────────────────────────────── */
   function _next() {
     _s.currentIdx++;
-    _s.locked = false;
-    _s.currentIdx < _s.questions.length ? _renderQ() : _showResult();
+    _s.pending = [];
+    if (_s.currentIdx < _s.questions.length) _render();
+    else _showResult();
   }
 
-  /* ── Résultat final ──────────────────────────────────── */
+  function _prev() {
+    if (_s.currentIdx > 0) {
+      _s.currentIdx--;
+      _s.pending = [];
+      _render();
+    }
+  }
+
+  /* ─────────────────────────────────────────────────────
+     RESET
+  ───────────────────────────────────────────────────── */
+  function _confirmReset() {
+    if (confirm('Réinitialiser ce questionnaire ? Toutes vos réponses seront effacées.')) {
+      _s.answers  = {};
+      _s.pending  = [];
+      _s.currentIdx = 0;
+      _render();
+    }
+  }
+
+  /* ─────────────────────────────────────────────────────
+     RÉSULTAT FINAL
+  ───────────────────────────────────────────────────── */
   function _showResult() {
     const { questions, answers, quizId, subjectTitle, origin } = _s;
+
     let correct = 0;
     const recap = questions.map(q => {
-      const ok = answers[q.id] === q.correctId;
+      const ans = answers[q.id];
+      const ok  = ans?.isCorrect || false;
       if (ok) correct++;
       return ok;
     });
@@ -125,98 +226,109 @@ const Quiz = (() => {
     const pass  = score >= 85;
     Progress.setScore(quizId, score);
 
-    /* Badge associé */
-    const subj  = DEBUTANT.subjects.find(s => s.quiz.id === quizId);
+    // Find badge across all level data
+    const allSources = [
+      ...(typeof DEBUTANT      !== 'undefined' ? DEBUTANT.subjects      : []),
+      ...(typeof INTERMEDIAIRE !== 'undefined' ? INTERMEDIAIRE.subjects  : []),
+      ...(typeof AVANCE        !== 'undefined' ? AVANCE.subjects         : []),
+      ...(typeof EXPERT        !== 'undefined' ? EXPERT.subjects         : []),
+    ];
+    const subj = allSources.find(s => s.quiz.id === quizId);
     const badge = subj?.badge;
-    const badgeJustEarned = pass && badge && Progress.hasBadge(badge.id);
+    const badgeEarned = badge && Progress.hasBadge(badge.id);
 
-    const backRoute = origin === 'hub' ? 'quiz-hub' : 'debutant';
+    const levelRoutes = {
+      'quiz-debutant':      'debutant',
+      'quiz-intermediaire': 'intermediaire',
+      'quiz-avance':        'avance',
+      'quiz-expert':        'expert',
+    };
+    const levelPrefix = quizId?.split('-').slice(0,2).join('-');
+    const backRoute = origin === 'hub'
+      ? 'quiz-hub'
+      : (levelRoutes[levelPrefix] || 'debutant');
     const backLabel = origin === 'hub' ? 'Tous les questionnaires' : 'Retour aux sujets';
 
     document.getElementById('quiz-content').innerHTML = `
       <div class="qz-result">
-
         <div class="qz-result-circle ${pass ? 'pass' : 'fail'}">
           <div class="qz-result-pct">${score}<span>%</span></div>
           <div class="qz-result-sub">${correct} / ${questions.length} correctes</div>
         </div>
 
-        ${badgeJustEarned ? `
-          <div class="qz-badge-earned">
+        ${badge ? `
+          <div class="qz-badge-earned ${pass ? '' : 'qz-badge-locked'}">
             <div class="qz-badge-icon">${Icons.byName(badge.icon)}</div>
             <div>
-              <div class="qz-badge-title">Badge débloqué ✦</div>
+              <div class="qz-badge-title">
+                ${pass && !badgeEarned ? 'Badge débloqué ✦'
+                  : pass ? 'Badge déjà obtenu ✦'
+                  : 'Badge non obtenu — 85 % requis'}
+              </div>
               <div class="qz-badge-name">${badge.title}</div>
             </div>
-          </div>
-        ` : !pass ? `
-          <div class="qz-fail-msg">
-            Il faut atteindre <strong>85 %</strong> pour obtenir le badge.<br>
-            Révisez les leçons puis réessayez !
-          </div>
-        ` : `
-          <div class="qz-badge-earned">
-            <div class="qz-badge-icon">${Icons.byName(badge?.icon || 'star8')}</div>
-            <div>
-              <div class="qz-badge-title">Badge déjà obtenu ✦</div>
-              <div class="qz-badge-name">${badge?.title || ''}</div>
-            </div>
-          </div>
-        `}
+          </div>` : ''}
 
         <div class="qz-recap">
-          <div class="qz-recap-title">Récapitulatif des réponses</div>
+          <div class="qz-recap-title">Récapitulatif</div>
           <div class="qz-recap-grid">
             ${recap.map((ok, i) => `
-              <div class="qz-recap-item ${ok ? 'ok' : 'ko'}" title="Question ${i+1}">
-                ${ok ? '✓' : '✗'}
-              </div>`).join('')}
+              <button class="qz-recap-item ${ok ? 'ok' : 'ko'}"
+                      onclick="Quiz._goTo(${i})" title="Question ${i+1}">
+                ${i+1}
+              </button>`).join('')}
           </div>
         </div>
 
         <div class="qz-result-actions">
           <button class="btn btn--outline" onclick="Router.navigate('${backRoute}')">
-            ${Icons.arrowL()} ${backLabel}
+            ← ${backLabel}
           </button>
           <button class="btn btn--primary" onclick="Quiz.retry()">
-            Réessayer
+            ↺ Réessayer
           </button>
           <button class="btn btn--ghost" onclick="Router.navigate('badges')">
-            ${Icons.badgeNav()} Mes badges
+            Mes badges
           </button>
         </div>
-
       </div>`;
   }
 
-  /* ── Quitter ─────────────────────────────────────────── */
+  function _goTo(idx) {
+    _s.currentIdx = idx;
+    _s.pending = [];
+    Router.navigate('quiz');
+    _render();
+  }
+
+  /* ─────────────────────────────────────────────────────
+     UTILITAIRES
+  ───────────────────────────────────────────────────── */
   function _quit() {
     if (_s.origin === 'hub') Router.navigate('quiz-hub');
     else Router.back();
   }
 
-  /* ── Réessayer ───────────────────────────────────────── */
   function retry() {
-    _s.currentIdx = 0;
     _s.answers    = {};
-    _s.locked     = false;
-    _renderQ();
+    _s.pending    = [];
+    _s.currentIdx = 0;
+    Router.navigate('quiz');
+    _render();
   }
 
-  /* ── Vide (pas encore de questions) ─────────────────── */
   function _renderEmpty(subjectTitle, origin) {
     Router.navigate('quiz');
     const back = origin === 'hub' ? 'quiz-hub' : 'debutant';
     document.getElementById('quiz-content').innerHTML = `
       <div class="qz-empty">
-        <div class="qz-empty-icon">${Icons.quiz()}</div>
         <h3>Questionnaire à venir</h3>
         <p>Les questions pour <strong>${subjectTitle}</strong> seront disponibles prochainement.</p>
         <button class="btn btn--outline" onclick="Router.navigate('${back}')">
-          ${Icons.arrowL()} Retour
+          ← Retour
         </button>
       </div>`;
   }
 
-  return { start, retry, _answer, _next, _quit };
+  return { start, startById, retry, _select, _validate, _next, _prev, _quit, _goTo, _confirmReset };
 })();

@@ -1,56 +1,47 @@
-/* ════════════════════════════════════════════════════════
-   BRIQUE: Données — Niveau Expert (expert.js)
-   Sources : Matn d'Ibn Āshir · Muwattaʾ · Bidāyat al-Mujtahid
-             doctrine-malikite.fr · Al-Ghazālī · Al-Shāṭibī
-   ST-1 (aqida) ✅ · ST-2 (usul + malikiath) ✅ · ST-3 à ST-5 en attente
-   ════════════════════════════════════════════════════════ */
-
+/* ═══ Données — Niveau Expert (expert.js) — COMPLET ═══ */
 const EXPERT = {
   id: 'expert',
   label: 'Expert',
   arabicLabel: 'المستوى الرابع',
   levelColor: '#6B2D5E',
-  source: 'Matn d\'Ibn Āshir · Muwattaʾ · Bidāyat al-Mujtahid · doctrine-malikite.fr',
+  source: "Matn d'Ibn Āshir · Muwattaʾ · Bidāyat al-Mujtahid · doctrine-malikite.fr",
   description: 'Maîtrise théologique et méthodologique : ʿAqīda ashʿarite, Uṣūl al-Fiqh mālikī, Sīra, Fiqh des minorités, bioéthique et jurisprudence comparée.',
-
   levelBadge: {
     id: 'badge-expert-or',
     title: 'Maître en Fiqh Malikite',
     arabicTitle: 'الفَقِيهُ المَالِكِيّ المُتَمَكِّن',
-    icon: 'star8',
-    color: 'gold',
-    unlockCondition: 'Obtenir ≥ 85 % de moyenne sur l\'ensemble des questionnaires du niveau Expert'
+    icon: 'star-a', color: 'gold',
+    unlockCondition: "Obtenir ≥ 85 % de moyenne sur l'ensemble des questionnaires Expert"
   },
-
   subjects: [
 
-    /* ═══ العَقِيدَة الأَشعَرِيَّة وTawḥīd (التَّوحِيد) ═══ */
+    /* ═══ العَقِيدَة الأَشعَرِيَّة والتَّوحِيد ═══ */
     {
       id: "aqida",
       title: "La Croyance Malikite-Ashʿarite",
       arabicTitle: "العَقِيدَة الأَشعَرِيَّة والتَّوحِيد",
-      icon: "star8",
-      description: "Le 1er pilier du Matn d'Ibn Āshir : Tawḥīd (التَّوحِيد), les 13 attributs divins, la méthode ashʿarite face aux sectes égarées et aux défis contemporains.",
+      icon: "star-a",
+      description: "Le 1er pilier du Matn d'Ibn Āshir : le Tawḥīd, les 13 attributs divins, la méthode ashʿarite face aux sectes égarées et aux défis contemporains.",
       source: "Matn d'Ibn Āshir (1er pilier) · doctrine-malikite.fr Le Dogme · Al-Ghazālī · Al-Juwaynī",
       badge: {
         id: 'badge-expert-aqida',
         title: "Théologien Malikite",
         arabicTitle: "عَالِمُ العَقِيدَة",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "العَقِيدَة الأَشعَرِيَّة وTawḥīd (التَّوحِيد)"
+        icon: "star-a", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire العَقِيدَة الأَشعَرِيَّة والتَّوحِيد'
       },
       lessons: [      {
         id: "aqd-01",
-        title: "Tawḥīd (التَّوحِيد) — L'Unicité Divine et ses Trois Dimensions",
+        title: "التَّوحِيد — L'Unicité Divine et ses Trois Dimensions",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Tawḥīd (التَّوحِيد) — l'attestation de l'Unicité d'Allah — est le fondement absolu de la religion islamique. Le Matn d'Ibn Āshir al-Mālikī en fait son premier et principal pilier. L'école ashʿarite, adoptée par l'immense majorité des savants malikites, Tawḥīd (التَّوحِيد) que tout Muslim doit connaître."},
+        {"t": "lead", "v": "التَّوحِيد — l'attestation de l'Unicité d'Allah — est le fondement absolu de la religion islamique. Le Matn d'Ibn Āshir al-Mālikī en fait son premier et principal pilier. L'école ashʿarite, adoptée par l'immense majorité des savants malikites, distingue trois dimensions du التَّوحِيد que tout Muslim doit connaître."},
         { t:'ar', v:"وَاجِبٌ عَلَى كُلِّ مُكَلَّفٍ شَرعًا مَعرِفَةُ مَا يَجِبُ فِي حَقِّ اللَّهِ وَمَا يَستَحِيلُ وَمَا يَجُوزُ", n:"« Il est obligatoire pour tout Muslim adulte de connaître ce qui est obligatoire concernant Allah, ce qui lui est impossible et ce qui lui est possible. » — Matn d'Ibn Āshir" },
-        {"t": "h", "v": "Les trois dimensions du Tawḥīd (التَّوحِيد)"},
+        {"t": "h", "v": "Les trois dimensions du التَّوحِيد"},
         { t:'ul', v:[
-          "<strong>1. Tawḥīd al-Rubūbiyya (تَوحِيدُ الرُّبُوبِيَّة) :</strong> reconnaître qu'Allah seul est le Seigneur, le Créateur, le Maître de l'univers. Cette dimension est naturelle à l'êFiṭra (الفِطرَة) — même les polythéistes arabes l'admettaient.",
-          "<strong>2. Tawḥīd al-Ulūhiyya (تَوحِيدُ الأُلُوهِيَّة) :</strong> n'adorer qu'Allah seul — la dimension pratique et la plus exigeante. C'est là que réside la signification profonde de لَا إِلَهَ إِلَّا الله.",
-          "<strong>3. Tawḥīd al-Asmāʾ wa-l-ṢTawḥīd al-Asmāʾ wa-l-Ṣifāt (تَوحِيدُ الأَسمَاء والصِّفَات) :</strong> affirmer que les Noms et Attributs divins sont parfaits, uniques, sans analogie avec les créatures."
+          "<strong>1. تَوحِيدُ الرُّبُوبِيَّة :</strong> reconnaître qu'Allah seul est le Seigneur, le Créateur, le Maître de l'univers. Cette dimension est naturelle à l'être humain — même les polythéistes arabes l'admettaient.",
+          "<strong>2. تَوحِيدُ الأُلُوهِيَّة :</strong> n'adorer qu'Allah seul — la dimension pratique et la plus exigeante. C'est là que réside la signification profonde de لَا إِلَهَ إِلَّا الله.",
+          "<strong>3. تَوحِيدُ الأَسمَاء والصِّفَات :</strong> affirmer que les Noms et Attributs divins sont parfaits, uniques, sans analogie avec les créatures."
         ] },
         {"t": "h", "v": "Signification complète de لَا إِلَهَ إِلَّا الله"},
         {"t": "p", "v": "La shahāda n'est pas une simple formule — c'est une déclaration à deux volets : (1) نَفي (négation) : لَا إِلَهَ — rien n'est digne d'adoration ; (2) إِثبَات (affirmation) : إِلَّا الله — sauf Allah. Cette structure signifie : j'exclus tout autre objet d'adoration ET j'affirme l'Unicité absolue d'Allah."},
@@ -60,8 +51,8 @@ const EXPERT = {
           "Coran 4:48 : « Allah ne pardonne pas qu'on Lui associe quelque chose mais pardonne tout le reste à qui Il veut. »"
         ] },
         {"t": "h", "v": "Le cadre du Matn d'Ibn Āshir"},
-        {"t": "p", "v": "Ibn Āshir al-Mālikī (mort 1040 H/1631 CE) structure sa ʿaqīda selon la méthode ashʿarite : pour chaque attribut divin, on définit (1) Wājib (وَاجِب) (obligatoire/nécessaire) pour Allah ; (2) ce qui est مُحَال (impossible) pour Allah ; (3) ce qui est جَائِز (possible) — ce qu'Il fait ou ne fait pas par Sa volonté libre."},
-        {"t": "note", "v": "La méthode ashʿarite n'est pas une invention humaine arbitraire — elle formalise ce que le Coran lui-même établit : en affirmant les attributs d'Allah (سَمِيع، بَصِير، عَلِيم...), le Coran nous invite à réfléchir sur leur nature. L'école malikite adopte cette méthode parce qu'elle protège contre les deux erreurs symétriques : Tashbīh (التَّشبِيه) (anthropomorphisme) Taʿṭīl (التَّعطِيل) (déni des attributs)."}
+        {"t": "p", "v": "Ibn Āshir al-Mālikī (mort 1040 H/1631 CE) structure sa ʿaqīda selon la méthode ashʿarite : pour chaque attribut divin, on définit (1) ce qui est وَاجِب (obligatoire/nécessaire) pour Allah ; (2) ce qui est مُحَال (impossible) pour Allah ; (3) ce qui est جَائِز (possible) — ce qu'Il fait ou ne fait pas par Sa volonté libre."},
+        {"t": "note", "v": "La méthode ashʿarite n'est pas une invention humaine arbitraire — elle formalise ce que le Coran lui-même établit : en affirmant les attributs d'Allah, le Coran nous invite à réfléchir sur leur nature. L'école malikite adopte cette méthode parce qu'elle protège contre les deux erreurs symétriques : le التَّشبِيه (anthropomorphisme) et le التَّعطِيل (déni des attributs)."}
         ]
       },
       {
@@ -72,25 +63,25 @@ const EXPERT = {
         {"t": "lead", "v": "L'école ashʿarite — adoptée par les malikites — distingue les attributs divins en catégories précises. Chaque attribut a son contraire impossible. La connaissance de ces attributs est une obligation religieuse selon Ibn Āshir."},
         {"t": "h", "v": "Les 13 attributs obligatoires — واجب في حق الله"},
         { t:'ul', v:[
-          "<strong>Wujūd (الوُجُود)</strong> — L'Existence : Allah existe nécessairement (وَاجِبُ الوُجُود). Son contraire impossible : العَدَم (non-existence).",
-          "<strong>Qidam (القِدَم)</strong> — L'Éternité a parte ante : sans commencement. Contraire impossible : الحُدُوث (avoir un début).",
-          "<strong>Baqāʾ (البَقَاء)</strong> — L'Éternité a parte post : sans fin. Contraire impossible : الفَنَاء (extinction).",
-          "<strong>Mukhālafa lil-Ḥawādith (المُخَالَفَة للحَوَادِث)</strong> — La Dissemblance avec les créatures : rien ne Lui ressemble (لَيسَ كَمِثلِهِ شَيء). Contraire : المُمَاثَلَة (ressembler aux créatures).",
-          "<strong>Qiyām bi-l-Nafs (القِيَام بِالنَّفس)</strong> — L'Auto-subsistance : Il n'a besoin de rien ni de personne. Contraire : الاحتِيَاج (le besoin).",
-          "<strong>Waḥdāniyya (الوَحدَانِيَّة)</strong> — L'Unicité : un seul dans Son Essence, Ses Attributs et Ses Actes. Contraire : التَّعدُّد (multiplicité).",
-          "<strong>Qudra (القُدرَة)</strong> — La Toute-Puissance : capable de tout possible. Contraire : العَجز (impuissance).",
-          "<strong>Irāda (الإِرَادَة)</strong> — La Volonté : tout ce qui existe est selon Sa volonté. Contraire : الكَرَاهَة (contrainte).",
-          "<strong>ʿIlm (العِلم)</strong> — La Science parfaite : Il sait tout, le manifeste et le caché. Contraire : الجَهل (ignorance).",
-          "<strong>Ḥayāt (الحَيَاة)</strong> — La Vie : vivant sans être soumis à la mort. Contraire : المَوت.",
-          "<strong>Samʿ (السَّمع)</strong> — L'Ouïe parfaite : entend tout sans organe. Contraire : الصَّمَم.",
-          "<strong>Baṣar (البَصَر)</strong> — La Vue parfaite : voit tout sans organe ni lumière. Contraire : العَمَى.",
-          "<strong>Kalām (الكَلَام)</strong> — La Parole : parole divine éternelle (le Coran) sans lettre ni son originel. Contraire : البَكَم (mutisme)."
+          "<strong>الوُجُود</strong> — L'Existence : Allah existe nécessairement. Son contraire impossible : العَدَم (non-existence).",
+          "<strong>القِدَم</strong> — L'Éternité a parte ante : sans commencement. Contraire impossible : الحُدُوث (avoir un début).",
+          "<strong>البَقَاء</strong> — L'Éternité a parte post : sans fin. Contraire impossible : الفَنَاء (extinction).",
+          "<strong>المُخَالَفَة للحَوَادِث</strong> — La Dissemblance avec les créatures : rien ne Lui ressemble. Contraire : المُمَاثَلَة (ressembler aux créatures).",
+          "<strong>القِيَام بِالنَّفس</strong> — L'Auto-subsistance : Il n'a besoin de rien ni de personne. Contraire : الاحتِيَاج (le besoin).",
+          "<strong>الوَحدَانِيَّة</strong> — L'Unicité : un seul dans Son Essence, Ses Attributs et Ses Actes. Contraire : التَّعدُّد (multiplicité).",
+          "<strong>القُدرَة</strong> — La Toute-Puissance : capable de tout possible. Contraire : العَجز (impuissance).",
+          "<strong>الإِرَادَة</strong> — La Volonté : tout ce qui existe est selon Sa volonté. Contraire : الكَرَاهَة (contrainte).",
+          "<strong>العِلم</strong> — La Science parfaite : Il sait tout, le manifeste et le caché. Contraire : الجَهل (ignorance).",
+          "<strong>الحَيَاة</strong> — La Vie : vivant sans être soumis à la mort. Contraire : المَوت.",
+          "<strong>السَّمع</strong> — L'Ouïe parfaite : entend tout sans organe. Contraire : الصَّمَم.",
+          "<strong>البَصَر</strong> — La Vue parfaite : voit tout sans organe ni lumière. Contraire : العَمَى.",
+          "<strong>الكَلَام</strong> — La Parole : parole divine éternelle (le Coran) sans lettre ni son originel. Contraire : البَكَم (mutisme)."
         ] },
         {"t": "h", "v": "العِلم بِالله vs العِلم عَن الله"},
-        {"t": "p", "v": "L'école ashʿarite distingue entre connaître Allah (العِلم بِالله — ce qu'Il est) et connaître sur Allah (العِلم عَن الله — ce que les textes disent). La méthode : affirmer ce que le Coran affirme, nier ce que le Coran nie, et dire لَا أَعلَم pour ce qui n'est pas mentionné."},
+        {"t": "p", "v": "L'école ashʿarite distingue entre connaître Allah et connaître sur Allah. La méthode : affirmer ce que le Coran affirme, nier ce que le Coran nie, et dire لَا أَعلَم pour ce qui n'est pas mentionné."},
         {"t": "h", "v": "الجَائِز في حق الله — Ce qui est Possible"},
         {"t": "p", "v": "Les Actes d'Allah sont tous dans la catégorie du جَائِز — Il peut faire ou ne pas faire, récompenser ou punir, guider ou laisser dans l'égarement. Il n'est pas soumis à une logique externe de justice humaine. Coran 21:23 : « Il ne rend pas compte de ce qu'Il fait, mais eux seront interrogés. »"},
-        {"t": "note", "v": "Erreur commune à éviter : confondre la Qudra (القُدرَة) (Toute-Puissance) avec l'obligation d'agir d'une certaine façon. Les mûtazilites pensaient qu'Allah était « obligé » de faire ce qui est le meilleur pour les humains. L'école ashʿarite rejette cela : Allah agit par Sa Volonté libre, non par contrainte — même si Sa Sagesse (الحِكمَة) sous-tend toujours Ses actes."}
+        {"t": "note", "v": "Erreur commune à éviter : confondre la القُدرَة (Toute-Puissance) avec l'obligation d'agir d'une certaine façon. Les mûtazilites pensaient qu'Allah était « obligé » de faire ce qui est le meilleur pour les humains. L'école ashʿarite rejette cela : Allah agit par Sa Volonté libre, non par contrainte — même si Sa Sagesse sous-tend toujours Ses actes."}
         ]
       },
       {
@@ -105,14 +96,14 @@ const EXPERT = {
           "<strong>الأَمَانَة</strong> — L'intégrité totale dans la transmission du message. Contraire : الخِيَانَة.",
           "<strong>التَّبلِيغ</strong> — La transmission complète du message sans rien dissimuler. Contraire : الكِتمَان.",
           "<strong>الفَطَانَة</strong> — L'intelligence et la sagacité supérieures. Contraire : البَلَادَة.",
-          "<strong>ʿIṣma (العِصمَة)</strong> — L'infaillibilité dans la transmission de la révélation et dans les péchés majeurs."
+          "<strong>العِصمَة</strong> — L'infaillibilité dans la transmission de la révélation et dans les péchés majeurs."
         ] },
-        {"t": "h", "v": "ʿIṣma (العِصمَة) — L'Infaillibilité : nuances malikites"},
+        {"t": "h", "v": "العِصمَة — L'Infaillibilité : nuances malikites"},
         { t:'ul', v:[
           "Les prophètes sont infaillibles dans la <strong>transmission du message révélé</strong> — absolument.",
-          "Ils sont protégés des <strong>péchés majeurs</strong> (الكَبَائِر) — sans exception.",
-          "Des erreurs dans les <strong>jugements personnels non révélés</strong> (الاجتِهَاد البَشَرِيّ) sont possibles — Coran 80:1-2 (ʿAbasa).",
-          "Les prophètes peuvent avoir des <strong>actes en deçà du plus méritoire</strong> (الأَولَى) — ce que le Coran appelle parfois du 'dhunūb' dans un sens non péjoratif.",
+          "Ils sont protégés des <strong>péchés majeurs</strong> — sans exception.",
+          "Des erreurs dans les <strong>jugements personnels non révélés</strong> sont possibles — Coran 80:1-2 (ʿAbasa).",
+          "Les prophètes peuvent avoir des <strong>actes en deçà du plus méritoire</strong> — ce que le Coran appelle parfois du 'dhunūb' dans un sens non péjoratif.",
           "Cette nuance protège à la fois l'infaillibilité prophétique ET l'humanité des prophètes."
         ] },
         {"t": "h", "v": "Le Prophète Muhammad ﷺ — statut unique"},
@@ -128,34 +119,34 @@ const EXPERT = {
           "Les affections humaines légitimes (amour, tristesse, joie) sans que cela n'affecte la transmission du message.",
           "L'ijtihād personnel (non révélé) qui peut être corrigé par la révélation."
         ] },
-        {"t": "note", "v": "Doctrine-malikite.fr insiste sur un point souvent mal compris : l'amour du Prophète ﷺ n'est pas un sentiment facultatif — c'Wājib (وَاجِب) dont l'absence remet en question la réalité de l'ĪĪmān (الإِيمَان). Cet amour se manifeste par le suivi de sa Sunna, non par les seuls sentiments."}
+        {"t": "note", "v": "Doctrine-malikite.fr insiste sur un point souvent mal compris : l'amour du Prophète ﷺ n'est pas un sentiment facultatif — c'est une obligation juridique dont l'absence remet en question la réalité de l'الإِيمَان. Cet amour se manifeste par le suivi de sa Sunna, non par les seuls sentiments."}
         ]
       },
       {
         id: "aqd-04",
-        title: "Bidʿa (البِدعَة) — L'Innovation en Islam : Définition et Méthode Malikite",
+        title: "البِدعَة — L'Innovation en Islam : Définition et Méthode Malikite",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Bidʿa (البِدعَة) (innovation) est l'un des plus mal compris et les plus mal utilisés en Islam contemporain. L'école malikite, via doctrine-malikite.fr et les sources classiques, a une approche nuancée et précise — très différente du rejet global de tout nouveau que prônent certains courants contemporains."},
-        {"t": "h", "v": "Définition précise de la Bidʿa (البِدعَة)"},
-        {"t": "p", "v": "L'Imām al-Shāṭibī (savant malikite andalou, mort 790 H) dans son Al-Iʿtiṣām : « Bidʿa (البِدعَة) est une voie inventée dans la religion qui ressemble à ce qui est légal, mais dont le but est d'exagérer dans le culte d'Allah. »"},
+        {"t": "lead", "v": "Le concept de البِدعَة (innovation) est l'un des plus mal compris et les plus mal utilisés en Islam contemporain. L'école malikite, via doctrine-malikite.fr et les sources classiques, a une approche nuancée et précise — très différente du rejet global de tout nouveau que prônent certains courants contemporains."},
+        {"t": "h", "v": "Définition précise de la البِدعَة"},
+        {"t": "p", "v": "L'Imām al-Shāṭibī (savant malikite andalou, mort 790 H) dans son Al-Iʿtiṣām : « la البِدعَة est une voie inventée dans la religion qui ressemble à ce qui est légal, mais dont le but est d'exagérer dans le culte d'Allah. »"},
         { t:'ul', v:[
-          "Bidʿa (البِدعَة) concerne la <strong>religion</strong> exclusivement — les innovations dans la vie quotidienne (technologie, médecine...) ne sont pas des bidʿa.",
-          "Bidʿa (البِدعَة) se caractérise par l'<strong>absence de fondement</strong> dans les textes ou la pratique des salaf.",
+          "البِدعَة concerne la <strong>religion</strong> exclusivement — les innovations dans la vie quotidienne (technologie, médecine...) ne sont pas des bidʿa.",
+          "La البِدعَة se caractérise par l'<strong>absence de fondement</strong> dans les textes ou la pratique des salaf.",
           "Elle prétend être une forme d'<strong>adoration améliorée</strong> — c'est cela qui la rend dangereuse."
         ] },
-        {"t": "h", "v": "Bidʿa Ḥasana (البِدعَة الحَسَنَة) vs Bidʿa Sayyi'a (البِدعَة السَّيِّئَة) — la classification malikite"},
+        {"t": "h", "v": "البِدعَة الحَسَنَة vs البِدعَة السَّيِّئَة — la classification malikite"},
         {"t": "p", "v": "L'Imām al-Shāfiʿī et de nombreux savants malikites ont distingué deux types :"},
         { t:'ul', v:[
-          "<strong>Bidʿa ḤBidʿa Ḥasana (البِدعَة الحَسَنَة) (bonne innovation) :</strong> ce qui n'existait pas formellement au temps du Prophète ﷺ mais se fonde sur des principes islamiques clairs — ex : rédaction du Coran en un mushaf, institution d'une prière de tarāwīḥ collective, enseignement institutionnalisé.",
-          "<strong>Bidʿa Sayyi'Bidʿa Sayyi'a (البِدعَة السَّيِّئَة) (mauvaise innovation) :</strong> ce qui contredit un texte explicite ou dénature la religion — ex : ajouter une rakʿa à une prière, nier les attributs divins.",
-          "Sayyidnā ʿUmar sur la tarāwīḥ : « نِعمَت Bidʿa (البِدعَة)ُ هَذِهِ » — « Quelle bonne innovation que celle-ci ! » — dans le sens linguistique (nouveauté), pas juridique (illicite)."
+          "<strong>البِدعَة الحَسَنَة (bonne innovation) :</strong> ce qui n'existait pas formellement au temps du Prophète ﷺ mais se fonde sur des principes islamiques clairs — ex : rédaction du Coran en un mushaf, institution d'une prière de tarāwīḥ collective, enseignement institutionnalisé.",
+          "<strong>البِدعَة السَّيِّئَة (mauvaise innovation) :</strong> ce qui contredit un texte explicite ou dénature la religion — ex : ajouter une rakʿa à une prière, nier les attributs divins.",
+          "Sayyidnā ʿUmar sur la tarāwīḥ : « نِعمَت البِدعَةُ هَذِهِ » — « Quelle bonne innovation que celle-ci ! » — dans le sens linguistique (nouveauté), pas juridique (illicite)."
         ] },
         {"t": "h", "v": "La méthode malikite vs le courant salafi contemporain"},
         {"t": "p", "v": "Doctrine-malikite.fr consacre une section importante à cette divergence :"},
         { t:'ul', v:[
           "Le courant néo-wahhabite/salafi contemporain dit : « كُلُّ بِدعَةٍ ضَلَالَة » (toute nouveauté est égarement) sans distinguer.",
-          "La méthode malikite classique : distinguer innovation dans la pratique de la religion (potentiellement إِضَافَة للعِبَادَة) de l'organisation institutionnelle de la religion.",
+          "La méthode malikite classique : distinguer innovation dans la pratique de la religion de l'organisation institutionnelle de la religion.",
           "L'adoption de la méthode malikite permet des pratiques comme : les dhikr collectifs, les célébrations du Mawlid (sous conditions), l'organisation institutionnelle des mosquées, l'enseignement islamique moderne.",
           "Le test malikite d'une pratique : « Est-ce que cela contredit un texte explicite ou la finalité de la religion ? Si non → non problématique. »"
         ] },
@@ -171,27 +162,27 @@ const EXPERT = {
         {"t": "lead", "v": "L'histoire de la théologie islamique est marquée par des débats fondamentaux sur la nature d'Allah, le libre arbitre et la foi. Doctrine-malikite.fr y consacre des pages importantes — comprendre ces divergences est essentiel pour un Muslim cultivé."},
         {"t": "h", "v": "Les 4 grandes positions théologiques islamiques"},
         { t:'ul', v:[
-          "<strong>أَهلُ Sunna (السُّنَّة) والجَمَاعَة :</strong> l'orthodoxie islamique en deux branches — Ashāʿira (الأَشَاعِرَة) (école ashʿarite, suivie par malikites et chāfiʿites) et Māturīdiyya (المَاتُرِيدِيَّة) (école māturīdite, suivie par hanafites). Différences mineures entre elles.",
-          "<strong>Muʿtazila (المُعتَزِلَة) :</strong> courant rationaliste fondé au 2ème siècle H — priorité de la raison, attributs divins allégorisés, « obligation d'Allah » de faire le bien. Rejeté par la majorité.",
-          "<strong>Ashāʿira (الأَشَاعِرَة) :</strong> fondé par l'Imām Abū al-Ḥasan al-Ashʿarī (mort 324 H/935 CE) — ancien mutazilite converti — voie médiane entre littéralisme et rationalisme excessif.",
-          "<strong>Wahhābiyya (الوَهَّابِيَّة)/السَّلَفِيَّة contemporaine :</strong> mouvement fondé par Muhammad ibn ʿAbd al-Wahhāb (1703-1792) — rejet de la tradition des 4 écoles, anthropomorphisme implicite dans les attributs, الجَهل بِطَرِيقَة Tafwīḍ (التَّفوِيض)."
+          "<strong>أَهلُ السُّنَّة والجَمَاعَة :</strong> l'orthodoxie islamique en deux branches — الأَشَاعِرَة (école ashʿarite, suivie par malikites et chāfiʿites) et المَاتُرِيدِيَّة (école māturīdite, suivie par hanafites). Différences mineures entre elles.",
+          "<strong>المُعتَزِلَة :</strong> courant rationaliste fondé au 2ème siècle H — priorité de la raison, attributs divins allégorisés, « obligation d'Allah » de faire le bien. Rejeté par la majorité.",
+          "<strong>الأَشَاعِرَة :</strong> fondé par l'Imām Abū al-Ḥasan al-Ashʿarī (mort 324 H/935 CE) — ancien mutazilite converti — voie médiane entre littéralisme et rationalisme excessif.",
+          "<strong>الوَهَّابِيَّة/السَّلَفِيَّة contemporaine :</strong> mouvement fondé par Muhammad ibn ʿAbd al-Wahhāb (1703-1792) — rejet de la tradition des 4 écoles, anthropomorphisme implicite dans les attributs, الجَهل بِطَرِيقَة التَّفوِيض."
         ] },
         {"t": "h", "v": "Les grands débats théologiques et les positions malikites"},
         { t:'ul', v:[
-          "<strong>الصِّفَات الخَبَرِيَّة</strong> (attributs narratifs : main, visage, yeux divins) : l'école ashʿarite-malikite dit — affirmer sans comparaison (إِثبَات بِلَا تَشبِيه) et sans interprétation littérale (بِلَا تَجسِيم). Le sens littéral est impossible pour Allah.",
-          "<strong>Istiwāʾ (الاستِوَاء) على العَرش</strong> : Allah S'est établi sur le Trône — la position malikite : Istiwāʾ (الاستِوَاء) معلوم (le mot est connu), Kayfiyya (الكَيفِيَّة) مجهولة (la modalité est inconnue), وĪĪmān (الإِيمَان) به واجب (y croire est obligatoire). Attribué à l'Imām Mālik lui-même.",
-          "<strong>Qaḍāʾ wa-Qadar (القَضَاء والقَدَر)</strong> (prédestination et libre arbitre) : l'école malikite = الله يَخلُق أَفعَال العِبَاد (Allah crée les actes humains) mais les humains ont une كَسب (acquisition) qui fonde la responsabilité morale.",
+          "<strong>الصِّفَات الخَبَرِيَّة</strong> (attributs narratifs : main, visage, yeux divins) : l'école ashʿarite-malikite dit — affirmer sans comparaison et sans interprétation littérale. Le sens littéral est impossible pour Allah.",
+          "<strong>الاستِوَاء على العَرش</strong> : Allah S'est établi sur le Trône — la position malikite : الاستِوَاء معلوم (le mot est connu), الكَيفِيَّة مجهولة (la modalité est inconnue), والإِيمَان به واجب (y croire est obligatoire). Attribué à l'Imām Mālik lui-même.",
+          "<strong>القَضَاء والقَدَر</strong> (prédestination et libre arbitre) : l'école malikite = الله يَخلُق أَفعَال العِبَاد (Allah crée les actes humains) mais les humains ont une كَسب (acquisition) qui fonde la responsabilité morale.",
           "<strong>مَنزِلَة الفَاسِق</strong> (statut du pécheur) : les malikites = ni kafir ni muʾmin parfait — gardé dans la catégorie des Muslims avec une foi imparfaite."
         ] },
         {"t": "h", "v": "Pourquoi les malikites suivent l'école ashʿarite"},
         { t:'ul', v:[
           "L'Imām al-Ashʿarī a formalisé la position de l'Imām Mālik et des premiers savants.",
-          "La méthode ashʿarite utilise la raison (العَقل) comme outil auxiliaire des textes (النَّقل), non comme source primaire.",
-          "Elle évite les deux extrêmes : Tajsīm (التَّجسِيم) (anthropomorphisme) Taʿṭīl (التَّعطِيل) (déni des attributs).",
+          "La méthode ashʿarite utilise la raison comme outil auxiliaire des textes, non comme source primaire.",
+          "Elle évite les deux extrêmes : التَّجسِيم (anthropomorphisme) et التَّعطِيل (déni des attributs).",
           "Doctrine-malikite.fr : « Les musulmans de France et d'Afrique du Nord appartiennent historiquement à la tradition ashʿarite-malikite. »"
         ] },
         { t:'ar', v:"الاستِوَاءُ مَعلُومٌ وَالكَيفُ مَجهُولٌ وَالإِيمَانُ بِهِ وَاجِبٌ وَالسُّؤَالُ عَنهُ بِدعَةٌ", n:"« Le Istiwa est connu [par le texte], la modalité est inconnue, y croire est obligatoire, et en questionner [la modalité] est une innovation. » — Imām Mālik ibn Anas (Muwattaʾ)" },
-        {"t": "note", "v": "Cette citation de l'Imām Mālik est l'une des plus importantes de la théologie islamique — elle établit la méthode de l'école malikite pour tous les attributs dits « anthropomorphes » du Coran : on affirme la réalité de l'attribut (لَيسَ التَّعطِيل), on nie toute ressemblance avec les créatures (لَيسَ التَّجسِيم), et on s'abstient de demander comment (الكَيفِيَّة مجهولة)."}
+        {"t": "note", "v": "Cette citation de l'Imām Mālik est l'une des plus importantes de la théologie islamique — elle établit la méthode de l'école malikite pour tous les attributs dits « anthropomorphes » du Coran : on affirme la réalité de l'attribut, on nie toute ressemblance avec les créatures, et on s'abstient de demander comment."}
         ]
       },
       {
@@ -202,8 +193,8 @@ const EXPERT = {
         {"t": "lead", "v": "La ʿaqīda n'est pas une réalité figée — elle répond aux défis de chaque époque. Le Muslim contemporain doit confronter sa foi à des questions nouvelles : athéisme scientifique, pluralisme religieux, droits humains, intelligence artificielle. Doctrine-malikite.fr y apporte une réponse malikite structurée."},
         {"t": "h", "v": "L'Islam face à l'athéisme et au scientisme contemporain"},
         { t:'ul', v:[
-          "L'argument cosmologique (دَلِيل الحُدُوث) : tout ce qui commence à exister a une cause — l'univers a commencé (Big Bang) → il a une cause → cette cause est Allah. L'Imām al-Ghazālī l'a formalisé avant Descartes.",
-          "La complexité irréductible comme preuve (دَلِيل الإِتقَان) : Coran 88:17-19 — « Ne regardent-ils pas les chameaux comment ils ont été créés... ? »",
+          "L'argument cosmologique : tout ce qui commence à exister a une cause — l'univers a commencé (Big Bang) → il a une cause → cette cause est Allah. L'Imām al-Ghazālī l'a formalisé avant Descartes.",
+          "La complexité irréductible comme preuve : Coran 88:17-19 — « Ne regardent-ils pas les chameaux comment ils ont été créés... ? »",
           "L'argument moral : l'existence de valeurs morales universelles (le meurtre est mal) présuppose une norme absolue externe à l'humanité.",
           "Le scientisme (« seule la science dit vrai ») est lui-même une position philosophique non scientifique."
         ] },
@@ -212,9 +203,9 @@ const EXPERT = {
           "Position malikite classique : l'Islam est la voie d'Allah (Coran 3:19) — mais la contrainte en religion est interdite (Coran 2:256).",
           "Distinction : la vérité objective (l'Islam est vrai) ≠ la liberté de conscience (personne ne peut être forcé).",
           "Doctrine-malikite.fr sur le dialogue interreligieux : « Sage comme Nuh, sage comme Ibrahim, sage comme le Prophète ﷺ à Médine. »",
-          "Les pactes de Médine (المِيثَاق المَدَنِيّ) : le Prophète ﷺ a établi une société plurielle avec des droits pour tous — modèle de coexistence islamique."
+          "Les pactes de Médine : le Prophète ﷺ a établi une société plurielle avec des droits pour tous — modèle de coexistence islamique."
         ] },
-        {"t": "h", "v": "ĪĪmān (الإِيمَان) والعَقل — Foi et Raison"},
+        {"t": "h", "v": "الإِيمَان والعَقل — Foi et Raison"},
         { t:'ul', v:[
           "L'Islam n'oppose pas foi et raison — il les hiérarchise : la raison est un outil précieux mais limité.",
           "Ce que la raison ne peut pas connaître seule (l'au-delà, le détail des actes d'adoration) = domaine de la révélation exclusive.",
@@ -229,7 +220,7 @@ const EXPERT = {
       }],
       quiz: {
         id: 'quiz-expert-aqida',
-        title: 'Questionnaire — ' + "العَقِيدَة الأَشعَرِيَّة وTawḥīd (التَّوحِيد)",
+        title: 'Questionnaire — ' + "العَقِيدَة الأَشعَرِيَّة والتَّوحِيد",
         status: "available",
         score: null,
         questions: [        {
@@ -237,19 +228,19 @@ const EXPERT = {
           text: "Le Matn d'Ibn Āshir al-Mālikī structure la ʿaqīda selon quel cadre pour chaque attribut divin ?",
           choices: [
           { id:"a", text:"Seuls les attributs positifs d'Allah" },
-          { id:"b", text:"Trois catégories : Wājib (وَاجِب) (nécessaire), مُحَال (impossible), جَائِز (possible)" },
+          { id:"b", text:"Trois catégories : وَاجِب (nécessaire), مُحَال (impossible), جَائِز (possible)" },
           { id:"c", text:"Les 99 Noms uniquement" },
           { id:"d", text:"La comparaison avec les créatures" }
           ],
           correctId: "b",
-          explanation: "Ibn Āshir al-Mālikī : « Wājib (وَاجِب)ٌ عَلَى كُلِّ مُكَلَّفٍ شَرعًا مَعرِفَةُ مَا يَجِبُ فِي حَقِّ اللَّهِ وَمَا يَستَحِيلُ وَمَا يَجُوزُ » — les trois catégories permettent de structurer la connaissance de Dieu en évitant l'Tashbīh (التَّشبِيه) et le déTaʿṭīl (التَّعطِيل)."
+          explanation: "Ibn Āshir al-Mālikī : « وَاجِبٌ عَلَى كُلِّ مُكَلَّفٍ شَرعًا مَعرِفَةُ مَا يَجِبُ فِي حَقِّ اللَّهِ وَمَا يَستَحِيلُ وَمَا يَجُوزُ » — les trois catégories permettent de structurer la connaissance de Dieu en évitant l'anthropomorphisme et le déni des attributs."
         },
         {
           id: "q-aqd-02",
-          text: "Tawḥīd (التَّوحِيد) sont :",
+          text: "Les trois dimensions du التَّوحِيد sont :",
           choices: [
           { id:"a", text:"Prière, jeûne, zakāt" },
-          { id:"b", text:"Tawḥīd al-Rubūbiyya (تَوحِيدُ الرُّبُوبِيَّة) + الأُلُوهِيَّة + الأَسمَاء والصِّفَات" },
+          { id:"b", text:"تَوحِيدُ الرُّبُوبِيَّة + الأُلُوهِيَّة + الأَسمَاء والصِّفَات" },
           { id:"c", text:"Foi, espérance et charité" },
           { id:"d", text:"Coran, Sunna et Ijmāʿ" }
           ],
@@ -261,7 +252,7 @@ const EXPERT = {
           text: "<strong>PIÈGE :</strong> Les polythéistes arabes croyaient-ils que « Allah existe » ?",
           choices: [
           { id:"a", text:"Non — ils niaient son existence" },
-          { id:"b", text:"Oui — mais ils associaient d'autres divinités dans l'adoration (الأُلُوهِيَّة), pas la Seigneurie (الرُّبُوبِيَّة)" },
+          { id:"b", text:"Oui — mais ils associaient d'autres divinités dans l'adoration, pas la Seigneurie" },
           { id:"c", text:"Non — ils croyaient en plusieurs dieux égaux" },
           { id:"d", text:"Oui — et ils étaient donc Muslims" }
           ],
@@ -270,7 +261,7 @@ const EXPERT = {
         },
         {
           id: "q-aqd-04",
-          text: "Combien d'Wājib (وَاجِب) pour Allah enseigne Ibn Āshir ?",
+          text: "Combien d'attributs obligatoires pour Allah enseigne Ibn Āshir ?",
           choices: [
           { id:"a", text:"7" },
           { id:"b", text:"13" },
@@ -278,11 +269,11 @@ const EXPERT = {
           { id:"d", text:"99" }
           ],
           correctId: "b",
-          explanation: "Le Matn d'Ibn Āshir enseigne 13 attributs obligatoires : Wujūd (الوُجُود)، Qidam (القِدَم)، Baqāʾ (البَقَاء)، Mukhālafa lil-Ḥawādith (المُخَالَفَة للحَوَادِث)، Qiyām bi-l-Nafs (القِيَام بِالنَّفس)، Waḥdāniyya (الوَحدَانِيَّة)، Qudra (القُدرَة)، Irāda (الإِرَادَة)، ʿIlm (العِلم)، Ḥayāt (الحَيَاة)، Samʿ (السَّمع)، Baṣar (البَصَر)، Kalām (الكَلَام). Chacun a son contraire impossible pour Allah."
+          explanation: "Le Matn d'Ibn Āshir enseigne 13 attributs obligatoires : الوُجُود، القِدَم، البَقَاء، المُخَالَفَة للحَوَادِث، القِيَام بِالنَّفس، الوَحدَانِيَّة، القُدرَة، الإِرَادَة، العِلم، الحَيَاة، السَّمع، البَصَر، الكَلَام. Chacun a son contraire impossible pour Allah."
         },
         {
           id: "q-aqd-05",
-          text: "L'attribut de Qidam (القِدَم) (Éternité a parte ante) signifie :",
+          text: "L'attribut de القِدَم (Éternité a parte ante) signifie :",
           choices: [
           { id:"a", text:"Allah est éternel dans le futur" },
           { id:"b", text:"Allah est sans commencement — Son existence n'a pas de début" },
@@ -290,55 +281,55 @@ const EXPERT = {
           { id:"d", text:"Allah est ancien" }
           ],
           correctId: "b",
-          explanation: "Qidam (القِدَم) = sans commencement (أَزَلِيّ). Contraire impossible : الحُدُوث (avoir un début). À distinguer de Baqāʾ (البَقَاء) qui signifie sans fin (أَبَدِيّ). Allah est à la fois أَزَلِيّ (sans début) et أَبَدِيّ (sans fin) — contrairement aux créatures qui ont un début et une fin."
+          explanation: "القِدَم = sans commencement. Contraire impossible : الحُدُوث (avoir un début). À distinguer de البَقَاء qui signifie sans fin. Allah est à la fois أَزَلِيّ (sans début) et أَبَدِيّ (sans fin) — contrairement aux créatures qui ont un début et une fin."
         },
         {
           id: "q-aqd-06",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La citation de l'Imām Mālik sur l'Istiwāʾ (الاستِوَاء) (établissement sur le Trône) est :",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La citation de l'Imām Mālik sur l'الاستِوَاء (établissement sur le Trône) est :",
           choices: [
           { id:"a", text:"Il faut l'interpréter allégoriquement" },
-          { id:"b", text:"Istiwāʾ (الاستِوَاء) مَعلُوم — le terme est connu / الكَيفُ مَجهُول — la modalité est inconnue / ĪĪmān (الإِيمَان) به Wājib (وَاجِب)" },
+          { id:"b", text:"الاستِوَاء مَعلُوم — le terme est connu / الكَيفُ مَجهُول — la modalité est inconnue / الإِيمَان به وَاجِب" },
           { id:"c", text:"Il faut nier cet attribut" },
           { id:"d", text:"Il faut comprendre littéralement une assise physique" }
           ],
           correctId: "b",
-          explanation: "Citation fondamentale de l'Imām Mālik : « Istiwāʾ (الاستِوَاء) مَعلُوم وَالكَيفُ مَجهُول وَĪĪmān (الإِيمَان) بِهِ Wājib (وَاجِب) وَالسُّؤَال عَنهُ بِدعَة ». C'est la méthode malikite pour tous les attributs narratifs du Coran : affirmer, ne pas anthropomorphiser, ne pas demander comment, ne pas nier."
+          explanation: "Citation fondamentale de l'Imām Mālik : « الاستِوَاء مَعلُوم وَالكَيفُ مَجهُول وَالإِيمَان بِهِ وَاجِب وَالسُّؤَال عَنهُ بِدعَة ». C'est la méthode malikite pour tous les attributs narratifs du Coran : affirmer, ne pas anthropomorphiser, ne pas demander comment, ne pas nier."
         },
         {
           id: "q-aqd-07",
-          text: "Tajsīm (التَّجسِيم) Taʿṭīl (التَّعطِيل) sont deux erreurs symétriques. Que sont-elles ?",
+          text: "Le التَّجسِيم et le التَّعطِيل sont deux erreurs symétriques. Que sont-elles ?",
           choices: [
           { id:"a", text:"Deux pratiques cultuelles incorrectes" },
-          { id:"b", text:"Tajsīm (التَّجسِيم) = attribuer un corps à Allah (anthropomorphisme). Taʿṭīl (التَّعطِيل) = nier Ses attributs réels" },
+          { id:"b", text:"التَّجسِيم = attribuer un corps à Allah (anthropomorphisme). التَّعطِيل = nier Ses attributs réels" },
           { id:"c", text:"Deux écoles juridiques" },
           { id:"d", text:"Deux erreurs dans la prière" }
           ],
           correctId: "b",
-          explanation: "L'école ashʿarite-malikite navigue entre deux extrêmes : Tajsīm (التَّجسِيم) (anthropomorphisme — dire qu'Allah a une main comme les humains) Taʿṭīl (التَّعطِيل) (nihilisme attributif — dire que les attributs n'ont aucune réalité). La voie juste : affirmer les attributs sans modalité comparable aux créatures."
+          explanation: "L'école ashʿarite-malikite navigue entre deux extrêmes : التَّجسِيم (anthropomorphisme — dire qu'Allah a une main comme les humains) et التَّعطِيل (nihilisme attributif — dire que les attributs n'ont aucune réalité). La voie juste : affirmer les attributs sans modalité comparable aux créatures."
         },
         {
           id: "q-aqd-08",
-          text: "<strong>PIÈGE :</strong> L'ʿIṣma (العِصمَة) (infaillibilité prophétique) signifie-t-elle que les prophètes n'ont jamais eu de petites erreurs de jugement ?",
+          text: "<strong>PIÈGE :</strong> L'العِصمَة (infaillibilité prophétique) signifie-t-elle que les prophètes n'ont jamais eu de petites erreurs de jugement ?",
           choices: [
           { id:"a", text:"Oui — infaillibilité absolue dans tous les actes" },
-          { id:"b", text:"Non — l'ʿIṣma (العِصمَة) couvre la transmission du message et les péchés majeurs ; des erreurs d'ijtihād personnel sont possibles et corrigées par la révélation" },
+          { id:"b", text:"Non — l'العِصمَة couvre la transmission du message et les péchés majeurs ; des erreurs d'ijtihād personnel sont possibles et corrigées par la révélation" },
           { id:"c", text:"Oui — même leurs actes quotidiens étaient parfaits" },
           { id:"d", text:"Non — ils pouvaient mentir dans la vie privée" }
           ],
           correctId: "b",
-          explanation: "L'ʿIṣma (العِصمَة) est précise : infaillible dans la transmission de la révélation (absolument) et protégé des péchés majeurs. Mais des erreurs dans les jugements personnels non révélés (ijtihād) sont possibles — Coran 80:1-2 (l'épisode ʿAbasa) montre le Prophète ﷺ corrigé sur un acte non-révélé."
+          explanation: "L'العِصمَة est précise : infaillible dans la transmission de la révélation (absolument) et protégé des péchés majeurs. Mais des erreurs dans les jugements personnels non révélés (ijtihād) sont possibles — Coran 80:1-2 (l'épisode ʿAbasa) montre le Prophète ﷺ corrigé sur un acte non-révélé."
         },
         {
           id: "q-aqd-09",
           text: "L'amour du Prophète ﷺ est-il une obligation ou un simple sentiment recommandé ?",
           choices: [
           { id:"a", text:"Un sentiment spirituel recommandé" },
-          { id:"b", text:"Wājib (وَاجِب) dont l'absence affecte la réalité de l'ĪĪmān (الإِيمَان)" },
+          { id:"b", text:"Une obligation juridique dont l'absence affecte la réalité de l'الإِيمَان" },
           { id:"c", text:"Obligatoire seulement le jour de la Mawlid" },
           { id:"d", text:"Optionnel pour les savants" }
           ],
           correctId: "b",
-          explanation: "Doctrine-malikite.fr et la tradition malikite : l'amour du Prophète ﷺ Wājib (وَاجِب), pas simplement recommandé. Hadīth : « لَا يُؤمِنُ أَحَدُكُم حَتَّى أَكُونَ أَحَبَّ إِلَيهِ مِن وَلَدِهِ وَوَالِدِهِ وَالنَّاسِ أَجمَعِين » — indique une condition (حَتَّى) à la réalité de l'ĪĪmān (الإِيمَان)."
+          explanation: "Doctrine-malikite.fr et la tradition malikite : l'amour du Prophète ﷺ est وَاجِب, pas simplement recommandé. Hadīth : « لَا يُؤمِنُ أَحَدُكُم حَتَّى أَكُونَ أَحَبَّ إِلَيهِ مِن وَلَدِهِ وَوَالِدِهِ وَالنَّاسِ أَجمَعِين » — indique une condition à la réalité de l'الإِيمَان."
         },
         {
           id: "q-aqd-10",
@@ -354,7 +345,7 @@ const EXPERT = {
         },
         {
           id: "q-aqd-11",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La Bidʿa ḤBidʿa Ḥasana (البِدعَة الحَسَنَة) (bonne innovation) — concept malikite ou rejeté ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La البِدعَة الحَسَنَة (bonne innovation) — concept malikite ou rejeté ?",
           choices: [
           { id:"a", text:"Rejeté — toute innovation est égarement" },
           { id:"b", text:"Concept malikite valide — distinction entre innovation ayant un fondement islamique et innovation contredisant la religion" },
@@ -362,23 +353,23 @@ const EXPERT = {
           { id:"d", text:"Seulement dans le domaine de la science" }
           ],
           correctId: "b",
-          explanation: "L'Imām al-Shāfiʿī et de nombreux savants malikites ont établi la distinction : Bidʿa ḤBidʿa Ḥasana (البِدعَة الحَسَنَة) (fondement islamique mais forme nouvelle) vs Bidʿa Sayyi'Bidʿa Sayyi'a (البِدعَة السَّيِّئَة) (contredit la religion). Sayyidnā ʿUmar ﵁ a lui-même utilisé le terme « نِعمَة Bidʿa (البِدعَة) » pour la tarāwīḥ collective. Doctrine-malikite.fr confirme cette méthode."
+          explanation: "L'Imām al-Shāfiʿī et de nombreux savants malikites ont établi la distinction : البِدعَة الحَسَنَة (fondement islamique mais forme nouvelle) vs البِدعَة السَّيِّئَة (contredit la religion). Sayyidnā ʿUmar ﵁ a lui-même utilisé le terme « نِعمَة البِدعَة » pour la tarāwīḥ collective. Doctrine-malikite.fr confirme cette méthode."
         },
         {
           id: "q-aqd-12",
           text: "<strong>PIÈGE :</strong> Le courant wahhabite/salafi contemporain et l'école malikite divergent sur :",
           choices: [
           { id:"a", text:"Les 5 piliers de l'Islam" },
-          { id:"b", text:"La méthode d'interprétation des attributs divins et la notion de bidʿa — le salafisme tend vers l'Tajsīm (التَّجسِيم) et rejette toute innovation y compris les pratiques classiques" },
+          { id:"b", text:"La méthode d'interprétation des attributs divins et la notion de bidʿa — le salafisme tend vers l'anthropomorphisme et rejette toute innovation y compris les pratiques classiques" },
           { id:"c", text:"Le nombre de rakʿāt dans la prière" },
           { id:"d", text:"Le statut de la zakāt" }
           ],
           correctId: "b",
-          explanation: "Doctrine-malikite.fr consacre une section à ce débat. Les divergences principales : (1) méthode des attributs — Tajsīm (التَّجسِيم), Tafwīḍ (التَّفوِيض) (laisser la modalité à Allah) ; (2) bidʿa — les salafis rejettent beaucoup de pratiques classiques malikites (dhikr collectif, Mawlid, taqlīd) ; (3) méthode juridique — rejet des madhāhib par les salafis."
+          explanation: "Doctrine-malikite.fr consacre une section à ce débat. Les divergences principales : (1) méthode des attributs — les salafis tendent vers التَّجسِيم, les ashʿarites-malikites maintiennent التَّفوِيض (laisser la modalité à Allah) ; (2) bidʿa — les salafis rejettent beaucoup de pratiques classiques malikites (dhikr collectif, Mawlid, taqlīd) ; (3) méthode juridique — rejet des madhāhib par les salafis."
         },
         {
           id: "q-aqd-13",
-          text: "Le statut du pécheur (الفَاسِق) en ʿaqīda malikite est :",
+          text: "Le statut du pécheur en ʿaqīda malikite est :",
           choices: [
           { id:"a", text:"Kāfir (incroyant) — péché majeur = sortie de l'Islam" },
           { id:"b", text:"Muʾmin kāmil (croyant parfait)" },
@@ -386,7 +377,7 @@ const EXPERT = {
           { id:"d", text:"La question est sans réponse en rite malikite" }
           ],
           correctId: "c",
-          explanation: "Position malikite (et majoritaire) : le pécheur grave (فَاسِق) reste Muslim — il n'est pas kāfir (comme disent les khārijites) ni dans une « position intermédiaire » sans nom (comme disent les mutazilites). Il est dans ĪĪmān (الإِيمَان) avec une foi imparfaite.  La foi augmente et diminue selon les actes."
+          explanation: "Position malikite (et majoritaire) : le pécheur grave reste Muslim — il n'est pas kāfir (comme disent les khārijites) ni dans une « position intermédiaire » sans nom (comme disent les mutazilites). Il est dans الإِيمَان avec une foi imparfaite.  La foi augmente et diminue selon les actes."
         },
         {
           id: "q-aqd-14",
@@ -402,7 +393,7 @@ const EXPERT = {
         },
         {
           id: "q-aqd-15",
-          text: "<strong>CONTEMPORAIN :</strong> L'argument cosmologique islamique (دَلِيل الحُدُوث) s'appuie sur :",
+          text: "<strong>CONTEMPORAIN :</strong> L'argument cosmologique islamique s'appuie sur :",
           choices: [
           { id:"a", text:"La complexité des langages de programmation" },
           { id:"b", text:"Tout ce qui commence à exister a une cause → l'univers a commencé (Big Bang) → il a une cause externe et nécessaire → Allah" },
@@ -422,11 +413,11 @@ const EXPERT = {
           { id:"d", text:"La prédestination ne concerne que les catastrophes naturelles" }
           ],
           correctId: "c",
-          explanation: "Position ashʿarite-malikite (voie médiane entre Jabrites = tout forcé et Qadarites = libre arbitre total) : Allah crée tout acte (الخَالِق هو الله) ET l'humain « acquiert » Kasb (الكَسب) — d'où sa responsabilité morale. Coran 18:29 : « Celui qui veut, qu'il croie ; celui qui veut, qu'il refuse. »"
+          explanation: "Position ashʿarite-malikite (voie médiane entre Jabrites = tout forcé et Qadarites = libre arbitre total) : Allah crée tout acte ET l'humain « acquiert » cet acte comme sien — d'où sa responsabilité morale. Coran 18:29 : « Celui qui veut, qu'il croie ; celui qui veut, qu'il refuse. »"
         },
         {
           id: "q-aqd-17",
-          text: "<strong>AVANCÉ :</strong> La Mukhālafa lil-Ḥawādith (المُخَالَفَة للحَوَادِث) (dissemblance avec les créatures) implique :",
+          text: "<strong>AVANCÉ :</strong> La المُخَالَفَة للحَوَادِث (dissemblance avec les créatures) implique :",
           choices: [
           { id:"a", text:"Que les attributs d'Allah n'existent pas réellement" },
           { id:"b", text:"Qu'Allah existe mais n'a pas de caractéristiques" },
@@ -434,31 +425,31 @@ const EXPERT = {
           { id:"d", text:"Que le Coran doit être interprété allégoriquement en totalité" }
           ],
           correctId: "c",
-          explanation: "Mukhālafa lil-Ḥawādith (المُخَالَفَة للحَوَادِث) est l'un des 13 attributs obligatoires — Coran 42:11 : « لَيسَ كَمِثلِهِ شَيء وَهُوَ السَّمِيعُ البَصِير » — « rien ne Lui ressemble ET Il est l'Entendant, le Voyant. » La première partie nie toute ressemblance ; la seconde affirme les attributs réels. Les deux ensemble = la méthode ashʿarite."
+          explanation: "المُخَالَفَة للحَوَادِث est l'un des 13 attributs obligatoires — Coran 42:11 : « لَيسَ كَمِثلِهِ شَيء وَهُوَ السَّمِيعُ البَصِير » — « rien ne Lui ressemble ET Il est l'Entendant, le Voyant. » La première partie nie toute ressemblance ; la seconde affirme les attributs réels. Les deux ensemble = la méthode ashʿarite."
         },
         {
           id: "q-aqd-18",
-          text: "Qu'Tafwīḍ (التَّفوِيض) dans les attributs divins ?",
+          text: "Qu'est-ce que التَّفوِيض dans les attributs divins ?",
           choices: [
           { id:"a", text:"Attribuer à Allah des qualités humaines" },
-          { id:"b", text:"Remettre la connaissance de la modalité (الكَيفِيَّة) des attributs divins à Allah seul, tout en affirmant leur réalité" },
+          { id:"b", text:"Remettre la connaissance de la modalité des attributs divins à Allah seul, tout en affirmant leur réalité" },
           { id:"c", text:"Nier les attributs divins" },
           { id:"d", text:"Interpréter tous les attributs allégoriquement" }
           ],
           correctId: "b",
-          explanation: "Tafwīḍ (التَّفوِيض) = « remettre » la connaissance de la modalité à Allah. On affirme : « Allah voit » (texte coranique) ; on ignore la « comment » (الكَيفِيَّة) ; on ne dit pas « voir comme les humains » ni « voir signifie autre chose ». C'est la position de l'Imām Mālik (الكَيف مجهول) et la méthode de la majorité des anciens savants."
+          explanation: "التَّفوِيض = « remettre » la connaissance de la modalité à Allah. On affirme : « Allah voit » (texte coranique) ; on ignore la « comment » ; on ne dit pas « voir comme les humains » ni « voir signifie autre chose ». C'est la position de l'Imām Mālik et la méthode de la majorité des anciens savants."
         },
         {
           id: "q-aqd-19",
           text: "<strong>PIÈGE :</strong> La liberté de conscience et la vérité de l'Islam sont-elles contradictoires selon la ʿaqīda malikite ?",
           choices: [
           { id:"a", text:"Oui — si l'Islam est vrai, tout autre religion doit être interdite" },
-          { id:"b", text:"Non — vérité objective (l'Islam est la voie d'Allah) et liberté de conscience (lَا إِكرَاه) coexistent" },
+          { id:"b", text:"Non — vérité objective (l'Islam est la voie d'Allah) et liberté de conscience coexistent" },
           { id:"c", text:"La question est moderne et sans réponse islamique" },
           { id:"d", text:"Oui — la contrainte est permise pour protéger la vérité" }
           ],
           correctId: "b",
-          explanation: "Coran 2:256 : « لَا إِكرَاهَ فِي الدِّين » — pas de contrainte en religion. Coran 3:19 : « إِنَّ الدِّينَ عِندَ اللَّهِ Islām (الإِسلَام) » — l'Islam est la voie d'Allah. Les deux coexistent : Allah a établi la vérité ET a donné à l'humain la liberté de l'accepter ou non. La contrainte n'est pas un outil islamique pour propager la foi."
+          explanation: "Coran 2:256 : « لَا إِكرَاهَ فِي الدِّين » — pas de contrainte en religion. Coran 3:19 : « إِنَّ الدِّينَ عِندَ اللَّهِ الإِسلَام » — l'Islam est la voie d'Allah. Les deux coexistent : Allah a établi la vérité ET a donné à l'humain la liberté de l'accepter ou non. La contrainte n'est pas un outil islamique pour propager la foi."
         },
         {
           id: "q-aqd-20",
@@ -477,30 +468,30 @@ const EXPERT = {
           text: "<strong>SYNTHÈSE :</strong> Quels sont les deux grand dangers que la méthode ashʿarite-malikite cherche à éviter ?",
           choices: [
           { id:"a", text:"Le péché mineur et le péché majeur" },
-          { id:"b", text:"Tashbīh (التَّشبِيه)/Tajsīm (التَّجسِيم) (anthropomorphisme — assimiler Allah aux créatures) ET Taʿṭīl (التَّعطِيل) (déni des attributs divins réels)" },
+          { id:"b", text:"التَّشبِيه/التَّجسِيم (anthropomorphisme — assimiler Allah aux créatures) ET التَّعطِيل (déni des attributs divins réels)" },
           { id:"c", text:"L'innovation et la tradition" },
           { id:"d", text:"Le rationalisme et le mysticism" }
           ],
           correctId: "b",
-          explanation: "La méthode ashʿarite-malikite navigue entre deux précipices symétriques : (1) Tashbīh (التَّشبِيه)/Tajsīm (التَّجسِيم) — dire que les attributs d'Allah sont comme ceux des humains (Allah a une main comme la nôtre) ; (2) Taʿṭīl (التَّعطِيل) — nier que les attributs ont une réalité (« voir » pour Allah = ne rien signifier de réel). La voie juste : affirmer les attributs, nier la ressemblance, ignorer la modalité."
+          explanation: "La méthode ashʿarite-malikite navigue entre deux précipices symétriques : (1) التَّشبِيه/التَّجسِيم — dire que les attributs d'Allah sont comme ceux des humains (Allah a une main comme la nôtre) ; (2) التَّعطِيل — nier que les attributs ont une réalité (« voir » pour Allah = ne rien signifier de réel). La voie juste : affirmer les attributs, nier la ressemblance, ignorer la modalité."
         }]
       }
     },
 
-    /* ═══ أُصُول Fiqh (الفِقه) المَالِكِيّ ═══ */
+    /* ═══ أُصُول الفِقه المَالِكِيّ ═══ */
     {
       id: "usul",
       title: "Méthodologie Juridique Malikite",
       arabicTitle: "أُصُول الفِقه المَالِكِيّ",
-      icon: "scroll",
-      description: "Les 8 sources du Fiqh mālikī — dont l'ʿAmal al-Madanī (عَمَل المَدِينَة), Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة), Sadd al-Dharāʾiʿ (سَدّ الذَّرَائِع) — et la méthode du Bidāyat al-Mujtahid.",
-      source: "Bidāyat al-Mujtahid d'Ibn Rushd · Al-Muwāfaqāt d'al-Shāṭibī · Mukhtasar Khalīl (intro)",
+      icon: "pen-b",
+      description: "Les 8 sources du Fiqh mālikī : ʿAmal al-Madanī, Maṣlaḥa, Sadd al-Dharāʾiʿ — et la méthode du Bidāyat al-Mujtahid.",
+      source: "Bidāyat al-Mujtahid d'Ibn Rushd · Al-Muwāfaqāt d'al-Shāṭibī",
       badge: {
         id: 'badge-expert-usul',
         title: "Expert en Uṣūl",
         arabicTitle: "عَالِمُ الأُصُول",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "أُصُول Fiqh (الفِقه) المَالِكِيّ"
+        icon: "pen-b", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire أُصُول الفِقه المَالِكِيّ'
       },
       lessons: [      {
         id: "usul-01",
@@ -521,8 +512,8 @@ const EXPERT = {
         { t:'ul', v:[
           "Tout ce qui est authentiquement établi du Prophète ﷺ : paroles (Ḥadīth — حَدِيث), actes (Fiʿl — فِعل), et approbations tacites (Taqrīr — تَقرِير).",
           "Types par chaîne de transmission : Mutawātir (مُتَوَاتِر — rapporté par tant de transmetteurs que la fabrication est impossible) → Āḥād (آحَاد — rapporté par moins de transmetteurs).",
-          "L'Imām Mālik est parfois cité comme rejetant un hadīth Āḥād quand il contredit l'ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة) — la pratique constante des habitants de Médine.",
-          "Muwattaʾ (المُوَطَّأ) est le premier grand recueil de Ḥadīth — critère rigoureux de sélection."
+          "L'Imām Mālik est parfois cité comme rejetant un hadīth Āḥād quand il contredit l'ʿAmal al-Madanī (عَمَل أَهل المَدِينَة) — la pratique constante des habitants de Médine.",
+          "Sa Muwattaʾ (المُوَطَّأ) est le premier grand recueil de Ḥadīth — critère rigoureux de sélection."
         ] },
         {"t": "h", "v": "Source 3 : Ijmāʿ (الإِجمَاع)"},
         { t:'ul', v:[
@@ -535,7 +526,7 @@ const EXPERT = {
         { t:'ul', v:[
           "L'analogie juridique : étendre le jugement d'un cas connu (Aṣl / أَصل) à un cas nouveau (Farʿ / فَرع) sur la base d'une cause commune (ʿIlla / عِلَّة).",
           "Exemple classique : le vin est prohibé pour cause d'ivresse (ʿIlla) → tout alcool enivrant (Farʿ) est également prohibé.",
-          "L'Imām Mālik recourait au Qiyās mais lui préféMaṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) quand elle était disponible.",
+          "L'Imām Mālik recourait au Qiyās mais lui préférait la Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) quand elle était disponible.",
           "Le Qiyās est limité par la condition que l'ʿIlla (عِلَّة — cause juridique) soit clairement identifiable et extractible du texte."
         ] },
         {"t": "note", "v": "La place du Qiyās chez l'Imām Mālik : il l'utilisait avec prudence. Plusieurs hadīth de la Muwattaʾ montrent Mālik refusant le Qiyās là où la pratique des Compagnons de Médine (ʿAmal — عَمَل) était clairement établie — la pratique prime sur l'analogie théorique."}
@@ -546,7 +537,7 @@ const EXPERT = {
         title: "ʿAmal al-Madanī et Maṣlaḥa — Sources Exclusivement Malikites",
         status: 'available',
         content: [
-        {"t": "lead", "v": "L'école malikite est la seule qui élève ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة — la pratique des habitants de Médine) au rang de source juridique majeure. Elle ajoute éMaṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) — l'intérêt public non textué — comme outil puissant d'adaptation de la loi aux réalités changeantes."},
+        {"t": "lead", "v": "L'école malikite est la seule qui élève ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة — la pratique des habitants de Médine) au rang de source juridique majeure. Elle ajoute également la Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) — l'intérêt public non textué — comme outil puissant d'adaptation de la loi aux réalités changeantes."},
         {"t": "h", "v": "ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة) — La Pratique Médinoise"},
         {"t": "p", "v": "Définition : le comportement juridique constant et transmis des habitants de Médine depuis l'époque du Prophète ﷺ et des Compagnons. Pour l'Imām Mālik, Médine était « la cité de la révélation » — sa pratique collective préserve une Sunna vivante plus fiable qu'un hadīth isolé."},
         { t:'ul', v:[
@@ -644,7 +635,7 @@ const EXPERT = {
         title: "Manhaj Ibn Rushd — La Méthode du Bidāyat al-Mujtahid",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Ibn Rushd al-Ḥafīd (اِبن رُشد الحَفِيد — Averroès, mort 595 H/1198 CE), savant malikite andalou et philosophe, a écrit le Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid (بِدَايَة Mujtahid (المُجتَهِد) وَنِهَايَة المُقتَصِد) — le manuel le plus rigoureux de jurisprudence comparée islamique."},
+        {"t": "lead", "v": "Ibn Rushd al-Ḥafīd (اِبن رُشد الحَفِيد — Averroès, mort 595 H/1198 CE), savant malikite andalou et philosophe, a écrit le Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid (بِدَايَة المُجتَهِد وَنِهَايَة المُقتَصِد) — le manuel le plus rigoureux de jurisprudence comparée islamique."},
         { t:'ar', v:"مَن أَرَادَ أَن يَكُونَ مُجتَهِدًا يَجِبُ أَن يَعرِفَ أَسبَابَ الخِلَاف", n:"Ibn Rushd, Bidāyat al-Mujtahid — « Quiconque veut être Mujtahid doit connaître les CAUSES des divergences »" },
         {"t": "h", "v": "Les 5 causes de divergence identifiées par Ibn Rushd"},
         { t:'ul', v:[
@@ -675,7 +666,7 @@ const EXPERT = {
       }],
       quiz: {
         id: 'quiz-expert-usul',
-        title: 'Questionnaire — ' + "أُصُول Fiqh (الفِقه) المَالِكِيّ",
+        title: 'Questionnaire — ' + "أُصُول الفِقه المَالِكِيّ",
         status: "available",
         score: null,
         questions: [        {
@@ -683,7 +674,7 @@ const EXPERT = {
           text: "Les 4 sources universelles du Fiqh islamique acceptées par toutes les écoles sont :",
           choices: [
           { id:"a", text:"Coran, Ijmāʿ, Qiyās et ʿUrf" },
-          { id:"b", text:"Qurʾān, Sunna, Ijmāʿ (الإِجمَاع) Qiyās (القِيَاس)" },
+          { id:"b", text:"Qurʾān, Sunna, Ijmāʿ (الإِجمَاع) et Qiyās (القِيَاس)" },
           { id:"c", text:"Coran, Muwattaʾ, Maṣlaḥa et Sadd al-Dharāʾiʿ" },
           { id:"d", text:"Coran, Sunna, ʿAmal al-Madanī et Maṣlaḥa" }
           ],
@@ -692,7 +683,7 @@ const EXPERT = {
         },
         {
           id: "q-usul-02",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Qu'ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة) ?",
+          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Qu'est-ce que le ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة) ?",
           choices: [
           { id:"a", text:"Les hadiths rapportés exclusivement par les Médinois" },
           { id:"b", text:"La pratique constante et transmise des habitants de Médine depuis l'époque du Prophète ﷺ — source juridique unique à l'école malikite" },
@@ -716,7 +707,7 @@ const EXPERT = {
         },
         {
           id: "q-usul-04",
-          text: "Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) doit satisfaire 3 conditions. Lesquelles ?",
+          text: "La Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) doit satisfaire 3 conditions. Lesquelles ?",
           choices: [
           { id:"a", text:"Être mentionnée dans le Coran, unanimement reconnue et ancienne" },
           { id:"b", text:"Être un intérêt réel et général, ne pas contredire un texte, et renforcer une des 5 Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة)" },
@@ -760,7 +751,7 @@ const EXPERT = {
           { id:"d", text:"7" }
           ],
           correctId: "c",
-          explanation: "Ibn Rushd identifie 5 causes systématiques : (1) Ikhtilāf al-Riwāya (اختِلَاف الرِّوَايَة — authenticité du Ḥadīth) ; (2) Taʿāruḍ al-Adilla (تَعَارُض الأَدِلَّة — conflit entre textes) ; (3) Ikhtilāf fī al-Qiyās (اختِلَاف فِي Qiyās (القِيَاس) — divergence sur la cause analogique) ; (4) Taʿaddud maʿānī al-Alfāẓ (تَعَدُّد المَعَانِي — polysémie arabe) ; (5) Ikhtilāf fī al-Ijmāʿ (اختِلَاف فِي Ijmāʿ (الإِجمَاع) — sur le consensus)."
+          explanation: "Ibn Rushd identifie 5 causes systématiques : (1) Ikhtilāf al-Riwāya (اختِلَاف الرِّوَايَة — authenticité du Ḥadīth) ; (2) Taʿāruḍ al-Adilla (تَعَارُض الأَدِلَّة — conflit entre textes) ; (3) Ikhtilāf fī al-Qiyās (اختِلَاف فِي القِيَاس — divergence sur la cause analogique) ; (4) Taʿaddud maʿānī al-Alfāẓ (تَعَدُّد المَعَانِي — polysémie arabe) ; (5) Ikhtilāf fī al-Ijmāʿ (اختِلَاف فِي الإِجمَاع — sur le consensus)."
         },
         {
           id: "q-usul-08",
@@ -772,7 +763,7 @@ const EXPERT = {
           { id:"d", text:"Interdit seulement entre malikites et hanafites" }
           ],
           correctId: "b",
-          explanation: "Position malikite nuancée : Talfīq (التَّلفِيق) est permis pour une Ḥāja (حَاجَة — besoin réel). Ce qui est interdit, c'est le Tatabbuʿ al-Rukhaṣ (تَتَبُّع الرُّخَص) — choisir dans chaque Madhhab la règle la plus permissive pour construire un Islam minimal."
+          explanation: "Position malikite nuancée : le Talfīq (التَّلفِيق) est permis pour une Ḥāja (حَاجَة — besoin réel). Ce qui est interdit, c'est le Tatabbuʿ al-Rukhaṣ (تَتَبُّع الرُّخَص) — choisir dans chaque Madhhab la règle la plus permissive pour construire un Islam minimal."
         },
         {
           id: "q-usul-09",
@@ -851,7 +842,7 @@ const EXPERT = {
           text: "<strong>SYNTHÈSE :</strong> Quelle source rend l'école malikite particulièrement adaptée aux mutations sociales et aux nouveaux contextes ?",
           choices: [
           { id:"a", text:"Le Qurʾān uniquement" },
-          { id:"b", text:"Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) + Sadd al-Dharāʾiʿ (سَدّ الذَّرَائِع) + ʿUrf (العُرف) — permettent une adaptation raisonnée aux réalités nouvelles sans trahir les principes" },
+          { id:"b", text:"La Maṣlaḥa al-Mursala (المَصلَحَة المُرسَلَة) + Sadd al-Dharāʾiʿ (سَدّ الذَّرَائِع) + ʿUrf (العُرف) — permettent une adaptation raisonnée aux réalités nouvelles sans trahir les principes" },
           { id:"c", text:"Le rejet de toutes les innovations" },
           { id:"d", text:"L'Ijmāʿ (الإِجمَاع) uniquement" }
           ],
@@ -860,7 +851,7 @@ const EXPERT = {
         },
         {
           id: "q-usul-16",
-          text: "ʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة) de l'Imām Mālik est parfois comparé à quel concept moderne ?",
+          text: "Le ʿAmal al-Madanī (عَمَل أَهل المَدِينَة) de l'Imām Mālik est parfois comparé à quel concept moderne ?",
           choices: [
           { id:"a", text:"La common law britannique" },
           { id:"b", text:"Le droit constitutionnel" },
@@ -899,7 +890,7 @@ const EXPERT = {
           text: "L'Al-Muwāfaqāt (المُوَافَقَات) d'al-Shāṭibī (الشَّاطِبِيّ) est important pour quel concept central ?",
           choices: [
           { id:"a", text:"L'histoire de l'Andalousie islamique" },
-          { id:"b", text:"La théorisation des Maqāṣid al-Sharīʿa (مَقَاصِد Sharīʿa (الشَّرِيعَة) — finalités de la Loi islamique) comme fondement de la Maṣlaḥa malikite" },
+          { id:"b", text:"La théorisation des Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة — finalités de la Loi islamique) comme fondement de la Maṣlaḥa malikite" },
           { id:"c", text:"La biographie de l'Imām Mālik" },
           { id:"d", text:"Les règles de la récitation coranique" }
           ],
@@ -912,7 +903,7 @@ const EXPERT = {
           choices: [
           { id:"a", text:"Elle n'utilise que le Coran" },
           { id:"b", text:"L'utilisation du ʿAmal al-Madanī et de la Maṣlaḥa al-Mursala comme sources majeures — un corpus étendu permettant une adaptation rigoureuse aux contextes nouveaux sans quitter les principes islamiques" },
-          { id:"c", text:"Qiyās (القِيَاس) complètement" },
+          { id:"c", text:"Elle rejette le Qiyās (القِيَاس) complètement" },
           { id:"d", text:"Elle suit toujours la majorité des savants" }
           ],
           correctId: "b",
@@ -921,20 +912,20 @@ const EXPERT = {
       }
     },
 
-    /* ═══ الإِمَام مَالِك وMuwattaʾ (المُوَطَّأ) ═══ */
+    /* ═══ الإِمَام مَالِك والمُوَطَّأ ═══ */
     {
       id: "malikiath",
       title: "L'Imam Mālik et la Muwattaʾ",
       arabicTitle: "الإِمَام مَالِك والمُوَطَّأ",
-      icon: "moon",
-      description: "Biographie de l'Imām Mālik, Muwattaʾ (المُوَطَّأ), Mudawwana (المُدَوَّنَة), les grandes figures et la diffusion mondiale du Madhhab mālikī.",
-      source: "Muwattaʾ de l'Imām Mālik · Mudawwana de Saḥnūn · Biographies classiques",
+      icon: "mosque-m",
+      description: "Biographie de l'Imām Mālik, la Muwattaʾ, la Mudawwana, les grandes figures et la diffusion mondiale du Madhhab mālikī.",
+      source: "Muwattaʾ · Mudawwana de Saḥnūn · Biographies classiques",
       badge: {
         id: 'badge-expert-malikiath',
         title: "Héritier de Mālik",
         arabicTitle: "وَارِثُ الإِمَام مَالِك",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "الإِمَام مَالِك وMuwattaʾ (المُوَطَّأ)"
+        icon: "mosque-m", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire الإِمَام مَالِك والمُوَطَّأ'
       },
       lessons: [      {
         id: "mal-01",
@@ -959,7 +950,7 @@ const EXPERT = {
         {"t": "h", "v": "Ses élèves et la diffusion de l'école"},
         { t:'ul', v:[
           "Al-Shāfiʿī (الشَّافِعِيّ — fondateur du 3ème Madhhab) a étudié sous Mālik et a dit : « Mālik est mon maître le plus précieux. »",
-          "Ibn al-Qāsim (اِبن القَاسِم — mort 191 H) : principal transmetteur des opinions de Mālik, Mudawwana (المُدَوَّنَة).",
+          "Ibn al-Qāsim (اِبن القَاسِم — mort 191 H) : principal transmetteur des opinions de Mālik, source de la Mudawwana (المُدَوَّنَة).",
           "ʿAbd al-Raḥmān ibn al-Qāsim transmit l'école en Égypte → Saḥnūn (سَحنُون) en ramena les enseignements en Ifriqiyya (Tunisie actuelle).",
           "Ashhab, Asbagh, Ibn Wahb : autres grands élèves directs dont les transmissions forment le Fiqh malikite historique."
         ] },
@@ -983,7 +974,7 @@ const EXPERT = {
         {"t": "h", "v": "Critère de sélection des Ḥadīth"},
         { t:'ul', v:[
           "Mālik ne retenait que les Ḥadīth qu'il pouvait confirmer par la pratique médinoise ou l'accord des Fuqahāʾ (فُقَهَاء — juristes).",
-          "Il a écarté de nombreux Ḥadīth authentiques par d'autres critèʿAmal ahl al-Madīna (عَمَل أَهل المَدِينَة).",
+          "Il a écarté de nombreux Ḥadīth authentiques par d'autres critères car ils contredisaient le ʿAmal al-Madanī (عَمَل أَهل المَدِينَة).",
           "Al-Bukhārī (البُخَارِيّ) et Muslim (مُسلِم) ont utilisé la Muwattaʾ comme source et point de référence pour leurs propres recueils.",
           "Le hadīth de la Muwattaʾ ont 3 statuts : Musnad (مُسنَد — chaîne complète jusqu'au Prophète ﷺ), Mursal (مُرسَل — chaîne incomplète), Mawqūf (مَوقُوف — arrêté au Compagnon)."
         ] },
@@ -1002,7 +993,7 @@ const EXPERT = {
         title: "Al-Mudawwana — La Grande Encyclopédie du Fiqh Malikite",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Al-Mudawwana al-Kubrā (المُدَوَّنَة الكُبرَى) est la seconde source fondatrice de l'école malikite aprèMuwattaʾ (المُوَطَّأ). Compilée par Saḥnūn ibn Saʿīd (سَحنُون بن سَعِيد — savant tunisien, mort 240 H/854 CE) à partir des réponses d'Ibn al-Qāsim (اِبن القَاسِم) — élève direct de Mālik — elle est la « Bible » pratique de l'école malikite."},
+        {"t": "lead", "v": "Al-Mudawwana al-Kubrā (المُدَوَّنَة الكُبرَى) est la seconde source fondatrice de l'école malikite après la Muwattaʾ (المُوَطَّأ). Compilée par Saḥnūn ibn Saʿīd (سَحنُون بن سَعِيد — savant tunisien, mort 240 H/854 CE) à partir des réponses d'Ibn al-Qāsim (اِبن القَاسِم) — élève direct de Mālik — elle est la « Bible » pratique de l'école malikite."},
         {"t": "h", "v": "Histoire de la Mudawwana"},
         { t:'ul', v:[
           "Asad ibn al-Furāt (أَسَد بن الفُرَات) a d'abord recueilli les réponses d'Ibn al-Qāsim en Égypte (→ Al-Asadiyya / الأَسَدِيَّة).",
@@ -1047,7 +1038,7 @@ const EXPERT = {
           "<strong>Ibn Rushd al-Ḥafīd (اِبن رُشد الحَفِيد, Averroès, mort 595 H) :</strong> auteur du Bidāyat al-Mujtahid — philosophe et juriste de génie.",
           "<strong>Al-Qarāfī (القَرَافِيّ, Égyptien, mort 684 H) :</strong> Al-Dhakhīra (الذَّخِيرَة) — encyclopédie du Fiqh malikite en 13 volumes. A systématisé la distinction Qāʿida / قَاعِدَة (règle générale) et Ḍābiṭ / ضَابِط (règle spécifique).",
           "<strong>Khalīl ibn Isḥāq (خَلِيل بن إِسحَاق, mort 776 H) :</strong> auteur du Mukhtasar (المُختَصَر) étudié dans ce site — résumé dense du Fiqh malikite, commenté des centaines de fois.",
-          "<strong>Al-Shāṭibī (الشَّاطِبِيّ, Andalou, mort 790 H) :</strong> Al-Muwāfaqāt (المُوَافَقَات) — théMaqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة)."
+          "<strong>Al-Shāṭibī (الشَّاطِبِيّ, Andalou, mort 790 H) :</strong> Al-Muwāfaqāt (المُوَافَقَات) — théorie des Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة)."
         ] },
         {"t": "h", "v": "Figures contemporaines"},
         { t:'ul', v:[
@@ -1063,7 +1054,7 @@ const EXPERT = {
         title: "Al-Imtidād al-Jughrāfī — La Diffusion Mondiale du Madhhab Mālikī",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Madhhab Mālikī (المَذهَب المَالِكِيّ) est la plus répandue géographiquement des 4 grandes écoles juridiques islamiques. De l'Andalousie médiévale à l'Afrique sub-saharienne contemporaine, il domine dans un arc géographique immense."},
+        {"t": "lead", "v": "Le Madhhab mālikī (المَذهَب المَالِكِيّ) est la plus répandue géographiquement des 4 grandes écoles juridiques islamiques. De l'Andalousie médiévale à l'Afrique sub-saharienne contemporaine, il domine dans un arc géographique immense."},
         {"t": "h", "v": "Voies de diffusion historique"},
         { t:'ul', v:[
           "<strong>Médine → Égypte :</strong> Ibn al-Qāsim et Ashhab ont établi le Fiqh malikite en Égypte au 2ème siècle H — mais il sera supplanté par le Madhhab shāfiʿī plus tard.",
@@ -1093,7 +1084,7 @@ const EXPERT = {
       }],
       quiz: {
         id: 'quiz-expert-malikiath',
-        title: 'Questionnaire — ' + "الإِمَام مَالِك وMuwattaʾ (المُوَطَّأ)",
+        title: 'Questionnaire — ' + "الإِمَام مَالِك والمُوَطَّأ",
         status: "available",
         score: null,
         questions: [        {
@@ -1110,7 +1101,7 @@ const EXPERT = {
         },
         {
           id: "q-mal-02",
-          text: "Muwattaʾ (المُوَطَّأ) est unique parmi les recueils de Ḥadīth car :",
+          text: "Al-Muwaṭṭaʾ (المُوَطَّأ) est unique parmi les recueils de Ḥadīth car :",
           choices: [
           { id:"a", text:"Il ne contient que les hadiths mutawātir" },
           { id:"b", text:"Il intègre Ḥadīth + avis des Compagnons + ʿAmal al-Madanī (عَمَل المَدِينَة) + avis de Mālik — c'est un manuel de Fiqh par le Ḥadīth" },
@@ -1173,7 +1164,7 @@ const EXPERT = {
           text: "<strong>AVANCÉ :</strong> Pourquoi le Fiqh mālikī pratiqué au Maghreb reflète-t-il souvent les avis d'Ibn al-Qāsim plutôt que ceux directs de Mālik ?",
           choices: [
           { id:"a", text:"Parce qu'Ibn al-Qāsim était plus savant que Mālik" },
-          { id:"b", text:"Mudawwana (المُدَوَّنَة) — transmise via Ibn al-Qāsim et Saḥnūn — est devenue la référence principale du Madhhab mālikī au Maghreb" },
+          { id:"b", text:"Parce que la Mudawwana (المُدَوَّنَة) — transmise via Ibn al-Qāsim et Saḥnūn — est devenue la référence principale du Madhhab mālikī au Maghreb" },
           { id:"c", text:"Parce que les avis de Mālik ont été perdus" },
           { id:"d", text:"Parce que Saḥnūn a corrigé les erreurs de Mālik" }
           ],
@@ -1185,12 +1176,12 @@ const EXPERT = {
           text: "Al-Shāṭibī (الشَّاطِبِيّ) est l'auteur d'Al-Muwāfaqāt (المُوَافَقَات). Quel est l'apport principal de cet ouvrage ?",
           choices: [
           { id:"a", text:"Une grammaire de la langue arabe" },
-          { id:"b", text:"La théorisation systéMaqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة) comme fondement théorique de toute la Sharīʿa islamique" },
+          { id:"b", text:"La théorisation systématique des Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة) comme fondement théorique de toute la Sharīʿa islamique" },
           { id:"c", text:"Un commentaire de la Muwattaʾ" },
           { id:"d", text:"Une biographie de l'Imām Mālik" }
           ],
           correctId: "b",
-          explanation: "Al-Shāṭibī (mort 790 H, Grenade) : Al-Muwāfaqāt (المُوَافَقَات) = le premier traité systématique sur les Maqāṣid al-Sharīʿa (مَقَاصِد Sharīʿa (الشَّرِيعَة) — finalités de la Loi islamique). Il démontre que toute la Sharīʿa vise à protéger les 5 valeurs fondamentales. Son œuvre est le fondement théorique de la Maṣlaḥa malikite contemporaine."
+          explanation: "Al-Shāṭibī (mort 790 H, Grenade) : Al-Muwāfaqāt (المُوَافَقَات) = le premier traité systématique sur les Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة — finalités de la Loi islamique). Il démontre que toute la Sharīʿa vise à protéger les 5 valeurs fondamentales. Son œuvre est le fondement théorique de la Maṣlaḥa malikite contemporaine."
         },
         {
           id: "q-mal-09",
@@ -1284,18 +1275,17 @@ const EXPERT = {
       id: "sira",
       title: "La Sīra et son Enseignement Juridique",
       arabicTitle: "السِّيرَة النَّبَوِيَّة وفِقهُهَا",
-      icon: "arch",
-      description: "La vie du Prophète ﷺ comme source du Fiqh mālikī : phases de la révélation, grandes décisions juridiques prophétiques et héritage des Compagnons.",
-      source: "Ibn Hishām · Al-Bukhārī · Muwattaʾ · Sources hadiths",
+      icon: "lantern",
+      description: "La vie du Prophète ﷺ comme source du Fiqh mālikī : phases de la révélation, décisions prophétiques et héritage des Compagnons.",
+      source: "Ibn Hishām · Al-Bukhārī · Muwattaʾ",
       badge: {
         id: 'badge-expert-sira',
         title: "Connaisseur de la Sīra",
         arabicTitle: "عَارِفُ السِّيرَة",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "السِّيرَة النَّبَوِيَّة وفِقهُهَا"
+        icon: "lantern", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire السِّيرَة النَّبَوِيَّة وفِقهُهَا'
       },
-      lessons: [
-      {
+      lessons: [      {
         id: "sir-01",
         title: "Marāḥil al-Waḥy — Les Phases de la Révélation et le Fiqh",
         status: 'available',
@@ -1460,15 +1450,13 @@ const EXPERT = {
         ] },
         {"t": "note", "v": "Méthode malikite d'utilisation de la Sīra (السِّيرَة) : l'Imām al-Shāṭibī (الشَّاطِبِيّ) dans Al-Muwāfaqāt rappelle qu'on ne peut pas extraire des règles d'un épisode de la Sīra sans en comprendre le Maqṣad (مَقصَد — finalité). La Sīra est narrative — elle montre le Prophète ﷺ répondant à des situations précises. Généraliser sans contexte est une erreur méthodologique fondamentale."}
         ]
-      }
-      ],
+      }],
       quiz: {
         id: 'quiz-expert-sira',
         title: 'Questionnaire — ' + "السِّيرَة النَّبَوِيَّة وفِقهُهَا",
-        status: 'available',
+        status: "available",
         score: null,
-        questions: [
-        {
+        questions: [        {
           id: "q-sir-01",
           text: "La période mecquoise (Al-Marḥala al-Makkiyya / المَرحَلَة المَكِّيَّة) de la révélation est centrée sur :",
           choices: [
@@ -1707,8 +1695,7 @@ const EXPERT = {
           ],
           correctId: "b",
           explanation: "La Sīra (السِّيرَة) dans le Fiqh mālikī : source de Sunna (سُنَّة) vivante (via Ṣaḥāba et Tābiʿīn), modèles de gouvernance plurielle (Wathīqat al-Madīna / وَثِيقَة المَدِينَة), de Fiqh al-Muwāzanāt (Ḥudaybiyya), de Tashawwuf al-Tashriʿī (alcool), de Fiqh al-ʿAfw (Fatḥ Makka). Avec méthode rigoureuse : contexte toujours examiné avant extraction de règles."
-        }
-        ]
+        }]
       }
     },
 
@@ -1717,18 +1704,17 @@ const EXPERT = {
       id: "aqalliyyat",
       title: "Fiqh des Minorités Musulmanes",
       arabicTitle: "فِقه الأَقلِّيَّات والمُوَاطَنَة",
-      icon: "scales",
-      description: "Vivre et pratiquer l'Islam en pays non-islamique : citoyenneté, participation politique, Talfīq (التَّلفِيق), gestion des divergences et coexistence.",
-      source: "doctrine-malikite.fr · Conseil Européen de la Fatwa · Fatāwā contemporaines",
+      icon: "globe-m",
+      description: "Citoyenneté, participation, défis pratiques et coexistence : l'Islam en pays non-islamique selon la méthode malikite.",
+      source: "doctrine-malikite.fr · Conseil Européen de la Fatwa",
       badge: {
         id: 'badge-expert-aqalliyyat',
         title: "Juriste des Minorités",
         arabicTitle: "فَقِيهُ الأَقلِّيَّات",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "فِقه الأَقلِّيَّات والمُوَاطَنَة"
+        icon: "globe-m", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire فِقه الأَقلِّيَّات والمُوَاطَنَة'
       },
-      lessons: [
-      {
+      lessons: [      {
         id: "aqal-01",
         title: "Uṣūl Fiqh al-Aqalliyyāt — Fondements Théoriques",
         status: 'available',
@@ -1896,15 +1882,13 @@ const EXPERT = {
         {"t": "p", "v": "Doctrine-malikite.fr conclut sa section sur le Fiqh al-Aqalliyyāt (فِقه الأَقلِّيَّات) avec une vision : un Muslim français n'a pas à choisir entre son Islām (الإِسلَام) et sa citoyenneté française. Les deux identités sont complémentaires et enrichissantes. La Sīra (السِّيرَة) du Prophète ﷺ, le Fiqh mālikī avec sa flexibilité et ses Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة), et la tradition musulmane française — africaine, maghrébine, Ṣūfiyya (صُوفِيَّة) — constituent une ressource exceptionnelle pour construire cet Islam français épanoui."},
         {"t": "note", "v": "Message final : le Fiqh al-Aqalliyyāt (فِقه الأَقلِّيَّات) n'est pas une capitulation face à la France laïque — c'est la mise en œuvre intelligente, rigoureuse et courageuse de l'Islām (الإِسلَام) dans un contexte spécifique. Comme l'Imām Mālik à Médine sous les Abbassides, comme al-Najāshī (النَّجَاشِيّ) en Éthiopie, comme les savants de Tombouctou sous des rois non-islamiques — la tradition malikite a toujours su naviguer entre fidélité aux principes et intelligence des contextes."}
         ]
-      }
-      ],
+      }],
       quiz: {
         id: 'quiz-expert-aqalliyyat',
         title: 'Questionnaire — ' + "فِقه الأَقلِّيَّات والمُوَاطَنَة",
-        status: 'available',
+        status: "available",
         score: null,
-        questions: [
-        {
+        questions: [        {
           id: "q-aqal-01",
           text: "Fiqh al-Aqalliyyāt (فِقه الأَقلِّيَّات) est :",
           choices: [
@@ -2083,8 +2067,7 @@ const EXPERT = {
           ],
           correctId: "b",
           explanation: "La vision malikite : un Muslim français n'a pas à choisir entre son Islām (الإِسلَام) et sa citoyenneté. Fiqh al-Aqalliyyāt (فِقه الأَقلِّيَّات) + Maqāṣid al-Sharīʿa (مَقَاصِد الشَّرِيعَة) + tradition soufie malikite = ressources pour un Islam français épanoui. La Sīra (السِّيرَة) du Prophète ﷺ à Médine — société plurielle, droits pour tous — reste le modèle."
-        }
-        ]
+        }]
       }
     },
 
@@ -2093,48 +2076,824 @@ const EXPERT = {
       id: "bioethique",
       title: "Bioéthique et Grandes Questions Contemporaines",
       arabicTitle: "البِيُوإِثِيقَا والمُسْتَجَدَّات الكُبرَى",
-      icon: "heart",
-      description: "Don d'organes, FIV, euthanasie, cryptomonnaies, IA et écologie : réponses mālikītes aux questions inédites du Fiqh contemporain.",
-      source: "doctrine-malikite.fr · Conseil Européen de la Fatwa · Fatāwā contemporaines",
+      icon: "leaf-b",
+      description: "Don d'organes, PMA, fin de vie, IA, cryptomonnaies et écologie islamique : réponses mālikītes aux questions inédites.",
+      source: "doctrine-malikite.fr · Majmaʿ al-Fiqh · Conseil Européen de la Fatwa",
       badge: {
         id: 'badge-expert-bioethique',
         title: "Expert en Bioéthique",
         arabicTitle: "فَقِيهُ المُسْتَجَدَّات",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "البِيُوإِثِيقَا والمُسْتَجَدَّات الكُبرَى"
+        icon: "leaf-b", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire البِيُوإِثِيقَا والمُسْتَجَدَّات الكُبرَى'
       },
-      lessons: [],
+      lessons: [      {
+        id: "bio-01",
+        title: "Don d'Organes et Transplantation — Position Islamique",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "Le don d'organes est l'une des questions de bioéthique les plus débattues en Fiqh contemporain. Le Majmaʿ al-Fiqh al-Islāmī (Académie Internationale du Fiqh Islamique) et le Conseil Européen de la Fatwa y ont consacré des sessions entières. L'école malikite offre des outils méthodologiques précieux pour y répondre."},
+        {"t": "h", "v": "Cadre général : Ḍarūra et Maṣlaḥa"},
+        {"t": "p", "v": "Deux principes malikites fondamentaux s'appliquent : la Ḍarūra (nécessité vitale) et la Maṣlaḥa al-Mursala (intérêt général non textué). Si aucun texte ne mentionne explicitement la transplantation, les Maqāṣid al-Sharīʿa — notamment Ḥifẓ al-Nafs (protection de la vie) — permettent d'en déduire le jugement."},
+        {"t": "h", "v": "Position du Majmaʿ al-Fiqh — Don permis sous conditions"},
+        { t:'ul', v:[
+          "Résolution du Majmaʿ al-Fiqh al-Islāmī (1988, session 4) : le don d'organes est permis islamiquement, de son vivant ou après la mort, sous conditions strictes.",
+          "Conditions pour le don du vivant : (1) le donneur est adulte et sain d'esprit ; (2) le don ne met pas la vie du donneur en danger ; (3) le consentement est libre et éclairé ; (4) le receveur en a une nécessité vitale.",
+          "Conditions pour le don post-mortem : (1) testament du défunt ou accord de la famille ; (2) constatation légale du décès ; (3) respect du corps après prélèvement.",
+          "Le prélèvement sur un mort est assimilable au Daʿwa de secours — comme couper le ventre d'une mère décédée pour sauver l'enfant, ce que les fuqahāʾ classiques ont permis."
+        ] },
+        {"t": "h", "v": "Mort cérébrale (Mawt al-Dimāgh) — Divergence centrale"},
+        {"t": "p", "v": "La controverse majeure porte sur la mort cérébrale comme critère islamique de décès. En médecine moderne, la mort cérébrale (arrêt total et irréversible des fonctions cérébrales) permet le prélèvement d'organes alors que le cœur bat encore artificiellement."},
+        { t:'ul', v:[
+          "Position favorable (majorité du Majmaʿ al-Fiqh) : la mort cérébrale équivaut islamiquement à la mort — les organes peuvent être prélevés.",
+          "Position réservée (savants malikites traditionnels) : le Rūḥ (âme) quitte le corps à l'arrêt cardiaque — prudence sur la mort cérébrale seule.",
+          "Position du CEF pour les Muslims d'Europe : permettre le don après mort cérébrale constatée par deux médecins indépendants, par Maṣlaḥa — sauver des vies est une priorité islamique.",
+          "Doctrine-malikite.fr : recommande aux Muslims d'exprimer de leur vivant (testament, carte de donneur) leur choix éclairé sur le don d'organes."
+        ] },
+        {"t": "h", "v": "Vente d'organes — Unanimement interdite"},
+        { t:'ul', v:[
+          "Vendre ses organes est Ḥarām selon toutes les écoles — le corps humain n'est pas une propriété aliénable.",
+          "Le Coran (17:70) : « Nous avons honoré les fils d'Adam » — la dignité corporelle est intouchable.",
+          "Le don altruiste reste la seule voie islamiquement valide — avec compensation des frais médicaux possibles."
+        ] },
+        {"t": "note", "v": "Cas pratique fréquent en France : un Muslim dialysé depuis 5 ans attend une greffe de rein. Son Imām lui dit que le don d'organes est Ḥarām. La position correcte selon le Majmaʿ al-Fiqh et doctrine-malikite.fr : accepter la greffe est non seulement permis mais recommandé — refuser serait mettre sa vie en danger sans raison valide, ce qui est lui-même interdit."}
+        ]
+      },
+      {
+        id: "bio-02",
+        title: "PMA, FIV et Procréation Assistée — Limites Islamiques",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "La Procréation Médicalement Assistée (PMA) soulève des questions fondamentales sur la filiation (Nasab), la famille islamique et les limites du corps humain. Le Fiqh islamique contemporain y a répondu avec nuance, distinguant soigneusement les techniques permises des techniques interdites."},
+        {"t": "h", "v": "Principe fondateur : préserver la Nasab"},
+        {"t": "p", "v": "Le Nasab (filiation légitime) est l'une des cinq finalités de la Sharīʿa (Ḥifẓ al-Nasl). Toute technique de PMA qui brouille ou supprime le Nasab est islamiquement problématique. C'est le critère discriminant principal."},
+        {"t": "h", "v": "Techniques PERMISES"},
+        { t:'ul', v:[
+          "Insémination artificielle intra-conjugale (sperme du mari + ovule de l'épouse) : unanimement permise — pas d'atteinte au Nasab.",
+          "FIV intra-conjugale (fécondation in vitro avec gamètes du couple marié) : permise selon la majorité des savants contemporains — sous condition que l'embryon soit implanté dans l'utérus de l'épouse.",
+          "Médicaments stimulants l'ovulation dans le cadre du couple marié : permis par Maṣlaḥa.",
+          "Ces techniques visent à réaliser la Maṣlaḥa de la famille et à combattre la stérilité — objectif islamiquement validé."
+        ] },
+        {"t": "h", "v": "Techniques INTERDITES"},
+        { t:'ul', v:[
+          "Don de sperme (d'un donneur extérieur) : Ḥarām — équivalent à un rapport extra-conjugal dans ses effets sur le Nasab.",
+          "Don d'ovule : interdit selon la majorité — brouille le Nasab maternel.",
+          "Mère porteuse (Gestation Pour Autrui - GPA) : interdite — brouille la maternité et le Nasab.",
+          "FIV avec embryons congelés après divorce ou décès du mari : problèmes juridiques sérieux — prudence extrême requise.",
+          "Clonage humain reproductif : unanimement interdit — porte atteinte à la création divine et au Nasab."
+        ] },
+        {"t": "h", "v": "Les Embryons Surnuméraires"},
+        { t:'ul', v:[
+          "La FIV produit souvent plus d'embryons que nécessaire — que faire des surnuméraires ?",
+          "Détruire : déconseillé — un embryon est une vie potentielle (même si pas encore une personne).",
+          "Congeler : permis temporairement pour un futur implantation dans le même couple.",
+          "Don à la recherche : très discuté — certains savants permettent la recherche médicale sur des embryons très précoces (avant 14 jours) par Maṣlaḥa médicale.",
+          "Résolution du Majmaʿ al-Fiqh : limiter le nombre d'embryons produits pour éviter ce dilemme."
+        ] },
+        {"t": "note", "v": "La PMA avec don de gamètes (sperme, ovule) d'une tierce personne n'est pas assimilable à la Zinā (fornication) car l'acte sexuel est absent — mais elle produit les mêmes effets juridiques néfastes sur le Nasab. C'est pourquoi le Fiqh l'interdit : non pas pour le péché de Zinā mais pour la protection du Nasab et de la structure familiale islamique."}
+        ]
+      },
+      {
+        id: "bio-03",
+        title: "Fin de Vie — Euthanasie, Soins Palliatifs et Acharnement",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "Les questions de fin de vie — euthanasie, suicide assisté, acharnement thérapeutique, soins palliatifs — sont parmi les plus douloureuses de la bioéthique contemporaine. La position islamique est nuancée : ni l'euthanasie ni l'acharnement ne sont acceptables — la voie est les soins palliatifs de qualité."},
+        { t:'ar', v:"وَلَا تَقتُلُوا أَنفُسَكُم إِنَّ اللَّهَ كَانَ بِكُم رَحِيمًا", n:"Coran 4:29 — « Ne vous tuez pas vous-mêmes — Allah est Miséricordieux envers vous »" },
+        {"t": "h", "v": "Euthanasie Active — Unanimement Interdite"},
+        { t:'ul', v:[
+          "Mettre délibérément fin à la vie d'un patient (même mourant, même souffrant) = meurtre islamiquement.",
+          "Même le patient ne peut consentir à sa propre mise à mort — la vie appartient à Allah, pas à l'individu.",
+          "Le Coran 4:29 interdit explicitement l'atteinte à la vie humaine — y compris la sienne.",
+          "Résolution du Majmaʿ al-Fiqh : l'euthanasie active est Ḥarām sans exception."
+        ] },
+        {"t": "h", "v": "Suicide Assisté — Interdit"},
+        { t:'ul', v:[
+          "Donner les moyens à quelqu'un de se suicider = complicité dans un acte Ḥarām.",
+          "La différence juridique avec l'euthanasie active est mince islamiquement — les deux impliquent la fin délibérée d'une vie.",
+          "Le médecin Muslim en France qui refuse légalement de participer est protégé par la clause de conscience — doctrine-malikite.fr confirme qu'il ne doit pas participer."
+        ] },
+        {"t": "h", "v": "Acharnement Thérapeutique — Interdit aussi"},
+        { t:'ul', v:[
+          "Maintenir artificiellement en vie une personne sans espoir de guérison et dans la souffrance n'est pas une obligation islamique — c'est même contraire à la Raḥma (miséricorde).",
+          "L'Imām Mālik et les savants malikites classiques : la médecine est recommandée (Sunnah) mais pas obligatoire dans tous les cas.",
+          "Débrancher un respirateur sur un patient en mort cérébrale : permis islamiquement selon la majorité — c'est cesser l'artificiel, pas tuer.",
+          "Arrêter un traitement curatif inutile et passer aux soins palliatifs : recommandé islamiquement."
+        ] },
+        {"t": "h", "v": "Soins Palliatifs — La Voie Islamique"},
+        {"t": "p", "v": "Les soins palliatifs (soulagement de la douleur, accompagnement spirituel, confort) représentent la voie islamique de fin de vie. Ils respectent simultanément : la vie (pas d'euthanasie), la dignité (pas d'acharnement), et la Raḥma (miséricorde envers la souffrance)."},
+        { t:'ul', v:[
+          "La morphine et les antidouleurs puissants : permis même s'ils peuvent théoriquement raccourcir la vie — l'intention est le soulagement, pas la mort (principe du double effet).",
+          "Le Testament de vie islamique (Waṣiyya médicale) : recommandé pour indiquer ses préférences — doctrine-malikite.fr encourage sa rédaction.",
+          "L'accompagnement spirituel du mourant : obligation islamique — lire la Shahāda, réciter le Coran, être présent.",
+          "Doctrine-malikite.fr : « La mort n'est pas un échec médical — c'est un passage. Accompagner dignement vaut mieux qu'acharner artificellement. »"
+        ] },
+        {"t": "note", "v": "Cas concret : un Muslim en phase terminale d'un cancer souffre beaucoup. Sa famille veut tout arrêter. Position islamique : (1) arrêter les traitements curatifs inutiles est permis ; (2) les soins palliatifs (morphine, confort) sont recommandés ; (3) l'euthanasie active reste interdite ; (4) accompagner spirituellement est une obligation communautaire."}
+        ]
+      },
+      {
+        id: "bio-04",
+        title: "Intelligence Artificielle, Cryptomonnaies et Numérique",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "L'IA, les cryptomonnaies et le numérique sont les grandes questions contemporaines que le Fiqh classique n'a pas abordées. Le Fiqh mālikī — avec sa Maṣlaḥa, son Qiyās et ses Maqāṣid — offre des outils robustes pour y répondre."},
+        {"t": "h", "v": "Intelligence Artificielle — Statut Juridique"},
+        { t:'ul', v:[
+          "L'IA n'a pas de Rūḥ (âme) — elle n'est donc pas un sujet moral Mukallaf (responsable en droit islamique).",
+          "L'IA est un outil (Āla) comme tout outil — sa licéité dépend de son usage : Ḥalāl si bon usage, Ḥarām si mauvais usage.",
+          "Responsabilité islamique : incombe au créateur (développeur) et à l'utilisateur — pas à l'IA elle-même.",
+          "Les robots-imāms, les IA qui « donnent des fatwas » : ne peuvent pas remplacer le savant humain — la Fatwā requiert un Mukallaf responsable, pas une machine.",
+          "L'IA dans la médecine islamique : aide au diagnostic → permis et encouragé par Maṣlaḥa médicale."
+        ] },
+        {"t": "h", "v": "Cryptomonnaies — Divergence Contemporaine"},
+        {"t": "p", "v": "Le Bitcoin, l'Ethereum et les autres cryptomonnaies divisent les savants islamiques. Trois positions existent :"},
+        { t:'ul', v:[
+          "Position interdite (Ḥarām) : les cryptos sont du Gharar (incertitude excessive) car leur valeur est purement spéculative ; elles ne sont pas adossées à un actif réel ; elles facilitent des activités illicites.",
+          "Position permise : les cryptos sont une forme moderne de monnaie (Māl mutaqawwam — bien échangeable) ; l'incertitude des marchés boursiers existe aussi et n'est pas prohibée ; la Zakāt s'y applique.",
+          "Position conditionnelle (majoritaire chez les savants malikites contemporains) : permis si usages non spéculatifs, usage de paiement réel, pas de Ribā dans les intérêts générés.",
+          "Doctrine-malikite.fr recommande la prudence : éviter la spéculation pure (Maysir) sur les cryptos — s'en tenir à un usage de paiement et d'épargne raisonné."
+        ] },
+        {"t": "h", "v": "Zakāt sur les Cryptomonnaies"},
+        { t:'ul', v:[
+          "Si les cryptos sont permises → la Zakāt s'y applique comme sur toute richesse liquide.",
+          "Niṣāb : valeur équivalente à 85g d'or ou 595g d'argent.",
+          "Taux : 2.5% de la valeur possédée depuis un an (Ḥawl).",
+          "Valuation : au jour du paiement de la Zakāt — pas à la valeur d'achat."
+        ] },
+        {"t": "h", "v": "NFT, Métavers et Réseaux Sociaux"},
+        { t:'ul', v:[
+          "NFT (Non-Fungible Token) représentant une oeuvre licite : permis — c'est la propriété numérique d'un bien numérique.",
+          "NFT représentant des images Ḥarām ou de musique illicite : interdit.",
+          "Les réseaux sociaux : outils neutres — Ḥalāl si usage bienveillant, Ḥarām si utilisés pour la Ghība (médisance), la Fitnah (trouble) ou la diffusion d'illicites.",
+          "La musique islamique : vaste divergence — le Fiqh mālikī classique est restrictif sur les instruments ; le Ghinā (chant) sans instruments reste disputé."
+        ] },
+        {"t": "note", "v": "Le test islamique universel pour toute technologie nouvelle : (1) Est-ce que son usage réalise une Maṣlaḥa ou cause un Mafāsid (préjudice) ? (2) Est-ce que son usage viole un interdit explicite du Coran ou de la Sunna ? (3) Est-ce que son usage respecte les Maqāṣid al-Sharīʿa (5 finalités) ? Si (1) oui, (2) non, (3) oui → permis et encouragé. La technologie est islamiquement neutre par Ibāḥa Aṣliyya — seul son usage décide."}
+        ]
+      },
+      {
+        id: "bio-05",
+        title: "Écologie Islamique et Ḥalāl Contemporain",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "L'écologie islamique (Fiqh al-Bīʾa) est un domaine émergent qui récupère une dimension fondatrice de l'Islam : l'Istikhlāf (vicariat terrestre de l'humain) et la protection de la Création d'Allah. Le Ḥalāl contemporain dépasse aussi la simple alimentation pour englober la finance, la mode et l'industrie."},
+        {"t": "h", "v": "Al-Istikhlāf — Le Vicariat Terrestre"},
+        {"t": "p", "v": "Coran 2:30 : « Nous allons établir un vicaire (Khalīfa) sur la terre. » L'humain est dépositaire (Amīn) de la Création, pas propriétaire. Détruire l'environnement = trahir cette mission."},
+        { t:'ul', v:[
+          "Coran 7:56 : « Ne semez pas la corruption sur terre après qu'elle a été réformée. » — interdiction explicite de la corruption environnementale.",
+          "Le Prophète ﷺ a établi des Ḥimā (zones protégées) autour de Médine — précurseur islamique des réserves naturelles.",
+          "Hadīth : « Même si la Fin du monde commence, plante ton plant de palmier. » — l'action écologique est une Sunna même sans espoir immédiat.",
+          "Interdiction du Tabdhīr (gaspillage excessif) — Coran 17:26-27 : les gaspilleurs sont les frères des shayāṭīn."
+        ] },
+        {"t": "h", "v": "Fiqh al-Bīʾa — Applications Pratiques"},
+        { t:'ul', v:[
+          "L'eau : le Prophète ﷺ interdisait de gaspiller l'eau même lors des ablutions au bord d'un fleuve — principe d'économie maximale.",
+          "Les énergies renouvelables : encouragées par Maṣlaḥa et Ḥifẓ al-Bīʾa (protection de l'environnement).",
+          "Le végétarisme islamique : permis, non obligatoire — mais limiter la consommation de viande a une justification islamique (réduction de la Fasād / corruption).",
+          "La pollution industrielle délibérée : ḤarĀm par Sadd al-Dharāʾiʿ (bloquer les chemins vers le mal) et Ḍarar (dommage aux autres).",
+          "Le recyclage : recommandé — éviter le Tabdhīr et respecter l'Amāna (dépôt de confiance envers la Création)."
+        ] },
+        {"t": "h", "v": "Ḥalāl Contemporain — Au-delà de l'Alimentation"},
+        { t:'ul', v:[
+          "Finance Ḥalāl : produits sans Ribā, sans secteurs Ḥarām (alcool, armement, tabac, jeux d'argent).",
+          "Mode Ḥalāl : vêtements fabriqués éthiquement — pas de travail forcé, respect des conditions de travail islamiques.",
+          "Cosmétiques Ḥalāl : sans ingrédients Ḥarām (porc, alcool), ni testé sur animaux (divergence).",
+          "Tourisme Ḥalāl : hébergements avec Ḥalāl food, sans alcool, espaces séparés.",
+          "Médicaments : Tazkiya (certification) croissante — éviter les enveloppes de gélatine porcine si alternative disponible."
+        ] },
+        {"t": "h", "v": "Écologie et Finance Islamique"},
+        { t:'ul', v:[
+          "Les Ṣukūk (obligations islamiques) verts : financer des projets d'énergie renouvelable de manière Ḥalāl — convergence entre finance islamique et écologie.",
+          "Le Waqf environnemental : constituer un Waqf pour la protection d'une forêt ou d'un parc — pratique émergeant dans les pays du Golfe.",
+          "Doctrine-malikite.fr : l'écologie n'est pas un sujet « occidental » étranger à l'Islam — c'est une obligation islamique directement issue des textes."
+        ] },
+        {"t": "note", "v": "Message malikite contemporain sur l'écologie : l'Imām Mālik vivait dans une Médine où les puits et les palmeraies étaient des ressources partagées précieuses. Son Fiqh intègre naturellement la protection des ressources communes (les Ḥimā prophétiques, les règles sur l'eau, l'interdiction du gaspillage). L'Islam vert n'est pas une invention moderne — c'est le Fiqh classique lu avec les yeux d'aujourd'hui."}
+        ]
+      }],
       quiz: {
         id: 'quiz-expert-bioethique',
         title: 'Questionnaire — ' + "البِيُوإِثِيقَا والمُسْتَجَدَّات الكُبرَى",
-        status: 'locked',
+        status: "available",
         score: null,
-        questions: []
+        questions: [        {
+          id: "q-bio-01",
+          text: "Le don d'organes est-il permis en Islam selon le Majmaʿ al-Fiqh al-Islāmī ?",
+          choices: [
+          { id:"a", text:"Non — le corps humain est sacré et inviolable après la mort" },
+          { id:"b", text:"Oui, sous conditions strictes : consentement, nécessité vitale du receveur, constats médicaux appropriés" },
+          { id:"c", text:"Seulement entre membres de la même famille" },
+          { id:"d", text:"Uniquement dans les pays islamiques" }
+          ],
+          correctId: "b",
+          explanation: "La résolution 4 du Majmaʿ al-Fiqh al-Islāmī (1988) : le don d'organes est permis islamiquement — tant du vivant que post-mortem — sous conditions : consentement libre, nécessité pour le receveur, respect du corps. Le principe directeur est Ḥifẓ al-Nafs (protection de la vie) comme Maqṣad de la Sharīʿa."
+        },
+        {
+          id: "q-bio-02",
+          text: "La vente d'un organe (rein, partie de foie) contre rémunération est-elle permise en Islam ?",
+          choices: [
+          { id:"a", text:"Oui si le prix est juste et librement négocié" },
+          { id:"b", text:"Non — le corps humain n'est pas une propriété aliénable (Coran 17:70 : dignité des fils d'Adam)" },
+          { id:"c", text:"Oui par Ḍarūra si le vendeur est dans le besoin" },
+          { id:"d", text:"Oui dans les pays où c'est légal" }
+          ],
+          correctId: "b",
+          explanation: "La vente d'organes est Ḥarām selon toutes les écoles islamiques. Le Coran 17:70 (« Nous avons honoré les fils d'Adam ») fonde une dignité corporelle inaliénable. Le corps est un dépôt (Amāna) confié par Allah — on ne peut pas en vendre des parties. Seul le don altruiste avec compensation des frais médicaux est permis."
+        },
+        {
+          id: "q-bio-03",
+          text: "Concernant la mort cérébrale comme critère de décès islamique, quelle est la position majoritaire du Majmaʿ al-Fiqh ?",
+          choices: [
+          { id:"a", text:"La mort cérébrale n'est pas un critère islamique valide — seul l'arrêt cardiaque compte" },
+          { id:"b", text:"La mort cérébrale équivaut islamiquement à la mort — les prélèvements sont permis après constatation rigoureuse par deux médecins" },
+          { id:"c", text:"Il n'y a pas de consensus — chaque médecin décide" },
+          { id:"d", text:"La mort cérébrale est permise seulement pour les non-Muslims" }
+          ],
+          correctId: "b",
+          explanation: "Position majoritaire du Majmaʿ al-Fiqh : la mort cérébrale (arrêt total et irréversible des fonctions cérébrales), constatée par deux médecins indépendants, équivaut islamiquement à la mort. Les organes peuvent être prélevés. Des savants malikites restent réservés (le Rūḥ quitte à l'arrêt cardiaque) — mais la majorité contemporaine suit la position du Majmaʿ."
+        },
+        {
+          id: "q-bio-04",
+          text: "Parmi les techniques de PMA suivantes, lesquelles sont permises islamiquement ? (plusieurs réponses)",
+          type: 'multiple',
+          choices: [
+          { id:"a", text:"Insémination artificielle avec sperme du mari" },
+          { id:"b", text:"FIV avec gamètes du couple marié" },
+          { id:"c", text:"Don de sperme d'un donneur extérieur" },
+          { id:"d", text:"Mère porteuse (GPA)" }
+          ],
+          correctIds: ["a", "b"],
+          explanation: "Les techniques permises en Islam sont celles qui n'impliquent que les gamètes du couple marié : (A) insémination artificielle intra-conjugale et (B) FIV intra-conjugale — les deux préservent le Nasab. Les techniques interdites : (C) don de sperme extérieur (brouille le Nasab paternel) et (D) GPA/mère porteuse (brouille le Nasab maternel et la structure familiale)."
+        },
+        {
+          id: "q-bio-05",
+          text: "La GPA (Gestation Pour Autrui — mère porteuse) est interdite en Islam principalement pour quelle raison ?",
+          choices: [
+          { id:"a", text:"Le risque médical pour la mère porteuse" },
+          { id:"b", text:"Elle brouille le Nasab (filiation) et la maternité islamique — compromettant une des cinq Maqāṣid al-Sharīʿa" },
+          { id:"c", text:"C'est un péché assimilé à la Zinā" },
+          { id:"d", text:"Elle n'est pas mentionnée dans le Coran" }
+          ],
+          correctId: "b",
+          explanation: "La GPA est interdite car elle compromet le Nasab (Ḥifẓ al-Nasl — protection de la lignée) — l'une des cinq Maqāṣid al-Sharīʿa. L'Islam reconnaît la maternité par la gestation (« La mère est celle qui porte ») — une mère porteuse crée une ambiguïté sur qui est la vraie mère. Ce n'est pas un péché de Zinā (l'acte sexuel est absent) mais une atteinte à la structure familiale islamique."
+        },
+        {
+          id: "q-bio-06",
+          text: "Que recommande le Fiqh islamique concernant les embryons surnuméraires issus d'une FIV ?",
+          choices: [
+          { id:"a", text:"Les détruire systématiquement" },
+          { id:"b", text:"Les donner à d'autres couples" },
+          { id:"c", text:"Limiter leur production, les congeler pour usage ultérieur dans le même couple, et traiter avec prudence la question de la recherche" },
+          { id:"d", text:"Ils peuvent être vendus à des laboratoires" }
+          ],
+          correctId: "c",
+          explanation: "Résolution du Majmaʿ al-Fiqh : limiter la production d'embryons au nécessaire. Les surnuméraires peuvent être congelés pour une implantation future dans le même couple marié. La destruction est déconseillée (vie potentielle). La vente est interdite. La recherche sur des embryons très précoces est très discutée — certains savants la permettent par Maṣlaḥa médicale sous conditions strictes."
+        },
+        {
+          id: "q-bio-07",
+          text: "L'euthanasie active (administrer une substance létale à un patient souffrant à sa demande) est :",
+          choices: [
+          { id:"a", text:"Permise si le patient le demande clairement" },
+          { id:"b", text:"Permise si les médecins confirment qu'il est incurable" },
+          { id:"c", text:"Ḥarām sans exception — équivaut islamiquement à un meurtre" },
+          { id:"d", text:"Permise uniquement pour les enfants en souffrance extrême" }
+          ],
+          correctId: "c",
+          explanation: "L'euthanasie active est unanimement Ḥarām en Fiqh islamique. Coran 4:29 interdit toute atteinte délibérée à la vie humaine — y compris la sienne. La vie appartient à Allah, pas à l'individu : personne ne peut consentir à sa propre mise à mort. Résolution du Majmaʿ al-Fiqh : Ḥarām sans exception. Le consentement du patient ne change pas le jugement islamique."
+        },
+        {
+          id: "q-bio-08",
+          text: "L'arrêt des traitements curatifs inutiles et le passage aux soins palliatifs sont-ils permis en Islam ?",
+          choices: [
+          { id:"a", text:"Non — il faut toujours continuer à traiter jusqu'à la mort naturelle" },
+          { id:"b", text:"Oui — cesser l'acharnement thérapeutique et privilégier les soins palliatifs est islamiquement recommandé" },
+          { id:"c", text:"Uniquement si le patient a fait un testament" },
+          { id:"d", text:"Non — abandonner un traitement = euthanasie passive Ḥarām" }
+          ],
+          correctId: "b",
+          explanation: "Position islamique nuancée : l'acharnement thérapeutique inutile n'est pas une obligation islamique — c'est même contraire à la Raḥma (miséricorde). Arrêter les traitements curatifs qui n'apportent plus de bénéfice réel, et passer aux soins palliatifs (soulagement de la douleur, dignité, accompagnement spirituel) est recommandé. C'est la voie islamique entre l'euthanasie interdite et l'acharnement injustifié."
+        },
+        {
+          id: "q-bio-09",
+          text: "La morphine et les antidouleurs puissants sont-ils permis en fin de vie même s'ils peuvent théoriquement raccourcir la vie ?",
+          choices: [
+          { id:"a", text:"Non — tout ce qui raccourcit la vie est interdit" },
+          { id:"b", text:"Oui — l'intention est le soulagement de la douleur, pas la mort (principe du double effet islamique)" },
+          { id:"c", text:"Uniquement si administrés par un médecin Muslim" },
+          { id:"d", text:"Seulement si le patient a perdu conscience" }
+          ],
+          correctId: "b",
+          explanation: "Le principe du double effet islamique : une action dont l'intention première est bonne (soulager la douleur) et dont l'effet secondaire est involontaire (raccourcissement possible de la vie) est permise. Condition : l'intention doit être sincèrement thérapeutique. La morphine palliative n'est pas une euthanasie déguisée — c'est de la Raḥma (miséricorde) envers un être souffrant."
+        },
+        {
+          id: "q-bio-10",
+          text: "Quel est le statut juridique islamique de l'Intelligence Artificielle (IA) ?",
+          choices: [
+          { id:"a", text:"Un Mukallaf comme l'humain — responsable de ses actes" },
+          { id:"b", text:"Un outil (Āla) sans Rūḥ ni responsabilité morale propre — sa licéité dépend uniquement de son usage" },
+          { id:"c", text:"Une créature interdite car simulant la Création d'Allah" },
+          { id:"d", text:"Un esclave numérique avec droits propres" }
+          ],
+          correctId: "b",
+          explanation: "L'IA n'a pas de Rūḥ (âme) — elle n'est pas un Mukallaf (sujet moral responsable). C'est un outil (Āla) comme le couteau ou la calculatrice. Sa licéité islamique dépend uniquement de son usage : diagnostiquer des maladies (Ḥalāl et recommandé), générer des contenus obscènes (Ḥarām). La responsabilité islamique incombe au développeur et à l'utilisateur, pas à l'IA."
+        },
+        {
+          id: "q-bio-11",
+          text: "Concernant les cryptomonnaies (Bitcoin, etc.), quelle est la position majoritaire des savants malikites contemporains ?",
+          choices: [
+          { id:"a", text:"Unanimement Ḥarām — du pur Gharar" },
+          { id:"b", text:"Unanimement Ḥalāl — une monnaie moderne" },
+          { id:"c", text:"Conditionnellement permis : éviter la spéculation pure (Maysir), s'en tenir aux usages de paiement et d'épargne raisonnée" },
+          { id:"d", text:"Permis seulement pour les Zakāt" }
+          ],
+          correctId: "c",
+          explanation: "Position conditionnelle majoritaire chez les savants malikites contemporains (dont doctrine-malikite.fr) : les cryptomonnaies peuvent être permises comme moyen de paiement et d'épargne si on évite la spéculation pure (Maysir — jeu d'argent). La Zakāt s'y applique. L'usage purement spéculatif (acheter/vendre uniquement pour le profit volatil) est déconseillé voire interdit."
+        },
+        {
+          id: "q-bio-12",
+          text: "La Zakāt sur les cryptomonnaies : quel est le taux applicable et selon quelle base ?",
+          choices: [
+          { id:"a", text:"Pas de Zakāt — les cryptos ne sont pas de l'argent" },
+          { id:"b", text:"10% sur les gains uniquement" },
+          { id:"c", text:"2.5% de la valeur totale détenue depuis un Ḥawl (an), si supérieure au Niṣāb" },
+          { id:"d", text:"La même Zakāt que sur les marchandises de commerce" }
+          ],
+          correctId: "c",
+          explanation: "Si les cryptomonnaies sont permises → la Zakāt s'y applique comme sur toute richesse liquide : 2.5% de la valeur détenue depuis un Ḥawl (année lunaire complète), si la valeur dépasse le Niṣāb (équivalent de 85g d'or). La valuation se fait au jour du paiement. Cette position est soutenue par le CEF et de nombreux savants malikites contemporains."
+        },
+        {
+          id: "q-bio-13",
+          text: "Le concept islamique d'Istikhlāf fonde l'écologie islamique. Que signifie-t-il ?",
+          choices: [
+          { id:"a", text:"La conquête de la nature pour l'Islam" },
+          { id:"b", text:"L'humain est vicaire (Khalīfa) et dépositaire (Amīn) de la Création d'Allah — en a la responsabilité, pas la propriété" },
+          { id:"c", text:"La nature appartient aux Muslims" },
+          { id:"d", text:"L'écologie est une invention occidentale étrangère à l'Islam" }
+          ],
+          correctId: "b",
+          explanation: "Coran 2:30 : Allah établit un Khalīfa (vicaire) sur terre. L'humain n'est pas propriétaire de la Création — il en est gardien (Amīn). Détruire l'environnement = trahir cette mission. Le Prophète ﷺ a établi des Ḥimā (réserves protégées) autour de Médine, interdit le gaspillage de l'eau même lors des ablutions, et a dit : « Plante ton plant de palmier même si la Fin du monde commence. »"
+        },
+        {
+          id: "q-bio-14",
+          text: "Parmi ces pratiques, lesquelles sont islamiquement recommandées pour des raisons écologiques ? (plusieurs réponses)",
+          type: 'multiple',
+          choices: [
+          { id:"a", text:"Économiser l'eau lors des ablutions" },
+          { id:"b", text:"Utiliser les énergies renouvelables" },
+          { id:"c", text:"Éviter le gaspillage alimentaire (Tabdhīr)" },
+          { id:"d", text:"Brûler les déchets industriels pour éviter la taxe" }
+          ],
+          correctIds: ["a", "b", "c"],
+          explanation: "A, B et C sont islamiquement recommandés : (A) économiser l'eau — le Prophète ﷺ l'a enseigné même pour les ablutions ; (B) énergies renouvelables — encouragées par Maṣlaḥa et Ḥifẓ al-Bīʾa ; (C) éviter le gaspillage — Coran 17:26-27 interdit le Tabdhīr. (D) Brûler les déchets industriels pour éviter la taxe = Ḍarar (dommage) et Fasād fī al-Arḍ (corruption terrestre) — Ḥarām."
+        },
+        {
+          id: "q-bio-15",
+          text: "Les Ṣukūk (obligations islamiques) verts illustrent quelle convergence importante ?",
+          choices: [
+          { id:"a", text:"Entre Islam et nationalisme" },
+          { id:"b", text:"Entre finance islamique (sans Ribā) et écologie — financer des projets environnementaux de manière Ḥalāl" },
+          { id:"c", text:"Entre la Sunna et les ONG" },
+          { id:"d", text:"Entre la Zakāt et les impôts verts" }
+          ],
+          correctId: "b",
+          explanation: "Les Ṣukūk verts (Green Sukuk) sont des obligations islamiques (sans Ribā, adossées à des actifs réels) qui financent des projets d'énergie renouvelable, de reforestation ou d'économie circulaire. Ils représentent une convergence remarquable entre l'éthique financière islamique et les objectifs environnementaux contemporains. La Malaisie et les pays du Golfe les utilisent activement."
+        },
+        {
+          id: "q-bio-16",
+          text: "Un médecin Muslim en France peut-il légalement refuser de participer à une euthanasie ?",
+          choices: [
+          { id:"a", text:"Non — il doit obéir à la loi française" },
+          { id:"b", text:"Oui — la clause de conscience médicale protège légalement les professionnels qui refusent par conviction" },
+          { id:"c", text:"Oui mais uniquement s'il est Imām en même temps" },
+          { id:"d", text:"Non — le serment d'Hippocrate prime sur les convictions religieuses" }
+          ],
+          correctId: "b",
+          explanation: "La clause de conscience médicale française (Code de déontologie médicale, Art. 47) protège tout médecin qui refuse de pratiquer un acte contraire à ses convictions — y compris religieuses. Un médecin Muslim peut légalement refuser de participer à une euthanasie ou un suicide assisté. Il doit cependant assurer la continuité des soins en orientant le patient vers un autre praticien."
+        },
+        {
+          id: "q-bio-17",
+          text: "Le clonage humain reproductif est-il permis en Islam ?",
+          choices: [
+          { id:"a", text:"Oui si c'est pour soigner des maladies" },
+          { id:"b", text:"Non — unanimement interdit : porte atteinte à la dignité humaine, au Nasab et imite la Création divine" },
+          { id:"c", text:"Permis uniquement pour recréer des individus décédés" },
+          { id:"d", text:"Discuté — pas de consensus islamique" }
+          ],
+          correctId: "b",
+          explanation: "Le clonage humain reproductif est unanimement interdit en Fiqh islamique (résolution du Majmaʿ al-Fiqh) pour trois raisons cumulatives : (1) porte atteinte au Nasab en créant un humain sans père biologique normal ; (2) imite la Création divine (Taqlīd Khalq Allah) de façon excessive ; (3) traite l'humain comme un produit manufaturé — violant sa dignité (Karāma). Le clonage thérapeutique (cellules souches) est plus discuté."
+        },
+        {
+          id: "q-bio-18",
+          text: "Un Muslim doit-il rédiger un Testament de vie islamique (Waṣiyya médicale) ?",
+          choices: [
+          { id:"a", text:"Non — c'est une affaire privée sans dimension religieuse" },
+          { id:"b", text:"C'est fortement recommandé par doctrine-malikite.fr pour préciser ses préférences de fin de vie selon les principes islamiques" },
+          { id:"c", text:"Obligatoire au-delà de 40 ans" },
+          { id:"d", text:"Non — laisser la famille décider est la Sunna" }
+          ],
+          correctId: "b",
+          explanation: "Doctrine-malikite.fr recommande fortement la rédaction d'un Testament de vie islamique (Waṣiyya médicale) : document précisant ses préférences de fin de vie (soins palliatifs oui, acharnement non, euthanasie non, accompagnement spirituel oui, ablutions rituelles et enterrement islamique). Ce document aide la famille et les médecins à respecter les souhaits islamiques du patient même s'il est inconscient."
+        },
+        {
+          id: "q-bio-19",
+          text: "L'interdiction du Tabdhīr (gaspillage) dans le Coran (17:26-27) s'applique-t-elle à l'écologie contemporaine ?",
+          choices: [
+          { id:"a", text:"Non — le Tabdhīr concerne uniquement l'argent" },
+          { id:"b", text:"Oui — le Tabdhīr s'étend à toute ressource : eau, nourriture, énergie, matières premières — le gaspillage environnemental est islamiquement blâmable" },
+          { id:"c", text:"Oui mais seulement dans les pays musulmans" },
+          { id:"d", text:"Non — le Coran n'aborde pas l'environnement" }
+          ],
+          correctId: "b",
+          explanation: "Coran 17:26-27 : « Ne gaspille pas (tubadhdhir) — les gaspilleurs sont les frères des shayāṭīn. » Le Tabdhīr s'applique à toute ressource — l'eau (le Prophète ﷺ interdisait le gaspillage même pour les ablutions), la nourriture, l'énergie. Par extension logique (Qiyās et Maṣlaḥa), le gaspillage des ressources naturelles et la pollution inutile sont islamiquement blâmables."
+        },
+        {
+          id: "q-bio-20",
+          text: "Quel test islamique universel peut-on appliquer à toute nouvelle technologie pour en évaluer la licéité ?",
+          choices: [
+          { id:"a", text:"Vérifier si elle est mentionnée dans le Coran" },
+          { id:"b", text:"Demander si elle réalise une Maṣlaḥa, ne viole pas un interdit explicite, et respecte les Maqāṣid al-Sharīʿa — si oui : Ibāḥa Aṣliyya (permission par défaut)" },
+          { id:"c", text:"Demander l'avis de l'Arabie Saoudite" },
+          { id:"d", text:"La technologie est toujours Ḥarām car non existante au temps du Prophète ﷺ" }
+          ],
+          correctId: "b",
+          explanation: "Test universel malikite pour les nouvelles technologies : (1) Réalise-t-elle une Maṣlaḥa (intérêt) ou cause-t-elle un Mafāsid (dommage) ? (2) Viole-t-elle un interdit explicite du Coran ou de la Sunna ? (3) Respecte-t-elle les Maqāṣid al-Sharīʿa (5 finalités) ? Si oui, non, oui → Ibāḥa Aṣliyya (licéité par défaut). La technologie est islamiquement neutre — seul son usage décide. C'est la méthode malikite : Maṣlaḥa + Ibāḥa Aṣliyya."
+        }]
       }
     },
 
-    /* ═══ Fiqh (الفِقه) المُقَارَن ═══ */
+    /* ═══ الفِقه المُقَارَن ═══ */
     {
       id: "muqaran",
       title: "Jurisprudence Comparée entre les 4 Écoles",
       arabicTitle: "الفِقه المُقَارَن",
-      icon: "balance",
-      description: "Méthode d'Ibn Rushd, les 5 types de divergences entre écoles, Talfīq (التَّلفِيق).",
-      source: "Bidāyat al-Mujtahid d'Ibn Rushd · Al-Jazīrī (Fiqh ʿalā al-madhāhib al-arbaʿa)",
+      icon: "scale-c",
+      description: "Méthode d'Ibn Rushd, les 5 causes de divergence, exemples pratiques comparatifs, Talfīq et points de consensus.",
+      source: "Bidāyat al-Mujtahid d'Ibn Rushd · Al-Jazīrī · Al-Qarāfī",
       badge: {
         id: 'badge-expert-muqaran',
         title: "Maître du Comparatisme",
         arabicTitle: "عَارِفُ الفِقه المُقَارَن",
-        icon: 'star8', color: 'gold',
-        unlockCondition: 'Obtenir ≥ 85 % au questionnaire ' + "Fiqh (الفِقه) المُقَارَن"
+        icon: "scale-c", color: 'gold',
+        unlockCondition: 'Obtenir ≥ 85 % au questionnaire الفِقه المُقَارَن'
       },
-      lessons: [],
+      lessons: [      {
+        id: "muq-01",
+        title: "Manhaj Ibn Rushd — La Méthode du Bidāyat al-Mujtahid",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "Le Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid d'Ibn Rushd al-Ḥafīd (mort 595 H/1198 CE) est le manuel le plus rigoureux de jurisprudence comparée islamique jamais écrit. Sa méthode — expliquer les raisons des divergences avant de trancher — est la base de tout Fiqh muqāran sérieux."},
+        { t:'ar', v:"مَن أَرَادَ أَن يَكُونَ مُجتَهِدًا فِي الشَّرِيعَة وَجَبَ أَن يَعرِفَ أَسبَابَ الخِلَاف", n:"Ibn Rushd, Bidāyat al-Mujtahid — « Quiconque veut être Mujtahid dans la Sharīʿa doit connaître les causes des divergences »" },
+        {"t": "h", "v": "Présentation du Bidāyat al-Mujtahid"},
+        { t:'ul', v:[
+          "Ibn Rushd al-Ḥafīd (Averroès, 1126-1198 CE) : grand-père d'Ibn Rushd al-Jadd, savant malikite andalou et philosophe de génie.",
+          "Titre complet : Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid — « Le début de celui qui fait l'effort, la fin de celui qui se contente ».",
+          "Structure : chaque question est traitée selon un schéma fixe — (1) positions de toutes les écoles ; (2) arguments de chaque position ; (3) source de la divergence ; (4) avis personnel motivé.",
+          "Unique en son genre : Ibn Rushd ne dit jamais « X a tort » sans expliquer pourquoi X a raisonné ainsi. Le désaccord devient un outil d'apprentissage.",
+          "C'est la seule œuvre qui permet de maîtriser l'ensemble du Fiqh islamique comparé en une seule source exhaustive."
+        ] },
+        {"t": "h", "v": "La Méthode en 4 Étapes"},
+        { t:'ul', v:[
+          "<strong>1. Iḥṣāʾ al-Aqwāl (inventaire des positions) :</strong> recenser honnêtement toutes les positions connues des grandes écoles — sans omette celle avec laquelle on est en désaccord.",
+          "<strong>2. Dhikr al-Adilla (exposition des arguments) :</strong> présenter les preuves de chaque position — textes, analogies, principes — tels que leurs partisans les voient.",
+          "<strong>3. Bayān Sabab al-Khilāf (explication de la cause) :</strong> identifier pourquoi les savants ont divergé — c'est le cœur de la méthode et sa contribution unique.",
+          "<strong>4. Al-Tarjīḥ (arbitrage) :</strong> donner son avis personnel avec motivation — tout en respectant la validité des autres positions."
+        ] },
+        {"t": "h", "v": "Pourquoi les savants Divergent — Vue Préliminaire"},
+        {"t": "p", "v": "Ibn Rushd identifie une cause racine : les savants divergent parce qu'ils lisent les mêmes textes avec des outils intellectuels différents (langue, logique, priorité des sources) et arrivent à des conclusions différentes — tous sincèrement. Il n'y a pas de « méchants » dans la divergence juridique islamique — seulement des méthodes différentes."},
+        {"t": "note", "v": "Le Bidāyat al-Mujtahid a inspiré tous les grands comparatistes islamiques postérieurs — de Al-Jazīrī (Fiqh ʿalā al-Madhāhib al-Arbaʿa, 20ème s.) au Conseil Européen de la Fatwa contemporain. Sa méthode est la seule qui transforme la divergence en richesse plutôt qu'en scandale."}
+        ]
+      },
+      {
+        id: "muq-02",
+        title: "Asbāb al-Khilāf — Les 5 Causes de Divergence selon Ibn Rushd",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "La contribution la plus précieuse du Bidāyat al-Mujtahid est l'identification systématique des causes de divergence entre écoles. Ibn Rushd en recense cinq types principaux — qui couvrent la quasi-totalité des désaccords entre Ḥanafī, Mālikī, Shāfiʿī et Ḥanbalī."},
+        {"t": "h", "v": "Cause 1 : Ikhtilāf al-Riwāya — Authenticité du Ḥadīth"},
+        {"t": "p", "v": "Si un savant considère un Ḥadīth authentique et l'autre non, leurs jugements divergent nécessairement — même s'ils utilisent la même méthode. C'est la cause la plus fréquente."},
+        { t:'ul', v:[
+          "Exemple : le Ḥadīth sur le Khiyār al-Majlis (option de rétractation dans la vente). Al-Bukhārī et Muslim le rapportent (Ṣaḥīḥayn) → Shāfiʿī et Ḥanbalī le suivent et permettent le Khiyār.",
+          "L'Imām Mālik ne le suit pas car il contredit le ʿAmal al-Madanī (pratique médinoise constante) → position malikite : pas de Khiyār al-Majlis.",
+          "Ce n'est pas que Mālik « rejette » le Ḥadīth — il le hiérarchise différemment dans sa méthode.",
+          "Les savants de Hadīth (Muḥaddithūn) et les juristes (Fuqahāʾ) ont des critères d'authenticité différents — source majeure de divergence."
+        ] },
+        {"t": "h", "v": "Cause 2 : Taʿāruḍ al-Adilla — Conflit Apparent entre Textes"},
+        { t:'ul', v:[
+          "Deux textes authentiques semblent se contredire → chaque école choisit un texte sur l'autre ou les concilie différemment.",
+          "Exemple : la Basmala dans la Fātiḥa (Ṣalāt). Ḥadīth A dit de ne pas la réciter à voix haute. Ḥadīth B dit de la réciter à voix haute. → Mālik suit A (silencieuse), Shāfiʿī suit B (à voix haute).",
+          "Méthode de résolution en cas de conflit : (1) Jamʿ — concilier les deux ; (2) Naskh — l'un abroge l'autre ; (3) Tarjīḥ — préférer le plus fort. Les écoles diffèrent dans l'ordre de ces opérations."
+        ] },
+        {"t": "h", "v": "Cause 3 : Polysémie Arabe — Taʿaddud Maʿānī al-Alfāẓ"},
+        { t:'ul', v:[
+          "Un même mot arabe a plusieurs sens → chaque école choisit un sens différent.",
+          "Exemple : Coran 2:228 « wal-muṭallaqātu yatarabbaṣna bi-anfusihinna thalāthata qurūʾin ». Le mot Qurʾ désigne soit la Ḥayḍ (menstruation), soit le Tuhr (période de pureté entre menstruations). → Ḥanafī et Ḥanbalī : Ḥayḍ (ʿIdda = 3 menstruations). Mālikī et Shāfiʿī : Tuhr (ʿIdda = 3 périodes de pureté).",
+          "Ce type de divergence est irréductible par nature — la langue arabe est intrinsèquement polysémique dans certains termes juridiques."
+        ] },
+        {"t": "h", "v": "Cause 4 : Divergence sur la ʿIlla du Qiyās"},
+        { t:'ul', v:[
+          "Même accord sur les faits → désaccord sur la cause (ʿIlla) qui fonde l'analogie → règles différentes.",
+          "Exemple : l'interdiction du vin (Khamr). ʿIlla = l'ivresse selon les uns → tout alcool enivrant est interdit. ʿIlla = le raisin fermenté selon d'autres (position plus restrictive historiquement). L'Imām Mālik suit la première ʿIlla — toute substance enivrante est Ḥarām.",
+          "La méthode de détermination de la ʿIlla est elle-même source de divergence interne aux écoles."
+        ] },
+        {"t": "h", "v": "Cause 5 : Ikhtilāf fī al-Ijmāʿ — Divergence sur l'Existence d'un Consensus"},
+        { t:'ul', v:[
+          "Un savant affirme qu'il y a Ijmāʿ sur une question → l'autre ne reconnaît pas ce consensus.",
+          "Exemple : l'héritage du grand-père avec les frères. L'Imām Mālik ne reconnaît pas l'Ijmāʿ affirmé par certains — et maintient sa position particulière (l'Akdariyya).",
+          "L'Ijmāʿ des Ṣaḥāba (Compagnons) est reconnu par tous. L'Ijmāʿ des Tābiʿīn (Successeurs) : plus discuté. L'Ijmāʿ des savants ultérieurs : encore plus discuté."
+        ] },
+        {"t": "note", "v": "Utilité pratique de cette classification : quand deux savants sont en désaccord, identifier la cause de leur désaccord parmi ces 5 catégories permet de comprendre si la divergence est théoriquement réductible (authentification d'un Ḥadīth → peut se résoudre avec la critique hadīthique) ou structurelle (polysémie arabe → irréductible). Cela évite les débats futiles et oriente vers les solutions possibles."}
+        ]
+      },
+      {
+        id: "muq-03",
+        title: "Khilāfāt ʿAmaliyya — Divergences Pratiques Majeures entre Écoles",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "La jurisprudence comparée n'est pas un exercice théorique — elle a des implications pratiques directes pour tout Muslim. Ce chapitre présente les divergences pratiques les plus courantes entre les 4 Madhāhib, avec les arguments et la position malikite."},
+        {"t": "h", "v": "Divergences dans la Ṭahāra (Purification)"},
+        { t:'ul', v:[
+          "<strong>Naqḍ al-Wuḍūʾ par le toucher de la femme :</strong> Mālikī et Shāfiʿī — invalide le Wuḍūʾ (avec Shāfiʿī plus strict). Ḥanafī et Ḥanbalī — ne l'invalide pas. Cause : sens du verset Coran 4:43 (« ou si vous avez touché des femmes »).",
+          "<strong>Naqḍ al-Wuḍūʾ par le rire dans la Ṣalāt :</strong> Ḥanafī — invalide le Wuḍūʾ (position unique). Mālikī, Shāfiʿī, Ḥanbalī — n'invalide que la Ṣalāt, pas le Wuḍūʾ.",
+          "<strong>Quantité minimale d'eau pour le Wuḍūʾ :</strong> Mālikī — pas de minimum fixe, la Niyya et le mouvement suffisent. Shāfiʿī — chaque organe doit être mouillé intégralement.",
+          "<strong>Saignement de nez et Wuḍūʾ :</strong> Ḥanafī — invalide le Wuḍūʾ. Mālikī, Shāfiʿī, Ḥanbalī — ne l'invalide pas."
+        ] },
+        {"t": "h", "v": "Divergences dans la Ṣalāt (Prière)"},
+        { t:'ul', v:[
+          "<strong>Basmala à voix haute dans la Fātiḥa :</strong> Mālikī — à voix basse (voire non récitée dans la Ṣalāt obligatoire selon une position). Shāfiʿī — à voix haute dans les prières vocales.",
+          "<strong>Récitation de la Fātiḥa par le Maʾmūm (fidèle derrière l'Imām) :</strong> Mālikī — non obligatoire pour le Maʾmūm dans les prières vocales (l'Imām suffit). Shāfiʿī et Ḥanbalī — obligatoire même derrière l'Imām. Ḥanafī — non récitée du tout par le Maʾmūm.",
+          "<strong>Khuyūr al-Rajulayn (ouverture des pieds dans la prosternation) :</strong> différences mineures sur la posture exacte.",
+          "<strong>Dépôt des mains (gauche/droite) pendant la Ṣalāt :</strong> Mālikī (Madanī) — mains le long du corps (Sadl). Autres écoles — mains croisées sur la poitrine ou le ventre (Qabd). Position malikite fondée sur le ʿAmal al-Madanī."
+        ] },
+        {"t": "h", "v": "Divergences dans le Nikāḥ et les Transactions"},
+        { t:'ul', v:[
+          "<strong>Nikāḥ al-Mutʿa (mariage temporaire) :</strong> unanimement interdit par les 4 Madhāhib sunnites — seul le Fiqh douzimiste (Jaʿfarī) le permet.",
+          "<strong>Mahr al-Mithl (dot selon la coutume) :</strong> Mālikī — référence aux sœurs et cousines. Ḥanafī — référence aux proches du côté paternel.",
+          "<strong>Khiyār al-Majlis (option de rétractation après vente) :</strong> Shāfiʿī et Ḥanbalī — permis (Ḥadīth des Ṣaḥīḥayn). Mālikī — non permis (ʿAmal al-Madanī l'ignore). Ḥanafī — non permis (principe de fermeté du contrat).",
+          "<strong>Vente de l'or contre l'argent à crédit (Ṣarf) :</strong> toutes les écoles interdisent le Ribā dans l'échange — mais divergent sur les détails des conditions d'échange immédiat."
+        ] },
+        {"t": "h", "v": "Divergences dans le Fiqh de la Famille"},
+        { t:'ul', v:[
+          "<strong>Garde des enfants (Ḥaḍāna) après divorce :</strong> Mālikī — la mère garde jusqu'à puberté pour le fils, jusqu'au mariage pour la fille. Ḥanafī — mère jusqu'à 7 ans (fils) et 9 ans (fille). Shāfiʿī — l'enfant choisit à 7 ans.",
+          "<strong>Allaitement prohibant le mariage (Raḍāʿ) :</strong> Mālikī — 5 fois ou plus d'allaitement établissent la prohibition. Ḥanafī — même une seule tétée. Shāfiʿī — 5 tétées distinctes complètes.",
+          "<strong>Mariage du Walī (tuteur) d'office — Ijbār :</strong> Mālikī permet le Walī d'imposer le mariage à une vierge. Ḥanafī — la vierge adulte peut se marier sans Walī. Shāfiʿī — Walī obligatoire mais pas d'Ijbār pour l'adulte."
+        ] },
+        {"t": "note", "v": "Leçon de méthode malikite sur les divergences pratiques : quand un Muslim déménage dans un pays où un autre Madhhab est dominant, peut-il adopter les pratiques locales ? La position malikite : oui pour les actes quotidiens où la divergence est authentique et les deux positions sont défendables. Ce n'est pas du Talfīq interdit — c'est reconnaître la légitimité de l'autre Madhhab. L'Imām Mālik lui-même disait : « Chaque Mujtahid qui a atteint son degré a raison à ses yeux — et Allah sait mieux. »"}
+        ]
+      },
+      {
+        id: "muq-04",
+        title: "Al-Talfīq wa-Tağyīr al-Madhhab — Combiner et Changer d'École",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "Peut-on combiner deux Madhāhib dans un seul acte ? Peut-on changer de Madhhab définitivement ou sur une question particulière ? Ces questions — Talfīq et Tağyīr al-Madhhab — sont centrales pour les Muslims contemporains vivant dans des contextes pluriels."},
+        {"t": "h", "v": "Définitions Préliminaires"},
+        { t:'ul', v:[
+          "<strong>Talfīq (combinaison) :</strong> suivre deux Madhāhib différents dans deux aspects d'un même acte — ex. faire le Wuḍūʾ selon Mālik (sans Niyya explicite) et la Ṣalāt selon Shāfiʿī (avec Basmala à voix haute).",
+          "<strong>Tatabbuʿ al-Rukhaṣ (chasse aux facilités) :</strong> chercher systématiquement dans chaque Madhhab la règle la plus permissive pour construire un Islam minimal — interdit.",
+          "<strong>Tağyīr al-Madhhab (changement d'école) :</strong> quitter définitivement son Madhhab pour un autre — ou adopter temporairement la position d'un autre Madhhab sur une question précise."
+        ] },
+        {"t": "h", "v": "Positions sur le Talfīq"},
+        { t:'ul', v:[
+          "<strong>Position classique restrictive :</strong> le Talfīq dans un seul acte composé est invalide — on ne peut pas additionner des positions pour créer un acte qui ne serait valide dans aucun Madhhab pris individuellement.",
+          "<strong>Position contemporaine majoritaire :</strong> le Talfīq est permis s'il ne résulte pas d'un Tatabbuʿ al-Rukhaṣ (chasse aux facilités) et si chaque partie de l'acte est valide dans son Madhhab respectif.",
+          "<strong>Exemple permis :</strong> un médecin mālikī en voyage suit la position ḥanafī sur la ṣalāt dans le train (permise sans Qibla exacte) — par nécessité, pas par chasse aux facilités.",
+          "<strong>Exemple interdit :</strong> choisir la position mālikī sur le Mahr (dot minimale basse) ET la position ḥanafī sur le Khiyār al-Majlis (pas d'option de rétractation) uniquement parce que les deux arrangent le même partie dans un contrat de mariage."
+        ] },
+        {"t": "h", "v": "Changement de Madhhab — Tağyīr"},
+        { t:'ul', v:[
+          "Changer de Madhhab définitivement : permis selon la grande majorité des Fuqahāʾ — le Taqlīd est une facilité, pas une obligation contractuelle.",
+          "Conditions : le changement doit être motivé par une conviction sincère (connaissance des arguments), pas par la commodité seule.",
+          "Changer sur une question particulière : plus largement permis — suivre une fatwa d'un savant d'un autre Madhhab sur un point précis est le Talfīq léger, généralement accepté.",
+          "Position malikite classique (Al-Qarāfī dans Al-Furūq) : le simple particulier (Muqallid) peut suivre tout savant qualifié — la fidélité au Madhhab est une facilité, non une prison."
+        ] },
+        {"t": "h", "v": "Al-Madhhab wa-l-Mujtahid — Pour qui la fidélité est-elle obligatoire ?"},
+        { t:'ul', v:[
+          "Pour le Mujtahid : pas de Taqlīd — il suit ses propres conclusions après effort.",
+          "Pour le savant intermédiaire : suit généralement son Madhhab mais peut en sortir sur des questions bien documentées.",
+          "Pour le Muslim ordinaire (Muqallid) : suit un savant de confiance — la fidélité à un Madhhab est recommandée pour la cohérence mais pas absolument obligatoire.",
+          "Principe de Al-Shāṭibī dans Al-Muwāfaqāt : le Madhhab est un outil de régularité et de cohérence dans la pratique — pas une fin en soi."
+        ] },
+        {"t": "note", "v": "Application contemporaine pour les Muslims de France : la plupart sont Muqallid (non-savants) qui suivent les fatwas d'imams ou de savants accessibles. Doctrine-malikite.fr recommande de rester fidèle à l'école malikite (héritage naturel des Muslims franco-africains et franco-maghrébins) tout en acceptant les positions d'autres écoles quand la nécessité ou la clarté l'exige. Ce n'est ni du Talfīq aveugle ni du sectarisme."}
+        ]
+      },
+      {
+        id: "muq-05",
+        title: "Al-Ijmāʿ wa-l-Taqārrub — Consensus et Points de Convergence",
+        status: 'available',
+        content: [
+        {"t": "lead", "v": "Si les divergences entre écoles sont nombreuses et documentées, les points de consensus (Ijmāʿ) et de convergence sont encore plus nombreux. Connaître ce qui est unanimement convenu est aussi essentiel que de connaître les divergences — c'est ce qui fonde l'unité de la Umma face à la diversité des Madhāhib."},
+        {"t": "h", "v": "Les Points d'Accord Absolu entre les 4 Madhāhib"},
+        { t:'ul', v:[
+          "<strong>Les 5 piliers de l'Islam :</strong> Shahāda, Ṣalāt (5 prières), Ṣawm (Ramadan), Zakāt, Ḥajj — unanimement obligatoires.",
+          "<strong>Interdictions fondamentales :</strong> Zinā, meurtre injuste, vol qualifié, alcool, nourriture Ḥarām (porc, charognes) — unanimement Ḥarām.",
+          "<strong>Mariage et famille :</strong> conditions essentielles du Nikāḥ valide (Walī, Mahr, consentement, témoins) — convergence sur les principes fondamentaux malgré divergences de détails.",
+          "<strong>Successions :</strong> les parts coraniques fixées (Farāʾiḍ) sont unanimement reconnues — les divergences portent sur des cas particuliers (grand-père + frères, Radd...).",
+          "<strong>Ḥudūd fondamentaux :</strong> les principes du Qiṣāṣ, de la Diya et des Ḥudūd coraniques sont unanimement reconnus — les divergences portent sur les conditions d'application."
+        ] },
+        {"t": "h", "v": "Zones de Convergence Pratique Contemporaine"},
+        { t:'ul', v:[
+          "<strong>Finance islamique :</strong> toutes les écoles s'accordent sur l'interdiction du Ribā et les principes de la Murābaḥa, Musharaka, Muḍāraba — avec divergences sur certains détails.",
+          "<strong>Bioéthique :</strong> toutes les écoles interdisent l'euthanasie active et la vente d'organes — et permettent le don sous conditions.",
+          "<strong>Fiqh des minorités :</strong> toutes les écoles reconnaissent que les Muslims en pays non-islamique peuvent pratiquer librement et n'ont pas l'obligation d'émigrer si la pratique est possible.",
+          "<strong>Ḥalāl alimentaire :</strong> accord sur les grandes catégories interdites (porc, alcool, bête non égorgée) — divergences sur les détails (poissons sans écailles, crustacés, animaux marins)."
+        ] },
+        {"t": "h", "v": "Le Fiqh Muqāran Comme Outil d'Unité"},
+        {"t": "p", "v": "La jurisprudence comparée ne mène pas au relativisme (tout se vaut) mais à la compréhension (chaque position a ses raisons). Ibn Rushd conclut le Bidāyat en soulignant que la diversité des Madhāhib est une Raḥma (miséricorde) pour la Umma — elle permet la flexibilité sans trahir les principes."},
+        { t:'ul', v:[
+          "Les divergences entre Madhāhib concernent principalement les détails pratiques (Furūʿ) — pas les principes fondamentaux (Uṣūl).",
+          "Le Coran et la Sunna authentique forment un socle commun que toutes les écoles respectent.",
+          "Attitude islamique face aux divergences : ni sectarisme (seul mon Madhhab est valide) ni indifférence (toutes les positions sont équivalentes).",
+          "Ibn Taymiyya (Ḥanbalī) : « La divergence des Imāms est une Raḥma Allah — elle montre la largeur de la Sharīʿa et la richesse de l'intellect musulman. »"
+        ] },
+        {"t": "h", "v": "Synthèse Finale — L'Héritage du Fiqh Mālikī dans ce Contexte"},
+        {"t": "p", "v": "L'école malikite occupe une position particulière dans le Fiqh muqāran : son insistance sur le ʿAmal al-Madanī (pratique médinoise) et la Maṣlaḥa al-Mursala lui confère une adaptabilité que les autres écoles n'ont pas au même degré. Elle est la moins dogmatique dans ses fondements — ce qui l'a rendue la plus répandue géographiquement et la plus durable historiquement."},
+        {"t": "note", "v": "Message final du niveau Expert : la maîtrise du Fiqh mālikī — de ses sources (ST-2), de son histoire (ST-2), de la Sīra qui le nourrit (ST-3), de son application aux minorités (ST-3), de ses réponses bioéthiques (ST-4) et de sa place dans le panorama comparatif (ST-4) — n'est pas une fin en soi. C'est un outil au service d'une seule finalité : worshipping Allah with knowledge and sincerity, wherever one lives. Comme l'Imām Mālik l'a fait à Médine, à travers ses fatwas, ses doutes exprimés et son Lā Adrī (je ne sais pas) face aux questions sans réponse certaine."}
+        ]
+      }],
       quiz: {
         id: 'quiz-expert-muqaran',
-        title: 'Questionnaire — ' + "Fiqh (الفِقه) المُقَارَن",
-        status: 'locked',
+        title: 'Questionnaire — ' + "الفِقه المُقَارَن",
+        status: "available",
         score: null,
-        questions: []
+        questions: [        {
+          id: "q-muq-01",
+          text: "Ibn Rushd al-Ḥafīd est l'auteur du Bidāyat al-Mujtahid. Quelle est sa contribution méthodologique unique ?",
+          choices: [
+          { id:"a", text:"Il a compilé toutes les fatwas de l'Imām Mālik" },
+          { id:"b", text:"Il identifie systématiquement les CAUSES des divergences entre écoles avant de trancher — transformant le désaccord en outil d'apprentissage" },
+          { id:"c", text:"Il a déclaré que toutes les positions islamiques sont équivalentes" },
+          { id:"d", text:"Il a fondé une 5ème école juridique islamique" }
+          ],
+          correctId: "b",
+          explanation: "La contribution unique du Bidāyat al-Mujtahid : pour chaque question, Ibn Rushd (1) recense les positions de toutes les écoles ; (2) expose leurs arguments ; (3) identifie la CAUSE de la divergence parmi ses 5 catégories ; (4) donne son avis personnel motivé. Il ne dit jamais « X a tort » sans expliquer pourquoi X a raisonné ainsi. Cette approche est unique dans l'histoire du Fiqh islamique."
+        },
+        {
+          id: "q-muq-02",
+          text: "La première cause de divergence selon Ibn Rushd est Ikhtilāf al-Riwāya. Que signifie-t-elle ?",
+          choices: [
+          { id:"a", text:"Divergence sur les noms des chapitres" },
+          { id:"b", text:"Un savant considère un Ḥadīth authentique et l'autre non — leurs jugements divergent même avec la même méthode" },
+          { id:"c", text:"Divergence sur la langue du Ḥadīth" },
+          { id:"d", text:"Différence dans les chaînes de transmission des versets coraniques" }
+          ],
+          correctId: "b",
+          explanation: "Ikhtilāf al-Riwāya : si deux savants évaluent différemment l'authenticité d'un Ḥadīth, ils arrivent à des conclusions juridiques différentes — même en utilisant la même méthode. Exemple concret : le Ḥadīth sur le Khiyār al-Majlis est dans les Ṣaḥīḥayn → Shāfiʿī et Ḥanbalī le suivent. Mālik lui préfère le ʿAmal al-Madanī → position malikite différente. Ce n'est pas un rejet du Ḥadīth mais une hiérarchisation différente des sources."
+        },
+        {
+          id: "q-muq-03",
+          text: "La polysémie du mot arabe Qurʾ (dans Coran 2:228) illustre quelle cause de divergence ?",
+          choices: [
+          { id:"a", text:"Ikhtilāf al-Riwāya" },
+          { id:"b", text:"Taʿaddud Maʿānī al-Alfāẓ — un mot arabe à plusieurs sens valides donne des règles différentes" },
+          { id:"c", text:"Taʿāruḍ al-Adilla" },
+          { id:"d", text:"Ikhtilāf fī al-Ijmāʿ" }
+          ],
+          correctId: "b",
+          explanation: "Qurʾ signifie soit Ḥayḍ (menstruation) soit Tuhr (pureté inter-menstruelle). → Ḥanafī et Ḥanbalī : Qurʾ = Ḥayḍ → ʿIdda = 3 menstruations complètes. Mālikī et Shāfiʿī : Qurʾ = Tuhr → ʿIdda = 3 périodes de pureté. La divergence est irréductible par la nature de la langue arabe — les deux lectures sont linguistiquement valides. C'est Taʿaddud Maʿānī al-Alfāẓ."
+        },
+        {
+          id: "q-muq-04",
+          text: "Concernant le dépôt des mains pendant la Ṣalāt, quelle est la position malikite spécifique et sa raison ?",
+          choices: [
+          { id:"a", text:"Mains croisées sur la poitrine — Sunna prophétique" },
+          { id:"b", text:"Mains le long du corps (Sadl) — fondé sur le ʿAmal al-Madanī (pratique médinoise transmise ininterrompue)" },
+          { id:"c", text:"Mains sur le ventre — position du Prophète ﷺ" },
+          { id:"d", text:"Aucune position définie — au choix du fidèle" }
+          ],
+          correctId: "b",
+          explanation: "La position malikite distincte : Sadl (mains le long du corps) — fondée sur le ʿAmal al-Madanī. Les autres écoles (Ḥanafī, Shāfiʿī, Ḥanbalī) pratiquent le Qabd (mains croisées) basé sur des Ḥadīths du Qabd. L'Imām Mālik a préféré la pratique médinoise ininterrompue au Ḥadīth isolé sur le Qabd — application directe de sa méthode des sources."
+        },
+        {
+          id: "q-muq-05",
+          text: "Le Khiyār al-Majlis (option de rétractation après vente) illustre quelle cause de divergence entre Mālikī et Shāfiʿī ?",
+          choices: [
+          { id:"a", text:"Taʿaddud Maʿānī al-Alfāẓ" },
+          { id:"b", text:"Ikhtilāf al-Riwāya — Mālik préfère le ʿAmal al-Madanī qui ignore ce Ḥadīth ; Shāfiʿī suit le Ḥadīth des Ṣaḥīḥayn" },
+          { id:"c", text:"Divergence sur la ʿIlla du Qiyās" },
+          { id:"d", text:"Ikhtilāf fī al-Ijmāʿ" }
+          ],
+          correctId: "b",
+          explanation: "Khiyār al-Majlis : le Ḥadīth « les deux parties ont l'option tant qu'ils ne se séparent pas » est dans al-Bukhārī et Muslim → Shāfiʿī le suit. L'Imām Mālik : ce Ḥadīth contredit le ʿAmal al-Madanī (les Médinois ne pratiquaient pas ce Khiyār) → il préfère la pratique médinoise. Cause = Ikhtilāf al-Riwāya/hiérarchisation des sources, pas une question d'authenticité pure."
+        },
+        {
+          id: "q-muq-06",
+          text: "Parmi ces divergences pratiques, lesquelles concernent la Ṣalāt entre les 4 Madhāhib ? (plusieurs réponses)",
+          type: 'multiple',
+          choices: [
+          { id:"a", text:"Récitation de la Basmala à voix haute dans la Fātiḥa" },
+          { id:"b", text:"Obligation ou non de la Fātiḥa pour le Maʾmūm" },
+          { id:"c", text:"Nombre de Rakʿāt dans la Ṣalāt obligatoire" },
+          { id:"d", text:"Dépôt des mains (Sadl ou Qabd)" }
+          ],
+          correctIds: ["a", "b", "d"],
+          explanation: "Les divergences réelles dans la Ṣalāt entre Madhāhib : (A) Basmala à voix haute — Shāfiʿī oui, Mālikī non ; (B) Fātiḥa du Maʾmūm — obligatoire selon Shāfiʿī et Ḥanbalī, non selon Mālikī et Ḥanafī ; (D) Sadl (Mālikī) vs Qabd (autres). En revanche : (C) le nombre de Rakʿāt est unanimement établi — 2/4/3/4/4 — et n'est PAS une divergence entre Madhāhib."
+        },
+        {
+          id: "q-muq-07",
+          text: "Le Talfīq (combinaison de deux Madhāhib) est-il toujours interdit ?",
+          choices: [
+          { id:"a", text:"Oui — on ne peut jamais combiner deux positions" },
+          { id:"b", text:"Non — le Talfīq est permis si chaque partie reste valide dans son Madhhab et qu'il n'y a pas de Tatabbuʿ al-Rukhaṣ (chasse aux facilités)" },
+          { id:"c", text:"Oui sauf si validé par les 4 Imāms" },
+          { id:"d", text:"Non — on peut toujours choisir la position la plus commode" }
+          ],
+          correctId: "b",
+          explanation: "Le Talfīq légitime : chaque partie de l'acte reste valide dans son Madhhab respectif, la combinaison ne crée pas un acte invalide dans tous les Madhāhib, et la motivation n'est pas la simple facilité. Le Talfīq interdit (Tatabbuʿ al-Rukhaṣ) : choisir systématiquement dans chaque Madhhab la règle la plus permissive pour construire un Islam minimal. C'est Al-Shāṭibī qui a systématisé cette distinction dans Al-Muwāfaqāt."
+        },
+        {
+          id: "q-muq-08",
+          text: "Al-Qarafī (savant malikite, mort 684 H) dans Al-Furūq enseigne que le Muqallid (non-savant) est :",
+          choices: [
+          { id:"a", text:"Absolument tenu de rester dans son Madhhab de naissance" },
+          { id:"b", text:"Libre de suivre tout savant qualifié — la fidélité au Madhhab est une facilité, non une obligation contractuelle" },
+          { id:"c", text:"Interdit de suivre un savant d'un autre Madhhab" },
+          { id:"d", text:"Obligé de suivre le Madhhab de son pays de résidence" }
+          ],
+          correctId: "b",
+          explanation: "Al-Qarāfī dans Al-Furūq : le Taqlīd est une facilité accordée au non-savant — il peut suivre tout Mujtahid qualifié. La fidélité à un Madhhab est recommandée pour la cohérence et la régularité dans la pratique, mais elle n'est pas une obligation absolue pour le Muqallid. Cette position libérale est caractéristique de l'école malikite par rapport à d'autres."
+        },
+        {
+          id: "q-muq-09",
+          text: "Parmi ces questions, lesquelles font l'objet d'un accord (Ijmāʿ) entre les 4 Madhāhib sunnites ? (plusieurs réponses)",
+          type: 'multiple',
+          choices: [
+          { id:"a", text:"L'obligation des 5 Ṣalawāt quotidiennes" },
+          { id:"b", text:"L'interdiction de la Zinā" },
+          { id:"c", text:"L'interdiction de la consommation du porc" },
+          { id:"d", text:"La position exacte des mains pendant la Ṣalāt" }
+          ],
+          correctIds: ["a", "b", "c"],
+          explanation: "A, B et C : unanimement établis par les 4 Madhāhib. (A) Les 5 Ṣalawāt — aucune divergence. (B) Interdiction de la Zinā — unanime. (C) Interdiction du porc — unanime. (D) Position des mains (Sadl vs Qabd) — c'est précisément une divergence pratique majeure entre Mālikī (Sadl) et les autres écoles (Qabd). L'accord porte sur les Uṣūl (principes) — les Furūʿ (détails) sont souvent divergents."
+        },
+        {
+          id: "q-muq-10",
+          text: "Concernant le droit de garde (Ḥaḍāna) des enfants après divorce, quelle est la différence entre Mālikī et Shāfiʿī ?",
+          choices: [
+          { id:"a", text:"Aucune — les deux accordent la garde à la mère jusqu'à puberté" },
+          { id:"b", text:"Mālikī : mère garde jusqu'à puberté (fils) et mariage (fille). Shāfiʿī : l'enfant choisit à 7 ans" },
+          { id:"c", text:"Mālikī donne toujours la garde au père. Shāfiʿī à la mère" },
+          { id:"d", text:"Les deux demandent l'avis du juge à chaque cas" }
+          ],
+          correctId: "b",
+          explanation: "Divergence sur la Ḥaḍāna : Mālikī — la mère garde le fils jusqu'à puberté et la fille jusqu'au mariage. Ḥanafī — mère jusqu'à 7 ans (fils) et 9 ans (fille). Shāfiʿī — à 7 ans, l'enfant choisit entre ses parents. Ḥanbalī — proche du Shāfiʿī mais avec des nuances. Cause de la divergence : interprétation des Ḥadīths sur la Ḥaḍāna et le bien de l'enfant."
+        },
+        {
+          id: "q-muq-11",
+          text: "Sur le nombre de tétées établissant la prohibition matrimoniale par Raḍāʿ (allaitement), quelle est la position malikite ?",
+          choices: [
+          { id:"a", text:"Une seule tétée suffit — même que Ḥanafī" },
+          { id:"b", text:"5 tétées distinctes et complètes — même que Shāfiʿī" },
+          { id:"c", text:"5 fois ou plus d'allaitement, sans exiger que chaque fois soit complète dans la définition stricte" },
+          { id:"d", text:"L'allaitement ne crée aucune prohibition matrimoniale" }
+          ],
+          correctId: "c",
+          explanation: "Divergence sur le Raḍāʿ : Ḥanafī — toute tétée, même une, crée la prohibition (position la plus large). Mālikī — 5 fois ou plus, avec une définition inclusive. Shāfiʿī — 5 tétées distinctes et complètes (position la plus stricte). Ḥanbalī — 5 tétées distinctes. Cause : le Ḥadīth (Muslim) qui dit « 5 tétées connues » est interprété différemment selon les Madhāhib."
+        },
+        {
+          id: "q-muq-12",
+          text: "Pourquoi Ibn Rushd et d'autres savants considèrent-ils la diversité des Madhāhib comme une Raḥma (miséricorde) ?",
+          choices: [
+          { id:"a", text:"Parce qu'on peut choisir la règle la plus facile dans chaque situation" },
+          { id:"b", text:"Parce qu'elle montre la largeur de la Sharīʿa et sa capacité à s'adapter à différents contextes — sans trahir les principes fondamentaux" },
+          { id:"c", text:"Parce qu'elle permet aux Muslims de se diviser selon leurs origines" },
+          { id:"d", text:"Parce qu'elle prouve que les règles islamiques sont arbitraires" }
+          ],
+          correctId: "b",
+          explanation: "Ibn Taymiyya et Ibn Rushd (dans des perspective différentes) : la diversité des Madhāhib est une Raḥma car elle révèle la richesse de la Sharīʿa — capable de répondre à des contextes différents tout en restant fidèle aux textes. Elle ne signifie pas que tout se vaut (relativisme) mais que plusieurs interprétations rigoureuses des mêmes textes sont possibles et légitimes. C'est le génie du Fiqh islamique classique."
+        },
+        {
+          id: "q-muq-13",
+          text: "La ʿIlla (cause juridique) dans le Qiyās : comment son interprétation crée-t-elle des divergences ?",
+          choices: [
+          { id:"a", text:"Les Madhāhib divergent sur ce qu'est l'arabe" },
+          { id:"b", text:"Choisir une ʿIlla différente pour étendre un jugement conduit à des règles différentes — ex. l'interdiction du vin : ʿIlla = ivresse (tout alcool Ḥarām) ou ʿIlla = raisin fermenté (position restrictive)" },
+          { id:"c", text:"La ʿIlla ne joue aucun rôle dans les divergences" },
+          { id:"d", text:"Les Madhāhib s'accordent toujours sur la ʿIlla" }
+          ],
+          correctId: "b",
+          explanation: "Divergence sur la ʿIlla du Qiyās : si l'interdiction du vin est due à l'ivresse (ʿIlla = Iskār) → tout alcool enivrant est Ḥarām (position de Mālik et de la majorité). Si l'interdiction est due au fait d'être du raisin fermenté (ʿIlla plus étroite) → seul le khamr de raisin est concerné (position historiquement attribuée à certains Ḥanafī mais abandonnée). Choisir une ʿIlla large ou étroite change considérablement le champ d'application d'une règle."
+        },
+        {
+          id: "q-muq-14",
+          text: "Quelle est la spécificité de l'école malikite dans le panorama de la jurisprudence comparée qui lui confère une adaptabilité particulière ?",
+          choices: [
+          { id:"a", text:"Elle n'utilise que le Coran" },
+          { id:"b", text:"Son insistance sur le ʿAmal al-Madanī et la Maṣlaḥa al-Mursala lui confère une flexibilité structurelle unique parmi les 4 Madhāhib" },
+          { id:"c", text:"Elle est la plus stricte des 4 écoles" },
+          { id:"d", text:"Elle permet le Talfīq sans aucune condition" }
+          ],
+          correctId: "b",
+          explanation: "L'école malikite est structurellement la plus flexible : (1) ʿAmal al-Madanī — intégration de la pratique collective vivante comme source ; (2) Maṣlaḥa al-Mursala — réponse aux nouveaux besoins sans texte explicite ; (3) ʿUrf (coutume locale) — intégration des réalités locales. Ces trois sources, quasi-absentes dans les autres écoles, expliquent pourquoi le Madhhab mālikī s'est répandu dans des contextes aussi différents que l'Andalousie, le Maghreb, l'Afrique sub-saharienne et maintenant l'Europe."
+        },
+        {
+          id: "q-muq-15",
+          text: "Quelle attitude islamique face aux divergences entre Madhāhib le Fiqh muqāran enseigne-t-il ?",
+          choices: [
+          { id:"a", text:"Sectarisme : seul son Madhhab est valide, les autres sont dans l'erreur" },
+          { id:"b", text:"Indifférence : toutes les positions sont équivalentes, peu importe ce qu'on choisit" },
+          { id:"c", text:"Compréhension respectueuse : reconnaître la légitimité des positions basées sur des Ijtihād rigoureux, sans pour autant les considérer toutes équivalentes" },
+          { id:"d", text:"Éviter complètement les questions qui font l'objet de divergence" }
+          ],
+          correctId: "c",
+          explanation: "L'attitude correcte enseignée par le Fiqh muqāran : ni sectarisme (mon Madhhab seul est valide) ni relativisme (tout se vaut). La position juste : comprendre que les divergences ont des causes intellectuelles légitimes (Ibn Rushd le démontre), reconnaître la validité des Ijtihād rigoureux qui aboutissent à des positions différentes des nôtres, rester fidèle à son Madhhab par cohérence et régularité tout en respectant les autres. L'Imām Mālik : « Chaque Mujtahid qui a atteint son degré a raison à ses yeux — et Allah sait mieux. »"
+        }]
       }
     }
   ]

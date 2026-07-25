@@ -35,19 +35,52 @@ const Icons = (() => {
 
     byName: name => {
       const m = {
-        /* Débutant */
+        /* Formes générales */
         water: Icons.water, arch: Icons.arch, crescent: Icons.crescent,
         scales: Icons.scales, star8: Icons.star8,
-        /* Intermédiaire */
-        janaza:    () => sw('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16" stroke-width="2.5"/>'),
-        hajj:      () => sw('<rect x="4" y="7" width="16" height="14" rx="1"/><path d="M2 7h20"/><path d="M8 7V4h8v3"/><line x1="12" y1="13" x2="12" y2="18"/><line x1="10" y1="15" x2="14" y2="15"/>'),
-        nikah:     () => sw('<circle cx="7" cy="12" r="5"/><circle cx="17" cy="12" r="5"/><path d="M12 8.5a3.5 3.5 0 0 1 0 7" opacity="0.35"/>'),
-        talaq:     () => sw('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><line x1="7" y1="7" x2="17" y2="7"/><path d="M7 7l-4 8s-1 2 4 2 4-2 4-2L7 7z"/><path d="M17 7l4 8s1 2-4 2-4-2-4-2L17 7z"/>'),
-        dhabaih:   () => sw('<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>'),
-        adahi:     () => sw('<circle cx="12" cy="10" r="3"/><path d="M12 13v3"/><path d="M9 20h6"/><path d="M7 8C7 5 9 3 12 3s5 2 5 5"/><path d="M5 6C3 7 2 9 2 11h3"/><path d="M19 6c2 1 3 3 3 5h-3"/>'),
-        buyu:      () => sw('<path d="M20.5 14.5l-5 5-2-2-3 2-4-4 2-3-1.5-1.5"/><path d="M15 9l-5-5-6 6.5 5 5"/><line x1="9" y1="4" x2="15" y2="10" stroke-width="1.3" opacity="0.4"/>'),
+        moon: Icons.moon, sun: Icons.sun, book: Icons.book, lock: Icons.lock,
+        handshake: () => sw('<path d="M20.5 14.5l-5 5-2-2-3 2-4-4 2-3-1.5-1.5"/><path d="M15 9l-5-5-6 6.5 5 5"/>'),
+        heart:     () => sw('<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>'),
+        balance:   () => sw('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><line x1="7" y1="7" x2="17" y2="7"/><path d="M7 7l-4 8s-1 2 4 2 4-2 4-2L7 7z"/><path d="M17 7l4 8s1 2-4 2-4-2-4-2L17 7z"/>'),
+        scroll:    () => sw('<path d="M8 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="8" y1="9" x2="10" y2="9"/>'),
+        seal:      () => sw('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'),
+        gift:      () => sw('<polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>'),
+        /* Badges Débutant */
+        drop:      () => sw('<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M8.5 14.5a3.5 3.5 0 0 0 4 3" stroke-width="1.2" opacity="0.5"/>'),
+        mihrab:    () => sw('<path d="M5 22V10C5 6 8 3 12 3s7 3 7 7v12"/><line x1="5" y1="22" x2="19" y2="22"/><line x1="2" y1="22" x2="22" y2="22"/><path d="M9 22v-6a3 3 0 0 1 6 0v6" opacity="0.5" stroke-width="1.3"/>'),
+        'crescent-s': () => sw('<path d="M20 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 20 12.79z"/><circle cx="17" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>'),
+        'coin-z':   () => sw('<circle cx="12" cy="12" r="9"/><path d="M9 8h6l-6 8h6" stroke-width="1.8"/><line x1="9" y1="8" x2="9" y2="7" stroke-width="1.5"/><line x1="15" y1="16" x2="15" y2="17" stroke-width="1.5"/>'),
+        /* Badges Intermédiaire */
+        lily:      () => sw('<path d="M12 22V12"/><path d="M12 12C12 12 8 10 6 6c4 0 6 2 6 6z"/><path d="M12 12C12 12 16 10 18 6c-4 0-6 2-6 6z"/><path d="M12 12C12 12 10 8 12 4c2 4 0 8 0 8z"/><circle cx="12" cy="22" r="1" fill="currentColor" stroke="none"/>'),
+        kaaba:     () => sw('<rect x="4" y="8" width="16" height="13" rx="1"/><line x1="4" y1="8" x2="20" y2="8"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="7" y="11" width="5" height="7" rx="1" opacity="0.5"/><path d="M8 8V5h8v3"/>'),
+        rings:     () => sw('<circle cx="7.5" cy="12" r="5.5"/><circle cx="16.5" cy="12" r="5.5"/><path d="M10.1 9.8a5.5 5.5 0 0 1 3.8 0" opacity="0.4"/>'),
+        'chain-b': () => sw('<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/><line x1="8" y1="16" x2="16" y2="8" stroke-width="1" opacity="0.3"/>'),
+        blade:     () => sw('<path d="M14.5 2L20 7.5 7.5 20 2 14.5z"/><path d="M7 17l4-4" opacity="0.5"/>'),
+        'flame-s': () => sw('<path d="M8.5 14.5A4.5 4.5 0 0 0 17 12c0-3-3.5-6-5-9-1 2.5-5 5.5-4.5 9A4.5 4.5 0 0 0 11.5 17" stroke-width="1.5"/><path d="M12 17a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" fill="currentColor" stroke="none"/>'),
+        handsh:    () => sw('<path d="M14 9l-4 4"/><path d="M3 9.5L7 6l4 3 4-3 4 3v8l-4 3-4-3-4 3-4-3z"/>'),
+        /* Badges Avancé */
+        'key-c':   () => sw('<circle cx="7.5" cy="15.5" r="5.5"/><line x1="11.8" y1="11.2" x2="22" y2="2"/><line x1="18" y1="5" x2="20" y2="7"/><line x1="21" y1="8" x2="19" y2="10"/>'),
+        'gift-h':  () => sw('<polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>'),
+        'tree-f':  () => sw('<line x1="12" y1="22" x2="12" y2="13"/><path d="M12 13l-7-7h14z"/><path d="M12 8L6 2h12z"/><line x1="7" y1="13" x2="17" y2="13" opacity="0.4"/>'),
+        'seal-h':  () => sw('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/>'),
+        gavel:     () => sw('<path d="M14 14l-4 4"/><path d="M5 20L20 5"/><rect x="14" y="2" width="8" height="5" rx="1" transform="rotate(45 14 2)" opacity="0.7"/><rect x="2" y="14" width="8" height="5" rx="1" transform="rotate(45 2 14)" opacity="0.7"/>'),
+        'wall-h':  () => sw('<rect x="2" y="15" width="20" height="3" rx="1"/><rect x="4" y="19" width="6" height="3" rx="1"/><rect x="14" y="19" width="6" height="3" rx="1"/><rect x="2" y="11" width="8" height="3" rx="1"/><rect x="14" y="11" width="8" height="3" rx="1"/><rect x="7" y="7" width="10" height="3" rx="1"/><path d="M12 2v5" stroke-width="2" opacity="0.4"/>'),
+        'heart-r': () => sw('<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/><line x1="12" y1="10" x2="12" y2="14"/><line x1="10" y1="12" x2="14" y2="12"/>'),
+        /* Badges Expert */
+        'star-a':  () => sw('<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/><circle cx="12" cy="12" r="3" opacity="0.3" fill="currentColor" stroke="none"/>'),
+        'pen-b':   () => sw('<path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/><path d="M15 5l3 3" opacity="0.5"/>'),
+        'mosque-m':() => sw('<path d="M2 22V10"/><path d="M22 22V10"/><path d="M12 2L2 10h20z"/><rect x="7" y="14" width="10" height="8"/><path d="M10 22v-5a2 2 0 1 1 4 0v5"/><path d="M8 10C8 8 10 6 12 4c2 2 4 4 4 6" opacity="0.4"/>'),
+        lantern:   () => sw('<rect x="7" y="6" width="10" height="14" rx="2"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="9" y1="6" x2="9" y2="20" opacity="0.3"/><line x1="15" y1="6" x2="15" y2="20" opacity="0.3"/><line x1="7" y1="13" x2="17" y2="13" opacity="0.3"/><path d="M10 2h4" stroke-width="2"/>'),
+        'globe-m': () => sw('<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'),
+        'leaf-b':  () => sw('<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>'),
+        'scale-c': () => sw('<line x1="12" y1="3" x2="12" y2="21"/><path d="M5 21h14"/><path d="M5 7h14" opacity="0.4"/><path d="M6 7L3 14s-.5 2 3 2 3-2 3-2L6 7z"/><path d="M18 7l3 7s.5 2-3 2-3-2-3-2L18 7z"/>'),
+        /* Compatibilité anciens noms */
+        'janaza': () => sw('<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>'),
+        'hajj':   () => sw('<rect x="4" y="7" width="16" height="14" rx="1"/><line x1="2" y1="7" x2="22" y2="7"/><path d="M8 7V4h8v3"/>'),
+        'nikah':  () => sw('<circle cx="7.5" cy="12" r="5.5"/><circle cx="16.5" cy="12" r="5.5"/>'),
+        'dhabaih':() => sw('<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>'),
       };
-      return (m[name] || (() => ''))();
+      return (m[name] || (() => sw('<circle cx="12" cy="12" r="10" opacity="0.3"/>')))(  );
     },
     badge: name => Icons.byName(name)
   };
@@ -135,21 +168,24 @@ const Renderer = (() => {
             ? Progress.getDebutantProgress()
             : (lvl.id === 'intermediaire' && typeof INTERMEDIAIRE !== 'undefined')
               ? (() => {
+                  const scores = INTERMEDIAIRE.subjects.map(s => Progress.getScore(s.quiz.id) ?? 0);
+                  const percent = Math.round(scores.reduce((a,b)=>a+b,0) / scores.length);
                   const done = INTERMEDIAIRE.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
-                  const total = INTERMEDIAIRE.subjects.length;
-                  return { done, total, percent: Math.round(done / total * 100) };
+                  return { done, total: INTERMEDIAIRE.subjects.length, percent };
                 })()
             : (lvl.id === 'avance' && typeof AVANCE !== 'undefined')
               ? (() => {
+                  const scores = AVANCE.subjects.map(s => Progress.getScore(s.quiz.id) ?? 0);
+                  const percent = Math.round(scores.reduce((a,b)=>a+b,0) / scores.length);
                   const done = AVANCE.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
-                  const total = AVANCE.subjects.length;
-                  return { done, total, percent: Math.round(done / total * 100) };
+                  return { done, total: AVANCE.subjects.length, percent };
                 })()
             : (lvl.id === 'expert' && typeof EXPERT !== 'undefined')
               ? (() => {
+                  const scores = EXPERT.subjects.map(s => Progress.getScore(s.quiz.id) ?? 0);
+                  const percent = Math.round(scores.reduce((a,b)=>a+b,0) / scores.length);
                   const done = EXPERT.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
-                  const total = EXPERT.subjects.length;
-                  return { done, total, percent: Math.round(done / total * 100) };
+                  return { done, total: EXPERT.subjects.length, percent };
                 })()
             : { done: 0, total: lvl.subjectCount, percent: 0 };
           return `
@@ -272,7 +308,7 @@ const Renderer = (() => {
         ` : `<div class="qh-card-score-empty">Non commencé</div>`}
         <button class="btn ${status === 'passed' ? 'btn--outline' : 'btn--primary'} qh-card-btn"
                 ${!hasQ ? 'disabled' : ''}
-                onclick="Quiz.start(${JSON.stringify(subj.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj.title}', 'hub')">
+                onclick="Quiz.startById('${subj.quiz.id}', '${subj.title.replace(/'/g,"\\'")}', 'hub')">
           ${score !== null ? 'Réessayer' : 'Commencer'} ${Icons.arrowR()}
         </button>
       </div>`).join('');
@@ -366,7 +402,7 @@ const Renderer = (() => {
           const hasBadge = Progress.hasBadge(subj.badge.id);
           const avail    = subj.lessons.filter(l => l.status === 'available').length;
           const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
-          const safeT    = subj.title.replace(/'/g, '&#39;');
+          const safeT    = subj.title.replace(/\\'/g, "\\'");
           return `
           <div class="subject-card"
                onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'avance',subjectTitle:'${safeT}'})">
@@ -419,8 +455,10 @@ const Renderer = (() => {
           const done   = Progress.isLessonDone(l.id);
           const avail  = l.status === 'available';
           const lvlKey = level || 'debutant';
-          const safeSubjTitle  = subj.title.replace(/'/g, '&#39;');
-          const safeLessTitle  = l.title.replace(/'/g, '&#39;');
+          // Use \' to escape apostrophes inside single-quoted JS strings in onclick attributes
+          // &#39; is WRONG here: HTML parser decodes it to ' which breaks the JS string
+          const safeSubjTitle = subj.title.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+          const safeLessTitle = l.title.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
           const clickAttr = avail
             ? `onclick="Router.navigate('lesson',{lessonId:'${l.id}',subjectId:'${subj.id}',level:'${lvlKey}',subjectTitle:'${safeSubjTitle}',lessonTitle:'${safeLessTitle}'})"`
             : '';
@@ -450,7 +488,7 @@ const Renderer = (() => {
         ${score !== null ? `<span class="quiz-block__score">${score}%</span>` : ''}
         <button class="btn ${!quizAvail ? 'btn--outline' : 'btn--primary'} btn--sm"
                 ${!quizAvail ? 'disabled' : ''}
-                onclick="Quiz.start(${JSON.stringify(subj.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj.title}', 'subject')">
+                onclick="Quiz.startById('${subj.quiz.id}', '${subj.title.replace(/'/g,"\\'")}', 'subject')">
           ${score !== null ? 'Réessayer' : 'Commencer'} ${Icons.arrowR()}
         </button>
       </div>
@@ -495,7 +533,7 @@ const Renderer = (() => {
             Retour aux leçons
           </button>
           <button class="btn btn--primary btn--sm"
-                  onclick="Quiz.start(${JSON.stringify(subj?.quiz).replace(/'/g,"&#39;").replace(/"/g,'&quot;')}, '${subj?.title||''}', 'subject')">
+                  onclick="Quiz.startById('${subj?.quiz?.id || ''}', '${(subj?.title||'').replace(/'/g,"\\'")}', 'subject')">
             Faire le quiz
           </button>
         </div>
@@ -515,9 +553,9 @@ const Renderer = (() => {
     ];
 
     const renderLevel = ({ data, route }) => {
-      const scores   = data.subjects.map(s => Progress.getScore(s.quiz.id)).filter(x => x !== null);
-      const pct      = scores.length ? Math.round(scores.reduce((a,b)=>a+b,0)/scores.length) : 0;
-      const done     = scores.length;
+      const allScores = data.subjects.map(s => Progress.getScore(s.quiz.id) ?? 0);
+      const pct      = Math.round(allScores.reduce((a,b)=>a+b,0) / allScores.length);
+      const done     = data.subjects.filter(s => Progress.getScore(s.quiz.id) !== null).length;
       const total    = data.subjects.length;
       return `
       <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:var(--radius-xl);padding:var(--sp-6);margin-bottom:var(--sp-6)">
@@ -539,7 +577,7 @@ const Renderer = (() => {
           const pass  = score !== null && score >= 85;
           const avail = subj.lessons.filter(l => l.status === 'available').length;
           const done2 = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
-          const safeT = subj.title.replace(/'/g, '&#39;');
+          const safeT = subj.title.replace(/\\'/g, "\\'");
           return `
           <div class="progress-subject-row" style="cursor:pointer"
                onclick="Router.navigate('subject',{subjectId:'${subj.id}',level:'${route}',subjectTitle:'${safeT}'})">
@@ -584,7 +622,7 @@ const Renderer = (() => {
           const hasBadge = Progress.hasBadge(subj.badge.id);
           const avail    = subj.lessons.filter(l => l.status === 'available').length;
           const done     = subj.lessons.filter(l => Progress.isLessonDone(l.id)).length;
-          const safeT    = subj.title.replace(/'/g, '&#39;');
+          const safeT    = subj.title.replace(/\\'/g, "\\'");
           const locked   = subj.quiz.status === 'locked' && avail === 0;
           return `
           <div class="subject-card ${locked ? 'subject-card--locked' : ''}"

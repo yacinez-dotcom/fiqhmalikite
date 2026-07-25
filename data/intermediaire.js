@@ -24,7 +24,7 @@ const INTERMEDIAIRE = {
 
   subjects: [
 
-    /* ═══ Janāʾiz (الجَنَائِز) ═══ */
+    /* ═══ Janāʾiz ═══ */
     {
       id: "janaza",
       title: "Les Dispositions Funéraires",
@@ -38,58 +38,58 @@ const INTERMEDIAIRE = {
         arabicTitle: "عَارِف أَحكَام al-janāʾiz (الجَنَائِز)",
         icon: "moon",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Janāʾiz (الجَنَائِز)"
+        unlockCondition: "Obtenir ≥ 85 % Janāʾiz"
       },
 
       lessons: [
       {
         id: "jan-01",
-        title: "Iḥtiḍār (الاحتِضَار) — Accompagner l'Agonisant",
+        title: "Iḥtiḍār — Accompagner l'Agonisant",
         status: 'available',
         content: [
-        {"t": "lead", "v": "S'occuper du déFarḍ Kifāya (فَرضُ كِفَايَة) (obligation communautaire) — si la communauté s'en charge, tous sont exonérés ; si personne ne le fait, tous sont en péché. La Risāla d'Ibn Abī Zayd al-Qayrawānī y consacre les chapitres 20 à 22."},
+        {"t": "lead", "v": "S'occuper du déFarḍ Kifāya (obligation communautaire) — si la communauté s'en charge, tous sont exonérés ; si personne ne le fait, tous sont en péché. La Risāla d'Ibn Abī Zayd al-Qayrawānī y consacre les chapitres 20 à 22."},
         { t:'ar', v:"قَالَ النَّبِيُّ ﷺ : حَقُّ الْمُسْلِمِ عَلَى الْمُسْلِمِ خَمْسٌ... وَاتِّبَاعُ al-janāʾiz (الجَنَائِز)ِ", n:"Le Prophète ﷺ : « Le musulman a cinq droits sur le musulman … suivre les cortèges funèbres. » — al-Bukhārī et Muslim" },
-        {"t": "h", "v": "Accompagnement de l'agonisant (المُحتَضَر)"},
+        {"t": "h", "v": "Accompagnement de l'agonisant"},
         { t:'ul', v:[
           "Orienter l'agonisant vers la قِبلَة si possible.",
-          "Lui suggérer doucement la شَهَادَة sans l'obliger (lui « dicter » — تَلقِين).",
+          "Lui suggérer doucement la شَهَادَة sans l'obliger.",
           "Fermer ses yeux au moment du décès.",
           "Lecture de سُورَة يَس au chevet : recommandée selon Ibn Abī Zayd.",
-          "Les larmes (البُكَاء) sont permises et même rapportées du Prophète ﷺ.",
-          "<strong>Interdit : Niyāḥa (النِّيَاحَة)</strong> (lamentations, cris, se déchirer les vêtements, se raser les cheveux) — حَرَام explicitement."
+          "Les larmes sont permises et même rapportées du Prophète ﷺ.",
+          "<strong>Interdit : Niyāḥa</strong> (lamentations, cris, se déchirer les vêtements, se raser les cheveux) — حَرَام explicitement."
         ] },
         {"t": "h", "v": "Annonce du décès et présence des femmes en état d'impureté"},
         { t:'ul', v:[
           "Il est recommandable que la femme en حَيْض et les personnes en جَنَابَة ne s'approchent pas du mourant selon Ibn Abī Zayd.",
           "La mort doit être annoncée à la famille et à la communauté pour organiser الجَنَازَة.",
-          "Il est blâmable de pousser des cris au moment du décès — la patience et la dignité (الصَّبر والاحتساب) sont plus méritoires."
+          "Il est blâmable de pousser des cris au moment du décès — la patience et la dignité sont plus méritoires."
         ] },
-        {"t": "note", "v": "Rappel malikite : annoncer le décèNiyāḥa (النِّيَاحَة) (cris ritualisés) est un des actes les plus clairement prohibés par hadīth. Abū Mūsā al-Ashʿarī s'est désolidarisé de sa femme qui pleurait en lamentations."}
+        {"t": "note", "v": "Rappel malikite : annoncer le décèNiyāḥa (cris ritualisés) est un des actes les plus clairement prohibés par hadīth. Abū Mūsā al-Ashʿarī s'est désolidarisé de sa femme qui pleurait en lamentations."}
         ]
       },
       {
         id: "jan-02",
-        title: "الغُسْل وKafan (الكَفَن) — Lavage et Linceul",
+        title: "الغُسْل وKafan — Lavage et Linceul",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le lavage du corps (الغُسْل) Farḍ Kifāya (فَرضُ كِفَايَة). Il n'y a pas de nombre fixe de lavages — l'objectif est la propreté. Ibn Abī Zayd détaille la méthode dans la Risāla."},
+        {"t": "lead", "v": "Le lavage du corps Farḍ Kifāya. Il n'y a pas de nombre fixe de lavages — l'objectif est la propreté. Ibn Abī Zayd détaille la méthode dans la Risāla."},
         {"t": "h", "v": "الغُسْل — Règles du lavage"},
         { t:'ul', v:[
-          "Nombre impair de fois (3, 5, 7…) avec eau chaude et feuilles de lotus (السِّدر) pour nettoyer.",
-          "Au dernier lavage : ajouter du camphre (الكَافُور) pour parfumer.",
+          "Nombre impair de fois (3, 5, 7…) avec eau chaude et feuilles de lotus pour nettoyer.",
+          "Au dernier lavage : ajouter du camphre pour parfumer.",
           "Couvrir les parties intimes pendant tout le lavage.",
           "Ne pas couper les ongles ni raser les cheveux.",
           "Presser le ventre doucement pour vider les résidus.",
           "La أَبوس rituels (ablutions) sont recommandées mais non obligatoires sur le corps.",
           "<strong>Qui lave qui :</strong> l'époux peut laver son épouse décédée et vice versa.",
-          "Si une femme décède en voyage sans autres femmes, un homme lave son visage et ses mains avec du sable (التَّيَمُّم sur le pansement exact).",
+          "Si une femme décède en voyage sans autres femmes, un homme lave son visage et ses mains avec du sable.",
           "<strong>Exception absolue :</strong> le شَهِيد (martyr tué au combat) n'est ni lavé ni prié sur lui — il est enterré avec ses vêtements. (Mukhtasar Khalīl)"
         ] },
-        {"t": "h", "v": "Kafan (الكَفَن) — Le Linceul"},
+        {"t": "h", "v": "Kafan — Le Linceul"},
         { t:'ul', v:[
           "Nombre impair de pièces : 3, 5 ou 7 — préférence pour le blanc.",
           "Le Prophète ﷺ a été enveloppé dans 3 pièces d'étoffe blanche de Saḥūl.",
-          "En plus du linceul : il est recommandé de mettre une chemise (قَمِيص) et un turban (عِمَامَة) sur l'homme.",
+          "En plus du linceul : il est recommandé de mettre une chemise et un turban sur l'homme.",
           "Parfumer les couches et les parties du corps qui servent à la prosternation.",
           "Coût du linceul prélevé sur la succession avant les dettes."
         ] },
@@ -104,26 +104,26 @@ const INTERMEDIAIRE = {
       },
       {
         id: "jan-03",
-        title: "ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) — La Prière Funèbre",
+        title: "ṢṢalāt al-Janāza — La Prière Funèbre",
         status: 'available',
         content: [
-        {"t": "lead", "v": "ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) Farḍ Kifāya (فَرضُ كِفَايَة). Elle diffère fondamentalement des autres prières : pas de رُكُوع ni de سُجُود. Elle se fait entièrement debout avec 4 تَكبِيرَات."},
+        {"t": "lead", "v": "ṢṢalāt al-Janāza Farḍ Kifāya. Elle diffère fondamentalement des autres prières : pas de رُكُوع ni de سُجُود. Elle se fait entièrement debout avec 4 تَكبِيرَات."},
         {"t": "h", "v": "Conditions préalables"},
         { t:'ul', v:[
           "Le défunt doit être Muslim.",
-          "Il doit avoir été lavé (غَسَّل) au préalable.",
+          "Il doit avoir été lavé au préalable.",
           "<strong>Exception (Mukhtasar Khalīl) :</strong> le شَهِيد (martyr au combat) n'est ni lavé ni prié sur lui."
         ] },
         {"t": "h", "v": "Structure de la prière — 4 obligations"},
         { t:'ul', v:[
-          "<strong>1. Niyya (النِّيَّة)</strong> (intention) : prier sur ce mort et lui faire دُعَاء.",
-          "<strong>2. Les 4 تَكبِيرَات</strong> (dont تَكبِيرَةُ الإِحرَام) — l'imam lève les mains à la 1ère takbīra.",
+          "<strong>1. Niyya</strong> (intention) : prier sur ce mort et lui faire دُعَاء.",
+          "<strong>2. Les 4 تَكبِيرَات</strong> — l'imam lève les mains à la 1ère takbīra.",
           "<strong>3. القِيَام</strong> (debout du début à la fin — sauf impossibilité).",
           "<strong>4. الدُّعَاء</strong> après chaque takbīra + après la 4ème takbīra."
         ] },
         {"t": "h", "v": "Déroulement détaillé"},
         { t:'ul', v:[
-          "Après la 1ère takbīra : الحَمد لله Ṣalāt (الصَّلَاة) على النَّبِيّ ﷺ puis دُعَاء pour le mort.",
+          "Après la 1ère takbīra : الحَمد لله Ṣalāt على النَّبِيّ ﷺ puis دُعَاء pour le mort.",
           "Idem après chaque takbīra (2ème, 3ème, 4ème).",
           "Après la 4ème takbīra : دُعَاء final puis السَّلَام.",
           "<strong>Spécificité malikite :</strong> UN SEUL salām — à voix très basse pour tous (imam compris).",
@@ -146,7 +146,7 @@ const INTERMEDIAIRE = {
         { t:'ul', v:[
           "Marcher à pied devant le convoi funèbre est préférable selon Ibn Abī Zayd.",
           "Placer le mort sur son <strong>côté droit</strong> dans la tombe, face à la قِبلَة.",
-          "Le <strong>لَحد</strong> (niche latérale creusée vers la قِبلَة) est préféré au شَقّ (fosse centrale) quand le sol est dur.",
+          "Le <strong>لَحد</strong> est préféré au شَقّ (fosse centrale) quand le sol est dur.",
           "Dire en déposant le mort : « O Allah, notre compagnon est devenu Ton hôte... »",
           "Il est blâmable de <strong>construire sur les tombes</strong> ou de les blanchir à la chaux (pour les personnes ordinaires).",
           "Pas d'encensoir lors du cortège.",
@@ -159,11 +159,11 @@ const INTERMEDIAIRE = {
           "Assister aux funérailles d'un non-Muslim : voir les détails sur doctrine-malikite.fr — position nuancée selon le lien familial.",
           "La lecture du Coran et les actions pieuses peuvent bénéficier au défunt selon les savants malikites."
         ] },
-        {"t": "h", "v": "Niyāḥa (النِّيَاحَة) et ḤḤidād (الحِدَاد)"},
+        {"t": "h", "v": "Niyāḥa et ḤḤidād"},
         { t:'ul', v:[
-          "ḤḤidād (الحِدَاد) (deuil) de la veuve : 4 mois et 10 jours — elle évite les parures, parfums et sorties sauf nécessité.",
+          "ḤḤidād (deuil) de la veuve : 4 mois et 10 jours — elle évite les parures, parfums et sorties sauf nécessité.",
           "Période de deuil pour autres personnes : 3 jours maximum.",
-          "Niyāḥa (النِّيَاحَة) (lamentations ritualisées) reste حَرَام dans tous les cas."
+          "Niyāḥa (lamentations ritualisées) reste حَرَام dans tous les cas."
         ] },
         {"t": "note", "v": "Spécificité malikite sur la prière funèbre multiple : on peut prier une seule prière sur plusieurs morts. L'imam se place à côté des hommes s'il y a aussi des femmes. Si seulement des hommes, le plus méritant est le plus proche de l'imam."}
         ]
@@ -173,11 +173,11 @@ const INTERMEDIAIRE = {
         title: "أَحكَامٌ خَاصَّة — Cas Particuliers",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le Mukhtasar Khalīl et la Risāla traitent plusieurs cas particuliers importants qui complètent les règles généJanāʾiz (الجَنَائِز)."},
-        {"t": "h", "v": "1. Shahīd (الشَّهِيد) — Le Martyr"},
+        {"t": "lead", "v": "Le Mukhtasar Khalīl et la Risāla traitent plusieurs cas particuliers importants qui complètent les règles généJanāʾiz."},
+        {"t": "h", "v": "1. Shahīd — Le Martyr"},
         { t:'ul', v:[
           "Définition : tué au combat contre les ennemis.",
-          "PAS de lavage (غُسل) — enterré avec ses vêtements.",
+          "PAS de lavage — enterré avec ses vêtements.",
           "PAS de prière funèbre sur lui.",
           "Exception : celui qui s'est suicidé ou qui a été exécuté par la loi islamique → on prie sur lui, mais pas l'imam.",
           "Si le martyr est retrouvé vivant et meurt plus tard de ses blessures → on le lave et on prie sur lui."
@@ -210,7 +210,7 @@ const INTERMEDIAIRE = {
 
       quiz: {
         id: "quiz-janaza",
-        title: "Questionnaire — Janāʾiz (الجَنَائِز)",
+        title: "Questionnaire — Janāʾiz",
         status: 'available',
         score: null,
         questions: [
@@ -220,11 +220,11 @@ const INTERMEDIAIRE = {
           choices: [
           { id:"a", text:"Sounnah" },
           { id:"b", text:"فَرضُ عَيْن" },
-          { id:"c", text:"Farḍ Kifāya (فَرضُ كِفَايَة)" },
-          { id:"d", text:"Mandūb (مَندُوب)" }
+          { id:"c", text:"Farḍ Kifāya" },
+          { id:"d", text:"Mandūb" }
           ],
           correctId: "c",
-          explanation: "Laver, ensevelir, prier sur le mort et l'Farḍ Kifāya (فَرضُ كِفَايَة) — obligation communautaire : si la communauté l'accomplit, tous sont exonérés ; sinon tous sont en péché."
+          explanation: "Laver, ensevelir, prier sur le mort et l'Farḍ Kifāya — obligation communautaire : si la communauté l'accomplit, tous sont exonérés ; sinon tous sont en péché."
         },
         {
           id: "q-jan-02",
@@ -236,11 +236,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Obligatoires pour la famille" }
           ],
           correctId: "b",
-          explanation: "Les larmes (البُكَاء) sont permises — le Prophète ﷺ a lui-même pleuré lors du décès de son fils Ibrāhīm et lors de la maladie de Saʿd. Ce qui est حَرَام, c'Niyāḥa (النِّيَاحَة) (lamentations ritualisées, cris, se déchirer les vêtements)."
+          explanation: "Les larmes sont permises — le Prophète ﷺ a lui-même pleuré lors du décès de son fils Ibrāhīm et lors de la maladie de Saʿd. Ce qui est حَرَام, c'Niyāḥa (lamentations ritualisées, cris, se déchirer les vêtements)."
         },
         {
           id: "q-jan-03",
-          text: "<strong>PIÈGE :</strong> Niyāḥa (النِّيَاحَة) (lamentations ritualisées) lors d'un décès est :",
+          text: "Niyāḥa (lamentations ritualisées) lors d'un décès est :",
           choices: [
           { id:"a", text:"Makrūh seulement" },
           { id:"b", text:"Permise par tradition culturelle" },
@@ -248,7 +248,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Permise pour les femmes uniquement" }
           ],
           correctId: "c",
-          explanation: "Le Prophète ﷺ : « Je me dégage de toute responsabilité vis-à-vis de celle qui se lamente (الصَّالِقَة), se rase les cheveux (الحَالِقَة) et se déchire les vêtements (الشَّاقَّة). » — al-Bukhārī et Muslim. Abū Mūsā al-Ashʿarī s'est désolidarisé de sa femme pour cela."
+          explanation: "Le Prophète ﷺ : « Je me dégage de toute responsabilité vis-à-vis de celle qui se lamente, se rase les cheveux et se déchire les vêtements. » — al-Bukhārī et Muslim. Abū Mūsā al-Ashʿarī s'est désolidarisé de sa femme pour cela."
         },
         {
           id: "q-jan-04",
@@ -268,15 +268,15 @@ const INTERMEDIAIRE = {
           choices: [
           { id:"a", text:"Du sel" },
           { id:"b", text:"Du vinaigre" },
-          { id:"c", text:"Du camphre (كَافُور)" },
+          { id:"c", text:"Du camphre" },
           { id:"d", text:"De l'eau de rose" }
           ],
           correctId: "c",
-          explanation: "Ibn Abī Zayd précise : « يُضَافُ إِلَى مَاءِ الغَسلَةِ الأَخِيرَةِ الكَافُور » — le camphre est ajouté au dernier lavage pour parfumer le corps. Les autres lavages utilisent l'eau et le lotus (السِّدر)."
+          explanation: "Ibn Abī Zayd précise : « يُضَافُ إِلَى مَاءِ الغَسلَةِ الأَخِيرَةِ الكَافُور » — le camphre est ajouté au dernier lavage pour parfumer le corps. Les autres lavages utilisent l'eau et le lotus."
         },
         {
           id: "q-jan-06",
-          text: "<strong>PIÈGE :</strong> Doit-on couper les ongles et raser les cheveux du mort ?",
+          text: "Doit-on couper les ongles et raser les cheveux du mort ?",
           choices: [
           { id:"a", text:"Oui, par respect" },
           { id:"b", text:"Oui, pour la propreté" },
@@ -300,7 +300,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-08",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Le شَهِيد (martyr tué au combat) :",
+          text: "Le شَهِيد (martyr tué au combat) :",
           choices: [
           { id:"a", text:"Est lavé normalement puis prié sur lui" },
           { id:"b", text:"N'est ni lavé ni prié sur lui — enterré avec ses vêtements" },
@@ -312,7 +312,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-09",
-          text: "Combien de pièKafan (الكَفَن) ?",
+          text: "Combien de pièKafan ?",
           choices: [
           { id:"a", text:"1 pièce uniquement" },
           { id:"b", text:"2 pièces" },
@@ -320,7 +320,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"5 pièces exactement" }
           ],
           correctId: "c",
-          explanation: "Ibn Abī Zayd : linceul en nombre impair de pièces (3, 5 ou 7), blanches de préférence. Le Prophète ﷺ a été enveloppé dans 3 pièces d'étoffe blanche de Saḥūl (Yemen). On peut ajouter une chemise (قَمِيص) et un turban (عِمَامَة) sans les compter dans le nombre impair."
+          explanation: "Ibn Abī Zayd : linceul en nombre impair de pièces (3, 5 ou 7), blanches de préférence. Le Prophète ﷺ a été enveloppé dans 3 pièces d'étoffe blanche de Saḥūl (Yemen). On peut ajouter une chemise et un turban sans les compter dans le nombre impair."
         },
         {
           id: "q-jan-10",
@@ -332,19 +332,19 @@ const INTERMEDIAIRE = {
           { id:"d", text:"5" }
           ],
           correctId: "c",
-          explanation: "ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) comprend QUATRE تَكبِيرَات. Après chaque takbīra : الحَمد لله, Ṣalāt (الصَّلَاة) على النَّبِيّ ﷺ, duʿāʾ pour le mort. C'est une prière unique sans رُكُوع ni سُجُود."
+          explanation: "ṢṢalāt al-Janāza comprend QUATRE تَكبِيرَات. Après chaque takbīra : الحَمد لله, Ṣalāt على النَّبِيّ ﷺ, duʿāʾ pour le mort. C'est une prière unique sans رُكُوع ni سُجُود."
         },
         {
           id: "q-jan-11",
-          text: "<strong>PIÈGE :</strong> Y a-t-il un رُكُوع ou un سُجُود dans la prière funèbre ?",
+          text: "Y a-t-il un رُكُوع ou un سُجُود dans la prière funèbre ?",
           choices: [
           { id:"a", text:"Oui — comme dans toute prière" },
           { id:"b", text:"Seulement le رُكُوع" },
-          { id:"c", text:"Non — ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) se fait entièrement debout" },
+          { id:"c", text:"Non — ṢṢalāt al-Janāza se fait entièrement debout" },
           { id:"d", text:"Seulement deux prosternations à la fin" }
           ],
           correctId: "c",
-          explanation: "ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) est accomplie entièrement en QIYĀm (position debout) avec 4 takbīrāt. Pas de رُكُوع, pas de سُجُود, pas de تَشَهُّد assis. C'est l'une des caractéristiques distinctives de cette prière."
+          explanation: "ṢṢalāt al-Janāza est accomplie entièrement en QIYĀm (position debout) avec 4 takbīrāt. Pas de رُكُوع, pas de سُجُود, pas de تَشَهُّد assis. C'est l'une des caractéristiques distinctives de cette prière."
         },
         {
           id: "q-jan-12",
@@ -356,7 +356,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Pas de salām — on lève seulement les mains" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite : UN SEUL salām à la fin de ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة), prononcé à voix très basse par tout le monde (imam compris). C'est différent des autres rites."
+          explanation: "Spécificité malikite : UN SEUL salām à la fin de ṢṢalāt al-Janāza, prononcé à voix très basse par tout le monde (imam compris). C'est différent des autres rites."
         },
         {
           id: "q-jan-13",
@@ -372,7 +372,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-14",
-          text: "<strong>PIÈGE :</strong> Peut-on prier sur le mort absent (mort dans un autre pays) selon le rite malikite ?",
+          text: "Peut-on prier sur le mort absent (mort dans un autre pays) selon le rite malikite ?",
           choices: [
           { id:"a", text:"Oui — comme le Prophète ﷺ a prié sur le Négus" },
           { id:"b", text:"Oui si c'est un grand savant" },
@@ -387,19 +387,19 @@ const INTERMEDIAIRE = {
           text: "Quel type de tombe est préféré en rite malikite quand le sol est dur ?",
           choices: [
           { id:"a", text:"الشَّقّ (fosse centrale)" },
-          { id:"b", text:"Laḥd (اللَّحد) (niche latérale orientée vers la قِبلَة)" },
+          { id:"b", text:"Laḥd" },
           { id:"c", text:"La tombe en béton" },
           { id:"d", text:"Indifférent selon l'Imām Mālik" }
           ],
           correctId: "b",
-          explanation: "Ibn Abī Zayd : le لَحد (une excavation pratiquée sous le bord dans la paroi du tombeau, orientée vers la قِبلَة) est préféré au شَقّ (fosse centrale) quand le sol est dur et ne s'effrite pas. Le Prophète ﷺ a été inhumé dans un لَحد."
+          explanation: "Ibn Abī Zayd : le لَحد est préféré au شَقّ (fosse centrale) quand le sol est dur et ne s'effrite pas. Le Prophète ﷺ a été inhumé dans un لَحد."
         },
         {
           id: "q-jan-16",
           text: "<strong>SCÉNARIO :</strong> Une femme décède dans un voyage sans autres femmes ni mahram. Comment est-elle préparée ?",
           choices: [
           { id:"a", text:"Elle n'est pas lavée et enterrée telle quelle" },
-          { id:"b", text:"Tayammum (التَّيَمُّم)" },
+          { id:"b", text:"Tayammum" },
           { id:"c", text:"Elle est lavée normalement par un homme" },
           { id:"d", text:"On attend de trouver une femme" }
           ],
@@ -408,7 +408,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-17",
-          text: "<strong>PIÈGE :</strong> Peut-on pratiquer la prière funèbre sur plusieurs morts en une seule prière ?",
+          text: "Peut-on pratiquer la prière funèbre sur plusieurs morts en une seule prière ?",
           choices: [
           { id:"a", text:"Non — une prière par personne obligatoirement" },
           { id:"b", text:"Oui — une seule prière pour plusieurs corps est valide" },
@@ -416,7 +416,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Seulement si morts le même jour" }
           ],
           correctId: "b",
-          explanation: "Oui, une seule ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) pour plusieurs corps est valide. L'imam se place côté épaules des femmes s'il y a aussi des hommes, ou côté milieu pour les hommes. Chaque corps est disposé derrière l'imam en rangs."
+          explanation: "Oui, une seule ṢṢalāt al-Janāza pour plusieurs corps est valide. L'imam se place côté épaules des femmes s'il y a aussi des hommes, ou côté milieu pour les hommes. Chaque corps est disposé derrière l'imam en rangs."
         },
         {
           id: "q-jan-18",
@@ -428,11 +428,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Un an" }
           ],
           correctId: "c",
-          explanation: "La veuve fait le حِدَاد pendant 4 mois et 10 jours (durée de son عِدَّة de veuvage) : elle évite les parures, parfums, sortie sans nécessité, et coloration des cheveux. Pour les autres proches (parents, enfants) : 3 jours maximum de deuil."
+          explanation: "La veuve fait le حِدَاد pendant 4 mois et 10 jours : elle évite les parures, parfums, sortie sans nécessité, et coloration des cheveux. Pour les autres proches (parents, enfants) : 3 jours maximum de deuil."
         },
         {
           id: "q-jan-19",
-          text: "<strong>AVANCÉ :</strong> Si le mort a été enterré sans prière funèbre, peut-on prier sur sa tombe ?",
+          text: "Si le mort a été enterré sans prière funèbre, peut-on prier sur sa tombe ?",
           choices: [
           { id:"a", text:"Non — il est trop tard" },
           { id:"b", text:"Oui — on peut prier sur la tombe" },
@@ -444,7 +444,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-20",
-          text: "<strong>SPÉCIFICITÉ :</strong> L'enfant qui naît sans vagir (mort-né) — comment est-il traité ?",
+          text: "L'enfant qui naît sans vagir (mort-né) — comment est-il traité ?",
           choices: [
           { id:"a", text:"Lavage + prière sur lui comme tout Muslim" },
           { id:"b", text:"Pas de prière, mais mis dans un linceul et enterré au cimetière" },
@@ -464,11 +464,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Oui pour le malade qui ne peut se lever" }
           ],
           correctId: "b",
-          explanation: "ṢṢalāt al-Janāza (صَلَاةُ الجَنَازَة) requiert le قِيَام (debout) comme condition. Elle ne peut pas être faite assis sans excuse médicale. Si quelqu'un ne peut se tenir debout, il la fait assis — mais pas sur une monture sans nécessité absolue."
+          explanation: "ṢṢalāt al-Janāza requiert le قِيَام (debout) comme condition. Elle ne peut pas être faite assis sans excuse médicale. Si quelqu'un ne peut se tenir debout, il la fait assis — mais pas sur une monture sans nécessité absolue."
         },
         {
           id: "q-jan-22",
-          text: "<strong>COMPLEXE :</strong> Quelle est la récompense de suivre un cortège funèbre jusqu'à l'enterrement ?",
+          text: "Quelle est la récompense de suivre un cortège funèbre jusqu'à l'enterrement ?",
           choices: [
           { id:"a", text:"1 qīrāṭ" },
           { id:"b", text:"2 qīrāṭ — équivalant au mont Uḥud" },
@@ -480,7 +480,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-jan-23",
-          text: "<strong>PIÈGE :</strong> Doit-on attendre un nombre de jours minimum avant d'enterrer le mort ?",
+          text: "Doit-on attendre un nombre de jours minimum avant d'enterrer le mort ?",
           choices: [
           { id:"a", text:"Minimum 24 heures pour permettre à la famille d'arriver" },
           { id:"b", text:"Non — l'enterrement doit se faire le plus tôt possible" },
@@ -488,11 +488,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Indifférent — selon la tradition locale" }
           ],
           correctId: "b",
-          explanation: "L'Islam encourage d'inhumer le mort rapidement (الإِسرَاع بالجَنَازَة). Retarder sans raison valable est déconseillé. On n'attend pas un délai minimum — on s'organise le plus vite possible pour le bien du défunt."
+          explanation: "L'Islam encourage d'inhumer le mort rapidement. Retarder sans raison valable est déconseillé. On n'attend pas un délai minimum — on s'organise le plus vite possible pour le bien du défunt."
         },
         {
           id: "q-jan-24",
-          text: "Le coûKafan (الكَفَن) est prélevé sur :",
+          text: "Le coûKafan est prélevé sur :",
           choices: [
           { id:"a", text:"La famille obligatoirement" },
           { id:"b", text:"La communauté (beit al-māl)" },
@@ -507,24 +507,24 @@ const INTERMEDIAIRE = {
           text: "<strong>ÉVALUATION FINALE :</strong> Un homme décède en voyage avec seulement d'autres hommes non-mahram d'une femme décédée. Que font-ils ?",
           choices: [
           { id:"a", text:"Ils la lavent normalement — nécessité l'impose" },
-          { id:"b", text:"Tayammum (التَّيَمُّم) (frotter le visage et les mains) et la prient sur elle" },
+          { id:"b", text:"Tayammum (frotter le visage et les mains) et la prient sur elle" },
           { id:"c", text:"Ils l'enterrent sans lavage ni prière" },
           { id:"d", text:"Ils attendent de trouver des femmes ou un mahram" }
           ],
           correctId: "b",
-          explanation: "Ibn Abī Zayd : en l'absence de femmes et de mahram, Tayammum (التَّيَمُّم) sur le visage et les mains. Si un mahram est présent, il peut la laver entièrement par-dessus un tissu couvrant le corps. La prière funèbre est toujours accomplie sur elle."
+          explanation: "Ibn Abī Zayd : en l'absence de femmes et de mahram, Tayammum sur le visage et les mains. Si un mahram est présent, il peut la laver entièrement par-dessus un tissu couvrant le corps. La prière funèbre est toujours accomplie sur elle."
         }
         ]
       }
     },
 
-    /* ═══ Ḥajj (الحَجّ) وʿUmra (العُمرَة) ═══ */
+    /* ═══ Ḥajj وʿUmra ═══ */
     {
       id: "hajj",
       title: "Le Pèlerinage",
       arabicTitle: "al-ḥajj (الحَجّ) والعُمرَة",
       icon: "hajj",
-      description: "Le cinquième pilier de l'Islam : piliers, devoirs et sounnah du pèlerinage selon le rite malikite — avec ses spécificités (إِفرَاد préféré, عُمرَة sounnah).",
+      description: "Le cinquième pilier de l'Islam : piliers, devoirs et sounnah du pèlerinage selon le rite malikite — avec ses spécificités.",
       source: "Risāla Ibn Abī Zayd ch. 31 · Mukhtasar Khalīl pp. 63-78 · doctrine-malikite.fr",
       badge: {
         id: "badge-int-hajj",
@@ -532,46 +532,46 @@ const INTERMEDIAIRE = {
         arabicTitle: "الحَاجُّ العَارِف",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Ḥajj (الحَجّ)"
+        unlockCondition: "Obtenir ≥ 85 % Ḥajj"
       },
 
       lessons: [
       {
         id: "haj-01",
-        title: "فَرضُ Ḥajj (الحَجّ) وشُرُوطُه — Obligation et Conditions",
+        title: "فَرضُ Ḥajj وشُرُوطُه — Obligation et Conditions",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Ḥajj (الحَجّ) est le 5ème pilier de l'Islam, obligatoire UNE fois dans la vie pour qui en a les moyens. La Risāla (ch. 31) et le Mukhtasar Khalīl (pp. 63-78) en détaillent les conditions."},
+        {"t": "lead", "v": "Ḥajj est le 5ème pilier de l'Islam, obligatoire UNE fois dans la vie pour qui en a les moyens. La Risāla (ch. 31) et le Mukhtasar Khalīl (pp. 63-78) en détaillent les conditions."},
         { t:'ar', v:"فَرضُ الحَجِّ وَسُنَّةُ الْعُمرَةِ مَرَّةً", n:"« Le Hajj est une obligation et l'Umra est une sounnah — chacun une fois. » — Mukhtasar Khalīl, début du chapitre al-ḥajj (الحَجّ)" },
         {"t": "h", "v": "شُرُوطُ الوُجُوب — Conditions d'obligation"},
         { t:'ul', v:[
-          "<strong>1. Islām (الإِسلَام)</strong> : seul le Muslim est astreint au حَجّ.",
+          "<strong>1. Islām</strong> : seul le Muslim est astreint au حَجّ.",
           "<strong>2. البُلُوغ</strong> : obligation à la puberté. L'enfant qui fait le حَجّ avant la puberté → le حَجّ est valide mais ne dispense pas de l'obligation à l'âge adulte.",
           "<strong>3. الحُرِّيَّة</strong> : l'esclave n'est pas obligé (contexte historique).",
-          "<strong>4. الاستطاعة</strong> : capacité financière (زاد) et physique (الصِّحَّة) et sécurité du chemin.",
+          "<strong>4. الاستطاعة</strong> : capacité financière et physique et sécurité du chemin.",
           "La mer (voyage maritime) est comme la terre — sauf si le danger y est clairement prépondérant.",
           "Pour la femme : محرم ou groupe de femmes de confiance (divergence interne à l'école malikite sur ce point).",
-          "Mukhtasar Khalīl : valide même si accompli avec de l'argent illicite (الحَرَام) — le حَجّ est صَحِيح mais le priant est en péché."
+          "Mukhtasar Khalīl : valide même si accompli avec de l'argent illicite — le حَجّ est صَحِيح mais le priant est en péché."
         ] },
         {"t": "h", "v": "الفَورِيَّة والتَّرَاخِي — Immédiateté ou report"},
-        {"t": "p", "v": "Divergence au sein de l'école malikite : faut-il accomplir le حَجّ dès que les conditions sont réunies (الفَوْرِيَّة) ou peut-on le reporter à tout moment de la vie (التَّرَاخِي) ? Le Mukhtasar Khalīl mentionne cette divergence sans trancher définitivement."},
-        {"t": "h", "v": "Ḥajj (الحَجّ) par procuration (الحَجّ عَن الغَيْر)"},
+        {"t": "p", "v": "Divergence au sein de l'école malikite : faut-il accomplir le حَجّ dès que les conditions sont réunies ou peut-on le reporter à tout moment de la vie ? Le Mukhtasar Khalīl mentionne cette divergence sans trancher définitivement."},
+        {"t": "h", "v": "Ḥajj par procuration"},
         { t:'ul', v:[
           "Valide pour le mort qui n'a pas accompli le حَجّ obligatoire.",
           "Valide pour l'incapable physique permanent.",
           "Le mandataire doit d'abord avoir accompli son propre حَجّ obligatoire.",
-          "Mukhtasar Khalīl : l'Imārat à loyer (إِجَارَة ضَمَان) est valide pour le حَجّ."
+          "Mukhtasar Khalīl : l'Imārat à loyer est valide pour le حَجّ."
         ] },
-        {"t": "h", "v": "ʿUmra (العُمرَة) — Statut particulier"},
-        {"t": "p", "v": "<strong>Spécificité malikite fondamentale :</strong> l'عُمرَة est سُنَّة مُؤَكَّدَة (sounnah appuyée), PAS une obligation — contrairement à l'école chāfiʿite qui la rend واجبة et à certains savants malikites tardifs. Mukhtasar Khalīl : « فَرضُ الحَجِّ وَسُنَّةُ ʿUmra (العُمرَة)ِ مَرَّةً »."}
+        {"t": "h", "v": "ʿUmra — Statut particulier"},
+        {"t": "p", "v": "<strong>Spécificité malikite fondamentale :</strong> l'عُمرَة est سُنَّة مُؤَكَّدَة (sounnah appuyée), PAS une obligation — contrairement à l'école chāfiʿite qui la rend واجبة et à certains savants malikites tardifs. Mukhtasar Khalīl : « فَرضُ الحَجِّ وَسُنَّةُ ʿUmraِ مَرَّةً »."}
         ]
       },
       {
         id: "haj-02",
-        title: "Iḥrām (الإِحرَام) والمَوَاقِيت",
+        title: "Iḥrām والمَوَاقِيت",
         status: 'available',
         content: [
-        {"t": "lead", "v": "L'إِحرَام est le premier pilier du حَجّ. Il doit être pris depuis le مِيقَات (seuil géographique) Niyya (النِّيَّة) appropriée."},
+        {"t": "lead", "v": "L'إِحرَام est le premier pilier du حَجّ. Il doit être pris depuis le مِيقَات (seuil géographique) Niyya appropriée."},
         {"t": "h", "v": "المَوَاقِيت المَكَانِيَّة — Seuils géographiques"},
         { t:'ul', v:[
           "ذُو الحُلَيفَة : mīqāt des gens de Médine.",
@@ -581,74 +581,74 @@ const INTERMEDIAIRE = {
           "ذَاتُ عِرق : mīqāt des gens d'Irak.",
           "Les gens de La Mecque : leurs mīqāt est La Mecque elle-même."
         ] },
-        {"t": "h", "v": "أَعمَال Iḥrām (الإِحرَام) — Ce qu'on fait lors de l'إِحرَام"},
+        {"t": "h", "v": "أَعمَال Iḥrām — Ce qu'on fait lors de l'إِحرَام"},
         { t:'ul', v:[
-          "Se laver (الغُسل est sounnah pour l'إِحرَام).",
+          "Se laver.",
           "Mettre les vêtements d'إِحرَام : 2 pièces d'étoffe non cousues pour l'homme.",
-          "Niyya (النِّيَّة) explicitement.",
+          "Niyya explicitement.",
           "Dire la تَلبِيَة : « لَبَّيكَ اللَّهُمَّ لَبَّيكَ... »",
           "Mukhtasar Khalīl : l'إِحرَام est valide même si prononcé lors d'un rapport conjugal."
         ] },
-        {"t": "h", "v": "Maḥẓūrāt (المَحظُورَات) — Interdictions de l'إِحرَام"},
+        {"t": "h", "v": "Maḥẓūrāt — Interdictions de l'إِحرَام"},
         { t:'ul', v:[
           "<strong>Pour l'homme :</strong> couvrir la tête, porter des vêtements cousus (chemises, pantalons, chaussettes).",
-          "<strong>Pour tous :</strong> rapport sexuel (يُبطِلُ Ḥajj (الحَجّ) avant عَرَفَة), se couper les cheveux ou ongles, se parfumer, chasser.",
+          "<strong>Pour tous :</strong> rapport sexuel avant عَرَفَة), se couper les cheveux ou ongles, se parfumer, chasser.",
           "Couverture des pieds avec les chaussures ordinaires → réservé aux femmes et aux nécessiteux."
         ] },
-        {"t": "h", "v": "تجاوز Mīqāt (المِيقَات) بلا إِحرَام"},
+        {"t": "h", "v": "تجاوز Mīqāt بلا إِحرَام"},
         {"t": "p", "v": "Si quelqu'un passe le مِيقَات sans إِحرَام sans excuse → obligation de revenir au مِيقَات OU payer un دَم (sacrifice). S'il entre en إِحرَام depuis La Mecque sans revenir au مِيقَات : sa prière est valide mais il doit un دَم."},
         {"t": "note", "v": "Mukhtasar Khalīl précise que celui qui passe le مِيقَات sans إِحرَام peut revenir y prendre l'إِحرَام sans دَم si le revenir est possible. Sinon, le دَم est obligatoire."}
         ]
       },
       {
         id: "haj-03",
-        title: "أَركَان Ḥajj (الحَجّ) — Les Piliers",
+        title: "أَركَان Ḥajj — Les Piliers",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Les piliers (أَركَان) sont les éléments essentiels dont l'omission invalide le حَجّ entièrement — on ne peut les compenser par un دَم. Il y en a 4 selon l'école malikite."},
-        {"t": "h", "v": "الرُّكن الأَوَّل : Iḥrām (الإِحرَام)"},
-        {"t": "p", "v": "L'intention d'entrer en état d'إِحرَام depuis le مِيقَات. Iḥrām (الإِحرَام), il n'y a pas de حَجّ. Il doit précéder tous les autres actes."},
-        {"t": "h", "v": "الرُّكن الثَّاني : Wuqūf (الوُقُوف) بِعَرَفَة"},
+        {"t": "lead", "v": "Les piliers sont les éléments essentiels dont l'omission invalide le حَجّ entièrement — on ne peut les compenser par un دَم. Il y en a 4 selon l'école malikite."},
+        {"t": "h", "v": "الرُّكن الأَوَّل : Iḥrām"},
+        {"t": "p", "v": "L'intention d'entrer en état d'إِحرَام depuis le مِيقَات. Iḥrām, il n'y a pas de حَجّ. Il doit précéder tous les autres actes."},
+        {"t": "h", "v": "الرُّكن الثَّاني : Wuqūf بِعَرَفَة"},
         { t:'ul', v:[
-          "Se trouver à ʿArafāt du déclin du soleil (الزَّوَال) du 9 Dhū al-Ḥijja jusqu'au lever du 10 (avec passage à Muzdalifa).",
+          "Se trouver à ʿArafāt du déclin du soleil du 9 Dhū al-Ḥijja jusqu'au lever du 10 (avec passage à Muzdalifa).",
           "C'est le pilier CENTRAL : « الحَجُّ عَرَفَة ».",
           "Minimum : être présent, même brièvement (de nuit inclus selon certains).",
           "Si on rate entièrement عَرَفَة → حَجّ invalide, doit être refait l'année suivante."
         ] },
-        {"t": "h", "v": "الرُّكن الثَّالث : ṬṬawāf al-Ifāḍa (طَوَافُ الإِفَاضَة)"},
+        {"t": "h", "v": "الرُّكن الثَّالث : ṬṬawāf al-Ifāḍa"},
         { t:'ul', v:[
           "7 tours autour de la Kaʿba après le وُقُوف à عَرَفَة.",
           "Conditions : pureté rituelle, couvrir la عَوْرَة, La Kaʿba doit être à la gauche.",
-          "Commencer depuis la Pierre Noire (الحَجَرُ الأَسوَد).",
+          "Commencer depuis la Pierre Noire.",
           "Après le طَوَاف : 2 rakʿāt derrière المَقَام (sounnah)."
         ] },
-        {"t": "h", "v": "الرُّكن الرَّابع : Saʿy (السَّعي) بين Ṣaff (الصَّف)َا والمَروَة"},
+        {"t": "h", "v": "الرُّكن الرَّابع : Saʿy بين Ṣaffَا والمَروَة"},
         { t:'ul', v:[
-          "7 fois entre Ṣaff (الصَّف)َا et المَروَة (aller = 1, retour = 2, etc.).",
-          "Commencer par Ṣaff (الصَّف)َا.",
-          "Pour les hommes : hâter le pas (الرَّمَل) entre les 2 panneaux verts dans la partie basse.",
+          "7 fois entre Ṣaffَا et المَروَة (aller = 1, retour = 2, etc.).",
+          "Commencer par Ṣaffَا.",
+          "Pour les hommes : hâter le pas entre les 2 panneaux verts dans la partie basse.",
           "Pas de condition de pureté rituelle obligatoire pour le سَعي selon une opinion malikite (mais préféré)."
         ] },
         { t:'ar', v:"اَلحَجُّ عَرَفَةُ", n:"« Le Hajj c'est ʿArafāt » — Hadīth du Prophète ﷺ (Abū Dāwūd, al-Tirmidhī)" },
-        {"t": "note", "v": "Ces 4 piliers sont obligatoires dans cet ordre et ne peuvent être compensés par un دَم. Si l'un manque, le حَجّ est invalide. Wājib (وَاجِب)َات (devoirs) dont l'omission impose un دَم sans invalider le حَجّ."}
+        {"t": "note", "v": "Ces 4 piliers sont obligatoires dans cet ordre et ne peuvent être compensés par un دَم. Si l'un manque, le حَجّ est invalide. Wājibَات (devoirs) dont l'omission impose un دَم sans invalider le حَجّ."}
         ]
       },
       {
         id: "haj-04",
-        title: "Wājib (وَاجِب)َات Ḥajj (الحَجّ) وHady (الهَدي)",
+        title: "Wājibَات Ḥajj وHady",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Wājib (وَاجِب)َات sont des devoirs dont l'omission n'invalide pas le حَجّ mais impose un دَم (sacrifice expiatoire). Les sounnah n'imposent rien si omises."},
-        {"t": "h", "v": "Wājib (وَاجِب)َات Ḥajj (الحَجّ) — Les Devoirs"},
+        {"t": "lead", "v": "Wājibَات sont des devoirs dont l'omission n'invalide pas le حَجّ mais impose un دَم (sacrifice expiatoire). Les sounnah n'imposent rien si omises."},
+        {"t": "h", "v": "Wājibَات Ḥajj — Les Devoirs"},
         { t:'ul', v:[
           "<strong>1.</strong> L'إِحرَام depuis le مِيقَات (pas depuis avant ni depuis après).",
           "<strong>2.</strong> المَبِيت à Muzdalifa (nuit du 9 au 10 Dhū al-Ḥijja).",
           "<strong>3.</strong> المَبِيت à Minā (nuits des 11, 12 et éventuellement 13 Dhū al-Ḥijja).",
-          "<strong>4.</strong> Ramy al-Jamarāt (رَمي الجَمَرَات) (lapidation des 3 stèles) — 7 cailloux par stèle.",
-          "<strong>5.</strong> ḤḤalq (الحَلق) أو Taqṣīr (التَّقصِير) (se raser ou se couper les cheveux après le نَحر).",
-          "<strong>6.</strong> ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع) (tawāf d'adieu avant de quitter La Mecque)."
+          "<strong>4.</strong> Ramy al-Jamarāt (lapidation des 3 stèles) — 7 cailloux par stèle.",
+          "<strong>5.</strong> ḤḤalq أو Taqṣīr.",
+          "<strong>6.</strong> ṬṬawāf al-Wadāʿ (tawāf d'adieu avant de quitter La Mecque)."
         ] },
-        {"t": "h", "v": "Hady (الهَدي) — Le Sacrifice du Pèlerinage"},
+        {"t": "h", "v": "Hady — Le Sacrifice du Pèlerinage"},
         { t:'ul', v:[
           "Obligatoire pour le تَمَتُّع et le قِرَان.",
           "Sounnah pour l'إِفرَاد.",
@@ -656,37 +656,37 @@ const INTERMEDIAIRE = {
           "Mukhtasar Khalīl : si le هَدي tombe en panne avant son lieu d'abattage → on l'égore et on laisse aux passants (on ne le mange pas soi-même).",
           "Lieu d'abattage : le هَدي pour le تَمَتُّع → dans l'enceinte de الحَرَم."
         ] },
-        {"t": "h", "v": "Iḥṣār (الإِحصَار) — Être empêché d'accomplir le Hajj"},
+        {"t": "h", "v": "Iḥṣār — Être empêché d'accomplir le Hajj"},
         {"t": "p", "v": "Si un ennemi ou une force majeure empêche d'atteindre La Mecque, le pèlerin peut se libérer de l'إِحرَام avec un هَدي envoyé à La Mecque. Pas d'obligation de refaire le حَجّ si c'était un حَجّ non obligatoire."},
-        {"t": "note", "v": "Différence fondamentale avec les prières : dans la prière, si on oublie une obligation (فريضة), la prière est invalide. Dans le حَجّ, Wājib (وَاجِب)َات manquants sont compensés par un دَم, et le حَجّ reste valide."}
+        {"t": "note", "v": "Différence fondamentale avec les prières : dans la prière, si on oublie une obligation, la prière est invalide. Dans le حَجّ, Wājibَات manquants sont compensés par un دَم, et le حَجّ reste valide."}
         ]
       },
       {
         id: "haj-05",
-        title: "أَنوَاع Ḥajj (الحَجّ) الثَّلَاثَة",
+        title: "أَنوَاع Ḥajj الثَّلَاثَة",
         status: 'available',
         content: [
         {"t": "lead", "v": "Il existe 3 façons d'accomplir le حَجّ. En rite malikite, l'إِفرَاد est préféré. Le Mukhtasar Khalīl précise les règles de conversion entre les 3 formules."},
-        {"t": "h", "v": "1. Ifrād (الإِفرَاد) — Hajj seul (PRÉFÉRÉ en rite malikite)"},
+        {"t": "h", "v": "1. Ifrād — Hajj seul (PRÉFÉRÉ en rite malikite)"},
         { t:'ul', v:[
           "Accomplir le حَجّ seul, sans عُمرَة dans le même voyage.",
           "Pas de هَدي obligatoire.",
           "Spécificité malikite : l'إِفرَاد est la formule <strong>préférée</strong> — contrairement à l'école chāfiʿite qui préfère le تَمَتُّع.",
-          "Mukhtasar Khalīl : Ifrād (الإِفرَاد) à Qirān (القِرَان) (en ajoutant العُمرَة) mais pas l'inverse après le début."
+          "Mukhtasar Khalīl : Ifrād à Qirān mais pas l'inverse après le début."
         ] },
-        {"t": "h", "v": "2. Tamattuʿ (التَّمَتُّع) — Umra puis Hajj"},
+        {"t": "h", "v": "2. Tamattuʿ — Umra puis Hajj"},
         { t:'ul', v:[
           "Accomplir l'عُمرَة d'abord, puis se libérer de l'إِحرَام, puis entrer en إِحرَام pour le حَجّ.",
           "Oblige un هَدي (sacrifice).",
-          "Si le هَدي est introuvable : 3 jours de jeûḤajj (الحَجّ) + 7 jours après le retour (= 10 jours).",
-          "Mukhtasar Khalīl : Tamattuʿ (التَّمَتُّع) Ifrād (الإِفرَاد) Qirān (القِرَان) après le début."
+          "Si le هَدي est introuvable : 3 jours de jeûḤajj + 7 jours après le retour (= 10 jours).",
+          "Mukhtasar Khalīl : Tamattuʿ Ifrād Qirān après le début."
         ] },
-        {"t": "h", "v": "3. Qirān (القِرَان) — Hajj et Umra ensemble"},
+        {"t": "h", "v": "3. Qirān — Hajj et Umra ensemble"},
         { t:'ul', v:[
           "Entrer en إِحرَام pour les deux en même temps et les accomplir sans se libérer entre les deux.",
           "Oblige un هَدي.",
-          "Les actes du حَجّ couvrent ceux de l'عُمرَة (طَوَاف واحد + سَعي واحد).",
-          "Mukhtasar : Qirān (القِرَان) vers إِفرَاد ou تَمَتُّع — ni l'inverse après engagement."
+          "Les actes du حَجّ couvrent ceux de l'عُمرَة.",
+          "Mukhtasar : Qirān vers إِفرَاد ou تَمَتُّع — ni l'inverse après engagement."
         ] },
         { t:'ar', v:"وَأَجْرَأُ تَمَتُّعٍ عَن إِفرَادٍ وَعَكَسُهُ لَا قِرَانٍ عَن إِفرَادٍ أَو تَمَتُّعٍ", n:"Mukhtasar Khalīl sur les conversions de formule : « La formule تَمَتُّع peut être convertie en إِفرَاد et vice versa, mais القِرَان ne peut être converti en aucune des deux. »" },
         {"t": "note", "v": "La grande question du حَجّ malikite : pourquoi l'إِفرَاد est préféré alors qu'il ne comporte pas de هَدي ? Réponse des savants : parce que c'est la formule du Prophète ﷺ dans son dernier حَجّ selon la narration malikite, et parce qu'il témoigne d'une dévotion plus pure, séparant les deux ibādāt."}
@@ -694,14 +694,14 @@ const INTERMEDIAIRE = {
       },
       {
         id: "haj-06",
-        title: "مَحظُورَات Iḥrām (الإِحرَام) وKaffāra (الكَفَّارَة)",
+        title: "مَحظُورَات Iḥrām وKaffāra",
         status: 'available',
         content: [
         {"t": "lead", "v": "Les interdictions de l'إِحرَام sont des actes que l'état sacré prohibe temporairement. Leur violation déclenche différentes expiations selon leur gravité."},
         {"t": "h", "v": "Tableau des interdictions et expiations"},
         { t:'ul', v:[
           "<strong>Rapport sexuel AVANT عَرَفَة :</strong> invalide le حَجّ — doit continuer et refaire l'année suivante + une بَدَنَة (chamelle).",
-          "<strong>Rapport sexuel APRÈS عَرَفَة :</strong> حَجّ valide mais impose un sacrifice (شاة ou بقرة selon les positions).",
+          "<strong>Rapport sexuel APRÈS عَرَفَة :</strong> حَجّ valide mais impose un sacrifice.",
           "<strong>Se couper les cheveux ou ongles :</strong> فِدية — choix entre 3 jours de jeûne OU nourrir 6 pauvres OU un mouton.",
           "<strong>Se parfumer :</strong> même expiation — فِدية.",
           "<strong>Chasser :</strong> مِثل (animal sauvage équivalent) donné aux pauvres de الحَرَم.",
@@ -711,11 +711,11 @@ const INTERMEDIAIRE = {
         {"t": "h", "v": "فِدية الأَذى — Quand on est contraint"},
         { t:'ar', v:"فَمَن كَانَ مِنكُم مَّرِيضًا أَو بِهِ أَذًى مِّن رَّأسِهِ فَفِدْيَةٌ مِّن صِيَامٍ أَو صَدَقَةٍ أَو نُسُكٍ", n:"Coran 2:196 — Permission de se raser la tête pour raison médicale avec expiation" },
         {"t": "p", "v": "Si quelqu'un est contraint (maladie, insectes, douleur) de faire un acte prohibé, la فِدية lui est permise avec l'expiation. Exemple : Kaʿb ibn ʿUjra ﵁ qui avait des poux — permission de se raser la tête avec une fidya."},
-        {"t": "h", "v": "أَنوَاع الدَّم في Ḥajj (الحَجّ)"},
+        {"t": "h", "v": "أَنوَاع الدَّم في Ḥajj"},
         { t:'ul', v:[
-          "دَم Tamattuʿ (التَّمَتُّع) وQirān (القِرَان) : une شاة (brebis) ou 1/7 d'une بَدَنَة.",
+          "دَم Tamattuʿ وQirān : une شاة (brebis) ou 1/7 d'une بَدَنَة.",
           "دَم الجِنَايَات (infractions) : selon le type — voir tableau ci-dessus.",
-          "دَم Iḥṣār (الإِحصَار) : un هَدي envoyé à La Mecque si on est empêché.",
+          "دَم Iḥṣār : un هَدي envoyé à La Mecque si on est empêché.",
           "Tous les دِمَاء doivent être abattus dans l'enceinte du حَرَم."
         ] },
         {"t": "note", "v": "Les actes permis pendant l'إِحرَام (souvent confondus avec les interdits) : se laver, changer de vêtements d'إِحرَام, porter une ceinture, porter un anneau, manger et boire, se faire soigner."}
@@ -725,13 +725,13 @@ const INTERMEDIAIRE = {
 
       quiz: {
         id: "quiz-hajj",
-        title: "Questionnaire — Ḥajj (الحَجّ) وʿUmra (العُمرَة)",
+        title: "Questionnaire — Ḥajj وʿUmra",
         status: 'available',
         score: null,
         questions: [
         {
           id: "q-haj-01",
-          text: "Ḥajj (الحَجّ) est un pilier de l'Islam. Son obligation est :",
+          text: "Ḥajj est un pilier de l'Islam. Son obligation est :",
           choices: [
           { id:"a", text:"Mensuelle" },
           { id:"b", text:"Annuelle" },
@@ -739,19 +739,19 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Tous les 5 ans" }
           ],
           correctId: "c",
-          explanation: "Ḥajj (الحَجّ) est obligatoire une SEULE fois dans la vie pour le Muslim capable. Il peut être accompli plus d'une fois mais l'obligation est levée après la première fois."
+          explanation: "Ḥajj est obligatoire une SEULE fois dans la vie pour le Muslim capable. Il peut être accompli plus d'une fois mais l'obligation est levée après la première fois."
         },
         {
           id: "q-haj-02",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> L'عُمرَة est :",
+          text: "L'عُمرَة est :",
           choices: [
-          { id:"a", text:"Obligatoire (واجبة) comme le حَجّ" },
+          { id:"a", text:"Obligatoire comme le حَجّ" },
           { id:"b", text:"Sounnah muʾakkada — non obligation" },
-          { id:"c", text:"Sounnah légère (مندوب)" },
+          { id:"c", text:"Sounnah légère" },
           { id:"d", text:"Équivalente au حَجّ" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : « فَرضُ الحَجِّ وَسُنَّةُ ʿUmra (العُمرَة)ِ مَرَّةً » — le حَجّ est فَرض, l'عُمرَة est سُنَّة. Contrairement à l'école chāfiʿite qui la rend واجبة. C'est une spécificité malikite importante."
+          explanation: "Mukhtasar Khalīl : « فَرضُ الحَجِّ وَسُنَّةُ ʿUmraِ مَرَّةً » — le حَجّ est فَرض, l'عُمرَة est سُنَّة. Contrairement à l'école chāfiʿite qui la rend واجبة. C'est une spécificité malikite importante."
         },
         {
           id: "q-haj-03",
@@ -769,17 +769,17 @@ const INTERMEDIAIRE = {
           id: "q-haj-04",
           text: "<strong>QUELLE FORMULE ?</strong> Le rite malikite préfère quelle formule de حَجّ ?",
           choices: [
-          { id:"a", text:"Tamattuʿ (التَّمَتُّع) (عُمرَة puis حَجّ)" },
-          { id:"b", text:"Qirān (القِرَان) (les deux ensemble)" },
-          { id:"c", text:"Ifrād (الإِفرَاد) (حَجّ seul)" },
+          { id:"a", text:"Tamattuʿ" },
+          { id:"b", text:"Qirān (les deux ensemble)" },
+          { id:"c", text:"Ifrād" },
           { id:"d", text:"Aucune préférence — au choix" }
           ],
           correctId: "c",
-          explanation: "Spécificité malikite : Ifrād (الإِفرَاد) (حَجّ seul, sans عُمرَة dans le même voyage) est la formule PRÉFÉRÉE. Contrairement à l'école chāfiʿite qui préfèTamattuʿ (التَّمَتُّع)."
+          explanation: "Spécificité malikite : Ifrād est la formule PRÉFÉRÉE. Contrairement à l'école chāfiʿite qui préfèTamattuʿ."
         },
         {
           id: "q-haj-05",
-          text: "<strong>PIÈGE :</strong> Khalid accomplit le حَجّ avec de l'argent provenant d'une source illicite. Son حَجّ est-il valide ?",
+          text: "Khalid accomplit le حَجّ avec de l'argent provenant d'une source illicite. Son حَجّ est-il valide ?",
           choices: [
           { id:"a", text:"Non — invalide" },
           { id:"b", text:"Oui mais il est en péché" },
@@ -793,17 +793,17 @@ const INTERMEDIAIRE = {
           id: "q-haj-06",
           text: "Quel est le pilier CENTRAL du حَجّ selon le hadīth ?",
           choices: [
-          { id:"a", text:"Iḥrām (الإِحرَام)" },
-          { id:"b", text:"ṬṬawāf (الطَّوَاف)" },
-          { id:"c", text:"Wuqūf (الوُقُوف) بِعَرَفَة" },
-          { id:"d", text:"Saʿy (السَّعي)" }
+          { id:"a", text:"Iḥrām" },
+          { id:"b", text:"ṬṬawāf" },
+          { id:"c", text:"Wuqūf بِعَرَفَة" },
+          { id:"d", text:"Saʿy" }
           ],
           correctId: "c",
           explanation: "Le Prophète ﷺ : « اَلحَجُّ عَرَفَة » — le Hajj c'est ʿArafāt. Rater le وُقُوف à ʿArafāt invalide entièrement le حَجّ qui doit être refait l'année suivante."
         },
         {
           id: "q-haj-07",
-          text: "<strong>PIÈGE :</strong> Peut-on accomplir le وُقُوف à عَرَفَة la nuit ?",
+          text: "Peut-on accomplir le وُقُوف à عَرَفَة la nuit ?",
           choices: [
           { id:"a", text:"Non — obligatoirement de jour" },
           { id:"b", text:"Oui — la nuit compte aussi pour le وُقُوف" },
@@ -815,7 +815,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-haj-08",
-          text: "Le ṬṬawāf al-Ifāḍa (طَوَافُ الإِفَاضَة) se fait :",
+          text: "Le ṬṬawāf al-Ifāḍa se fait :",
           choices: [
           { id:"a", text:"À l'arrivée à La Mecque" },
           { id:"b", text:"Après le وُقُوف à عَرَفَة — pilier du حَجّ" },
@@ -823,7 +823,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"N'importe quand" }
           ],
           correctId: "b",
-          explanation: "Le ṬṬawāf al-Ifāḍa (طَوَافُ الإِفَاضَة) est le 3ème pilier du حَجّ — il doit être accompli APRÈS le وُقُوف à عَرَفَة. C'est le طَوَاف principal qui donne le حَلَال (libération des interdictions)."
+          explanation: "Le ṬṬawāf al-Ifāḍa est le 3ème pilier du حَجّ — il doit être accompli APRÈS le وُقُوف à عَرَفَة. C'est le طَوَاف principal qui donne le حَلَال (libération des interdictions)."
         },
         {
           id: "q-haj-09",
@@ -835,43 +835,43 @@ const INTERMEDIAIRE = {
           { id:"d", text:"9 fois" }
           ],
           correctId: "c",
-          explanation: "Le طَوَاف comprend 7 tours complets autour de la Kaʿba, commençant et terminant à la Pierre Noire (الحَجَرُ الأَسوَد), la Kaʿba à la gauche du priant."
+          explanation: "Le طَوَاف comprend 7 tours complets autour de la Kaʿba, commençant et terminant à la Pierre Noire, la Kaʿba à la gauche du priant."
         },
         {
           id: "q-haj-10",
-          text: "<strong>PIÈGE :</strong> Ibrahim passe le مِيقَات sans إِحرَام par oubli. Que doit-il faire ?",
+          text: "Ibrahim passe le مِيقَات sans إِحرَام par oubli. Que doit-il faire ?",
           choices: [
-          { id:"a", text:"Iḥrām (الإِحرَام) — le حَجّ est valide" },
+          { id:"a", text:"Iḥrām — le حَجّ est valide" },
           { id:"b", text:"Revenir au مِيقَات prendre l'إِحرَام si possible, sinon payer un دَم" },
           { id:"c", text:"Refaire le حَجّ l'année prochaine" },
           { id:"d", text:"Faire l'إِحرَام depuis La Mecque sans دَم" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : si on passe le مِيقَات sans إِحرَام, on revient au مِيقَات si possible (sans دَم). Si on ne revient pas et on prend l'إِحرَام depuis un autre endroit → دَم obligatoire."
+          explanation: "Mukhtasar Khalīl : si on passe le مِيقَات sans إِحرَام, on revient au مِيقَات si possible. Si on ne revient pas et on prend l'إِحرَام depuis un autre endroit → دَم obligatoire."
         },
         {
           id: "q-haj-11",
-          text: "Saʿy (السَّعي) se fait entre :",
+          text: "Saʿy se fait entre :",
           choices: [
           { id:"a", text:"La Kaʿba et الحِجر" },
-          { id:"b", text:"Ṣaff (الصَّف)َا et المَروَة" },
+          { id:"b", text:"Ṣaffَا et المَروَة" },
           { id:"c", text:"عَرَفَة et مِنى" },
           { id:"d", text:"مُزدَلِفَة et الجَمَرَات" }
           ],
           correctId: "b",
-          explanation: "Le سَعي se fait entre Ṣaff (الصَّف)َا et المَروَة — 7 fois (aller = 1, retour = 2, etc.). Il commence obligatoirement par Ṣaff (الصَّف)َا."
+          explanation: "Le سَعي se fait entre Ṣaffَا et المَروَة — 7 fois (aller = 1, retour = 2, etc.). Il commence obligatoirement par Ṣaffَا."
         },
         {
           id: "q-haj-12",
-          text: "<strong>SCÉNARIO :</strong> Fatima effectue le تَمَتُّع (عُمرَة puis حَجّ). Quelle expiation doit-elle ?",
+          text: "<strong>SCÉNARIO :</strong> Fatima effectue le تَمَتُّع. Quelle expiation doit-elle ?",
           choices: [
-          { id:"a", text:"Aucune — Tamattuʿ (التَّمَتُّع) est la formule normale" },
+          { id:"a", text:"Aucune — Tamattuʿ est la formule normale" },
           { id:"b", text:"Un هَدي (sacrifice)" },
           { id:"c", text:"3 jours de jeûne uniquement" },
           { id:"d", text:"Elle n'a pas besoin d'expiation" }
           ],
           correctId: "b",
-          explanation: "Tamattuʿ (التَّمَتُّع) impose un هَدي (sacrifice d'un animal). Si el is est introuvable → 3 jours de jeûḤajj (الحَجّ) + 7 jours après le retour = 10 jours au total (Coran 2:196)."
+          explanation: "Tamattuʿ impose un هَدي (sacrifice d'un animal). Si el is est introuvable → 3 jours de jeûḤajj + 7 jours après le retour = 10 jours au total (Coran 2:196)."
         },
         {
           id: "q-haj-13",
@@ -895,11 +895,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Plus de 6" }
           ],
           correctId: "c",
-          explanation: "Wājib (وَاجِب)َات dont l'omission impose un دَم : (1) إِحرَام depuis le مِيقَات, (2) المَبِيت à مُزدَلِفَة, (3) المَبِيت à مِنى, (4) Ramy al-Jamarāt (رَمي الجَمَرَات), (5) ḤḤalq (الحَلق) أو Taqṣīr (التَّقصِير), (6) ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع)."
+          explanation: "Wājibَات dont l'omission impose un دَم : (1) إِحرَام depuis le مِيقَات, (2) المَبِيت à مُزدَلِفَة, (3) المَبِيت à مِنى, (4) Ramy al-Jamarāt, (5) ḤḤalq أو Taqṣīr, (6) ṬṬawāf al-Wadāʿ."
         },
         {
           id: "q-haj-15",
-          text: "<strong>PIÈGE :</strong> Nadia se coupe les cheveux pendant l'إِحرَام pour raison médicale. Que doit-elle payer ?",
+          text: "Nadia se coupe les cheveux pendant l'إِحرَام pour raison médicale. Que doit-elle payer ?",
           choices: [
           { id:"a", text:"Rien si c'est médicalement nécessaire" },
           { id:"b", text:"Une فِدية : jeûner 3 jours OU nourrir 6 pauvres OU sacrifier un mouton" },
@@ -911,19 +911,19 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-haj-16",
-          text: "ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع) (tawāf d'adieu) est :",
+          text: "ṬṬawāf al-Wadāʿ (tawāf d'adieu) est :",
           choices: [
           { id:"a", text:"Un pilier du حَجّ" },
-          { id:"b", text:"Wājib (وَاجِب) — son omission impose un دَم" },
+          { id:"b", text:"Wājib — son omission impose un دَم" },
           { id:"c", text:"Une sounnah seulement" },
           { id:"d", text:"Obligatoire seulement pour les étrangers" }
           ],
           correctId: "b",
-          explanation: "ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع) Wājib (وَاجِب) — son omission impose un دَم. Il est accompli avant de quitter La Mecque. Exception : la femme en حَيْض ou نِفَاس qui ne peut pas le faire — elle est dispensée."
+          explanation: "ṬṬawāf al-Wadāʿ Wājib — son omission impose un دَم. Il est accompli avant de quitter La Mecque. Exception : la femme en حَيْض ou نِفَاس qui ne peut pas le faire — elle est dispensée."
         },
         {
           id: "q-haj-17",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La femme peut-elle accomplir le حَجّ sans محرم ?",
+          text: "La femme peut-elle accomplir le حَجّ sans محرم ?",
           choices: [
           { id:"a", text:"Non — محرم toujours obligatoire" },
           { id:"b", text:"Oui — un groupe de femmes de confiance suffit selon une position malikite" },
@@ -935,7 +935,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-haj-18",
-          text: "Ramy al-Jamarāt (رَمي الجَمَرَات) (lapidation) : combien de cailloux par stèle ?",
+          text: "Ramy al-Jamarāt (lapidation) : combien de cailloux par stèle ?",
           choices: [
           { id:"a", text:"3" },
           { id:"b", text:"5" },
@@ -943,47 +943,47 @@ const INTERMEDIAIRE = {
           { id:"d", text:"10" }
           ],
           correctId: "c",
-          explanation: "7 cailloux par stèle (جَمرَة). Il y a 3 stèles : الجَمرَةُ الصُّغرَى, الوُسطَى, الكُبرَى (الجَمرَةُ العَقَبَة). Les 10, 11, 12 et 13 Dhū al-Ḥijja ont chacun leurs propres règles de lapidation."
+          explanation: "7 cailloux par stèle. Il y a 3 stèles : الجَمرَةُ الصُّغرَى, الوُسطَى, الكُبرَى. Les 10, 11, 12 et 13 Dhū al-Ḥijja ont chacun leurs propres règles de lapidation."
         },
         {
           id: "q-haj-19",
-          text: "<strong>PIÈGE :</strong> Ifrād (الإِفرَاد) Qirān (القِرَان) après avoir commencé le حَجّ ?",
+          text: "Ifrād Qirān après avoir commencé le حَجّ ?",
           choices: [
           { id:"a", text:"Oui toujours" },
-          { id:"b", text:"Oui, Qirān (القِرَان) en إِفرَاد" },
-          { id:"c", text:"Non — Ifrād (الإِفرَاد) peut devenir تَمَتُّع Qirān (القِرَان), Qirān (القِرَان) ne peut jamais être converti" },
+          { id:"b", text:"Oui, Qirān en إِفرَاد" },
+          { id:"c", text:"Non — Ifrād peut devenir تَمَتُّع Qirān, Qirān ne peut jamais être converti" },
           { id:"d", text:"Indifférent selon l'Imām Mālik" }
           ],
           correctId: "c",
-          explanation: "Mukhtasar Khalīl : «وَأَجرَأُ تَمَتُّعٍ عَن إِفرَادٍ وَعَكَسُهُ لَا قِرَانٍ عَنهُمَا» — Tamattuʿ (التَّمَتُّع) et إِفرَاد peuvent être interconvertis. Qirān (القِرَان), une fois commencé, NE peut PAS êIfrād (الإِفرَاد) Tamattuʿ (التَّمَتُّع)."
+          explanation: "Mukhtasar Khalīl : «وَأَجرَأُ تَمَتُّعٍ عَن إِفرَادٍ وَعَكَسُهُ لَا قِرَانٍ عَنهُمَا» — Tamattuʿ et إِفرَاد peuvent être interconvertis. Qirān, une fois commencé, NE peut PAS êIfrād Tamattuʿ."
         },
         {
           id: "q-haj-20",
           text: "<strong>ÉVALUATION :</strong> Omar est en إِحرَام et un ennemi lui interdit l'accès à La Mecque. Que fait-il ?",
           choices: [
           { id:"a", text:"Il attend indéfiniment" },
-          { id:"b", text:"Il envoie un هَدي à La Mecque et se libère de l'إِحرَام (الإِحصَار)" },
+          { id:"b", text:"Il envoie un هَدي à La Mecque et se libère de l'إِحرَام" },
           { id:"c", text:"Il fait une عُمرَة à la place" },
-          { id:"d", text:"Son حَجّ est automatiquement validé Iḥṣār (الإِحصَار)" }
+          { id:"d", text:"Son حَجّ est automatiquement validé Iḥṣār" }
           ],
           correctId: "b",
-          explanation: "L'Iḥṣār (الإِحصَار) (empêchement d'accomplir le حَجّ) : on envoie un هَدي à la Mecque, puis on se libère de l'إِحرَام. Pas de qadā' si c'était un حَجّ non obligatoire. Si le هَدي ne peut être envoyé : jeûner selon certains savants."
+          explanation: "L'Iḥṣār : on envoie un هَدي à la Mecque, puis on se libère de l'إِحرَام. Pas de qadā' si c'était un حَجّ non obligatoire. Si le هَدي ne peut être envoyé : jeûner selon certains savants."
         },
         {
           id: "q-haj-21",
-          text: "Le حَلق (rasage complet) est-il préféTaqṣīr (التَّقصِير) (coupe courte) ?",
+          text: "Le حَلق (rasage complet) est-il préféTaqṣīr (coupe courte) ?",
           choices: [
           { id:"a", text:"Les deux sont équivalents" },
-          { id:"b", text:"Oui — ḤḤalq (الحَلق) est préférable selon le rite malikite" },
-          { id:"c", text:"Non — Taqṣīr (التَّقصِير) est préférable" },
-          { id:"d", text:"Taqṣīr (التَّقصِير)" }
+          { id:"b", text:"Oui — ḤḤalq est préférable selon le rite malikite" },
+          { id:"c", text:"Non — Taqṣīr est préférable" },
+          { id:"d", text:"Taqṣīr" }
           ],
           correctId: "b",
-          explanation: "Le Prophète ﷺ a prié 3 fois pour ceux qui se rasent (المُحَلِّقِين) et une fois pour ceux qui raccourcissent (المُقَصِّرِين). ḤḤalq (الحَلق) est préférable pour les hommes. Pour les femmes : Taqṣīr (التَّقصِير) seulement (pas de rasage)."
+          explanation: "Le Prophète ﷺ a prié 3 fois pour ceux qui se rasent et une fois pour ceux qui raccourcissent. ḤḤalq est préférable pour les hommes. Pour les femmes : Taqṣīr seulement (pas de rasage)."
         },
         {
           id: "q-haj-22",
-          text: "<strong>PIÈGE :</strong> L'enfant pré-pubère peut-il accomplir tous les actes du حَجّ seul ?",
+          text: "L'enfant pré-pubère peut-il accomplir tous les actes du حَجّ seul ?",
           choices: [
           { id:"a", text:"Oui" },
           { id:"b", text:"Non — son وَلِي accomplit pour lui ce qu'il ne peut faire" },
@@ -995,15 +995,15 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-haj-23",
-          text: "ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع) (tawāf d'arrivée) est :",
+          text: "ṬṬawāf al-Wadāʿ (tawāf d'arrivée) est :",
           choices: [
           { id:"a", text:"Un pilier du حَجّ" },
-          { id:"b", text:"Wājib (وَاجِب)" },
-          { id:"c", text:"Ifrād (الإِفرَاد) Qirān (القِرَان)" },
+          { id:"b", text:"Wājib" },
+          { id:"c", text:"Ifrād Qirān" },
           { id:"d", text:"Obligatoire pour tous" }
           ],
           correctId: "c",
-          explanation: "ṬṬawāf al-Wadāʿ (طَوَافُ الوَدَاع) Ifrād (الإِفرَاد) Qirān (القِرَان). Pour le تَمَتُّع, le طَوَاف de l'عُمرَة en tient lieu. Son omission ne déclenche pas de دَم."
+          explanation: "ṬṬawāf al-Wadāʿ Ifrād Qirān. Pour le تَمَتُّع, le طَوَاف de l'عُمرَة en tient lieu. Son omission ne déclenche pas de دَم."
         },
         {
           id: "q-haj-24",
@@ -1019,27 +1019,27 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-haj-25",
-          text: "<strong>COMPLEXE :</strong> Le pèlerin a un rapport sexuel avec sa femme APRÈS le وُقُوف à عَرَفَة mais AVANT le ṬṬawāf al-Ifāḍa (طَوَافُ الإِفَاضَة). Que se passe-t-il ?",
+          text: "Le pèlerin a un rapport sexuel avec sa femme APRÈS le وُقُوف à عَرَفَة mais AVANT le ṬṬawāf al-Ifāḍa. Que se passe-t-il ?",
           choices: [
           { id:"a", text:"حَجّ invalide — même règle qu'avant عَرَفَة" },
-          { id:"b", text:"حَجّ valide mais impose une expiation (دَم plus important que la فِدية ordinaire)" },
+          { id:"b", text:"حَجّ valide mais impose une expiation" },
           { id:"c", text:"Rien — après عَرَفَة tout est permis" },
           { id:"d", text:"حَجّ valide avec une simple فِدية" }
           ],
           correctId: "b",
-          explanation: "Après le وُقُوف à عَرَفَة, le حَجّ ne s'invalide plus par le rapport sexuel. En revanche, il impose un sacrifice expiatoire (دَم). Le ṬṬawāf al-Ifāḍa (طَوَافُ الإِفَاضَة) doit toujours être accompli. Le حَجّ reste valide."
+          explanation: "Après le وُقُوف à عَرَفَة, le حَجّ ne s'invalide plus par le rapport sexuel. En revanche, il impose un sacrifice expiatoire. Le ṬṬawāf al-Ifāḍa doit toujours être accompli. Le حَجّ reste valide."
         }
         ]
       }
     },
 
-    /* ═══ Nikāḥ (النِّكَاح) ═══ */
+    /* ═══ Nikāḥ ═══ */
     {
       id: "nikah",
       title: "Le Mariage",
       arabicTitle: "al-nikāḥ (النِّكَاح)",
       icon: "nikah",
-      description: "Conditions de validité du mariage islamique, rôle du tuteur matrimonial, la dot, l'équivalence (كَفَاءَة = religion uniquement) et droits mutuels des époux.",
+      description: "Conditions de validité du mariage islamique, rôle du tuteur matrimonial, la dot, l'équivalence et droits mutuels des époux.",
       source: "Risāla Ibn Abī Zayd ch. 32 · Mukhtasar Khalīl pp. 97-115 · doctrine-malikite.fr",
       badge: {
         id: "badge-int-nikah",
@@ -1047,49 +1047,49 @@ const INTERMEDIAIRE = {
         arabicTitle: "فَقِيهُ الأُسرَة",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Nikāḥ (النِّكَاح)"
+        unlockCondition: "Obtenir ≥ 85 % Nikāḥ"
       },
 
       lessons: [
       {
         id: "nik-01",
-        title: "حُكم Nikāḥ (النِّكَاح) وأَركَانُه — Statut et Piliers du Mariage",
+        title: "حُكم Nikāḥ وأَركَانُه — Statut et Piliers du Mariage",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Nikāḥ (النِّكَاح) est un contrat sacré qui fonde la famille islamique. Doctrine-malikite.fr et la Risāla (ch. 32) ainsi que le Mukhtasar Khalīl (pp. 97-115) en définissent avec précision les piliers et les conditions."},
-        {"t": "h", "v": "حُكمُ Nikāḥ (النِّكَاح) — Le statut du mariage"},
+        {"t": "lead", "v": "Nikāḥ est un contrat sacré qui fonde la famille islamique. Doctrine-malikite.fr et la Risāla (ch. 32) ainsi que le Mukhtasar Khalīl (pp. 97-115) en définissent avec précision les piliers et les conditions."},
+        {"t": "h", "v": "حُكمُ Nikāḥ — Le statut du mariage"},
         { t:'ul', v:[
-          "Wājib (وَاجِب) : pour celui qui craint de tomber dans الفَاحِشَة (fornication) s'il ne se marie pas et en a la capacité.",
+          "Wājib : pour celui qui craint de tomber dans الفَاحِشَة (fornication) s'il ne se marie pas et en a la capacité.",
           "مُستَحَبّ : pour qui désire le mariage et en a la capacité sans craindre la fornication.",
-          "Makrūh (مَكرُوه) : pour qui n'a pas les moyens ou craint de mal s'acquitter de ses obligations.",
-          "Mubāḥ (مُبَاح) : état normal."
+          "Makrūh : pour qui n'a pas les moyens ou craint de mal s'acquitter de ses obligations.",
+          "Mubāḥ : état normal."
         ] },
-        {"t": "h", "v": "أَركَان Nikāḥ (النِّكَاح) — Les 4 Piliers Obligatoires"},
+        {"t": "h", "v": "أَركَان Nikāḥ — Les 4 Piliers Obligatoires"},
         { t:'ul', v:[
-          "<strong>1. ĪĪjāb wa-Qabūl (الإِيجَاب والقَبُول)</strong> : formule d'offre (du وَلِي) et d'acceptation (du marié). Formules valides : نَكَحتُ, زَوَّجتُ — et selon le Mukhtasar : وَهَبتُ + mention du صَدَاق.",
-          "<strong>2. Walī (الوَلِي)</strong> (tuteur matrimonial) — obligation selon le rite malikite.",
-          "<strong>3. Ṣadāq (الصَّدَاق)</strong> (dot) — obligatoire, pas de mariage sans dot.",
+          "<strong>1. ĪĪjāb wa-Qabūl</strong> : formule d'offre et d'acceptation (du marié). Formules valides : نَكَحتُ, زَوَّجتُ — et selon le Mukhtasar : وَهَبتُ + mention du صَدَاق.",
+          "<strong>2. Walī</strong> (tuteur matrimonial) — obligation selon le rite malikite.",
+          "<strong>3. Ṣadāq</strong> (dot) — obligatoire, pas de mariage sans dot.",
           "<strong>4. الشُّهُود</strong> (témoins) — au moins 2 témoins équitables."
         ] },
         {"t": "h", "v": "L'إِعلَان — Annonce du mariage"},
-        {"t": "p", "v": "Le mariage doit être annoncé publiquement (الإِعلَان والإِشهَار). La وَلِيمَة (repas de noces) sert à cet objectif. Le mariage secret est invalide selon le rite malikite."},
+        {"t": "p", "v": "Le mariage doit être annoncé publiquement. La وَلِيمَة (repas de noces) sert à cet objectif. Le mariage secret est invalide selon le rite malikite."},
         { t:'ar', v:"لَا نِكَاحَ إِلَّا بِوَلِيٍّ وَصَدَاقٍ وَشَاهِدَيْنِ عَدلَيْنِ", n:"Risāla d'Ibn Abī Zayd, ch. 32 : « Pas de mariage sans tuteur, dot et deux témoins équitables »" },
-        {"t": "note", "v": "Spécificité malikite : les témoins peuvent ne pas assister au moment de la CONCLUSION du contrat (mandûb seulement) — mais ils DOIVENT témoigner obligatoirement avant la consommation (عِندَ الدُّخُول). C'est une différence notable avec les autres écoles qui exigent les témoins au contrat lui-même."}
+        {"t": "note", "v": "Spécificité malikite : les témoins peuvent ne pas assister au moment de la CONCLUSION du contrat (mandûb seulement) — mais ils DOIVENT témoigner obligatoirement avant la consommation. C'est une différence notable avec les autres écoles qui exigent les témoins au contrat lui-même."}
         ]
       },
       {
         id: "nik-02",
-        title: "Walī (الوَلِي) وKafāʾa (الكَفَاءَة) — Le Tuteur et l'Équivalence",
+        title: "Walī وKafāʾa — Le Tuteur et l'Équivalence",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le وَلِي (tuteur matrimonial) est indispensable en rite malikite. Son rôle et ses conditions sont rigoureusement définis."},
-        {"t": "h", "v": "شُرُوطُ Walī (الوَلِي) — Conditions du tuteur"},
+        {"t": "h", "v": "شُرُوطُ Walī — Conditions du tuteur"},
         { t:'ul', v:[
-          "Homme (لَا وِلَايَة لِلنِّسَاء في النِّكَاح).",
+          "Homme.",
           "Muslim si la femme est Muslima.",
           "Pubère, sain d'esprit, libre.",
           "Non en état d'إِحرَام.",
-          "De bonne conduite selon certains (ʿAdāla (العَدَالَة) — débat interne)."
+          "De bonne conduite selon certains — débat interne)."
         ] },
         {"t": "h", "v": "تَرتِيب الأَولِيَاء — Hiérarchie des tuteurs"},
         { t:'ul', v:[
@@ -1099,32 +1099,32 @@ const INTERMEDIAIRE = {
           "L'oncle paternel.",
           "Le cousin paternel.",
           "Les tuteurs du côté MATERNEL sont exclus de la tutelle matrimoniale en rite malikite.",
-          "En l'absence de tous : Ḥākim (الحَاكِم) (le juge ou l'imam de la mosquée peut suppléer)."
+          "En l'absence de tous : Ḥākim (le juge ou l'imam de la mosquée peut suppléer)."
         ] },
-        {"t": "h", "v": "Kafāʾa (الكَفَاءَة) — L'équivalence entre époux"},
-        {"t": "p", "v": "<strong>Spécificité malikite fondamentale :</strong> la كَفَاءَة concerne SEULEMENT la religion (الدِّين) et la bonne moralité (الصَّلَاح). Le rang social, la fortune, la tribu, l'origine ethnique ne comptent PAS en rite malikite pour la validité du mariage. Référence : ʿAlī ibn Abī Ṭālib ﵁ : « les gens sont équivalents entre eux qu'ils soient arabes ou non-arabes, tant qu'ils sont Muslims »."},
+        {"t": "h", "v": "Kafāʾa — L'équivalence entre époux"},
+        {"t": "p", "v": "<strong>Spécificité malikite fondamentale :</strong> la كَفَاءَة concerne SEULEMENT la religion et la bonne moralité. Le rang social, la fortune, la tribu, l'origine ethnique ne comptent PAS en rite malikite pour la validité du mariage. Référence : ʿAlī ibn Abī Ṭālib ﵁ : « les gens sont équivalents entre eux qu'ils soient arabes ou non-arabes, tant qu'ils sont Muslims »."},
         {"t": "h", "v": "الإِجبَار — Le droit de contraindre"},
         { t:'ul', v:[
           "Le père peut marier sa fille vierge sans consulter son accord explicite (silence = consentement).",
           "Pour la femme ayant déjà consommé un mariage : le وَلِي ne peut la marier sans son consentement verbal.",
           "Si le وَلِي contraint une femme majeure contre sa volonté manifeste → le juge peut annuler."
         ] },
-        {"t": "note", "v": "Si deux tuteurs de rang égal s'opposent sur le choix du mari → Ḥākim (الحَاكِم) (juge) tranche. C'est la règle du Mukhtasar Khalīl."}
+        {"t": "note", "v": "Si deux tuteurs de rang égal s'opposent sur le choix du mari → Ḥākim (juge) tranche. C'est la règle du Mukhtasar Khalīl."}
         ]
       },
       {
         id: "nik-03",
-        title: "Ṣadāq (الصَّدَاق) والعَقد — La Dot et le Contrat",
+        title: "Ṣadāq والعَقد — La Dot et le Contrat",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le صَدَاق est un droit de la femme — ni un « prix » ni une marque de valeur. La Risāla et doctrine-malikite.fr en précisent les règles malikites."},
-        {"t": "h", "v": "حُكم Ṣadāq (الصَّدَاق)"},
+        {"t": "h", "v": "حُكم Ṣadāq"},
         { t:'ul', v:[
           "Obligatoire — pas de mariage valide sans صَدَاق.",
           "C'est un droit de la FEMME (elle peut l'utiliser, le donner ou le céder).",
           "<strong>Minimum malikite :</strong> ¼ de dinar d'or (~1 gramme d'or) ou 3 dirhams d'argent.",
-          "Peut être différé (مُؤَجَّل) en partie ou en totalité avec accord.",
-          "Doit être licite (نَجِس est invalide)."
+          "Peut être différé en partie ou en totalité avec accord.",
+          "Doit être licite."
         ] },
         { t:'ar', v:"وَآتُوا النِّسَاءَ صَدُقَاتِهِنَّ نِحلَةً", n:"Coran 4:4 — « Donnez aux femmes leurs dots de bon gré. »" },
         {"t": "h", "v": "Quand la dot est-elle due intégralement ?"},
@@ -1132,13 +1132,13 @@ const INTERMEDIAIRE = {
           "Intégralement due après la consommation du mariage.",
           "La moitié est due si divorce avant la consommation.",
           "Rien n'est dû si la femme rompt le contrat avant la consommation (sauf si c'est la faute du mari).",
-          "Mukhtasar Khalīl : si le mariage est invalide (فَاسِد) et consommé → مَهر المِثل (dot équivalente)."
+          "Mukhtasar Khalīl : si le mariage est invalide et consommé → مَهر المِثل (dot équivalente)."
         ] },
-        {"t": "h", "v": "المُحَرَّمَات من Nikāḥ (النِّكَاح) — Femmes illicites"},
+        {"t": "h", "v": "المُحَرَّمَات من Nikāḥ — Femmes illicites"},
         { t:'ul', v:[
           "<strong>Permanentes (par nasab) :</strong> mère, fille, sœur, tante maternelle et paternelle, nièce (Coran 4:23).",
-          "<strong>Permanentes (par marriage) :</strong> belle-mère (مُطلَقًا), belle-fille consommée.",
-          "<strong>Permanentes (par الرَّضَاع) :</strong> mêmes règles que le sang.",
+          "<strong>Permanentes (par marriage) :</strong> belle-mère, belle-fille consommée.",
+          "<strong>Permanentes :</strong> mêmes règles que le sang.",
           "<strong>Temporaires :</strong> être déjà marié à 4 femmes, la femme en عِدَّة, la sœur de l'épouse (en même temps).",
           "Mukhtasar Khalīl : divergence sur le statut du زِنَا — crée-t-il la حُرمَة comme le mariage ? Deux avis مَشهُور dans l'école."
         ] },
@@ -1147,22 +1147,22 @@ const INTERMEDIAIRE = {
       },
       {
         id: "nik-04",
-        title: "Walī (الوَلِي)مَة وحُقُوق الزَّوجَيْن",
+        title: "Walīمَة وحُقُوق الزَّوجَيْن",
         status: 'available',
         content: [
         {"t": "lead", "v": "La vieille islamique du mariage s'articule autour de droits et devoirs mutuels soigneusement équilibrés. Doctrine-malikite.fr y consacre une partie importante."},
-        {"t": "h", "v": "Walī (الوَلِي)مَة — Le Repas de Noces"},
+        {"t": "h", "v": "Walīمَة — Le Repas de Noces"},
         { t:'ul', v:[
-          "Mandūb (مَندُوب)َة (recommandée) — après la consommation du mariage.",
+          "Mandūbَة (recommandée) — après la consommation du mariage.",
           "Dure un jour au minimum selon Ibn Abī Zayd.",
-          "<strong>Obligation de répondre</strong> si on est invité nommément (وُجُوب الإِجَابَة).",
+          "<strong>Obligation de répondre</strong> si on est invité nommément.",
           "Si la fête contient des actes illicites → on peut partir après avoir mangé ou sans manger.",
           "Le Prophète ﷺ à ʿAbd al-Raḥmān ibn ʿAwf : « Célèbre tes noces par un festin, même par un mouton. » — al-Bukhārī"
         ] },
         {"t": "h", "v": "حُقُوق الزَّوجَة — Droits de l'épouse"},
         { t:'ul', v:[
-          "Nafaqa (النَّفَقَة) (entretien) : nourriture, vêtement, logement convenables.",
-          "Qasm (القَسم)ُ (les tours) : nuit équitable entre les épouses.",
+          "Nafaqa (entretien) : nourriture, vêtement, logement convenables.",
+          "Qasmُ (les tours) : nuit équitable entre les épouses.",
           "Approche conjugale au moins une fois tous les 4 mois.",
           "Permission de rendre visite à ses proches malades.",
           "Être traitée avec kindness : « وَعَاشِرُوهُنَّ بِالمَعرُوف »."
@@ -1174,8 +1174,8 @@ const INTERMEDIAIRE = {
           "Ne pas jeûner les نَوَافِل sans sa permission (s'il est présent).",
           "Répondre à son invitation conjugale sans retard injustifié."
         ] },
-        {"t": "h", "v": "Qasm (القَسم)ُ — Équité entre les épouses"},
-        {"t": "p", "v": "Mukhtasar Khalīl : le Qasm (القَسم)ُ (tours de nuit) est obligatoire entre les épouses. Mais l'équité des SENTIMENTS n'est pas exigée (au-delà de la capacité humaine). L'épouse nouvelle (vierge) reçoit 7 nuits, l'épouse non-vierge 3 nuits au début."},
+        {"t": "h", "v": "Qasmُ — Équité entre les épouses"},
+        {"t": "p", "v": "Mukhtasar Khalīl : le Qasmُ (tours de nuit) est obligatoire entre les épouses. Mais l'équité des SENTIMENTS n'est pas exigée (au-delà de la capacité humaine). L'épouse nouvelle (vierge) reçoit 7 nuits, l'épouse non-vierge 3 nuits au début."},
         {"t": "note", "v": "Conseil de la Risāla : « Il est nécessaire de se différentier des habitudes des non-Muslims dans les occasions heureuses et malheureuses. Cependant, tout détail de tradition locale ne contredisant pas les principes de l'Islam est toléré. »"}
         ]
       },
@@ -1185,23 +1185,23 @@ const INTERMEDIAIRE = {
         status: 'available',
         content: [
         {"t": "lead", "v": "Certains mariages sont valides conditionnellement, d'autres sont fāsid (corrompus), d'autres encore sont bātil (nuls). La distinction est importante en rite malikite."},
-        {"t": "h", "v": "أَنوَاع Nikāḥ (النِّكَاح) الفَاسِد"},
+        {"t": "h", "v": "أَنوَاع Nikāḥ الفَاسِد"},
         { t:'ul', v:[
-          "<strong>فَاسِد annulé AVANT consommation :</strong> mariage sans dot (مَهر), sans témoins, avec un vice corrigible.",
-          "<strong>فَاسِد maintenu APRÈS consommation :</strong> le mariage produit ses effets (نَسَب, مَهر المِثل, عِدَّة, حُرمَة المُصَاهَرَة) mais est annulé sans طَلَاق.",
+          "<strong>فَاسِد annulé AVANT consommation :</strong> mariage sans dot, sans témoins, avec un vice corrigible.",
+          "<strong>فَاسِد maintenu APRÈS consommation :</strong> le mariage produit ses effets mais est annulé sans طَلَاق.",
           "Mariage المُحَلِّل : le mariage pour « libérer » une femme triple-répudiée en vue d'un remarriage → invalide en rite malikite."
         ] },
-        {"t": "h", "v": "Nikāḥ (النِّكَاح) المُحَرَّم المُؤَبَّد (prohibition permanente)"},
+        {"t": "h", "v": "Nikāḥ المُحَرَّم المُؤَبَّد (prohibition permanente)"},
         { t:'ul', v:[
           "Al-لِعَان : si un homme effectue le لِعَان (malédiction mutuelle), la femme lui devient interdite à jamais.",
           "La femme qu'on a épousée durant son عِدَّة et qu'on a consommée → interdite à jamais.",
-          "La femme d'un fils (بَعدَ الدُّخُول) → interdite à jamais pour le père."
+          "La femme d'un fils → interdite à jamais pour le père."
         ] },
         {"t": "h", "v": "الاستئذان — Consentement de la femme"},
         { t:'ul', v:[
-          "Le silence de la femme vierge = consentement (صَمتُهَا إِذنُها).",
+          "Le silence de la femme vierge = consentement.",
           "La femme ayant déjà consommé un mariage : doit consentir verbalement.",
-          "Exception : le père peut marier sa fille vierge sans consulter explicitement (مَذهَب جُمهُور المَالِكِيَّة).",
+          "Exception : le père peut marier sa fille vierge sans consulter explicitement.",
           "Mukhtasar Khalīl : le وَلِي ne peut pas contraindre la femme à épouser quelqu'un dont elle refuse explicitement."
         ] },
         {"t": "note", "v": "Doctrine-malikite.fr insiste sur le mariage civil en plus du mariage islamique dans les pays occidentaux pour protéger les droits légaux de la femme et des enfants — « le mariage civil doit suivre ou précéder le mariage islamique. »"}
@@ -1211,25 +1211,25 @@ const INTERMEDIAIRE = {
 
       quiz: {
         id: "quiz-nikah",
-        title: "Questionnaire — Nikāḥ (النِّكَاح)",
+        title: "Questionnaire — Nikāḥ",
         status: 'available',
         score: null,
         questions: [
         {
           id: "q-nik-01",
-          text: "Les 4 piliers (أركان) du mariage islamique sont :",
+          text: "Les 4 piliers du mariage islamique sont :",
           choices: [
           { id:"a", text:"Wali, dot, témoins, consommation" },
-          { id:"b", text:"Consentement, wali, dot (صداق), témoins (شهود)" },
+          { id:"b", text:"Consentement, wali, dot, témoins" },
           { id:"c", text:"Dot, témoins, walima, formule" },
           { id:"d", text:"Consentement, mosquée, imam, dot" }
           ],
           correctId: "b",
-          explanation: "Les 4 piliers du نِكَاح : (1) ĪĪjāb wa-Qabūl (الإِيجَاب والقَبُول) (consentement mutuel via formule), (2) Walī (الوَلِي) (tuteur matrimonial), (3) Ṣadāq (الصَّدَاق) (dot), (4) الشُّهُود (2 témoins équitables). La وَلِيمَة et l'imam ne sont pas des piliers."
+          explanation: "Les 4 piliers du نِكَاح : (1) ĪĪjāb wa-Qabūl (consentement mutuel via formule), (2) Walī (tuteur matrimonial), (3) Ṣadāq (dot), (4) الشُّهُود (2 témoins équitables). La وَلِيمَة et l'imam ne sont pas des piliers."
         },
         {
           id: "q-nik-02",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> La كَفَاءَة (équivalence entre époux) en rite malikite concerne :",
+          text: "La كَفَاءَة (équivalence entre époux) en rite malikite concerne :",
           choices: [
           { id:"a", text:"Le rang social, la fortune et la tribu" },
           { id:"b", text:"Uniquement la religion et la bonne moralité" },
@@ -1237,11 +1237,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"La tribu et l'origine géographique" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite fondamentale : la كَفَاءَة = religion (الدِّين) et bonne moralité seulement. Le rang social, la tribu, l'origine, la fortune ne comptent pas pour la VALIDITÉ du mariage. Référence de l'Imām Mālik : ʿAlī ﵁ — « les gens sont équivalents entre eux tant qu'ils sont Muslims »."
+          explanation: "Spécificité malikite fondamentale : la كَفَاءَة = religion et bonne moralité seulement. Le rang social, la tribu, l'origine, la fortune ne comptent pas pour la VALIDITÉ du mariage. Référence de l'Imām Mālik : ʿAlī ﵁ — « les gens sont équivalents entre eux tant qu'ils sont Muslims »."
         },
         {
           id: "q-nik-03",
-          text: "<strong>PIÈGE :</strong> En rite malikite, les témoins doivent-ils être présents au MOMENT du contrat de mariage ?",
+          text: "En rite malikite, les témoins doivent-ils être présents au MOMENT du contrat de mariage ?",
           choices: [
           { id:"a", text:"Oui — obligatoirement au moment du contrat" },
           { id:"b", text:"Non — ils peuvent être absents du contrat mais DOIVENT témoigner AVANT la consommation" },
@@ -1249,11 +1249,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Seulement si le wali est absent" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite : les téMandūb (مَندُوب) (recommandés) au moment du contrat mais OBLIGATOIRES avant la consommation (عِندَ الدُّخُول). C'est une différence importante avec les autres écoles qui exigent les témoins au contrat lui-même."
+          explanation: "Spécificité malikite : les téMandūb (recommandés) au moment du contrat mais OBLIGATOIRES avant la consommation. C'est une différence importante avec les autres écoles qui exigent les témoins au contrat lui-même."
         },
         {
           id: "q-nik-04",
-          text: "Quel est le minimum de la dot (صداق) en rite malikite ?",
+          text: "Quel est le minimum de la dot en rite malikite ?",
           choices: [
           { id:"a", text:"Pas de minimum — tout accord est valide" },
           { id:"b", text:"100 euros ou équivalent" },
@@ -1277,19 +1277,19 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-nik-06",
-          text: "Walī (الوَلِي)مَة (repas de noces) est :",
+          text: "Walīمَة (repas de noces) est :",
           choices: [
           { id:"a", text:"Obligatoire sous peine de نفقة" },
-          { id:"b", text:"RecommandéMandūb (مَندُوب) et oblige les invités à répondre" },
+          { id:"b", text:"RecommandéMandūb et oblige les invités à répondre" },
           { id:"c", text:"Sounnah légère sans conséquence" },
           { id:"d", text:"Obligatoire pour les mariages polygames seulement" }
           ],
           correctId: "b",
-          explanation: "La وَلِيمَة Mandūb (مَندُوب) pour l'organisateur mais la réponse à l'invitation est واجبة pour celui qui est invité nommément. Le Prophète ﷺ : « Celui qui reçoit une invitation doit s'y rendre. »"
+          explanation: "La وَلِيمَة Mandūb pour l'organisateur mais la réponse à l'invitation est واجبة pour celui qui est invité nommément. Le Prophète ﷺ : « Celui qui reçoit une invitation doit s'y rendre. »"
         },
         {
           id: "q-nik-07",
-          text: "<strong>PIÈGE :</strong> Le silence d'une femme vierge lors de la demande de sa main vaut :",
+          text: "Le silence d'une femme vierge lors de la demande de sa main vaut :",
           choices: [
           { id:"a", text:"Refus catégorique" },
           { id:"b", text:"Accord (son silence est son consentement)" },
@@ -1297,26 +1297,26 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Dépend de l'âge de la femme" }
           ],
           correctId: "b",
-          explanation: "Spécificité malikite : Ṣamt al-Bikr (صَمتُ البِكر) إِذنُهَا — le silence de la femme vierge vaut consentement. Ce principe est différent pour la femme ayant déjà consommé un mariage (ثَيِّب) qui doit consentir verbalement."
+          explanation: "Spécificité malikite : Ṣamt al-Bikr إِذنُهَا — le silence de la femme vierge vaut consentement. Ce principe est différent pour la femme ayant déjà consommé un mariage qui doit consentir verbalement."
         },
         {
           id: "q-nik-08",
           text: "Le mariage secret (sans témoins ni annonce) est-il valide en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — si les conditions internes sont remplies" },
-          { id:"b", text:"Non — Nikāḥ (النِّكَاح) السِّرِّي est invalide ; l'annonce est obligatoire" },
+          { id:"b", text:"Non — Nikāḥ السِّرِّي est invalide ; l'annonce est obligatoire" },
           { id:"c", text:"Valide mais makrūh" },
           { id:"d", text:"Valide si les époux sont d'accord" }
           ],
           correctId: "b",
-          explanation: "Le rite malikite exige الإِعلَان والإِشهَار (annonce et publicité) du mariage. Le Nikāḥ al-Sirr (نِكَاح السِّرّ) (mariage secret) est invalide. La وَلِيمَة sert précisément à remplir cette condition d'annonce publique."
+          explanation: "Le rite malikite exige الإِعلَان والإِشهَار (annonce et publicité) du mariage. Le Nikāḥ al-Sirr (mariage secret) est invalide. La وَلِيمَة sert précisément à remplir cette condition d'annonce publique."
         },
         {
           id: "q-nik-09",
-          text: "<strong>COMPLEXE :</strong> Si un وَلِي marie sa fille sans son accord alors qu'elle a déjà été mariée auparavant. Ce mariage est-il valide ?",
+          text: "Si un وَلِي marie sa fille sans son accord alors qu'elle a déjà été mariée auparavant. Ce mariage est-il valide ?",
           choices: [
           { id:"a", text:"Oui — le wali a toujours ce droit" },
-          { id:"b", text:"Non — la femme ayant déjà consommé un mariage (ثَيِّب) doit consentir verbalement" },
+          { id:"b", text:"Non — la femme ayant déjà consommé un mariage doit consentir verbalement" },
           { id:"c", text:"Dépend de l'âge de la femme" },
           { id:"d", text:"Valide si deux autres tuteurs sont d'accord" }
           ],
@@ -1325,7 +1325,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-nik-10",
-          text: "<strong>PIÈGE :</strong> Le mariage المُحَلِّل (pour « libérer » une triple-répudiée) est-il valide en rite malikite ?",
+          text: "Le mariage المُحَلِّل (pour « libérer » une triple-répudiée) est-il valide en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — c'est le but de ce type de mariage" },
           { id:"b", text:"Non — invalide selon le rite malikite" },
@@ -1341,11 +1341,11 @@ const INTERMEDIAIRE = {
           choices: [
           { id:"a", text:"Le mari lui-même" },
           { id:"b", text:"Un voisin de confiance" },
-          { id:"c", text:"Ḥākim (الحَاكِم) (le juge ou l'autorité compétente)" },
+          { id:"c", text:"Ḥākim (le juge ou l'autorité compétente)" },
           { id:"d", text:"Le mari précédent" }
           ],
           correctId: "c",
-          explanation: "Quand tous les tuteurs (père, fils, frère, oncle...) sont absents ou inexistants → Ḥākim (الحَاكِم) (juge, imam compétent) supplée comme وَلِي. C'est la règle : « السُّلطَانُ وَلِيُّ مَن لَا وَلِيَّ لَهُ »."
+          explanation: "Quand tous les tuteurs (père, fils, frère, oncle...) sont absents ou inexistants → Ḥākim (juge, imam compétent) supplée comme وَلِي. C'est la règle : « السُّلطَانُ وَلِيُّ مَن لَا وَلِيَّ لَهُ »."
         },
         {
           id: "q-nik-12",
@@ -1357,7 +1357,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Il est refait avec les corrections nécessaires" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : si un mariage فَاسِد est consommé avant l'annulation → séparation sans طلاق mais avec effets légaux : éNasab (النَّسَب), droit à Mahr (المَهر) المِثل, obligation de l'عِدَّة, et حُرمَة المُصَاهَرَة (prohibition par alliance)."
+          explanation: "Mukhtasar Khalīl : si un mariage فَاسِد est consommé avant l'annulation → séparation sans طلاق mais avec effets légaux : éNasab, droit à Mahr المِثل, obligation de l'عِدَّة, et حُرمَة المُصَاهَرَة (prohibition par alliance)."
         },
         {
           id: "q-nik-13",
@@ -1369,11 +1369,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Non — les témoins sont obligatoires lors du contrat aussi" }
           ],
           correctId: "b",
-          explanation: "En rite malikite : les témoins ne sont pas obligatoirement requis au MOMENT DU CONTRAT (mَندُوب) — Wājib (وَاجِب) avant la consommation (عِندَ الدُّخُول). Ibrahim doit s'assurer que les témoins sont présents avant la consommation."
+          explanation: "En rite malikite : les témoins ne sont pas obligatoirement requis au MOMENT DU CONTRAT — Wājib avant la consommation. Ibrahim doit s'assurer que les témoins sont présents avant la consommation."
         },
         {
           id: "q-nik-14",
-          text: "Le Qasm (القَسم)ُ (tours équitables entre épouses) oblige-t-il l'équité des sentiments ?",
+          text: "Le Qasmُ (tours équitables entre épouses) oblige-t-il l'équité des sentiments ?",
           choices: [
           { id:"a", text:"Oui — le mari doit aimer toutes ses femmes également" },
           { id:"b", text:"Non — seule l'équité des nuits et du traitement matériel est obligatoire" },
@@ -1381,11 +1381,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Seulement si le mari a plus de 2 femmes" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : Qasm (القَسم)ُ (tours de nuit) est obligatoire, mais l'équité des SENTIMENTS (الحُبّ والمَيل) ne l'est pas — car elle dépasse la capacité humaine. Le Prophète ﷺ avait une préférence connue pour ʿĀʾisha mais partageait équitablement ses nuits."
+          explanation: "Mukhtasar Khalīl : Qasmُ (tours de nuit) est obligatoire, mais l'équité des SENTIMENTS ne l'est pas — car elle dépasse la capacité humaine. Le Prophète ﷺ avait une préférence connue pour ʿĀʾisha mais partageait équitablement ses nuits."
         },
         {
           id: "q-nik-15",
-          text: "<strong>PIÈGE FINAL :</strong> Combien de nuits l'épouse VIERGE reçoit-elle à son arrivée (لَيلَةُ الدُّخُول) par rapport aux autres épouses existantes ?",
+          text: "<strong>PIÈGE FINAL :</strong> Combien de nuits l'épouse VIERGE reçoit-elle à son arrivée par rapport aux autres épouses existantes ?",
           choices: [
           { id:"a", text:"1 nuit" },
           { id:"b", text:"3 nuits" },
@@ -1393,19 +1393,19 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Les mêmes que les autres" }
           ],
           correctId: "c",
-          explanation: "Hadīth authentique (Ibn Ḥibbān) : « 7 nuits pour la vierge (البِكر) et 3 nuits pour la non-vierge (الثَّيِّب) ». Après ces nuits spéciales, la rotation normale reprend entre les épouses."
+          explanation: "Hadīth authentique (Ibn Ḥibbān) : « 7 nuits pour la vierge et 3 nuits pour la non-vierge ». Après ces nuits spéciales, la rotation normale reprend entre les épouses."
         }
         ]
       }
     },
 
-    /* ═══ Ṭalāq (الطَّلَاق) والفُرقَة ═══ */
+    /* ═══ Ṭalāq والفُرقَة ═══ */
     {
       id: "talaq",
       title: "Le Divorce et la Dissolution",
       arabicTitle: "al-ṭalāq (الطَّلَاق) والفُرقَة",
       icon: "talaq",
-      description: "Types de divorce, dissolution à l'initiative de la femme (خُلع), ẒẒihār (الظِّهَار), ĪĪlāʾ (الإِيلَاء), Liʿān (اللِّعَان), la période d'attente (عِدَّة) et la garde des enfants.",
+      description: "Types de divorce, dissolution à l'initiative de la femme, ẒẒihār, ĪĪlāʾ, Liʿān, la période d'attente et la garde des enfants.",
       source: "Risāla Ibn Abī Zayd ch. 34 · Mukhtasar Khalīl pp. 117-145",
       badge: {
         id: "badge-int-talaq",
@@ -1413,86 +1413,86 @@ const INTERMEDIAIRE = {
         arabicTitle: "فَقِيهُ al-ṭalāq (الطَّلَاق)",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Ṭalāq (الطَّلَاق)"
+        unlockCondition: "Obtenir ≥ 85 % Ṭalāq"
       },
 
       lessons: [
       {
         id: "tal-01",
-        title: "أَنوَاع Ṭalāq (الطَّلَاق) — Types de Divorce",
+        title: "أَنوَاع Ṭalāq — Types de Divorce",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Ṭalāq (الطَّلَاق) est « l'acte licite le plus détesté d'Allah » — hadīth. La Risāla (ch. 34) et le Mukhtasar Khalīl (pp. 117-145) en distinguent plusieurs types aux effets différents."},
-        {"t": "h", "v": "1. Ṭalāq (الطَّلَاق) السُّنِّي — Divorce conforme à la Sunna"},
+        {"t": "lead", "v": "Ṭalāq est « l'acte licite le plus détesté d'Allah » — hadīth. La Risāla (ch. 34) et le Mukhtasar Khalīl (pp. 117-145) en distinguent plusieurs types aux effets différents."},
+        {"t": "h", "v": "1. Ṭalāq السُّنِّي — Divorce conforme à la Sunna"},
         { t:'ul', v:[
-          "Une seule répudiation pendant une période de pureté (طُهر) sans rapport conjugal précédent.",
+          "Une seule répudiation pendant une période de pureté sans rapport conjugal précédent.",
           "Pas de deuxième répudiation pendant l'عِدَّة.",
           "Peut être suivi d'une رَجعَة (réconciliation) sans nouveau contrat."
         ] },
-        {"t": "h", "v": "2. Ṭalāq (الطَّلَاق) البِدعي — Divorce illégitime"},
+        {"t": "h", "v": "2. Ṭalāq البِدعي — Divorce illégitime"},
         { t:'ul', v:[
-          "Pendant les règles (الحَيْض) ou pendant un طُهر où il y a eu rapport conjugal.",
-          "Triple répudiation en une seule formule (طَلَّقتُكِ ثَلَاثًا).",
+          "Pendant les règles ou pendant un طُهر où il y a eu rapport conjugal.",
+          "Triple répudiation en une seule formule.",
           "<strong>Position malikite :</strong> le طَلَاق البِدعي est péché mais VALIDE — il produit ses effets légaux."
         ] },
-        {"t": "h", "v": "3. Ṭalāq (الطَّلَاق) الرَّجعي vs البَائِن"},
+        {"t": "h", "v": "3. Ṭalāq الرَّجعي vs البَائِن"},
         { t:'ul', v:[
           "<strong>رَجعِيّ (révocable) :</strong> 1ère ou 2ème répudiation → le mari peut reprendre sans nouveau contrat pendant l'عِدَّة.",
           "<strong>بَائِن (irrévocable) :</strong> 3ème répudiation → interdite à jamais SAUF si elle se remarie avec un autre homme et divorce naturellement.",
           "<strong>بَائِن aussi :</strong> خُلع, divorce avant consommation, divorce par جزاء (faute grave)."
         ] },
-        {"t": "h", "v": "Mukhtasar Khalīl : هَزلُ Ṭalāq (الطَّلَاق)"},
-        {"t": "p", "v": "« هَزلُ Ṭalāq (الطَّلَاق) لَازِم » — le divorce prononcé en plaisantant est opposable légalement. Ibn al-Qāsim : si le contexte PROUVE clairement la plaisanterie, il peut ne pas être opposable — mais c'est l'exception. La règle générale : les mots du divorce engagent leur auteur."},
+        {"t": "h", "v": "Mukhtasar Khalīl : هَزلُ Ṭalāq"},
+        {"t": "p", "v": "« هَزلُ Ṭalāq لَازِم » — le divorce prononcé en plaisantant est opposable légalement. Ibn al-Qāsim : si le contexte PROUVE clairement la plaisanterie, il peut ne pas être opposable — mais c'est l'exception. La règle générale : les mots du divorce engagent leur auteur."},
         { t:'ar', v:"ثَلاَثٌ جِدُّهُنَّ جِدٌّ وَهَزلُهُنَّ جِدٌّ: al-ṭalāq (الطَّلَاق)ُ وal-nikāḥ (النِّكَاح)ُ والرَّجعَةُ", n:"« Trois choses : leur sérieux est sérieux et leur plaisanterie est sérieuse : le divorce, le mariage et la reprise. » — Hadīth (Abū Dāwūd)" }
         ]
       },
       {
         id: "tal-02",
-        title: "Khulʿ (الخُلع) وFaskh (الفَسخ) — Dissolution à l'Initiative de la Femme",
+        title: "Khulʿ وFaskh — Dissolution à l'Initiative de la Femme",
         status: 'available',
         content: [
         {"t": "lead", "v": "En Islam, la dissolution du mariage n'est pas réservée au mari. La femme a deux voies : le خُلع (avec compensation) et le فَسخ (dissolution judiciaire sans compensation)."},
-        {"t": "h", "v": "Khulʿ (الخُلع) — La Répudiation Contre Compensation"},
+        {"t": "h", "v": "Khulʿ — La Répudiation Contre Compensation"},
         { t:'ul', v:[
           "La femme demande la séparation et restitue tout ou partie du صَدَاق.",
-          "Résulte en ṬṬalāq Bāʾin (طَلَاق بَائِن).",
+          "Résulte en ṬṬalāq Bāʾin.",
           "Le mari peut exiger une somme égale au صَدَاق — il ne peut pas exiger plus (selon l'avis dominant malikite).",
           "Si le mari est responsable du conflit, il ne peut pas exiger de compensation.",
-          "عِدَّة du خُلع : selon la majorité des savants malikites, une seule menstruation suffit comme عِدَّة pour le خُلع (contrairement à Ṭalāq (الطَّلَاق) normal → 3 cycles)."
+          "عِدَّة du خُلع : selon la majorité des savants malikites, une seule menstruation suffit comme عِدَّة pour le خُلع normal → 3 cycles)."
         ] },
-        {"t": "h", "v": "Faskh (الفَسخ) — La Dissolution Judiciaire"},
+        {"t": "h", "v": "Faskh — La Dissolution Judiciaire"},
         { t:'ul', v:[
-          "<strong>Pour vices rédhibitoires (عُيُوب النِّكَاح) :</strong> folie, lèpre, vérole, impuissance congénitale. Le fiqh malikite ajoute le SIDA et les maladies graves incurables selon doctrine-malikite.fr.",
-          "<strong>Pour préjudice (ضَرَر) :</strong> coups, injures, mépris, refus d'entretien.",
-          "<strong>Pour absence prolongée (الغَيبَة) :</strong> le mari absent sans nouvelles — le juge peut dissoudre après une période.",
-          "<strong>Pour défaut d'entretien (العَجز عَن النَّفَقَة) :</strong> si le mari ne peut entretenir sa femme."
+          "<strong>Pour vices rédhibitoires :</strong> folie, lèpre, vérole, impuissance congénitale. Le fiqh malikite ajoute le SIDA et les maladies graves incurables selon doctrine-malikite.fr.",
+          "<strong>Pour préjudice :</strong> coups, injures, mépris, refus d'entretien.",
+          "<strong>Pour absence prolongée :</strong> le mari absent sans nouvelles — le juge peut dissoudre après une période.",
+          "<strong>Pour défaut d'entretien :</strong> si le mari ne peut entretenir sa femme."
         ] },
-        {"t": "note", "v": "Le فَسخ judiciaire ne compte pas comme طَلَاق — il n'est pas compté dans le calcul des 3 répudiations. Contrairement au خُلع qui est un ṬṬalāq Bāʾin (طَلَاق بَائِن) et compte comme une des 3."}
+        {"t": "note", "v": "Le فَسخ judiciaire ne compte pas comme طَلَاق — il n'est pas compté dans le calcul des 3 répudiations. Contrairement au خُلع qui est un ṬṬalāq Bāʾin et compte comme une des 3."}
         ]
       },
       {
         id: "tal-03",
-        title: "ẒẒihār (الظِّهَار) وĪĪlāʾ (الإِيلَاء) وLiʿān (اللِّعَان)",
+        title: "ẒẒihār وĪĪlāʾ وLiʿān",
         status: 'available',
         content: [
         {"t": "lead", "v": "Trois situations matrimoniales graves mentionnées dans le Coran et traitées par le Mukhtasar Khalīl et la Risāla."},
-        {"t": "h", "v": "ẒẒihār (الظِّهَار) — Assimilation de l'épouse à une mère"},
-        {"t": "p", "v": "Si le mari dit à sa femme : « Tu es pour moi comme le dos de ma mère » (أَنتِ عَلَيَّ كَظَهرِ أُمِّي) — la relation conjugale devient حَرَام jusqu'à l'expiation."},
+        {"t": "h", "v": "ẒẒihār — Assimilation de l'épouse à une mère"},
+        {"t": "p", "v": "Si le mari dit à sa femme : « Tu es pour moi comme le dos de ma mère » — la relation conjugale devient حَرَام jusqu'à l'expiation."},
         { t:'ul', v:[
-          "كَفَّارَة ẒẒihār (الظِّهَار) (ordre croissant de préférence) :",
+          "كَفَّارَة ẒẒihār (ordre croissant de préférence) :",
           "1. Libérer un esclave (no longer applicable).",
           "2. Jeûner 2 mois consécutifs.",
           "3. Nourrir 60 pauvres.",
           "Mukhtasar Khalīl : avant d'accomplir la كَفَّارَة, le rapport conjugal est حَرَام."
         ] },
-        {"t": "h", "v": "ĪĪlāʾ (الإِيلَاء) — Serment d'abstinence"},
+        {"t": "h", "v": "ĪĪlāʾ — Serment d'abstinence"},
         { t:'ul', v:[
           "Le mari jure de ne pas avoir de rapport conjugal pendant PLUS de 4 mois.",
-          "Après 4 mois : il doit revenir (رُجُوع) avec كَفَّارَة du serment, OU divorcer.",
+          "Après 4 mois : il doit revenir avec كَفَّارَة du serment, OU divorcer.",
           "Le juge peut forcer le choix après les 4 mois.",
           "Mukhtasar Khalīl : si le serment est pour 4 mois exactement → pas d'إِيلَاء."
         ] },
-        {"t": "h", "v": "Liʿān (اللِّعَان) — La Malédiction Mutuelle"},
+        {"t": "h", "v": "Liʿān — La Malédiction Mutuelle"},
         {"t": "p", "v": "Si le mari accuse sa femme d'adultère sans 4 témoins → il doit soit produire des témoins soit subir le حَدّ (châtiment pour fausse accusation). Alternative : la procédure du لِعَان."},
         { t:'ul', v:[
           "Le mari prononce 4 serments : « je jure par Allah que je suis véridique dans mon accusation ».",
@@ -1506,11 +1506,11 @@ const INTERMEDIAIRE = {
       },
       {
         id: "tal-04",
-        title: "ʿIdda (العِدَّة) وḤaḍāna (الحَضَانَة)",
+        title: "ʿIdda وḤaḍāna",
         status: 'available',
         content: [
         {"t": "lead", "v": "L'عِدَّة (délai d'attente) et la حَضَانَة (garde des enfants) sont des droits essentiels protégeant la femme et l'enfant après une séparation."},
-        {"t": "h", "v": "ʿIdda (العِدَّة) — Délai d'attente"},
+        {"t": "h", "v": "ʿIdda — Délai d'attente"},
         { t:'ul', v:[
           "<strong>Femme divorcée ayant ses règles :</strong> 3 قُرُوء (cycles menstruels complets).",
           "<strong>Femme sans règles (ménopause ou jeune) :</strong> 3 mois.",
@@ -1519,79 +1519,79 @@ const INTERMEDIAIRE = {
           "<strong>Femme dont le mariage n'a pas été consommé :</strong> PAS d'عِدَّة.",
           "Mukhtasar Khalīl : si un nouveau حَيْض survient pendant l'عِدَّة d'un طَلَاق, la plus longue des deux s'applique."
         ] },
-        {"t": "h", "v": "Rajʿa (الرَّجعَة) — La réconciliation"},
+        {"t": "h", "v": "Rajʿa — La réconciliation"},
         { t:'ul', v:[
-          "Après un ṬṬalāq Rajʿī (طَلَاق رَجعِيّ) (1ère ou 2ème répudiation), le mari peut reprendre SANS nouveau contrat pendant l'عِدَّة.",
+          "Après un ṬṬalāq Rajʿī (1ère ou 2ème répudiation), le mari peut reprendre SANS nouveau contrat pendant l'عِدَّة.",
           "Après la fin de l'عِدَّة → peut se remarier avec un nouveau contrat.",
           "Après 3 répudiations → interdite à jamais SAUF si elle se remarie naturellement et divorce."
         ] },
-        {"t": "h", "v": "Ḥaḍāna (الحَضَانَة) — La Garde des Enfants"},
+        {"t": "h", "v": "Ḥaḍāna — La Garde des Enfants"},
         { t:'ul', v:[
           "La mère est prioritaire pour la garde.",
-          "<strong>Durée de garde de la mère :</strong> garçon jusqu'à la puberté (احتلام) ; fille jusqu'à la consommation de son mariage.",
+          "<strong>Durée de garde de la mère :</strong> garçon jusqu'à la puberté ; fille jusqu'à la consommation de son mariage.",
           "La mère perd la garde si elle se remarie à un homme étranger à l'enfant.",
           "Après la mère : la grand-mère maternelle → tante maternelle → grand-mère paternelle → tante paternelle.",
           "Puis le père, puis les hommes de la parenté."
         ] },
-        {"t": "h", "v": "Nafaqa (النَّفَقَة) — Pension alimentaire"},
+        {"t": "h", "v": "Nafaqa — Pension alimentaire"},
         { t:'ul', v:[
           "Le mari entretient la femme pendant l'عِدَّة رَجعِيَّة.",
-          "Pas d'entretien pour la ṬṬalāq Bāʾin (طَلَاق بَائِن) — sauf si elle est enceinte.",
+          "Pas d'entretien pour la ṬṬalāq Bāʾin — sauf si elle est enceinte.",
           "L'entretien des enfants incombe au père indépendamment de qui a la حَضَانَة."
         ] },
-        {"t": "note", "v": "Raḍāʿ (الرَّضَاع) (allaitement) crée les mêmes prohibitions matrimoniales que le sang. Mukhtasar Khalīl et la position malikite : 5 tétées complètes minimum pour que la حُرمَة (prohibition) soit établie."}
+        {"t": "note", "v": "Raḍāʿ (allaitement) crée les mêmes prohibitions matrimoniales que le sang. Mukhtasar Khalīl et la position malikite : 5 tétées complètes minimum pour que la حُرمَة (prohibition) soit établie."}
         ]
       },
       {
         id: "tal-05",
-        title: "Raḍāʿ (الرَّضَاع) وNafaqa (النَّفَقَة) والإِرث",
+        title: "Raḍāʿ وNafaqa والإِرث",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Raḍāʿ (الرَّضَاع) (allaitement) est un sujet souvent négligé qui a des conséquences importantes sur les prohibitions matrimoniales. La نَفَقَة (pension) et les droits économiques complètent ce chapitre."},
-        {"t": "h", "v": "Raḍāʿ (الرَّضَاع) — L'Allaitement et ses effets juridiques"},
+        {"t": "lead", "v": "Raḍāʿ (allaitement) est un sujet souvent négligé qui a des conséquences importantes sur les prohibitions matrimoniales. La نَفَقَة (pension) et les droits économiques complètent ce chapitre."},
+        {"t": "h", "v": "Raḍāʿ — L'Allaitement et ses effets juridiques"},
         { t:'ul', v:[
           "Le allaitement crée les MÊMES prohibitions matrimoniales que le sang (famille de lait).",
           "<strong>Condition malikite (Mukhtasar Khalīl) :</strong> 5 tétées complètes minimum.",
-          "Doit avoir lieu pendant les 2 premières années (الحَولَان) — après → pas d'effet juridique.",
+          "Doit avoir lieu pendant les 2 premières années — après → pas d'effet juridique.",
           "La femme qui allaite devient « mère de lait » de l'enfant — il ne peut l'épouser ni épouser ses filles.",
           "Le mari de cette femme devient « père de lait »."
         ] },
         { t:'ar', v:"يَحرُمُ مِنَ الرَّضَاعِ مَا يَحرُمُ مِنَ النَّسَبِ", n:"« Est interdit par le allaitement ce qui est interdit par le sang. » — Hadīth mutawātir (al-Bukhārī et Muslim)" },
-        {"t": "h", "v": "Nafaqa (النَّفَقَة) — Qui doit quoi"},
+        {"t": "h", "v": "Nafaqa — Qui doit quoi"},
         { t:'ul', v:[
           "<strong>Épouse :</strong> nourriture, vêtement, logement convenables — indépendamment de sa fortune.",
           "<strong>Enfants :</strong> le père les entretient jusqu'à la puberté du fils / mariage de la fille.",
           "<strong>Parents dans le besoin :</strong> les enfants les entretiennent selon leurs moyens.",
           "<strong>عِدَّة :</strong> le mari entretient la femme pendant الرَّجعِيَّة. La بَائِن reçoit le logement seulement (si enceinte : entretien complet)."
         ] },
-        {"t": "h", "v": "أثر Ṭalāq (الطَّلَاق) على الإِرث"},
+        {"t": "h", "v": "أثر Ṭalāq على الإِرث"},
         {"t": "p", "v": "Pendant l'عِدَّة رَجعِيَّة : les deux héritent l'un de l'autre (le mariage est techniquement toujours en vigueur). Après l'expiration de l'عِدَّة : plus d'héritage mutuel. Exception : si le mari divorce d'une femme en مَرَض الموت (maladie mortelle) pour lui faire perdre l'héritage → la femme hérite quand même selon certains savants."},
-        {"t": "note", "v": "Mukhtasar Khalīl sur la تَصرِيح بِالإِرجَاع : le mari peut reprendre sa femme divorcée (rَجعِيَّة) soit verbalement explicitement, soit par un geste signifiant la reprise (toucher, baiser avec intention de رَجعَة). Pas besoin de son accord."}
+        {"t": "note", "v": "Mukhtasar Khalīl sur la تَصرِيح بِالإِرجَاع : le mari peut reprendre sa femme divorcée soit verbalement explicitement, soit par un geste signifiant la reprise. Pas besoin de son accord."}
         ]
       }
       ],
 
       quiz: {
         id: "quiz-talaq",
-        title: "Questionnaire — Ṭalāq (الطَّلَاق) والفُرقَة",
+        title: "Questionnaire — Ṭalāq والفُرقَة",
         status: 'available',
         score: null,
         questions: [
         {
           id: "q-tal-01",
-          text: "Le divorce prononcé en plaisantant (هَزل) est-il valide en rite malikite ?",
+          text: "Le divorce prononcé en plaisantant est-il valide en rite malikite ?",
           choices: [
           { id:"a", text:"Non — la plaisanterie ne compte pas" },
-          { id:"b", text:"Oui — هَزلُ Ṭalāq (الطَّلَاق) لَازِم selon le Mukhtasar Khalīl" },
+          { id:"b", text:"Oui — هَزلُ Ṭalāq لَازِم selon le Mukhtasar Khalīl" },
           { id:"c", text:"Dépend de l'intention" },
           { id:"d", text:"Seulement si la femme est présente" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : « هَزلُ Ṭalāq (الطَّلَاق) لَازِم » — le divorce prononcé en plaisantant est VALIDE et opposable. Hadīth : « trois choses : leur sérieux est sérieux et leur plaisanterie est sérieuse : le divorce, le mariage et la reprise. »"
+          explanation: "Mukhtasar Khalīl : « هَزلُ Ṭalāq لَازِم » — le divorce prononcé en plaisantant est VALIDE et opposable. Hadīth : « trois choses : leur sérieux est sérieux et leur plaisanterie est sérieuse : le divorce, le mariage et la reprise. »"
         },
         {
           id: "q-tal-02",
-          text: "Quelle est la différence entre ṬṬalāq Rajʿī (طَلَاق رَجعِيّ) et ṬṬalāq Bāʾin (طَلَاق بَائِن) ?",
+          text: "Quelle est la différence entre ṬṬalāq Rajʿī et ṬṬalāq Bāʾin ?",
           choices: [
           { id:"a", text:"Le رَجعِيّ est plus grave" },
           { id:"b", text:"Le رَجعِيّ : le mari reprend sans nouveau contrat pendant l'عِدَّة. Le بَائِن : nouveau contrat nécessaire" },
@@ -1599,19 +1599,19 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Le بَائِن est seulement la 3ème répudiation" }
           ],
           correctId: "b",
-          explanation: "Ṭalāq (الطَّلَاق) الرَّجعِيّ (1ère ou 2ème répudiation) : le mari peut reprendre sans nouveau contrat pendant l'عِدَّة. Ṭalāq (الطَّلَاق) البَائِن (3ème répudiation, خُلع, etc.) : la femme est définitivement séparée sauf nouveau mariage."
+          explanation: "Ṭalāq الرَّجعِيّ (1ère ou 2ème répudiation) : le mari peut reprendre sans nouveau contrat pendant l'عِدَّة. Ṭalāq البَائِن : la femme est définitivement séparée sauf nouveau mariage."
         },
         {
           id: "q-tal-03",
-          text: "<strong>PIÈGE :</strong> Le طَلَاق pendant les rèḤayḍ (الحَيض) est-il valide en rite malikite ?",
+          text: "Le طَلَاق pendant les rèḤayḍ est-il valide en rite malikite ?",
           choices: [
           { id:"a", text:"Non — il est nul" },
-          { id:"b", text:"Oui mais c'est péché (طَلَاق بِدعِيّ — valide mais péché)" },
+          { id:"b", text:"Oui mais c'est péché" },
           { id:"c", text:"Oui et c'est même recommandé" },
           { id:"d", text:"Non si le mari le sait" }
           ],
           correctId: "b",
-          explanation: "Position malikite : le طَلَاق البِدعِيّ (pendant les règles ou في طُهر وقع فيه الوطء) est PÉCHÉ mais VALIDE — il produit ses effets légaux. Le mari doit se repentir mais le divorce est opposable."
+          explanation: "Position malikite : le طَلَاق البِدعِيّ est PÉCHÉ mais VALIDE — il produit ses effets légaux. Le mari doit se repentir mais le divorce est opposable."
         },
         {
           id: "q-tal-04",
@@ -1623,7 +1623,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Les deux ensemble obligatoirement" }
           ],
           correctId: "b",
-          explanation: "Le خُلع est la dissolution à l'INITIATIVE DE LA FEMME — elle paie une compensation (restitution du صَدَاق ou partie) en échange de la libération. Résultat : ṬṬalāq Bāʾin (طَلَاق بَائِن)."
+          explanation: "Le خُلع est la dissolution à l'INITIATIVE DE LA FEMME — elle paie une compensation en échange de la libération. Résultat : ṬṬalāq Bāʾin."
         },
         {
           id: "q-tal-05",
@@ -1647,11 +1647,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Oui après 3 mois d'attente" }
           ],
           correctId: "c",
-          explanation: "Après 3 répudiations : la femme est بَائِن بَيْنُونَة كُبرَى — elle devient illicite au premier mari JUSQU'à ce qu'elle se remarie naturellement avec un autre homme (pas un نِكَاح مُحَلِّل) et qu'elle divorce sincèrement."
+          explanation: "Après 3 répudiations : la femme est بَائِن بَيْنُونَة كُبرَى — elle devient illicite au premier mari JUSQU'à ce qu'elle se remarie naturellement avec un autre homme et qu'elle divorce sincèrement."
         },
         {
           id: "q-tal-07",
-          text: "Rajʿa (الرَّجعَة) (réconciliation) après ṬṬalāq Rajʿī (طَلَاق رَجعِيّ) nécessite-t-elle l'accord de la femme ?",
+          text: "Rajʿa (réconciliation) après ṬṬalāq Rajʿī nécessite-t-elle l'accord de la femme ?",
           choices: [
           { id:"a", text:"Oui — son accord est obligatoire" },
           { id:"b", text:"Non — le mari peut reprendre pendant l'عِدَّة sans son accord" },
@@ -1659,11 +1659,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Seulement si deux témoins y assistent" }
           ],
           correctId: "b",
-          explanation: "Le mari peut effectuer la رَجعَة (reprise) sans accord de la femme, verbalement ou par geste (avec intention de رَجعَة). Cela pendant l'عِدَّة seulement. Après l'عِدَّة → nouveau contrat et accord de la femme requis."
+          explanation: "Le mari peut effectuer la رَجعَة (reprise) sans accord de la femme, verbalement ou par geste. Cela pendant l'عِدَّة seulement. Après l'عِدَّة → nouveau contrat et accord de la femme requis."
         },
         {
           id: "q-tal-08",
-          text: "Le ẒẒihār (الظِّهَار) : quelle est la كَفَّارَة selon l'ordre préférentiel ?",
+          text: "Le ẒẒihār : quelle est la كَفَّارَة selon l'ordre préférentiel ?",
           choices: [
           { id:"a", text:"Nourrir 60 pauvres puis jeûner 2 mois puis libérer un esclave" },
           { id:"b", text:"Libérer un esclave → jeûner 2 mois consécutifs → nourrir 60 pauvres" },
@@ -1671,38 +1671,38 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Répéter la شَهَادَة 60 fois" }
           ],
           correctId: "b",
-          explanation: "Coran 58:3-4 fixe l'ordre OBLIGATOIRE (ترتيب) : (1) libérer un esclave, (2) si incapable → jeûner 2 mois consécutifs, (3) si incapable → nourrir 60 pauvres. Contrairement à la كَفَّارَة du jeûne malikite qui préfère la nourriture."
+          explanation: "Coran 58:3-4 fixe l'ordre OBLIGATOIRE : (1) libérer un esclave, (2) si incapable → jeûner 2 mois consécutifs, (3) si incapable → nourrir 60 pauvres. Contrairement à la كَفَّارَة du jeûne malikite qui préfère la nourriture."
         },
         {
           id: "q-tal-09",
           text: "Le لِعَان — quel est son effet principal ?",
           choices: [
           { id:"a", text:"Un طَلَاق révocable" },
-          { id:"b", text:"La séparation DÉFINITIVE à jamais entre les époux (الفُرقَة المُؤَبَّدَة)" },
+          { id:"b", text:"La séparation DÉFINITIVE à jamais entre les époux" },
           { id:"c", text:"Une simple séparation de corps temporaire" },
-          { id:"d", text:"Un ṬṬalāq Bāʾin (طَلَاق بَائِن) avec possibilité de retour" }
+          { id:"d", text:"Un ṬṬalāq Bāʾin avec possibilité de retour" }
           ],
           correctId: "b",
           explanation: "Le لِعَان établit la séparation DÉFINITIVE ET PERPÉTUELLE entre les époux — ils ne pourront jamais se remarier. Mukhtasar Khalīl : الفُرقَة المُؤَبَّدَة."
         },
         {
           id: "q-tal-10",
-          text: "La garde des enfants (حَضَانَة) : jusqu'à quand la mère garde-t-elle son fils ?",
+          text: "La garde des enfants : jusqu'à quand la mère garde-t-elle son fils ?",
           choices: [
           { id:"a", text:"Jusqu'à 7 ans" },
           { id:"b", text:"Jusqu'à 10 ans" },
-          { id:"c", text:"Jusqu'à la puberté (احتلام)" },
+          { id:"c", text:"Jusqu'à la puberté" },
           { id:"d", text:"Toujours" }
           ],
           correctId: "c",
-          explanation: "En rite malikite : la mère garde le fils jusqu'à sa puberté (احتلام). Pour la fille : jusqu'à la consommation de son mariage. La mère perd la garde si elle se remarie à un homme étranger à l'enfant."
+          explanation: "En rite malikite : la mère garde le fils jusqu'à sa puberté. Pour la fille : jusqu'à la consommation de son mariage. La mère perd la garde si elle se remarie à un homme étranger à l'enfant."
         },
         {
           id: "q-tal-11",
-          text: "<strong>PIÈGE :</strong> Le allaitement crée-t-il les mêmes prohibitions matrimoniales que le sang ?",
+          text: "Le allaitement crée-t-il les mêmes prohibitions matrimoniales que le sang ?",
           choices: [
           { id:"a", text:"Non — le allaitement n'a aucun effet légal" },
-          { id:"b", text:"Oui — يَحرُمُ مِنَ Raḍāʿ (الرَّضَاع)ِ مَا يَحرُمُ مِنَ Nasab (النَّسَب)ِ" },
+          { id:"b", text:"Oui — يَحرُمُ مِنَ Raḍāʿِ مَا يَحرُمُ مِنَ Nasabِ" },
           { id:"c", text:"Seulement après 10 tétées" },
           { id:"d", text:"Seulement si avant l'âge de 2 ans" }
           ],
@@ -1711,7 +1711,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-tal-12",
-          text: "<strong>COMPLEXE :</strong> Omar divorce 3 fois en une seule formule (طَلَّقتُكِ ثَلَاثًا). En rite malikite :",
+          text: "Omar divorce 3 fois en une seule formule. En rite malikite :",
           choices: [
           { id:"a", text:"Une seule répudiation compte — les deux autres sont invalides" },
           { id:"b", text:"3 répudiations distinctes s'appliquent — la femme est définitivement séparée" },
@@ -1731,11 +1731,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"3 mois" }
           ],
           correctId: "c",
-          explanation: "L'عِدَّة de la veuve = 4 mois et 10 jours — même si le mariage n'a pas été consommé (contrairement à la divorcée avant consommation qui n'a pas d'عِدَّة). Cette règle est du Coran 2:234."
+          explanation: "L'عِدَّة de la veuve = 4 mois et 10 jours — même si le mariage n'a pas été consommé. Cette règle est du Coran 2:234."
         },
         {
           id: "q-tal-14",
-          text: "<strong>PIÈGE :</strong> Pendant l'عِدَّة رَجعِيَّة, les époux peuvent-ils hériter l'un de l'autre si l'un décède ?",
+          text: "Pendant l'عِدَّة رَجعِيَّة, les époux peuvent-ils hériter l'un de l'autre si l'un décède ?",
           choices: [
           { id:"a", text:"Non — ils sont séparés" },
           { id:"b", text:"Oui — le mariage est techniquement toujours en vigueur pendant l'عِدَّة رَجعِيَّة" },
@@ -1743,11 +1743,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Seulement si le divorce est verbal" }
           ],
           correctId: "b",
-          explanation: "Pendant l'عِدَّة d'un ṬṬalāq Rajʿī (طَلَاق رَجعِيّ), le mariage est TECHNIQUEMENT TOUJOURS EN VIGUEUR (il n'est que suspendu). Les époux héritent l'un de l'autre. C'est différent du ṬṬalāq Bāʾin (طَلَاق بَائِن) où ils ne s'héritent plus."
+          explanation: "Pendant l'عِدَّة d'un ṬṬalāq Rajʿī, le mariage est TECHNIQUEMENT TOUJOURS EN VIGUEUR (il n'est que suspendu). Les époux héritent l'un de l'autre. C'est différent du ṬṬalāq Bāʾin où ils ne s'héritent plus."
         },
         {
           id: "q-tal-15",
-          text: "<strong>ÉVALUATION :</strong> Ibrahim prononce le ẒẒihār (الظِّهَار) envers sa femme. Avant d'expier, peut-il avoir un rapport conjugal ?",
+          text: "<strong>ÉVALUATION :</strong> Ibrahim prononce le ẒẒihār envers sa femme. Avant d'expier, peut-il avoir un rapport conjugal ?",
           choices: [
           { id:"a", text:"Oui — il expiera après" },
           { id:"b", text:"Non — la relation conjugale est حَرَام jusqu'à l'accomplissement de la كَفَّارَة" },
@@ -1761,13 +1761,13 @@ const INTERMEDIAIRE = {
       }
     },
 
-    /* ═══ Dhabāʾiḥ (الذَّبَائِح) والأَطعِمَة ═══ */
+    /* ═══ Dhabāʾiḥ والأَطعِمَة ═══ */
     {
       id: "dhabaih",
       title: "Abattage, Chasse et Alimentation",
       arabicTitle: "الذَّبَائِح والأَطعِمَة",
       icon: "dhabaih",
-      description: "Conditions de l'abattage rituel, aliments licites et illicites selon le rite malikite — avec ses particularités (Makrūh (مَكرُوه), tous fruits de mer licites).",
+      description: "Conditions de l'abattage rituel, aliments licites et illicites selon le rite malikite — avec ses particularités, tous fruits de mer licites).",
       source: "Risāla Ibn Abī Zayd ch. 29 · Mukhtasar Khalīl pp. 78-92 · doctrine-malikite.fr",
       badge: {
         id: "badge-int-dhabaih",
@@ -1775,23 +1775,23 @@ const INTERMEDIAIRE = {
         arabicTitle: "عَارِف الحَلَال وal-ḥarām (الحَرَام)",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Dhabāʾiḥ (الذَّبَائِح)"
+        unlockCondition: "Obtenir ≥ 85 % Dhabāʾiḥ"
       },
 
       lessons: [
       {
         id: "dha-01",
-        title: "Dhakāt (الذَّكَاة) — L'Abattage Rituel",
+        title: "Dhakāt — L'Abattage Rituel",
         status: 'available',
         content: [
         {"t": "lead", "v": "La ذَكَاة (abattage rituel) est la condition de la licéité de la viande. Sans ذَكَاة conforme, l'animal devient مَيتَة (bête morte) — حَرَام. La Risāla (ch. 29) et le Mukhtasar Khalīl (pp. 78-92) en détaillent les règles."},
-        {"t": "h", "v": "شُرُوطُ Dhakāt (الذَّكَاة) — Conditions de validité"},
+        {"t": "h", "v": "شُرُوطُ Dhakāt — Conditions de validité"},
         { t:'ul', v:[
           "<strong>Qui peut abattre :</strong> tout Muslim pubère ou Ahl al-Kitāb (juif/chrétien) — sous conditions.",
           "Mukhtasar Khalīl : l'ivrogne → invalide ; l'apostat → invalide ; l'enfant mumayyiz → valide.",
           "<strong>L'outil :</strong> tout objet coupant et tranchant (sauf l'ongle et l'os).",
-          "<strong>La méthode :</strong> sectionner la gorge (الحَلقُوم) et les deux veines jugulaires.",
-          "<strong>Niyya (النِّيَّة) :</strong> intention d'abattre.",
+          "<strong>La méthode :</strong> sectionner la gorge et les deux veines jugulaires.",
+          "<strong>Niyya :</strong> intention d'abattre.",
           "<strong>بِسمِ الله :</strong> prononcer le Nom d'Allah avant l'abattage — obligatoire selon la majorité des savants malikites."
         ] },
         {"t": "h", "v": "ذَبح أَهل الكِتَاب — Abattage par juifs et chrétiens"},
@@ -1807,28 +1807,28 @@ const INTERMEDIAIRE = {
       },
       {
         id: "dha-02",
-        title: "Ḥalāl (الحَلَال) وal-ḥarām (الحَرَام) من الأَطعِمَة — Licite et Illicite",
+        title: "Ḥalāl وal-ḥarām من الأَطعِمَة — Licite et Illicite",
         status: 'available',
         content: [
         {"t": "lead", "v": "Le rite malikite a des positions particulières sur les aliments autorisés et interdits, souvent différentes des autres écoles. Doctrine-malikite.fr les détaille avec précision."},
         {"t": "h", "v": "المُحَرَّمَات المُطلَقَة — Interdits absolus"},
         { t:'ul', v:[
           "<strong>الخِنزِير :</strong> porc — totalement حَرَام (chair, graisse, tout).",
-          "<strong>الدَّم المَسفُوح :</strong> sang coulé — rate (الطِّحَال) et foie (الكَبِد) restent licites.",
-          "<strong>Mayta (المَيتَة) :</strong> animal mort sans ذَكَاة (exception : poissons et sauterelles).",
+          "<strong>الدَّم المَسفُوح :</strong> sang coulé — rate et foie restent licites.",
+          "<strong>Mayta :</strong> animal mort sans ذَكَاة (exception : poissons et sauterelles).",
           "<strong>ما ذُبِح لغير الله :</strong> consacré à une idole ou invoqué avec un autre nom que celui d'Allah.",
           "<strong>الخَمر :</strong> toute boisson alcoolisée en quantité enivrante."
         ] },
         {"t": "h", "v": "Spécificités malikites (différences des autres écoles)"},
         { t:'ul', v:[
-          "<strong>Carnivores et bêtes à crocs :</strong> Makrūh (مَكرُوه) (pas حَرَام) selon la position la plus connue — lion, guépard, renard, chacal. <em>Différence avec écoles hanafite/chāfiʿite qui les rendent حَرَام.</em>",
+          "<strong>Carnivores et bêtes à crocs :</strong> Makrūh selon la position la plus connue — lion, guépard, renard, chacal. <em>Différence avec écoles hanafite/chāfiʿite qui les rendent حَرَام.</em>",
           "<strong>Insectes, sauterelles, escargots :</strong> licites selon le rite malikite.",
           "<strong>Fruits de mer :</strong> TOUS licites (poissons, crustacés, crevettes, homards...) — sans exception en rite malikite. <em>Différence avec l'école hanafite qui interdit certains.</em>",
           "<strong>Âne domestique :</strong> حَرَام selon les malikites.",
-          "<strong>Cheval :</strong> Makrūh (مَكرُوه) (pas حَرَام) — pas de ذَكَاة du cheval habituellement."
+          "<strong>Cheval :</strong> Makrūh — pas de ذَكَاة du cheval habituellement."
         ] },
         {"t": "h", "v": "Gélatine et additifs alimentaires (contemporain)"},
-        {"t": "p", "v": "Doctrine-malikite.fr : les additifs qui subissent une transformation chimique irréversible (الاستِحَالَة الكَامِلَة) deviennent licites — analogie avec le vinaigre (halal) issu du vin (haram). Position adoptée par le Conseil Européen de la Fatwa : la gélatine ayant subi une istiḥāla complète = licite."},
+        {"t": "p", "v": "Doctrine-malikite.fr : les additifs qui subissent une transformation chimique irréversible deviennent licites — analogie avec le vinaigre (halal) issu du vin (haram). Position adoptée par le Conseil Européen de la Fatwa : la gélatine ayant subi une istiḥāla complète = licite."},
         {"t": "note", "v": "Boissons : l'alcool est حَرَام même en petite quantité intentionnelle. Cependant, les arômes à base d'alcool en trace infime dans la nourriture : divergence contemporaine, avec certains savants malikites les tolérant par principe de l'istiḥāla ou de la quantité négligeable."}
         ]
       },
@@ -1850,11 +1850,11 @@ const INTERMEDIAIRE = {
         { t:'ul', v:[
           "Mukhtasar Khalīl : si le gibier disparaît et on le retrouve le lendemain → divergence, la version dominante dit qu'il reste licite si touché mortellement par nos armes.",
           "Chasse à l'arme à feu : licite si بِسمِ الله est prononcée avant de tirer.",
-          "Chasse pour divertissement seul (sans utilisation de la viande) : Makrūh (مَكرُوه) (blâmable) selon la Risāla.",
+          "Chasse pour divertissement seul (sans utilisation de la viande) : Makrūh (blâmable) selon la Risāla.",
           "Chasse dans le حَرَم (enceinte de La Mecque) : INTERDITE pour les personnes en état d'إِحرَام."
         ] },
         { t:'ar', v:"يَسأَلُونَكَ مَاذَا أُحِلَّ لَهُم قُل أُحِلَّ لَكُمُ الطَّيِّبَاتُ وَمَا عَلَّمتُم مِّنَ الجَوَارِحِ مُكَلِّبِينَ", n:"Coran 5:4 — Permis : les animaux de chasse dressés" },
-        {"t": "note", "v": "La sauterelle (الجَرَاد) : licite MORTE ou VIVANTE en rite malikite. Mais si elle est déjà morte seule (sans être chassée ni tuée intentionnellement) → selon certains savants malikites, Mayta (المَيتَة)."}
+        {"t": "note", "v": "La sauterelle : licite MORTE ou VIVANTE en rite malikite. Mais si elle est déjà morte seule (sans être chassée ni tuée intentionnellement) → selon certains savants malikites, Mayta."}
         ]
       },
       {
@@ -1873,7 +1873,7 @@ const INTERMEDIAIRE = {
         { t:'ul', v:[
           "L'or comme parure = حَرَام pour les hommes.",
           "Exception : une bague en argent ≤ 2 dirhams d'argent (~5.9g).",
-          "La soie (الحَرِير) comme vêtement = حَرَام pour les hommes.",
+          "La soie comme vêtement = حَرَام pour les hommes.",
           "Exception : en cas de maladie de peau selon certains rites — les malikites ne l'autorisent pas même dans ce cas (mais les chāfiʿites oui)."
         ] },
         {"t": "h", "v": "آدَاب الأَكل — Étiquette alimentaire"},
@@ -1881,8 +1881,8 @@ const INTERMEDIAIRE = {
           "Dire بِسمِ الله avant de commencer.",
           "Manger de la main droite.",
           "Ne pas souffler dans le verre.",
-          "Ne pas manger debout sauf nécessité (مَكرُوه).",
-          "Ne pas manger seul si possible (النِّدَاء على الطَّعَام — partager)."
+          "Ne pas manger debout sauf nécessité.",
+          "Ne pas manger seul si possible."
         ] },
         {"t": "h", "v": "الدُّخَان والمُخَدِّرَات"},
         {"t": "p", "v": "Doctrine-malikite.fr : la cigarette et toutes les drogues sont حَرَام selon le rite malikite car elles nuisent à la santé — par application du principe « لَا ضَرَرَ وَلَا ضِرَار » (pas de préjudice). Cela inclut le narguilé et tous les produits similaires."},
@@ -1893,7 +1893,7 @@ const INTERMEDIAIRE = {
 
       quiz: {
         id: "quiz-dhabaih",
-        title: "Questionnaire — Dhabāʾiḥ (الذَّبَائِح) والأَطعِمَة",
+        title: "Questionnaire — Dhabāʾiḥ والأَطعِمَة",
         status: 'available',
         score: null,
         questions: [
@@ -1902,16 +1902,16 @@ const INTERMEDIAIRE = {
           text: "La ذَكَاة (abattage rituel) doit sectionner :",
           choices: [
           { id:"a", text:"Seulement la tête" },
-          { id:"b", text:"La gorge (الحَلقُوم) et les deux veines jugulaires" },
+          { id:"b", text:"La gorge et les deux veines jugulaires" },
           { id:"c", text:"Seulement les veines jugulaires" },
           { id:"d", text:"Le cou uniquement" }
           ],
           correctId: "b",
-          explanation: "La ذَكَاة valide sectionne la gorge (الحَلقُوم — trachée) ET les deux veines jugulaires (الوَدَجَان). Couper seulement l'un ou l'autre ne suffit pas en rite malikite."
+          explanation: "La ذَكَاة valide sectionne la gorge ET les deux veines jugulaires. Couper seulement l'un ou l'autre ne suffit pas en rite malikite."
         },
         {
           id: "q-dha-02",
-          text: "<strong>PIÈGE :</strong> Un ivrogne abat un animal. La viande est-elle licite ?",
+          text: "Un ivrogne abat un animal. La viande est-elle licite ?",
           choices: [
           { id:"a", text:"Oui — l'état de l'abatteur importe peu" },
           { id:"b", text:"Non — la ذَكَاة de l'ivrogne est invalide" },
@@ -1919,7 +1919,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Dépend du degré d'ivresse" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : la ذَكَاة de l'ivrogne (السَّكرَان) est INVALIDE. De même pour l'apostat (المُرتَدّ). Seuls les Muslims et Ahl al-Kitāb en pleine capacité mentale peuvent effectuer la ذَكَاة."
+          explanation: "Mukhtasar Khalīl : la ذَكَاة de l'ivrogne est INVALIDE. De même pour l'apostat. Seuls les Muslims et Ahl al-Kitāb en pleine capacité mentale peuvent effectuer la ذَكَاة."
         },
         {
           id: "q-dha-03",
@@ -1935,15 +1935,15 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-dha-04",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Les carnivores (lions, renards, chacals) sont-ils حَرَام ?",
+          text: "Les carnivores (lions, renards, chacals) sont-ils حَرَام ?",
           choices: [
           { id:"a", text:"Oui — tous les animaux à crocs sont حَرَام" },
-          { id:"b", text:"Non — Makrūh (مَكرُوه) (déconseillé) seulement selon la position dominante malikite" },
+          { id:"b", text:"Non — Makrūh (déconseillé) seulement selon la position dominante malikite" },
           { id:"c", text:"Licites sans restriction" },
           { id:"d", text:"حَرَام seulement pour les grands félins" }
           ],
           correctId: "b",
-          explanation: "Position malikite distincte : les carnivores et les bêtes à Makrūh (مَكرُوه) (déconseillés) selon la position la plus connue — pas حَرَام. C'est une DIFFÉRENCE FONDAMENTALE avec les écoles hanafite et chāfiʿite qui les rendent حَرَام."
+          explanation: "Position malikite distincte : les carnivores et les bêtes à Makrūh (déconseillés) selon la position la plus connue — pas حَرَام. C'est une DIFFÉRENCE FONDAMENTALE avec les écoles hanafite et chāfiʿite qui les rendent حَرَام."
         },
         {
           id: "q-dha-05",
@@ -1971,7 +1971,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-dha-07",
-          text: "<strong>PIÈGE :</strong> Manger dans des assiettes en argent est-il permis ?",
+          text: "Manger dans des assiettes en argent est-il permis ?",
           choices: [
           { id:"a", text:"Oui — les assiettes ne sont pas des bijoux" },
           { id:"b", text:"Non — utiliser de la vaisselle en or ou en argent est حَرَام pour tous" },
@@ -2003,7 +2003,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Neutre — ni recommandé ni blâmable" }
           ],
           correctId: "b",
-          explanation: "La Risāla d'Ibn Abī Zayd : « Chasser pour se divertir est blâMakrūh (مَكرُوه), mais chasser dans un autre but est licite. » Tuer des animaux pour le plaisir sans en utiliser la viande est contraire à l'éthique islamique."
+          explanation: "La Risāla d'Ibn Abī Zayd : « Chasser pour se divertir est blâMakrūh, mais chasser dans un autre but est licite. » Tuer des animaux pour le plaisir sans en utiliser la viande est contraire à l'éthique islamique."
         },
         {
           id: "q-dha-10",
@@ -2035,17 +2035,17 @@ const INTERMEDIAIRE = {
           choices: [
           { id:"a", text:"حَرَام — les carnivores sont toujours interdits" },
           { id:"b", text:"Licite — tout animal est permis en rite malikite" },
-          { id:"c", text:"Makrūh (مَكرُوه) seulement — il peut en manger mais c'est déconseillé" },
+          { id:"c", text:"Makrūh seulement — il peut en manger mais c'est déconseillé" },
           { id:"d", text:"Licite si ذَكَاة est faite" }
           ],
           correctId: "c",
-          explanation: "Position malikite dominante : Makrūh (مَكرُوه) (déconseillés) — pas حَرَام. Ibrahim peut en manger mais c'est blâmable. S'il insiste sur la ذَكَاة conforme (bِسم الله), la viande est consommable bien que déconseillée."
+          explanation: "Position malikite dominante : Makrūh (déconseillés) — pas حَرَام. Ibrahim peut en manger mais c'est blâmable. S'il insiste sur la ذَكَاة conforme, la viande est consommable bien que déconseillée."
         }
         ]
       }
     },
 
-    /* ═══ Aḍāḥī (الأَضَاحِي) وʿAqīqa (العَقِيقَة) ═══ */
+    /* ═══ Aḍāḥī وʿAqīqa ═══ */
     {
       id: "adahi",
       title: "Le Sacrifice de l'Aïd",
@@ -2059,7 +2059,7 @@ const INTERMEDIAIRE = {
         arabicTitle: "عَارِف أَحكَام الأُضحِيَة",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Aḍāḥī (الأَضَاحِي)"
+        unlockCondition: "Obtenir ≥ 85 % Aḍāḥī"
       },
 
       lessons: [
@@ -2068,7 +2068,7 @@ const INTERMEDIAIRE = {
         title: "حُكم الأُضحية وشُرُوطها",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Uḍḥiya (الأُضحِيَة) est le sacrifice accompli à l'occasion de l'Eid al-Adha. La Risāla (ch. 30) et le Mukhtasar Khalīl (pp. 78-80) en fixent les règles avec précision."},
+        {"t": "lead", "v": "Uḍḥiya est le sacrifice accompli à l'occasion de l'Eid al-Adha. La Risāla (ch. 30) et le Mukhtasar Khalīl (pp. 78-80) en fixent les règles avec précision."},
         {"t": "h", "v": "حُكم الأُضحية"},
         {"t": "p", "v": "<strong>Spécificité malikite :</strong> l'أُضحِيَة est سُنَّة مُؤَكَّدَة (sounnah appuyée) — PAS une obligation. Contrairement à l'école hanbalite qui la rend واجبة sur celui qui en a les moyens."},
         {"t": "h", "v": "الأَنعَام الجَائِزَة وأَعمَارُها"},
@@ -2080,11 +2080,11 @@ const INTERMEDIAIRE = {
         ] },
         {"t": "h", "v": "العُيُوب المُخِلَّة — Défauts éliminatoires"},
         { t:'ul', v:[
-          "<strong>العَوراء Bayyina (البَيِّنَة) :</strong> aveugle d'un œil manifestement.",
-          "<strong>العَرجَاء Bayyina (البَيِّنَة) :</strong> boiteuse au point de ne pas pouvoir se déplacer normalement.",
-          "<strong>المَرِيضَة Bayyina (البَيِّنَة) :</strong> malade manifestement.",
+          "<strong>العَوراء Bayyina :</strong> aveugle d'un œil manifestement.",
+          "<strong>العَرجَاء Bayyina :</strong> boiteuse au point de ne pas pouvoir se déplacer normalement.",
+          "<strong>المَرِيضَة Bayyina :</strong> malade manifestement.",
           "<strong>العَجفَاء :</strong> très amaigrie n'ayant plus de moelle.",
-          "Mukhtasar Khalīl : les défauts MODÉRÉS (légère boiterie, légère maladie) → Makrūh (مَكرُوه)."
+          "Mukhtasar Khalīl : les défauts MODÉRÉS (légère boiterie, légère maladie) → Makrūh."
         ] },
         { t:'ar', v:"أَربَعٌ لَا تَجُوزُ فِي الأَضَاحِي: الْعَوراء الْبَيِّنُ عَوَرُهَا وَالْعَرجَاء الْبَيِّنُ ظَلَعُهَا وَالْمَرِيضَةُ الْبَيِّنُ مَرَضُهَا وَالْعَجفَاءُ الَّتِي لَا تُنقِي", n:"« Quatre défauts invalident le sacrifice : la borgne manifeste, la boiteuse manifeste, la malade manifeste, la très amaigrie. » — Hadīth (Abū Dāwūd, al-Nasāʾī)" }
         ]
@@ -2110,18 +2110,18 @@ const INTERMEDIAIRE = {
           "Mukhtasar Khalīl : il est permis de vendre la peau et d'en profiter (ou de la donner).",
           "Il est interdit de donner la viande comme salaire du boucher."
         ] },
-        {"t": "h", "v": "Takbīrāt (التَّكبِيرَات) أيَّام التَّشرِيق"},
-        {"t": "p", "v": "La période du Eid al-Adha est marquée par les تَكبِيرَات. Position malikite : les takbīrāt après les prières obligatoires sont pratiquées du 9 au 13 Dhū al-Ḥijja (en commençant à partir du الفَجْر du 9). L'imam commence et les fidèles suivent."},
+        {"t": "h", "v": "Takbīrāt أيَّام التَّشرِيق"},
+        {"t": "p", "v": "La période du Eid al-Adha est marquée par les تَكبِيرَات. Position malikite : les takbīrāt après les prières obligatoires sont pratiquées du 9 au 13 Dhū al-Ḥijja. L'imam commence et les fidèles suivent."},
         {"t": "note", "v": "Mukhtasar Khalīl : un seul animal ne peut pas être le sacrifice de deux personnes distinctes (sauf pour le bovin et le chameau qui peuvent compter pour 7). La sharīka (association) dans l'أُضحِيَة ne concerne que l'ajr (récompense) selon une position, et la viande selon une autre."}
         ]
       },
       {
         id: "adh-03",
-        title: "ʿAqīqa (العَقِيقَة) وشَعَائِر المَوْلُود",
+        title: "ʿAqīqa وشَعَائِر المَوْلُود",
         status: 'available',
         content: [
         {"t": "lead", "v": "L'عَقِيقَة est le sacrifice accompli à la naissance d'un enfant. Bien que distincte de l'أُضحِيَة, elle lui est liée dans les sources malikites."},
-        {"t": "h", "v": "ʿAqīqa (العَقِيقَة) — Le Sacrifice de Naissance"},
+        {"t": "h", "v": "ʿAqīqa — Le Sacrifice de Naissance"},
         { t:'ul', v:[
           "Sounnah muʾakkada à l'occasion de la naissance.",
           "Pour le garçon : 2 moutons (selon certains) ou 1 mouton (position malikite dans la Risāla).",
@@ -2134,7 +2134,7 @@ const INTERMEDIAIRE = {
         { t:'ul', v:[
           "التَّأذِين في أُذن المَوْلُود : sounnah de prononcer l'أَذَان à l'oreille droite du nouveau-né.",
           "التَّسمِيَة : le nommer, de préférence le 7ème jour.",
-          "ḤḤalq (الحَلق) : raser la tête du nouveau-né le 7ème jour (pour les garçons — et les filles selon certains).",
+          "ḤḤalq : raser la tête du nouveau-né le 7ème jour (pour les garçons — et les filles selon certains).",
           "التَّصَدُّق : donner en aumône l'équivalent en argent du poids des cheveux rasés."
         ] },
         {"t": "note", "v": "Différence entre أُضحِيَة et عَقِيقَة : l'أُضحِيَة est liée à Eid al-Adha (10-13 Dhū al-Ḥijja), la عَقِيقَة est liée à la naissance. Les deux sont سُنَّة مُؤَكَّدَة en rite malikite. Les règles d'âge et de qualité de l'animal s'appliquent de la même façon."}
@@ -2144,18 +2144,18 @@ const INTERMEDIAIRE = {
 
       quiz: {
         id: "quiz-adahi",
-        title: "Questionnaire — Aḍāḥī (الأَضَاحِي)",
+        title: "Questionnaire — Aḍāḥī",
         status: 'available',
         score: null,
         questions: [
         {
           id: "q-adh-01",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> L'أُضحية est :",
+          text: "L'أُضحية est :",
           choices: [
           { id:"a", text:"واجبة sur tout Muslim ayant les moyens" },
           { id:"b", text:"سُنَّة مُؤَكَّدَة — non obligatoire" },
-          { id:"c", text:"Farḍ Kifāya (فَرضُ كِفَايَة)" },
-          { id:"d", text:"Mandūb (مَندُوب) simple" }
+          { id:"c", text:"Farḍ Kifāya" },
+          { id:"d", text:"Mandūb simple" }
           ],
           correctId: "b",
           explanation: "Spécificité malikite : l'أُضحية est سُنَّة مُؤَكَّدَة (sounnah appuyée) — PAS une obligation. Contrairement à l'école hanbalite qui la rend واجبة. Celui qui en a les moyens est fortement encouragé à la faire sans y être obligé."
@@ -2165,7 +2165,7 @@ const INTERMEDIAIRE = {
           text: "L'âge minimum d'un mouton pour l'أُضحية est :",
           choices: [
           { id:"a", text:"6 mois" },
-          { id:"b", text:"1 an accompli (جَذَع)" },
+          { id:"b", text:"1 an accompli" },
           { id:"c", text:"2 ans" },
           { id:"d", text:"3 ans" }
           ],
@@ -2174,7 +2174,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-adh-03",
-          text: "<strong>PIÈGE :</strong> Un bovin peut-il être l'أُضحية de plusieurs personnes ?",
+          text: "Un bovin peut-il être l'أُضحية de plusieurs personnes ?",
           choices: [
           { id:"a", text:"Non — une أُضحية par personne" },
           { id:"b", text:"Oui — un bovin compte pour 7 personnes" },
@@ -2194,7 +2194,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Queue courte" }
           ],
           correctId: "c",
-          explanation: "Hadīth : « 4 défauts invalident le sacrifice : la borgne MANIFESTE, la boiteuse MANIFESTE, la malade MANIFESTE et la très amaigrie. » Les défauts MODÉRÉS n'invalident pas — Makrūh (مَكرُوه) (selon Mukhtasar Khalīl)."
+          explanation: "Hadīth : « 4 défauts invalident le sacrifice : la borgne MANIFESTE, la boiteuse MANIFESTE, la malade MANIFESTE et la très amaigrie. » Les défauts MODÉRÉS n'invalident pas — Makrūh (selon Mukhtasar Khalīl)."
         },
         {
           id: "q-adh-05",
@@ -2206,7 +2206,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Le 9 Dhū al-Ḥijja après عَرَفَة" }
           ],
           correctId: "b",
-          explanation: "L'أُضحية commence après la PRIÈRE DE L'EID (صَلَاةُ الأَضحَى) le 10 Dhū al-Ḥijja et dure jusqu'au coucher du soleil du 13. Sacrifier avant la prière n'est pas valide comme أُضحية."
+          explanation: "L'أُضحية commence après la PRIÈRE DE L'EID le 10 Dhū al-Ḥijja et dure jusqu'au coucher du soleil du 13. Sacrifier avant la prière n'est pas valide comme أُضحية."
         },
         {
           id: "q-adh-06",
@@ -2237,12 +2237,12 @@ const INTERMEDIAIRE = {
           text: "<strong>SCÉNARIO :</strong> Ahmad possède une brebis légèrement boiteuse pour l'أُضحية. Son sacrifice est-il valide ?",
           choices: [
           { id:"a", text:"Non — tout défaut physique invalide" },
-          { id:"b", text:"Oui — les défauts modéréMakrūh (مَكرُوه) selon le Mukhtasar Khalīl" },
+          { id:"b", text:"Oui — les défauts modéréMakrūh selon le Mukhtasar Khalīl" },
           { id:"c", text:"Valide si deux témoins certifient la santé de l'animal" },
           { id:"d", text:"Non — il doit trouver un autre animal" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl : les défauts MODÉRÉS (légère boiterie, légère maladie) → l'animal est valide comme أُضحية Makrūh (مَكرُوه) (déconseillé). Seuls les déBayyina (البَيِّنَة) invalident. Ahmad peut sacrifier sa brebis mais c'est déconseillé."
+          explanation: "Mukhtasar Khalīl : les défauts MODÉRÉS (légère boiterie, légère maladie) → l'animal est valide comme أُضحية Makrūh (déconseillé). Seuls les déBayyina invalident. Ahmad peut sacrifier sa brebis mais c'est déconseillé."
         },
         {
           id: "q-adh-09",
@@ -2266,19 +2266,19 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Oui si le boucher est pauvre" }
           ],
           correctId: "b",
-          explanation: "Il est interdit (نَهى) de donner la viande, la peau ou toute partie du sacrifice comme salaire au boucher. Sami peut donner quelque chose au boucher à titre de CADEAU ou de charité, mais pas comme rémunération pour son travail d'abattage."
+          explanation: "Il est interdit de donner la viande, la peau ou toute partie du sacrifice comme salaire au boucher. Sami peut donner quelque chose au boucher à titre de CADEAU ou de charité, mais pas comme rémunération pour son travail d'abattage."
         }
         ]
       }
     },
 
-    /* ═══ Buyūʿ (البُيُوع) والمُعَامَلَات ═══ */
+    /* ═══ Buyūʿ والمُعَامَلَات ═══ */
     {
       id: "buyu",
       title: "Transactions Commerciales",
       arabicTitle: "البُيُوع والمُعَامَلَات",
       icon: "buyu",
-      description: 'Fondements des transactions commerciales islamiques : conditions du contrat, interdiction du رِبَا et du غَرَر, Salam (السَّلَم), Ijāra (الإِجَارَة) et finance islamique contemporaine.',
+      description: 'Fondements des transactions commerciales islamiques : conditions du contrat, interdiction du رِبَا et du غَرَر, Salam, Ijāra et finance islamique contemporaine.',
       source: "Risāla Ibn Abī Zayd ch. 37-40 · Mukhtasar Khalīl pp. 147-167 · doctrine-malikite.fr Finance",
       badge: {
         id: "badge-int-buyu",
@@ -2286,19 +2286,19 @@ const INTERMEDIAIRE = {
         arabicTitle: "فَقِيهُ المُعَامَلَات",
         icon: "star8",
         color: "silver",
-        unlockCondition: "Obtenir ≥ 85 % Buyūʿ (البُيُوع)"
+        unlockCondition: "Obtenir ≥ 85 % Buyūʿ"
       },
 
       lessons: [
       {
         id: "buy-01",
-        title: "أَركَان al-bayʿ (البَيع) وشُرُوطه",
+        title: "أَركَان al-bayʿ وشُرُوطه",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le al-bayʿ (البَيع) (vente) est le contrat commercial fondamental en Islam. La Risāla (ch. 37-40) et le Mukhtasar Khalīl (pp. 147-167) en établissent les conditions de validité."},
-        {"t": "h", "v": "أَركَان al-bayʿ (البَيع) — Piliers d'une vente valide"},
+        {"t": "lead", "v": "Le al-bayʿ (vente) est le contrat commercial fondamental en Islam. La Risāla (ch. 37-40) et le Mukhtasar Khalīl (pp. 147-167) en établissent les conditions de validité."},
+        {"t": "h", "v": "أَركَان al-bayʿ — Piliers d'une vente valide"},
         { t:'ul', v:[
-          "<strong>1. العَاقِدَان :</strong> vendeur et acheteur — doivent être capables (بَالِغَان عَاقِلَان).",
+          "<strong>1. العَاقِدَان :</strong> vendeur et acheteur — doivent être capables.",
           "<strong>2. المَعقُود عَلَيه :</strong> l'objet — doit exister, être licite, connu, pouvoir être livré.",
           "<strong>3. الثَّمَن :</strong> le prix — doit être connu et licite.",
           "<strong>4. الصِّيغَة :</strong> accord explicite (offre + acceptation).",
@@ -2307,12 +2307,12 @@ const INTERMEDIAIRE = {
         {"t": "h", "v": "شُرُوطُ المَبِيع — Conditions de l'objet vendu"},
         { t:'ul', v:[
           "Doit être licite (pas de porc, d'alcool, d'idoles...).",
-          "Doit être connu (aucun غَرَر — incertitude).",
+          "Doit être connu.",
           "Doit pouvoir être livré.",
           "Doit appartenir au vendeur (ou qu'il ait la permission de vendre).",
-          "Pas de vente d'un objet avant de l'avoir sécurisé pour soi-même (نَهي عَن بَيع مَا لَيسَ عِندَك)."
+          "Pas de vente d'un objet avant de l'avoir sécurisé pour soi-même."
         ] },
-        {"t": "h", "v": "Khiyār (الخِيَار) — Droit de rétractation"},
+        {"t": "h", "v": "Khiyār — Droit de rétractation"},
         { t:'ul', v:[
           "<strong>Mukhtasar Khalīl :</strong> pas de خِيَارُ المَجلِس en rite malikite (différence avec école chāfiʿite).",
           "<strong>خِيَارُ الشَّرط :</strong> option stipulée dans le contrat pour une durée définie.",
@@ -2324,30 +2324,30 @@ const INTERMEDIAIRE = {
       },
       {
         id: "buy-02",
-        title: "Ribā (الرِّبَا) وGharar (الغَرَر) — Les Deux Grands Interdits",
+        title: "Ribā وGharar — Les Deux Grands Interdits",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Ribā (الرِّبَا) (usure/intérêt) Gharar (الغَرَر) (incertitude excessive) sont les deux prohibitions fondamentales du droit commercial islamique. Le Mukhtasar Khalīl les traite en détail."},
-        {"t": "h", "v": "Ribā (الرِّبَا) — L'usure/intérêt"},
+        {"t": "lead", "v": "Ribā (usure/intérêt) Gharar (incertitude excessive) sont les deux prohibitions fondamentales du droit commercial islamique. Le Mukhtasar Khalīl les traite en détail."},
+        {"t": "h", "v": "Ribā — L'usure/intérêt"},
         { t:'ul', v:[
-          "<strong>Ribā al-Faḍl (رِبَا الفَضل) :</strong> vente d'un même type de marchandise à quantités inégales (ex : 1 kg d'or contre 1.1 kg d'or).",
-          "<strong>Ribā al-Nasīʾa (رِبَا النَّسِيئَة) :</strong> vendre les 6 marchandises avec délai de paiement ou de livraison.",
-          "Les 6 marchandises : or (ذَهَب), argent (فِضَّة), blé (قَمح), orge (شَعِير), sel (مِلح), dattes (تَمر).",
+          "<strong>Ribā al-Faḍl :</strong> vente d'un même type de marchandise à quantités inégales (ex : 1 kg d'or contre 1.1 kg d'or).",
+          "<strong>Ribā al-Nasīʾa :</strong> vendre les 6 marchandises avec délai de paiement ou de livraison.",
+          "Les 6 marchandises : or, argent, blé, orge, sel, dattes.",
           "Règle : même type + même mesure → vente immédiate et quantités égales obligatoires.",
           "Types différents mais même catégorie (ex : or contre argent) → vente immédiate obligatoire mais quantités libres."
         ] },
-        {"t": "h", "v": "Gharar (الغَرَر) — L'incertitude excessive"},
+        {"t": "h", "v": "Gharar — L'incertitude excessive"},
         { t:'ul', v:[
-          "Principe cardinal en rite malikite : « نَهى النَّبِيُّ ﷺ عَن بَيع Gharar (الغَرَر) ».",
+          "Principe cardinal en rite malikite : « نَهى النَّبِيُّ ﷺ عَن بَيع Gharar ».",
           "Mukhtasar Khalīl : بَيعُ الحَصَاة (vente à la pierre jetée), بَيعُ المُلَامَسَة → invalides.",
-          "Vente d'un objet non encore existant mais descriptible → valide si précisé (السَّلَم).",
+          "Vente d'un objet non encore existant mais descriptible → valide si précisé.",
           "Vente d'un objet de nature inconnue → invalide par غَرَر."
         ] },
-        {"t": "h", "v": "Ribā (الرِّبَا) dans le contexte contemporain"},
+        {"t": "h", "v": "Ribā dans le contexte contemporain"},
         { t:'ul', v:[
           "Intérêts bancaires classiques = ربا النَّسِيئَة — حَرَام.",
           "Crédit à intérêt = رِبَا — interdit.",
-          "Les produits de finance islamique (مُرَابَحَة, مُشَارَكَة) sont des alternatives licites.",
+          "Les produits de finance islamique sont des alternatives licites.",
           "Doctrine-malikite.fr couvre les détails des contrats islamiques contemporains."
         ] },
         { t:'ar', v:"نَهَى رَسُولُ اللَّهِ ﷺ عَن بَيعِ al-gharar (الغَرَر)ِ", n:"« Le Messager d'Allah ﷺ a interdit la vente avec incertitude excessive. » — Muslim" },
@@ -2356,63 +2356,63 @@ const INTERMEDIAIRE = {
       },
       {
         id: "buy-03",
-        title: "Salam (السَّلَم) وIjāra (الإِجَارَة) — Contrats Spéciaux",
+        title: "Salam وIjāra — Contrats Spéciaux",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Salam (السَّلَم) (vente à terme) et l'إِجَارَة (location/prestation) sont deux contrats licites largement utilisés et bien balisés par le Mukhtasar Khalīl."},
-        {"t": "h", "v": "Salam (السَّلَم) — Vente à Terme d'un Bien Non Encore Produit"},
+        {"t": "lead", "v": "Salam (vente à terme) et l'إِجَارَة (location/prestation) sont deux contrats licites largement utilisés et bien balisés par le Mukhtasar Khalīl."},
+        {"t": "h", "v": "Salam — Vente à Terme d'un Bien Non Encore Produit"},
         { t:'ul', v:[
           "Définition : payer immédiatement pour recevoir ultérieurement un bien défini.",
-          "Exception légale à la règle générale (لا يُباع مَا لَيسَ عِندَك).",
-          "<strong>Conditions :</strong> (1) description précise de l'objet (نَوع, صِفَة, قَدر), (2) délai précis de livraison, (3) paiement IMMÉDIAT et COMPLET.",
+          "Exception légale à la règle générale.",
+          "<strong>Conditions :</strong> (1) description précise de l'objet, (2) délai précis de livraison, (3) paiement IMMÉDIAT et COMPLET.",
           "Permis pour les produits agricoles, les manufacturés, tout ce qui peut être décrit.",
-          "Salam (السَّلَم) en or ou argent contre de l'or ou de l'argent."
+          "Salam en or ou argent contre de l'or ou de l'argent."
         ] },
-        {"t": "h", "v": "Ijāra (الإِجَارَة) — Location et Prestation de Services"},
+        {"t": "h", "v": "Ijāra — Location et Prestation de Services"},
         { t:'ul', v:[
           "Location d'un bien (maison, voiture) ou d'un service (travail, expertise).",
           "Conditions : l'usage doit être connu et défini, la durée ou le service précisé, le loyer/salaire connu.",
           "Le locataire porte les frais courants (consommables). Le propriétaire porte les frais de structure.",
           "Mukhtasar Khalīl : si la maison louée s'effondre partiellement → contrat rompu pour la partie effondrée."
         ] },
-        {"t": "h", "v": "Murābaḥa (المُرَابَحَة) — Vente avec Marge Déclarée"},
+        {"t": "h", "v": "Murābaḥa — Vente avec Marge Déclarée"},
         { t:'ul', v:[
           "Vendre au prix de revient + marge déclarée.",
           "Condition d'honnêteté : le vendeur doit déclarer TOUT rabais ou cadeau reçu lors de l'achat originel.",
           "Mukhtasar Khalīl : très strict sur l'obligation de déclarer tout bonus reçu.",
           "La مُرَابَحَة bancaire islamique applique ce principe pour le financement d'achats."
         ] },
-        {"t": "h", "v": "Sharika (الشَّرِكَة) وal-muḍāraba (المُضَارَبَة)"},
+        {"t": "h", "v": "Sharika وal-muḍāraba"},
         { t:'ul', v:[
-          "<strong>Sharika (الشَّرِكَة) :</strong> association de capitaux entre plusieurs partenaires.",
-          "<strong>al-muḍāraba (المُضَارَبَة) :</strong> un partenaire apporte le capital, l'autre le travail — les bénéfices partagés selon accord, les pertes supportées uniquement par le capital."
+          "<strong>Sharika :</strong> association de capitaux entre plusieurs partenaires.",
+          "<strong>al-muḍāraba :</strong> un partenaire apporte le capital, l'autre le travail — les bénéfices partagés selon accord, les pertes supportées uniquement par le capital."
         ] },
-        {"t": "note", "v": "La philosophie malikite du commerce : tout est licite sauf l'explicitement interdit (إِبَاحَة أَصلِيَّة). Cette approche libérale favorise l'innovation commerciale tant que les principes fondamentaux (interdiction du رِبَا et du غَرَر) sont respectés."}
+        {"t": "note", "v": "La philosophie malikite du commerce : tout est licite sauf l'explicitement interdit. Cette approche libérale favorise l'innovation commerciale tant que les principes fondamentaux sont respectés."}
         ]
       },
       {
         id: "buy-04",
-        title: "Buyūʿ (البُيُوع) المَنهِيُّ عَنهَا",
+        title: "Buyūʿ المَنهِيُّ عَنهَا",
         status: 'available',
         content: [
-        {"t": "lead", "v": "Le droit malikite liste plusieurs types de ventes interdites (حَرَام) ou invalides (فَاسِد) en raison de différents défauts contractuels."},
-        {"t": "h", "v": "Buyūʿ (البُيُوع) الفَاسِدَة — Ventes corrompues"},
+        {"t": "lead", "v": "Le droit malikite liste plusieurs types de ventes interdites ou invalides en raison de différents défauts contractuels."},
+        {"t": "h", "v": "Buyūʿ الفَاسِدَة — Ventes corrompues"},
         { t:'ul', v:[
           "<strong>بَيع وسَلَف :</strong> vente conditionnée à un prêt → invalide (Mukhtasar Khalīl).",
           "<strong>بَيع وشَرط :</strong> vente avec condition contradictoire à l'objet (ex: « je te vends cette maison à condition que tu ne la vends pas ») → invalide.",
-          "<strong>Bayʿatān fī Bayʿa (بَيعَتَان في بَيعَة) :</strong> deux prix pour un article (ex: « 100 au comptant ou 150 à crédit ») sans préciser lequel → invalide.",
-          "<strong>Bayʿ al-Najsh (بَيع النَّجش) :</strong> enchérir pour gonfler le prix sans intention d'acheter → حَرَام.",
-          "<strong>al-bayʿ (البَيع) على بَيع الأَخ :</strong> proposer un meilleur prix à quelqu'un qui est déjà en négociation → حَرَام."
+          "<strong>Bayʿatān fī Bayʿa :</strong> deux prix pour un article (ex: « 100 au comptant ou 150 à crédit ») sans préciser lequel → invalide.",
+          "<strong>Bayʿ al-Najsh :</strong> enchérir pour gonfler le prix sans intention d'acheter → حَرَام.",
+          "<strong>al-bayʿ على بَيع الأَخ :</strong> proposer un meilleur prix à quelqu'un qui est déjà en négociation → حَرَام."
         ] },
         {"t": "h", "v": "بُيُوع مَشرُوعَة خَاصَّة بالمَالِكِيَّة"},
         { t:'ul', v:[
-          "<strong>Muzāraʿa (المُزَارَعَة) :</strong> contrat entre propriétaire d'une terre et agriculteur — bénéfices partagés.",
-          "<strong>Musāqāt (المُسَاقَاة) :</strong> contrat pour irriguer et entretenir des arbres — le fruit partagé selon accord.",
-          "Ces contrats sont licites en rite malikite mais interdits en rite chāfiʿite (sauf المُسَاقَاة)."
+          "<strong>Muzāraʿa :</strong> contrat entre propriétaire d'une terre et agriculteur — bénéfices partagés.",
+          "<strong>Musāqāt :</strong> contrat pour irriguer et entretenir des arbres — le fruit partagé selon accord.",
+          "Ces contrats sont licites en rite malikite mais interdits en rite chāfiʿite."
         ] },
-        {"t": "h", "v": "Waqf (الوَقف) — La Fondation Pieuse (Endowment)"},
+        {"t": "h", "v": "Waqf — La Fondation Pieuse (Endowment)"},
         {"t": "p", "v": "Le وَقف (fondation pieuse permanente) est traité dans le Mukhtasar Khalīl (p. 221). C'est un bien immobilisé pour toujours au profit d'une cause charitable. Il ne peut être ni vendu, ni hérité, ni donné. Les fruits sont distribués selon la volonté du fondateur."},
-        {"t": "note", "v": "Principe malikite sur les contrats : l'intention et la réalité économique comptent. Un contrat licite sur le papier mais dissimulant une transaction illicite (كَالحِيَل) est invalide. L'école malikite est connue pour condamner les hilaa (stratagèmes légaux) qui contournent le but des interdictions."}
+        {"t": "note", "v": "Principe malikite sur les contrats : l'intention et la réalité économique comptent. Un contrat licite sur le papier mais dissimulant une transaction illicite est invalide. L'école malikite est connue pour condamner les hilaa (stratagèmes légaux) qui contournent le but des interdictions."}
         ]
       },
       {
@@ -2421,9 +2421,9 @@ const INTERMEDIAIRE = {
         status: 'available',
         content: [
         {"t": "lead", "v": "Doctrine-malikite.fr et les savants malikites contemporains ont appliqué les principes classiques aux instruments financiers modernes. Ce chapitre en présente les principales conclusions."},
-        {"t": "h", "v": "البُنُوك Islām (الإِسلَام)ِيَّة — Banque islamique"},
+        {"t": "h", "v": "البُنُوك Islāmِيَّة — Banque islamique"},
         { t:'ul', v:[
-          "<strong>Murābaḥa (المُرَابَحَة) bancaire :</strong> la banque achète le bien et le revend au client avec marge déclarée et paiements échelonnés — licite si structuré correctement.",
+          "<strong>Murābaḥa bancaire :</strong> la banque achète le bien et le revend au client avec marge déclarée et paiements échelonnés — licite si structuré correctement.",
           "<strong>التَّأجِير المُنتَهِي بِالتَّملِيك :</strong> crédit-bail — la banque loue puis cède la propriété — licite.",
           "<strong>المُشَارَكَة :</strong> la banque est partenaire dans l'investissement — licite.",
           "Intérêts bancaires classiques → رِبَا → حَرَام sans alternative."
@@ -2431,9 +2431,9 @@ const INTERMEDIAIRE = {
         {"t": "h", "v": "التَّأمِين — Assurances"},
         { t:'ul', v:[
           "Doctrine-malikite.fr sur les assurances : question complexe en fiqh contemporain.",
-          "L'Takāful (التَّكَافُل) est licite : cotisation pour aider les membres sinistrés.",
+          "L'Takāful est licite : cotisation pour aider les membres sinistrés.",
           "L'assurance classique à prime avec profit : divergence — certains savants l'assimilent au غَرَر, d'autres la tolèrent par nécessité.",
-          "L'assurance obligatoire légale (assurance auto...) : la plupart des savants la tolèrent par nécessité (ضَرُورَة)."
+          "L'assurance obligatoire légale (assurance auto...) : la plupart des savants la tolèrent par nécessité."
         ] },
         {"t": "h", "v": "البُورصَة والأَسهُم — Bourse et Actions"},
         { t:'ul', v:[
@@ -2442,14 +2442,14 @@ const INTERMEDIAIRE = {
           "Actions de sociétés dont l'activité est حَرَام (alcool, jeux d'argent, armes illicites) → حَرَام.",
           "La vente à découvert → vendre ce qu'on ne possède pas → interdit en Islam."
         ] },
-        {"t": "note", "v": "Le principe malikite sur les contrats contemporains : on applique le Coran 5:1 « أَوفُوا بِالعُقُود — Respectez les contrats ». Tout contrat respectant les principes islamiques (pas de رِبَا, pas de غَرَر, pas d'objet illicite) est valide même s'il n'existe pas de nom classique pour lui."}
+        {"t": "note", "v": "Le principe malikite sur les contrats contemporains : on applique le Coran 5:1 « أَوفُوا بِالعُقُود — Respectez les contrats ». Tout contrat respectant les principes islamiques est valide même s'il n'existe pas de nom classique pour lui."}
         ]
       }
       ],
 
       quiz: {
         id: "quiz-buyu",
-        title: "Questionnaire — Buyūʿ (البُيُوع) والمُعَامَلَات",
+        title: "Questionnaire — Buyūʿ والمُعَامَلَات",
         status: 'available',
         score: null,
         questions: [
@@ -2463,11 +2463,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Deux témoins obligatoires" }
           ],
           correctId: "b",
-          explanation: "Les piliers d'une vente valide : acheteur et vendeur capables, objet CONNU et LICITE, prix CONNU, accord explicite. L'incertitude (غَرَر) sur l'objet ou le prix invalide la vente."
+          explanation: "Les piliers d'une vente valide : acheteur et vendeur capables, objet CONNU et LICITE, prix CONNU, accord explicite. L'incertitude sur l'objet ou le prix invalide la vente."
         },
         {
           id: "q-buy-02",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Le خِيَارُ المَجلِس (droit de rétractation pendant la réunion) existe-t-il en rite malikite ?",
+          text: "Le خِيَارُ المَجلِس (droit de rétractation pendant la réunion) existe-t-il en rite malikite ?",
           choices: [
           { id:"a", text:"Oui — comme en rite chāfiʿite" },
           { id:"b", text:"Non — le rite malikite ne reconnaît pas le خِيَارُ المَجلِس" },
@@ -2479,7 +2479,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-buy-03",
-          text: "Ribā (الرِّبَا) s'applique à quelles 6 marchandises de base ?",
+          text: "Ribā s'applique à quelles 6 marchandises de base ?",
           choices: [
           { id:"a", text:"Blé, riz, sucre, sel, viande, lait" },
           { id:"b", text:"Or, argent, blé, orge, sel, dattes" },
@@ -2487,23 +2487,23 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Toutes les marchandises alimentaires" }
           ],
           correctId: "b",
-          explanation: "Les 6 marchandises du رِبَا (hadīth du Prophète ﷺ) : or (ذَهَب), argent (فِضَّة), blé (قَمح), orge (شَعِير), sel (مِلح), dattes (تَمر). Vendre l'une contre l'autre du même type → mêmes quantités ET paiement immédiat."
+          explanation: "Les 6 marchandises du رِبَا (hadīth du Prophète ﷺ) : or, argent, blé, orge, sel, dattes. Vendre l'une contre l'autre du même type → mêmes quantités ET paiement immédiat."
         },
         {
           id: "q-buy-04",
-          text: "<strong>PIÈGE :</strong> Ibrahim vend 1 kg d'or contre 1.2 kg d'or (de qualité différente). Est-ce licite ?",
+          text: "Ibrahim vend 1 kg d'or contre 1.2 kg d'or (de qualité différente). Est-ce licite ?",
           choices: [
           { id:"a", text:"Oui — les qualités sont différentes" },
-          { id:"b", text:"Non — c'Ribā al-Faḍl (رِبَا الفَضل) (quantités inégales de même type)" },
+          { id:"b", text:"Non — c'Ribā al-Faḍl (quantités inégales de même type)" },
           { id:"c", text:"Oui si paiement différé" },
           { id:"d", text:"Oui si l'acheteur est d'accord" }
           ],
           correctId: "b",
-          explanation: "Ribā al-Faḍl (رِبَا الفَضل) : vendre un même type (ici : or contre or) à quantités inégales est INTERDIT — même si les qualités diffèrent. La règle : or contre or → même quantité ET paiement immédiat. Ni plus, ni moins, ni délai."
+          explanation: "Ribā al-Faḍl : vendre un même type (ici : or contre or) à quantités inégales est INTERDIT — même si les qualités diffèrent. La règle : or contre or → même quantité ET paiement immédiat. Ni plus, ni moins, ni délai."
         },
         {
           id: "q-buy-05",
-          text: "Salam (السَّلَم) (vente à terme) est permis à condition que :",
+          text: "Salam (vente à terme) est permis à condition que :",
           choices: [
           { id:"a", text:"Le bien existe au moment de la vente" },
           { id:"b", text:"L'objet soit décrit précisément, le délai fixé et le paiement immédiat et complet" },
@@ -2511,11 +2511,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"L'acheteur connaisse le vendeur" }
           ],
           correctId: "b",
-          explanation: "Salam (السَّلَم) est une exception légale : on paie immédiatement pour recevoir ultérieurement. Conditions : (1) description précise, (2) délai précis, (3) paiement IMMÉDIAT ET COMPLET. Ces conditions sont strictes pour éviter le غَرَر."
+          explanation: "Salam est une exception légale : on paie immédiatement pour recevoir ultérieurement. Conditions : (1) description précise, (2) délai précis, (3) paiement IMMÉDIAT ET COMPLET. Ces conditions sont strictes pour éviter le غَرَر."
         },
         {
           id: "q-buy-06",
-          text: "Gharar (الغَرَر) est :",
+          text: "Gharar est :",
           choices: [
           { id:"a", text:"Un type de رِبَا" },
           { id:"b", text:"L'incertitude excessive dans un contrat — cause d'invalidité de la vente" },
@@ -2523,14 +2523,14 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Un type de fraude" }
           ],
           correctId: "b",
-          explanation: "Gharar (الغَرَر) = incertitude excessive — principe cardinal en droit malikite. Le Prophète ﷺ : « نَهى عَن بَيعِ Gharar (الغَرَر) » — il a interdit la vente avec غَرَر. Exemples : vendre ce qu'on n'a pas, vendre à un prix inconnu, vendre un objet dont on ne peut garantir la livraison."
+          explanation: "Gharar = incertitude excessive — principe cardinal en droit malikite. Le Prophète ﷺ : « نَهى عَن بَيعِ Gharar » — il a interdit la vente avec غَرَر. Exemples : vendre ce qu'on n'a pas, vendre à un prix inconnu, vendre un objet dont on ne peut garantir la livraison."
         },
         {
           id: "q-buy-07",
-          text: "<strong>PIÈGE :</strong> Un commerçant propose : « Ce produit coûte 100€ au comptant ou 130€ en 6 mensualités. » Sans préciser lequel Ibrahim choisit. Cette vente est-elle valide ?",
+          text: "Un commerçant propose : « Ce produit coûte 100€ au comptant ou 130€ en 6 mensualités. » Sans préciser lequel Ibrahim choisit. Cette vente est-elle valide ?",
           choices: [
           { id:"a", text:"Oui — les deux options sont présentées" },
-          { id:"b", text:"Non — Bayʿatān fī Bayʿa (بَيعَتَان في بَيعَة) (deux prix sans préciser lequel) → invalide" },
+          { id:"b", text:"Non — Bayʿatān fī Bayʿa (deux prix sans préciser lequel) → invalide" },
           { id:"c", text:"Valide si Ibrahim choisit l'une avant de quitter" },
           { id:"d", text:"Valide si c'est précisé dans le contrat écrit" }
           ],
@@ -2539,7 +2539,7 @@ const INTERMEDIAIRE = {
         },
         {
           id: "q-buy-08",
-          text: "Murābaḥa (المُرَابَحَة) impose au vendeur une obligation particulière. Laquelle ?",
+          text: "Murābaḥa impose au vendeur une obligation particulière. Laquelle ?",
           choices: [
           { id:"a", text:"Garantir le prix le plus bas du marché" },
           { id:"b", text:"Déclarer honnêtement tout rabais ou bonus reçu lors de son achat original" },
@@ -2547,11 +2547,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Obtenir l'approbation d'un savant" }
           ],
           correctId: "b",
-          explanation: "Mukhtasar Khalīl est très strict : Murābaḥa (المُرَابَحَة), le vendeur doit déclarer honnêtement tout rabais, cadeau ou bonus reçu lors de son achat initial. Dissimuler un rabais pour augmenter artificiellement le « prix de revient » est un مَنع."
+          explanation: "Mukhtasar Khalīl est très strict : Murābaḥa, le vendeur doit déclarer honnêtement tout rabais, cadeau ou bonus reçu lors de son achat initial. Dissimuler un rabais pour augmenter artificiellement le « prix de revient » est un مَنع."
         },
         {
           id: "q-buy-09",
-          text: "Bayʿ al-Najsh (بَيع النَّجش) (enchère truquée) consiste à :",
+          text: "Bayʿ al-Najsh (enchère truquée) consiste à :",
           choices: [
           { id:"a", text:"Vendre plusieurs objets ensemble" },
           { id:"b", text:"Enchérir pour gonfler le prix sans intention d'acheter" },
@@ -2571,11 +2571,11 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Makrūh seulement" }
           ],
           correctId: "c",
-          explanation: "Les intérêts bancaires classiques (intérêts sur prêt, sur épargne rémunérée...) = Ribā al-Nasīʾa (رِبَا النَّسِيئَة) — clairement حَرَام selon le Coran 2:275. La finance islamique (المُرَابَحَة, Takāful (التَّكَافُل), المُشَارَكَة) offre des alternatives licites."
+          explanation: "Les intérêts bancaires classiques (intérêts sur prêt, sur épargne rémunérée...) = Ribā al-Nasīʾa — clairement حَرَام selon le Coran 2:275. La finance islamique, المُشَارَكَة) offre des alternatives licites."
         },
         {
           id: "q-buy-11",
-          text: "<strong>SPÉCIFICITÉ MALIKITE :</strong> Muzāraʿa (المُزَارَعَة) (agriculture à partage de récolte) est-elle licite en rite malikite ?",
+          text: "Muzāraʿa (agriculture à partage de récolte) est-elle licite en rite malikite ?",
           choices: [
           { id:"a", text:"Non — interdite comme toute association incertaine" },
           { id:"b", text:"Oui — licite en rite malikite" },
@@ -2583,7 +2583,7 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Licite seulement pour les palmiers dattiers" }
           ],
           correctId: "b",
-          explanation: "Muzāraʿa (المُزَارَعَة) (contrat entre propriétaire d'une terre et agriculteur avec partage de la récolte) est LICITE en rite malikite. Différence avec le rite chāfiʿite qui l'interdit (sauf المُسَاقَاة). Le Mukhtasar Khalīl la valide explicitement."
+          explanation: "Muzāraʿa (contrat entre propriétaire d'une terre et agriculteur avec partage de la récolte) est LICITE en rite malikite. Différence avec le rite chāfiʿite qui l'interdit. Le Mukhtasar Khalīl la valide explicitement."
         },
         {
           id: "q-buy-12",
@@ -2595,25 +2595,25 @@ const INTERMEDIAIRE = {
           { id:"d", text:"Permis si la livraison est rapide" }
           ],
           correctId: "b",
-          explanation: "Hadīth du Prophète ﷺ : « لَا تَبِع مَا لَيسَ عِندَك » — n'intervends pas ce que tu ne possèdes pas. Exception légale : Salam (السَّلَم) (avec conditions strictes) et l'Istisna' (commande de fabrication). La vente à découvert boursière est islamiquement interdite."
+          explanation: "Hadīth du Prophète ﷺ : « لَا تَبِع مَا لَيسَ عِندَك » — n'intervends pas ce que tu ne possèdes pas. Exception légale : Salam (avec conditions strictes) et l'Istisna' (commande de fabrication). La vente à découvert boursière est islamiquement interdite."
         },
         {
           id: "q-buy-13",
           text: "L'assurance obligatoire légale (assurance automobile) est-elle tolérée en rite malikite ?",
           choices: [
           { id:"a", text:"Totalement حَرَام sans alternative" },
-          { id:"b", text:"La plupart des savants la tolèrent par nécessité (ضَرُورَة)" },
+          { id:"b", text:"La plupart des savants la tolèrent par nécessité" },
           { id:"c", text:"Permise sans restriction" },
           { id:"d", text:"Seulement makrūh" }
           ],
           correctId: "b",
-          explanation: "Doctrine-malikite.fr : l'assurance classique pose des questions de غَرَر, mais l'assurance OBLIGATOIRE LÉGALE (imposée par la loi) est généralement tolérée par la plupart des savants malikites contemporains en application du principe de nécessité (ضَرُورَة وحَاجَة)."
+          explanation: "Doctrine-malikite.fr : l'assurance classique pose des questions de غَرَر, mais l'assurance OBLIGATOIRE LÉGALE (imposée par la loi) est généralement tolérée par la plupart des savants malikites contemporains en application du principe de nécessité."
         },
         {
           id: "q-buy-14",
-          text: "<strong>PIÈGE :</strong> Peut-on acheter des actions en bourse d'une société licite (halal) ?",
+          text: "Peut-on acheter des actions en bourse d'une société licite (halal) ?",
           choices: [
-          { id:"a", text:"Non — Gharar (الغَرَر) pur" },
+          { id:"a", text:"Non — Gharar pur" },
           { id:"b", text:"Oui — avec зَكَاة annuelle sur la valeur des actions" },
           { id:"c", text:"Oui sans restriction ni زَكَاة" },
           { id:"d", text:"Seulement si c'est une société islamique certifiée" }
@@ -2626,12 +2626,12 @@ const INTERMEDIAIRE = {
           text: "<strong>ÉVALUATION :</strong> Ahmad veut prendre un crédit immobilier à taux variable à la banque conventionnelle. En rite malikite :",
           choices: [
           { id:"a", text:"Permis — il a besoin d'un logement" },
-          { id:"b", text:"حَرَام — c'est du رِبَا ; il doit chercher une alternative islamique (مُرَابَحَة, إِجَارَة islamique)" },
+          { id:"b", text:"حَرَام — c'est du رِبَا ; il doit chercher une alternative islamique" },
           { id:"c", text:"Makrūh seulement" },
           { id:"d", text:"Permis si le taux est faible" }
           ],
           correctId: "b",
-          explanation: "Un crédit immobilier à intérêt = Ribā al-Nasīʾa (رِبَا النَّسِيئَة) — حَرَام. La nécessité (ضَرُورَة) peut s'appliquer uniquement dans des cas EXTRÊMES (aucune alternative, vie en danger). Pour un simple logement alors que des alternatives islamiques existent, la ضَرُورَة ne s'applique pas."
+          explanation: "Un crédit immobilier à intérêt = Ribā al-Nasīʾa — حَرَام. La nécessité peut s'appliquer uniquement dans des cas EXTRÊMES (aucune alternative, vie en danger). Pour un simple logement alors que des alternatives islamiques existent, la ضَرُورَة ne s'applique pas."
         }
         ]
       }
